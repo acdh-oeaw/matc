@@ -1,0 +1,1058 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:mods="http://www.loc.gov/mods/v3"
+     xmlns:mets="http://www.loc.gov/METS/"
+     xmlns:tei="http://www.tei-c.org/ns/1.0">
+   <teiHeader xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <fileDesc>
+         <titleStmt>
+            <title>Ieremias cum glossis (Cod. Guelf. 32 Weiss.) — Signaturdokument</title>
+            <respStmt>
+               <resp>Zusammengestellt durch </resp>
+               <name type="person">Torsten Schaßan</name>
+               <name type="org">Herzog August Bibliothek Wolfenbüttel</name>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition>Elektronische Ausgabe nach TEI P5</edition>
+            <respStmt>
+               <resp>TEI-P5 konforme Kodierung durch </resp>
+               <name type="person">Torsten Schaßan</name>
+               <name type="org">Herzog August Bibliothek Wolfenbüttel</name>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher>
+               <name type="org">Herzog August Bibliothek Wolfenbüttel</name>
+               <ptr target="http://www.hab.de"/>
+            </publisher>
+            <date when="2011-03-21" type="issued">21.03.2011</date>
+            <date when="2011-03-21" type="digitised">21.03.2011</date>
+            <distributor>Herzog August Bibliothek</distributor>
+            <availability status="free">
+               <licence target="https://creativecommons.org/publicdomain/zero/1.0/deed.de">
+                  <p>Für das Signaturdokument verzichtet die Herzog August Bibliothek auf alle Nutzungsrechte.</p>
+                  <p>Für die Nutzung weiterer Daten wie Digitalisaten gelten gegebenenfalls andere Lizenzen. Vgl. die <ref target="http://diglib.hab.de/?link=012">Copyright Information</ref> der Herzog August Bibliothek Wolfenbüttel.</p>
+               </licence>
+            </availability>
+            <pubPlace>
+               <ptr type="purl" target="http://diglib.hab.de/mss/32-weiss/start.htm"/>
+               <ptr type="thumbnailForPresentations"
+                    target="http://diglib.hab.de/mss/32-weiss/thumbs/00025.jpg"/>
+            </pubPlace>
+            <idno type="URN">urn:nbn:de:gbv:23-mss/32-weiss9</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc xml:id="mss_32-weiss_tei-msDesc" xml:lang="de">
+               <msIdentifier>
+                  <settlement>Wolfenbüttel</settlement>
+                  <repository>Herzog August Bibliothek</repository>
+                  <collection>Weißenburger Handschriften</collection>
+                  <idno sortKey="wf_hab_weiss-0032">Cod. Guelf. 32 Weiss.</idno>
+                  <altIdentifier type="catalog">
+                     <collection>Heinemann-Nr.</collection>
+                     <idno sortKey="heinemann-4116">4116</idno>
+                  </altIdentifier>
+               </msIdentifier>
+               <head>
+                  <title xml:lang="la">Ieremias cum glossis</title>
+                  <origDate notBefore="0851" notAfter="0900">9. Jh., 2. H.</origDate>
+                  <origPlace key="tgn_7008085">Weißenburg</origPlace>
+               </head>
+               <physDesc>
+                  <objectDesc form="codex">
+                     <supportDesc material="perg">
+                        <support>
+                           <p>
+                              <material>Pergament</material>
+                           </p>
+                        </support>
+                        <extent>
+                           <measure type="leavesCount">108 Bl.</measure>
+                           <dimensions type="leaf" unit="cm">
+                              <height>30,5</height>
+                              <width>23,5</width>
+                           </dimensions>
+                        </extent>
+                     </supportDesc>
+                  </objectDesc>
+               </physDesc>
+               <additional>
+                  <listBibl>
+                     <bibl>Butzmann, Hans: Die Weissenburger Handschriften. Frankfurt am Main: Klostermann, 1964. (Kataloge der Herzog August Bibliothek Wolfenbüttel: Neue Reihe, Bd. 10), S. <ref target="http://www.manuscripta-mediaevalia.de/hs/katalogseiten/HSK0078_b142_jpg.htm">142</ref> [zur <ref type="mss" cRef="32-weiss_tei-msDesc_Butzmann">Beschreibung</ref>]</bibl>
+                  </listBibl>
+               </additional>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div>
+            <pb n="VD" xml:id="page__00001" facs="#facs__00001"/>
+            <head>Ieremias cum glossis</head>
+            <p>Reprehenderit minim culpa nisi Lorem mollit. <add place="margin-left">Dolore ipsum dolore consequat</add> adipisicing ea est consectetur ex consequat ex aliqua irure nostrud nulla. Lorem officia occaecat dolore consequat nostrud magna eu pariatur sunt cillum pariatur Lorem.</p>
+            <p>Pariatur labore duis est quis veniam aliqua enim tempor id anim nisi anim. Esse dolor ullamco consequat sint ullamco. Eu magna nostrud qui est ad nisi.</p>
+            <p>
+               Occaecat nostrud commodo nisi magna adipisicing ex labore consectetur. Exercitation sunt culpa duis mollit anim. 
+               <pb n="VS" xml:id="page__00002" facs="#facs__00002"/>
+               Labore tempor consectetur nisi mollit exercitation voluptate consequat anim duis qui sunt sint in. Cupidatat nisi excepteur commodo id deserunt nostrud nostrud aliquip mollit proident nisi minim fugiat duis. Cillum eiusmod qui ullamco incididunt ad eiusmod excepteur.
+            </p>
+            <pb n="Ir" xml:id="page__00003" facs="#facs__00003"/>
+            <pb n="Iv" xml:id="page__00004" facs="#facs__00004"/>
+            <pb n="IIr" xml:id="page__00005" facs="#facs__00005"/>
+            <pb n="IIv" xml:id="page__00006" facs="#facs__00006"/>
+            <pb n="IIIr" xml:id="page__00007" facs="#facs__00007"/>
+            <pb n="IIIv" xml:id="page__00008" facs="#facs__00008"/>
+            <pb n="IVr" xml:id="page__00009" facs="#facs__00009"/>
+            <pb n="IVv" xml:id="page__00010" facs="#facs__00010"/>
+            <pb n="1r" xml:id="page__00011" facs="#facs__00011"/>
+            <pb n="1v" xml:id="page__00012" facs="#facs__00012"/>
+            <pb n="2r" xml:id="page__00013" facs="#facs__00013"/>
+            <pb n="2v" xml:id="page__00014" facs="#facs__00014"/>
+            <pb n="3r" xml:id="page__00015" facs="#facs__00015"/>
+            <pb n="3v" xml:id="page__00016" facs="#facs__00016"/>
+            <pb n="4r" xml:id="page__00017" facs="#facs__00017"/>
+            <pb n="4v" xml:id="page__00018" facs="#facs__00018"/>
+            <pb n="5r" xml:id="page__00019" facs="#facs__00019"/>
+            <pb n="5v" xml:id="page__00020" facs="#facs__00020"/>
+            <pb n="6r" xml:id="page__00021" facs="#facs__00021"/>
+            <pb n="6v" xml:id="page__00022" facs="#facs__00022"/>
+            <pb n="7r" xml:id="page__00023" facs="#facs__00023"/>
+            <pb n="7v" xml:id="page__00024" facs="#facs__00024"/>
+            <pb n="8r" xml:id="page__00025" facs="#facs__00025"/>
+            <pb n="8v" xml:id="page__00026" facs="#facs__00026"/>
+            <pb n="9r" xml:id="page__00027" facs="#facs__00027"/>
+            <pb n="9v" xml:id="page__00028" facs="#facs__00028"/>
+            <pb n="10r" xml:id="page__00029" facs="#facs__00029"/>
+            <pb n="10v" xml:id="page__00030" facs="#facs__00030"/>
+            <pb n="11r" xml:id="page__00031" facs="#facs__00031"/>
+            <pb n="11v" xml:id="page__00032" facs="#facs__00032"/>
+            <pb n="12r" xml:id="page__00033" facs="#facs__00033"/>
+            <pb n="12v" xml:id="page__00034" facs="#facs__00034"/>
+            <pb n="13r" xml:id="page__00035" facs="#facs__00035"/>
+            <pb n="13v" xml:id="page__00036" facs="#facs__00036"/>
+            <pb n="14r" xml:id="page__00037" facs="#facs__00037"/>
+            <pb n="14v" xml:id="page__00038" facs="#facs__00038"/>
+            <pb n="15r" xml:id="page__00039" facs="#facs__00039"/>
+            <pb n="15v" xml:id="page__00040" facs="#facs__00040"/>
+            <pb n="16r" xml:id="page__00041" facs="#facs__00041"/>
+            <p>et concepte turbes<note place="margin-left" facs="#zone.wm4_hqv_spb">hier kommt dann die Transkription der Margin</note> munital</p>
+            <pb n="16v" xml:id="page__00042" facs="#facs__00042"/>
+            <pb n="17r" xml:id="page__00043" facs="#facs__00043"/>
+            <pb n="17v" xml:id="page__00044" facs="#facs__00044"/>
+            <pb n="18r" xml:id="page__00045" facs="#facs__00045"/>
+            <pb n="18v" xml:id="page__00046" facs="#facs__00046"/>
+            <pb n="19r" xml:id="page__00047" facs="#facs__00047"/>
+            <pb n="19v" xml:id="page__00048" facs="#facs__00048"/>
+            <pb n="20r" xml:id="page__00049" facs="#facs__00049"/>
+            <pb n="20v" xml:id="page__00050" facs="#facs__00050"/>
+            <pb n="21r" xml:id="page__00051" facs="#facs__00051"/>
+            <pb n="21v" xml:id="page__00052" facs="#facs__00052"/>
+            <pb n="22r" xml:id="page__00053" facs="#facs__00053"/>
+            <pb n="22v" xml:id="page__00054" facs="#facs__00054"/>
+            <pb n="23r" xml:id="page__00055" facs="#facs__00055"/>
+            <pb n="23v" xml:id="page__00056" facs="#facs__00056"/>
+            <pb n="24r" xml:id="page__00057" facs="#facs__00057"/>
+            <pb n="24v" xml:id="page__00058" facs="#facs__00058"/>
+            <pb n="25r" xml:id="page__00059" facs="#facs__00059"/>
+            <pb n="25v" xml:id="page__00060" facs="#facs__00060"/>
+            <pb n="26r" xml:id="page__00061" facs="#facs__00061"/>
+            <pb n="26v" xml:id="page__00062" facs="#facs__00062"/>
+            <pb n="27r" xml:id="page__00063" facs="#facs__00063"/>
+            <pb n="27v" xml:id="page__00064" facs="#facs__00064"/>
+            <pb n="28r" xml:id="page__00065" facs="#facs__00065"/>
+            <pb n="28v" xml:id="page__00066" facs="#facs__00066"/>
+            <pb n="29r" xml:id="page__00067" facs="#facs__00067"/>
+            <pb n="29v" xml:id="page__00068" facs="#facs__00068"/>
+            <pb n="30r" xml:id="page__00069" facs="#facs__00069"/>
+            <pb n="30v" xml:id="page__00070" facs="#facs__00070"/>
+            <pb n="31r" xml:id="page__00071" facs="#facs__00071"/>
+            <pb n="31v" xml:id="page__00072" facs="#facs__00072"/>
+            <pb n="32r" xml:id="page__00073" facs="#facs__00073"/>
+            <pb n="32v" xml:id="page__00074" facs="#facs__00074"/>
+            <pb n="33r" xml:id="page__00075" facs="#facs__00075"/>
+            <pb n="33v" xml:id="page__00076" facs="#facs__00076"/>
+            <pb n="34r" xml:id="page__00077" facs="#facs__00077"/>
+            <pb n="34v" xml:id="page__00078" facs="#facs__00078"/>
+            <pb n="35r" xml:id="page__00079" facs="#facs__00079"/>
+            <pb n="35v" xml:id="page__00080" facs="#facs__00080"/>
+            <pb n="36r" xml:id="page__00081" facs="#facs__00081"/>
+            <pb n="36v" xml:id="page__00082" facs="#facs__00082"/>
+            <pb n="37r" xml:id="page__00083" facs="#facs__00083"/>
+            <pb n="37v" xml:id="page__00084" facs="#facs__00084"/>
+            <pb n="38r" xml:id="page__00085" facs="#facs__00085"/>
+            <pb n="38v" xml:id="page__00086" facs="#facs__00086"/>
+            <pb n="39r" xml:id="page__00087" facs="#facs__00087"/>
+            <pb n="39v" xml:id="page__00088" facs="#facs__00088"/>
+            <pb n="40r" xml:id="page__00089" facs="#facs__00089"/>
+            <pb n="40v" xml:id="page__00090" facs="#facs__00090"/>
+            <pb n="41r" xml:id="page__00091" facs="#facs__00091"/>
+            <pb n="41v" xml:id="page__00092" facs="#facs__00092"/>
+            <pb n="42r" xml:id="page__00093" facs="#facs__00093"/>
+            <pb n="42v" xml:id="page__00094" facs="#facs__00094"/>
+            <pb n="43r" xml:id="page__00095" facs="#facs__00095"/>
+            <pb n="43v" xml:id="page__00096" facs="#facs__00096"/>
+            <pb n="44r" xml:id="page__00097" facs="#facs__00097"/>
+            <pb n="44v" xml:id="page__00098" facs="#facs__00098"/>
+            <pb n="45r" xml:id="page__00099" facs="#facs__00099"/>
+            <pb n="45v" xml:id="page__00100" facs="#facs__00100"/>
+            <pb n="46r" xml:id="page__00101" facs="#facs__00101"/>
+            <pb n="46v" xml:id="page__00102" facs="#facs__00102"/>
+            <pb n="47r" xml:id="page__00103" facs="#facs__00103"/>
+            <pb n="47v" xml:id="page__00104" facs="#facs__00104"/>
+            <pb n="48r" xml:id="page__00105" facs="#facs__00105"/>
+            <pb n="48v" xml:id="page__00106" facs="#facs__00106"/>
+            <pb n="49r" xml:id="page__00107" facs="#facs__00107"/>
+            <pb n="49v" xml:id="page__00108" facs="#facs__00108"/>
+            <pb n="50r" xml:id="page__00109" facs="#facs__00109"/>
+            <pb n="50v" xml:id="page__00110" facs="#facs__00110"/>
+            <pb n="51r" xml:id="page__00111" facs="#facs__00111"/>
+            <pb n="51v" xml:id="page__00112" facs="#facs__00112"/>
+            <pb n="52r" xml:id="page__00113" facs="#facs__00113"/>
+            <pb n="52v" xml:id="page__00114" facs="#facs__00114"/>
+            <pb n="53r" xml:id="page__00115" facs="#facs__00115"/>
+            <pb n="53v" xml:id="page__00116" facs="#facs__00116"/>
+            <pb n="54r" xml:id="page__00117" facs="#facs__00117"/>
+            <pb n="54v" xml:id="page__00118" facs="#facs__00118"/>
+            <pb n="55r" xml:id="page__00119" facs="#facs__00119"/>
+            <pb n="55v" xml:id="page__00120" facs="#facs__00120"/>
+            <pb n="56r" xml:id="page__00121" facs="#facs__00121"/>
+            <pb n="56v" xml:id="page__00122" facs="#facs__00122"/>
+            <pb n="57r" xml:id="page__00123" facs="#facs__00123"/>
+            <pb n="57v" xml:id="page__00124" facs="#facs__00124"/>
+            <pb n="58r" xml:id="page__00125" facs="#facs__00125"/>
+            <pb n="58v" xml:id="page__00126" facs="#facs__00126"/>
+            <pb n="59r" xml:id="page__00127" facs="#facs__00127"/>
+            <pb n="59v" xml:id="page__00128" facs="#facs__00128"/>
+            <pb n="60r" xml:id="page__00129" facs="#facs__00129"/>
+            <pb n="60v" xml:id="page__00130" facs="#facs__00130"/>
+            <pb n="61r" xml:id="page__00131" facs="#facs__00131"/>
+            <pb n="61v" xml:id="page__00132" facs="#facs__00132"/>
+            <pb n="62r" xml:id="page__00133" facs="#facs__00133"/>
+            <pb n="62v" xml:id="page__00134" facs="#facs__00134"/>
+            <pb n="63r" xml:id="page__00135" facs="#facs__00135"/>
+            <pb n="63v" xml:id="page__00136" facs="#facs__00136"/>
+            <pb n="64r" xml:id="page__00137" facs="#facs__00137"/>
+            <pb n="64v" xml:id="page__00138" facs="#facs__00138"/>
+            <pb n="65r" xml:id="page__00139" facs="#facs__00139"/>
+            <pb n="65v" xml:id="page__00140" facs="#facs__00140"/>
+            <pb n="66r" xml:id="page__00141" facs="#facs__00141"/>
+            <pb n="66v" xml:id="page__00142" facs="#facs__00142"/>
+            <pb n="67r" xml:id="page__00143" facs="#facs__00143"/>
+            <pb n="67v" xml:id="page__00144" facs="#facs__00144"/>
+            <pb n="68r" xml:id="page__00145" facs="#facs__00145"/>
+            <pb n="68v" xml:id="page__00146" facs="#facs__00146"/>
+            <pb n="69r" xml:id="page__00147" facs="#facs__00147"/>
+            <pb n="69v" xml:id="page__00148" facs="#facs__00148"/>
+            <pb n="70r" xml:id="page__00149" facs="#facs__00149"/>
+            <pb n="70v" xml:id="page__00150" facs="#facs__00150"/>
+            <pb n="71r" xml:id="page__00151" facs="#facs__00151"/>
+            <pb n="71v" xml:id="page__00152" facs="#facs__00152"/>
+            <pb n="72r" xml:id="page__00153" facs="#facs__00153"/>
+            <pb n="72v" xml:id="page__00154" facs="#facs__00154"/>
+            <pb n="73r" xml:id="page__00155" facs="#facs__00155"/>
+            <pb n="73v" xml:id="page__00156" facs="#facs__00156"/>
+            <pb n="74r" xml:id="page__00157" facs="#facs__00157"/>
+            <pb n="74v" xml:id="page__00158" facs="#facs__00158"/>
+            <pb n="75r" xml:id="page__00159" facs="#facs__00159"/>
+            <pb n="75v" xml:id="page__00160" facs="#facs__00160"/>
+            <pb n="76r" xml:id="page__00161" facs="#facs__00161"/>
+            <pb n="76v" xml:id="page__00162" facs="#facs__00162"/>
+            <pb n="77r" xml:id="page__00163" facs="#facs__00163"/>
+            <pb n="77v" xml:id="page__00164" facs="#facs__00164"/>
+            <pb n="78r" xml:id="page__00165" facs="#facs__00165"/>
+            <pb n="78v" xml:id="page__00166" facs="#facs__00166"/>
+            <pb n="79r" xml:id="page__00167" facs="#facs__00167"/>
+            <pb n="79v" xml:id="page__00168" facs="#facs__00168"/>
+            <pb n="80r" xml:id="page__00169" facs="#facs__00169"/>
+            <pb n="80v" xml:id="page__00170" facs="#facs__00170"/>
+            <pb n="81r" xml:id="page__00171" facs="#facs__00171"/>
+            <pb n="81v" xml:id="page__00172" facs="#facs__00172"/>
+            <pb n="82r" xml:id="page__00173" facs="#facs__00173"/>
+            <pb n="82v" xml:id="page__00174" facs="#facs__00174"/>
+            <pb n="83r" xml:id="page__00175" facs="#facs__00175"/>
+            <pb n="83v" xml:id="page__00176" facs="#facs__00176"/>
+            <pb n="84r" xml:id="page__00177" facs="#facs__00177"/>
+            <pb n="84v" xml:id="page__00178" facs="#facs__00178"/>
+            <pb n="85r" xml:id="page__00179" facs="#facs__00179"/>
+            <pb n="85v" xml:id="page__00180" facs="#facs__00180"/>
+            <pb n="86r" xml:id="page__00181" facs="#facs__00181"/>
+            <pb n="86v" xml:id="page__00182" facs="#facs__00182"/>
+            <pb n="87r" xml:id="page__00183" facs="#facs__00183"/>
+            <pb n="87v" xml:id="page__00184" facs="#facs__00184"/>
+            <pb n="88r" xml:id="page__00185" facs="#facs__00185"/>
+            <pb n="88v" xml:id="page__00186" facs="#facs__00186"/>
+            <pb n="89r" xml:id="page__00187" facs="#facs__00187"/>
+            <pb n="89v" xml:id="page__00188" facs="#facs__00188"/>
+            <pb n="90r" xml:id="page__00189" facs="#facs__00189"/>
+            <pb n="90v" xml:id="page__00190" facs="#facs__00190"/>
+            <pb n="91r" xml:id="page__00191" facs="#facs__00191"/>
+            <pb n="91v" xml:id="page__00192" facs="#facs__00192"/>
+            <pb n="92r" xml:id="page__00193" facs="#facs__00193"/>
+            <pb n="92v" xml:id="page__00194" facs="#facs__00194"/>
+            <pb n="93r" xml:id="page__00195" facs="#facs__00195"/>
+            <pb n="93v" xml:id="page__00196" facs="#facs__00196"/>
+            <pb n="94r" xml:id="page__00197" facs="#facs__00197"/>
+            <pb n="94v" xml:id="page__00198" facs="#facs__00198"/>
+            <pb n="95r" xml:id="page__00199" facs="#facs__00199"/>
+            <pb n="95v" xml:id="page__00200" facs="#facs__00200"/>
+            <pb n="96r" xml:id="page__00201" facs="#facs__00201"/>
+            <pb n="96v" xml:id="page__00202" facs="#facs__00202"/>
+            <pb n="97r" xml:id="page__00203" facs="#facs__00203"/>
+            <pb n="97v" xml:id="page__00204" facs="#facs__00204"/>
+            <pb n="98r" xml:id="page__00205" facs="#facs__00205"/>
+            <pb n="98v" xml:id="page__00206" facs="#facs__00206"/>
+            <pb n="99r" xml:id="page__00207" facs="#facs__00207"/>
+            <pb n="99v" xml:id="page__00208" facs="#facs__00208"/>
+            <pb n="100r" xml:id="page__00209" facs="#facs__00209"/>
+            <pb n="100v" xml:id="page__00210" facs="#facs__00210"/>
+            <pb n="101r" xml:id="page__00211" facs="#facs__00211"/>
+            <pb n="101v" xml:id="page__00212" facs="#facs__00212"/>
+            <pb n="102r" xml:id="page__00213" facs="#facs__00213"/>
+            <pb n="102v" xml:id="page__00214" facs="#facs__00214"/>
+            <pb n="103r" xml:id="page__00215" facs="#facs__00215"/>
+            <pb n="103v" xml:id="page__00216" facs="#facs__00216"/>
+            <pb n="104r" xml:id="page__00217" facs="#facs__00217"/>
+            <pb n="104v" xml:id="page__00218" facs="#facs__00218"/>
+            <pb n="105r" xml:id="page__00219" facs="#facs__00219"/>
+            <pb n="105v" xml:id="page__00220" facs="#facs__00220"/>
+            <pb n="106r" xml:id="page__00221" facs="#facs__00221"/>
+            <pb n="106v" xml:id="page__00222" facs="#facs__00222"/>
+            <pb n="107r" xml:id="page__00223" facs="#facs__00223"/>
+            <pb n="107v" xml:id="page__00224" facs="#facs__00224"/>
+            <pb n="108r" xml:id="page__00225" facs="#facs__00225"/>
+            <pb n="108v" xml:id="page__00226" facs="#facs__00226"/>
+            <pb n="I*r" xml:id="page__00227" facs="#facs__00227"/>
+            <pb n="I*v" xml:id="page__00228" facs="#facs__00228"/>
+            <pb n="II*r" xml:id="page__00229" facs="#facs__00229"/>
+            <pb n="II*v" xml:id="page__00230" facs="#facs__00230"/>
+            <pb n="III*r" xml:id="page__00231" facs="#facs__00231"/>
+            <pb n="III*v" xml:id="page__00232" facs="#facs__00232"/>
+            <pb n="HS" xml:id="page__00233" facs="#facs__00233"/>
+            <pb n="HD" xml:id="page__00234" facs="#facs__00234"/>
+            <pb n="Rücken" xml:id="page__eb01" facs="#facs__eb01"/>
+            <pb n="Oberschnitt" xml:id="page__eb02" facs="#facs__eb02"/>
+            <pb n="Vorderschnitt" xml:id="page__eb03" facs="#facs__eb03"/>
+            <pb n="Unterschnitt" xml:id="page__eb04" facs="#facs__eb04"/>
+         </div>
+      </body>
+   </text>
+   <facsimile>
+      <surface xml:id="facs__00001" n="VD">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00001.jpg"/>
+      </surface>
+      <surface xml:id="facs__00002" n="VS">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00002.jpg"/>
+      </surface>
+      <surface xml:id="facs__00003" n="Ir">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00003.jpg"/>
+      </surface>
+      <surface xml:id="facs__00004" n="Iv">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00004.jpg"/>
+      </surface>
+      <surface xml:id="facs__00005" n="IIr">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00005.jpg"/>
+      </surface>
+      <surface xml:id="facs__00006" n="IIv">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00006.jpg"/>
+      </surface>
+      <surface xml:id="facs__00007" n="IIIr">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00007.jpg"/>
+      </surface>
+      <surface xml:id="facs__00008" n="IIIv">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00008.jpg"/>
+      </surface>
+      <surface xml:id="facs__00009" n="IVr">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00009.jpg"/>
+      </surface>
+      <surface xml:id="facs__00010" n="IVv">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00010.jpg"/>
+      </surface>
+      <surface xml:id="facs__00011" n="1r">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00011.jpg"/>
+      </surface>
+      <surface xml:id="facs__00012" n="1v">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00012.jpg"/>
+      </surface>
+      <surface xml:id="facs__00013" n="2r">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00013.jpg"/>
+      </surface>
+      <surface xml:id="facs__00014" n="2v">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00014.jpg"/>
+      </surface>
+      <surface xml:id="facs__00015" n="3r">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00015.jpg"/>
+      </surface>
+      <surface xml:id="facs__00016" n="3v">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00016.jpg"/>
+      </surface>
+      <surface xml:id="facs__00017" n="4r">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00017.jpg"/>
+      </surface>
+      <surface xml:id="facs__00018" n="4v">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00018.jpg"/>
+      </surface>
+      <surface xml:id="facs__00019" n="5r">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00019.jpg"/>
+      </surface>
+      <surface xml:id="facs__00020" n="5v">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00020.jpg"/>
+      </surface>
+      <surface xml:id="facs__00021" n="6r">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00021.jpg"/>
+      </surface>
+      <surface xml:id="facs__00022" n="6v">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00022.jpg"/>
+      </surface>
+      <surface xml:id="facs__00023" n="7r">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00023.jpg"/>
+      </surface>
+      <surface xml:id="facs__00024" n="7v">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00024.jpg"/>
+      </surface>
+      <surface xml:id="facs__00025" n="8r">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00025.jpg"/>
+      </surface>
+      <surface xml:id="facs__00026" n="8v">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00026.jpg"/>
+      </surface>
+      <surface xml:id="facs__00027" n="9r">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00027.jpg"/>
+      </surface>
+      <surface xml:id="facs__00028" n="9v">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00028.jpg"/>
+      </surface>
+      <surface xml:id="facs__00029" n="10r">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00029.jpg"/>
+      </surface>
+      <surface xml:id="facs__00030" n="10v">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00030.jpg"/>
+      </surface>
+      <surface xml:id="facs__00031" n="11r">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00031.jpg"/>
+      </surface>
+      <surface xml:id="facs__00032" n="11v">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00032.jpg"/>
+      </surface>
+      <surface xml:id="facs__00033" n="12r">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00033.jpg"/>
+      </surface>
+      <surface xml:id="facs__00034" n="12v">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00034.jpg"/>
+      </surface>
+      <surface xml:id="facs__00035" n="13r">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00035.jpg"/>
+      </surface>
+      <surface xml:id="facs__00036" n="13v">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00036.jpg"/>
+      </surface>
+      <surface xml:id="facs__00037" n="14r">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00037.jpg"/>
+      </surface>
+      <surface xml:id="facs__00038" n="14v">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00038.jpg"/>
+      </surface>
+      <surface xml:id="facs__00039" n="15r">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00039.jpg"/>
+      </surface>
+      <surface xml:id="facs__00040" n="15v">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00040.jpg"/>
+      </surface>
+      <surface xml:id="facs__00041" n="16r">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00041.jpg"/>
+         <zone xml:id="zone.wm4_hqv_spb" ulx="50" uly="163" lrx="259" lry="386"/>
+      </surface>
+      <surface xml:id="facs__00042" n="16v">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00042.jpg"/>
+      </surface>
+      <surface xml:id="facs__00043" n="17r">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00043.jpg"/>
+      </surface>
+      <surface xml:id="facs__00044" n="17v">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00044.jpg"/>
+      </surface>
+      <surface xml:id="facs__00045" n="18r">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00045.jpg"/>
+      </surface>
+      <surface xml:id="facs__00046" n="18v">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00046.jpg"/>
+      </surface>
+      <surface xml:id="facs__00047" n="19r">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00047.jpg"/>
+      </surface>
+      <surface xml:id="facs__00048" n="19v">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00048.jpg"/>
+      </surface>
+      <surface xml:id="facs__00049" n="20r">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00049.jpg"/>
+      </surface>
+      <surface xml:id="facs__00050" n="20v">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00050.jpg"/>
+      </surface>
+      <surface xml:id="facs__00051" n="21r">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00051.jpg"/>
+      </surface>
+      <surface xml:id="facs__00052" n="21v">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00052.jpg"/>
+      </surface>
+      <surface xml:id="facs__00053" n="22r">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00053.jpg"/>
+      </surface>
+      <surface xml:id="facs__00054" n="22v">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00054.jpg"/>
+      </surface>
+      <surface xml:id="facs__00055" n="23r">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00055.jpg"/>
+      </surface>
+      <surface xml:id="facs__00056" n="23v">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00056.jpg"/>
+      </surface>
+      <surface xml:id="facs__00057" n="24r">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00057.jpg"/>
+      </surface>
+      <surface xml:id="facs__00058" n="24v">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00058.jpg"/>
+      </surface>
+      <surface xml:id="facs__00059" n="25r">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00059.jpg"/>
+      </surface>
+      <surface xml:id="facs__00060" n="25v">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00060.jpg"/>
+      </surface>
+      <surface xml:id="facs__00061" n="26r">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00061.jpg"/>
+      </surface>
+      <surface xml:id="facs__00062" n="26v">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00062.jpg"/>
+      </surface>
+      <surface xml:id="facs__00063" n="27r">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00063.jpg"/>
+      </surface>
+      <surface xml:id="facs__00064" n="27v">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00064.jpg"/>
+      </surface>
+      <surface xml:id="facs__00065" n="28r">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00065.jpg"/>
+      </surface>
+      <surface xml:id="facs__00066" n="28v">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00066.jpg"/>
+      </surface>
+      <surface xml:id="facs__00067" n="29r">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00067.jpg"/>
+      </surface>
+      <surface xml:id="facs__00068" n="29v">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00068.jpg"/>
+      </surface>
+      <surface xml:id="facs__00069" n="30r">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00069.jpg"/>
+      </surface>
+      <surface xml:id="facs__00070" n="30v">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00070.jpg"/>
+      </surface>
+      <surface xml:id="facs__00071" n="31r">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00071.jpg"/>
+      </surface>
+      <surface xml:id="facs__00072" n="31v">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00072.jpg"/>
+      </surface>
+      <surface xml:id="facs__00073" n="32r">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00073.jpg"/>
+      </surface>
+      <surface xml:id="facs__00074" n="32v">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00074.jpg"/>
+      </surface>
+      <surface xml:id="facs__00075" n="33r">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00075.jpg"/>
+      </surface>
+      <surface xml:id="facs__00076" n="33v">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00076.jpg"/>
+      </surface>
+      <surface xml:id="facs__00077" n="34r">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00077.jpg"/>
+      </surface>
+      <surface xml:id="facs__00078" n="34v">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00078.jpg"/>
+      </surface>
+      <surface xml:id="facs__00079" n="35r">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00079.jpg"/>
+      </surface>
+      <surface xml:id="facs__00080" n="35v">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00080.jpg"/>
+      </surface>
+      <surface xml:id="facs__00081" n="36r">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00081.jpg"/>
+      </surface>
+      <surface xml:id="facs__00082" n="36v">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00082.jpg"/>
+      </surface>
+      <surface xml:id="facs__00083" n="37r">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00083.jpg"/>
+      </surface>
+      <surface xml:id="facs__00084" n="37v">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00084.jpg"/>
+      </surface>
+      <surface xml:id="facs__00085" n="38r">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00085.jpg"/>
+      </surface>
+      <surface xml:id="facs__00086" n="38v">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00086.jpg"/>
+      </surface>
+      <surface xml:id="facs__00087" n="39r">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00087.jpg"/>
+      </surface>
+      <surface xml:id="facs__00088" n="39v">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00088.jpg"/>
+      </surface>
+      <surface xml:id="facs__00089" n="40r">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00089.jpg"/>
+      </surface>
+      <surface xml:id="facs__00090" n="40v">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00090.jpg"/>
+      </surface>
+      <surface xml:id="facs__00091" n="41r">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00091.jpg"/>
+      </surface>
+      <surface xml:id="facs__00092" n="41v">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00092.jpg"/>
+      </surface>
+      <surface xml:id="facs__00093" n="42r">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00093.jpg"/>
+      </surface>
+      <surface xml:id="facs__00094" n="42v">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00094.jpg"/>
+      </surface>
+      <surface xml:id="facs__00095" n="43r">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00095.jpg"/>
+      </surface>
+      <surface xml:id="facs__00096" n="43v">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00096.jpg"/>
+      </surface>
+      <surface xml:id="facs__00097" n="44r">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00097.jpg"/>
+      </surface>
+      <surface xml:id="facs__00098" n="44v">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00098.jpg"/>
+      </surface>
+      <surface xml:id="facs__00099" n="45r">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00099.jpg"/>
+      </surface>
+      <surface xml:id="facs__00100" n="45v">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00100.jpg"/>
+      </surface>
+      <surface xml:id="facs__00101" n="46r">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00101.jpg"/>
+      </surface>
+      <surface xml:id="facs__00102" n="46v">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00102.jpg"/>
+      </surface>
+      <surface xml:id="facs__00103" n="47r">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00103.jpg"/>
+      </surface>
+      <surface xml:id="facs__00104" n="47v">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00104.jpg"/>
+      </surface>
+      <surface xml:id="facs__00105" n="48r">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00105.jpg"/>
+      </surface>
+      <surface xml:id="facs__00106" n="48v">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00106.jpg"/>
+      </surface>
+      <surface xml:id="facs__00107" n="49r">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00107.jpg"/>
+      </surface>
+      <surface xml:id="facs__00108" n="49v">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00108.jpg"/>
+      </surface>
+      <surface xml:id="facs__00109" n="50r">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00109.jpg"/>
+      </surface>
+      <surface xml:id="facs__00110" n="50v">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00110.jpg"/>
+      </surface>
+      <surface xml:id="facs__00111" n="51r">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00111.jpg"/>
+      </surface>
+      <surface xml:id="facs__00112" n="51v">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00112.jpg"/>
+      </surface>
+      <surface xml:id="facs__00113" n="52r">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00113.jpg"/>
+      </surface>
+      <surface xml:id="facs__00114" n="52v">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00114.jpg"/>
+      </surface>
+      <surface xml:id="facs__00115" n="53r">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00115.jpg"/>
+      </surface>
+      <surface xml:id="facs__00116" n="53v">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00116.jpg"/>
+      </surface>
+      <surface xml:id="facs__00117" n="54r">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00117.jpg"/>
+      </surface>
+      <surface xml:id="facs__00118" n="54v">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00118.jpg"/>
+      </surface>
+      <surface xml:id="facs__00119" n="55r">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00119.jpg"/>
+      </surface>
+      <surface xml:id="facs__00120" n="55v">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00120.jpg"/>
+      </surface>
+      <surface xml:id="facs__00121" n="56r">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00121.jpg"/>
+      </surface>
+      <surface xml:id="facs__00122" n="56v">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00122.jpg"/>
+      </surface>
+      <surface xml:id="facs__00123" n="57r">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00123.jpg"/>
+      </surface>
+      <surface xml:id="facs__00124" n="57v">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00124.jpg"/>
+      </surface>
+      <surface xml:id="facs__00125" n="58r">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00125.jpg"/>
+      </surface>
+      <surface xml:id="facs__00126" n="58v">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00126.jpg"/>
+      </surface>
+      <surface xml:id="facs__00127" n="59r">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00127.jpg"/>
+      </surface>
+      <surface xml:id="facs__00128" n="59v">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00128.jpg"/>
+      </surface>
+      <surface xml:id="facs__00129" n="60r">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00129.jpg"/>
+      </surface>
+      <surface xml:id="facs__00130" n="60v">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00130.jpg"/>
+      </surface>
+      <surface xml:id="facs__00131" n="61r">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00131.jpg"/>
+      </surface>
+      <surface xml:id="facs__00132" n="61v">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00132.jpg"/>
+      </surface>
+      <surface xml:id="facs__00133" n="62r">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00133.jpg"/>
+      </surface>
+      <surface xml:id="facs__00134" n="62v">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00134.jpg"/>
+      </surface>
+      <surface xml:id="facs__00135" n="63r">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00135.jpg"/>
+      </surface>
+      <surface xml:id="facs__00136" n="63v">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00136.jpg"/>
+      </surface>
+      <surface xml:id="facs__00137" n="64r">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00137.jpg"/>
+      </surface>
+      <surface xml:id="facs__00138" n="64v">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00138.jpg"/>
+      </surface>
+      <surface xml:id="facs__00139" n="65r">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00139.jpg"/>
+      </surface>
+      <surface xml:id="facs__00140" n="65v">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00140.jpg"/>
+      </surface>
+      <surface xml:id="facs__00141" n="66r">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00141.jpg"/>
+      </surface>
+      <surface xml:id="facs__00142" n="66v">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00142.jpg"/>
+      </surface>
+      <surface xml:id="facs__00143" n="67r">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00143.jpg"/>
+      </surface>
+      <surface xml:id="facs__00144" n="67v">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00144.jpg"/>
+      </surface>
+      <surface xml:id="facs__00145" n="68r">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00145.jpg"/>
+      </surface>
+      <surface xml:id="facs__00146" n="68v">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00146.jpg"/>
+      </surface>
+      <surface xml:id="facs__00147" n="69r">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00147.jpg"/>
+      </surface>
+      <surface xml:id="facs__00148" n="69v">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00148.jpg"/>
+      </surface>
+      <surface xml:id="facs__00149" n="70r">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00149.jpg"/>
+      </surface>
+      <surface xml:id="facs__00150" n="70v">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00150.jpg"/>
+      </surface>
+      <surface xml:id="facs__00151" n="71r">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00151.jpg"/>
+      </surface>
+      <surface xml:id="facs__00152" n="71v">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00152.jpg"/>
+      </surface>
+      <surface xml:id="facs__00153" n="72r">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00153.jpg"/>
+      </surface>
+      <surface xml:id="facs__00154" n="72v">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00154.jpg"/>
+      </surface>
+      <surface xml:id="facs__00155" n="73r">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00155.jpg"/>
+      </surface>
+      <surface xml:id="facs__00156" n="73v">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00156.jpg"/>
+      </surface>
+      <surface xml:id="facs__00157" n="74r">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00157.jpg"/>
+      </surface>
+      <surface xml:id="facs__00158" n="74v">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00158.jpg"/>
+      </surface>
+      <surface xml:id="facs__00159" n="75r">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00159.jpg"/>
+      </surface>
+      <surface xml:id="facs__00160" n="75v">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00160.jpg"/>
+      </surface>
+      <surface xml:id="facs__00161" n="76r">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00161.jpg"/>
+      </surface>
+      <surface xml:id="facs__00162" n="76v">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00162.jpg"/>
+      </surface>
+      <surface xml:id="facs__00163" n="77r">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00163.jpg"/>
+      </surface>
+      <surface xml:id="facs__00164" n="77v">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00164.jpg"/>
+      </surface>
+      <surface xml:id="facs__00165" n="78r">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00165.jpg"/>
+      </surface>
+      <surface xml:id="facs__00166" n="78v">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00166.jpg"/>
+      </surface>
+      <surface xml:id="facs__00167" n="79r">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00167.jpg"/>
+      </surface>
+      <surface xml:id="facs__00168" n="79v">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00168.jpg"/>
+      </surface>
+      <surface xml:id="facs__00169" n="80r">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00169.jpg"/>
+      </surface>
+      <surface xml:id="facs__00170" n="80v">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00170.jpg"/>
+      </surface>
+      <surface xml:id="facs__00171" n="81r">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00171.jpg"/>
+      </surface>
+      <surface xml:id="facs__00172" n="81v">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00172.jpg"/>
+      </surface>
+      <surface xml:id="facs__00173" n="82r">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00173.jpg"/>
+      </surface>
+      <surface xml:id="facs__00174" n="82v">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00174.jpg"/>
+      </surface>
+      <surface xml:id="facs__00175" n="83r">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00175.jpg"/>
+      </surface>
+      <surface xml:id="facs__00176" n="83v">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00176.jpg"/>
+      </surface>
+      <surface xml:id="facs__00177" n="84r">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00177.jpg"/>
+      </surface>
+      <surface xml:id="facs__00178" n="84v">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00178.jpg"/>
+      </surface>
+      <surface xml:id="facs__00179" n="85r">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00179.jpg"/>
+      </surface>
+      <surface xml:id="facs__00180" n="85v">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00180.jpg"/>
+      </surface>
+      <surface xml:id="facs__00181" n="86r">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00181.jpg"/>
+      </surface>
+      <surface xml:id="facs__00182" n="86v">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00182.jpg"/>
+      </surface>
+      <surface xml:id="facs__00183" n="87r">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00183.jpg"/>
+      </surface>
+      <surface xml:id="facs__00184" n="87v">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00184.jpg"/>
+      </surface>
+      <surface xml:id="facs__00185" n="88r">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00185.jpg"/>
+      </surface>
+      <surface xml:id="facs__00186" n="88v">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00186.jpg"/>
+      </surface>
+      <surface xml:id="facs__00187" n="89r">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00187.jpg"/>
+      </surface>
+      <surface xml:id="facs__00188" n="89v">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00188.jpg"/>
+      </surface>
+      <surface xml:id="facs__00189" n="90r">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00189.jpg"/>
+      </surface>
+      <surface xml:id="facs__00190" n="90v">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00190.jpg"/>
+      </surface>
+      <surface xml:id="facs__00191" n="91r">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00191.jpg"/>
+      </surface>
+      <surface xml:id="facs__00192" n="91v">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00192.jpg"/>
+      </surface>
+      <surface xml:id="facs__00193" n="92r">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00193.jpg"/>
+      </surface>
+      <surface xml:id="facs__00194" n="92v">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00194.jpg"/>
+      </surface>
+      <surface xml:id="facs__00195" n="93r">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00195.jpg"/>
+      </surface>
+      <surface xml:id="facs__00196" n="93v">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00196.jpg"/>
+      </surface>
+      <surface xml:id="facs__00197" n="94r">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00197.jpg"/>
+      </surface>
+      <surface xml:id="facs__00198" n="94v">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00198.jpg"/>
+      </surface>
+      <surface xml:id="facs__00199" n="95r">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00199.jpg"/>
+      </surface>
+      <surface xml:id="facs__00200" n="95v">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00200.jpg"/>
+      </surface>
+      <surface xml:id="facs__00201" n="96r">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00201.jpg"/>
+      </surface>
+      <surface xml:id="facs__00202" n="96v">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00202.jpg"/>
+      </surface>
+      <surface xml:id="facs__00203" n="97r">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00203.jpg"/>
+      </surface>
+      <surface xml:id="facs__00204" n="97v">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00204.jpg"/>
+      </surface>
+      <surface xml:id="facs__00205" n="98r">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00205.jpg"/>
+      </surface>
+      <surface xml:id="facs__00206" n="98v">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00206.jpg"/>
+      </surface>
+      <surface xml:id="facs__00207" n="99r">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00207.jpg"/>
+      </surface>
+      <surface xml:id="facs__00208" n="99v">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00208.jpg"/>
+      </surface>
+      <surface xml:id="facs__00209" n="100r">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00209.jpg"/>
+      </surface>
+      <surface xml:id="facs__00210" n="100v">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00210.jpg"/>
+      </surface>
+      <surface xml:id="facs__00211" n="101r">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00211.jpg"/>
+      </surface>
+      <surface xml:id="facs__00212" n="101v">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00212.jpg"/>
+      </surface>
+      <surface xml:id="facs__00213" n="102r">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00213.jpg"/>
+      </surface>
+      <surface xml:id="facs__00214" n="102v">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00214.jpg"/>
+      </surface>
+      <surface xml:id="facs__00215" n="103r">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00215.jpg"/>
+      </surface>
+      <surface xml:id="facs__00216" n="103v">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00216.jpg"/>
+      </surface>
+      <surface xml:id="facs__00217" n="104r">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00217.jpg"/>
+      </surface>
+      <surface xml:id="facs__00218" n="104v">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00218.jpg"/>
+      </surface>
+      <surface xml:id="facs__00219" n="105r">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00219.jpg"/>
+      </surface>
+      <surface xml:id="facs__00220" n="105v">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00220.jpg"/>
+      </surface>
+      <surface xml:id="facs__00221" n="106r">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00221.jpg"/>
+      </surface>
+      <surface xml:id="facs__00222" n="106v">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00222.jpg"/>
+      </surface>
+      <surface xml:id="facs__00223" n="107r">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00223.jpg"/>
+      </surface>
+      <surface xml:id="facs__00224" n="107v">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00224.jpg"/>
+      </surface>
+      <surface xml:id="facs__00225" n="108r">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00225.jpg"/>
+      </surface>
+      <surface xml:id="facs__00226" n="108v">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00226.jpg"/>
+      </surface>
+      <surface xml:id="facs__00227" n="I*r">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00227.jpg"/>
+      </surface>
+      <surface xml:id="facs__00228" n="I*v">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00228.jpg"/>
+      </surface>
+      <surface xml:id="facs__00229" n="II*r">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00229.jpg"/>
+      </surface>
+      <surface xml:id="facs__00230" n="II*v">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00230.jpg"/>
+      </surface>
+      <surface xml:id="facs__00231" n="III*r">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00231.jpg"/>
+      </surface>
+      <surface xml:id="facs__00232" n="III*v">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00232.jpg"/>
+      </surface>
+      <surface xml:id="facs__00233" n="HS">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00233.jpg"/>
+      </surface>
+      <surface xml:id="facs__00234" n="HD">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/00234.jpg"/>
+      </surface>
+      <surface xml:id="facs__eb01" n="Rücken">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/eb01.jpg"/>
+      </surface>
+      <surface xml:id="facs__eb02" n="Oberschnitt">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/eb02.jpg"/>
+      </surface>
+      <surface xml:id="facs__eb03" n="Vorderschnitt">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/eb03.jpg"/>
+      </surface>
+      <surface xml:id="facs__eb04" n="Unterschnitt">
+         <graphic url="http://diglib.hab.de/mss/32-weiss/eb04.jpg"/>
+      </surface>
+   </facsimile>
+</TEI>
