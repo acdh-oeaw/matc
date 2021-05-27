@@ -2,6 +2,10 @@
 * no-server-publishing of TEI-Files
 * https://github.com/oxygenxml/TEI-Facsimile-Plugin
 
+# gitlabe pages
+
+https://acdh-oeaw.gitlab.io/margins/matc-data/
+
 ## set up of work-environment
 
 * install [TEI-Facsimile-Plugin](https://github.com/oxygenxml/TEI-Facsimile-Plugin)
@@ -28,9 +32,9 @@
 ```xml
 <p>here is the <pb n="16r" xml:id="page__00041" facs="#facs__00041"/>
 transcription of the main text
-<note @place="margin-left" facs="#zone.1.2.4">transcription of the margin</note>
+<note place="margin-left" facs="#zone.1.2.4">transcription of the margin</note>
 and here continues the transcription until the next margin
-<note @place="margin-right" facs="#zone.3.2.4">transcription of the margin</note>
+<note place="margin-right" facs="#zone.3.2.4">transcription of the margin</note>
 and the transcription continues further</p>
 ```
 
