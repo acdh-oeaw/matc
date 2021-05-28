@@ -489,7 +489,7 @@
          <zone xml:id="zone.zyx_dbk_tpb" ulx="557" uly="658" lrx="707" lry="696"/>
          <zone xml:id="zone.dpj_gdk_tpb" ulx="715" uly="655" lrx="796" lry="676"/>
          <zone xml:id="zone.yrd_xck_tpb" ulx="624" uly="655" lrx="728" lry="682"/>
-         <zone ulx="567" uly="651" lrx="628" lry="678"/>
+         <zone xml:id="zone.sh5_w2k_tpb" ulx="567" uly="651" lrx="628" lry="678"/>
          <zone xml:id="zone.p3x_ybk_tpb" ulx="564" uly="667" lrx="617" lry="678"/>
          <zone xml:id="zone.lym_12k_tpb" ulx="765" uly="674" lrx="896" lry="690"/>
       </surface>
