@@ -97,8 +97,20 @@
                   </listBibl>
                </additional>
             </msDesc>
+            <bibl>
+               <bibl xml:id="hieronymus-1"><author>Hieronymus</author><title>Commentary</title></bibl>
+            </bibl>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="common-glosses">
+               <category xml:id="encyclopedic-gloss">
+                  <catDesc>Gloss for additional encyclopedic information</catDesc>
+               </category>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <textClass>
             <keywords scheme="#gnd">
@@ -145,29 +157,34 @@
             <pb n="9v" xml:id="page__00028" facs="#facs__00028"/>
             <pb n="10r" xml:id="page__00029" facs="#facs__00029"/>
             <pb n="10v" xml:id="page__00030" facs="#facs__00030"/>
-            <p>
+            <div n="De Syllaba" corresp="http://stgallpriscian.ie/images/keil/Keil_v2_044.gif">
                <l n="25">
+                  <quote source="Garcea, (ed.), II 44,2">Priscianus Caesariensis grammaticus Iuliano consuli ac patricio. cum
+                  omnis eloquentiae doctrinam</quote>
                   <app>
                      <lem wit="#EDITION">
                         dyonima vel trionyma
                      </lem>
                      <rdg wit="#COD_50" facs="#zone.zyx_dbk_tpb">
                         dyonima
-                        <add place="above" hand="#gl_1" facs="#zone.zyx_dbk_tpb" xml:lang="lat" type="enciclopedic_glosses" subtype="#proper_name">
+                        <add place="left margin" hand="#gl_1" facs="#zone.zyx_dbk_tpb" xml:lang="lat" ana="#encyclopedic-gloss #proper-name" subtype="#proper_name">
                            ut simon petrus
                         </add> 
                         <add place="above" hand="#gl_2" facs="#zone.p3x_ybk_tpb" xml:lang="lat" type="enciclopedic_glosses" subtype="proper_name">
                            ouidius naso
                         </add>
-                        vel trionyma
+                        vel trionima
                         <add place="above" hand="#gl_1" facs="#zone.yrd_xck_tpb" xml:lang="lat" type="enciclopedic_glosses" subtype="proper_name">
-                           ut iudas taddeus lippeus<note>Quelle: Kommentar des Hieronymus in Matthäum…</note>
+                           ut iudas taddeus lippeus<note><bibl corresp="#hieronymus-1">Hieronymus, Commentary <citedRange>II,9: 15</citedRange></bibl>Quelle: Kommentar des Hieronymus in Matthäum…</note>
                         </add>
                         <add place="above" hand="#gl_2" facs="#zone.dpj_gdk_tpb" xml:lang="lat" type="enciclopedic_glosses" subtype="proper_name">
                            ut publius uir<ex>gilius</ex> maro
+                           <choice><orig><abbr type="suspension">uir</abbr></orig><expan>uirgilius</expan></choice>
+                           <choice><orig>abc</orig><corr>acb</corr></choice>
+                           <add place="above">acb</add>
                         </add>
                      </rdg>
-                  </app>
+                  </app>                    
                </l>
                <l n="26">
                   <app>
@@ -182,7 +199,10 @@
                      </rdg>
                   </app>
                </l>
-            </p>
+            </div>
+            <div n="de nomina">
+               
+            </div>
             <pb n="11r" xml:id="page__00031" facs="#facs__00031"/>
             <pb n="11v" xml:id="page__00032" facs="#facs__00032"/>
             <pb n="12r" xml:id="page__00033" facs="#facs__00033"/>
@@ -492,6 +512,7 @@
          <zone xml:id="zone.sh5_w2k_tpb" ulx="567" uly="651" lrx="628" lry="678"/>
          <zone xml:id="zone.p3x_ybk_tpb" ulx="564" uly="667" lrx="617" lry="678"/>
          <zone xml:id="zone.lym_12k_tpb" ulx="765" uly="674" lrx="896" lry="690"/>
+         <zone ulx="282" uly="731" lrx="361" lry="751" xml:id="zone.00030.282_731"/>
       </surface>
       <surface xml:id="facs__00031" n="11r">
          <graphic url="http://diglib.hab.de/mss/50-weiss/00031.jpg"/>
