@@ -88,6 +88,11 @@
                         </extent>
                      </supportDesc>
                   </objectDesc>
+                  <handDesc>
+                    <handNote xml:id="scr-1">writer of the main text</handNote>
+                    <handNote xml:id="gl-1">first glossator, id est Otfrid of Wissembourg</handNote>
+                    <handNote xml:id="gl-2">second glossator</handNote>
+                  </handDesc>
                </physDesc>
                <additional>
                   <listBibl>
@@ -111,8 +116,33 @@
                <category xml:id="synonym">
                   <catDesc>Gloss for synonym</catDesc>
                </category>
+               <category xml:id="source-variant">
+                  <catDesc>Addition with variant reading of the main text</catDesc>
+               </category>
+               <category xml:id="explanatory-gloss">
+                  <catDesc>Gloss explaining the meaning of the lemma</catDesc>
+               </category>
             </taxonomy>
          </classDecl>
+         <listPrefixDef><prefixDef ident="images-keil" matchPattern="(Keil_[a-z][0-9]_[0-9]+\.gif)" replacementPattern="http://stgallpriscian.ie/images/keil/$1"><p>in the context of this project, private URLs with the prefix "image-keil" point to the pictures of the edition of Keil</p></prefixDef></listPrefixDef>
+         <charDecl>
+            <glyph xml:id="sdot">
+            <localProp name="Name"
+               value="LATIN ABBREVIATION FOR SCILICET"/>
+            <localProp name="entity" value="sdot"/>
+            <figure>
+               <graphic url="../pictures/scilicet.png"/>
+            </figure>
+         </glyph>
+            <glyph xml:id="idest">
+               <localProp name="Name"
+                  value="LATIN ABBREVIATION FOR ID EST"/>
+               <localProp name="entity" value="idest"/>
+               <figure>
+                  <graphic url="../pictures/idest.png"/>
+               </figure>
+            </glyph>
+         </charDecl>
       </encodingDesc>
       <profileDesc>
          <textClass>
@@ -141,29 +171,48 @@
             <pb n="IVr" xml:id="page__00009" facs="#facs__00009"/>
             <pb n="IVv" xml:id="page__00010" facs="#facs__00010"/>
             <pb n="1r" xml:id="page__00011" facs="#facs__00011"/>
-                <div n="Praefatio" corresp="http://stgallpriscian.ie/images/keil/Keil_v2_001.gif">
+                <div n="Praefatio" xml:id="praefatio.1" next="#praefatio.2" corresp="images-keil:Keil_v2_001.gif">
                    <quote source="#EDITION" n="II 1,0"><lb n="1"/>Priscianus Caesariensis grammaticus<lb n="2"/>Iuliano consuli ac patricio</quote>
-                   <app>
+                   <app type="text-variation">
                       <lem wit="#EDITION">Caesariensis</lem>
                       <rdg wit="#COD_50"></rdg>
                    </app>
                    <quote source="#EDITION" n="II 1,1"><lb n="3"/>cum omnis eloquentiae doctrinam et omne studiorum genus</quote>
                    <quote source="#EDITION" n="II 1,2">sapientiae luce<lb n="4"/><gap reason="illegible" unit="char" quantity="7"/><supplied resp="Grifoni" reason="illegible">praeful</supplied>gens a Graecorum fontibus deriuatum Latinos proprio</quote>
-                   <app>
-                      <lem wit="#EDITION">Graecorum</lem>
-                      <rdg wit="#COD_50">grecorum</rdg>
-                   </app>
-                   <app>
-                      <lem wit="#EDITION">deriuatum</lem>
-                      <rdg wit="#COD_50">diriuatum</rdg>
-                   </app>
-                   <quote source="#EDITION" n="II 1,3">sermone inuenio celebrasse et in omni<lb n="5" break="no"/>bus illorum uestigia liberalibus</quote>
-                   <app>
+                   <quote source="#EDITION" n="II 1,3">sermone inuenio celebrasse et in omni<lb n="5" break="no"/>bus illorum uestigia <w corresp="#II-1-4-2">liberalibus</w></quote>
+                   <app type="gloss">
                       <lem wit="#EDITION">celebrasse</lem>
-                      <rdg wit="#COD_50"><add place="above" hand="#gl_1" facs="#zone.1r.1" xml:lang="lat" ana="#synonym">diffamasse</add></rdg>
+                      <rdg wit="#COD_50"><add place="above" hand="#gl-1" facs="#zone.1r.1" xml:lang="lat" ana="#synonym">diffamasse</add></rdg>
                    </app>
+                   <app type="gloss">
+                      <lem wit="#EDITION">et in</lem>
+                      <rdg wit="#COD_50"><add place="above" hand="#scr-1" facs="#zone.1r.2" xml:lang="lat" ana="#source-variant"><g ref="#sdot"/> cum</add></rdg>
+                   </app>
+                   <note place="right margin" type="gloss" subtype="to-be-checked" hand="#gl-1" facs="#zone.1r.3" xml:lang="lat">propter sententiae prolixitatem...addidit...</note>
+                   <app type="gloss">
+                      <lem wit="#EDITION">liberalibus</lem>
+                      <rdg wit="#COD_50"><add place="above" hand="#gl-1" facs="#zone.1r.4" xml:lang="lat" ana="#explanatory-gloss">nobilibus quia liberi homines artem discebant uel quia liberos faciunt homines a uitiis</add></rdg>
+                   </app>
+                   <quote source="#EDITION" n="II 1,4">consecutos <w xml:id="II-1-4-2">artibus</w> uideo, nec solum ea, quae emendate ab illis sunt prolata,<lb n="6"/> sed</quote>
+                   <app type="text-variation">
+                      <lem wit="#EDITION">ea</lem>
+                      <rdg wit="#COD_50"></rdg>
+                   </app>
+                   <app type="text-variation">
+                      <lem wit="#EDITION">prolata</lem>
+                      <rdg wit="#COD_50">scripta</rdg>
+                   </app>
+                   <app type="gloss">
+                      <lem wit="#EDITION">emendate</lem>
+                      <rdg wit="#COD_50"><add place="above" hand="#gl-1" facs="#zone.1r.5" xml:lang="lat" ana="#explanatory-gloss"><g ref="#idest"/> bene</add></rdg>
+                   </app>
+                   <quote source="#EDITION" n="II 1,5">etiam quosdam errores eorum amore <add type="text-variation" hand="#scr-1">grecorum</add> doctorum deceptos imitari, in quibus</quote>
+                   
+                   <quote source="#EDITION" n="II 1,6">maxime uetustissi<lb n="7" break="no"/>ma grammatica ars arguitur peccasse, cuius auctores,</quote>
                 </div>
             <pb n="1v" xml:id="page__00012" facs="#facs__00012"/>
+               <div n="Praefatio" xml:id="praefatio.2" prev="#praefatio.1" next="#praefatio.3" corresp="images-keil:Keil_v2_002.gif">
+               </div>
             <pb n="2r" xml:id="page__00013" facs="#facs__00013"/>
             <pb n="2v" xml:id="page__00014" facs="#facs__00014"/>
             <pb n="3r" xml:id="page__00015" facs="#facs__00015"/>
@@ -192,17 +241,17 @@
                      </lem>
                      <rdg wit="#COD_50" facs="#zone.zyx_dbk_tpb">
                         dyonima
-                        <add place="left margin" hand="#gl_1" facs="#zone.zyx_dbk_tpb" xml:lang="lat" ana="#encyclopedic-gloss #proper-name" subtype="#proper_name">
+                        <add place="left margin" hand="#gl-1" facs="#zone.zyx_dbk_tpb" xml:lang="lat" ana="#encyclopedic-gloss #proper-name" subtype="#proper_name">
                            ut simon petrus
                         </add> 
-                        <add place="above" hand="#gl_2" facs="#zone.p3x_ybk_tpb" xml:lang="lat" type="enciclopedic_glosses" subtype="proper_name">
+                        <add place="above" hand="#gl-2" facs="#zone.p3x_ybk_tpb" xml:lang="lat" type="enciclopedic_glosses" subtype="proper_name">
                            ouidius naso
                         </add>
                         vel trionima
-                        <add place="above" hand="#gl_1" facs="#zone.yrd_xck_tpb" xml:lang="lat" type="enciclopedic_glosses" subtype="proper_name">
+                        <add place="above" hand="#gl-1" facs="#zone.yrd_xck_tpb" xml:lang="lat" type="enciclopedic_glosses" subtype="proper_name">
                            ut iudas taddeus lippeus<note><bibl corresp="#hieronymus-1">Hieronymus, Commentary <citedRange>II,9: 15</citedRange></bibl>Quelle: Kommentar des Hieronymus in Matthäum…</note>
                         </add>
-                        <add place="above" hand="#gl_2" facs="#zone.dpj_gdk_tpb" xml:lang="lat" type="enciclopedic_glosses" subtype="proper_name">
+                        <add place="above" hand="#gl-2" facs="#zone.dpj_gdk_tpb" xml:lang="lat" type="enciclopedic_glosses" subtype="proper_name">
                            ut publius uir<ex>gilius</ex> maro
                            <choice><orig><abbr type="suspension">uir</abbr></orig><expan>uirgilius</expan></choice>
                            <choice><orig>abc</orig><corr>acb</corr></choice>
@@ -218,7 +267,7 @@
                      </lem>
                      <rdg wit="#COD_50">
                         patria
-                        <add place="above" hand="#gl_1" facs="#zone.lym_12k_tpb" xml:lang="lat" type="Glosses_elucidating_the_main_text">
+                        <add place="above" hand="#gl-1" facs="#zone.lym_12k_tpb" xml:lang="lat" type="Glosses_elucidating_the_main_text">
                            patria est territorium unius ciuitatis 
                         </add>
                      </rdg>
@@ -475,6 +524,10 @@
       <surface xml:id="facs__00011" n="1r">
          <graphic url="http://diglib.hab.de/mss/50-weiss/00011.jpg"/>
          <zone xml:id="zone.1r.1" ulx="641" uly="262" lrx="699" lry="276"/>
+         <zone xml:id="zone.1r.5" ulx="612" uly="283" lrx="648" lry="298"/>
+         <zone xml:id="zone.1r.4" ulx="285" uly="283" lrx="553" lry="300"/>
+         <zone xml:id="zone.1r.3" ulx="761" uly="240" lrx="877" lry="295"/>
+         <zone xml:id="zone.1r.2" ulx="713" uly="261" lrx="749" lry="273"/>
       </surface>
       <surface xml:id="facs__00012" n="1v">
          <graphic url="http://diglib.hab.de/mss/50-weiss/00012.jpg"/>
