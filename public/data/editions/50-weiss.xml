@@ -110,17 +110,134 @@
       <encodingDesc>
          <classDecl>
             <taxonomy xml:id="common-glosses">
-               <category xml:id="encyclopedic-gloss">
-                  <catDesc>Gloss for additional encyclopedic information</catDesc>
+               <category xml:id="glosses-on-prosody" n="1">
+                  <catDesc>Gloss commenting on the prosody of a poetic quote</catDesc>
+                </category>
+               <category xml:id="length-mark" n="11">
+                  <catDesc>Prosodic mark indicating syllable length in poetic quotes</catDesc>
                </category>
-               <category xml:id="synonym">
-                  <catDesc>Gloss for synonym</catDesc>
+               <category xml:id="length-of-syllables" n="12">
+                  <catDesc>Gloss on prosody indicating syllable length in poetic quotes</catDesc>
                </category>
-               <category xml:id="source-variant">
-                  <catDesc>Addition with variant reading of the main text</catDesc>
+               <category xml:id="comment-on-metre" n="13">
+                  <catDesc>Gloss on prosody containing an elaborated comment on metre</catDesc>
                </category>
-               <category xml:id="explanatory-gloss">
-                  <catDesc>Gloss explaining the meaning of the lemma</catDesc>
+               <category xml:id="lexical-glosses" n="2">
+                  <catDesc>Gloss commenting on the terms oncurring in Priscian's text</catDesc>
+               </category>
+               <category xml:id="translation-into-Old-High-German" n="211">
+                  <catDesc>Lexical gloss providing a translation into Old-High-German</catDesc>
+               </category>
+               <category xml:id="synonyms" n="212">
+                  <catDesc>Lexical gloss providing a synonym</catDesc>
+               </category>
+               <category xml:id="negated-antonyms" n="213">
+                  <catDesc>Lexical gloss explaining a term through the negation of its contrary</catDesc>
+               </category>
+               <category xml:id="definition-given-by-an-entire-sentence" n="215">
+                  <catDesc>Lexical gloss explaining a term through an entire sentence</catDesc>
+               </category>
+               <category xml:id="Greek-glosses" n="221">
+                  <catDesc>Lexical gloss in Greek or explaining Greek words</catDesc>
+               </category>
+               <category xml:id="use-of-different-prefixes" n="222">
+                  <catDesc>Lexical gloss explaining a word by changing the prefix</catDesc>
+               </category>
+               <category xml:id="adjectives-glossed-with-a-noun" n="223">
+                  <catDesc>Lexical gloss explaining an adjective with the corresponding noun</catDesc>
+               </category>
+               <category xml:id="differentiae" n="23">
+                  <catDesc>Lexical gloss explaining a term by a differentia</catDesc>
+               </category>
+               <category xml:id="further-derivations" n="24">
+                  <catDesc>Lexical gloss adding further terms derving from the same root</catDesc>
+               </category>
+               <category xml:id="original-parts-of-a-word" n="25">
+                  <catDesc>Lexical gloss showing the original parts of a composite word</catDesc>
+               </category>
+               <category xml:id="grammatical-glosses" n="3">
+                  <catDesc>morphological gloss identifying the function of a word in the sentence</catDesc>
+               </category>
+               <category xml:id="grammatical-glosses-on-the-noun" n="31">
+                  <catDesc>morphological gloss commenting on either case, or number, or gender of a word</catDesc>
+               </category>
+               <category xml:id="grammatical-glosses-on-the-pronoun" n="32">
+                  <catDesc>morphological gloss showing either the pronoun type or the noun substituted by the pronoun</catDesc>
+               </category>
+               <category xml:id="grammatical-glosses-on-verb-participle-and-gerund" n="33">
+                  <catDesc>morphological gloss on verbal forms</catDesc>
+               </category>
+               <category xml:id="grammatical-glosses-on-the-adverb" n="34">
+                  <catDesc>morphological gloss on the adverb</catDesc>
+               </category>
+               <category xml:id="grammatical-glosses-on-the-conjunction" n="35">
+                  <catDesc>morphological gloss on the conjunction</catDesc>
+               </category>
+               <category xml:id="grammatical-glosses-on-the-preposition" n="36">
+                  <catDesc>morphological gloss on the preposition</catDesc>
+               </category>
+               <category xml:id="grammatical-glosses-on-the-interjection" n="37">
+                  <catDesc>morphological gloss on the interjenction</catDesc>
+               </category>
+               <category xml:id="synctatical-glosses" n="4">
+                  <catDesc>Glosses on syntax</catDesc>
+               </category>
+               <category xml:id="synctatical-glosses-using-symbols" n="41">
+                  <catDesc>construe-marks, i.e. symbols or letters, correlating words belonging together or establishing word order</catDesc>
+               </category>
+               <category xml:id="synctatical-glosses-using-words" n="42">
+                  <catDesc>glosses simplifying the understanding of a sentence by adding words which Priscian had only implied</catDesc>
+               </category>
+               <category xml:id="glosses-identifying-a-speaker-or-an-example" n="421">
+                  <catDesc>syntactical glosses adding an example</catDesc>
+               </category>
+               <category xml:id="suppletive-glosses" n="422">
+                  <catDesc>syntactical glosses adding words omitted by Priscian</catDesc>
+               </category>
+               <category xml:id="commentary-glosses" n="5">
+                  <catDesc>glosses commenting on the content of Priscian's work</catDesc>
+               </category>
+               <category xml:id="glosses-decoding-figures-of-speech" n="51">
+                  <catDesc>commentary glosses</catDesc>
+               </category>
+               <category xml:id="glosses-summarizing-content" n="52">
+                  <catDesc>commentary glosses</catDesc>
+               </category>
+               <category xml:id="cross-references" n="53">
+                  <catDesc>commentary glosses</catDesc>
+               </category>
+               <category xml:id="elaborate-comment-on-the-main-text" n="541">
+                  <catDesc>commentary glosses</catDesc>
+               </category>
+               <category xml:id="quia-glosses" n="542">
+                  <catDesc>commentary glosses beginning with quia</catDesc>
+               </category>
+               <category xml:id="glosses-elucidating-the-main-text" n="543">
+                  <catDesc>commentary glosses beginning normally with id est</catDesc>
+               </category>
+               <category xml:id="etymological-glosses" n="55">
+                  <catDesc>commentary glosses explaining the etymology of the lemma</catDesc>
+               </category>
+               <category xml:id="encyclopedic-glosses" n="56">
+                  <catDesc>commentary glosses expanding on the content of the main text</catDesc>
+               </category>
+               <category xml:id="geographical-names" n="561">
+                  <catDesc>commentary glosses with encyclopedic purpose using geographical names</catDesc>
+               </category>
+               <category xml:id="source-glosses" n="57">
+                  <catDesc>glosses giving information about their source</catDesc>
+               </category>
+               <category xml:id="source-or-comparison" n="571">
+                  <catDesc>glosses giving information about their source or confronting Priscian's text with other sources</catDesc>
+               </category>
+               <category xml:id="acquaintance-with-classics" n="572">
+                  <catDesc>glosses revealing acquaintance with Roman/Greek authors and mythology</catDesc>
+               </category>
+               <category xml:id="text-variant" n="58">
+                  <catDesc>glosses giving variant reading of the main text</catDesc>
+               </category>
+               <category xml:id="contemporary-socio-historical-context" n="59">
+                  <catDesc>glosses giving information about the socio-historical context of the glossator</catDesc>
                </category>
             </taxonomy>
          </classDecl>
@@ -182,16 +299,16 @@
                    <quote source="#EDITION" n="II 1,3">sermone inuenio celebrasse et in omni<lb n="5" break="no"/>bus illorum uestigia <w corresp="#II-1-4-2">liberalibus</w></quote>
                    <app type="gloss">
                       <lem wit="#EDITION">celebrasse</lem>
-                      <rdg wit="#COD_50"><add place="above" hand="#gl-1" facs="#zone.1r.1" xml:lang="lat" ana="#synonym">diffamasse</add></rdg>
+                      <rdg wit="#COD_50"><add place="above" hand="#gl-1" facs="#zone.1r.1" xml:lang="lat" ana="#synonyms">diffamasse</add></rdg>
                    </app>
                    <app type="gloss">
                       <lem wit="#EDITION">et in</lem>
-                      <rdg wit="#COD_50"><add place="above" hand="#scr-1" facs="#zone.1r.2" xml:lang="lat" ana="#source-variant"><g ref="#sdot"/> cum</add></rdg>
+                      <rdg wit="#COD_50"><add place="above" hand="#scr-1" facs="#zone.1r.2" xml:lang="lat" ana="#text-variant"><g ref="#sdot"/> cum</add></rdg>
                    </app>
                    <note place="right margin" type="gloss" subtype="to-be-checked" hand="#gl-1" facs="#zone.1r.3" xml:lang="lat">propter sententiae prolixitatem...addidit...</note>
                    <app type="gloss">
                       <lem wit="#EDITION">liberalibus</lem>
-                      <rdg wit="#COD_50"><add place="above" hand="#gl-1" facs="#zone.1r.4" xml:lang="lat" ana="#explanatory-gloss">nobilibus quia liberi homines artem discebant uel quia liberos faciunt homines a uitiis</add></rdg>
+                      <rdg wit="#COD_50"><add place="above" hand="#gl-1" facs="#zone.1r.4" xml:lang="lat" ana="#synonyms #quia-glosses">nobilibus quia liberi homines artem discebant uel quia liberos faciunt homines a uitiis</add></rdg>
                    </app>
                    <quote source="#EDITION" n="II 1,4">consecutos <w xml:id="II-1-4-2">artibus</w> uideo, nec solum ea, quae emendate ab illis sunt prolata,<lb n="6"/> sed</quote>
                    <app type="text-variation">
@@ -204,11 +321,13 @@
                    </app>
                    <app type="gloss">
                       <lem wit="#EDITION">emendate</lem>
-                      <rdg wit="#COD_50"><add place="above" hand="#gl-1" facs="#zone.1r.5" xml:lang="lat" ana="#explanatory-gloss"><g ref="#idest"/> bene</add></rdg>
+                      <rdg wit="#COD_50"><add place="above" hand="#gl-1" facs="#zone.1r.5" xml:lang="lat" ana="#synonyms"><g ref="#idest"/> bene</add></rdg>
                    </app>
                    <quote source="#EDITION" n="II 1,5">etiam quosdam errores eorum amore <add type="text-variation" hand="#scr-1">grecorum</add> doctorum deceptos imitari, in quibus</quote>
                    
                    <quote source="#EDITION" n="II 1,6">maxime uetustissi<lb n="7" break="no"/>ma grammatica ars arguitur peccasse, cuius auctores,</quote>
+                   <quote source="#EDITION" n="II 1,7">quanto sunt iuniores, tanto perspicaciores, et ingeniis floruisse <lb n="8"/>et</quote>
+                   <quote source="#EDITION" n="II 1,8">diligentia ualuisse omnium iudicio confirmantur eruditissimorum (quid enim</quote>
                 </div>
             <pb n="1v" xml:id="page__00012" facs="#facs__00012"/>
                <div n="Praefatio" xml:id="praefatio.2" prev="#praefatio.1" next="#praefatio.3" corresp="images-keil:Keil_v2_002.gif">
