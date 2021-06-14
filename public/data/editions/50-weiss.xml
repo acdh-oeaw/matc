@@ -281,7 +281,7 @@
                <figure>
                   <graphic url="../pictures/construe-mark-two-horizontal-dots.png"/>
                </figure>
-               <note>marks words having the same grammatical form</note>
+               <note>marks words syntactically connected</note>
             </glyph>
             <glyph xml:id="right-half-ring-with-dot">
                <localProp name="Name"
@@ -291,6 +291,33 @@
                   <graphic url="../pictures/construe-mark-dot-with-right-half-ring.png"/>
                </figure>
                <note>marks the main verb in the sentence</note>
+            </glyph>
+            <glyph xml:id="two-vertical-dots">
+               <localProp name="Name"
+                  value="CONSTRUE MARK TWO VERTICAL DOTS"/>
+               <localProp name="entity" value="two-vertical-dots"/>
+               <figure>
+                  <graphic url="../pictures/construe-mark-two-vertical-dots.png"/>
+               </figure>
+               <note>marks words syntactically connected</note>
+            </glyph>
+            <glyph xml:id="converging-strokes-with-dot-above">
+               <localProp name="Name"
+                  value="CONVERGING STROKES WITH DOT ABOVE"/>
+               <localProp name="entity" value="converging-strokes-with-dot-above"/>
+               <figure>
+                  <graphic url="../pictures/construe-mark-converging-strokes-with-dot-above.png"/>
+               </figure>
+               <note>marks words syntactically connected</note>
+            </glyph>
+            <glyph xml:id="two-converging-strokes">
+               <localProp name="Name"
+                  value="TWO CONVERGING STROKES"/>
+               <localProp name="entity" value="two-converging-strokes"/>
+               <figure>
+                  <graphic url="../pictures/ construe-mark-two-converging-strokes.png"/>
+               </figure>
+               <note>marks words syntactically connected</note>
             </glyph>
          </charDecl>
          <charDecl n="reference signs">
@@ -349,7 +376,11 @@
                       <rdg wit="#COD_50"><add place="above" hand="#gl-1" facs="#zone.1r.1" xml:lang="lat" ana="#synonyms">diffamasse</add></rdg>
                    </app>
                    <app type="gloss">
-                      <lem wit="#EDITION">et in</lem>
+                      <lem wit="#EDITION">et</lem>
+                      <rdg wit="#COD_50"><add place="above" hand="#scr-1" facs="#zone.1r.15" ana="#syntactical-glosses-using-symbols"><g ref="#two-vertical-dots"/></add><ptr target="#II-1-4-1 #II-1-4-5"/></rdg>
+                   </app>
+                   <app type="gloss">
+                      <lem wit="#EDITION">in</lem>
                       <rdg wit="#COD_50"><add place="above" hand="#scr-1" facs="#zone.1r.2" xml:lang="lat" ana="#text-variant"><g ref="#sdot"/> cum</add></rdg>
                    </app>
                    <app type="gloss">
@@ -362,10 +393,14 @@
                       <rdg wit="#COD_50"><add place="above" hand="#scr-1" facs="#zone.1r.7" ana="#syntactical-glosses-using-symbols"><g ref="#two-horizontal-dots"/></add></rdg>
                       <rdg wit="#COD_50"><add place="above" hand="#gl-1" facs="#zone.1r.4" xml:lang="lat" ana="#synonyms #quia-glosses">nobilibus quia liberi homines artem discebant uel quia liberos faciunt homines a uitiis</add></rdg>
                    </app>
-                   <quote source="#EDITION" n="II 1,4">consecutos <w xml:id="II-1-4-2">artibus</w> uideo, nec solum ea, quae emendate ab illis sunt prolata,<lb n="6"/> sed</quote>
+                   <quote source="#EDITION" n="II 1,4">consecutos <w xml:id="II-1-4-2">artibus</w> <w xml:id="II-1-4-1">uideo</w>, nec solum ea, quae emendate ab illis sunt prolata,<lb n="6"/> sed</quote>
                    <app type="gloss">
                       <lem wit="#EDITION">artibus</lem>
                       <rdg wit="#COD_50"><add place="above" hand="#scr-1" facs="#zone.1r.8" ana="#syntactical-glosses-using-symbols"><g ref="#two-horizontal-dots"/></add></rdg>
+                   </app>
+                   <app type="gloss">
+                      <lem wit="#EDITION">uideo</lem>
+                      <rdg wit="#COD_50"><add place="above" hand="#scr-1" facs="#zone.1r.16" ana="#syntactical-glosses-using-symbols"><g ref="#two-vertical-dots"/></add></rdg>
                    </app>
                    <app type="text-variation">
                       <lem wit="#EDITION">ea</lem>
@@ -373,7 +408,7 @@
                    </app>
                    <app type="text-variation">
                       <lem wit="#EDITION">prolata</lem>
-                      <rdg wit="#COD_50">scripta</rdg>
+                      <rdg wit="#COD_50"><w xml:id="II-1-4-5">scripta</w><add place="above" hand="#scr-1" facs="#zone.1r.17" ana="#syntactical-glosses-using-symbols"><g ref="#two-vertical-dots"/></add></rdg>
                    </app>
                    <app type="gloss">
                       <lem wit="#EDITION">emendate</lem>
@@ -392,21 +427,63 @@
                       <lem wit="#EDITION">quibus</lem>
                       <rdg wit="#COD_50"><add subtype="to-be-checked" place="right-margin" hand="#gl-1" facs="#zone.1r.12" ana="#glosses-elucidating-the-main-text"><g ref="#two-horizontal-dots-with-acute" corresp="#ref-1"/> inter quas artes liberales uetustissima grammatica arguitur arte p<gap unit="char" quantity="3" reason="illegible"/>asse</add></rdg>
                    </app>
-                   <quote source="#EDITION" n="II 1,6">maxime uetustissi<lb n="7" break="no"/>ma grammatica ars arguitur peccasse, cuius auctores,</quote>
+                   <quote source="#EDITION" n="II 1,6">maxime uetustissi<lb n="7" break="no"/>ma grammatica ars arguitur peccasse, <w xml:id="II-1-6-1">cuius</w> auctores,</quote>
                    <app type="gloss">
-                      <lem wit="#EDITION">peccasse</lem>
-                      <rdg wit="#COD_50"><add place="above" hand="#gl-1" facs="#zone.1r.13" ana="#glosses-elucidating-the-main-text"><g ref="#idest"/> eos doctores</add></rdg>
+                      <lem wit="#EDITION">ars</lem>
+                      <rdg wit="#COD_50"><add place="above" hand="#scr-1" facs="#zone.1r.18" ana="#syntactical-glosses-using-symbols"><g ref="#converging-strokes-with-dot-above"/></add><ptr target="#II-1-6-1"/></rdg>
                    </app>
                    <app type="gloss">
                       <lem wit="#EDITION">peccasse</lem>
                       <rdg wit="#COD_50"><add place="above" hand="#gl-1" facs="#zone.1r.13" ana="#glosses-elucidating-the-main-text"><g ref="#idest"/> eos doctores</add></rdg>
                    </app>
-                   <quote source="#EDITION" n="II 1,7">quanto sunt iuniores, tanto perspicaciores, et ingeniis floruisse <lb n="8"/>et</quote>
+                   <app type="gloss">
+                      <lem wit="#EDITION">peccasse</lem>
+                      <rdg wit="#COD_50"><add place="above" hand="#gl-1" facs="#zone.1r.13" ana="#glosses-elucidating-the-main-text"><g ref="#idest"/> eos doctores</add></rdg>
+                   </app>
+                   <app type="gloss">
+                      <lem wit="#EDITION">cuius</lem>
+                      <rdg wit="#COD_50"><add place="above" hand="#scr-1" facs="#zone.1r.19" ana="#syntactical-glosses-using-symbols"><g ref="#converging-strokes-with-dot-above"/></add></rdg>
+                   </app>
+                   <quote source="#EDITION" n="II 1,7">quanto sunt iuniores, tanto perspicaciores, et ingeniis <w xml:id="II-1-7-1">floruisse</w><lb n="8"/>et</quote>
                    <app type="gloss">
                       <lem wit="#EDITION">perspicatiores</lem>
                       <rdg wit="#COD_50"><add place="above" hand="#gl-1" facs="#zone.1r.14" ana="#glosses-elucidating-the-main-text">perspicax res est quae perspici potest</add></rdg>
                    </app>
-                   <quote source="#EDITION" n="II 1,8">diligentia ualuisse omnium iudicio confirmantur eruditissimorum (quid enim</quote>
+                   <app type="gloss">
+                      <lem wit="#EDITION">perspicatiores</lem>
+                      <rdg wit="#COD_50"><add place="above" hand="#scr-1" facs="#zone.1r.20" ana="#syntactical-glosses-using-symbols"><g ref="#two-converging-strokes"/></add><ptr target="#II-1-7-1 #II-1-8-1 #II-1-8-2"/></rdg>
+                   </app>
+                   <app type="gloss">
+                      <lem wit="#EDITION">floruisse</lem>
+                      <rdg wit="#COD_50"><add place="above" hand="#scr-1" facs="#zone.1r.21" ana="#syntactical-glosses-using-symbols"><g ref="#two-converging-strokes"/></add></rdg>
+                   </app>
+                   <quote source="#EDITION" n="II 1,8">diligentia <w xml:id="II-1-8-1">ualuisse</w> omnium iudicio <w xml:id="II-1-8-2">confirmantur</w> eruditissimorum (quid enim</quote>
+                   <app type="gloss">
+                      <lem wit="#EDITION">ualuisse</lem>
+                      <rdg wit="#COD_50"><add place="above" hand="#scr-1" facs="#zone.1r.22" ana="#syntactical-glosses-using-symbols"><g ref="#two-converging-strokes"/></add></rdg>
+                   </app>
+                   <app type="gloss">
+                      <lem wit="#EDITION">confirmantur</lem>
+                      <rdg wit="#COD_50"><add place="above" hand="#scr-1" facs="#zone.1r.23" ana="#syntactical-glosses-using-symbols"><g ref="#two-converging-strokes"/></add></rdg>
+                   </app>
+                   <quote source="#EDITION" n="II 1,9">Herodiani artibus certius, quid <lb n="9"/>Apollonii scrupulosis quaestionibus</quote>
+                   <app type="gloss">
+                      <lem wit="#EDITION">certius</lem>
+                      <rdg wit="#COD_50"><add place="above" hand="#gl-1" facs="#zone.1r.24" ana="#synonyms">firmius</add></rdg>
+                   </app>
+                   <app type="gloss">
+                      <lem wit="#EDITION">scrupolosis</lem>
+                      <rdg wit="#COD_50"><add place="above" subtype="to-be-checked" hand="#gl-1" facs="#zone.1r.25" ana="#synonyms"><gap unit="char" quantity="6" reason="illegible"/>ilioribus</add></rdg>
+                   </app>
+                   <quote source="#EDITION" n="II 1,10">enucleatius possit inueniri?) cum igitur eos omnia fere uitia, quaecumque</quote>
+                   <app type="gloss">
+                      <lem wit="#EDITION">enucleatius</lem>
+                      <rdg wit="#COD_50"><add place="above" hand="#gl-1" facs="#zone.1r.26" ana="#reference-signs"><g ref="#two-horizontal-dots-with-acute" xml:id="ref-2"/></add></rdg>
+                   </app>
+                   <app type="gloss">
+                      <lem wit="#EDITION">enucleatius</lem>
+                      <rdg wit="#COD_50"><add place="right-margin" hand="#gl-1" facs="#zone.1r.27" ana="#synonyms"><g ref="#two-horizontal-dots-with-acute" corresp="#ref-2"/> apertius uel manifestius</add></rdg>
+                   </app>
                 </div>
             <pb n="1v" xml:id="page__00012" facs="#facs__00012"/>
                <div n="Praefatio" xml:id="praefatio.2" prev="#praefatio.1" next="#praefatio.3" corresp="images-keil:Keil_v2_002.gif">
@@ -722,15 +799,28 @@
       <surface xml:id="facs__00011" n="1r">
          <graphic url="http://diglib.hab.de/mss/50-weiss/00011.jpg"/>
          <zone xml:id="zone.1r.1" ulx="641" uly="262" lrx="699" lry="276"/>
+         <zone xml:id="zone.1r.15" ulx="712" uly="261" lrx="718" lry="270"/>
          <zone xml:id="zone.1r.9" ulx="596" uly="265" lrx="603" lry="272"/>
          <zone xml:id="zone.1r.6" ulx="743" uly="271" lrx="750" lry="276"/>
          <zone xml:id="zone.1r.5" ulx="612" uly="283" lrx="648" lry="298"/>
+         <zone xml:id="zone.1r.17" ulx="753" uly="291" lrx="759" lry="298"/>
+         <zone xml:id="zone.1r.16" ulx="473" uly="291" lrx="479" lry="300"/>
          <zone xml:id="zone.1r.8" ulx="423" uly="295" lrx="432" lry="300"/>
          <zone xml:id="zone.1r.11" ulx="612" uly="306" lrx="626" lry="317"/>
          <zone xml:id="zone.1r.10" ulx="295" uly="307" lrx="312" lry="320"/>
          <zone xml:id="zone.1r.12" ulx="766" uly="313" lrx="871" lry="365"/>
-         <zone xml:id="zone.1r.13" ulx="294" uly="327" lrx="346" lry="339"/>
+         <zone xml:id="zone.1r.19" ulx="346" uly="325" lrx="354" lry="338"/>
+         <zone xml:id="zone.1r.13" ulx="294" uly="328" lrx="350" lry="339"/>
+         <zone xml:id="zone.1r.21" ulx="736" uly="329" lrx="743" lry="339"/>
          <zone xml:id="zone.1r.14" ulx="574" uly="328" lrx="683" lry="342"/>
+         <zone xml:id="zone.1r.18" ulx="201" uly="329" lrx="210" lry="339"/>
+         <zone xml:id="zone.1r.20" ulx="603" uly="335" lrx="610" lry="344"/>
+         <zone xml:id="zone.1r.24" ulx="693" uly="352" lrx="726" lry="365"/>
+         <zone xml:id="zone.1r.23" ulx="350" uly="353" lrx="358" lry="361"/>
+         <zone xml:id="zone.1r.25" ulx="155" uly="374" lrx="208" lry="386"/>
+         <zone xml:id="zone.1r.26" ulx="295" uly="379" lrx="304" lry="388"/>
+         <zone xml:id="zone.1r.27" ulx="774" uly="382" lrx="847" lry="401"/>
+         <zone xml:id="zone.1r.22" ulx="188" uly="353" lrx="196" lry="363"/>
          <zone xml:id="zone.1r.7" ulx="294" uly="295" lrx="301" lry="299"/>
          <zone xml:id="zone.1r.4" ulx="285" uly="283" lrx="553" lry="300"/>
          <zone xml:id="zone.1r.3" ulx="761" uly="240" lrx="877" lry="295"/>
