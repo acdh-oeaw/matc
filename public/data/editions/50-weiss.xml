@@ -329,6 +329,14 @@
                   <graphic url="../pictures/reference-sign-two-horizontal-dots-with-acute.png"/>
                </figure>
             </glyph>
+            <glyph xml:id="inverted-N-with-dot-below">
+               <localProp name="Name"
+                  value="REFERENCE SIGN INVERTED N WITH DOT BELOW"/>
+               <localProp name="entity" value="inverted-N-with-dot-below"/>
+               <figure>
+                  <graphic url="../pictures/reference-sign-inverted-N-with-dot-below.png"/>
+               </figure>
+            </glyph>
          </charDecl>
       </encodingDesc>
       <profileDesc>
@@ -448,9 +456,6 @@
                    <app type="gloss">
                       <lem wit="#EDITION">perspicatiores</lem>
                       <rdg wit="#COD_50"><add place="above" hand="#gl-1" facs="#zone.1r.14" ana="#glosses-elucidating-the-main-text">perspicax res est quae perspici potest</add></rdg>
-                   </app>
-                   <app type="gloss">
-                      <lem wit="#EDITION">perspicatiores</lem>
                       <rdg wit="#COD_50"><add place="above" hand="#scr-1" facs="#zone.1r.20" ana="#syntactical-glosses-using-symbols"><g ref="#two-converging-strokes"/></add><ptr target="#II-1-7-1 #II-1-8-1 #II-1-8-2"/></rdg>
                    </app>
                    <app type="gloss">
@@ -475,14 +480,56 @@
                       <lem wit="#EDITION">scrupolosis</lem>
                       <rdg wit="#COD_50"><add place="above" subtype="to-be-checked" hand="#gl-1" facs="#zone.1r.25" ana="#synonyms"><gap unit="char" quantity="6" reason="illegible"/>ilioribus</add></rdg>
                    </app>
-                   <quote source="#EDITION" n="II 1,10">enucleatius possit inueniri?) cum igitur eos omnia fere uitia, quaecumque</quote>
+                   <quote source="#EDITION" n="II 1,10">enucleatius possit inueniri?) cum <w xml:id="II-1-10-1">igitur</w> eos <w xml:id="II-1-10-2">omnia</w> fere <w xml:id="II-1-10-3">uitia</w>, quaecumque</quote>
                    <app type="gloss">
                       <lem wit="#EDITION">enucleatius</lem>
                       <rdg wit="#COD_50"><add place="above" hand="#gl-1" facs="#zone.1r.26" ana="#reference-signs"><g ref="#two-horizontal-dots-with-acute" xml:id="ref-2"/></add></rdg>
+                      <rdg wit="#COD_50"><add place="right-margin" hand="#gl-1" facs="#zone.1r.27" ana="#glosses-elucidating-the-main-text"><g ref="#two-horizontal-dots-with-acute" corresp="#ref-2"/> apertius uel manifestius</add></rdg>
                    </app>
                    <app type="gloss">
-                      <lem wit="#EDITION">enucleatius</lem>
-                      <rdg wit="#COD_50"><add place="right-margin" hand="#gl-1" facs="#zone.1r.27" ana="#synonyms"><g ref="#two-horizontal-dots-with-acute" corresp="#ref-2"/> apertius uel manifestius</add></rdg>
+                      <lem wit="#EDITION">cum</lem>
+                      <rdg wit="#COD_50"><add place="above" hand="#scr-1" facs="#zone.1r.28" ana="#text-variant">quia</add></rdg>
+                      <rdg wit="#COD_50"><add place="above" hand="#scr-1" facs="#zone.1r.29" ana="#syntactical-glosses-using-symbols"><g ref="#right-half-ring-with-dot"/></add><ptr target="#II-1-10-1 #II-1-12-1"/></rdg>
+                   </app>
+                   <app type="gloss">
+                      <lem wit="#EDITION">igitur</lem>
+                      <rdg wit="#COD_50"><add place="above" hand="#scr-1" facs="#zone.1r.34" ana="#syntactical-glosses-using-symbols"><g ref="#right-half-ring-with-dot"/></add></rdg>
+                   </app>
+                   <app type="gloss">
+                      <lem wit="#EDITION">eos</lem>
+                      <rdg wit="#COD_50"><add place="above" hand="#scr-1" facs="#zone.1r.30" ana="#syntactical-glosses-using-symbols"><g ref="#two-horizontal-dots"/></add><ptr target="#II-1-10-2 #II-1-10-3 #II-1-11-1 #II-1-11-2 #II-1-12-2"/></rdg>
+                   </app>
+                   <app type="gloss">
+                      <lem wit="#EDITION">omnia</lem>
+                      <rdg wit="#COD_50"><add place="above" hand="#scr-1" facs="#zone.1r.36" ana="#syntactical-glosses-using-symbols"><g ref="#two-horizontal-dots"/></add></rdg>
+                   </app>
+                   <app type="gloss">
+                      <lem wit="#EDITION">uitia</lem>
+                      <rdg wit="#COD_50"><add place="above" hand="#scr-1" facs="#zone.1r.37" ana="#syntactical-glosses-using-symbols"><g ref="#two-horizontal-dots"/></add></rdg>
+                   </app>
+                   <quote source="#EDITION" n="II 1,11">antiquorum Grae<lb n="10" break="no"/>corum commentariis sunt relicta <w xml:id="II-1-11-1">artis</w><w xml:id="II-1-11-2">grammaticae</w>,</quote>
+                   <app type="gloss">
+                      <lem wit="#EDITION">commentariis</lem>
+                      <rdg wit="#COD_50"><add place="above" hand="#gl-1" facs="#zone.1r.31" ana="#reference-signs"><g ref="#inverted-N-with-dot-below"/></add></rdg>
+                      <rdg wit="#COD_50"><add place="right-margin" hand="#gl-1" facs="#zone.1r.32" ana="#glosses-elucidating-the-main-text"><g ref="#inverted-N-with-dot-below"/> <g ref="#idest"/> breuibus scriptis</add></rdg>
+                   </app>
+                   <app type="gloss">
+                      <lem wit="#EDITION">artis</lem>
+                      <rdg wit="#COD_50"><add place="above" hand="#scr-1" facs="#zone.1r.38" ana="#syntactical-glosses-using-symbols"><g ref="#two-horizontal-dots"/></add></rdg>
+                   </app>
+                   <app type="gloss">
+                      <lem wit="#EDITION">grammaticae</lem>
+                      <rdg wit="#COD_50"><add place="above" hand="#scr-1" facs="#zone.1r.39" ana="#syntactical-glosses-using-symbols"><g ref="#two-horizontal-dots"/></add></rdg>
+                   </app>
+                   <quote source="#EDITION" n="II 1,12"><w xml:id="II-1-12-2">expurgasse</w><w xml:id="II-1-12-1">comperio</w> certisque rationis legibus emendasse,<lb n="11"/> nostrorum autem</quote>
+                   <app type="gloss">
+                      <lem wit="#EDITION">expurgasse</lem>
+                      <rdg wit="#COD_50"><add place="above" hand="#gl-1" facs="#zone.1r.33" ana="#synonyms">emendasse</add></rdg>
+                      <rdg wit="#COD_50"><add place="above" hand="#scr-1" facs="#zone.1r.40" ana="#syntactical-glosses-using-symbols"><g ref="#two-horizontal-dots"/></add></rdg>
+                   </app>
+                   <app type="gloss">
+                      <lem wit="#EDITION">comperio</lem>
+                      <rdg wit="#COD_50"><add place="above" hand="#scr-1" facs="#zone.1r.35" ana="#syntactical-glosses-using-symbols"><g ref="#right-half-ring-with-dot"/></add></rdg>
                    </app>
                 </div>
             <pb n="1v" xml:id="page__00012" facs="#facs__00012"/>
@@ -817,9 +864,22 @@
          <zone xml:id="zone.1r.20" ulx="603" uly="335" lrx="610" lry="344"/>
          <zone xml:id="zone.1r.24" ulx="693" uly="352" lrx="726" lry="365"/>
          <zone xml:id="zone.1r.23" ulx="350" uly="353" lrx="358" lry="361"/>
+         <zone xml:id="zone.1r.28" ulx="459" uly="368" lrx="481" lry="381"/>
          <zone xml:id="zone.1r.25" ulx="155" uly="374" lrx="208" lry="386"/>
+         <zone xml:id="zone.1r.34" ulx="486" uly="378" lrx="495" lry="388"/>
+         <zone xml:id="zone.1r.29" ulx="466" uly="379" lrx="475" lry="387"/>
+         <zone xml:id="zone.1r.36" ulx="533" uly="380" lrx="543" lry="386"/>
+         <zone xml:id="zone.1r.37" ulx="585" uly="381" lrx="599" lry="388"/>
+         <zone xml:id="zone.1r.30" ulx="512" uly="380" lrx="521" lry="388"/>
          <zone xml:id="zone.1r.26" ulx="295" uly="379" lrx="304" lry="388"/>
          <zone xml:id="zone.1r.27" ulx="774" uly="382" lrx="847" lry="401"/>
+         <zone xml:id="zone.1r.31" ulx="136" uly="397" lrx="154" lry="410"/>
+         <zone xml:id="zone.1r.33" ulx="435" uly="400" lrx="472" lry="411"/>
+         <zone xml:id="zone.1r.35" ulx="497" uly="401" lrx="503" lry="410"/>
+         <zone xml:id="zone.1r.40" ulx="424" uly="404" lrx="434" lry="409"/>
+         <zone xml:id="zone.1r.38" ulx="309" uly="404" lrx="320" lry="411"/>
+         <zone xml:id="zone.1r.39" ulx="361" uly="405" lrx="369" lry="411"/>
+         <zone xml:id="zone.1r.32" ulx="770" uly="406" lrx="849" lry="427"/>
          <zone xml:id="zone.1r.22" ulx="188" uly="353" lrx="196" lry="363"/>
          <zone xml:id="zone.1r.7" ulx="294" uly="295" lrx="301" lry="299"/>
          <zone xml:id="zone.1r.4" ulx="285" uly="283" lrx="553" lry="300"/>
