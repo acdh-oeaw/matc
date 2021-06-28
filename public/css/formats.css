@@ -1,0 +1,20 @@
+.heading-1 { font-family: roman, 'times new roman', times, serif; font-size: 24pt; font-weight: bold; }
+.list-of-witnesses { font-family: roman, 'times new roman', times, serif; font-size: 14pt; font-weight: normal; }
+.list-of-hands { font-family: roman, 'times new roman', times, serif; font-size: 14pt; font-weight: normal; }
+.editorial-declaration { font-family: roman, 'times new roman', times, serif; font-size: 14pt; font-weight: normal; }
+.pictures { font-family: roman, 'times new roman', times, serif; font-size: 14pt; font-weight: normal; }
+body.body-formats { margin: 20pt; }
+span.xml-id { font-weight: bold; }
+span.bibliography-title { font-style: italic; }
+span.hand-id { font-weight: bold; }
+span.hand-note { font-style: italic; }
+div.page-of-edition a:link { color: black; }
+div.page-of-edition a:active { color: black; }
+div.page-of-edition a:hover { color: black; }
+div.page-of-edition a:visited { color: black; }
+span.bold-text { font-weight: bold; }
+span.italic-text { font-style: italic; }
+span.bold-italic-text { font-style: italic; font-weight: bold; }
+div.page-of-edition { margin: 50pt; }
+div.apparatus { margin-left: 70pt; }
+div.note { margin-left: 100pt; }
