@@ -330,7 +330,7 @@
                <note>marks words syntactically connected</note>
             </glyph>
             <glyph xml:id="converging-strokes-with-dot-above">
-               <localProp name="Name" value="CONVERGING STROKES WITH DOT ABOVE"/>
+               <localProp name="Name" value="CONSTRUE MARK CONVERGING STROKES WITH DOT ABOVE"/>
                <localProp name="entity" value="converging-strokes-with-dot-above"/>
                <figure>
                   <graphic url="../pictures/construe-mark-converging-strokes-with-dot-above.png"/>
@@ -359,6 +359,13 @@
                <localProp name="entity" value="inverted-N-with-dot-below"/>
                <figure>
                   <graphic url="../pictures/reference-sign-inverted-N-with-dot-below.png"/>
+               </figure>
+            </glyph>
+            <glyph xml:id="reference-sign-half-ring-with-dot-below">
+               <localProp name="Name" value="REFERENCE SIGN HALF RING WITH DOT BELOW"/>
+               <localProp name="entity" value="half-ring-with-dot-below"/>
+               <figure>
+                  <graphic url="../pictures/reference-sign-half-ring-with-dot-below.png"/>
                </figure>
             </glyph>
          </charDecl>
@@ -568,7 +575,7 @@
                         ana="#synonyms">firmius</add></rdg>
                </app>
                <app type="gloss">
-                  <lem wit="#EDITION">scrupolosis</lem>
+                  <lem wit="#EDITION">scrupulosis</lem>
                   <rdg wit="#COD_50"><add place="above" subtype="to-be-checked" hand="#gl-1"
                         facs="#zone.1r.25" ana="#synonyms"><gap unit="char" quantity="6"
                            reason="illegible"/>ilioribus</add></rdg>
@@ -659,9 +666,43 @@
                         ana="#syntactical-glosses-using-symbols"><g ref="#right-half-ring-with-dot"
                         /></add></rdg>
                </app>
+               <note place="left margin" type="gloss" subtype="to-be-checked" hand="#gl-1"
+                  facs="#zone.1r.41" xml:lang="lat"><gap unit="char"
+                     quantity="12" reason="illegible"/></note>
+               <quote source="#EDITION" n="II 1,13">neminem post illos imitatorem eorum extitisse, quippe in neglegentiam</quote>
+               <app type="gloss">
+                  <lem wit="#EDITION">in neglegentiam</lem>
+                  <rdg wit="#COD_50"><add place="above" hand="#gl-1" facs="#zone.1r.42"
+                     xml:lang="lat" ana="#synonyms">in desidiam</add></rdg>
+               </app>
             </div>
             <div type="page-of-Keil-edition" n="Praefatio" xml:id="praefatio.2" prev="#praefatio.1"
-               next="#praefatio.3" corresp="images-keil:Keil_v2_002.gif"> </div>
+               next="#praefatio.3" corresp="images-keil:Keil_v2_002.gif"> 
+               <quote source="#EDITION" n="II 2,1">cadentibus studiis literarum <lb n="12"/> 
+                  propter inopiam scriptorum, quamuis audacter,</quote>
+               <app type="gloss">
+                  <lem wit="#EDITION">inopiam</lem>
+                  <rdg wit="#COD_50"><add place="above" hand="#gl-1" facs="#zone.1r.43"
+                     xml:lang="lat" ana="#synonyms">pigritiam</add></rdg>
+               </app>
+               <quote source="#EDITION" n="II 2,2">sed non impudenter, ut puto, conatus sum pro uiribus rem ar<lb n="13" break="no"/>duam</quote>
+               <app type="text-variation">
+                  <lem wit="#EDITION">impudenter</lem>
+                  <rdg wit="#COD_50" hand="#scr-1">inpudenter</rdg>
+               </app>
+               <app type="gloss">
+                  <lem wit="#EDITION">impudenter</lem>
+                  <rdg wit="#COD_50"><add place="above" hand="#gl-1" facs="#zone.1r.44"
+                     ana="#reference-signs"><g ref="#half-ring-with-dot-below"/></add></rdg>
+                  <rdg wit="#COD_50"><add subtype="to-be-checked" place="right-margin" hand="#gl-1" facs="#zone.1r.45"
+                     ana="#glosses-elucidating-the-main-text"><g ref="#half-ring-with-dot-below"/> inreuerenter uel inrationabiliter. cum uerecundia et reuerentia</add></rdg>
+                  <rdg wit="#COD_50"><add subtype="to-be-checked" place="above" hand="#gl-1" facs="#zone.1r.46"
+                     xml:lang="lat" ana="#synonyms"><gap unit="char"
+                        quantity="2" reason="illegible"/>denter</add></rdg>
+               </app>
+            
+            
+            </div>
             <div type="page-of-Keil-edition" n="Praefatio" xml:id="praefatio.3" prev="#praefatio.2"
                next="#praefatio.4" corresp="images-keil:Keil_v2_003.gif">
         <pb n="1v" xml:id="page__00012" facs="#facs__00012"/>
@@ -1001,6 +1042,12 @@
          <zone xml:id="zone.1r.38" ulx="309" uly="404" lrx="320" lry="411"/>
          <zone xml:id="zone.1r.39" ulx="361" uly="405" lrx="369" lry="411"/>
          <zone xml:id="zone.1r.32" ulx="770" uly="406" lrx="849" lry="427"/>
+         <zone xml:id="zone.1r.42" ulx="509" uly="418" lrx="552" lry="433"/>
+         <zone xml:id="zone.1r.41" ulx="51" uly="422" lrx="94" lry="458"/>
+         <zone xml:id="zone.1r.46" ulx="466" uly="442" lrx="498" lry="453"/>
+         <zone xml:id="zone.1r.44" ulx="449" uly="442" lrx="460" lry="454"/>
+         <zone xml:id="zone.1r.45" ulx="767" uly="444" lrx="869" lry="479"/>
+         <zone xml:id="zone.1r.43" ulx="144" uly="442" lrx="178" lry="457"/>
          <zone xml:id="zone.1r.22" ulx="188" uly="353" lrx="196" lry="363"/>
          <zone xml:id="zone.1r.7" ulx="294" uly="295" lrx="301" lry="299"/>
          <zone xml:id="zone.1r.4" ulx="285" uly="283" lrx="553" lry="300"/>
