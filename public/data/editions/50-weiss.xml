@@ -93,7 +93,7 @@
                      <handNote xml:id="scr-1">writer of the main text</handNote>
                      <handNote xml:id="gl-1">first glossator, id est Otfrid of
                         Wissembourg</handNote>
-                     <handNote xml:id="gl-2">second glossator</handNote>
+                     <handNote xml:id="gl-2">second glossator, probably the same person who also corrected the main text</handNote>
                   </handDesc>
                </physDesc>
                <additional>
@@ -128,7 +128,7 @@
                <p>differences from Hertz' edition in the use of capital letters for proper names ignored</p>
             </normalization>
             <punctuation>
-               <p>I followed the punctuation of Hertz' edition of Priscian's text</p>
+               <p>I followed the punctuation of Hertz' edition of Priscian's text. As for the glosses, I reproduced the original punctuation</p>
             </punctuation>
          </editorialDecl>
          <classDecl>
@@ -390,21 +390,22 @@
                   <graphic url="../pictures/reference-sign-dot-with-acute.png"/>
                </figure>
             </glyph>
+            <glyph xml:id="reference-sign-acute-followed-by-dot">
+               <localProp name="Name" value="REFERENCE SIGN ACUTE FOLLOWED BY DOT"/>
+               <localProp name="entity" value="reference-sign-acute-followed-by-dot"/>
+               <figure>
+                  <graphic url="../pictures/reference-sign-acute-followed-by-dot.png"/>
+               </figure>
+            </glyph>
+            <glyph xml:id="reference-sign-three-dots-in-triangle-shape">
+               <localProp name="Name" value="REFERENCE SIGN THREE DOTS IN TRIANGLE SHAPE"/>
+               <localProp name="entity" value="reference-sign-three-dots-in-triangle-shape"/>
+               <figure>
+                  <graphic url="../pictures/reference-sign-three-dots-in-triangle-shape.png"/>
+               </figure>
+            </glyph>
          </charDecl>
       </encodingDesc>
-      <profileDesc>
-         <textClass>
-            <keywords scheme="#gnd">
-               <term xml:lang="de">Musik</term>
-               <term xml:lang="en">Music</term>
-               <term xml:lang="en">Music</term>
-            </keywords>
-         </textClass>
-      </profileDesc>
-      <revisionDesc>
-         <change who="schassan" when="2015-01-08">Kategorie zum Element textClass hinzugefügt:
-            Musik</change>
-      </revisionDesc>
    </teiHeader>
    <text>
       <body>
@@ -420,7 +421,7 @@
             <pb n="IVr" xml:id="page__00009" facs="#facs__00009"/>
             <pb n="IVv" xml:id="page__00010" facs="#facs__00010"/>
             <pb n="1r" xml:id="page__00011" facs="#facs__00011"/>
-            <div n="Praefatio" type="page-of-Keil-edition" xml:id="praefatio.1" next="#praefatio.2"
+    <div n="Praefatio" type="page-of-Keil-edition" xml:id="praefatio.1" next="#praefatio.2"
                corresp="images-keil:Keil_v2_001.gif">
                <quote source="#EDITION" n="II 1,0"><lb n="1"/>Priscianus Caesariensis grammaticus<lb
                      n="2"/>Iuliano consuli ac patricio</quote>
@@ -524,7 +525,7 @@
                </app>
                <app type="gloss" subtype="to-be-checked">
                   <lem wit="#EDITION">quibus</lem>
-                  <rdg wit="#COD_50"><add place="right-margin" hand="#gl-1"
+                  <rdg wit="#COD_50"><add place="right margin" hand="#gl-1"
                         facs="#zone.1r.12" ana="#glosses-elucidating-the-main-text"><g
                            ref="#two-horizontal-dots-with-acute" corresp="#ref-1"/> inter quas artes
                         liberales uetustissima grammatica arguitur arte p<gap unit="char"
@@ -610,7 +611,7 @@
                   <rdg wit="#COD_50"><add place="above" hand="#gl-1" facs="#zone.1r.26"
                         ana="#reference-signs"><g ref="#two-horizontal-dots-with-acute"
                            xml:id="ref-2"/></add></rdg>
-                  <rdg wit="#COD_50"><add place="right-margin" hand="#gl-1" facs="#zone.1r.27"
+                  <rdg wit="#COD_50"><add place="right margin" hand="#gl-1" facs="#zone.1r.27"
                         ana="#glosses-elucidating-the-main-text"><g
                            ref="#two-horizontal-dots-with-acute" corresp="#ref-2"/> apertius uel
                         manifestius</add></rdg>
@@ -655,7 +656,7 @@
                   <lem wit="#EDITION">commentariis</lem>
                   <rdg wit="#COD_50"><add place="above" hand="#gl-1" facs="#zone.1r.31"
                         ana="#reference-signs"><g ref="#inverted-N-with-dot-below"/></add></rdg>
-                  <rdg wit="#COD_50"><add place="right-margin" hand="#gl-1" facs="#zone.1r.32"
+                  <rdg wit="#COD_50"><add place="right margin" hand="#gl-1" facs="#zone.1r.32"
                         ana="#glosses-elucidating-the-main-text"><g ref="#inverted-N-with-dot-below"/>
                         <g ref="#idest"/> breuibus scriptis</add></rdg>
                </app>
@@ -697,8 +698,8 @@
                   <rdg wit="#COD_50"><add place="above" hand="#gl-1" facs="#zone.1r.42"
                      xml:lang="lat" ana="#synonyms">in desidiam</add></rdg>
                </app>
-            </div>
-            <div type="page-of-Keil-edition" n="Praefatio" xml:id="praefatio.2" prev="#praefatio.1"
+    </div>
+    <div type="page-of-Keil-edition" n="Praefatio" xml:id="praefatio.2" prev="#praefatio.1"
                next="#praefatio.3" corresp="images-keil:Keil_v2_002.gif"> 
                <quote source="#EDITION" n="II 2,1">cadentibus studiis literarum <lb n="12"/> 
                   propter inopiam scriptorum, quamuis audacter,</quote>
@@ -716,7 +717,7 @@
                   <lem wit="#EDITION">impudenter</lem>
                   <rdg wit="#COD_50"><add place="above" hand="#gl-1" facs="#zone.1r.44"
                      ana="#reference-signs"><g ref="#half-ring-with-dot-below"/></add></rdg>
-                  <rdg wit="#COD_50"><add subtype="to-be-checked" place="right-margin" hand="#gl-1" facs="#zone.1r.45"
+                  <rdg wit="#COD_50"><add subtype="to-be-checked" place="right margin" hand="#gl-1" facs="#zone.1r.45"
                      ana="#glosses-elucidating-the-main-text"><g ref="#half-ring-with-dot-below"/> inreuerenter uel inrationabiliter. cum uerecundia et reuerentia</add></rdg>
                   <rdg wit="#COD_50"><add subtype="to-be-checked" place="above" hand="#gl-1" facs="#zone.1r.46"
                      xml:lang="lat" ana="#synonyms"><gap unit="char"
@@ -761,7 +762,7 @@
                   <lem wit="#EDITION">moderatoribus</lem>
                   <rdg wit="#COD_50"><add place="above" hand="#gl-1" facs="#zone.1r.54"
                      ana="#reference-signs"><g ref="#half-ring-with-dot-above"/></add></rdg>
-                  <rdg wit="#COD_50"><add subtype="to-be-checked" place="right-margin" hand="#gl-1" facs="#zone.1r.55"
+                  <rdg wit="#COD_50"><add subtype="to-be-checked" place="right margin" hand="#gl-1" facs="#zone.1r.55"
                      ana="#glosses-elucidating-the-main-text"><g ref="#half-ring-with-dot-above"/> mode..am..</add></rdg></app>
                <app type="text-variation">
                   <lem wit="#EDITION">elegantiora</lem>
@@ -798,9 +799,11 @@
                   <rdg wit="#COD_50" hand="#scr-1">credo esse inuentionibus sua posse</rdg></app>
                <app type="gloss">
                   <lem wit="#EDITION">sua</lem>
-                  <rdg wit="#COD_50"><add place="above" hand="#gl-1" facs="#zone.1r.60"
-                     ana="#reference-signs"><g ref="#reference-sign-dot-with-acute"/><g ref="#reference-sign-dot-with-acute"/></add></rdg>
-                  <rdg wit="#COD_50"><add subtype="to-be-checked" place="right-margin" hand="#gl-1" facs="#zone.1r.61"
+                  <rdg wit="#COD_50"><add place="above left" hand="#gl-1" facs="#zone.1r.65"
+                     ana="#reference-signs"><g ref="#reference-sign-dot-with-acute"/></add></rdg>
+                  <rdg wit="#COD_50"><add place="above right" hand="#gl-1" facs="#zone.1r.60"
+                     ana="#reference-signs"><g ref="#reference-sign-dot-with-acute"/></add></rdg>
+                  <rdg wit="#COD_50"><add subtype="to-be-checked" place="right margin" hand="#gl-1" facs="#zone.1r.61"
                      ana="#syntactical-glosses"><g ref="#reference-sign-dot-with-acute"/> sua industria</add></rdg></app>
           <quote source="#EDITION" n="II 2,15">industria ad communem literatoriae professionis utilitatem congrua ratio<lb n="21" break="no"/>nis</quote>
           <quote source="#EDITION" n="II 2,16">proportione uel addere uel mutare tractantes. namque festinantius quam</quote>
@@ -815,7 +818,7 @@
                      ana="#synonyms">statuere</add></rdg></app>
            <quote source="#EDITION" n="II 2,18">furtimque et quasi per latrocinia scripta aliis subripientes unius nominis ad<lb n="23"/></quote>   
            <quote source="#EDITION" n="II 2,19">titulum pertinentis infanda mutatione totius operis in se gloriam transferre</quote>
-               <app type="gloss" subtype="to-be-checked">
+               <app type="gloss">
                   <lem wit="#EDITION">infanda</lem>
                   <rdg wit="#COD_50"><add place="above" hand="#gl-1" facs="#zone.1r.64"
                      ana="#synonyms">inlicita</add></rdg></app>
@@ -823,12 +826,79 @@
                <app type="text-variation">
                <lem wit="#EDITION">impossibile</lem>
                <rdg wit="#COD_50" hand="#scr-1">inpossibile</rdg></app>
-            
+           <quote source="#EDITION" n="II 2,21">perfectum breuiter exponi, spatii quoque ueniam peto, quamuis ad</quote>    
+               <app type="text-variation">
+                  <lem wit="#EDITION">perfectum breuiter</lem>
+                  <rdg wit="#COD_50" hand="#scr-1">breuiter perfectum</rdg></app>
+               <app type="gloss">
+                  <lem wit="#EDITION">spatii</lem>
+                  <rdg wit="#COD_50"><add place="above" hand="#gl-1" facs="#zone.1r.66"
+                     ana="#synonyms"><g ref="#idest"/> magnitudinis</add></rdg></app>
+           <quote source="#EDITION" n="II 2,22">Herodiani scriptorum <lb n="25"/>pelagus et ad eius patris Apollonii spatiosa uolumina</quote>
+               <app type="text-variation">
+                  <lem wit="#EDITION">patris</lem>
+                  <rdg wit="#COD_50" hand="#scr-1">paris</rdg></app>
+           <quote source="#EDITION" n="II 2,23">meorum compendiosa sunt existimanda scripta librorum.</quote>
+           <quote source="#EDITION" n="II 2,24">huius <lb n="26"/>tamen operis te hortatorem sortitus iudicem quoque facio,</quote>       
+           <quote source="#EDITION" n="II 2,25">Iuliane consul ac patricie, cui summos dignitatis gra<lb n="27" break="no"/>dus summa</quote>
+               <app type="gloss" subtype="to-be-checked">
+                  <lem wit="#EDITION">consul ac patricie</lem>
+                  <rdg wit="#COD_50"><add place="right margin" hand="#gl-1" facs="#zone.1r.67"
+                     ana="#glosses-elucidating-the-main-text"> ...quo patris</add></rdg></app>
+               <app type="text-variation">
+               <lem wit="#EDITION">patricie</lem>
+               <rdg wit="#COD_50" cause="emendation" type="erasure">patrici<del>e</del></rdg></app>
+           <quote source="#EDITION" n="II 2,26">adquisiuit in omni studio ingenii claritudo, non tantum accipiens ab excelsis</quote>
+           <quote source="#EDITION" n="II 2,27">gradibus honorum<lb n="28"/> pretii, quantum illis decoris addens tui, cuius mentem</quote>
+           <quote source="#EDITION" n="II 2,28">tam Homeri credo quam Virgilii anima constare, quo<lb n="29" break="no"/>rum uterque</quote>   
+           <quote source="#EDITION" n="II 2,29">arcem possederat musicae, te tertium ex utroque compositum esse</quote> 
+               <app type="text-variation">
+                  <lem wit="#EDITION">arcem</lem>
+                  <rdg wit="#COD_50" hand="#scr-1">artem<add place="above"
+                     hand="#gl-2" facs="#zone.1r.68" ana="#reference-signs"><g
+                        ref="#reference-sign-acute-followed-by-dot"/></add><add type="#gloss" subtype="to-be-checked" place="right margin"
+                           hand="#gl-2" facs="#zone.1r.69" ana="#text-variant"><g
+                              ref="#reference-sign-acute-followed-by-dot"/> uel arcem</add></rdg></app>
+               <app type="text-variation">
+                  <lem wit="#EDITION">possederat</lem>
+                  <rdg wit="#COD_50" hand="#scr-1"><del type="expunction">e</del><add place="above">i</add></rdg></app>
+               <app type="text-variation">
+                  <lem wit="#EDITION">esse</lem>
+                  <rdg wit="#COD_50" hand="#scr-1">esse ego</rdg></app>
+           <quote source="#EDITION" n="II 2,30">confirmans, quippe non minus<lb n="30"/> Graecorum quam Latinorum in omni doctrinae</quote>
+           <quote source="#EDITION" n="II 2,31">genere praefulgentem. tibi ergo hoc opus deuoueo, omnis<lb n="31"/> eloquentiae</quote>
+               <app type="text-variation">
+                  <lem wit="#EDITION">genere</lem>
+                  <rdg wit="#COD_50" hand="#scr-1"><add><del type="expunction">gloriae</del></add></rdg></app>
+               <app type="gloss">
+                  <lem wit="#EDITION">deuoueo</lem>
+                     <rdg wit="#COD_50"><add place="above" hand="#gl-1" facs="#zone.1r.70"
+             ana="#synonyms">commendo. uel promitto</add></rdg></app>
             </div>
             <div type="page-of-Keil-edition" n="Praefatio" xml:id="praefatio.3" prev="#praefatio.2"
                next="#praefatio.4" corresp="images-keil:Keil_v2_003.gif">
-               
-               
+           <quote source="#EDITION" n="II 3,1">praesul, ut quantamcumque mihi deus annuerit suscepti laboris gloriam,</quote>
+               <app type="gloss">
+                  <lem wit="#EDITION">quantamcumque</lem>
+                  <rdg wit="#COD_50"><add place="above" hand="#gl-2" facs="#zone.1r.71"
+                     ana="#reference-signs"><g ref="#reference-sign-three-dots-in-triangle-shape"/></add></rdg></app>
+               <app type="gloss">
+                  <lem wit="#EDITION">gloriam</lem>
+                  <rdg wit="#COD_50"><add place="above" hand="#gl-2" facs="#zone.1r.72"
+                     ana="#reference-signs"><g ref="#reference-sign-three-dots-in-triangle-shape"/></add></rdg></app>
+               <app type="gloss" subtype="to-be-checked">
+                  <lem wit="#EDITION">quantamcumque   gloriam</lem>
+                  <rdg wit="#COD_50"><add place="right margin" hand="#gl-2" facs="#zone.1r.73"
+                     ana="#text-variant"><g ref="#reference-sign-three-dots-in-triangle-shape"/> uel quantum gloriae...</add></rdg></app>
+               <app type="gloss" subtype="to-be-checked">
+                  <lem wit="#EDITION">gloriam</lem>
+                  <rdg wit="#COD_50"><add place="above" hand="#gl-1" facs="#zone.1r.74"
+                     ana="#glosses-elucidating-the-main-text">per diffinitionem</add></rdg></app>
+              
+              
+              
+              
+              
         <pb n="1v" xml:id="page__00012" facs="#facs__00012"/>
             </div>
             <div type="page-of-Keil-edition" n="Praefatio" xml:id="praefatio.4" prev="#praefatio.3"
@@ -1184,11 +1254,21 @@
          <zone xml:id="zone.1r.57" ulx="270" uly="537" lrx="312" lry="547"/>
          <zone xml:id="zone.1r.58" ulx="192" uly="581" lrx="202" lry="590"/>
          <zone xml:id="zone.1r.59" ulx="56" uly="582" lrx="90" lry="606"/>
-         <zone xml:id="zone.1r.60" ulx="257" uly="623" lrx="299" lry="636"/>
+         <zone xml:id="zone.1r.65" ulx="259" uly="621" lrx="277" lry="635"/>
+         <zone xml:id="zone.1r.60" ulx="281" uly="624" lrx="299" lry="636"/>
          <zone xml:id="zone.1r.61" ulx="769" uly="626" lrx="845" lry="661"/>
          <zone xml:id="zone.1r.62" ulx="124" uly="647" lrx="240" lry="665"/>
          <zone xml:id="zone.1r.63" ulx="619" uly="648" lrx="653" lry="661"/>
          <zone xml:id="zone.1r.64" ulx="211" uly="692" lrx="247" lry="706"/>
+         <zone xml:id="zone.1r.66" ulx="421" uly="711" lrx="486" lry="726"/>
+         <zone xml:id="zone.1r.67" ulx="780" uly="760" lrx="867" lry="794"/>
+         <zone xml:id="zone.1r.69" ulx="768" uly="826" lrx="823" lry="852"/>
+         <zone xml:id="zone.1r.68" ulx="175" uly="829" lrx="188" lry="840"/>
+         <zone xml:id="zone.1r.70" ulx="686" uly="852" lrx="746" lry="867"/>
+         <zone xml:id="zone.1r.74" ulx="521" uly="870" lrx="580" lry="883"/>
+         <zone xml:id="zone.1r.73" ulx="765" uly="871" lrx="831" lry="916"/>
+         <zone xml:id="zone.1r.72" ulx="554" uly="876" lrx="566" lry="886"/>
+         <zone xml:id="zone.1r.71" ulx="259" uly="876" lrx="275" lry="886"/>
          <zone xml:id="zone.1r.43" ulx="144" uly="442" lrx="178" lry="457"/>
          <zone xml:id="zone.1r.22" ulx="188" uly="353" lrx="196" lry="363"/>
          <zone xml:id="zone.1r.7" ulx="294" uly="295" lrx="301" lry="299"/>
