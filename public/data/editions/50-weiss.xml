@@ -124,6 +124,7 @@
             <normalization>
                <p>change of ci/ti ignored</p>
                <p>change of e/ae/e caudata ignored</p>
+               <p>change of i/y ignored (e.g. sillaba/syllaba)</p>
                <p>abbreviation of et, per, quae, quia, vel, and word endings silently expanded</p>
                <p>differences from Hertz' edition in the use of capital letters for proper names ignored</p>
             </normalization>
@@ -859,15 +860,15 @@
                         ref="#reference-sign-acute-followed-by-dot"/></add><add type="#gloss" subtype="to-be-checked" place="right margin"
                            hand="#gl-2" facs="#zone.1r.69" ana="#text-variant"><g
                               ref="#reference-sign-acute-followed-by-dot"/> uel arcem</add></rdg></app>
-               <app type="text-variation">
+               <app type="emendation">
                   <lem wit="#EDITION">possederat</lem>
-                  <rdg wit="#COD_50" hand="#scr-1"><del type="expunction">e</del><add place="above">i</add></rdg></app>
+                  <rdg wit="#COD_50" hand="#scr-1">poss<del type="expunction">e</del><add place="above">i</add>derat</rdg></app>
                <app type="text-variation">
                   <lem wit="#EDITION">esse</lem>
                   <rdg wit="#COD_50" hand="#scr-1">esse ego</rdg></app>
            <quote source="#EDITION" n="II 2,30">confirmans, quippe non minus<lb n="30"/> Graecorum quam Latinorum in omni doctrinae</quote>
            <quote source="#EDITION" n="II 2,31">genere praefulgentem. tibi ergo hoc opus deuoueo, omnis<lb n="31"/> eloquentiae</quote>
-               <app type="text-variation">
+               <app type="emendation">
                   <lem wit="#EDITION">genere</lem>
                   <rdg wit="#COD_50" hand="#scr-1"><add><del type="expunction">gloriae</del></add></rdg></app>
                <app type="gloss">
@@ -894,12 +895,40 @@
                   <lem wit="#EDITION">gloriam</lem>
                   <rdg wit="#COD_50"><add place="above" hand="#gl-1" facs="#zone.1r.74"
                      ana="#glosses-elucidating-the-main-text">per diffinitionem</add></rdg></app>
-              
-              
-              
-              
-              
-        <pb n="1v" xml:id="page__00012" facs="#facs__00012"/>
+               <note>Otfrid wrote this gloss AFTER the second glossator had added the reference sign and the marginal gloss concerning "gloriam".</note>
+           <quote source="#EDITION" n="II 3,2">te comite quasi sole quodam dilu<lb n="32" break="no"/>cidius crescat.</quote>
+           <quote source="#EDITION" n="II 3,3">titulos etiam uniuersi operis per singulos supposui libros, quo</quote>
+              <app type="text-variation">
+                <lem wit="#EDITION">supposui</lem>
+                <rdg wit="#COD_50" hand="#scr-1">subposui</rdg></app>
+           <quote source="#EDITION" n="II 3,4">facilius, quicquid ex his quaeratur, dis<lb n="33" break="no"/>cretis possit locis inueniri.</quote>  
+              <app type="emendation">
+                 <lem wit="#EDITION">inueniri</lem>
+                 <rdg wit="#COD_50" hand="#scr-1">inuenir<del type="expunction">e</del><add place="above">i</add></rdg></app>              
+           <quote source="#EDITION" n="II 3,5">primus liber continet de uoce et eius speciebus; de litera: quid sit</quote>    
+               <app type="text-variation">
+                  <lem wit="#EDITION">primus</lem>
+                  <rdg wit="#COD_50" hand="#scr-1"><hi rend="red capitalis rustica">P</hi>rimus</rdg></app>
+           <quote source="#EDITION" n="II 3,6">litera, de eius generibus<lb n="34"/> et speciebus, de singularum potestate, quae in</quote> 
+           <quote source="#EDITION" n="II 3,7">quas transeunt per declinationes uel compositiones partium orationis.</quote>
+           <quote source="#EDITION" n="II 3,8">secundus <lb n="35"/>de syllaba: quid sit syllaba, quot literis constare potest et</quote>
+               <app type="text-variation">
+                  <lem wit="#EDITION">secundus</lem>
+                  <rdg wit="#COD_50"></rdg></app>
+           <quote source="#EDITION" n="II 3,9">quo ordine et quo sono, de accidentibus singulis syllabis;
+              <pb n="1v" xml:id="page__00012" facs="#facs__00012"/><lb n="1"/> de dictione: quid</quote>
+               <app type="emendation">
+                  <lem wit="#EDITION">accidentibus</lem>
+                  <rdg wit="#COD_50" hand="#scr-1">acc<del type="expunction">e</del><add place="above">i</add>dentibus</rdg></app>
+           <quote source="#EDITION" n="II 3,10">sit dictio, quae eius differentia ad syllabam; de oratione: quid sit oratio,</quote>
+               <app type="emendation">
+                  <lem wit="#EDITION">eius</lem>
+                  <rdg wit="#COD_50" hand="#scr-1">ei<add place="above">u</add>s</rdg></app>
+           <quote source="#EDITION" n="II 3,11">quot eius partes, de earum proprietate; de nomine: <lb n="2"/>quid sit nomen, de</quote>
+               
+               
+               
+        
             </div>
             <div type="page-of-Keil-edition" n="Praefatio" xml:id="praefatio.4" prev="#praefatio.3"
                corresp="images-keil:Keil_v2_004.gif">
