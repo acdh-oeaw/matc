@@ -925,26 +925,128 @@
                   <lem wit="#EDITION">eius</lem>
                   <rdg wit="#COD_50" hand="#scr-1">ei<add place="above">u</add>s</rdg></app>
            <quote source="#EDITION" n="II 3,11">quot eius partes, de earum proprietate; de nomine: <lb n="2"/>quid sit nomen, de</quote>
-               
-               
-               
-        
-            </div>
-            <div type="page-of-Keil-edition" n="Praefatio" xml:id="praefatio.4" prev="#praefatio.3"
-               corresp="images-keil:Keil_v2_004.gif">
-               <quote source="#EDITION" n="II 4,6">quartusdecimus de praepositione.</quote>
+           <quote source="#EDITION" n="II 3,12">accidentibus ei, quot sunt species propriorum nominum, quot</quote>
+           <quote source="#EDITION" n="II 3,13">appellatiuorum, quot adiectiuorum, quot deriuatiuorum; de patro<lb n="3" break="no"/>nymicis: quot eorum</quote>
                <app type="text-variation">
-                  <lem wit="#EDITION">quartusdecimus</lem>
-                  <rdg wit="#COD_50" hand="#scr-1"><hi rend="red capitalis rustica">XIIII</hi></rdg>   
-               </app>
+                  <lem wit="#EDITION">appellatiuorum</lem>
+                  <rdg wit="#COD_50" hand="#scr-1">apellatiuorum</rdg></app>
+               <app type="text-variation">
+                  <lem wit="#EDITION">deriuatiuorum</lem>
+                  <rdg wit="#COD_50" hand="#scr-1">diriuatiuorum</rdg></app>
+               <app type="text-variation">
+                  <lem wit="#EDITION">patronymicis</lem>
+                  <rdg wit="#COD_50" hand="#scr-1">patronomicis</rdg></app>
+           <quote source="#EDITION" n="II 3,14">formae, quomodo deriuantur, ex quibus primitiuis; de diuersis</quote>
+               <app type="text-variation">
+                  <lem wit="#EDITION">deriuantur</lem>
+                  <rdg wit="#COD_50" hand="#scr-1">diriuantur</rdg></app>
+           <quote source="#EDITION" n="II 3,15">possessiuorum terminationibus et eorum regulis.</quote>
+           <quote source="#EDITION" n="II 3,16">tertius de com<lb n="4" break="no"/>paratiuis et superlatiuis et eorum diuersis extremitatibus:</quote>
+               <app type="text-variation">
+                  <lem wit="#EDITION">tertius</lem>
+                  <rdg wit="#COD_50" hand="#scr-1"><hi rend="red capitalis rustica">III</hi></rdg></app>
                <app type="decoration">
                   <lem wit="#EDITION">de</lem>
-                  <rdg wit="#COD_50" hand="#scr-1"><hi rend="capital letter filled with red ink">D</hi>e</rdg>
-               </app>
-            </div>
-            <div type="page-of-Keil-edition" n="Liber Primus" xml:id="liber-primus.1"
+                  <rdg wit="#COD_50" hand="#scr-1"><hi rend="capital letter filled with red ink">D</hi>e</rdg></app>
+           <quote source="#EDITION" n="II 3,17">ex quibus positiuis et qua ratione formantur; de diminutiuis: quot eorum</quote>
+           <quote source="#EDITION" n="II 3,18">species, ex quibus<lb n="5"/> declinationibus nominum, quomodo formantur.</quote>
+           <quote source="#EDITION" n="II 3,19">quartus de denominatiuis et uerbalibus et participialibus et</quote>    
+               <app type="text-variation">
+                  <lem wit="#EDITION">quartus</lem>
+                  <rdg wit="#COD_50" hand="#scr-1"><hi rend="red capitalis rustica">IIII</hi></rdg></app>
+               <app type="decoration">
+                  <lem wit="#EDITION">de</lem>
+                  <rdg wit="#COD_50" hand="#scr-1"><hi rend="capital letter filled with red ink">D</hi>e</rdg></app>
+           <quote source="#EDITION" n="II 3,20">aduerbialibus: quot eorum species,<lb n="6"/> ex quibus primitiuis, quomodo nascuntur.</quote>
+           <quote source="#EDITION" n="II 3,21">quintus de generibus dinoscendis per singulas terminationes; de</quote>
+               <app type="text-variation">
+                  <lem wit="#EDITION">quintus</lem>
+                  <rdg wit="#COD_50" hand="#scr-1"><hi rend="red capitalis rustica">V</hi></rdg></app>
+               <app type="decoration">
+                  <lem wit="#EDITION">de</lem>
+                  <rdg wit="#COD_50" hand="#scr-1"><hi rend="capital letter filled with red ink">D</hi>e</rdg></app>
+           <quote source="#EDITION" n="II 3,22">numeris; de figuris et earum compage; de casu.<lb n="7"/></quote>
+           <quote source="#EDITION" n="II 3,23">sextus de nominatiuo casu per singulas extremitates omnium</quote>
+               <app type="text-variation">
+                  <lem wit="#EDITION">sextus</lem>
+                  <rdg wit="#COD_50" hand="#scr-1"><hi rend="red capitalis rustica">VI</hi></rdg></app>
+               <app type="decoration">
+                  <lem wit="#EDITION">de</lem>
+                  <rdg wit="#COD_50" hand="#scr-1"><hi rend="capital letter filled with red ink">D</hi>e</rdg></app>
+           <quote source="#EDITION" n="II 3,24">nominum, tam in uocales quam in consonantes desinentium, per ordinem; de</quote>
+           <quote source="#EDITION" n="II 3,25">genetiuorum<lb n="8"/> tam ultimis quam paenultimis syllabis.</quote>
+           <quote source="#EDITION" n="II 3,26">septimus de ceteris obliquis casibus, tam singularibus quam pluralibus.</quote>    
+               <app type="text-variation">
+                  <lem wit="#EDITION">septimus</lem>
+                  <rdg wit="#COD_50" hand="#scr-1"><hi rend="red capitalis rustica">VII</hi></rdg></app>
+               <app type="decoration">
+                  <lem wit="#EDITION">de</lem>
+                  <rdg wit="#COD_50" hand="#scr-1"><hi rend="capital letter filled with red ink">D</hi>e</rdg></app>
+           </div>
+           <div type="page-of-Keil-edition" n="Praefatio" xml:id="praefatio.4" prev="#praefatio.3"
+               corresp="images-keil:Keil_v2_004.gif">
+           <quote source="#EDITION" n="II 4,1">octauus de uerbo et eius accidentibus.<lb n="9"/></quote>
+              <app type="text-variation">
+                 <lem wit="#EDITION">octauus</lem>
+                 <rdg wit="#COD_50" hand="#scr-1"><hi rend="red capitalis rustica">VIII</hi></rdg></app>
+              <app type="decoration">
+                 <lem wit="#EDITION">de</lem>
+                 <rdg wit="#COD_50" hand="#scr-1"><hi rend="capital letter filled with red ink">D</hi>e</rdg></app>
+              <app type="text-variation">
+                 <lem wit="#EDITION">eius</lem>
+                 <rdg wit="#COD_50" hand="#scr-1">de eius</rdg></app>
+           <quote source="#EDITION" n="II 4,2">nonus de regulis generalibus omnium coniugationum.</quote>
+              <app type="text-variation">
+                 <lem wit="#EDITION">nonus</lem>
+                 <rdg wit="#COD_50" hand="#scr-1"><hi rend="red capitalis rustica">VIIII</hi></rdg></app>
+              <app type="decoration">
+                 <lem wit="#EDITION">de</lem>
+                 <rdg wit="#COD_50" hand="#scr-1"><hi rend="capital letter filled with red ink">D</hi>e</rdg></app>
+           <quote source="#EDITION" n="II 4,3">decimus de praeterito perfecto.</quote>
+              <app type="text-variation">
+                 <lem wit="#EDITION">decimus</lem>
+                 <rdg wit="#COD_50" hand="#scr-1"><hi rend="red capitalis rustica">X</hi></rdg></app>
+              <app type="decoration">
+                 <lem wit="#EDITION">de</lem>
+                 <rdg wit="#COD_50" hand="#scr-1"><hi rend="capital letter filled with red ink">D</hi>e</rdg></app>
+           <quote source="#EDITION" n="II 4,4">undecimus de participio.</quote>  
+              <app type="text-variation">
+                 <lem wit="#EDITION">undecimus</lem>
+                 <rdg wit="#COD_50" hand="#scr-1"><hi rend="red capitalis rustica">XI</hi></rdg></app>
+              <app type="decoration">
+                 <lem wit="#EDITION">de</lem>
+                 <rdg wit="#COD_50" hand="#scr-1"><hi rend="capital letter filled with red ink">D</hi>e</rdg></app>
+           <quote source="#EDITION" n="II 4,5">duodecimus et tertiusdecimus de pronomine.<lb n="10"/></quote>
+           <quote source="#EDITION" n="II 4,6">quartusdecimus de praepositione.</quote>
+               <app type="text-variation">
+                  <lem wit="#EDITION">quartusdecimus</lem>
+                  <rdg wit="#COD_50" hand="#scr-1"><hi rend="red capitalis rustica">XIIII</hi></rdg></app>
+               <app type="decoration">
+                  <lem wit="#EDITION">de</lem>
+                  <rdg wit="#COD_50" hand="#scr-1"><hi rend="capital letter filled with red ink">D</hi>e</rdg></app>
+           <quote source="#EDITION" n="II 4,7">quintusdecimus de aduerbio et interiectione.</quote>
+              <app type="text-variation">
+                 <lem wit="#EDITION">quintusdecimus</lem>
+                 <rdg wit="#COD_50" hand="#scr-1"><hi rend="red capitalis rustica">XV</hi></rdg></app>
+              <app type="decoration">
+                 <lem wit="#EDITION">de</lem>
+                 <rdg wit="#COD_50" hand="#scr-1"><hi rend="capital letter filled with red ink">D</hi>e</rdg></app>
+           <quote source="#EDITION" n="II 4,8">sextusdecimus de coniunctione.</quote>
+              <app type="text-variation">
+                 <lem wit="#EDITION">sextusdecimus</lem>
+                 <rdg wit="#COD_50" hand="#scr-1"><hi rend="red capitalis rustica">XVI</hi></rdg></app>
+              <app type="decoration">
+                 <lem wit="#EDITION">de</lem>
+                 <rdg wit="#COD_50" hand="#scr-1"><hi rend="capital letter filled with red ink">D</hi>e</rdg></app>
+           <quote source="#EDITION" n="II 4,9">septimusdecimus et octauusdecimus de constructione siue<lb n="11"/> ordinatione</quote>  
+           <quote source="#EDITION" n="II 4,10">partium orationis inter se.</quote>    
+           </div>
+           <div type="page-of-Keil-edition" n="Liber Primus" xml:id="liber-primus.1"
                next="#liber-primus.2" corresp="images-keil:Keil_v2_005.gif">
-               <quote source="#EDITION" n="II 5,0"><add type="text-variation" hand="#scr-1"><lb n="11"/><hi rend="red capitalis rustica">INCIPIT ARS PRISCIANI GRAMMATICI
+           
+              
+              
+              <quote source="#EDITION" n="II 5,0"><add type="text-variation" hand="#scr-1"><lb n="11"/><hi rend="red capitalis rustica">INCIPIT ARS PRISCIANI GRAMMATICI
                   CESARIENSIS</hi></add> liber primus de uoce</quote>
                <app type="text-variation">
                   <lem wit="#EDITION">liber primus</lem>
