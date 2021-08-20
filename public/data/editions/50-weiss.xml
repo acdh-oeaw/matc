@@ -150,7 +150,7 @@
                   <catDesc>Gloss commenting on the terms oncurring in Priscian's text</catDesc>
                </category>
                <category xml:id="translation-into-Old-High-German" n="211">
-                  <catDesc>Lexical gloss providing a translation into Old-High-German</catDesc>
+                  <catDesc>Lexical gloss providing a translation of the lemma into Old-High-German</catDesc>
                </category>
                <category xml:id="synonyms" n="212">
                   <catDesc>Lexical gloss providing a synonym</catDesc>
@@ -244,10 +244,10 @@
                   <catDesc>commentary glosses beginning with quia</catDesc>
                </category>
                <category xml:id="glosses-elucidating-the-main-text" n="543">
-                  <catDesc>commentary glosses beginning normally with id est</catDesc>
+                  <catDesc>commentary glosses beginning often with id est, provding a paraphrase or an explanation of the lemma</catDesc>
                </category>
                <category xml:id="glosses-elucidating-the-main-text-with-siglum-auctoris" n="544">
-                  <catDesc>commentary glosses beginning normally with id est</catDesc>
+                  <catDesc>commentary glosses beginning often with id est</catDesc>
                </category>
                <category xml:id="etymological-glosses" n="55">
                   <catDesc>commentary glosses explaining the etymology of the lemma</catDesc>
@@ -277,9 +277,14 @@
                   <catDesc>glosses giving information about the socio-historical context of the
                      glossator</catDesc>
                </category>
-               <category xml:id="reference-signs" n="6">
-                  <catDesc>gloss adding a symbol used to link lemma with marginal
-                     annotation</catDesc>
+            </taxonomy>
+            <taxonomy xml:id="reference-signs">
+               <category xml:id="lemma-gloss">
+                  <catDesc> symbol added to link a lemma with its marginal annotation</catDesc>
+               </category>
+               <category xml:id="lemma-lemma">
+                  <catDesc> symbol added to link a lemma with a further lemma to highlight their connection within Priscian's text. 
+                     The two lemmata are not part of the same sentence. Their connection regards the content, not the syntax.</catDesc>
                </category>
             </taxonomy>
          </classDecl>
@@ -518,10 +523,10 @@
                            <expan>grecorum</expan>
                         </choice></add></rdg>
                </app>
-               <app type="gloss">
+               <app type="reference-signs">
                   <lem wit="#EDITION">quibus</lem>
                   <rdg wit="#COD_50"><add place="above" hand="#gl-1" facs="#zone.1r.11"
-                        ana="#reference-signs"><g ref="#two-horizontal-dots-with-acute"
+                        ana="#lemma-gloss"><g ref="#two-horizontal-dots-with-acute"
                            xml:id="ref-1"/></add></rdg>
                </app>
                <app type="gloss" subtype="to-be-checked">
@@ -607,11 +612,13 @@
                <quote source="#EDITION" n="II 1,10">enucleatius possit inueniri?) cum <w
                      xml:id="II-1-10-1">igitur</w> eos <w xml:id="II-1-10-2">omnia</w> fere <w
                      xml:id="II-1-10-3">uitia</w>, quaecumque</quote>
-               <app type="gloss">
+               <app type="reference-signs">
                   <lem wit="#EDITION">enucleatius</lem>
                   <rdg wit="#COD_50"><add place="above" hand="#gl-1" facs="#zone.1r.26"
-                        ana="#reference-signs"><g ref="#two-horizontal-dots-with-acute"
-                           xml:id="ref-2"/></add></rdg>
+                        ana="#lemma-gloss"><g ref="#two-horizontal-dots-with-acute"
+                           xml:id="ref-2"/></add></rdg></app>
+                <app type="gloss">
+                     <lem wit="#EDITION">enucleatius</lem>
                   <rdg wit="#COD_50"><add place="right margin" hand="#gl-1" facs="#zone.1r.27"
                         ana="#glosses-elucidating-the-main-text"><g
                            ref="#two-horizontal-dots-with-acute" corresp="#ref-2"/> apertius uel
@@ -653,10 +660,12 @@
                <quote source="#EDITION" n="II 1,11">antiquorum Grae<lb n="10" break="no"/>corum
                   commentariis sunt relicta <w xml:id="II-1-11-1">artis</w><w xml:id="II-1-11-2"
                      >grammaticae</w>,</quote>
-               <app type="gloss">
+               <app type="reference-signs">
                   <lem wit="#EDITION">commentariis</lem>
                   <rdg wit="#COD_50"><add place="above" hand="#gl-1" facs="#zone.1r.31"
-                        ana="#reference-signs"><g ref="#inverted-N-with-dot-below"/></add></rdg>
+                        ana="#lemma-gloss"><g ref="#inverted-N-with-dot-below"/></add></rdg></app>
+                  <app type="gloss">
+                     <lem wit="#EDITION">commentariis</lem>
                   <rdg wit="#COD_50"><add place="right margin" hand="#gl-1" facs="#zone.1r.32"
                         ana="#glosses-elucidating-the-main-text"><g ref="#inverted-N-with-dot-below"/>
                         <g ref="#idest"/> breuibus scriptis</add></rdg>
@@ -714,10 +723,12 @@
                   <lem wit="#EDITION">impudenter</lem>
                   <rdg wit="#COD_50" hand="#scr-1">inpudenter</rdg>
                </app>
-               <app type="gloss">
+               <app type="reference-signs">
                   <lem wit="#EDITION">impudenter</lem>
                   <rdg wit="#COD_50"><add place="above" hand="#gl-1" facs="#zone.1r.44"
-                     ana="#reference-signs"><g ref="#half-ring-with-dot-below"/></add></rdg>
+                     ana="#lemma-gloss"><g ref="#half-ring-with-dot-below"/></add></rdg></app>
+                  <app type="gloss">
+                     <lem wit="#EDITION">impudenter</lem>
                   <rdg wit="#COD_50"><add subtype="to-be-checked" place="right margin" hand="#gl-1" facs="#zone.1r.45"
                      ana="#glosses-elucidating-the-main-text"><g ref="#half-ring-with-dot-below"/> inreuerenter uel inrationabiliter. cum uerecundia et reuerentia</add></rdg>
                   <rdg wit="#COD_50"><add subtype="to-be-checked" place="above" hand="#gl-1" facs="#zone.1r.46"
@@ -759,10 +770,12 @@
                   <rdg wit="#COD_50"><add place="above" hand="#gl-1" facs="#zone.1r.53"
                      xml:lang="lat" ana="#glosses-elucidating-the-main-text">breuibus scriptis</add></rdg></app>
           <quote source="#EDITION" n="II 2,7">temperamentum, si ex utriusque linguae modera<lb n="16" break="no"/>toribus elegantiora in unum</quote>  
-               <app type="gloss">
+                  <app type="reference-signs">
                   <lem wit="#EDITION">moderatoribus</lem>
                   <rdg wit="#COD_50"><add place="above" hand="#gl-1" facs="#zone.1r.54"
-                     ana="#reference-signs"><g ref="#half-ring-with-dot-above"/></add></rdg>
+                     ana="#lemma-gloss"><g ref="#half-ring-with-dot-above"/></add></rdg></app>
+                  <app type="gloss">
+                     <lem wit="#EDITION">moderatoribus</lem>
                   <rdg wit="#COD_50"><add subtype="to-be-checked" place="right margin" hand="#gl-1" facs="#zone.1r.55"
                      ana="#glosses-elucidating-the-main-text"><g ref="#half-ring-with-dot-above"/> mode..am..</add></rdg></app>
                <app type="text-variation">
@@ -783,10 +796,12 @@
                <app type="text-variation">
                   <lem wit="#EDITION">aequiperantes</lem>
                   <rdg wit="#COD_50" hand="#scr-1">equipperantes</rdg></app>
-               <app type="gloss">
+               <app type="reference-signs">
                   <lem wit="#EDITION">equipperantes</lem>
                   <rdg wit="#COD_50"><add place="above" hand="#gl-1" facs="#zone.1r.58"
-                     ana="#reference-signs"><g ref="#reference-sign-two-horizontal-dots"/></add></rdg>
+                     ana="#lemma-gloss"><g ref="#reference-sign-two-horizontal-dots"/></add></rdg></app>
+                  <app type="gloss">
+                     <lem wit="#EDITION">equipperantes</lem>
                   <rdg wit="#COD_50"><add subtype="to-be-checked" place="left-margin" hand="#gl-1" facs="#zone.1r.59"
                      ana="#glosses-elucidating-the-main-text"><g ref="#reference-sign-two-horizontal-dots"/> .s..si</add></rdg></app>
                <app type="text-variation">
@@ -798,12 +813,14 @@
                <app type="text-variation">
                   <lem wit="#EDITION">inuentionibus esse posse credo) sua</lem>
                   <rdg wit="#COD_50" hand="#scr-1">credo esse inuentionibus sua posse</rdg></app>
-               <app type="gloss">
+               <app type="reference-signs">
                   <lem wit="#EDITION">sua</lem>
                   <rdg wit="#COD_50"><add place="above left" hand="#gl-1" facs="#zone.1r.65"
-                     ana="#reference-signs"><g ref="#reference-sign-dot-with-acute"/></add></rdg>
+                     ana="#lemma-gloss"><g ref="#reference-sign-dot-with-acute"/></add></rdg>
                   <rdg wit="#COD_50"><add place="above right" hand="#gl-1" facs="#zone.1r.60"
-                     ana="#reference-signs"><g ref="#reference-sign-dot-with-acute"/></add></rdg>
+                     ana="#lemma-gloss"><g ref="#reference-sign-dot-with-acute"/></add></rdg></app>
+                <app type="gloss">
+                  <lem wit="#EDITION">sua</lem>
                   <rdg wit="#COD_50"><add subtype="to-be-checked" place="right margin" hand="#gl-1" facs="#zone.1r.61"
                      ana="#syntactical-glosses"><g ref="#reference-sign-dot-with-acute"/> sua industria</add></rdg></app>
           <quote source="#EDITION" n="II 2,15">industria ad communem literatoriae professionis utilitatem congrua ratio<lb n="21" break="no"/>nis</quote>
@@ -855,9 +872,9 @@
            <quote source="#EDITION" n="II 2,29">arcem possederat musicae, te tertium ex utroque compositum esse</quote> 
                <app type="text-variation">
                   <lem wit="#EDITION">arcem</lem>
-                  <rdg wit="#COD_50" hand="#scr-1">artem<add place="above"
-                     hand="#gl-2" facs="#zone.1r.68" ana="#reference-signs"><g
-                        ref="#reference-sign-acute-followed-by-dot"/></add><add type="#gloss" subtype="to-be-checked" place="right margin"
+                  <rdg wit="#COD_50" hand="#scr-1">artem<add type="reference-signs" place="above"
+                     hand="#gl-2" facs="#zone.1r.68" ana="#lemma-gloss"><g
+                        ref="#reference-sign-acute-followed-by-dot"/></add><add type="gloss" subtype="to-be-checked" place="right margin"
                            hand="#gl-2" facs="#zone.1r.69" ana="#text-variant"><g
                               ref="#reference-sign-acute-followed-by-dot"/> uel arcem</add></rdg></app>
                <app type="emendation">
@@ -879,14 +896,14 @@
             <div type="page-of-Keil-edition" n="Praefatio" xml:id="praefatio.3" prev="#praefatio.2"
                next="#praefatio.4" corresp="images-keil:Keil_v2_003.gif">
            <quote source="#EDITION" n="II 3,1">praesul, ut quantamcumque mihi deus annuerit suscepti laboris gloriam,</quote>
-               <app type="gloss">
+               <app type="reference-signs">
                   <lem wit="#EDITION">quantamcumque</lem>
                   <rdg wit="#COD_50"><add place="above" hand="#gl-2" facs="#zone.1r.71"
-                     ana="#reference-signs"><g ref="#reference-sign-three-dots-in-triangle-shape"/></add></rdg></app>
-               <app type="gloss">
+                     ana="#lemma-gloss"><g ref="#reference-sign-three-dots-in-triangle-shape"/></add></rdg></app>
+               <app type="reference-signs">
                   <lem wit="#EDITION">gloriam</lem>
                   <rdg wit="#COD_50"><add place="above" hand="#gl-2" facs="#zone.1r.72"
-                     ana="#reference-signs"><g ref="#reference-sign-three-dots-in-triangle-shape"/></add></rdg></app>
+                     ana="#lemma-gloss"><g ref="#reference-sign-three-dots-in-triangle-shape"/></add></rdg></app>
                <app type="gloss" subtype="to-be-checked">
                   <lem wit="#EDITION">quantamcumque   gloriam</lem>
                   <rdg wit="#COD_50"><add place="right margin" hand="#gl-2" facs="#zone.1r.73"
@@ -1043,11 +1060,8 @@
            </div>
            <div type="page-of-Keil-edition" n="Liber Primus" xml:id="liber-primus.1"
                next="#liber-primus.2" corresp="images-keil:Keil_v2_005.gif">
-           
-              
-              
-              <quote source="#EDITION" n="II 5,0"><add type="text-variation" hand="#scr-1"><lb n="11"/><hi rend="red capitalis rustica">INCIPIT ARS PRISCIANI GRAMMATICI
-                  CESARIENSIS</hi></add> liber primus de uoce</quote>
+           <quote source="#EDITION" n="II 5,0"><add type="text-variation" hand="#scr-1"><hi rend="red capitalis rustica">INCIPIT ARS PRISCIANI GRAMMATICI
+                 CESARIENSIS</hi></add> liber primus de uoce</quote>
                <app type="text-variation">
                   <lem wit="#EDITION">liber primus</lem>
                   <rdg wit="#COD_50"/>
@@ -1056,11 +1070,22 @@
                   <lem wit="#EDITION">de uoce</lem>
                   <rdg wit="#COD_50"><hi rend="red capitalis rustica">DE VOCE</hi></rdg>
                </app>
-               <quote source="#EDITION" n="II 5,1"><lb n="12"/>philosophi definiunt, uocem esse aerem tenuissimum ictum uel suum</quote>
+           <quote source="#EDITION" n="II 5,1"><lb n="12"/>philosophi definiunt, uocem esse aerem tenuissimum ictum uel suum</quote>
                <app type="decoration">
                   <lem wit="#EDITION">philosophi</lem>
-                  <rdg wit="#COD_50" hand="#scr-1"><hi rend="red capitalis rustica">P</hi>hilosophi</rdg>
-               </app>
+                  <rdg wit="#COD_50" hand="#scr-1"><hi rend="red capitalis rustica">P</hi>hilosophi</rdg></app>
+              <app type="reference-signs">
+                 <lem wit="#EDITION">philosophi</lem>
+                 <rdg wit="#COD_50"><add place="above" hand="#gl-1" facs="#zone.1v.2"
+                    ana="#lemma-gloss"><g ref="#inverted-N-with-dot-below"/></add></rdg></app>
+              <app type="gloss">
+                 <lem wit="#EDITION">philosophi</lem>
+                 <rdg wit="#COD_50"><add place="left margin" hand="#gl-1" facs="#zone.1v.3"
+                    ana="#glosses-elucidating-the-main-text"><g ref="#inverted-N-with-dot-below"/> amatores scientiae <lb/>definio. uniuscuiusque rei proprietas</add></rdg></app>
+                               
+              
+              
+              
                <quote source="#EDITION" n="II 5,2">sensibile aurium, id est quod proprie auribus ac<lb n="13" break="no"/>cidit. et est prior definitio</quote>
                <app type="gloss">
                   <lem wit="#EDITION">prior definitio</lem>
@@ -1068,6 +1093,13 @@
                      ana="#glosses-elucidating-the-main-text-with-siglum-auctoris"><bibl corresp="#Augustinus-1"><choice><abbr>AVG</abbr><expan>Augustinus</expan></choice></bibl> substantia uocis est aer tenuissimus</add></rdg>
                </app>
             </div>
+            
+            
+            
+            
+            
+            
+            
             <pb n="2r" xml:id="page__00013" facs="#facs__00013"/>
             <pb n="2v" xml:id="page__00014" facs="#facs__00014"/>
             <pb n="3r" xml:id="page__00015" facs="#facs__00015"/>
@@ -1410,6 +1442,8 @@
       <surface xml:id="facs__00012" n="1v">
          <graphic url="http://diglib.hab.de/mss/50-weiss/00012.jpg"/>
          <zone xml:id="zone.1v.1" ulx="337" uly="386" lrx="503" lry="402"/>
+         <zone xml:id="zone.1v.3" ulx="149" uly="372" lrx="228" lry="405"/>
+         <zone xml:id="zone.1v.2" ulx="264" uly="367" lrx="277" lry="379"/>
       </surface>
       <surface xml:id="facs__00013" n="2r">
          <graphic url="http://diglib.hab.de/mss/50-weiss/00013.jpg"/>
