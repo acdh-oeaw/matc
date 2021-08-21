@@ -912,7 +912,9 @@
                   <lem wit="#EDITION">gloriam</lem>
                   <rdg wit="#COD_50"><add place="above" hand="#gl-1" facs="#zone.1r.74"
                      ana="#glosses-elucidating-the-main-text">per diffinitionem</add></rdg></app>
-               <note>Otfrid wrote this gloss AFTER the second glossator had added the reference sign and the marginal gloss concerning "gloriam".</note>
+               <note>Otfrid wrote this gloss AFTER the second glossator had added the reference sign and the marginal gloss concerning "gloriam".
+                  Sometimes, however (see below), the second glossator clearly wrote after Otfrid. 
+                  Thus, the two writer added their glosses and worked with this manuscript almost at the same time</note>
            <quote source="#EDITION" n="II 3,2">te comite quasi sole quodam dilu<lb n="32" break="no"/>cidius crescat.</quote>
            <quote source="#EDITION" n="II 3,3">titulos etiam uniuersi operis per singulos supposui libros, quo</quote>
               <app type="text-variation">
@@ -923,7 +925,7 @@
                  <lem wit="#EDITION">inueniri</lem>
                  <rdg wit="#COD_50" hand="#scr-1">inuenir<del type="expunction">e</del><add place="above">i</add></rdg></app>              
            <quote source="#EDITION" n="II 3,5">primus liber continet de uoce et eius speciebus; de litera: quid sit</quote>    
-               <app type="text-variation">
+               <app type="decoration">
                   <lem wit="#EDITION">primus</lem>
                   <rdg wit="#COD_50" hand="#scr-1"><hi rend="red capitalis rustica">P</hi>rimus</rdg></app>
            <quote source="#EDITION" n="II 3,6">litera, de eius generibus<lb n="34"/> et speciebus, de singularum potestate, quae in</quote> 
