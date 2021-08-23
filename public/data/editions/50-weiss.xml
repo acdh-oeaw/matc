@@ -176,7 +176,7 @@
                   <catDesc>Lexical gloss explaining a term by a differentia</catDesc>
                </category>
                <category xml:id="further-derivations" n="24">
-                  <catDesc>Lexical gloss adding further terms derving from the same root</catDesc>
+                  <catDesc>Lexical gloss adding further terms deriving from the same root</catDesc>
                </category>
                <category xml:id="original-parts-of-a-word" n="25">
                   <catDesc>Lexical gloss showing the original parts of a composite word</catDesc>
@@ -244,7 +244,7 @@
                   <catDesc>commentary glosses beginning with quia</catDesc>
                </category>
                <category xml:id="glosses-elucidating-the-main-text" n="543">
-                  <catDesc>commentary glosses beginning often with id est, provding a paraphrase or an explanation of the lemma</catDesc>
+                  <catDesc>commentary glosses beginning often with id est, providing a paraphrase or an explanation of the lemma</catDesc>
                </category>
                <category xml:id="glosses-elucidating-the-main-text-with-siglum-auctoris" n="544">
                   <catDesc>commentary glosses beginning often with id est</catDesc>
@@ -408,6 +408,20 @@
                <localProp name="entity" value="reference-sign-three-dots-in-triangle-shape"/>
                <figure>
                   <graphic url="../pictures/reference-sign-three-dots-in-triangle-shape.png"/>
+               </figure>
+            </glyph>
+            <glyph xml:id="reference-sign-oblique-balloon-with-rope">
+               <localProp name="Name" value="REFERENCE SIGN OBLIQUE BALLON WITH ROPE"/>
+               <localProp name="entity" value="reference-sign-oblique-balloon-with-rope"/>
+               <figure>
+                  <graphic url="../pictures/reference-sign-oblique-balloon-with-rope.png"/>
+               </figure>
+            </glyph>
+            <glyph xml:id="reference-sign-oblique-v">
+               <localProp name="Name" value="REFERENCE SIGN OBLIQUE V"/>
+               <localProp name="entity" value="reference-sign-oblique-v"/>
+               <figure>
+                  <graphic url="../pictures/reference-sign-oblique-v.png"/>
                </figure>
             </glyph>
          </charDecl>
@@ -1079,16 +1093,31 @@
               <app type="reference-signs">
                  <lem wit="#EDITION">philosophi</lem>
                  <rdg wit="#COD_50"><add place="above" hand="#gl-1" facs="#zone.1v.2"
-                    ana="#lemma-gloss"><g ref="#inverted-N-with-dot-below"/></add></rdg></app>
+                    ana="#lemma-gloss"><g ref="#inverted-N-with-dot-below"/></add></rdg>
+                 <rdg wit="#COD_50"><add place="above" hand="#gl-2" facs="#zone.1v.5"
+                    ana="#lemma-gloss"><g ref="#reference-sign-oblique-balloon-with-rope"/></add></rdg></app>
               <app type="gloss">
                  <lem wit="#EDITION">philosophi</lem>
                  <rdg wit="#COD_50"><add place="left margin" hand="#gl-1" facs="#zone.1v.3"
-                    ana="#glosses-elucidating-the-main-text"><g ref="#inverted-N-with-dot-below"/> amatores scientiae <lb/>definio. uniuscuiusque rei proprietas</add></rdg></app>
-                               
+                    ana="#glosses-elucidating-the-main-text"><g ref="#inverted-N-with-dot-below"/> amatores 
+                    scientiae <lb/>definio. uniuscuiusque rei proprietas</add></rdg>
+                 <rdg wit="#COD_50"><add place="left margin" hand="#gl-2" facs="#zone.1v.4"
+                 ana="#commentary-glosses"><g ref="#reference-sign-oblique-balloon-with-rope"/> </add></rdg></app>              
+              <app type="gloss">
+                 <lem wit="#EDITION">definiunt</lem>
+                 <rdg wit="#COD_50"><add place="above" hand="#gl-2" facs="#zone.1v.6"
+                    ana="#synonyms">scribunt. breuiter exponunt.</add></rdg></app>
+              <app type="reference-signs">
+                 <lem wit="#EDITION">uocem</lem>
+                 <rdg wit="#COD_50"><add place="above" hand="#gl-2" facs="#zone.1v.7"
+                    ana="#lemma-gloss"><g ref="#reference-sign-oblique-v"/></add></rdg></app>
+              <app type="gloss">
+                 <lem wit="#EDITION">uocem</lem>
+                 <rdg wit="#COD_50"><add place="above" hand="#gl-2" facs="#zone.1v.8"
+                    ana="#translation-into-Old-High-German">lûtnussa</add></rdg><note>see AHDW s.v. [h]lûtnussa = nominative or accusative singular = "Klang, Laut"; Schwarz 1977, p. 31</note></app>
               
               
-              
-               <quote source="#EDITION" n="II 5,2">sensibile aurium, id est quod proprie auribus ac<lb n="13" break="no"/>cidit. et est prior definitio</quote>
+              <quote source="#EDITION" n="II 5,2">sensibile aurium, id est quod proprie auribus ac<lb n="13" break="no"/>cidit. et est prior definitio</quote>
                <app type="gloss">
                   <lem wit="#EDITION">prior definitio</lem>
                   <rdg wit="#COD_50"><add place="above" hand="#gl-1" facs="#zone.1v.1"
@@ -1444,6 +1473,11 @@
       <surface xml:id="facs__00012" n="1v">
          <graphic url="http://diglib.hab.de/mss/50-weiss/00012.jpg"/>
          <zone xml:id="zone.1v.1" ulx="337" uly="386" lrx="503" lry="402"/>
+         <zone xml:id="zone.1v.8" ulx="440" uly="360" lrx="491" lry="376"/>
+         <zone xml:id="zone.1v.7" ulx="388" uly="371" lrx="399" lry="381"/>
+         <zone xml:id="zone.1v.6" ulx="325" uly="361" lrx="446" lry="377"/>
+         <zone xml:id="zone.1v.5" ulx="272" uly="362" lrx="287" lry="377"/>
+         <zone xml:id="zone.1v.4" ulx="145" uly="329" lrx="254" lry="369"/>
          <zone xml:id="zone.1v.3" ulx="149" uly="372" lrx="228" lry="405"/>
          <zone xml:id="zone.1v.2" ulx="264" uly="367" lrx="277" lry="379"/>
       </surface>
