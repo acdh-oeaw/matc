@@ -82,38 +82,43 @@
     <xsl:template match="tei:charDecl[@n = 'abbreviations']">
         <div class="pictures">
             <p class="heading-2">Signs for abbreviations:</p>
-            <ul>
+            <div>
                 <xsl:apply-templates select="tei:glyph"/>
-            </ul>
+            </div>
         </div>
     </xsl:template>
     
     <xsl:template match="tei:charDecl[@n = 'construe-marks']">
         <div class="pictures">
             <p class="heading-2">Signs for construe marks:</p>
-            <ul>
+            <div>
                 <xsl:apply-templates select="tei:glyph"/>
-            </ul>
+            </div>
         </div>
     </xsl:template>
     
     <xsl:template match="tei:charDecl[@n = 'reference signs']">
         <div class="pictures">
             <p class="heading-2">Reference signs:</p>
-            <ul>
+            <div>
                 <xsl:apply-templates select="tei:glyph"/>
-            </ul>
+            </div>
         </div>
     </xsl:template>
     
     <xsl:template match="tei:glyph">
-        <li>
+        <p class="glyph-section">
             <xsl:element name="img">
                <xsl:attribute name="src" select="concat('data',substring-after(tei:figure/tei:graphic/@url,'..'))"/>
             </xsl:element>
             <xsl:text> - </xsl:text>
             <xsl:value-of select="tei:localProp[@name = 'Name']/@value"/>
-        </li>
+            <xsl:if test="exists(child::tei:note)">
+                <xsl:text> - (</xsl:text>
+                    <xsl:value-of select="tei:note/text()"/>
+                <xsl:text>)</xsl:text>
+            </xsl:if>
+        </p>
     </xsl:template>
     
     <xsl:template match="tei:text/tei:body/tei:div/tei:div[@type = 'page-of-Keil-edition']">
@@ -180,7 +185,7 @@
     </xsl:template>
     
     <xsl:template match="tei:w[parent::tei:quote]">
-        <span class="bold-text">
+        <span class="bold-text referred-word">
             <xsl:value-of select="text()"/>
         </span>
     </xsl:template>
@@ -190,7 +195,7 @@
             <xsl:apply-templates/>
         </span>
         <span class="italic-text">
-            <xsl:text>(</xsl:text>
+            <xsl:text> (</xsl:text>
             <xsl:value-of select="substring-after(@hand,'#')"/>
             <xsl:text>)</xsl:text>
         </span>
@@ -212,7 +217,8 @@
     
     <xsl:template match="tei:app">
         <div class="apparatus">
-            <xsl:apply-templates/>
+            <xsl:apply-templates select="tei:lem"/>
+            <xsl:apply-templates select="tei:rdg"/>
         </div>
     </xsl:template>
     
@@ -240,8 +246,26 @@
         <xsl:text> (</xsl:text>
         <xsl:value-of select="@place"/>
         <xsl:text>, </xsl:text>
-        <xsl:value-of select="substring-after(@hand,'#')"/>
+        <xsl:if test="substring-after(@hand,'#') = 'scr-1' or substring-after(@hand,'#') = 'scr'">
+            <xsl:text>main scribe</xsl:text>
+        </xsl:if>
+        <xsl:if test="substring-after(@hand,'#') = 'gl-1'">
+            <xsl:text>first glossator</xsl:text>
+        </xsl:if>
+        <xsl:if test="substring-after(@hand,'#') = 'gl-2'">
+            <xsl:text>second glossator</xsl:text>
+        </xsl:if>
         <xsl:text>) </xsl:text>
+        <xsl:variable name="root-node" select="root()/tei:TEI" as="node()"/>
+        <xsl:if test="exists(@ana)">
+            <xsl:for-each select="tokenize(@ana,'\s*#')">
+                <xsl:if test=". != ''">
+                    <span class="analysis">
+                        <xsl:value-of select="$root-node//tei:category[@xml:id = current()]/tei:catDesc/text()"/>
+                    </span>
+                </xsl:if>
+            </xsl:for-each>
+        </xsl:if>
     </xsl:template>
     
     <xsl:template match="tei:g">
@@ -251,7 +275,9 @@
     </xsl:template>
     
     <xsl:template match="tei:w[parent::tei:rdg]">
-        <xsl:value-of select="text()"/>
+        <span class="referred-word">
+            <xsl:value-of select="text()"/>
+        </span>
     </xsl:template>
     
     <xsl:template match="tei:note">
@@ -271,10 +297,39 @@
             <xsl:text> &#8594; </xsl:text>
             <xsl:variable name="root-node" select="root()/tei:TEI" as="node()"/>
             <xsl:for-each select="tokenize(@target,'\s')">
-                <xsl:value-of select="$root-node//tei:w[@xml:id = substring-after(current(),'#')]/text()"/>
+                <span class="pointer-targets">
+                    <xsl:value-of select="$root-node//tei:w[@xml:id = substring-after(current(),'#')]/text()"/>
+                </span>
                 <xsl:text> </xsl:text>
+                <span class="pointer-target-source">
+                    <xsl:text>(</xsl:text>
+                    <xsl:if test="exists($root-node//tei:w[@xml:id = substring-after(current(),'#')]/parent::tei:quote)">
+                        <xsl:value-of select="$root-node//tei:w[@xml:id = substring-after(current(),'#')]/parent::tei:quote/@n"/>
+                    </xsl:if>
+                    <xsl:if test="not(exists($root-node//tei:w[@xml:id = substring-after(current(),'#')]/parent::tei:quote))">
+                        <xsl:value-of select="$root-node//tei:w[@xml:id = substring-after(current(),'#')]/parent::tei:rdg/parent::tei:app/preceding-sibling::tei:quote[1]/@n"/>
+                        <xsl:text> </xsl:text>
+                        <xsl:value-of select="$root-node//tei:w[@xml:id = substring-after(current(),'#')]/parent::tei:rdg/preceding-sibling::tei:lem/text()"/>
+                        <xsl:text> v.l.</xsl:text>
+                    </xsl:if>
+                    <xsl:text>)</xsl:text>
+                </span>
             </xsl:for-each>
         </p>
+    </xsl:template>
+    
+    <xsl:template match="tei:choice[parent::tei:add]">
+        <xsl:if test="exists(tei:abbr/tei:hi[@rend = 'overline'])">
+            <span style="text-decoration: overline;">
+                <xsl:value-of select="tei:abbr/tei:hi/text()"/>
+            </span>
+        </xsl:if>
+        <xsl:if test="not(exists(tei:abbr/tei:hi[@rend = 'overline']))">
+            <xsl:value-of select="tei:abbr/text()"/>
+        </xsl:if>
+        <xsl:text> (</xsl:text>
+            <xsl:value-of select="tei:expan/text()"/>
+        <xsl:text>)</xsl:text>
     </xsl:template>
     
 </xsl:stylesheet>
