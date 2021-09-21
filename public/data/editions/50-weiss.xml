@@ -91,7 +91,7 @@
                      </supportDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote xml:id="scr-1">writer of the main text</handNote>
+                     <handNote xml:id="scr">writer of the main text</handNote>
                      <handNote xml:id="gl-1">first glossator, id est Otfrid of
                         Wissembourg</handNote>
                      <handNote xml:id="gl-2">second glossator, probably the same person who also corrected the main text</handNote>
@@ -881,16 +881,22 @@
                      ana="#glosses-elucidating-the-main-text"> ...quo patris</add></rdg></app>
                <app type="text-variation">
                <lem wit="#EDITION">patricie</lem>
-               <rdg wit="#COD_50" cause="emendation" type="erasure">patrici<del>e</del></rdg></app>
+                  <rdg wit="#COD_50">patrici<del cause="emendation" rend="rasura" hand="unknown">e</del></rdg></app>
            <quote source="#EDITION" n="II 2,26">adquisiuit in omni studio ingenii claritudo, non tantum accipiens ab excelsis</quote>
            <quote source="#EDITION" n="II 2,27">gradibus honorum<lb n="28"/> pretii, quantum illis decoris addens tui, cuius mentem</quote>
            <quote source="#EDITION" n="II 2,28">tam Homeri credo quam Virgilii anima constare, quo<lb n="29" break="no"/>rum uterque</quote>   
            <quote source="#EDITION" n="II 2,29">arcem possederat musicae, te tertium ex utroque compositum esse</quote> 
                <app type="text-variation">
                   <lem wit="#EDITION">arcem</lem>
-                  <rdg wit="#COD_50" hand="#scr">artem<add type="reference-signs" place="above"
-                     hand="#gl-2" facs="#zone.1r.68" ana="#lemma-gloss"><g
-                        ref="#reference-sign-acute-followed-by-dot"/></add><add type="gloss" subtype="to-be-checked" place="right margin"
+                  <rdg wit="#COD_50" hand="#scr">artem</rdg></app>
+       <app type="reference-signs">
+          <lem wit="#COD_50">artem</lem>
+          <rdg wit="#COD_50"> artem <add place="above" hand="#gl-2" facs="#zone.1r.68" ana="#lemma-gloss"><g
+             ref="#reference-sign-acute-followed-by-dot"/></add></rdg></app>
+       <app type="gloss">
+          <lem wit="#COD_50">artem</lem>
+                  <rdg wit="#COD_50">
+                     <add type="gloss" subtype="to-be-checked" place="right margin"
                            hand="#gl-2" facs="#zone.1r.69" ana="#text-variant"><g
                               ref="#reference-sign-acute-followed-by-dot"/> uel arcem</add></rdg></app>
                <app type="emendation">
@@ -921,7 +927,11 @@
                   <rdg wit="#COD_50"><add place="above" hand="#gl-2" facs="#zone.1r.72"
                      ana="#lemma-gloss"><g ref="#reference-sign-three-dots-in-triangle-shape"/></add></rdg></app>
                <app type="gloss" subtype="to-be-checked">
-                  <lem wit="#EDITION">quantamcumque   gloriam</lem>
+                  <lem wit="#EDITION">quantamcumque</lem>
+                  <rdg wit="#COD_50"><add place="right margin" hand="#gl-2" facs="#zone.1r.73"
+                     ana="#text-variant"><g ref="#reference-sign-three-dots-in-triangle-shape"/> uel quantum gloriae...</add></rdg></app>
+               <app type="gloss" subtype="to-be-checked">
+                  <lem wit="#EDITION">gloriam</lem>
                   <rdg wit="#COD_50"><add place="right margin" hand="#gl-2" facs="#zone.1r.73"
                      ana="#text-variant"><g ref="#reference-sign-three-dots-in-triangle-shape"/> uel quantum gloriae...</add></rdg></app>
                <app type="gloss" subtype="to-be-checked" xml:id="gloss-2-3-1">
