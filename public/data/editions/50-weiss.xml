@@ -314,7 +314,7 @@
          </charDecl>
          <charDecl n="construe-marks">
             <glyph xml:id="two-horizontal-dots">
-               <localProp name="Name" value="CONSTRUE MARK TWO HORIZONTAL DOTS"/>
+               <localProp name="Name" value="CONSTRUE MARK TWO HORIZONTAL DOTS-DISTIGME"/>
                <localProp name="entity" value="two-horizontal-dots"/>
                <figure>
                   <graphic url="../pictures/construe-mark-two-horizontal-dots.png"/>
@@ -322,7 +322,7 @@
                <note>marks words syntactically connected</note>
             </glyph>
             <glyph xml:id="right-half-ring-with-dot">
-               <localProp name="Name" value="CONSTRUE MARK RIGHT HALF RING WITH DOT"/>
+               <localProp name="Name" value="CONSTRUE MARK RIGHT HALF RING WITH DOT-INSULAR QUOTATION SIGN"/>
                <localProp name="entity" value="right-half-ring-with-dot"/>
                <figure>
                   <graphic url="../pictures/construe-mark-dot-with-right-half-ring.png"/>
@@ -330,7 +330,7 @@
                <note>marks the main verb in the sentence</note>
             </glyph>
             <glyph xml:id="two-vertical-dots">
-               <localProp name="Name" value="CONSTRUE MARK TWO VERTICAL DOTS"/>
+               <localProp name="Name" value="CONSTRUE MARK TWO VERTICAL DOTS-DICOLON"/>
                <localProp name="entity" value="two-vertical-dots"/>
                <figure>
                   <graphic url="../pictures/construe-mark-two-vertical-dots.png"/>
@@ -346,10 +346,10 @@
                <note>marks words syntactically connected</note>
             </glyph>
             <glyph xml:id="two-converging-strokes">
-               <localProp name="Name" value="CONSTRUE MARK TWO CONVERGING STROKES"/>
+               <localProp name="Name" value="CONSTRUE MARK TWO CONVERGING STROKES-DIPLE"/>
                <localProp name="entity" value="two-converging-strokes"/>
                <figure>
-                  <graphic url="../pictures/ construe-mark-two-converging-strokes.png"/>
+                  <graphic url="../pictures/construe-mark-two-converging-strokes.png"/>
                </figure>
                <note>marks words syntactically connected</note>
             </glyph>
@@ -377,14 +377,14 @@
                </figure>
             </glyph>
             <glyph xml:id="reference-sign-half-ring-with-dot-above">
-               <localProp name="Name" value="REFERENCE SIGN HALF RING WITH DOT ABOVE"/>
+               <localProp name="Name" value="REFERENCE SIGN HALF RING WITH DOT ABOVE-CRYPHIA"/>
                <localProp name="entity" value="half-ring-with-dot-above"/>
                <figure>
                   <graphic url="../pictures/reference-sign-half-ring-with-dot-above.png"/>
                </figure>
             </glyph>
             <glyph xml:id="reference-sign-two-horizontal-dots">
-               <localProp name="Name" value="REFERENCE SIGN TWO HORIZONTAL DOTS"/>
+               <localProp name="Name" value="REFERENCE SIGN TWO HORIZONTAL DOTS-DISTIGME"/>
                <localProp name="entity" value="reference-sign-two-horizontal-dots"/>
                <figure>
                   <graphic url="../pictures/reference-sign-two-horizontal-dots.png"/>
@@ -405,7 +405,7 @@
                </figure>
             </glyph>
             <glyph xml:id="reference-sign-three-dots-in-triangle-shape">
-               <localProp name="Name" value="REFERENCE SIGN THREE DOTS IN TRIANGLE SHAPE"/>
+               <localProp name="Name" value="REFERENCE SIGN THREE DOTS IN TRIANGLE SHAPE-TRIGON"/>
                <localProp name="entity" value="reference-sign-three-dots-in-triangle-shape"/>
                <figure>
                   <graphic url="../pictures/reference-sign-three-dots-in-triangle-shape.png"/>
@@ -423,6 +423,13 @@
                <localProp name="entity" value="reference-sign-oblique-v"/>
                <figure>
                   <graphic url="../pictures/reference-sign-oblique-v.png"/>
+               </figure>
+            </glyph>
+            <glyph xml:id="reference-sign-two-horizontal-dots-with-stroke-below">
+               <localProp name="Name" value="REFERENCE SIGN TWO HORIZONTAL DOTS WITH STROKE BELOW"/>
+               <localProp name="entity" value="reference-sign-two-horizontal-dots-with-stroke-below"/>
+               <figure>
+                  <graphic url="../pictures/reference-sign-two-horizontal-dots-with-stroke-below.png"/>
                </figure>
             </glyph>
          </charDecl>
@@ -697,7 +704,7 @@
                         ana="#syntactical-glosses-using-symbols"><g ref="#two-horizontal-dots"
                         /></add></rdg>
                </app>
-               <quote source="#EDITION" n="II 1,12"><w xml:id="II-1-12-2">expurgasse</w><w
+               <quote source="#EDITION" n="II 1,12"><w xml:id="II-1-12-2">expurgasse</w> <w
                      xml:id="II-1-12-1">comperio</w> certisque rationis legibus emendasse,<lb n="11"
                   /> nostrorum autem</quote>
                <app type="gloss">
@@ -1124,18 +1131,55 @@
                  <lem wit="#EDITION">uocem</lem>
                  <rdg wit="#COD_50"><add place="above" hand="#gl-2" facs="#zone.1v.7"
                     ana="#lemma-gloss"><g ref="#reference-sign-oblique-v"/></add></rdg></app>
-              <app type="gloss">
+              <app type="gloss" xml:id="gloss-2-5-3">
                  <lem wit="#EDITION">uocem</lem>
                  <rdg wit="#COD_50"><add place="above" hand="#gl-2" facs="#zone.1v.8"
-                    ana="#translation-into-Old-High-German">lûtnussa</add></rdg><note>see AHDW s.v. [h]lûtnussa = nominative or accusative singular = "Klang, Laut"; Schwarz 1977, p. 31</note></app>
-              
-              
-              <quote source="#EDITION" n="II 5,2">sensibile aurium, id est quod proprie auribus ac<lb n="13" break="no"/>cidit. et est prior definitio</quote>
-               <app type="gloss">
+                    ana="#translation-into-Old-High-German"><g ref="#reference-sign-oblique-v"/> lûtnussa</add></rdg>
+                 <note resp="#CG" type="explanation" target="#gloss-2-5-3">see AHDW s.v. [h]lûtnussa = nominative or accusative singular = "Klang, Laut"; Schwarz 1977, p. 31</note></app>
+              <app type="gloss">
+                 <lem wit="#EDITION">tenuissimum</lem>
+                 <rdg wit="#COD_50"><add place="above" hand="#gl-2" facs="#zone.1v.9"
+                    ana="#synonyms">subtilissimum</add></rdg></app>
+              <app type="gloss" xml:id="gloss-2-5-2">
+                 <lem wit="#EDITION">ictum</lem>
+                 <rdg wit="#COD_50"><add place="above" hand="#gl-2" facs="#zone.1v.11"
+                    ana="#synonyms">percussum. pulsatum</add></rdg><note resp="#CG" type="explanation" target="#gloss-2-5-2">MS Köln 200 f. 2r contains the same gloss.</note></app>
+              <app type="reference-signs">
+                 <lem wit="#EDITION">ictum</lem>
+                 <rdg wit="#COD_50"><add place="above" hand="#gl-2" facs="#zone.1v.10"
+                    ana="#lemma-gloss"><g ref="#reference-sign-two-horizontal-dots-with-stroke-below"/></add></rdg></app>
+              <app type="gloss">
+                 <lem wit="#EDITION">ictum</lem>
+                 <rdg wit="#COD_50"><add place="interlinear-one-line-above" hand="#gl-2" facs="#zone.1v.12"
+                    ana="#glosses-elucidating-the-main-text"><g ref="#reference-sign-two-horizontal-dots-with-stroke-below"/> sensus est talis. siue percuciatur aer nullo audiente seu sonus aliquis aures tangat.</add></rdg>
+                 </app>
+              <app type="gloss">
+                 <lem wit="#EDITION">suum</lem>
+                 <rdg wit="#COD_50"><add place="above" hand="#gl-1" facs="#zone.1v.13"
+                    ana="#synonyms"><g ref="#idest"/> proprium</add></rdg></app>
+           <quote source="#EDITION" n="II 5,2">sensibile aurium, id est quod proprie auribus ac<lb n="13" break="no"/>cidit. et est prior definitio</quote>
+              <app type="gloss">
+                 <lem wit="#EDITION">sensibile</lem>
+                 <rdg wit="#COD_50"><add place="above" hand="#gl-2" facs="#zone.1v.14"
+                    ana="#synonyms">sensum</add></rdg></app>
+              <app type="gloss" xml:id="gloss-2-5-2-1">
+                 <lem wit="#EDITION">id est quod proprie auribus</lem>
+                 <rdg wit="#COD_50"><add place="interlinear-one-line-above" hand="#gl-2" facs="#zone.1v.15"
+                    ana="#glosses-summarizing-content">Vox est</add></rdg>
+                 <note resp="#CG" type="explanation" target="#gloss-2-5-2-1">Glossator-2 mistakenly wrote "Vox est" first here, then stopped and re-started writing his gloss above the lemma</note></app>
+              <app type="gloss">
+                 <lem wit="#EDITION">id est quod proprie auribus</lem>
+                 <rdg wit="#COD_50"><add place="above" hand="#gl-2" facs="#zone.1v.16"
+                    ana="#glosses-summarizing-content #glosses-elucidating-the-main-text">Vox est proprius sensus aurium. sicut uisus oculorum et reliqua</add></rdg></app>
+              <app type="gloss">
+                 <lem wit="#EDITION">accidit</lem>
+                 <rdg wit="#COD_50"><add place="above" hand="#gl-2" facs="#zone.1v.17"
+                    ana="#glosses-elucidating-the-main-text"><g ref="#idest"/> ut sentiant uocem</add></rdg></app>
+              <app type="gloss" xml:id="gloss-2-5-2-2">
                   <lem wit="#EDITION">prior definitio</lem>
-                  <rdg wit="#COD_50"><add place="above" hand="#gl-1" facs="#zone.1v.1"
+                  <rdg wit="#COD_50"><add place="above" hand="#gl-2" facs="#zone.1v.1"
                      ana="#glosses-elucidating-the-main-text-with-siglum-auctoris"><bibl corresp="#Augustinus-1"><choice><abbr>AVG</abbr><expan>Augustinus</expan></choice></bibl> substantia uocis est aer tenuissimus</add></rdg>
-               </app>
+                 <note resp="#CG" type="explanation" target="#gloss-2-5-2-2">I was not able to find this line in any of Augustine's works. It seems to be a fake attribution</note></app>
             </div>
             
             
@@ -1404,7 +1448,7 @@
          <graphic url="http://diglib.hab.de/mss/50-weiss/00009.jpg"/>
       </surface>
       <surface xml:id="facs__00010" n="IVv">
-         <graphic url="http://diglib.hab.de/mss/50-weiss/00010.jpg"/>
+         <graphic url="http://diglib.hab.de/mss/50-weiss/max/00010.jpg"/>
       </surface>
       <surface xml:id="facs__00011" n="1r">
          <graphic url="http://diglib.hab.de/mss/50-weiss/00011.jpg"/>
@@ -1486,6 +1530,15 @@
       <surface xml:id="facs__00012" n="1v">
          <graphic url="http://diglib.hab.de/mss/50-weiss/00012.jpg"/>
          <zone xml:id="zone.1v.1" ulx="337" uly="386" lrx="503" lry="402"/>
+         <zone xml:id="zone.1v.17" ulx="250" uly="391" lrx="342" lry="405"/>
+         <zone xml:id="zone.1v.16" ulx="751" uly="357" lrx="965" lry="379"/>
+         <zone xml:id="zone.1v.15" ulx="783" uly="335" lrx="812" lry="353"/>
+         <zone xml:id="zone.1v.14" ulx="671" uly="361" lrx="704" lry="379"/>
+         <zone xml:id="zone.1v.13" ulx="647" uly="365" lrx="673" lry="381"/>
+         <zone xml:id="zone.1v.12" ulx="416" uly="339" lrx="782" lry="358"/>
+         <zone xml:id="zone.1v.11" ulx="590" uly="361" lrx="652" lry="377"/>
+         <zone xml:id="zone.1v.10" ulx="577" uly="366" lrx="588" lry="379"/>
+         <zone xml:id="zone.1v.9" ulx="501" uly="366" lrx="566" lry="379"/>
          <zone xml:id="zone.1v.8" ulx="440" uly="360" lrx="491" lry="376"/>
          <zone xml:id="zone.1v.7" ulx="388" uly="371" lrx="399" lry="381"/>
          <zone xml:id="zone.1v.6" ulx="325" uly="361" lrx="446" lry="377"/>
