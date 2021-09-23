@@ -30,11 +30,11 @@
                             </scenarioAssociation>
                             <scenarioAssociation>
                                 <field name="url">
-                                    <String>public/data/editions/</String>
+                                    <String>xsl/transformation-to-html.xsl</String>
                                 </field>
                                 <field name="scenarioIds">
                                     <list>
-                                        <String>template__32-weiss</String>
+                                        <String>transformation-to-html</String>
                                     </list>
                                 </field>
                                 <field name="scenarioTypes">
@@ -50,11 +50,11 @@
                             </scenarioAssociation>
                             <scenarioAssociation>
                                 <field name="url">
-                                    <String>xsl/transformation-to-html.xsl</String>
+                                    <String>public/data/editions/</String>
                                 </field>
                                 <field name="scenarioIds">
                                     <list>
-                                        <String>transformation-to-html</String>
+                                        <String>template__32-weiss</String>
                                     </list>
                                 </field>
                                 <field name="scenarioTypes">
@@ -520,7 +520,7 @@
                                     <Boolean>true</Boolean>
                                 </field>
                                 <field name="openInBrowser">
-                                    <Boolean>true</Boolean>
+                                    <Boolean>false</Boolean>
                                 </field>
                                 <field name="outputResource">
                                     <String>${pd}/public/output-50-weiss.html</String>
