@@ -129,6 +129,7 @@
                <p>change of ci/ti ignored</p>
                <p>change of e/ae/e caudata ignored</p>
                <p>change of i/y ignored (e.g. sillaba/syllaba)</p>
+               <p>assimilations ignored (e.g. inliterata/illiterata)</p>
                <p>abbreviation of et, per, quae, quia, vel, and word endings silently expanded</p>
                <p>differences from Hertz' edition in the use of capital letters for proper names
                   ignored</p>
@@ -858,13 +859,14 @@
                <app type="reference-signs" xml:id="rs-2-7-1">
                   <lem wit="#EDITION">moderatoribus</lem>
                   <rdg wit="#COD_50"><add place="interlinear above" hand="#gl-1" facs="#zone.1r.54"
-                        ana="#lemma-gloss"><g ref="#half-ring-with-dot-above"/></add></rdg>
+                        ana="#lemma-gloss"><g ref="#reference-sign-half-ring-with-dot-above"
+                     /></add></rdg>
                </app>
                <app type="gloss" xml:id="gloss-2-7-1">
                   <lem wit="#EDITION">moderatoribus</lem>
                   <rdg wit="#COD_50"><add subtype="to-be-checked" place="right margin" hand="#gl-1"
                         facs="#zone.1r.55" ana="#glosses-elucidating-the-main-text"><g
-                           ref="#half-ring-with-dot-above"/>mode..am..</add></rdg>
+                           ref="#reference-sign-half-ring-with-dot-above"/>mode..am..</add></rdg>
                </app>
                <app type="text-variation" xml:id="tv-2-7-1">
                   <lem wit="#EDITION">elegantiora</lem>
@@ -1494,24 +1496,50 @@
                </app>
                <app type="gloss" xml:id="gloss-5-4-2">
                   <lem wit="#EDITION">quantum</lem>
-                  <rdg wit="#COD_50"><add place="left margin" hand="#gl-1" facs="#zone.1v.28"
+                  <rdg wit="#COD_50"><add place="left margin" hand="#gl-2" facs="#zone.1v.28"
                         ana="#glosses-elucidating-the-main-text"><g
                            ref="#reference-sign-elongated-M"/><g ref="#idest"/> secundum quantitatem
-                        uocis. si magna fit aut parua. nam alia VOX plus alia minus sonat.</add></rdg>
+                        uocis. si magna fit aut parua. nam alia VOX plus alia minus
+                     sonat.</add></rdg>
                </app>
-
-
-
-               <!--  -->
+               <app type="gloss" xml:id="gloss-5-4-3">
+                  <lem wit="#EDITION">ipsa</lem>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#gl-1" facs="#zone.1v.29"
+                        ana="#suppletive-glosses">uoce</add></rdg>
+               </app>
                <quote source="#EDITION" n="II 5,5">uocis autem <w xml:id="w-2-5-5-1"
                      corresp="#w-2-6-3-1">differentiae</w> sunt quattuor: articulata, inarticulata,
-                  literata,</quote>
+                     literata,<lb n="15"/></quote>
                <app type="reference-signs" xml:id="rs-5-5-1">
                   <lem wit="#EDITION">differentiae</lem>
                   <rdg wit="#COD_50"><add place="interlinear above" hand="#gl-2" facs="#zone.1v.18"
                         ana="#lemma-lemma"><g ref="#reference-sign-lemma-lemma-1"/></add></rdg>
                </app>
+               <app type="text-variation" xml:id="tv-5-5-1">
+                  <lem wit="#EDITION">quattuor</lem>
+                  <rdg wit="#COD_50" hand="#scr">quatuor</rdg>
+               </app>
+               <quote source="#EDITION" n="II 5,6">illiterata. articulata est, quae coartata, hoc
+                  est copulata cum aliquo sensu</quote>
+               <app type="gloss" xml:id="gloss-5-6-1">
+                  <lem wit="#EDITION">articulata</lem>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#gl-2" facs="#zone.1v.30"
+                        ana="#synonyms #glosses-elucidating-the-main-text">Intelectualis <g
+                           ref="#idest"/> quę intellegi potest</add></rdg>
+               </app>
+               <app type="gloss" xml:id="gloss-5-6-2">
+                  <lem wit="#EDITION">copulata</lem>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#gl-2" facs="#zone.1v.31"
+                        ana="#suppletive-glosses"><g ref="#idest"/> cum sensu mentis.
+                     Idem</add></rdg>
+               </app>
+               <quote source="#EDITION" n="II 5,7">mentis eius, qui loquitur, profertur.
+                  inarticulata <lb n="16"/>est contraria, quae a nullo </quote>
 
+
+
+
+               <!--  -->
                <quote source="#EDITION" n="II 5,13">et gemitus: hae <w xml:id="w-2-5-13-1"
                      corresp="#w-2-5-4-1">enim uoces</w>, quamuis sensum aliquem significent
                   proferentis</quote>
@@ -1531,7 +1559,6 @@
                </app>
 
             </div>
-
 
 
 
@@ -1886,10 +1913,13 @@
          <zone xml:id="zone.1v.20" ulx="411" uly="395" lrx="421" lry="405"/>
          <zone xml:id="zone.1v.21" ulx="178" uly="400" lrx="242" lry="420"/>
          <zone xml:id="zone.1v.18" ulx="605" uly="409" lrx="623" lry="423"/>
+         <zone xml:id="zone.1v.29" ulx="483" uly="411" lrx="517" lry="423"/>
          <zone xml:id="zone.1v.28" ulx="146" uly="411" lrx="263" lry="485"/>
          <zone xml:id="zone.1v.27" ulx="430" uly="411" lrx="457" lry="423"/>
          <zone xml:id="zone.1v.24" ulx="319" uly="412" lrx="411" lry="424"/>
          <zone xml:id="zone.1v.25" ulx="302" uly="413" lrx="320" lry="428"/>
+         <zone xml:id="zone.1v.31" ulx="521" uly="431" lrx="643" lry="447"/>
+         <zone xml:id="zone.1v.30" ulx="328" uly="432" lrx="491" lry="448"/>
          <zone xml:id="zone.1v.26" ulx="543" uly="503" lrx="555" lry="517"/>
          <zone xml:id="zone.1v.19" ulx="594" uly="591" lrx="613" lry="606"/>
          <zone xml:id="zone.1v.16" ulx="751" uly="357" lrx="965" lry="379"/>
