@@ -126,7 +126,8 @@
       <encodingDesc>
          <editorialDecl>
             <normalization>
-               <p>change of ci/ti ignored</p>
+               <p>as for the text of Priscian, with regard to the text published in Hertz' edition:
+                  change of ci/ti ignored</p>
                <p>change of e/ae/e caudata ignored</p>
                <p>change of i/y ignored (e.g. sillaba/syllaba)</p>
                <p>assimilations ignored (e.g. inliterata/illiterata)</p>
@@ -136,7 +137,7 @@
             </normalization>
             <punctuation>
                <p>I followed the punctuation of Hertz' edition of Priscian's text. As for the
-                  glosses, I reproduced the original punctuation</p>
+                  glosses, I reproduced the original punctuation, when occurring</p>
             </punctuation>
          </editorialDecl>
          <classDecl>
@@ -1526,20 +1527,66 @@
                   <rdg wit="#COD_50"><add place="interlinear above" hand="#gl-2" facs="#zone.1v.30"
                         ana="#synonyms #glosses-elucidating-the-main-text">Intelectualis <g
                            ref="#idest"/> quę intellegi potest</add></rdg>
+                  <note resp="#CG" type="explanation" target="#gloss-5-6-1">perhaps written by a
+                     third glossator?</note>
                </app>
                <app type="gloss" xml:id="gloss-5-6-2">
                   <lem wit="#EDITION">copulata</lem>
                   <rdg wit="#COD_50"><add place="interlinear above" hand="#gl-2" facs="#zone.1v.31"
                         ana="#suppletive-glosses"><g ref="#idest"/> cum sensu mentis.
                      Idem</add></rdg>
+                  <note resp="#CG" type="explanation" target="#gloss-5-6-2">perhaps written by a
+                     third glossator?</note>
                </app>
                <quote source="#EDITION" n="II 5,7">mentis eius, qui loquitur, profertur.
-                  inarticulata <lb n="16"/>est contraria, quae a nullo </quote>
-
-
-
-
-               <!--  -->
+                  inarticulata <lb n="16"/>est contraria, quae a nullo</quote>
+               <app type="decoration">
+                  <lem wit="#EDITION">inarticulata</lem>
+                  <rdg wit="#COD_50" hand="#scr"><hi rend="red capitalis">I</hi>narticulata</rdg>
+               </app>
+               <app type="gloss" xml:id="gloss-5-7-1">
+                  <lem wit="#EDITION">inarticulata</lem>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#gl-2" facs="#zone.1v.32"
+                        ana="#glosses-elucidating-the-main-text">In qua nihil intelli<supplied
+                           resp="Grifoni" reason="omitted">gi</supplied> potest</add></rdg>
+               </app>
+               <app type="gloss" xml:id="gloss-5-7-2">
+                  <lem wit="#EDITION">contraria</lem>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#gl-2" facs="#zone.1v.33"
+                        ana="#suppletive-glosses"><g ref="#sdot"/>articulatę</add></rdg>
+                  <note resp="#CG" type="explanation" target="#gloss-5-7-2">perhaps written by a
+                     third glossator?</note>
+               </app>
+               <quote source="#EDITION" n="II 5,8">affectu proficiscitur mentis. literata est, quae
+                  scribi potest, illiterata, quae</quote>
+               <app type="gloss" xml:id="gloss-5-8-1">
+                  <lem wit="#EDITION">affectu</lem>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#gl-2" facs="#zone.1v.34"
+                        ana="#synonyms"><g ref="#idest"/> sensu</add></rdg>
+                  <note resp="#CG" type="explanation" target="#gloss-5-8-1">perhaps written by a
+                     third glossator?</note>
+               </app>
+               <quote source="#EDITION" n="II 5,9">scribi non potest. inue<lb n="17" break="no"
+                  />niuntur igitur quaedam uoces articulatae, quae</quote>
+               <app type="gloss" xml:id="gloss-5-9-1">
+                  <lem wit="#EDITION">inueniuntur</lem>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#gl-2" facs="#zone.1v.35"
+                        ana="#glosses-elucidating-the-main-text">Articulata et literata</add></rdg>
+                  <note resp="#CG" type="explanation" target="#gloss-5-9-1">MS St. Gallen 904 p.
+                     3a18 and MS Köln 200 f. 2r contain the same gloss.</note>
+               </app>
+               <quote source="#EDITION" n="II 5,10">possunt scribi et intellegi, ut:</quote>
+               <quote source="#EDITION" n="II 5,11">«arma uirumque cano»,</quote>
+               <quote source="#EDITION" n="II 5,12">quaedam, quae non possunt scribi,<lb n="18"/>
+                  intelleguntur tamen, ut sibili hominum</quote>
+               <app type="gloss" xml:id="gloss-5-12-1">
+                  <lem wit="#EDITION">quaedam</lem>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#gl-2" facs="#zone.1v.36"
+                        ana="#glosses-elucidating-the-main-text">articulata et
+                     inliterata</add></rdg>
+                  <note resp="#CG" type="explanation" target="#gloss-5-12-1">MS St. Gallen 904 p.
+                     3a18 and MS Köln 200 f. 2r contain the same gloss.</note>
+               </app>
                <quote source="#EDITION" n="II 5,13">et gemitus: hae <w xml:id="w-2-5-13-1"
                      corresp="#w-2-5-4-1">enim uoces</w>, quamuis sensum aliquem significent
                   proferentis</quote>
@@ -1548,8 +1595,16 @@
                   <rdg wit="#COD_50"><add place="interlinear above" hand="#gl-2" facs="#zone.1v.26"
                         ana="#lemma-lemma"><g ref="#reference-sign-lemma-lemma-2"/></add></rdg>
                </app>
+               <app type="gloss" xml:id="gloss-5-13-1">
+                  <lem wit="#EDITION">sensum</lem>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#gl-2" facs="#zone.1v.37"
+                        ana="#glosses-elucidating-the-main-text">sibilus ad aliquid significandum
+                        agitur</add></rdg>
+                  <note resp="#CG" type="explanation" target="#gloss-5-13-1">perhaps written by a
+                     third glossator? MS Köln 200 f. 2r contains the same gloss.</note>
+               </app>
 
-
+               <!--  -->
                <quote source="#EDITION" n="II 6,3">species uocum perficiunt quattuor superiores <w
                      xml:id="w-2-6-3-1" corresp="#w-2-5-5-1">differentiae</w> generaliter uoci </quote>
                <app type="reference-signs" xml:id="rs-6-3-1">
@@ -1918,8 +1973,14 @@
          <zone xml:id="zone.1v.27" ulx="430" uly="411" lrx="457" lry="423"/>
          <zone xml:id="zone.1v.24" ulx="319" uly="412" lrx="411" lry="424"/>
          <zone xml:id="zone.1v.25" ulx="302" uly="413" lrx="320" lry="428"/>
+         <zone xml:id="zone.1v.32" ulx="828" uly="426" lrx="936" lry="446"/>
          <zone xml:id="zone.1v.31" ulx="521" uly="431" lrx="643" lry="447"/>
          <zone xml:id="zone.1v.30" ulx="328" uly="432" lrx="491" lry="448"/>
+         <zone xml:id="zone.1v.35" ulx="881" uly="449" lrx="971" lry="468"/>
+         <zone xml:id="zone.1v.33" ulx="272" uly="455" lrx="334" lry="475"/>
+         <zone xml:id="zone.1v.34" ulx="402" uly="457" lrx="450" lry="471"/>
+         <zone xml:id="zone.1v.36" ulx="765" uly="476" lrx="873" lry="494"/>
+         <zone xml:id="zone.1v.37" ulx="584" uly="498" lrx="744" lry="517"/>
          <zone xml:id="zone.1v.26" ulx="543" uly="503" lrx="555" lry="517"/>
          <zone xml:id="zone.1v.19" ulx="594" uly="591" lrx="613" lry="606"/>
          <zone xml:id="zone.1v.16" ulx="751" uly="357" lrx="965" lry="379"/>
