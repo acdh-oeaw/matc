@@ -115,12 +115,6 @@
                   </listBibl>
                </additional>
             </msDesc>
-            <listBibl>
-               <bibl xml:id="hieronymus-1"
-                  ><author>Hieronymus</author><title>Commentary</title></bibl>
-               <bibl xml:id="Augustinus-1">
-                  <author>Augustinus</author><title>Commentary</title></bibl>
-            </listBibl>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
@@ -302,8 +296,8 @@
          <listPrefixDef>
             <prefixDef ident="images-keil" matchPattern="(Keil_[a-z][0-9]_[0-9]+\.gif)"
                replacementPattern="http://stgallpriscian.ie/images/keil/$1">
-               <p>in the context of this project, private URLs with the prefix "image-keil" point to
-                  the pictures of the edition of Keil</p>
+               <p>private URLs with the prefix "image-keil" point to the pictures of the edition of
+                  Keil</p>
             </prefixDef>
          </listPrefixDef>
          <charDecl n="abbreviations">
@@ -500,7 +494,7 @@
                <quote source="#EDITION" n="II 1,1"><lb n="3"/>cum omnis eloquentiae doctrinam et
                   omne studiorum genus</quote>
                <quote source="#EDITION" n="II 1,2">sapientiae luce<lb n="4"/><gap reason="illegible"
-                     unit="char" quantity="7"/><supplied resp="Grifoni" reason="illegible"
+                     unit="char" quantity="7"/><supplied resp="#CG" reason="illegible"
                      >praeful</supplied>gens a Graecorum fontibus deriuatum Latinos proprio</quote>
                <quote source="#EDITION" n="II 1,3">sermone inuenio celebrasse et in omni<lb n="5"
                      break="no"/>bus illorum uestigia <w xml:id="II-1-4-3">liberalibus</w></quote>
@@ -1442,11 +1436,10 @@
                <app type="gloss" xml:id="gloss-5-2-4">
                   <lem wit="#EDITION">prior definitio</lem>
                   <rdg wit="#COD_50"><add place="interlinear above" hand="#gl-2" facs="#zone.1v.1"
-                        ana="#glosses-elucidating-the-main-text-with-siglum-auctoris"><bibl
-                           corresp="#Augustinus-1"><choice>
-                              <abbr>AVG</abbr>
-                              <expan>Augustinus</expan>
-                           </choice></bibl> substantia uocis est aer tenuissimus</add></rdg>
+                        ana="#glosses-elucidating-the-main-text-with-siglum-auctoris"><choice>
+                           <abbr>AVG</abbr>
+                           <expan>Augustinus</expan>
+                        </choice> substantia uocis est aer tenuissimus</add></rdg>
                   <note resp="#CG" type="explanation" target="#gloss-5-2-4">I was not able to find
                      this line in any of Augustine's works. It seems to be a fake attribution.
                      similar wordings occur in the prologue of the Ars Laureshamensis (Expositio in
@@ -1548,7 +1541,8 @@
                   <lem wit="#EDITION">inarticulata</lem>
                   <rdg wit="#COD_50"><add place="interlinear above" hand="#gl-2" facs="#zone.1v.32"
                         ana="#glosses-elucidating-the-main-text">In qua nihil intelli<supplied
-                           resp="Grifoni" reason="omitted">gi</supplied> potest</add></rdg>
+                           resp="#CG" reason="omitted-in-original">gi</supplied>
+                     potest</add></rdg>
                </app>
                <app type="gloss" xml:id="gloss-5-7-2">
                   <lem wit="#EDITION">contraria</lem>
@@ -1603,6 +1597,57 @@
                   <note resp="#CG" type="explanation" target="#gloss-5-13-1">perhaps written by a
                      third glossator? MS Köln 200 f. 2r contains the same gloss.</note>
                </app>
+               <quote source="#EDITION" n="II 5,14">eas, scribi tamen non possunt.<lb n="19"/> aliae
+                  autem sunt, quae, quamuis scribantur,</quote>
+               <app type="gloss" xml:id="gloss-5-14-1">
+                  <lem wit="#EDITION">aliae</lem>
+                  <rdg wit="#COD_50"><add place="left margin" hand="#gl-2" facs="#zone.1v.38"
+                        ana="#glosses-elucidating-the-main-text">inarticulata et
+                     literata</add></rdg>
+                  <note resp="#CG" type="explanation" target="#gloss-5-14-1">MS St. Gallen 904 p.
+                     3a21 contains the same gloss.</note>
+               </app>
+               <quote source="#EDITION" n="II 5,15">tamen inarticulatae dicuntur, cum nihil
+                  significent, ut coax, cra. <add source="#COD_50" hand="#scr"> Eas enim uoces
+                     quanquam <lb n="20"/>Intellegimus de quo sint uolucre profectę, tamen
+                     inarticulatae dicuntur, quia uox ut superius Inarticulata est quę a nullo
+                     affectu <lb n="21"/>proficiscitur.</add> aliae</quote>
+               <note resp="#CG" type="explanation">The addition is recorded in the apparatus of
+                  Hertz' edition, p. II, 5. MS St. Gallen 904 shares this same reading. MS Köln 200
+                  features the addition in the margin. MS Karlsruhe, BLB, Aug. perg. 132 features
+                  the addition on a schedula (f. 3r) along with the comment: "sed in libro romano
+                  non habetur". On this see Cinato_2015, pp. 527-529</note>
+               <app type="gloss" xml:id="gloss-5-15-1">
+                  <lem wit="#EDITION">coax</lem>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#gl-2" facs="#zone.1v.39"
+                        ana="#glosses-elucidating-the-main-text">Vox ranum.</add></rdg>
+               </app>
+               <app type="gloss" xml:id="gloss-5-15-2">
+                  <lem wit="#EDITION">cra</lem>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#gl-2" facs="#zone.1v.40"
+                        ana="#glosses-elucidating-the-main-text">Vox coruorum.</add></rdg>
+               </app>
+               <app type="reference-signs" xml:id="rs-5-15-1">
+                  <lem wit="#COD_50">affectu</lem>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#gl-2" facs="#zone.1v.41"
+                        ana="#lemma-gloss"><g ref="#reference-sign-oblique-v"/></add></rdg>
+               </app>
+               <app type="gloss" xml:id="gloss-5-15-3">
+                  <lem wit="#COD_50">affectu</lem>
+                  <rdg wit="#COD_50"><add place="right margin" hand="#gl-2" facs="#zone.1v.42"
+                        ana="#glosses-elucidating-the-main-text"><g ref="#reference-sign-oblique-v"/> 
+                     <g ref="#idest"/> a sen<gap reason="illegible"
+                           unit="char" quantity="2"/><supplied resp="#CG" reason="illegible"
+                              >su</supplied></add></rdg>
+               </app>
+               <app type="gloss" xml:id="gloss-5-15-4">
+                  <lem wit="#EDITION">aliae</lem>
+                  <rdg wit="#COD_50"><add place="left margin" hand="#gl-2" facs="#zone.1v.43"
+                     ana="#glosses-elucidating-the-main-text">inarticulata et
+                     inliterata</add></rdg>
+               </app>
+
+
 
                <!--  -->
                <quote source="#EDITION" n="II 6,3">species uocum perficiunt quattuor superiores <w
@@ -1982,6 +2027,12 @@
          <zone xml:id="zone.1v.36" ulx="765" uly="476" lrx="873" lry="494"/>
          <zone xml:id="zone.1v.37" ulx="584" uly="498" lrx="744" lry="517"/>
          <zone xml:id="zone.1v.26" ulx="543" uly="503" lrx="555" lry="517"/>
+         <zone xml:id="zone.1v.38" ulx="146" uly="521" lrx="254" lry="546"/>
+         <zone xml:id="zone.1v.39" ulx="750" uly="522" lrx="803" lry="539"/>
+         <zone xml:id="zone.1v.40" ulx="799" uly="523" lrx="871" lry="535"/>
+         <zone xml:id="zone.1v.41" ulx="902" uly="548" lrx="913" lry="556"/>
+         <zone xml:id="zone.1v.42" ulx="951" uly="549" lrx="971" lry="564"/>
+         <zone xml:id="zone.1v.43" ulx="146" uly="574" lrx="242" lry="596"/>
          <zone xml:id="zone.1v.19" ulx="594" uly="591" lrx="613" lry="606"/>
          <zone xml:id="zone.1v.16" ulx="751" uly="357" lrx="965" lry="379"/>
          <zone xml:id="zone.1v.15" ulx="783" uly="335" lrx="812" lry="353"/>
