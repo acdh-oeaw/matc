@@ -115,6 +115,26 @@
                   </listBibl>
                </additional>
             </msDesc>
+            <listBibl>
+               <head>Bibliography of Secondary Literature referred to by the editor</head>
+               <biblStruct xml:id="Cinato_2015">
+                  <monogr>
+                     <author>
+                        <persName>
+                           <forename>Franck</forename>
+                           <surname>Cinato</surname>
+                        </persName>
+                     </author>
+                     <title level="m">Priscien glosé. L'Ars grammatica de Priscien vue à travers les
+                        gloses carolingiennes</title>
+                     <imprint>
+                        <pubPlace>Turnhout, Belgium</pubPlace>
+                        <publisher>Brepols</publisher>
+                        <date when="2015"/>
+                     </imprint>
+                  </monogr>
+               </biblStruct>
+            </listBibl>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
@@ -464,6 +484,20 @@
                <localProp name="entity" value="reference-sign-lemma-lemma-2"/>
                <figure>
                   <graphic url="../pictures/reference-sign-lemma-lemma-2.png"/>
+               </figure>
+            </glyph>
+            <glyph xml:id="reference-sign-dotted-obelus">
+               <localProp name="Name" value="REFERENCE SIGN DOTTED OBELUS"/>
+               <localProp name="entity" value="reference-sign-dotted-obelus"/>
+               <figure>
+                  <graphic url="../pictures/reference-sign-dotted-obelus.png"/>
+               </figure>
+            </glyph>
+            <glyph xml:id="reference-sign-cursive-Zeta">
+               <localProp name="Name" value="REFERENCE SIGN CURSIVE ZETA"/>
+               <localProp name="entity" value="reference-sign-cursive-Zeta"/>
+               <figure>
+                  <graphic url="../pictures/reference-sign-cursive-Zeta.png"/>
                </figure>
             </glyph>
          </charDecl>
@@ -1541,8 +1575,7 @@
                   <lem wit="#EDITION">inarticulata</lem>
                   <rdg wit="#COD_50"><add place="interlinear above" hand="#gl-2" facs="#zone.1v.32"
                         ana="#glosses-elucidating-the-main-text">In qua nihil intelli<supplied
-                           resp="#CG" reason="omitted-in-original">gi</supplied>
-                     potest</add></rdg>
+                           resp="#CG" reason="omitted-in-original">gi</supplied> potest</add></rdg>
                </app>
                <app type="gloss" xml:id="gloss-5-7-2">
                   <lem wit="#EDITION">contraria</lem>
@@ -1608,15 +1641,17 @@
                      3a21 contains the same gloss.</note>
                </app>
                <quote source="#EDITION" n="II 5,15">tamen inarticulatae dicuntur, cum nihil
-                  significent, ut coax, cra. <add source="#COD_50" hand="#scr"> Eas enim uoces
-                     quanquam <lb n="20"/>Intellegimus de quo sint uolucre profectę, tamen
-                     inarticulatae dicuntur, quia uox ut superius Inarticulata est quę a nullo
-                     affectu <lb n="21"/>proficiscitur.</add> aliae</quote>
+                  significent, ut coax, cra. <add type="text-variation" xml:id="tv-5-15-1"
+                     source="#COD_50" hand="#scr"> Eas enim uoces quanquam <lb n="20"/>Intellegimus
+                     de quo sint uolucre profectę, tamen inarticulatae dicuntur, quia uox ut
+                     superius Inarticulata est quę a nullo affectu <lb n="21"/>proficiscitur.</add>
+                  aliae</quote>
                <note resp="#CG" type="explanation">The addition is recorded in the apparatus of
                   Hertz' edition, p. II, 5. MS St. Gallen 904 shares this same reading. MS Köln 200
                   features the addition in the margin. MS Karlsruhe, BLB, Aug. perg. 132 features
                   the addition on a schedula (f. 3r) along with the comment: "sed in libro romano
-                  non habetur". On this see Cinato_2015, pp. 527-529</note>
+                  non habetur". On this see <bibl corresp="#Cinato_2015">Cinato 2015, pp.
+                     527-529.</bibl></note>
                <app type="gloss" xml:id="gloss-5-15-1">
                   <lem wit="#EDITION">coax</lem>
                   <rdg wit="#COD_50"><add place="interlinear above" hand="#gl-2" facs="#zone.1v.39"
@@ -1635,29 +1670,63 @@
                <app type="gloss" xml:id="gloss-5-15-3">
                   <lem wit="#COD_50">affectu</lem>
                   <rdg wit="#COD_50"><add place="right margin" hand="#gl-2" facs="#zone.1v.42"
-                        ana="#glosses-elucidating-the-main-text"><g ref="#reference-sign-oblique-v"/> 
-                     <g ref="#idest"/> a sen<gap reason="illegible"
-                           unit="char" quantity="2"/><supplied resp="#CG" reason="illegible"
-                              >su</supplied></add></rdg>
+                        ana="#glosses-elucidating-the-main-text"><g ref="#reference-sign-oblique-v"/>
+                        <g ref="#idest"/> a sen<gap reason="illegible" unit="char" quantity="2"
+                           /><supplied resp="#CG" reason="illegible">su</supplied></add></rdg>
                </app>
                <app type="gloss" xml:id="gloss-5-15-4">
                   <lem wit="#EDITION">aliae</lem>
                   <rdg wit="#COD_50"><add place="left margin" hand="#gl-2" facs="#zone.1v.43"
-                     ana="#glosses-elucidating-the-main-text">inarticulata et
+                        ana="#glosses-elucidating-the-main-text">inarticulata et
                      inliterata</add></rdg>
                </app>
-
-
-
-               <!--  -->
+               <quote source="#EDITION" n="II 6,1">uero sunt inarticulatae et illiteratae, quae nec
+                  scribi possunt nec intellegi,</quote>
+               <quote source="#EDITION" n="II 6,2">ut crepitus, mugitus et similia. scire autem
+                     debemus,<lb n="22"/> quod has quattuor </quote>
+               <app type="reference-signs" xml:id="rs-6-2-1">
+                  <lem wit="#COD_50">scire</lem>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#gl-2" facs="#zone.1v.44"
+                        ana="#lemma-gloss"><g ref="#reference-sign-dotted-obelus"/></add></rdg>
+               </app>
+               <app type="gloss" xml:id="gloss-6-2-1">
+                  <lem wit="#EDITION">scire</lem>
+                  <rdg wit="#COD_50"><add place="right margin" hand="#gl-2" facs="#zone.1v.45"
+                        ana="#glosses-elucidating-the-main-text"><g
+                           ref="#reference-sign-dotted-obelus"/> Explanatio super<gap
+                           reason="illegible" unit="char" quantity="2"/><supplied resp="#CG"
+                           >io</supplied>ris senten<gap reason="illegible" unit="char" quantity="4"
+                           /><supplied resp="#CG">tiae</supplied></add></rdg>
+               </app>
                <quote source="#EDITION" n="II 6,3">species uocum perficiunt quattuor superiores <w
                      xml:id="w-2-6-3-1" corresp="#w-2-5-5-1">differentiae</w> generaliter uoci </quote>
+               <app type="gloss" xml:id="gloss-6-3-1">
+                  <lem wit="#EDITION">species</lem>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#gl-2" facs="#zone.1v.46"
+                        ana="#synonyms"><g ref="#idest"/> specialitates</add></rdg>
+               </app>
                <app type="reference-signs" xml:id="rs-6-3-1">
                   <lem wit="#EDITION">differentiae</lem>
                   <rdg wit="#COD_50"><add place="interlinear above" hand="#gl-2" facs="#zone.1v.19"
                         ana="#lemma-lemma"><g ref="#reference-sign-lemma-lemma-1"/></add></rdg>
                </app>
+               <quote source="#EDITION" n="II 6,4">accidentes, binae per singulas inuicem
+                     coeuntes.<lb n="23"/> uox autem dicta est uel</quote>
+               <app type="emendation" xml:id="emendation-6-4-1">
+                  <lem wit="#EDITION">accidentes</lem>
+                  <rdg wit="#COD_50" hand="#scr">acc<del type="expunction">e</del><add
+                        place="interlinear above">i</add>dentes</rdg>
+               </app>
 
+               <app type="gloss" xml:id="gloss-6-4-1">
+                  <lem wit="#EDITION">accidentes</lem>
+                  <rdg wit="#COD_50"><add place="interlinear one line above" hand="#gl-2"
+                        facs="#zone.1v.46" ana="#synonyms"><g ref="#reference-sign-cursive-Zeta"/>
+                     </add></rdg>
+               </app>
+               <note> completa gloss 6-4-1; crea prima di questa la app-refsign. il glifo è già
+                  fatto. Le zones sia per rs che per gloss sono da fare</note>
+               <!--  -->
             </div>
 
 
@@ -2032,7 +2101,10 @@
          <zone xml:id="zone.1v.40" ulx="799" uly="523" lrx="871" lry="535"/>
          <zone xml:id="zone.1v.41" ulx="902" uly="548" lrx="913" lry="556"/>
          <zone xml:id="zone.1v.42" ulx="951" uly="549" lrx="971" lry="564"/>
+         <zone xml:id="zone.1v.45" ulx="907" uly="563" lrx="979" lry="589"/>
+         <zone xml:id="zone.1v.44" ulx="828" uly="572" lrx="837" lry="584"/>
          <zone xml:id="zone.1v.43" ulx="146" uly="574" lrx="242" lry="596"/>
+         <zone xml:id="zone.1v.46" ulx="353" uly="591" lrx="426" lry="607"/>
          <zone xml:id="zone.1v.19" ulx="594" uly="591" lrx="613" lry="606"/>
          <zone xml:id="zone.1v.16" ulx="751" uly="357" lrx="965" lry="379"/>
          <zone xml:id="zone.1v.15" ulx="783" uly="335" lrx="812" lry="353"/>
