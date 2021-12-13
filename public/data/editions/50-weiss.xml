@@ -1846,10 +1846,20 @@
                   <rdg wit="#COD_50"><add place="interlinear above" hand="#gl-2" facs="#zone.1v.61"
                         ana="#suppletive-glosses"><g ref="#sdot"/> est</add></rdg>
                </app>
-               <app type="gloss" xml:id="gloss-6-8-3">
+               <app type="gloss" subtype="to-be-checked" xml:id="gloss-6-8-6">
                   <lem wit="#EDITION">minima</lem>
-                  <rdg wit="#COD_50"><add place="interlinear above" hand="#gl-2" facs="#zone.1v.61"
-                        ana="#suppletive-glosses"><g ref="#sdot"/> est</add></rdg>
+                  <rdg wit="#COD_50"><add place="interlinear above and right margin" hand="#gl-2"
+                        facs="#zone.1v.65" ana="#glosses-elucidating-the-main-text">Duobus modis
+                        minima pars dicitur· uel sy<gap reason="illegible" unit="char" quantity="5"
+                           /><supplied resp="#CG">llabae</supplied> uel dict<gap reason="illegible"
+                           unit="char" quantity="5"/><supplied resp="#CG">ionis</supplied> minima
+                           p<gap reason="illegible" unit="char" quantity="3"/><supplied resp="#CG"
+                           >ars</supplied> est uel quia <gap reason="illegible" unit="char"
+                           quantity="5"/> uel dictio diu<gap reason="illegible" unit="char"
+                           quantity="3"/><supplied resp="#CG">idi</supplied> potest lite<gap
+                           reason="illegible" unit="char" quantity="2"/><supplied resp="#CG"
+                           >ra</supplied> autem diuid <gap reason="illegible" unit="char"
+                           quantity="1"/><supplied resp="#CG">i non</supplied> potest·</add></rdg>
                </app>
                <app type="reference-signs" xml:id="rs-6-8-1">
                   <lem wit="#EDITION">quantum</lem>
@@ -1870,9 +1880,15 @@
                   <lem wit="#EDITION">ad totam</lem>
                   <rdg wit="#COD_50"><add place="upper margin of the leaf" hand="#gl-2"
                         facs="#zone.1v.64" ana="#glosses-elucidating-the-main-text"><g
-                           ref="reference-sign-cross"/> quasi dicat· Ego discerno ut
-                     omnes litterae longe quoque uocales ad hanc comprehensionem pertineant.</add></rdg>
-                  <note>controlla se ci sono fonti, controlla il testo della glossa</note>
+                           ref="reference-sign-cross"/> quasi dicat· Ego discerno ut omnes litterae·
+                        longe quoque uocales ad hanc comprehensionem pertineant.</add></rdg>
+               </app>
+               <quote source="#EDITION" n="II 6,9">uocis<lb n="24"/> literatae (ad hanc enim etiam
+                  productae uocales breuissimae</quote>
+               <app type="gloss" xml:id="gloss-6-9-1">
+                  <lem wit="#EDITION">literatae</lem>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#gl-2" facs="#zone.1v.66"
+                     ana="#glosses-elucidating-the-main-text">cum literis compositae·</add></rdg>
                </app>
 
                <!--  -->
@@ -2263,11 +2279,13 @@
          <zone xml:id="zone.1v.54" ulx="725" uly="617" lrx="743" lry="627"/>
          <zone xml:id="zone.1v.53" ulx="140" uly="622" lrx="242" lry="653"/>
          <zone xml:id="zone.1v.60" ulx="501" uly="634" lrx="627" lry="653"/>
+         <zone xml:id="zone.1v.65" ulx="784" uly="629" lrx="976" lry="735"/>
          <zone xml:id="zone.1v.62" ulx="733" uly="638" lrx="776" lry="650"/>
          <zone xml:id="zone.1v.61" ulx="684" uly="638" lrx="712" lry="655"/>
          <zone xml:id="zone.1v.55" ulx="717" uly="639" lrx="734" lry="655"/>
          <zone xml:id="zone.1v.59" ulx="276" uly="638" lrx="371" lry="656"/>
          <zone xml:id="zone.1v.57" ulx="312" uly="652" lrx="322" lry="660"/>
+         <zone xml:id="zone.1v.66" ulx="262" uly="663" lrx="346" lry="681"/>
          <zone xml:id="zone.1v.63" ulx="750" uly="644" lrx="773" lry="656"/>
          <zone xml:id="zone.1v.58" ulx="138" uly="652" lrx="224" lry="668"/>
          <zone xml:id="zone.1v.52" ulx="513" uly="612" lrx="573" lry="627"/>
