@@ -1888,9 +1888,10 @@
                <app type="gloss" xml:id="gloss-6-9-1">
                   <lem wit="#EDITION">literatae</lem>
                   <rdg wit="#COD_50"><add place="interlinear above" hand="#gl-2" facs="#zone.1v.66"
-                     ana="#glosses-elucidating-the-main-text">cum literis compositae·</add></rdg>
+                        ana="#glosses-elucidating-the-main-text">cum literis compositae·</add></rdg>
                </app>
-
+               <note> ho creato la zone 67 per il reference sign -oculus-, devo creare il glifo e
+                  segnare il reference sign</note>
                <!--  -->
             </div>
 
@@ -2286,6 +2287,7 @@
          <zone xml:id="zone.1v.59" ulx="276" uly="638" lrx="371" lry="656"/>
          <zone xml:id="zone.1v.57" ulx="312" uly="652" lrx="322" lry="660"/>
          <zone xml:id="zone.1v.66" ulx="262" uly="663" lrx="346" lry="681"/>
+         <zone xml:id="zone.1v.67" ulx="483" uly="664" lrx="496" lry="678"/>
          <zone xml:id="zone.1v.63" ulx="750" uly="644" lrx="773" lry="656"/>
          <zone xml:id="zone.1v.58" ulx="138" uly="652" lrx="224" lry="668"/>
          <zone xml:id="zone.1v.52" ulx="513" uly="612" lrx="573" lry="627"/>
