@@ -144,7 +144,8 @@
                   change of ci/ti ignored</p>
                <p>change of e/ae/e caudata ignored</p>
                <p>change of i/y ignored (e.g. sillaba/syllaba)</p>
-               <p>assimilations ignored (e.g. inliterata/illiterata)</p>
+               <p>change of t/tt ignored (e.g. litera/littera; quatuor/quattuor)</p>
+               <p>assimilations ignored (e.g. inliterata/illiterata; subposui/supposui)</p>
                <p>abbreviation of et, per, quae, quia, vel, and word endings silently expanded</p>
                <p>differences from Hertz' edition in the use of capital letters for proper names
                   ignored</p>
@@ -471,6 +472,13 @@
                <localProp name="entity" value="reference-sign-elongated-M"/>
                <figure>
                   <graphic url="../pictures/reference-sign-elongated-M.png"/>
+               </figure>
+            </glyph>
+            <glyph xml:id="reference-sign-oculus">
+               <localProp name="Name" value="REFERENCE SIGN OCULUS"/>
+               <localProp name="entity" value="reference-sign-oculus"/>
+               <figure>
+                  <graphic url="../pictures/reference-sign-oculus.png"/>
                </figure>
             </glyph>
             <glyph xml:id="reference-sign-lemma-lemma-1">
@@ -1136,10 +1144,6 @@
                      break="no"/>cidius crescat.</quote>
                <quote source="#EDITION" n="II 3,3">titulos etiam uniuersi operis per singulos
                   supposui libros, quo</quote>
-               <app type="text-variation" xml:id="tv-3-3-1">
-                  <lem wit="#EDITION">supposui</lem>
-                  <rdg wit="#COD_50" hand="#scr">subposui</rdg>
-               </app>
                <quote source="#EDITION" n="II 3,4">facilius, quicquid ex his quaeratur, dis<lb
                      n="33" break="no"/>cretis possit locis inueniri.</quote>
                <app type="emendation" xml:id="emendation-3-4-1">
@@ -1558,10 +1562,6 @@
                   <rdg wit="#COD_50"><add place="interlinear above" hand="#gl-2" facs="#zone.1v.18"
                         ana="#lemma-lemma"><g ref="#reference-sign-lemma-lemma-1"/></add></rdg>
                </app>
-               <app type="text-variation" xml:id="tv-5-5-1">
-                  <lem wit="#EDITION">quattuor</lem>
-                  <rdg wit="#COD_50" hand="#scr">quatuor</rdg>
-               </app>
                <quote source="#EDITION" n="II 5,6">illiterata. articulata est, quae coartata, hoc
                   est copulata cum aliquo sensu</quote>
                <app type="gloss" xml:id="gloss-5-6-1">
@@ -1792,7 +1792,7 @@
                   <rdg wit="#COD_50" hand="#scr"><hi rend="red capitalis rustica"/></rdg>
                </app>
                <quote source="#EDITION" n="II 6,7"><w xml:id="w-2-6-7-1" corresp="#w-2-6-8-1"
-                     >litera</w> est pars mini<lb n="23" break="no"/>ma uocis compositae, hoc est
+                     >litera</w> est pars mini<lb n="24" break="no"/>ma uocis compositae, hoc est
                      <add type="text-variation" xml:id="tv-6-7-1" source="#COD_50" place="inline"
                      hand="#scr">uox</add> quae constat</quote>
                <app type="decoration">
@@ -1883,15 +1883,33 @@
                            ref="reference-sign-cross"/> quasi dicat· Ego discerno ut omnes litterae·
                         longe quoque uocales ad hanc comprehensionem pertineant.</add></rdg>
                </app>
-               <quote source="#EDITION" n="II 6,9">uocis<lb n="24"/> literatae (ad hanc enim etiam
+               <quote source="#EDITION" n="II 6,9">uocis<lb n="25"/> literatae (ad hanc enim etiam
                   productae uocales breuissimae</quote>
                <app type="gloss" xml:id="gloss-6-9-1">
                   <lem wit="#EDITION">literatae</lem>
                   <rdg wit="#COD_50"><add place="interlinear above" hand="#gl-2" facs="#zone.1v.66"
                         ana="#glosses-elucidating-the-main-text">cum literis compositae·</add></rdg>
                </app>
-               <note> ho creato la zone 67 per il reference sign -oculus-, devo creare il glifo e
-                  segnare il reference sign</note>
+               <app type="reference-signs" xml:id="rs-6-9-1">
+                  <lem wit="#EDITION">uocales</lem>
+                  <rdg wit="#COD_50"><add place="above" hand="#gl-1" facs="#zone.1v.67"
+                        ana="#lemma-gloss"><g ref="#reference-sign-oculus"/></add></rdg>
+               </app>
+               <app type="gloss" xml:id="gloss-6-9-2">
+                  <lem wit="#EDITION">uocales</lem>
+                  <rdg wit="#COD_50"><add place="left margin" hand="#gl-1" facs="#zone.1v.68"
+                        ana="#quia-glosses"><g ref="#reference-sign-oculus"/>quia quando per se
+                        stant partem faciunt siue quia per se nominantur quod aliae litterę non
+                        faciunt</add></rdg>
+               </app>
+               <quote source="#EDITION" n="II 6,10">partes inueniuntur) uel quod omnium est
+                  breuissimum eorum,<lb n="26"/> quae diuidi </quote>
+               <quote source="#EDITION" n="II 6,11">possunt, id quod diuidi non potest. possumus et
+                  sic definire: litera est uox,</quote>
+               <quote source="#EDITION" n="II 6,12">quae scribi potest indiuidua.</quote>
+               <quote source="#EDITION" n="II 6,13">dicitur autem lit<lb n="26" break="no"/>era uel
+                  quasi legitera, quod legendi iter praebeat,</quote>
+
                <!--  -->
             </div>
 
@@ -2288,6 +2306,7 @@
          <zone xml:id="zone.1v.57" ulx="312" uly="652" lrx="322" lry="660"/>
          <zone xml:id="zone.1v.66" ulx="262" uly="663" lrx="346" lry="681"/>
          <zone xml:id="zone.1v.67" ulx="483" uly="664" lrx="496" lry="678"/>
+         <zone xml:id="zone.1v.68" ulx="135" uly="665" lrx="259" lry="704"/>
          <zone xml:id="zone.1v.63" ulx="750" uly="644" lrx="773" lry="656"/>
          <zone xml:id="zone.1v.58" ulx="138" uly="652" lrx="224" lry="668"/>
          <zone xml:id="zone.1v.52" ulx="513" uly="612" lrx="573" lry="627"/>
