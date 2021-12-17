@@ -339,28 +339,28 @@
             </glyph>
          </charDecl>
          <charDecl n="construe-marks">
-            <glyph xml:id="two-horizontal-dots">
+            <glyph xml:id="construe-mark-two-horizontal-dots-distigme">
                <localProp name="Name" value="CONSTRUE MARK TWO HORIZONTAL DOTS-DISTIGME"/>
-               <localProp name="entity" value="two-horizontal-dots"/>
+               <localProp name="entity" value="construe-mark-two-horizontal-dots-distigme"/>
                <figure>
-                  <graphic url="../pictures/construe-mark-two-horizontal-dots.png"/>
+                  <graphic url="../pictures/construe-mark-two-horizontal-dots-distigme.png"/>
                </figure>
                <note>marks words syntactically connected</note>
             </glyph>
-            <glyph xml:id="right-half-ring-with-dot">
+            <glyph xml:id="construe-mark-dot-with-right-half-ring">
                <localProp name="Name"
-                  value="CONSTRUE MARK RIGHT HALF RING WITH DOT-INSULAR QUOTATION SIGN"/>
-               <localProp name="entity" value="right-half-ring-with-dot"/>
+                  value="CONSTRUE MARK DOT WITH RIGHT HALF RING - INSULAR QUOTATION SIGN"/>
+               <localProp name="entity" value="construe-mark-dot-with-right-half-ring"/>
                <figure>
                   <graphic url="../pictures/construe-mark-dot-with-right-half-ring.png"/>
                </figure>
                <note>marks the main verb in the sentence</note>
             </glyph>
-            <glyph xml:id="two-vertical-dots">
-               <localProp name="Name" value="CONSTRUE MARK TWO VERTICAL DOTS-DICOLON"/>
-               <localProp name="entity" value="two-vertical-dots"/>
+            <glyph xml:id="construe-mark-two-vertical-dots-dicolon">
+               <localProp name="Name" value="CONSTRUE MARK TWO VERTICAL DOTS DICOLON"/>
+               <localProp name="entity" value="construe-mark-two-vertical-dots-dicolon"/>
                <figure>
-                  <graphic url="../pictures/construe-mark-two-vertical-dots.png"/>
+                  <graphic url="../pictures/construe-mark-two-vertical-dots-dicolon.png"/>
                </figure>
                <note>marks words syntactically connected</note>
             </glyph>
@@ -403,18 +403,18 @@
                   <graphic url="../pictures/reference-sign-half-ring-with-dot-below.png"/>
                </figure>
             </glyph>
-            <glyph xml:id="reference-sign-half-ring-with-dot-above">
-               <localProp name="Name" value="REFERENCE SIGN HALF RING WITH DOT ABOVE-CRYPHIA"/>
-               <localProp name="entity" value="half-ring-with-dot-above"/>
+            <glyph xml:id="reference-sign-cryphia">
+               <localProp name="Name" value="REFERENCE SIGN CRYPHIA"/>
+               <localProp name="entity" value="reference-sign-cryphia"/>
                <figure>
-                  <graphic url="../pictures/reference-sign-half-ring-with-dot-above.png"/>
+                  <graphic url="../pictures/reference-sign-cryphia.png"/>
                </figure>
             </glyph>
-            <glyph xml:id="reference-sign-two-horizontal-dots">
+            <glyph xml:id="reference-sign-two-horizontal-dots-distigme">
                <localProp name="Name" value="REFERENCE SIGN TWO HORIZONTAL DOTS-DISTIGME"/>
-               <localProp name="entity" value="reference-sign-two-horizontal-dots"/>
+               <localProp name="entity" value="reference-sign-two-horizontal-dots-distigme"/>
                <figure>
-                  <graphic url="../pictures/reference-sign-two-horizontal-dots.png"/>
+                  <graphic url="../pictures/reference-sign-two-horizontal-dots-distigme.png"/>
                </figure>
             </glyph>
             <glyph xml:id="reference-sign-dot-with-acute">
@@ -431,11 +431,11 @@
                   <graphic url="../pictures/reference-sign-acute-followed-by-dot.png"/>
                </figure>
             </glyph>
-            <glyph xml:id="reference-sign-three-dots-in-triangle-shape">
-               <localProp name="Name" value="REFERENCE SIGN THREE DOTS IN TRIANGLE SHAPE-TRIGON"/>
-               <localProp name="entity" value="reference-sign-three-dots-in-triangle-shape"/>
+            <glyph xml:id="reference-sign-trigon">
+               <localProp name="Name" value="REFERENCE SIGN TRIGON"/>
+               <localProp name="entity" value="reference-sign-trigon"/>
                <figure>
-                  <graphic url="../pictures/reference-sign-three-dots-in-triangle-shape.png"/>
+                  <graphic url="../pictures/reference-sign-trigon.png"/>
                </figure>
             </glyph>
             <glyph xml:id="reference-sign-oblique-balloon-with-rope">
@@ -558,8 +558,8 @@
                <app type="gloss" xml:id="gloss-1-3-1">
                   <lem wit="#EDITION">inuenio</lem>
                   <rdg wit="#COD_50"><add place="interlinear above" hand="#scr" facs="#zone.1r.9"
-                        ana="#syntactical-glosses-using-symbols"><g ref="#right-half-ring-with-dot"
-                        /></add></rdg>
+                        ana="#syntactical-glosses-using-symbols"><g
+                           ref="#construe-mark-dot-with-right-half-ring"/></add></rdg>
                </app>
                <app type="gloss" xml:id="gloss-1-3-2">
                   <lem wit="#EDITION">celebrasse</lem>
@@ -569,8 +569,9 @@
                <app type="gloss" xml:id="gloss-1-3-3">
                   <lem wit="#EDITION">et</lem>
                   <rdg wit="#COD_50"><add place="interlinear above" hand="#scr" facs="#zone.1r.15"
-                        ana="#syntactical-glosses-using-symbols"><g ref="#two-vertical-dots"
-                        /></add><ptr target="#II-1-4-1 #II-1-4-5"/></rdg>
+                        ana="#syntactical-glosses-using-symbols"><g
+                           ref="#construe-mark-two-vertical-dots-dicolon"/></add><ptr
+                        target="#II-1-4-1 #II-1-4-5"/></rdg>
                </app>
                <app type="gloss" xml:id="gloss-1-3-4">
                   <lem wit="#EDITION">in</lem>
@@ -580,8 +581,9 @@
                <app type="gloss" xml:id="gloss-1-3-5">
                   <lem wit="#EDITION">omnibus</lem>
                   <rdg wit="#COD_50"><add place="interlinear above" hand="#scr" facs="#zone.1r.6"
-                        ana="#syntactical-glosses-using-symbols"><g ref="#two-horizontal-dots"
-                        /></add><ptr target="#II-1-4-3 #II-1-4-2"/></rdg>
+                        ana="#syntactical-glosses-using-symbols"><g
+                           ref="#construe-mark-two-horizontal-dots-distigme"/></add><ptr
+                        target="#II-1-4-3 #II-1-4-2"/></rdg>
                </app>
                <note place="right margin" type="gloss" subtype="to-be-checked" hand="#gl-1"
                   facs="#zone.1r.3" xml:lang="la">propter sententiae
@@ -589,8 +591,8 @@
                <app type="gloss" xml:id="gloss-1-3-6">
                   <lem wit="#EDITION">liberalibus</lem>
                   <rdg wit="#COD_50"><add place="interlinear above" hand="#scr" facs="#zone.1r.7"
-                        ana="#syntactical-glosses-using-symbols"><g ref="#two-horizontal-dots"
-                        /></add></rdg>
+                        ana="#syntactical-glosses-using-symbols"><g
+                           ref="#construe-mark-two-horizontal-dots-distigme"/></add></rdg>
                   <rdg wit="#COD_50"><add place="interlinear above" hand="#gl-1" facs="#zone.1r.4"
                         xml:lang="la" ana="#synonyms #quia-glosses">nobilibus quia liberi homines
                         artem discebant uel quia liberos faciunt homines a uitiis</add></rdg>
@@ -601,14 +603,14 @@
                <app type="gloss" xml:id="gloss-1-4-1">
                   <lem wit="#EDITION">artibus</lem>
                   <rdg wit="#COD_50"><add place="interlinear above" hand="#scr" facs="#zone.1r.8"
-                        ana="#syntactical-glosses-using-symbols"><g ref="#two-horizontal-dots"
-                        /></add></rdg>
+                        ana="#syntactical-glosses-using-symbols"><g
+                           ref="#construe-mark-two-horizontal-dots-distigme"/></add></rdg>
                </app>
                <app type="gloss" xml:id="gloss-1-4-2">
                   <lem wit="#EDITION">uideo</lem>
                   <rdg wit="#COD_50"><add place="interlinear above" hand="#scr" facs="#zone.1r.16"
-                        ana="#syntactical-glosses-using-symbols"><g ref="#two-vertical-dots"
-                     /></add></rdg>
+                        ana="#syntactical-glosses-using-symbols"><g
+                           ref="#construe-mark-two-vertical-dots-dicolon"/></add></rdg>
                </app>
                <app type="text-variation" xml:id="tv-1-4-1">
                   <lem wit="#EDITION">ea</lem>
@@ -618,8 +620,8 @@
                   <lem wit="#EDITION">prolata</lem>
                   <rdg wit="#COD_50" hand="#scr"><w xml:id="II-1-4-5">scripta</w><add
                         place="interlinear above" hand="#scr" facs="#zone.1r.17"
-                        ana="#syntactical-glosses-using-symbols"><g ref="#two-vertical-dots"
-                     /></add></rdg>
+                        ana="#syntactical-glosses-using-symbols"><g
+                           ref="#construe-mark-two-vertical-dots-dicolon"/></add></rdg>
                </app>
                <app type="gloss" xml:id="gloss-1-4-3">
                   <lem wit="#EDITION">emendate</lem>
@@ -744,33 +746,34 @@
                   <rdg wit="#COD_50"><add place="interlinear above" hand="#scr" facs="#zone.1r.28"
                         ana="#text-variant">quia</add></rdg>
                   <rdg wit="#COD_50"><add place="interlinear above" hand="#scr" facs="#zone.1r.29"
-                        ana="#syntactical-glosses-using-symbols"><g ref="#right-half-ring-with-dot"
-                        /></add><ptr target="#II-1-10-1 #II-1-12-1"/></rdg>
+                        ana="#syntactical-glosses-using-symbols"><g
+                           ref="#construe-mark-dot-with-right-half-ring"/></add><ptr
+                        target="#II-1-10-1 #II-1-12-1"/></rdg>
                </app>
                <app type="gloss" xml:id="gloss-1-10-3">
                   <lem wit="#EDITION">igitur</lem>
                   <rdg wit="#COD_50"><add place="interlinear above" hand="#scr" facs="#zone.1r.34"
-                        ana="#syntactical-glosses-using-symbols"><g ref="#right-half-ring-with-dot"
-                        /></add></rdg>
+                        ana="#syntactical-glosses-using-symbols"><g
+                           ref="#construe-mark-dot-with-right-half-ring"/></add></rdg>
                </app>
                <app type="gloss" xml:id="gloss-1-10-4">
                   <lem wit="#EDITION">eos</lem>
                   <rdg wit="#COD_50"><add place="interlinear above" hand="#scr" facs="#zone.1r.30"
-                        ana="#syntactical-glosses-using-symbols"><g ref="#two-horizontal-dots"
-                        /></add><ptr target="#II-1-10-2 #II-1-10-3 #II-1-11-1 #II-1-11-2 #II-1-12-2"
-                     /></rdg>
+                        ana="#syntactical-glosses-using-symbols"><g
+                           ref="#construe-mark-two-horizontal-dots-distigme"/></add><ptr
+                        target="#II-1-10-2 #II-1-10-3 #II-1-11-1 #II-1-11-2 #II-1-12-2"/></rdg>
                </app>
                <app type="gloss" xml:id="gloss-1-10-5">
                   <lem wit="#EDITION">omnia</lem>
                   <rdg wit="#COD_50"><add place="interlinear above" hand="#scr" facs="#zone.1r.36"
-                        ana="#syntactical-glosses-using-symbols"><g ref="#two-horizontal-dots"
-                        /></add></rdg>
+                        ana="#syntactical-glosses-using-symbols"><g
+                           ref="#construe-mark-two-horizontal-dots-distigme"/></add></rdg>
                </app>
                <app type="gloss" xml:id="gloss-1-10-6">
                   <lem wit="#EDITION">uitia</lem>
                   <rdg wit="#COD_50"><add place="interlinear above" hand="#scr" facs="#zone.1r.37"
-                        ana="#syntactical-glosses-using-symbols"><g ref="#two-horizontal-dots"
-                        /></add></rdg>
+                        ana="#syntactical-glosses-using-symbols"><g
+                           ref="#construe-mark-two-horizontal-dots-distigme"/></add></rdg>
                </app>
                <quote source="#EDITION" n="II 1,11">antiquorum Grae<lb n="10" break="no"/>corum
                   commentariis sunt relicta <w xml:id="II-1-11-1">artis</w><w xml:id="II-1-11-2"
@@ -789,14 +792,14 @@
                <app type="gloss" xml:id="gloss-1-11-2">
                   <lem wit="#EDITION">artis</lem>
                   <rdg wit="#COD_50"><add place="interlinear above" hand="#scr" facs="#zone.1r.38"
-                        ana="#syntactical-glosses-using-symbols"><g ref="#two-horizontal-dots"
-                        /></add></rdg>
+                        ana="#syntactical-glosses-using-symbols"><g
+                           ref="#construe-mark-two-horizontal-dots-distigme"/></add></rdg>
                </app>
                <app type="gloss" xml:id="gloss-1-11-3">
                   <lem wit="#EDITION">grammaticae</lem>
                   <rdg wit="#COD_50"><add place="interlinear above" hand="#scr" facs="#zone.1r.39"
-                        ana="#syntactical-glosses-using-symbols"><g ref="#two-horizontal-dots"
-                        /></add></rdg>
+                        ana="#syntactical-glosses-using-symbols"><g
+                           ref="#construe-mark-two-horizontal-dots-distigme"/></add></rdg>
                </app>
                <quote source="#EDITION" n="II 1,12"><w xml:id="II-1-12-2">expurgasse</w>
                   <w xml:id="II-1-12-1">comperio</w> certisque rationis legibus emendasse,<lb n="11"
@@ -806,14 +809,14 @@
                   <rdg wit="#COD_50"><add place="interlinear above" hand="#gl-1" facs="#zone.1r.33"
                         ana="#synonyms">emendasse</add></rdg>
                   <rdg wit="#COD_50"><add place="interlinear above" hand="#scr" facs="#zone.1r.40"
-                        ana="#syntactical-glosses-using-symbols"><g ref="#two-horizontal-dots"
-                        /></add></rdg>
+                        ana="#syntactical-glosses-using-symbols"><g
+                           ref="#construe-mark-two-horizontal-dots-distigme"/></add></rdg>
                </app>
                <app type="gloss" xml:id="gloss-1-12-2">
                   <lem wit="#EDITION">comperio</lem>
                   <rdg wit="#COD_50"><add place="interlinear above" hand="#scr" facs="#zone.1r.35"
-                        ana="#syntactical-glosses-using-symbols"><g ref="#right-half-ring-with-dot"
-                        /></add></rdg>
+                        ana="#syntactical-glosses-using-symbols"><g
+                           ref="#construe-mark-dot-with-right-half-ring"/></add></rdg>
                </app>
                <note place="left margin" type="gloss" subtype="to-be-checked" hand="#gl-1"
                   facs="#zone.1r.41" xml:lang="la"><gap unit="char" quantity="12" reason="illegible"
@@ -861,8 +864,9 @@
                <app type="gloss" xml:id="gloss-2-2-2">
                   <lem wit="#EDITION">ut</lem>
                   <rdg wit="#COD_50"><add place="interlinear above" hand="#scr" facs="#zone.1r.47"
-                        ana="#syntactical-glosses-using-symbols"><g ref="#two-horizontal-dots"
-                        /></add><ptr target="#II-2-2-1 #II-2-2-2"/></rdg>
+                        ana="#syntactical-glosses-using-symbols"><g
+                           ref="#construe-mark-two-horizontal-dots-distigme"/></add><ptr
+                        target="#II-2-2-1 #II-2-2-2"/></rdg>
                </app>
                <app type="gloss" xml:id="gloss-2-2-3">
                   <lem wit="#EDITION">puto</lem>
@@ -877,14 +881,14 @@
                <app type="gloss" xml:id="gloss-2-2-5">
                   <lem wit="#EDITION">rem</lem>
                   <rdg wit="#COD_50"><add place="interlinear above" hand="#scr" facs="#zone.1r.48"
-                        ana="#syntactical-glosses-using-symbols"><g ref="#two-horizontal-dots"
-                        /></add></rdg>
+                        ana="#syntactical-glosses-using-symbols"><g
+                           ref="#construe-mark-two-horizontal-dots-distigme"/></add></rdg>
                </app>
                <app type="gloss" xml:id="gloss-2-2-6">
                   <lem wit="#EDITION">arduam</lem>
                   <rdg wit="#COD_50"><add place="interlinear above" hand="#scr" facs="#zone.1r.49"
-                        ana="#syntactical-glosses-using-symbols"><g ref="#two-horizontal-dots"
-                        /></add></rdg>
+                        ana="#syntactical-glosses-using-symbols"><g
+                           ref="#construe-mark-two-horizontal-dots-distigme"/></add></rdg>
                </app>
                <quote source="#EDITION" n="II 2,3">quidem, sed officio professionis non indebitam,
                   supra nominatorum praecepta</quote>
@@ -911,14 +915,13 @@
                <app type="reference-signs" xml:id="rs-2-7-1">
                   <lem wit="#EDITION">moderatoribus</lem>
                   <rdg wit="#COD_50"><add place="interlinear above" hand="#gl-1" facs="#zone.1r.54"
-                        ana="#lemma-gloss"><g ref="#reference-sign-half-ring-with-dot-above"
-                     /></add></rdg>
+                        ana="#lemma-gloss"><g ref="#reference-sign-cryphia"/></add></rdg>
                </app>
                <app type="gloss" xml:id="gloss-2-7-1">
                   <lem wit="#EDITION">moderatoribus</lem>
                   <rdg wit="#COD_50"><add subtype="to-be-checked" place="right margin" hand="#gl-1"
                         facs="#zone.1r.55" ana="#glosses-elucidating-the-main-text"><g
-                           ref="#reference-sign-half-ring-with-dot-above"/>mode..am..</add></rdg>
+                           ref="#reference-sign-cryphia"/>mode..am..</add></rdg>
                </app>
                <app type="text-variation" xml:id="tv-2-7-1">
                   <lem wit="#EDITION">elegantiora</lem>
@@ -949,14 +952,14 @@
                <app type="reference-signs" xml:id="rs-2-11-1">
                   <lem wit="#EDITION">equipperantes</lem>
                   <rdg wit="#COD_50"><add place="interlinear above" hand="#gl-1" facs="#zone.1r.58"
-                        ana="#lemma-gloss"><g ref="#reference-sign-two-horizontal-dots"
-                     /></add></rdg>
+                        ana="#lemma-gloss"><g ref="#reference-sign-two-horizontal-dots-distigme"
+                        /></add></rdg>
                </app>
                <app type="gloss" xml:id="gloss-2-11-1">
                   <lem wit="#EDITION">equipperantes</lem>
                   <rdg wit="#COD_50"><add subtype="to-be-checked" place="left margin" hand="#gl-1"
                         facs="#zone.1r.59" ana="#glosses-elucidating-the-main-text"><g
-                           ref="#reference-sign-two-horizontal-dots"/> .s..si</add></rdg>
+                           ref="#reference-sign-two-horizontal-dots-distigme"/> .s..si</add></rdg>
                </app>
                <app type="text-variation" xml:id="tv-2-11-2">
                   <lem wit="#EDITION">laudem sunt</lem>
@@ -993,7 +996,7 @@
                   <lem wit="#EDITION">proportione</lem>
                   <rdg wit="#COD_50"><add place="interlinear above" hand="#gl-1" facs="#zone.1r.62"
                         ana="#glosses-elucidating-the-main-text"><g
-                           ref="#reference-sign-two-horizontal-dots"/> collatione uel
+                           ref="#reference-sign-two-horizontal-dots-distigme"/> collatione uel
                         comparatione</add></rdg>
                </app>
                <quote source="#EDITION" n="II 2,17">uolui hos edere me libros compule<lb n="22"
@@ -1109,26 +1112,24 @@
                <app type="reference-signs" xml:id="rs-3-1-1">
                   <lem wit="#EDITION">quantamcumque</lem>
                   <rdg wit="#COD_50"><add place="interlinear above" hand="#gl-2" facs="#zone.1r.71"
-                        ana="#lemma-gloss"><g ref="#reference-sign-three-dots-in-triangle-shape"
-                        /></add></rdg>
+                        ana="#lemma-gloss"><g ref="#reference-sign-trigon"/></add></rdg>
                </app>
                <app type="reference-signs" xml:id="rs-3-1-2">
                   <lem wit="#EDITION">gloriam</lem>
                   <rdg wit="#COD_50"><add place="interlinear above" hand="#gl-2" facs="#zone.1r.72"
-                        ana="#lemma-gloss"><g ref="#reference-sign-three-dots-in-triangle-shape"
-                        /></add></rdg>
+                        ana="#lemma-gloss"><g ref="#reference-sign-trigon"/></add></rdg>
                </app>
                <app type="gloss" xml:id="gloss-3-1-1" subtype="to-be-checked">
                   <lem wit="#EDITION">quantamcumque</lem>
                   <rdg wit="#COD_50"><add place="right margin" hand="#gl-2" facs="#zone.1r.73"
-                        ana="#text-variant"><g ref="#reference-sign-three-dots-in-triangle-shape"/>
-                        uel quantum gloriae...</add></rdg>
+                        ana="#text-variant"><g ref="#reference-sign-trigon"/> uel quantum
+                        gloriae...</add></rdg>
                </app>
                <app type="gloss" xml:id="gloss-3-1-2" subtype="to-be-checked">
                   <lem wit="#EDITION">gloriam</lem>
                   <rdg wit="#COD_50"><add place="right margin" hand="#gl-2" facs="#zone.1r.73"
-                        ana="#text-variant"><g ref="#reference-sign-three-dots-in-triangle-shape"/>
-                        uel quantum gloriae...</add></rdg>
+                        ana="#text-variant"><g ref="#reference-sign-trigon"/> uel quantum
+                        gloriae...</add></rdg>
                </app>
                <app type="gloss" subtype="to-be-checked" xml:id="gloss-3-1-3">
                   <lem wit="#EDITION">gloriam</lem>
@@ -1817,19 +1818,19 @@
                         dictionis</add></rdg>
                   <note resp="#CG" type="explanation">
                      <ref target="#gloss-6-7-2">This gloss</ref> was added after Otfrid had written
-                        <ref target="#gloss-6-7-3">his</ref></note>
+                        <ref target="#gloss-6-7-3">his annotation</ref></note>
                </app>
                <app type="reference-signs" xml:id="rs-6-7-2">
                   <lem wit="#EDITION">compositae</lem>
                   <rdg wit="#COD_50"><add place="above" hand="#gl-1" facs="#zone.1v.57"
-                        ana="#lemma-gloss"><g ref="#reference-sign-two-horizontal-dots"
-                     /></add></rdg>
+                        ana="#lemma-gloss"><g ref="#reference-sign-two-horizontal-dots-distigme"
+                        /></add></rdg>
                </app>
                <app type="gloss" xml:id="gloss-6-7-3">
                   <lem wit="#EDITION">compositae</lem>
                   <rdg wit="#COD_50"><add place="left margin" hand="#gl-1" facs="#zone.1v.58"
                         ana="#glosses-elucidating-the-main-text"><g
-                           ref="#reference-sign-two-horizontal-dots"/>
+                           ref="#reference-sign-two-horizontal-dots-distigme"/>
                         <g ref="#idest"/> litteris comprehensę</add></rdg>
                </app>
                <quote source="#EDITION" n="II 6,8">compositione literarum, minima autem, <w
@@ -1909,6 +1910,31 @@
                <quote source="#EDITION" n="II 6,12">quae scribi potest indiuidua.</quote>
                <quote source="#EDITION" n="II 6,13">dicitur autem lit<lb n="26" break="no"/>era uel
                   quasi legitera, quod legendi iter praebeat,</quote>
+               <app type="reference-signs" xml:id="rs-6-13-1">
+                  <lem wit="#EDITION">litera</lem>
+                  <rdg wit="#COD_50"><add place="above" hand="#gl-1" facs="#zone.1v.69"
+                        ana="#lemma-gloss"><g ref="#reference-sign-S"/></add></rdg>
+               </app>
+               <app type="gloss" subtype="to-be-checked" xml:id="gloss-6-13-1">
+                  <lem wit="#EDITION">litera</lem>
+                  <rdg wit="#COD_50"><add place="left margin" hand="#gl-1" facs="#zone.1v.70"
+                        ana="#etymological-glosses #glosses-elucidating-the-main-text #translation-into-Old-High-German"
+                           ><g ref="#reference-sign-S"/><del type="expunction" resp="#gl-1">a</del>
+                           l<del cause="emendation" resp="#gl-1">e</del><add place="above"
+                        >i</add>tera· a lego et itere uel lituris <add place="above" resp="#gl-1"
+                           >dilenne</add> liniuntur enim cum cera tabulę. fricando enim deletur
+                        tabula</add></rdg>
+               </app>
+               <note type="explanation" resp="#CG"> for the OHG word dilenne see Gerhard Köbler,
+                  Lateinisch-althochdeutsches Wörterbuch, Göttingen 1971, s.v. delere = (ar)dilen,
+                  p. 51</note>
+               <quote source="#EDITION" n="II 6,14">uel a lituris, ut quibusdam placet, quod
+                  plerumque in ceratis tabulis</quote>
+               <app type="gloss" xml:id="gloss-6-14-1">
+                  <lem wit="#EDITION">a lituris</lem>
+                  <rdg wit="#COD_50"><add place="left margin" hand="#gl-1" facs="#zone.1v.71"
+                        ana="#synonyms"><g ref="#idest"/> a deletionibus</add></rdg>
+               </app>
 
                <!--  -->
             </div>
@@ -2307,6 +2333,9 @@
          <zone xml:id="zone.1v.66" ulx="262" uly="663" lrx="346" lry="681"/>
          <zone xml:id="zone.1v.67" ulx="483" uly="664" lrx="496" lry="678"/>
          <zone xml:id="zone.1v.68" ulx="135" uly="665" lrx="259" lry="704"/>
+         <zone xml:id="zone.1v.71" ulx="523" uly="705" lrx="583" lry="718"/>
+         <zone xml:id="zone.1v.69" ulx="286" uly="710" lrx="298" lry="724"/>
+         <zone xml:id="zone.1v.70" ulx="145" uly="709" lrx="260" lry="764"/>
          <zone xml:id="zone.1v.63" ulx="750" uly="644" lrx="773" lry="656"/>
          <zone xml:id="zone.1v.58" ulx="138" uly="652" lrx="224" lry="668"/>
          <zone xml:id="zone.1v.52" ulx="513" uly="612" lrx="573" lry="627"/>
