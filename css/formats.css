@@ -1,0 +1,26 @@
+.heading-1 { font-family: roman, 'times new roman', times, serif; font-size: 24pt; font-weight: bold; }
+.heading-2 { font-family: roman, 'times new roman', times, serif; font-size: 18pt; font-weight: bold; }
+.list-of-witnesses { font-family: roman, 'times new roman', times, serif; font-size: 14pt; font-weight: normal; }
+.list-of-hands { font-family: roman, 'times new roman', times, serif; font-size: 14pt; font-weight: normal; }
+.editorial-declaration { font-family: roman, 'times new roman', times, serif; font-size: 14pt; font-weight: normal; }
+.pictures { font-family: roman, 'times new roman', times, serif; font-size: 14pt; font-weight: normal; }
+body.body-formats { margin: 20pt; }
+span.xml-id { font-weight: bold; }
+span.bibliography-title { font-style: italic; }
+span.hand-id { font-weight: bold; }
+span.hand-note { font-style: italic; }
+div.page-of-edition a:link { color: black; }
+div.page-of-edition a:active { color: black; }
+div.page-of-edition a:hover { color: black; }
+div.page-of-edition a:visited { color: black; }
+span.bold-text { font-weight: bold; }
+span.italic-text { font-style: italic; }
+span.bold-italic-text { font-style: italic; font-weight: bold; }
+div.page-of-edition { margin: 50pt; }
+div.apparatus { margin-left: 70pt; }
+div.note { margin-left: 100pt; }
+p.glyph-section { margin-top: 10pt; margin-bottom: 10pt; margin-left: 50pt; height: 40pt; }
+span.analysis { margin-left: 10pt; background-color: #d0d1f5; border-radius: 3pt; padding: 2pt; }
+span.referred-word { background-color: #faccca; border-radius: 3pt; padding: 2pt; }
+span.pointer-targets { margin-left: 3pt; background-color: #faccca; border-radius: 3pt; padding: 2pt; }
+span.pointer-target-source { font-style: italic; }

@@ -15,7 +15,7 @@
     
     <xsl:template match="tei:TEI">
         <head>
-            <link rel="stylesheet" href="./css/formats.css"/>
+            <link rel="stylesheet" href="../../css/formats.css"/>
         </head>
         <body class="body-formats">
             <div class="heading-1">Priscianus: Institutiones (Cod. Guelf. 50 Weiss.)</div>
@@ -109,7 +109,7 @@
     <xsl:template match="tei:glyph">
         <p class="glyph-section">
             <xsl:element name="img">
-               <xsl:attribute name="src" select="concat('data',substring-after(tei:figure/tei:graphic/@url,'..'))"/>
+               <xsl:attribute name="src" select="concat('../data',substring-after(tei:figure/tei:graphic/@url,'..'))"/>
             </xsl:element>
             <xsl:text> - </xsl:text>
             <xsl:value-of select="tei:localProp[@name = 'Name']/@value"/>
