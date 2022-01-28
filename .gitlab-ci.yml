@@ -3,10 +3,10 @@ pages:
   script:
     - mkdir .public
     - cp -r * .public
-    - mv .public newpublic
+    - mv .public public
   artifacts:
     paths:
-      - newpublic
+      - public
   only:
     - master
 
