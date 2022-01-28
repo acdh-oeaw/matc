@@ -1,0 +1,11 @@
+#banner { background-color: #c4ae95; padding: 1em; font-family: Garamond; font-size: 16pt; font-weight: bold; }
+.underline { text-decoration: underline; }
+.background-color-brown { background-color: #e57b2f; padding-top: 3em; padding-bottom: 3em; font-family: Garamond; }
+.heading-level-1 { color: white; font-size: 24pt; font-weight: bold; text-align: center; }
+.heading-level-2 { color: white; font-size: 18pt; font-weight: bold; text-align: center; }
+.main-text-header { color: white; font-size: 16pt; font-weight: normal; text-align: center; margin-top: 2em; }
+.image-main { border-top: 5px solid white; }
+.entry-content-main-paragraph { color: black; font-family: Garamond; font-size: 16pt; font-weight: normal; margin: 1em; line-height: 19pt; text-align: justify; }
+.entry-content-heading-level-1 { color: black; font-family: Garamond; font-size: 20pt; font-weight: bold; }
+.entry-content-heading-level-2 { color: black; font-family: Garamond; font-size: 18pt; font-weight: bold; }
+.entry-content-main-paragraph-new-finding { color: black; font-family: Garamond; font-size: 16pt; font-weight: normal; margin: 1em; line-height: 19pt; text-align: justify; border-left: 5px solid #914d03; padding-left: 1em; border-right: 5px solid #914d03; padding-left: 1em; }
