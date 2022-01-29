@@ -16,6 +16,7 @@
     <xsl:template match="tei:TEI">
         <head>
             <link rel="stylesheet" href="../../css/formats.css"/>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         </head>
         <body class="body-formats">
             <div class="heading-1">Priscianus: Institutiones (Cod. Guelf. 50 Weiss.)</div>
@@ -130,10 +131,16 @@
                 <xsl:attribute name="target">
                     <xsl:value-of select="'_blank'"/>
                 </xsl:attribute>
+                <xsl:element name="i">
+                    <xsl:attribute name="class" select="'far fa-image'"/>
+                </xsl:element>
+                <xsl:text> </xsl:text>
                 <xsl:text>Picture of edition</xsl:text>
             </xsl:element>
             <p class="main-text-paragraph">
-                <xsl:value-of select="@n"/>
+                <span class="edition-heading-1">
+                    <xsl:value-of select="@n"/>
+                </span>
                 <xsl:if test="exists(@prev)">
                     <xsl:text> (continued)</xsl:text>
                 </xsl:if>
@@ -167,13 +174,15 @@
     </xsl:template>
     
     <xsl:template match="tei:gap">
-        <xsl:text>[</xsl:text>
-            <xsl:value-of select="@quantity"/>
-            <xsl:text> </xsl:text>
-            <xsl:value-of select="@unit"/>
-            <xsl:text> </xsl:text>
-            <xsl:value-of select="@reason"/>
-        <xsl:text>]</xsl:text>
+        <xsl:if test="not(exists(following-sibling::tei:supplied))">
+            <xsl:text>[</xsl:text>
+                <xsl:value-of select="@quantity"/>
+                <xsl:text> </xsl:text>
+                <xsl:value-of select="@unit"/>
+                <xsl:text> </xsl:text>
+                <xsl:value-of select="@reason"/>
+            <xsl:text>]</xsl:text>
+        </xsl:if>
     </xsl:template>
     
     <xsl:template match="tei:supplied[parent::tei:quote]">
@@ -196,7 +205,15 @@
         </span>
         <span class="italic-text">
             <xsl:text> (</xsl:text>
-            <xsl:value-of select="substring-after(@hand,'#')"/>
+            <xsl:if test="substring-after(@hand,'#') = 'scr-1' or substring-after(@hand,'#') = 'scr'">
+                <xsl:text>main scribe</xsl:text>
+            </xsl:if>
+            <xsl:if test="substring-after(@hand,'#') = 'gl-1'">
+                <xsl:text>first glossator</xsl:text>
+            </xsl:if>
+            <xsl:if test="substring-after(@hand,'#') = 'gl-2'">
+                <xsl:text>second glossator</xsl:text>
+            </xsl:if>
             <xsl:text>)</xsl:text>
         </span>
     </xsl:template>
@@ -224,7 +241,15 @@
     
     <xsl:template match="tei:lem">
         <p class="apparatus-lemma">
-            <xsl:value-of select="substring-after(@wit,'#')"/>
+            <xsl:if test="substring-after(@wit,'#') = 'EDITION'">
+                <xsl:text>Edition</xsl:text>
+            </xsl:if>
+            <xsl:if test="substring-after(@wit,'#') = 'COD_50'">
+                <xsl:text>Codex 50</xsl:text>
+            </xsl:if>
+            <xsl:if test="not(substring-after(@wit,'#') = 'EDITION' or substring-after(@wit,'#') = 'COD_50')">
+                <xsl:value-of select="substring-after(@wit,'#')"/>
+            </xsl:if>
             <xsl:text>: </xsl:text>
             <xsl:value-of select="text()"/>
         </p>
@@ -232,10 +257,15 @@
     
     <xsl:template match="tei:rdg">
         <div class="apparatus-reading">
-            <xsl:value-of select="substring-after(@wit,'#')"/>
+            <xsl:if test="substring-after(@wit,'#') = 'COD_50'">
+                <xsl:text>Codex 50</xsl:text>
+            </xsl:if>
+            <xsl:if test="not(substring-after(@wit,'#') = 'COD_50')">
+                <xsl:value-of select="substring-after(@wit,'#')"/>
+            </xsl:if>
             <xsl:text>: </xsl:text>
             <xsl:if test="not(exists(text())) and not(exists(child::node()))">
-                <xsl:text>-</xsl:text>
+                <xsl:text>om.</xsl:text>
             </xsl:if>
             <xsl:apply-templates/>
         </div>
@@ -243,24 +273,33 @@
     
     <xsl:template match="tei:add[parent::tei:rdg]">
         <xsl:apply-templates/>
-        <xsl:text> (</xsl:text>
-        <xsl:value-of select="@place"/>
-        <xsl:text>, </xsl:text>
-        <xsl:if test="substring-after(@hand,'#') = 'scr-1' or substring-after(@hand,'#') = 'scr'">
+        <xsl:element name="br"/>
+        <span class="set-margin-left"><i class="far fa-compass"></i></span>
+        <xsl:element name="span">
+            <xsl:attribute name="class" select="'emphasize-location'"/>
+            <xsl:value-of select="@place"/>
+        </xsl:element>
+        <xsl:element name="br"/>
+        <span class="set-margin-left"><i class="far fa-hand-paper"></i></span>
+        <xsl:element name="span">
+            <xsl:attribute name="class" select="'emphasize-hand'"/>
+            <xsl:if test="substring-after(@hand,'#') = 'scr-1' or substring-after(@hand,'#') = 'scr'">
             <xsl:text>main scribe</xsl:text>
-        </xsl:if>
-        <xsl:if test="substring-after(@hand,'#') = 'gl-1'">
-            <xsl:text>first glossator</xsl:text>
-        </xsl:if>
-        <xsl:if test="substring-after(@hand,'#') = 'gl-2'">
-            <xsl:text>second glossator</xsl:text>
-        </xsl:if>
-        <xsl:text>) </xsl:text>
+            </xsl:if>
+            <xsl:if test="substring-after(@hand,'#') = 'gl-1'">
+                <xsl:text>first glossator</xsl:text>
+            </xsl:if>
+            <xsl:if test="substring-after(@hand,'#') = 'gl-2'">
+                <xsl:text>second glossator</xsl:text>
+            </xsl:if>
+        </xsl:element>
         <xsl:variable name="root-node" select="root()/tei:TEI" as="node()"/>
         <xsl:if test="exists(@ana)">
             <xsl:for-each select="tokenize(@ana,'\s*#')">
                 <xsl:if test=". != ''">
-                    <span class="analysis">
+                    <xsl:element name="br"/>
+                    <span class="set-margin-left"><i class="fas fa-glasses"></i></span>
+                    <span class="emphasize-analysis">
                         <xsl:value-of select="$root-node//tei:category[@xml:id = current()]/tei:catDesc/text()"/>
                     </span>
                 </xsl:if>
@@ -282,12 +321,27 @@
     
     <xsl:template match="tei:note">
         <div class="note">
+            <span class="set-margin-left-and-right"><i class="far fa-comment"></i></span>
             <xsl:apply-templates/>
-            <xsl:text> (</xsl:text>
-            <xsl:value-of select="@place"/>
-            <xsl:text>, </xsl:text>
-            <xsl:value-of select="substring-after(@hand,'#')"/>
-            <xsl:text>) </xsl:text>
+            <xsl:element name="br"/>
+            <span class="set-margin-left"><i class="far fa-compass"></i></span>
+            <span class="emphasize-location">
+                <xsl:value-of select="@place"/>
+            </span>
+            <xsl:element name="br"/>
+            <span class="set-margin-left"><i class="far fa-hand-paper"></i></span>
+            <xsl:element name="span">
+                <xsl:attribute name="class" select="'emphasize-hand'"/>
+                <xsl:if test="substring-after(@hand,'#') = 'scr-1' or substring-after(@hand,'#') = 'scr'">
+                    <xsl:text>main scribe</xsl:text>
+                </xsl:if>
+                <xsl:if test="substring-after(@hand,'#') = 'gl-1'">
+                    <xsl:text>first glossator</xsl:text>
+                </xsl:if>
+                <xsl:if test="substring-after(@hand,'#') = 'gl-2'">
+                    <xsl:text>second glossator</xsl:text>
+                </xsl:if>
+            </xsl:element>
         </div>
     </xsl:template>
     

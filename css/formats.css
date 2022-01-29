@@ -9,18 +9,25 @@ span.xml-id { font-weight: bold; }
 span.bibliography-title { font-style: italic; }
 span.hand-id { font-weight: bold; }
 span.hand-note { font-style: italic; }
-div.page-of-edition a:link { color: black; }
-div.page-of-edition a:active { color: black; }
-div.page-of-edition a:hover { color: black; }
-div.page-of-edition a:visited { color: black; }
+div.page-of-edition { font-family: Garamond; font-size: 16pt; font-weight: normal; }
+div.page-of-edition a:link { color: black; text-decoration: none; }
+div.page-of-edition a:active { color: black; text-decoration: none; }
+div.page-of-edition a:hover { color: black; text-decoration: none; }
+div.page-of-edition a:visited { color: black; text-decoration: none; }
 span.bold-text { font-weight: bold; }
 span.italic-text { font-style: italic; }
 span.bold-italic-text { font-style: italic; font-weight: bold; }
 div.page-of-edition { margin: 50pt; }
 div.apparatus { margin-left: 70pt; }
-div.note { margin-left: 100pt; }
 p.glyph-section { margin-top: 10pt; margin-bottom: 10pt; margin-left: 50pt; height: 40pt; }
-span.analysis { margin-left: 10pt; background-color: #d0d1f5; border-radius: 3pt; padding: 2pt; }
+span.emphasize-analysis { margin-left: 20pt; background-color: #d0d1f5; border-radius: 3pt; padding: 2pt; }
+span.emphasize-hand { margin-left: 20pt; background-color: #d0d1f5; border-radius: 3pt; padding: 2pt; }
+span.emphasize-location { margin-left: 20pt; background-color: #d0d1f5; border-radius: 3pt; padding: 2pt; }
 span.referred-word { background-color: #faccca; border-radius: 3pt; padding: 2pt; }
 span.pointer-targets { margin-left: 3pt; background-color: #faccca; border-radius: 3pt; padding: 2pt; }
 span.pointer-target-source { font-style: italic; }
+span.edition-heading-1 { font-family: Garamond; font-size: 24pt; font-weight: bold; }
+span.set-margin-left { margin-left: 20pt; }
+span.set-margin-left-and-right { margin-left: 20pt; margin-right: 20pt; }
+div.apparatus-reading { margin-top: 1em; }
+div.note { margin-left: 50pt; margin-top: 1em; }
