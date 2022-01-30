@@ -33,3 +33,4 @@ span.set-margin-left-and-right { margin-left: 20pt; margin-right: 20pt; }
 div.apparatus-reading { margin-top: 1em; margin-bottom: 1em; }
 div.note { margin-left: 50pt; margin-top: 1em; }
 p.pointer {margin-top: 1em; }
+span.typewriter { font-family: courier, fixed, monospace; }

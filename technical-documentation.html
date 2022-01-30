@@ -11,6 +11,9 @@
     <title>The Wissembourg Priscian Glosses</title>
     <link rel="stylesheet" id="fundament-styles"  href="./css/fundament.min.css" type="text/css"/>
 	<link rel="stylesheet" id="fundament-custom-styles" href="./css/custom.css" type="text/css"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/default.min.css" type="text/css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+	<script>hljs.highlightAll();</script>
 	<link rel="shortcut icon" type="image/x-icon" href="./images/favicon.png">
   </head>
   <body class="page">
@@ -81,13 +84,91 @@
                 <article>
 					<header class="entry-header background-color-brown">
                         <h1 class="heading-level-1">The Wissembourg Priscian Glosses</h1>
-						<h2 class="heading-level-2">Digital Edition - Introduction</h2>
+						<h2 class="heading-level-2">Digital Edition - Technical Documentation</h2>
 					</header><!-- .entry-header -->
-					<div class="entry-content image-main">
-						<img src="./images/manuscript-2.png" alt="Handschriftenseite" title="Wolfenbüttel, Herzog August Bibliothek, Cod. Guelf. 50 Weiss., f. 107v, detail" style="width: 100%; margin-bottom: 2em;">
-						<h1 class="entry-content-heading-level-1">Heading level 1</h1>
-						<h2 class="entry-content-heading-level-2">Heading level 2</h2>
-						<p class="entry-content-main-paragraph">Text</p>
+					<div class="entry-content">
+						<h1 class="entry-content-heading-level-1" style="margin-top: 1em;">The Leading Text</h1>
+						<p class="entry-content-main-paragraph">As reference the text of Hertz' edition is used. All differences of the Wissembourg manuscript Cod. Guelf. 50 Weiss compared to this edition are given in the transcription.</p>
+						<h2 class="entry-content-heading-level-2">Text without differences</h2>
+						<pre><code class="language-xml">
+&lt;quote source="#EDITION" n="II 1,0"&gt;
+    &lt;lb n="1"/&gt;Priscianus Caesariensis grammaticus
+    &lt;lb n="2"/&gt;Iuliano consuli ac patricio&lt;/quote&gt;
+						</code></pre>
+						<h2 class="entry-content-heading-level-2">Text with illegible characters</h2>
+						<pre><code class="language-xml">
+&lt;quote source="#EDITION" n="II 1,2"&gt;sapientiae luce
+    &lt;lb n="4"/&gt;
+    &lt;gap reason="illegible" unit="char" quantity="7"/&gt;
+    gens a Graecorum fontibus deriuatum Latinos proprio&lt;/quote&gt;
+						</code></pre>
+						<h2 class="entry-content-heading-level-2">Text with restored characters</h2>
+						<pre><code class="language-xml">
+&lt;quote source="#EDITION" n="II 1,2"&gt;sapientiae luce
+    &lt;lb n="4"/&gt;
+    &lt;gap reason="illegible" unit="char" quantity="7"/&gt;
+    &lt;supplied resp="#CG" reason="illegible"&gt;praeful&lt;/supplied&gt;
+    gens a Graecorum fontibus deriuatum Latinos proprio&lt;/quote&gt;
+						</code></pre>
+						<h2 class="entry-content-heading-level-2">Added text</h2>
+						<pre><code class="language-xml">
+&lt;quote source="#EDITION" n="II 1,5"&gt;
+    etiam quosdam errores eorum amore 
+    &lt;add type="text-variation" hand="#scr"&gt;grecorum&lt;/add&gt;
+    doctorum deceptos imitari, in quibus&lt;/quote&gt;
+						</code></pre>
+						<h2 class="entry-content-heading-level-2">Omitted text</h2>
+						<pre><code class="language-xml">
+&lt;quote source="#EDITION" n="II 1,0"&gt;
+    &lt;lb n="1"/&gt;Priscianus Caesariensis grammaticus
+    &lt;lb n="2"/&gt;Iuliano consuli ac patricio
+&lt;/quote&gt;
+&lt;app type="text-variation" xml:id="tv-1-0-1"&gt;
+    &lt;lem wit="#EDITION"&gt;Caesariensis&lt;/lem&gt;
+    &lt;rdg wit="#COD_50"/&gt;
+&lt;/app&gt;
+						</code></pre>
+						<h1 class="entry-content-heading-level-1">Annotating the Glosses</h1>
+						<pre><code class="language-xml">
+&lt;app type="gloss" xml:id="gloss-1-3-2"&gt;
+    &lt;lem wit="#EDITION"&gt;celebrasse&lt;/lem&gt;
+    &lt;rdg wit="#COD_50"&gt;
+        &lt;add place="interlinear above" hand="#gl-1" facs="#zone.1r.1" ana="#synonyms"&gt;diffamasse&lt;/add&gt;
+    &lt;/rdg&gt;
+						</code></pre>
+						<p class="entry-content-main-paragraph">The value for the <span class="typewriter">hand</span> attribute is a reference to the hand definition in the <span class="typewriter">teiHeader</span> (<span class="typewriter">teiHeader</span> &#8594; <span class="typewriter">fileDesc</span> &#8594; <span class="typewriter">sourceDesc</span> &#8594; <span class="typewriter">physDesc</span>)</p>
+						<pre><code class="language-xml">
+&lt;handDesc&gt;
+    ...
+    &lt;handNote xml:id="gl-1"&gt;first glossator, id est Otfrid of Wissembourg&lt;/handNote&gt;
+    ...
+&lt;/handDesc&gt;
+						</code></pre>
+						<p class="entry-content-main-paragraph">The <span class="typewriter">facs</span> attribute contains a reference to a definition of a section of the corresponding picture of the manuscript.</p>
+						<pre><code class="language-xml">
+&lt;facsimile&gt;
+...
+    &lt;surface xml:id="facs__00011" n="1r"&gt;
+        &lt;graphic url="http://diglib.hab.de/mss/50-weiss/00011.jpg"/&gt;
+        &lt;zone xml:id="zone.1r.1" ulx="641" uly="262" lrx="699" lry="276"/&gt;
+        ...
+    &lt;/surface&gt;
+    ...
+&lt;/facsimile&gt;
+						</code></pre>
+						<p class="entry-content-main-paragraph">In the <span class="typewriter">ana</span> attribute the definition of a category in a taxonomy given in the <span class="typewriter">teiHeader</span> (<span class="typewriter">teiHeader</span> &#8594; <span class="typewriter">encodingDesc</span>) is referenced.
+						<pre><code class="language-xml">
+&lt;classDecl&gt;
+    &lt;taxonomy xml:id="common-glosses"&gt;
+        ...
+        &lt;category xml:id="synonyms" n="212"&gt;
+            &lt;catDesc&gt;Lexical gloss providing a synonym&lt;/catDesc&gt;
+        &lt;/category&gt;
+        ...
+    &lt;/taxonomy&gt;
+    ...
+&lt;/classDecl&gt;
+						</code></pre>
 					</div><!-- .entry-content -->
                 </article>
               </main><!-- #main -->
