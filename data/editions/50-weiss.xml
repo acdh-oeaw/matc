@@ -47,7 +47,7 @@
          <sourceDesc>
             <listWit>
                <witness xml:id="EDITION">
-                  <bibl>Prisciani Institutiones grammaticae II, 29, ed. M. Hertz</bibl>
+                  <bibl>Prisciani Institutiones grammaticae, ed. M. Hertz</bibl>
                </witness>
                <witness xml:id="COD_50">
                   <bibl>Priscianus: Institutiones</bibl>
@@ -309,7 +309,7 @@
                   <catDesc> symbol added to link a lemma with its marginal annotation</catDesc>
                </category>
                <category xml:id="lemma-lemma">
-                  <catDesc> symbol added to link a lemma with a further lemma to highlight their
+                  <catDesc> symbol added to link a lemma with a further lemma in order to highlight their
                      connection within Priscian's text. The two lemmata are not part of the same
                      sentence. Their connection regards the content, not the syntax.</catDesc>
                </category>
@@ -324,14 +324,14 @@
          </listPrefixDef>
          <charDecl n="abbreviations">
             <glyph xml:id="sdot">
-               <localProp name="Name" value="LATIN ABBREVIATION FOR SCILICET"/>
+               <localProp name="Name" value="Latin abbreviation for scilicet"/>
                <localProp name="entity" value="sdot"/>
                <figure>
                   <graphic url="../pictures/scilicet.png"/>
                </figure>
             </glyph>
             <glyph xml:id="idest">
-               <localProp name="Name" value="LATIN ABBREVIATION FOR ID EST"/>
+               <localProp name="Name" value="Latin abbreviation for scilicet"/>
                <localProp name="entity" value="idest"/>
                <figure>
                   <graphic url="../pictures/idest.png"/>
@@ -340,7 +340,7 @@
          </charDecl>
          <charDecl n="construe-marks">
             <glyph xml:id="construe-mark-two-horizontal-dots-distigme">
-               <localProp name="Name" value="CONSTRUE MARK TWO HORIZONTAL DOTS-DISTIGME"/>
+               <localProp name="Name" value="construe mark - two horizontal dots, distigme"/>
                <localProp name="entity" value="construe-mark-two-horizontal-dots-distigme"/>
                <figure>
                   <graphic url="../pictures/construe-mark-two-horizontal-dots-distigme.png"/>
@@ -357,7 +357,7 @@
                <note>marks the main verb in the sentence</note>
             </glyph>
             <glyph xml:id="construe-mark-two-vertical-dots-dicolon">
-               <localProp name="Name" value="CONSTRUE MARK TWO VERTICAL DOTS DICOLON"/>
+               <localProp name="Name" value="construe mark - two vertical dots, dicolon"/>
                <localProp name="entity" value="construe-mark-two-vertical-dots-dicolon"/>
                <figure>
                   <graphic url="../pictures/construe-mark-two-vertical-dots-dicolon.png"/>
@@ -548,8 +548,16 @@
                   <lem wit="#EDITION">Caesariensis</lem>
                   <rdg wit="#COD_50"/>
                </app>
+               <app type="rubrication">
+                  <lem wit="#EDITION">Priscianus...patricio</lem>
+                  <rdg wit="#COD_50" hand="#scr"><hi rend="red capital letters"/></rdg>
+               </app>
                <quote source="#EDITION" n="II 1,1"><lb n="3"/>cum omnis eloquentiae doctrinam et
                   omne studiorum genus</quote>
+               <app type="rubrication">
+                  <lem wit="#EDITION">cum</lem>
+                  <rdg wit="#COD_50" hand="#scr"><hi rend="red capitalis">C</hi>um</rdg>
+               </app>
                <quote source="#EDITION" n="II 1,2">sapientiae luce<lb n="4"/><gap reason="illegible"
                      unit="char" quantity="7"/><supplied resp="#CG" reason="illegible"
                      >praeful</supplied>gens a Graecorum fontibus deriuatum Latinos proprio</quote>
@@ -1154,7 +1162,7 @@
                </app>
                <quote source="#EDITION" n="II 3,5">primus liber continet de uoce et eius speciebus;
                   de litera: quid sit</quote>
-               <app type="decoration">
+               <app type="rubrication">
                   <lem wit="#EDITION">primus</lem>
                   <rdg wit="#COD_50" hand="#scr"><hi rend="red capitalis rustica">P</hi>rimus</rdg>
                </app>
@@ -1214,7 +1222,7 @@
                   <lem wit="#EDITION">tertius</lem>
                   <rdg wit="#COD_50" hand="#scr"><hi rend="red capitalis rustica">III</hi></rdg>
                </app>
-               <app type="decoration">
+               <app type="rubrication">
                   <lem wit="#EDITION">de</lem>
                   <rdg wit="#COD_50" hand="#scr"><hi rend="capital letter filled with red ink"
                         >D</hi>e</rdg>
@@ -1229,7 +1237,7 @@
                   <lem wit="#EDITION">quartus</lem>
                   <rdg wit="#COD_50" hand="#scr"><hi rend="red capitalis rustica">IIII</hi></rdg>
                </app>
-               <app type="decoration">
+               <app type="rubrication">
                   <lem wit="#EDITION">de</lem>
                   <rdg wit="#COD_50" hand="#scr"><hi rend="capital letter filled with red ink"
                         >D</hi>e</rdg>
@@ -1242,7 +1250,7 @@
                   <lem wit="#EDITION">quintus</lem>
                   <rdg wit="#COD_50" hand="#scr"><hi rend="red capitalis rustica">V</hi></rdg>
                </app>
-               <app type="decoration">
+               <app type="rubrication">
                   <lem wit="#EDITION">de</lem>
                   <rdg wit="#COD_50" hand="#scr"><hi rend="capital letter filled with red ink"
                         >D</hi>e</rdg>
@@ -1255,7 +1263,7 @@
                   <lem wit="#EDITION">sextus</lem>
                   <rdg wit="#COD_50" hand="#scr"><hi rend="red capitalis rustica">VI</hi></rdg>
                </app>
-               <app type="decoration">
+               <app type="rubrication">
                   <lem wit="#EDITION">de</lem>
                   <rdg wit="#COD_50" hand="#scr"><hi rend="capital letter filled with red ink"
                         >D</hi>e</rdg>
@@ -1270,7 +1278,7 @@
                   <lem wit="#EDITION">septimus</lem>
                   <rdg wit="#COD_50" hand="#scr"><hi rend="red capitalis rustica">VII</hi></rdg>
                </app>
-               <app type="decoration">
+               <app type="rubrication">
                   <lem wit="#EDITION">de</lem>
                   <rdg wit="#COD_50" hand="#scr"><hi rend="capital letter filled with red ink"
                         >D</hi>e</rdg>
@@ -1284,7 +1292,7 @@
                   <lem wit="#EDITION">octauus</lem>
                   <rdg wit="#COD_50" hand="#scr"><hi rend="red capitalis rustica">VIII</hi></rdg>
                </app>
-               <app type="decoration">
+               <app type="rubrication">
                   <lem wit="#EDITION">de</lem>
                   <rdg wit="#COD_50" hand="#scr"><hi rend="capital letter filled with red ink"
                         >D</hi>e</rdg>
@@ -1299,7 +1307,7 @@
                   <lem wit="#EDITION">nonus</lem>
                   <rdg wit="#COD_50" hand="#scr"><hi rend="red capitalis rustica">VIIII</hi></rdg>
                </app>
-               <app type="decoration">
+               <app type="rubrication">
                   <lem wit="#EDITION">de</lem>
                   <rdg wit="#COD_50" hand="#scr"><hi rend="capital letter filled with red ink"
                         >D</hi>e</rdg>
@@ -1309,7 +1317,7 @@
                   <lem wit="#EDITION">decimus</lem>
                   <rdg wit="#COD_50" hand="#scr"><hi rend="red capitalis rustica">X</hi></rdg>
                </app>
-               <app type="decoration">
+               <app type="rubrication">
                   <lem wit="#EDITION">de</lem>
                   <rdg wit="#COD_50" hand="#scr"><hi rend="capital letter filled with red ink"
                         >D</hi>e</rdg>
@@ -1319,7 +1327,7 @@
                   <lem wit="#EDITION">undecimus</lem>
                   <rdg wit="#COD_50" hand="#scr"><hi rend="red capitalis rustica">XI</hi></rdg>
                </app>
-               <app type="decoration">
+               <app type="rubrication">
                   <lem wit="#EDITION">de</lem>
                   <rdg wit="#COD_50" hand="#scr"><hi rend="capital letter filled with red ink"
                         >D</hi>e</rdg>
@@ -1331,7 +1339,7 @@
                   <lem wit="#EDITION">quartusdecimus</lem>
                   <rdg wit="#COD_50" hand="#scr"><hi rend="red capitalis rustica">XIIII</hi></rdg>
                </app>
-               <app type="decoration">
+               <app type="rubrication">
                   <lem wit="#EDITION">de</lem>
                   <rdg wit="#COD_50" hand="#scr"><hi rend="capital letter filled with red ink"
                         >D</hi>e</rdg>
@@ -1342,7 +1350,7 @@
                   <lem wit="#EDITION">quintusdecimus</lem>
                   <rdg wit="#COD_50" hand="#scr"><hi rend="red capitalis rustica">XV</hi></rdg>
                </app>
-               <app type="decoration">
+               <app type="rubrication">
                   <lem wit="#EDITION">de</lem>
                   <rdg wit="#COD_50" hand="#scr"><hi rend="capital letter filled with red ink"
                         >D</hi>e</rdg>
@@ -1352,7 +1360,7 @@
                   <lem wit="#EDITION">sextusdecimus</lem>
                   <rdg wit="#COD_50" hand="#scr"><hi rend="red capitalis rustica">XVI</hi></rdg>
                </app>
-               <app type="decoration">
+               <app type="rubrication">
                   <lem wit="#EDITION">de</lem>
                   <rdg wit="#COD_50" hand="#scr"><hi rend="capital letter filled with red ink"
                         >D</hi>e</rdg>
@@ -1370,7 +1378,7 @@
                   <lem wit="#EDITION">liber primus</lem>
                   <rdg wit="#COD_50"/>
                </app>
-               <app type="decoration">
+               <app type="rubrication">
                   <lem wit="#EDITION">de uoce</lem>
                   <rdg wit="#COD_50"><hi rend="red capitalis rustica">DE VOCE</hi></rdg>
                </app>
@@ -1385,7 +1393,7 @@
                </app>
                <quote source="#EDITION" n="II 5,1"><lb n="12"/>philosophi definiunt, uocem esse
                   aerem tenuissimum ictum uel suum</quote>
-               <app type="decoration">
+               <app type="rubrication">
                   <lem wit="#EDITION">philosophi</lem>
                   <rdg wit="#COD_50" hand="#scr"><hi rend="red capitalis rustica"
                      >P</hi>hilosophi</rdg>
@@ -1394,6 +1402,9 @@
                   <lem wit="#EDITION">philosophi</lem>
                   <rdg wit="#COD_50"><add place="interlinear above" hand="#gl-1" facs="#zone.1v.2"
                         ana="#lemma-gloss"><g ref="#inverted-N-with-dot-below"/></add></rdg>
+               </app>
+               <app type="reference-signs" xml:id="rs-5-1-4">
+                  <lem wit="#EDITION">philosophi</lem>
                   <rdg wit="#COD_50"><add place="interlinear above" hand="#gl-2" facs="#zone.1v.5"
                         ana="#lemma-gloss"><g ref="#reference-sign-oblique-balloon-with-rope"
                         /></add></rdg>
@@ -1405,6 +1416,9 @@
                         /> amatores scientiae <lb/>definio. uniuscuiusque rei proprietas</add></rdg>
                   <note resp="#CG" type="explanation" target="#gloss-5-1-1">perhaps "definio" of the
                      gloss should read "definitio"</note>
+               </app>
+               <app type="gloss" xml:id="gloss-5-1-8">
+                  <lem wit="#EDITION">philosophi</lem>
                   <rdg wit="#COD_50"><add place="left margin" hand="#gl-2" facs="#zone.1v.4"
                         ana="#commentary-glosses"><g ref="#reference-sign-oblique-balloon-with-rope"
                         /> leniter insinuat se unum esse e philosophis</add></rdg>
@@ -1583,7 +1597,7 @@
                </app>
                <quote source="#EDITION" n="II 5,7">mentis eius, qui loquitur, profertur.
                   inarticulata <lb n="16"/>est contraria, quae a nullo</quote>
-               <app type="decoration">
+               <app type="rubrication">
                   <lem wit="#EDITION">inarticulata</lem>
                   <rdg wit="#COD_50" hand="#scr"><hi rend="red capitalis">I</hi>narticulata</rdg>
                </app>
@@ -1759,7 +1773,7 @@
                   <rdg wit="#COD_50"><add place="interlinear above" hand="#gl-2" facs="#zone.1v.50"
                         ana="#suppletive-glosses">. Inferiores species uocum.</add></rdg>
                </app>
-               <app type="decoration">
+               <app type="rubrication">
                   <lem wit="#EDITION">uox</lem>
                   <rdg wit="#COD_50" hand="#scr"><hi rend="red capitalis rustica">V</hi>ox</rdg>
                </app>
@@ -1788,7 +1802,7 @@
                         sono·et a boo·boatus·dicitur</add></rdg>
                </app>
                <quote source="#EDITION" n="II 6,6">de litera</quote>
-               <app type="decoration">
+               <app type="rubrication">
                   <lem wit="#EDITION">de litera</lem>
                   <rdg wit="#COD_50" hand="#scr"><hi rend="red capitalis rustica"/></rdg>
                </app>
@@ -1796,7 +1810,7 @@
                      >litera</w> est pars mini<lb n="24" break="no"/>ma uocis compositae, hoc est
                      <add type="text-variation" xml:id="tv-6-7-1" source="#COD_50" place="inline"
                      hand="#scr">uox</add> quae constat</quote>
-               <app type="decoration">
+               <app type="rubrication">
                   <lem wit="#EDITION">litera</lem>
                   <rdg wit="#COD_50" hand="#scr"><hi rend="red capitalis ">L</hi>ittera</rdg>
                </app>
