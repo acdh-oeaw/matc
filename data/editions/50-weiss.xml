@@ -309,9 +309,9 @@
                   <catDesc> symbol added to link a lemma with its marginal annotation</catDesc>
                </category>
                <category xml:id="lemma-lemma">
-                  <catDesc> symbol added to link a lemma with a further lemma in order to highlight their
-                     connection within Priscian's text. The two lemmata are not part of the same
-                     sentence. Their connection regards the content, not the syntax.</catDesc>
+                  <catDesc> symbol added to link a lemma with a further lemma in order to highlight
+                     their connection within Priscian's text. The two lemmata are not part of the
+                     same sentence. Their connection regards the content, not the syntax.</catDesc>
                </category>
             </taxonomy>
          </classDecl>
@@ -1436,7 +1436,8 @@
                <app type="gloss" xml:id="gloss-5-1-3">
                   <lem wit="#EDITION">uocem</lem>
                   <rdg wit="#COD_50"><add place="interlinear above" hand="#gl-2" facs="#zone.1v.8"
-                        ana="#translation-into-Old-High-German" type="OHG-gloss" n="1"><g ref="#reference-sign-oblique-v"/>
+                        ana="#translation-into-Old-High-German" type="OHG-gloss" n="1"><g
+                           ref="#reference-sign-oblique-v"/>
                         <foreign xml:lang="goh">lûtnussa</foreign></add></rdg>
                   <note resp="#CG" type="explanation" target="#gloss-5-1-3">see AHDW s.v.
                      [h]lûtnussa = nominative or accusative singular = "Klang, Laut"; Schwarz 1977,
@@ -1922,7 +1923,7 @@
                <quote source="#EDITION" n="II 6,11">possunt, id quod diuidi non potest. possumus et
                   sic definire: litera est uox,</quote>
                <quote source="#EDITION" n="II 6,12">quae scribi potest indiuidua.</quote>
-               <quote source="#EDITION" n="II 6,13">dicitur autem lit<lb n="26" break="no"/>era uel
+               <quote source="#EDITION" n="II 6,13">dicitur autem lit<lb n="27" break="no"/>era uel
                   quasi legitera, quod legendi iter praebeat,</quote>
                <app type="reference-signs" xml:id="rs-6-13-1">
                   <lem wit="#EDITION">litera</lem>
@@ -1935,19 +1936,42 @@
                         ana="#etymological-glosses #glosses-elucidating-the-main-text #translation-into-Old-High-German"
                            ><g ref="#reference-sign-S"/><del type="expunction" resp="#gl-1">a</del>
                            l<del cause="emendation" resp="#gl-1">e</del><add place="above"
-                              >i</add>tera· a lego et itere uel lituris <add xml:id="ohg-2-6-13-1" place="above" resp="#gl-1" type="OHG-gloss" subtype="new-finding" n="2"
-                           ><foreign xml:lang="goh">dilenne</foreign></add> liniuntur enim cum cera tabulę. fricando enim deletur
-                        tabula</add></rdg>
+                        >i</add>tera· a lego et itere uel lituris <add xml:id="ohg-2-6-13-1"
+                           place="above" resp="#gl-1" type="OHG-gloss" subtype="new-finding" n="2"
+                              ><foreign xml:lang="goh">dilenne</foreign></add> liniuntur enim cum
+                        cera tabulę. fricando enim deletur tabula</add></rdg>
                </app>
-               <note corresp="#ohg-2-6-13-1" type="explanation" resp="#CG"> for the OHG word dilenne see Gerhard Köbler,
-                  Lateinisch-althochdeutsches Wörterbuch, Göttingen 1971, s.v. delere = (ar)dilen,
-                  p. 51</note>
+               <note corresp="#ohg-2-6-13-1" type="explanation" resp="#CG"> for the OHG word dilenne
+                  see Gerhard Köbler, Lateinisch-althochdeutsches Wörterbuch, Göttingen 1971, s.v.
+                  delere = (ar)dilen, p. 51</note>
                <quote source="#EDITION" n="II 6,14">uel a lituris, ut quibusdam placet, quod
                   plerumque in ceratis tabulis</quote>
                <app type="gloss" xml:id="gloss-6-14-1">
                   <lem wit="#EDITION">a lituris</lem>
-                  <rdg wit="#COD_50"><add place="left margin" hand="#gl-1" facs="#zone.1v.71"
+                  <rdg wit="#COD_50"><add place="above" hand="#gl-1" facs="#zone.1v.71"
                         ana="#synonyms"><g ref="#idest"/> a deletionibus</add></rdg>
+               </app>
+               <app type="text-variation" xml:id="tv-6-14-1">
+                  <lem wit="#EDITION">in</lem>
+                  <rdg wit="#COD_50" hand="#scr">antiqui in</rdg>
+               </app>
+               <quote source="#EDITION" n="II 6,15">antiqui scri<lb n="28" break="no"/>bere
+                  solebant. literas autem etiam elementorum uocabulo</quote>
+               <app type="text-variation" xml:id="tv-6-15-1">
+                  <lem wit="#EDITION">antiqui</lem>
+                  <rdg wit="#COD_50"/>
+               </app>
+               <app type="text-variation" xml:id="tv-6-15-2">
+                  <lem wit="#EDITION">solebant</lem>
+                  <rdg wit="#COD_50" hand="#scr">solebant litteris</rdg>
+               </app>
+               <quote source="#EDITION" n="II 6,16">nuncupauerunt ad similitudinem mundi
+                  elementorum: sicut enim illa coeun<lb n="29" break="no"/>tia omne</quote>
+               <app type="gloss" xml:id="gloss-6-16-1">
+                  <lem wit="#EDITION">elementorum</lem>
+                  <rdg wit="#COD_50"><add place="above" hand="#gl-1" facs="#zone.1v.72"
+                        ana="#glosses-elucidating-the-main-text">.elementum dicitur uniuersitatis
+                        materia.</add></rdg>
                </app>
 
                <!--  -->
@@ -2349,6 +2373,7 @@
          <zone xml:id="zone.1v.68" ulx="135" uly="665" lrx="259" lry="704"/>
          <zone xml:id="zone.1v.71" ulx="523" uly="705" lrx="583" lry="718"/>
          <zone xml:id="zone.1v.69" ulx="286" uly="710" lrx="298" lry="724"/>
+         <zone xml:id="zone.1v.72" ulx="749" uly="723" lrx="896" lry="739"/>
          <zone xml:id="zone.1v.70" ulx="145" uly="709" lrx="260" lry="764"/>
          <zone xml:id="zone.1v.63" ulx="750" uly="644" lrx="773" lry="656"/>
          <zone xml:id="zone.1v.58" ulx="138" uly="652" lrx="224" lry="668"/>
