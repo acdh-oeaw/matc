@@ -540,7 +540,7 @@
             <pb n="IVr" xml:id="page__00009" facs="#facs__00009"/>
             <pb n="IVv" xml:id="page__00010" facs="#facs__00010"/>
             <pb n="1r" xml:id="page__00011" facs="#facs__00011"/>
-            <div n="Praefatio" type="page-of-Keil-edition" xml:id="praefatio.1" next="#praefatio.2"
+            <div n="Praefatio" type="page-of-Hertz-edition" xml:id="praefatio.1" next="#praefatio.2"
                corresp="images-keil:Keil_v2_001.gif" xml:lang="la">
                <quote source="#EDITION" n="II 1,0"><lb n="1"/>Priscianus Caesariensis grammaticus<lb
                      n="2"/>Iuliano consuli ac patricio</quote>
@@ -572,7 +572,7 @@
                <app type="gloss" xml:id="gloss-1-3-2">
                   <lem wit="#EDITION">celebrasse</lem>
                   <rdg wit="#COD_50"><add place="interlinear above" hand="#gl-1" facs="#zone.1r.1"
-                        xml:lang="lat" ana="#synonyms">diffamasse</add></rdg>
+                        xml:lang="la" ana="#synonyms">diffamasse</add></rdg>
                </app>
                <app type="gloss" xml:id="gloss-1-3-3">
                   <lem wit="#EDITION">et</lem>
@@ -601,6 +601,9 @@
                   <rdg wit="#COD_50"><add place="interlinear above" hand="#scr" facs="#zone.1r.7"
                         ana="#syntactical-glosses-using-symbols"><g
                            ref="#construe-mark-two-horizontal-dots-distigme"/></add></rdg>
+               </app>
+               <app type="gloss" xml:id="gloss-1-3-7">
+                  <lem wit="#EDITION">liberalibus</lem>
                   <rdg wit="#COD_50"><add place="interlinear above" hand="#gl-1" facs="#zone.1r.4"
                         xml:lang="la" ana="#synonyms #quia-glosses">nobilibus quia liberi homines
                         artem discebant uel quia liberos faciunt homines a uitiis</add></rdg>
@@ -676,12 +679,6 @@
                         ana="#glosses-elucidating-the-main-text"><g ref="#idest"/> eos
                         doctores</add></rdg>
                </app>
-               <app type="gloss" xml:id="gloss-1-6-3">
-                  <lem wit="#EDITION">peccasse</lem>
-                  <rdg wit="#COD_50"><add place="interlinear above" hand="#gl-1" facs="#zone.1r.13"
-                        ana="#glosses-elucidating-the-main-text"><g ref="#idest"/> eos
-                        doctores</add></rdg>
-               </app>
                <app type="gloss" xml:id="gloss-1-6-4">
                   <lem wit="#EDITION">cuius</lem>
                   <rdg wit="#COD_50"><add place="interlinear above" hand="#scr" facs="#zone.1r.19"
@@ -695,6 +692,9 @@
                   <rdg wit="#COD_50"><add place="interlinear above" hand="#gl-1" facs="#zone.1r.14"
                         ana="#glosses-elucidating-the-main-text">perspicax res est quae perspici
                         potest</add></rdg>
+               </app>
+               <app type="gloss" xml:id="gloss-1-7-3">
+                  <lem wit="#EDITION">perspicatiores</lem>
                   <rdg wit="#COD_50"><add place="interlinear above" hand="#scr" facs="#zone.1r.20"
                         ana="#syntactical-glosses-using-symbols"><g ref="#two-converging-strokes"
                         /></add><ptr target="#II-1-7-1 #II-1-8-1 #II-1-8-2"/></rdg>
@@ -753,6 +753,9 @@
                   <lem wit="#EDITION">cum</lem>
                   <rdg wit="#COD_50"><add place="interlinear above" hand="#scr" facs="#zone.1r.28"
                         ana="#text-variant">quia</add></rdg>
+               </app>
+               <app type="gloss" xml:id="gloss-1-10-7">
+                  <lem wit="#EDITION">cum</lem>
                   <rdg wit="#COD_50"><add place="interlinear above" hand="#scr" facs="#zone.1r.29"
                         ana="#syntactical-glosses-using-symbols"><g
                            ref="#construe-mark-dot-with-right-half-ring"/></add><ptr
@@ -816,6 +819,9 @@
                   <lem wit="#EDITION">expurgasse</lem>
                   <rdg wit="#COD_50"><add place="interlinear above" hand="#gl-1" facs="#zone.1r.33"
                         ana="#synonyms">emendasse</add></rdg>
+               </app>
+               <app type="gloss" xml:id="gloss-1-12-3">
+                  <lem wit="#EDITION">expurgasse</lem>
                   <rdg wit="#COD_50"><add place="interlinear above" hand="#scr" facs="#zone.1r.40"
                         ana="#syntactical-glosses-using-symbols"><g
                            ref="#construe-mark-two-horizontal-dots-distigme"/></add></rdg>
@@ -837,7 +843,7 @@
                         xml:lang="la" ana="#synonyms">in desidiam</add></rdg>
                </app>
             </div>
-            <div type="page-of-Keil-edition" n="Praefatio" xml:id="praefatio.2" prev="#praefatio.1"
+            <div type="page-of-Hertz-edition" n="Praefatio" xml:id="praefatio.2" prev="#praefatio.1"
                next="#praefatio.3" corresp="images-keil:Keil_v2_002.gif">
                <quote source="#EDITION" n="II 2,1">cadentibus studiis literarum <lb n="12"/> propter
                   inopiam scriptorum, quamuis audacter,</quote>
@@ -865,6 +871,9 @@
                         facs="#zone.1r.45" ana="#glosses-elucidating-the-main-text"><g
                            ref="#reference-sign-half-ring-with-dot-below"/> inreuerenter uel
                         inrationabiliter. cum uerecundia et reuerentia</add></rdg>
+               </app>
+               <app type="gloss" xml:id="gloss-2-2-7">
+                  <lem wit="#EDITION">impudenter</lem>
                   <rdg wit="#COD_50"><add subtype="to-be-checked" place="interlinear above"
                         hand="#gl-1" facs="#zone.1r.46" xml:lang="la" ana="#synonyms"><gap
                            unit="char" quantity="2" reason="illegible"/>denter</add></rdg>
@@ -987,6 +996,9 @@
                   <lem wit="#EDITION">sua</lem>
                   <rdg wit="#COD_50"><add place="above left" hand="#gl-1" facs="#zone.1r.65"
                         ana="#lemma-gloss"><g ref="#reference-sign-dot-with-acute"/></add></rdg>
+               </app>
+               <app type="reference-signs" xml:id="rs-2-14-2">
+                  <lem wit="#EDITION">sua</lem>
                   <rdg wit="#COD_50"><add place="above right" hand="#gl-1" facs="#zone.1r.60"
                         ana="#lemma-gloss"><g ref="#reference-sign-dot-with-acute"/></add></rdg>
                </app>
@@ -1113,7 +1125,7 @@
                         ana="#synonyms">commendo. uel promitto</add></rdg>
                </app>
             </div>
-            <div type="page-of-Keil-edition" n="Praefatio" xml:id="praefatio.3" prev="#praefatio.2"
+            <div type="page-of-Hertz-edition" n="Praefatio" xml:id="praefatio.3" prev="#praefatio.2"
                next="#praefatio.4" corresp="images-keil:Keil_v2_003.gif">
                <quote source="#EDITION" n="II 3,1">praesul, ut quantamcumque mihi deus annuerit
                   suscepti laboris gloriam,</quote>
@@ -1284,7 +1296,7 @@
                         >D</hi>e</rdg>
                </app>
             </div>
-            <div type="page-of-Keil-edition" n="Praefatio" xml:id="praefatio.4" prev="#praefatio.3"
+            <div type="page-of-Hertz-edition" n="Praefatio" xml:id="praefatio.4" prev="#praefatio.3"
                corresp="images-keil:Keil_v2_004.gif">
                <quote source="#EDITION" n="II 4,1">octauus de uerbo et eius accidentibus.<lb n="9"
                   /></quote>
@@ -1369,8 +1381,9 @@
                   constructione siue<lb n="11"/> ordinatione</quote>
                <quote source="#EDITION" n="II 4,10">partium orationis inter se.</quote>
             </div>
-            <div type="page-of-Keil-edition" n="Liber Primus" xml:id="liber-primus.1"
+            <div type="page-of-Hertz-edition" n="Liber Primus" xml:id="liber-primus.1"
                next="#liber-primus.2" corresp="images-keil:Keil_v2_005.gif" xml:lang="la">
+               <milestone unit="chapter" n="de uoce"/>
                <quote source="#EDITION" n="II 5,0"><add type="text-variation" xml:id="tv-5-0-1"
                      hand="#scr"><hi rend="red capitalis rustica">INCIPIT ARS PRISCIANI GRAMMATICI
                         CESARIENSIS</hi></add> liber primus de uoce</quote>
@@ -1711,6 +1724,9 @@
                         ana="#glosses-elucidating-the-main-text">inarticulata et
                      inliterata</add></rdg>
                </app>
+            </div>
+            <div type="page-of-Hertz-edition" n="Liber Primus" xml:id="liber-primus.2"
+               next="#liber-primus.3" prev="liber-primus.1" corresp="images-keil:Keil_v2_006.gif" xml:lang="la">
                <quote source="#EDITION" n="II 6,1">uero sunt inarticulatae et illiteratae, quae nec
                   scribi possunt nec intellegi,</quote>
                <quote source="#EDITION" n="II 6,2">ut crepitus, mugitus et similia. scire autem
@@ -1802,10 +1818,11 @@
                         ana="#Greek-glosses">APOTOY <g ref="#idest"/> ab· BOƜ <g ref="#idest"/>
                         sono·et a boo·boatus·dicitur</add></rdg>
                </app>
+               <milestone unit="chapter" n="de litera"/>
                <quote source="#EDITION" n="II 6,6">de litera</quote>
                <app type="rubrication">
                   <lem wit="#EDITION">de litera</lem>
-                  <rdg wit="#COD_50" hand="#scr"><hi rend="red capitalis rustica"/></rdg>
+                  <rdg wit="#COD_50" hand="#scr"><hi rend="red capitalis rustica">DE LITERA</hi></rdg>
                </app>
                <quote source="#EDITION" n="II 6,7"><w xml:id="w-2-6-7-1" corresp="#w-2-6-8-1"
                      >litera</w> est pars mini<lb n="24" break="no"/>ma uocis compositae, hoc est
@@ -1954,16 +1971,15 @@
                <app type="text-variation" xml:id="tv-6-14-1">
                   <lem wit="#EDITION">in</lem>
                   <rdg wit="#COD_50" hand="#scr">antiqui in</rdg>
+                  <note resp="#CG" type="explanation">transposition of "antiqui" in MS 50
+                     Weiss.</note>
                </app>
-               <quote source="#EDITION" n="II 6,15">antiqui scri<lb n="28" break="no"/>bere
-                  solebant. literas autem etiam elementorum uocabulo</quote>
+               <quote source="#EDITION" n="II 6,15">antiqui scri<lb n="28" break="no"/>bere solebant
+                  <add type="text-variation" hand="#scr" source="#COD_50">litteris</add>. literas autem etiam
+                  elementorum uocabulo</quote>
                <app type="text-variation" xml:id="tv-6-15-1">
                   <lem wit="#EDITION">antiqui</lem>
                   <rdg wit="#COD_50"/>
-               </app>
-               <app type="text-variation" xml:id="tv-6-15-2">
-                  <lem wit="#EDITION">solebant</lem>
-                  <rdg wit="#COD_50" hand="#scr">solebant litteris</rdg>
                </app>
                <quote source="#EDITION" n="II 6,16">nuncupauerunt ad similitudinem mundi
                   elementorum: sicut enim illa coeun<lb n="29" break="no"/>tia omne</quote>
