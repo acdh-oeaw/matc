@@ -129,12 +129,14 @@
 &lt;/app&gt;
 						</code></pre>
 						<h1 class="entry-content-heading-level-1">Annotating the Glosses</h1>
+						<h2 class="entry-content-heading-level-2">Type <span class="typewriter">gloss</span></h2>
 						<pre><code class="language-xml">
 &lt;app type="gloss" xml:id="gloss-1-3-2"&gt;
     &lt;lem wit="#EDITION"&gt;celebrasse&lt;/lem&gt;
     &lt;rdg wit="#COD_50"&gt;
         &lt;add place="interlinear above" hand="#gl-1" facs="#zone.1r.1" ana="#synonyms"&gt;diffamasse&lt;/add&gt;
     &lt;/rdg&gt;
+&lt;/app&gt;
 						</code></pre>
 						<p class="entry-content-main-paragraph">The value for the <span class="typewriter">hand</span> attribute is a reference to the hand definition in the <span class="typewriter">teiHeader</span> (<span class="typewriter">teiHeader</span> &#8594; <span class="typewriter">fileDesc</span> &#8594; <span class="typewriter">sourceDesc</span> &#8594; <span class="typewriter">physDesc</span>)</p>
 						<pre><code class="language-xml">
@@ -168,6 +170,31 @@
     &lt;/taxonomy&gt;
     ...
 &lt;/classDecl&gt;
+						</code></pre>
+						<h2 class="entry-content-heading-level-2">Type <span class="typewriter">rubrication</span></h2>
+						<pre><code class="language-xml">
+&lt;app type="rubrication" xml:id="rubr-1-2-1"&gt;
+    &lt;lem wit="#EDITION"&gt;cum&lt;/lem&gt;
+    &lt;rdg wit="#COD_50" hand="#scr"&gt;&lt;hi rend="red capitalis"&gt;C&lt;/hi&gt;um&lt;/rdg&gt;
+&lt;/app&gt;
+						</code></pre>
+						<h2 class="entry-content-heading-level-2">Type <span class="typewriter">reference-signs</span></h2>
+						<pre><code class="language-xml">
+&lt;app type="reference-signs" xml:id="rs-1-5-1"&gt;
+    &lt;lem wit="#EDITION"&gt;quibus&lt;/lem&gt;
+    &lt;rdg wit="#COD_50"&gt;
+        &lt;add place="interlinear above" hand="#gl-1" facs="#zone.1r.11" ana="#lemma-gloss"&gt;
+            &lt;g ref="#two-horizontal-dots-with-acute"/&gt;
+        &lt;/add&gt;
+    &lt;/rdg&gt;
+&lt;/app&gt;
+						</code></pre>
+						<h2 class="entry-content-heading-level-2">Type <span class="typewriter">text-variation</span></h2>
+						<pre><code class="language-xml">
+&lt;app type="text-variation" xml:id="tv-2-2-1"&gt;
+    &lt;lem wit="#EDITION"&gt;impudenter&lt;/lem&gt;
+    &lt;rdg wit="#COD_50" hand="#scr"&gt;inpudenter&lt;/rdg&gt;
+&lt;/app&gt;
 						</code></pre>
 					</div><!-- .entry-content -->
                 </article>
