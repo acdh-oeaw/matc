@@ -548,13 +548,13 @@
                   <lem wit="#EDITION">Caesariensis</lem>
                   <rdg wit="#COD_50"/>
                </app>
-               <app type="rubrication">
-                  <lem wit="#EDITION">Priscianus...patricio</lem>
-                  <rdg wit="#COD_50" hand="#scr"><hi rend="red capital letters"/></rdg>
+               <app type="rubrication" xml:id="rubr-1-0-1">
+                  <lem wit="#EDITION">Priscianus ... patricio</lem>
+                  <rdg wit="#COD_50" hand="#scr"><hi rend="red capital letters">Priscianus ... patricio</hi></rdg>
                </app>
                <quote source="#EDITION" n="II 1,1"><lb n="3"/>cum omnis eloquentiae doctrinam et
                   omne studiorum genus</quote>
-               <app type="rubrication">
+               <app type="rubrication" xml:id="rubr-1-0-2">
                   <lem wit="#EDITION">cum</lem>
                   <rdg wit="#COD_50" hand="#scr"><hi rend="red capitalis">C</hi>um</rdg>
                </app>
@@ -1174,7 +1174,7 @@
                </app>
                <quote source="#EDITION" n="II 3,5">primus liber continet de uoce et eius speciebus;
                   de litera: quid sit</quote>
-               <app type="rubrication">
+               <app type="rubrication" xml:id="rubr-3-5-1">
                   <lem wit="#EDITION">primus</lem>
                   <rdg wit="#COD_50" hand="#scr"><hi rend="red capitalis rustica">P</hi>rimus</rdg>
                </app>
@@ -1234,7 +1234,7 @@
                   <lem wit="#EDITION">tertius</lem>
                   <rdg wit="#COD_50" hand="#scr"><hi rend="red capitalis rustica">III</hi></rdg>
                </app>
-               <app type="rubrication">
+               <app type="rubrication" xml:id="rubr-3-16-1">
                   <lem wit="#EDITION">de</lem>
                   <rdg wit="#COD_50" hand="#scr"><hi rend="capital letter filled with red ink"
                         >D</hi>e</rdg>
@@ -1249,7 +1249,7 @@
                   <lem wit="#EDITION">quartus</lem>
                   <rdg wit="#COD_50" hand="#scr"><hi rend="red capitalis rustica">IIII</hi></rdg>
                </app>
-               <app type="rubrication">
+               <app type="rubrication" xml:id="rubr-3-19-1">
                   <lem wit="#EDITION">de</lem>
                   <rdg wit="#COD_50" hand="#scr"><hi rend="capital letter filled with red ink"
                         >D</hi>e</rdg>
@@ -1262,7 +1262,7 @@
                   <lem wit="#EDITION">quintus</lem>
                   <rdg wit="#COD_50" hand="#scr"><hi rend="red capitalis rustica">V</hi></rdg>
                </app>
-               <app type="rubrication">
+               <app type="rubrication" xml:id="rubr-3-21-1">
                   <lem wit="#EDITION">de</lem>
                   <rdg wit="#COD_50" hand="#scr"><hi rend="capital letter filled with red ink"
                         >D</hi>e</rdg>
@@ -1275,7 +1275,7 @@
                   <lem wit="#EDITION">sextus</lem>
                   <rdg wit="#COD_50" hand="#scr"><hi rend="red capitalis rustica">VI</hi></rdg>
                </app>
-               <app type="rubrication">
+               <app type="rubrication" xml:id="rubr-3-23-1">
                   <lem wit="#EDITION">de</lem>
                   <rdg wit="#COD_50" hand="#scr"><hi rend="capital letter filled with red ink"
                         >D</hi>e</rdg>
@@ -1290,7 +1290,7 @@
                   <lem wit="#EDITION">septimus</lem>
                   <rdg wit="#COD_50" hand="#scr"><hi rend="red capitalis rustica">VII</hi></rdg>
                </app>
-               <app type="rubrication">
+               <app type="rubrication" xml:id="rubr-3-26-1">
                   <lem wit="#EDITION">de</lem>
                   <rdg wit="#COD_50" hand="#scr"><hi rend="capital letter filled with red ink"
                         >D</hi>e</rdg>
@@ -1304,7 +1304,7 @@
                   <lem wit="#EDITION">octauus</lem>
                   <rdg wit="#COD_50" hand="#scr"><hi rend="red capitalis rustica">VIII</hi></rdg>
                </app>
-               <app type="rubrication">
+               <app type="rubrication" xml:id="rubr-4-1-1">
                   <lem wit="#EDITION">de</lem>
                   <rdg wit="#COD_50" hand="#scr"><hi rend="capital letter filled with red ink"
                         >D</hi>e</rdg>
@@ -1319,7 +1319,7 @@
                   <lem wit="#EDITION">nonus</lem>
                   <rdg wit="#COD_50" hand="#scr"><hi rend="red capitalis rustica">VIIII</hi></rdg>
                </app>
-               <app type="rubrication">
+               <app type="rubrication" xml:id="rubr-4-2-1">
                   <lem wit="#EDITION">de</lem>
                   <rdg wit="#COD_50" hand="#scr"><hi rend="capital letter filled with red ink"
                         >D</hi>e</rdg>
@@ -1329,7 +1329,7 @@
                   <lem wit="#EDITION">decimus</lem>
                   <rdg wit="#COD_50" hand="#scr"><hi rend="red capitalis rustica">X</hi></rdg>
                </app>
-               <app type="rubrication">
+               <app type="rubrication" xml:id="rubr-4-3-1">
                   <lem wit="#EDITION">de</lem>
                   <rdg wit="#COD_50" hand="#scr"><hi rend="capital letter filled with red ink"
                         >D</hi>e</rdg>
@@ -1339,7 +1339,7 @@
                   <lem wit="#EDITION">undecimus</lem>
                   <rdg wit="#COD_50" hand="#scr"><hi rend="red capitalis rustica">XI</hi></rdg>
                </app>
-               <app type="rubrication">
+               <app type="rubrication" xml:id="rubr-4-4-1">
                   <lem wit="#EDITION">de</lem>
                   <rdg wit="#COD_50" hand="#scr"><hi rend="capital letter filled with red ink"
                         >D</hi>e</rdg>
@@ -1351,7 +1351,7 @@
                   <lem wit="#EDITION">quartusdecimus</lem>
                   <rdg wit="#COD_50" hand="#scr"><hi rend="red capitalis rustica">XIIII</hi></rdg>
                </app>
-               <app type="rubrication">
+               <app type="rubrication" xml:id="rubr-4-6-1">
                   <lem wit="#EDITION">de</lem>
                   <rdg wit="#COD_50" hand="#scr"><hi rend="capital letter filled with red ink"
                         >D</hi>e</rdg>
@@ -1362,7 +1362,7 @@
                   <lem wit="#EDITION">quintusdecimus</lem>
                   <rdg wit="#COD_50" hand="#scr"><hi rend="red capitalis rustica">XV</hi></rdg>
                </app>
-               <app type="rubrication">
+               <app type="rubrication" xml:id="rubr-4-7-1">
                   <lem wit="#EDITION">de</lem>
                   <rdg wit="#COD_50" hand="#scr"><hi rend="capital letter filled with red ink"
                         >D</hi>e</rdg>
@@ -1372,7 +1372,7 @@
                   <lem wit="#EDITION">sextusdecimus</lem>
                   <rdg wit="#COD_50" hand="#scr"><hi rend="red capitalis rustica">XVI</hi></rdg>
                </app>
-               <app type="rubrication">
+               <app type="rubrication" xml:id="rubr-4-8-1">
                   <lem wit="#EDITION">de</lem>
                   <rdg wit="#COD_50" hand="#scr"><hi rend="capital letter filled with red ink"
                         >D</hi>e</rdg>
@@ -1391,7 +1391,7 @@
                   <lem wit="#EDITION">liber primus</lem>
                   <rdg wit="#COD_50"/>
                </app>
-               <app type="rubrication">
+               <app type="rubrication" xml:id="rubr-5-0-1">
                   <lem wit="#EDITION">de uoce</lem>
                   <rdg wit="#COD_50"><hi rend="red capitalis rustica">DE VOCE</hi></rdg>
                </app>
@@ -1406,7 +1406,7 @@
                </app>
                <quote source="#EDITION" n="II 5,1"><lb n="12"/>philosophi definiunt, uocem esse
                   aerem tenuissimum ictum uel suum</quote>
-               <app type="rubrication">
+               <app type="rubrication" xml:id="rubr-5-1-1">
                   <lem wit="#EDITION">philosophi</lem>
                   <rdg wit="#COD_50" hand="#scr"><hi rend="red capitalis rustica"
                      >P</hi>hilosophi</rdg>
@@ -1611,7 +1611,7 @@
                </app>
                <quote source="#EDITION" n="II 5,7">mentis eius, qui loquitur, profertur.
                   inarticulata <lb n="16"/>est contraria, quae a nullo</quote>
-               <app type="rubrication">
+               <app type="rubrication" xml:id="rubr-5-7-1">
                   <lem wit="#EDITION">inarticulata</lem>
                   <rdg wit="#COD_50" hand="#scr"><hi rend="red capitalis">I</hi>narticulata</rdg>
                </app>
@@ -1790,7 +1790,7 @@
                   <rdg wit="#COD_50"><add place="interlinear above" hand="#gl-2" facs="#zone.1v.50"
                         ana="#suppletive-glosses">. Inferiores species uocum.</add></rdg>
                </app>
-               <app type="rubrication">
+               <app type="rubrication" xml:id="rubr-6-4-1">
                   <lem wit="#EDITION">uox</lem>
                   <rdg wit="#COD_50" hand="#scr"><hi rend="red capitalis rustica">V</hi>ox</rdg>
                </app>
@@ -1820,7 +1820,7 @@
                </app>
                <milestone unit="chapter" n="de litera"/>
                <quote source="#EDITION" n="II 6,6">de litera</quote>
-               <app type="rubrication">
+               <app type="rubrication" xml:id="rubr-6-6-1">
                   <lem wit="#EDITION">de litera</lem>
                   <rdg wit="#COD_50" hand="#scr"><hi rend="red capitalis rustica">DE LITERA</hi></rdg>
                </app>
@@ -1828,7 +1828,7 @@
                      >litera</w> est pars mini<lb n="24" break="no"/>ma uocis compositae, hoc est
                      <add type="text-variation" xml:id="tv-6-7-1" source="#COD_50" place="inline"
                      hand="#scr">uox</add> quae constat</quote>
-               <app type="rubrication">
+               <app type="rubrication" xml:id="rubr-6-7-1">
                   <lem wit="#EDITION">litera</lem>
                   <rdg wit="#COD_50" hand="#scr"><hi rend="red capitalis ">L</hi>ittera</rdg>
                </app>

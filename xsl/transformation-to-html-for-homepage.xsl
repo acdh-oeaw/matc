@@ -166,8 +166,13 @@
     </xsl:template>
     
     <xsl:template match="tei:lb[parent::tei:quote]">
+        <xsl:variable name="page-number">
+            <xsl:value-of select="parent::tei:quote/parent::tei:div/preceding-sibling::tei:pb[position() = 1]/@n"/>
+        </xsl:variable>
         <span class="italic-text">
                 <xsl:text> (</xsl:text>
+                <xsl:value-of select="$page-number"/>
+                <xsl:text>,</xsl:text>
                 <xsl:value-of select="@n"/>
                 <xsl:text>) </xsl:text>
         </span>
@@ -187,9 +192,9 @@
     
     <xsl:template match="tei:supplied[parent::tei:quote]">
         <span class="bold-text">
-            <xsl:text> [</xsl:text>
+            <xsl:text> 〈</xsl:text>
             <xsl:value-of select="text()"/>
-            <xsl:text>]</xsl:text>
+            <xsl:text>〉</xsl:text>
         </span>
     </xsl:template>
     
