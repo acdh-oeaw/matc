@@ -1,9 +1,9 @@
-.heading-1 { font-family: roman, 'times new roman', times, serif; font-size: 24pt; font-weight: bold; }
-.heading-2 { font-family: roman, 'times new roman', times, serif; font-size: 18pt; font-weight: bold; }
-.list-of-witnesses { font-family: roman, 'times new roman', times, serif; font-size: 14pt; font-weight: normal; }
-.list-of-hands { font-family: roman, 'times new roman', times, serif; font-size: 14pt; font-weight: normal; }
-.editorial-declaration { font-family: roman, 'times new roman', times, serif; font-size: 14pt; font-weight: normal; }
-.pictures { font-family: roman, 'times new roman', times, serif; font-size: 14pt; font-weight: normal; }
+.heading-1 { font-family: Garamond; font-size: 24pt; font-weight: bold; }
+.heading-2 { font-family: Garamond; font-size: 18pt; font-weight: bold; }
+.list-of-witnesses { font-family: Garamond; font-size: 14pt; font-weight: normal; }
+.list-of-hands { font-family: Garamond; font-size: 14pt; font-weight: normal; }
+.editorial-declaration { font-family: Garamond; font-size: 14pt; font-weight: normal; }
+.pictures { font-family: Garamond; font-size: 14pt; font-weight: normal; }
 body.body-formats { margin: 20pt; }
 span.xml-id { font-weight: bold; }
 span.bibliography-title { font-style: italic; }
@@ -20,14 +20,21 @@ span.bold-italic-text { font-style: italic; font-weight: bold; }
 div.page-of-edition { margin: 50pt; }
 div.apparatus { margin-left: 70pt; }
 p.glyph-section { margin-top: 10pt; margin-bottom: 10pt; margin-left: 50pt; height: 40pt; }
-span.emphasize-analysis { margin-left: 20pt; background-color: #d0d1f5; border-radius: 3pt; padding: 2pt; }
-span.emphasize-hand { margin-left: 20pt; background-color: #d0d1f5; border-radius: 3pt; padding: 2pt; }
-span.emphasize-location { margin-left: 20pt; background-color: #d0d1f5; border-radius: 3pt; padding: 2pt; }
-span.referred-word { background-color: #faccca; border-radius: 3pt; padding: 2pt; }
-span.pointer-targets { margin-left: 3pt; background-color: #faccca; border-radius: 3pt; padding: 2pt; }
+span.emphasize-analysis { margin-left: 20pt; border-radius: 3pt; padding: 2pt; }
+/*  background-color: #d0d1f5; */
+span.emphasize-hand { margin-left: 20pt; border-radius: 3pt; padding: 2pt; }
+/*  background-color: #d0d1f5; */
+span.emphasize-location { margin-left: 20pt; border-radius: 3pt; padding: 2pt; }
+/*  background-color: #d0d1f5; */
+span.referred-word { border-radius: 3pt; padding: 2pt; }
+/*  background-color: #faccca; */
+span.pointer-targets { margin-left: 3pt; border-radius: 3pt; padding: 2pt; }
+/*  background-color: #faccca; */
 span.pointer-target-source { font-style: italic; }
 span.edition-heading-1 { font-family: Garamond; font-size: 24pt; font-weight: bold; }
 span.set-margin-left { margin-left: 20pt; }
 span.set-margin-left-and-right { margin-left: 20pt; margin-right: 20pt; }
 div.apparatus-reading { margin-top: 1em; }
 div.note { margin-left: 50pt; margin-top: 1em; }
+p.type-of-intervention { margin-left: 40pt; font-style: italic; }
+span.expunction { text-decoration: line-through; }
