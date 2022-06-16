@@ -324,17 +324,24 @@
          </listPrefixDef>
          <charDecl n="abbreviations">
             <glyph xml:id="sdot">
-               <localProp name="Name" value="LATIN ABBREVIATION FOR SCILICET"/>
+               <localProp name="Name" value="scilicet"/>
                <localProp name="entity" value="sdot"/>
                <figure>
                   <graphic url="../pictures/scilicet.png"/>
                </figure>
             </glyph>
             <glyph xml:id="idest">
-               <localProp name="Name" value="LATIN ABBREVIATION FOR IDEST"/>
+               <localProp name="Name" value="id est"/>
                <localProp name="entity" value="idest"/>
                <figure>
                   <graphic url="../pictures/idest.png"/>
+               </figure>
+            </glyph>
+            <glyph xml:id="irish-est">
+               <localProp name="Name" value="Irish abbreviation for est"/>
+               <localProp name="entity" value="est"/>
+               <figure>
+                  <graphic url="../pictures/est.png"/>
                </figure>
             </glyph>
          </charDecl>
@@ -550,7 +557,8 @@
                </app>
                <app type="rubrication" xml:id="rubr-1-0-1">
                   <lem wit="#EDITION">Priscianus ... patricio</lem>
-                  <rdg wit="#COD_50" hand="#scr"><hi rend="red capital letters">Priscianus ... patricio</hi></rdg>
+                  <rdg wit="#COD_50" hand="#scr"><hi rend="red capital letters">Priscianus ...
+                        patricio</hi></rdg>
                </app>
                <quote source="#EDITION" n="II 1,1"><lb n="3"/>cum omnis eloquentiae doctrinam et
                   omne studiorum genus</quote>
@@ -594,8 +602,8 @@
                         target="#II-1-4-3 #II-1-4-2"/></rdg>
                </app>
                <note place="right margin" type="gloss" subtype="to-be-checked" hand="#gl-1"
-                  facs="#zone.1r.3" xml:lang="la">propter sententiae
-                  prolixitatem ... addidit ...</note>
+                  facs="#zone.1r.3" xml:lang="la">propter sententiae prolixitatem ... addidit
+                  ...</note>
                <app type="gloss" xml:id="gloss-1-3-6">
                   <lem wit="#EDITION">liberalibus</lem>
                   <rdg wit="#COD_50"><add place="interlinear above" hand="#scr" facs="#zone.1r.7"
@@ -1116,8 +1124,8 @@
                   deuoueo, omnis<lb n="31"/> eloquentiae</quote>
                <app type="emendation" xml:id="emendation-2-31-1">
                   <lem wit="#EDITION">genere</lem>
-                  <rdg wit="#COD_50" hand="#scr"><del type="expunction"
-                     >gloriae</del><add place="inline"></add></rdg>
+                  <rdg wit="#COD_50" hand="#scr"><del type="expunction">gloriae</del><add
+                        place="inline"/></rdg>
                </app>
                <app type="gloss" xml:id="gloss-2-31-1">
                   <lem wit="#EDITION">deuoueo</lem>
@@ -1726,10 +1734,12 @@
                </app>
             </div>
             <div type="page-of-Hertz-edition" n="Liber Primus" xml:id="liber-primus.2"
-               next="#liber-primus.3" prev="liber-primus.1" corresp="images-keil:Keil_v2_006.gif" xml:lang="la">
+               next="#liber-primus.3" prev="liber-primus.1" corresp="images-keil:Keil_v2_006.gif"
+               xml:lang="la">
                <quote source="#EDITION" n="II 6,1">uero sunt inarticulatae et illiteratae, quae nec
                   scribi possunt nec intellegi,</quote>
-               <quote source="#EDITION" n="II 6,2">ut crepitus, mugitus et similia. scire autem
+               <quote source="#EDITION" n="II 6,2">ut <add type="text-variation" xml:id="tv-6-2-1"
+                  source="#COD_50" hand="#scr"><g ref="#irish-est"/></add>crepitus, mugitus et similia. scire autem
                      debemus,<lb n="22"/> quod has quattuor </quote>
                <app type="reference-signs" xml:id="rs-6-2-1">
                   <lem wit="#COD_50">scire</lem>
@@ -1794,6 +1804,10 @@
                   <lem wit="#EDITION">uox</lem>
                   <rdg wit="#COD_50" hand="#scr"><hi rend="red capitalis rustica">V</hi>ox</rdg>
                </app>
+               <app type="text-variation" xml:id="tv-6-4-1">
+                  <lem wit="#EDITION">est</lem>
+                  <rdg wit="#COD_50" hand="#scr"><g ref="#irish-est"/></rdg>
+               </app>
                <quote source="#EDITION" n="II 6,5">a uocando, ut dux a ducendo, uel ἀπὸ τοῦ βοῶ, ut
                   quibusdam placet.</quote>
                <app type="gloss" xml:id="gloss-6-5-1">
@@ -1804,8 +1818,8 @@
                </app>
                <app type="text-variation" xml:id="tv-6-5-1">
                   <lem wit="#EDITION">ἀπὸ τοῦ βοῶ</lem>
-                  <rdg wit="#COD_50" hand="#scr">AΠOT<add hand="#sec" place="above">o</add>YB<add hand="#scr"
-                        place="above">O</add>Ɯ</rdg>
+                  <rdg wit="#COD_50" hand="#scr">AΠOT<add hand="#sec" place="above">o</add>YB<add
+                        hand="#scr" place="above">O</add>Ɯ</rdg>
                </app>
                <app type="gloss" xml:id="gloss-6-5-2">
                   <lem wit="#EDITION">ἀπὸ τοῦ βοῶ</lem>
@@ -1822,7 +1836,8 @@
                <quote source="#EDITION" n="II 6,6">de litera</quote>
                <app type="rubrication" xml:id="rubr-6-6-1">
                   <lem wit="#EDITION">de litera</lem>
-                  <rdg wit="#COD_50" hand="#scr"><hi rend="red capitalis rustica">DE LITERA</hi></rdg>
+                  <rdg wit="#COD_50" hand="#scr"><hi rend="red capitalis rustica">DE
+                     LITERA</hi></rdg>
                </app>
                <quote source="#EDITION" n="II 6,7"><w xml:id="w-2-6-7-1" corresp="#w-2-6-8-1"
                      >litera</w> est pars mini<lb n="24" break="no"/>ma uocis compositae, hoc est
@@ -1851,7 +1866,7 @@
                </app>
                <note resp="#CG" type="explanation">
                   <ref target="#gloss-6-7-2">This gloss</ref> was added after Otfrid had written
-                  <ref target="#gloss-6-7-3">his annotation</ref></note>
+                     <ref target="#gloss-6-7-3">his annotation</ref></note>
                <app type="reference-signs" xml:id="rs-6-7-2">
                   <lem wit="#EDITION">compositae</lem>
                   <rdg wit="#COD_50"><add place="above" hand="#gl-1" facs="#zone.1v.57"
@@ -1939,6 +1954,10 @@
                   breuissimum eorum,<lb n="26"/> quae diuidi </quote>
                <quote source="#EDITION" n="II 6,11">possunt, id quod diuidi non potest. possumus et
                   sic definire: litera est uox,</quote>
+               <app type="text-variation" xml:id="tv-6-11-1">
+                  <lem wit="#EDITION">est</lem>
+                  <rdg wit="#COD_50" hand="#scr"><g ref="#irish-est"/></rdg>
+               </app>
                <quote source="#EDITION" n="II 6,12">quae scribi potest indiuidua.</quote>
                <quote source="#EDITION" n="II 6,13">dicitur autem lit<lb n="27" break="no"/>era uel
                   quasi legitera, quod legendi iter praebeat,</quote>
@@ -1951,12 +1970,13 @@
                   <lem wit="#EDITION">litera</lem>
                   <rdg wit="#COD_50"><add place="left margin" hand="#gl-1" facs="#zone.1v.70"
                         ana="#etymological-glosses #glosses-elucidating-the-main-text #translation-into-Old-High-German"
-                           ><g ref="#reference-sign-cursive-Zeta"/><del type="expunction" resp="#gl-1">a</del>
-                           l<del type="expunction" resp="#gl-1">e</del><add place="above"
-                        >i</add>tera· a lego et itere uel lituris <add xml:id="ohg-2-6-13-1"
-                           place="above" resp="#gl-1" type="OHG-gloss" subtype="new-finding" n="2"
-                              ><foreign xml:lang="goh">dilenne</foreign></add> liniuntur enim cum
-                        cera tabulę. fricando enim deletur tabula</add></rdg>
+                           ><g ref="#reference-sign-cursive-Zeta"/><del type="expunction"
+                           resp="#gl-1">a</del> l<del type="expunction" resp="#gl-1">e</del><add
+                           place="above">i</add>tera· a lego et itere uel lituris <add
+                           xml:id="ohg-2-6-13-1" place="above" resp="#gl-1" type="OHG-gloss"
+                           subtype="new-finding" n="2"><foreign xml:lang="goh"
+                           >dilenne</foreign></add> liniuntur enim cum cera tabulę. fricando enim
+                        deletur tabula</add></rdg>
                </app>
                <note corresp="#ohg-2-6-13-1" type="explanation" resp="#CG"> for the OHG word dilenne
                   see Gerhard Köbler, Lateinisch-althochdeutsches Wörterbuch, Göttingen 1971, s.v.
@@ -1975,8 +1995,8 @@
                      Weiss.</note>
                </app>
                <quote source="#EDITION" n="II 6,15">antiqui scri<lb n="28" break="no"/>bere solebant
-                  <add type="text-variation" hand="#scr" source="#COD_50">litteris</add>. literas autem etiam
-                  elementorum uocabulo</quote>
+                     <add type="text-variation" hand="#scr" source="#COD_50">litteris</add>. literas
+                  autem etiam elementorum uocabulo</quote>
                <app type="text-variation" xml:id="tv-6-15-1">
                   <lem wit="#EDITION">antiqui</lem>
                   <rdg wit="#COD_50"/>
@@ -1988,6 +2008,23 @@
                   <rdg wit="#COD_50"><add place="above" hand="#gl-1" facs="#zone.1v.72"
                         ana="#glosses-elucidating-the-main-text">.elementum dicitur uniuersitatis
                         materia.</add></rdg>
+               </app>
+               <quote source="#EDITION" n="II 6,17">perficiunt corpus, sic etiam haec coniuncta
+                  literalem uocem quasi corpus</quote>
+               <quote source="#EDITION" n="II 6,18">aliquod componunt uel magis uere cor<lb n="30" break="no"/>pus. nam si
+                  aer corpus est, et uox,</quote>
+               <app type="gloss" xml:id="gloss-6-18-1">
+                  <lem wit="#EDITION">uere</lem>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#gl-1" facs="#zone.1v.73"
+                     ana="#grammatical-glosses-on-the-adverb">aduerbium</add></rdg>
+               </app>
+               <app type="emendation" xml:id="emendation-6-18-1">
+                  <lem wit="#EDITION">si</lem>
+                  <rdg wit="#COD_50" hand="#scr"><del type="expunction">qua</del>si</rdg>
+               </app>
+               <app type="text-variation" xml:id="tv-6-18-1">
+                  <lem wit="#EDITION">est</lem>
+                  <rdg wit="#COD_50" hand="#scr"><g ref="#irish-est"/></rdg>
                </app>
 
                <!--  -->
@@ -2390,6 +2427,7 @@
          <zone xml:id="zone.1v.71" ulx="523" uly="705" lrx="583" lry="718"/>
          <zone xml:id="zone.1v.69" ulx="286" uly="710" lrx="298" lry="724"/>
          <zone xml:id="zone.1v.72" ulx="749" uly="723" lrx="896" lry="739"/>
+         <zone xml:id="zone.1v.73" ulx="878" uly="747" lrx="912" lry="762"/>
          <zone xml:id="zone.1v.70" ulx="145" uly="709" lrx="260" lry="764"/>
          <zone xml:id="zone.1v.63" ulx="750" uly="644" lrx="773" lry="656"/>
          <zone xml:id="zone.1v.58" ulx="138" uly="652" lrx="224" lry="668"/>
