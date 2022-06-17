@@ -1739,8 +1739,9 @@
                <quote source="#EDITION" n="II 6,1">uero sunt inarticulatae et illiteratae, quae nec
                   scribi possunt nec intellegi,</quote>
                <quote source="#EDITION" n="II 6,2">ut <add type="text-variation" xml:id="tv-6-2-1"
-                  source="#COD_50" hand="#scr"><g ref="#irish-est"/></add>crepitus, mugitus et similia. scire autem
-                     debemus,<lb n="22"/> quod has quattuor </quote>
+                     source="#COD_50" hand="#scr" place="inline"><g ref="#irish-est"
+                  /></add>crepitus, mugitus et similia. scire autem debemus,<lb n="22"/> quod has
+                  quattuor </quote>
                <app type="reference-signs" xml:id="rs-6-2-1">
                   <lem wit="#COD_50">scire</lem>
                   <rdg wit="#COD_50"><add place="interlinear above" hand="#gl-2" facs="#zone.1v.44"
@@ -2011,12 +2012,12 @@
                </app>
                <quote source="#EDITION" n="II 6,17">perficiunt corpus, sic etiam haec coniuncta
                   literalem uocem quasi corpus</quote>
-               <quote source="#EDITION" n="II 6,18">aliquod componunt uel magis uere cor<lb n="30" break="no"/>pus. nam si
-                  aer corpus est, et uox,</quote>
+               <quote source="#EDITION" n="II 6,18">aliquod componunt uel magis uere cor<lb n="30"
+                     break="no"/>pus. nam si aer corpus est, et uox,</quote>
                <app type="gloss" xml:id="gloss-6-18-1">
                   <lem wit="#EDITION">uere</lem>
                   <rdg wit="#COD_50"><add place="interlinear above" hand="#gl-1" facs="#zone.1v.73"
-                     ana="#grammatical-glosses-on-the-adverb">aduerbium</add></rdg>
+                        ana="#grammatical-glosses-on-the-adverb">aduerbium</add></rdg>
                </app>
                <app type="emendation" xml:id="emendation-6-18-1">
                   <lem wit="#EDITION">si</lem>
@@ -2026,7 +2027,45 @@
                   <lem wit="#EDITION">est</lem>
                   <rdg wit="#COD_50" hand="#scr"><g ref="#irish-est"/></rdg>
                </app>
-
+               <quote source="#EDITION" n="II 6,19">quae ex aere icto constat, corpus esse
+                  ostenditur, quippe cum et tangit</quote>
+               <quote source="#EDITION" n="II 6,20">aurem et tripertito <lb n="31"/>diuiditur, quod
+                  est suum corporis, hoc est <add type="text-variation" xml:id="tv-6-20-3"
+                     source="#COD_50" hand="#scr" place="interlinear above" facs="#zone.1v.74"
+                     >in</add></quote>
+               <app type="text-variation" xml:id="tv-6-20-1">
+                  <lem wit="#EDITION">quod est</lem>
+                  <rdg wit="#COD_50" hand="#scr">quod <g ref="#irish-est"/></rdg>
+               </app>
+               <app type="text-variation" xml:id="tv-6-20-2">
+                  <lem wit="#EDITION">hoc est</lem>
+                  <rdg wit="#COD_50" hand="#scr">hoc <g ref="#irish-est"/></rdg>
+               </app>
+               <quote source="#EDITION" n="II 6,21">altitudinem, latitudinem, longitudinem, unde ex
+                  omni quoque parte potest audiri.</quote>
+               <app type="text-variation" xml:id="tv-6-21-1">
+                  <lem wit="#EDITION">ex omni quoque parte</lem>
+                  <rdg wit="#COD_50" hand="#scr">quoque ex omni parte</rdg>
+               </app>
+               <app type="text-variation" xml:id="tv-6-21-2">
+                  <lem wit="#EDITION">potest</lem>
+                  <rdg wit="#COD_50" hand="#scr">pot<g ref="#irish-est"/></rdg>
+               </app>
+               <app type="gloss" xml:id="gloss-6-21-1">
+                  <lem wit="#EDITION">altitudinem</lem>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#gl-1" facs="#zone.1v.75"
+                     ana="#glosses-elucidating-the-main-text">supra se</add></rdg>
+               </app>
+               <app type="gloss" xml:id="gloss-6-21-2">
+                  <lem wit="#EDITION">latitudinem</lem>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#gl-1" facs="#zone.1v.76"
+                     ana="#glosses-elucidating-the-main-text">ex utrisque partibus</add></rdg>
+               </app>
+               <app type="gloss" xml:id="gloss-6-21-3">
+                  <lem wit="#EDITION">longitudinem</lem>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#gl-1" facs="#zone.1v.77"
+                     ana="#glosses-elucidating-the-main-text">ante se</add></rdg>
+               </app>
                <!--  -->
             </div>
 
@@ -2428,6 +2467,10 @@
          <zone xml:id="zone.1v.69" ulx="286" uly="710" lrx="298" lry="724"/>
          <zone xml:id="zone.1v.72" ulx="749" uly="723" lrx="896" lry="739"/>
          <zone xml:id="zone.1v.73" ulx="878" uly="747" lrx="912" lry="762"/>
+         <zone xml:id="zone.1v.76" ulx="515" uly="795" lrx="569" lry="810"/>
+         <zone xml:id="zone.1v.77" ulx="585" uly="796" lrx="617" lry="811"/>
+         <zone xml:id="zone.1v.75" ulx="452" uly="800" lrx="479" lry="810"/>
+         <zone xml:id="zone.1v.74 " ulx="439" uly="804" lrx="453" lry="812"/>
          <zone xml:id="zone.1v.70" ulx="145" uly="709" lrx="260" lry="764"/>
          <zone xml:id="zone.1v.63" ulx="750" uly="644" lrx="773" lry="656"/>
          <zone xml:id="zone.1v.58" ulx="138" uly="652" lrx="224" lry="668"/>
