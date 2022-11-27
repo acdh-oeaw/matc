@@ -1,0 +1,2029 @@
+{
+    "glosses": [
+        {
+            "id": "gloss-1-3-1",
+            "reading": {
+                "witness": "Codex 50",
+                "place": "interlinear above",
+                "hand": "main scribe",
+                "text": "|CONSTRUE MARK DOT WITH RIGHT HALF RING - INSULAR QUOTATION SIGN| ",
+                "analysis": ["construe-marks, i.e. symbols or letters, correlating words belonging together or establishing word order"],
+                "zone": {
+                    "ulx": "596",
+                    "uly": "265",
+                    "lrx": "603",
+                    "lry": "272"
+                },
+                "page-url": "http://diglib.hab.de/mss/50-weiss/00011.jpg"
+            }
+        },
+        {
+            "id": "gloss-1-3-2",
+            "reading": {
+                "witness": "Codex 50",
+                "place": "interlinear above",
+                "hand": "first glossator",
+                "text": "diffamasse",
+                "analysis": ["Lexical gloss providing a synonym"],
+                "zone": {
+                    "ulx": "641",
+                    "uly": "262",
+                    "lrx": "699",
+                    "lry": "276"
+                },
+                "page-url": "http://diglib.hab.de/mss/50-weiss/00011.jpg"
+            }
+        },
+        {
+            "id": "gloss-1-3-3",
+            "reading": {
+                "witness": "Codex 50",
+                "place": "interlinear above",
+                "hand": "main scribe",
+                "text": "|CONSTRUE MARK - TWO VERTICAL DOTS, DICOLON| ",
+                "analysis": ["construe-marks, i.e. symbols or letters, correlating words belonging together or establishing word order"],
+                "zone": {
+                    "ulx": "712",
+                    "uly": "261",
+                    "lrx": "718",
+                    "lry": "270"
+                },
+                "page-url": "http://diglib.hab.de/mss/50-weiss/00011.jpg"
+            }
+        },
+        {
+            "id": "gloss-1-3-4",
+            "reading": {
+                "witness": "Codex 50",
+                "place": "interlinear above",
+                "hand": "main scribe",
+                "text": "|scilicet|  cum",
+                "analysis": ["glosses giving variant reading of the main text"],
+                "zone": {
+                    "ulx": "713",
+                    "uly": "261",
+                    "lrx": "749",
+                    "lry": "273"
+                },
+                "page-url": "http://diglib.hab.de/mss/50-weiss/00011.jpg"
+            }
+        },
+        {
+            "id": "gloss-1-3-5",
+            "reading": {
+                "witness": "Codex 50",
+                "place": "interlinear above",
+                "hand": "main scribe",
+                "text": "|CONSTRUE MARK - TWO HORIZONTAL DOTS, DISTIGME| ",
+                "analysis": ["construe-marks, i.e. symbols or letters, correlating words belonging together or establishing word order"],
+                "zone": {
+                    "ulx": "743",
+                    "uly": "271",
+                    "lrx": "750",
+                    "lry": "276"
+                },
+                "page-url": "http://diglib.hab.de/mss/50-weiss/00011.jpg"
+            }
+        },
+        {
+            "id": "gloss-1-3-6",
+            "reading": {
+                "witness": "Codex 50",
+                "place": "interlinear above",
+                "hand": "main scribe",
+                "text": "|CONSTRUE MARK - TWO HORIZONTAL DOTS, DISTIGME| ",
+                "analysis": ["construe-marks, i.e. symbols or letters, correlating words belonging together or establishing word order"],
+                "zone": {
+                    "ulx": "294",
+                    "uly": "295",
+                    "lrx": "301",
+                    "lry": "299"
+                },
+                "page-url": "http://diglib.hab.de/mss/50-weiss/00011.jpg"
+            }
+        },
+        {
+            "id": "gloss-1-3-7",
+            "reading": {
+                "witness": "Codex 50",
+                "place": "interlinear above",
+                "hand": "first glossator",
+                "text": "nobilibus quia liberi homines artem discebant uel quia liberos faciunt homines a uitiis",
+                "analysis": [
+                    "Lexical gloss providing a synonym",
+                    "commentary glosses beginning with quia"
+                ],
+                "zone": {
+                    "ulx": "285",
+                    "uly": "283",
+                    "lrx": "553",
+                    "lry": "300"
+                },
+                "page-url": "http://diglib.hab.de/mss/50-weiss/00011.jpg"
+            }
+        },
+        {
+            "id": "gloss-1-4-1",
+            "reading": {
+                "witness": "Codex 50",
+                "place": "interlinear above",
+                "hand": "main scribe",
+                "text": "|CONSTRUE MARK - TWO HORIZONTAL DOTS, DISTIGME| ",
+                "analysis": ["construe-marks, i.e. symbols or letters, correlating words belonging together or establishing word order"],
+                "zone": {
+                    "ulx": "423",
+                    "uly": "295",
+                    "lrx": "432",
+                    "lry": "300"
+                },
+                "page-url": "http://diglib.hab.de/mss/50-weiss/00011.jpg"
+            }
+        },
+        {
+            "id": "gloss-1-4-2",
+            "reading": {
+                "witness": "Codex 50",
+                "place": "interlinear above",
+                "hand": "main scribe",
+                "text": "|CONSTRUE MARK - TWO VERTICAL DOTS, DICOLON| ",
+                "analysis": ["construe-marks, i.e. symbols or letters, correlating words belonging together or establishing word order"],
+                "zone": {
+                    "ulx": "473",
+                    "uly": "291",
+                    "lrx": "479",
+                    "lry": "300"
+                },
+                "page-url": "http://diglib.hab.de/mss/50-weiss/00011.jpg"
+            }
+        },
+        {
+            "id": "gloss-1-4-3",
+            "reading": {
+                "witness": "Codex 50",
+                "place": "interlinear above",
+                "hand": "first glossator",
+                "text": "|id est|  bene",
+                "analysis": ["Lexical gloss providing a synonym"],
+                "zone": {
+                    "ulx": "612",
+                    "uly": "283",
+                    "lrx": "648",
+                    "lry": "298"
+                },
+                "page-url": "http://diglib.hab.de/mss/50-weiss/00011.jpg"
+            }
+        },
+        {
+            "id": "gloss-1-5-1",
+            "reading": {
+                "witness": "Codex 50",
+                "place": "interlinear above",
+                "hand": "main scribe",
+                "text": "grgrecorum",
+                "analysis": ["glosses simplifying the understanding of a sentence by adding words which Priscian had only implied"],
+                "zone": {
+                    "ulx": "295",
+                    "uly": "307",
+                    "lrx": "312",
+                    "lry": "320"
+                },
+                "page-url": "http://diglib.hab.de/mss/50-weiss/00011.jpg"
+            }
+        },
+        {
+            "id": "gloss-1-5-2",
+            "reading": {
+                "witness": "Codex 50",
+                "place": "right margin",
+                "hand": "first glossator",
+                "text": "|REFERENCE SIGN TWO HORIZONTAL DOTS WITH ACUTE|  inter quas artes liberales uetustissima grammatica arguitur arte p[3 chars illegible]asse",
+                "analysis": ["commentary glosses beginning often with id est, providing a paraphrase or an explanation of the lemma"],
+                "zone": {
+                    "ulx": "766",
+                    "uly": "313",
+                    "lrx": "871",
+                    "lry": "365"
+                },
+                "page-url": "http://diglib.hab.de/mss/50-weiss/00011.jpg"
+            }
+        },
+        {
+            "id": "gloss-1-6-1",
+            "reading": {
+                "witness": "Codex 50",
+                "place": "interlinear above",
+                "hand": "main scribe",
+                "text": "|CONSTRUE MARK CONVERGING STROKES WITH DOT ABOVE| ",
+                "analysis": ["construe-marks, i.e. symbols or letters, correlating words belonging together or establishing word order"],
+                "zone": {
+                    "ulx": "201",
+                    "uly": "329",
+                    "lrx": "210",
+                    "lry": "339"
+                },
+                "page-url": "http://diglib.hab.de/mss/50-weiss/00011.jpg"
+            }
+        },
+        {
+            "id": "gloss-1-6-2",
+            "reading": {
+                "witness": "Codex 50",
+                "place": "interlinear above",
+                "hand": "first glossator",
+                "text": "|id est|  eos doctores",
+                "analysis": ["commentary glosses beginning often with id est, providing a paraphrase or an explanation of the lemma"],
+                "zone": {
+                    "ulx": "294",
+                    "uly": "328",
+                    "lrx": "350",
+                    "lry": "339"
+                },
+                "page-url": "http://diglib.hab.de/mss/50-weiss/00011.jpg"
+            }
+        },
+        {
+            "id": "gloss-1-6-4",
+            "reading": {
+                "witness": "Codex 50",
+                "place": "interlinear above",
+                "hand": "main scribe",
+                "text": "|CONSTRUE MARK CONVERGING STROKES WITH DOT ABOVE| ",
+                "analysis": ["construe-marks, i.e. symbols or letters, correlating words belonging together or establishing word order"],
+                "zone": {
+                    "ulx": "346",
+                    "uly": "325",
+                    "lrx": "354",
+                    "lry": "338"
+                },
+                "page-url": "http://diglib.hab.de/mss/50-weiss/00011.jpg"
+            }
+        },
+        {
+            "id": "gloss-1-7-1",
+            "reading": {
+                "witness": "Codex 50",
+                "place": "interlinear above",
+                "hand": "first glossator",
+                "text": "perspicax res est quae perspici potest",
+                "analysis": ["commentary glosses beginning often with id est, providing a paraphrase or an explanation of the lemma"],
+                "zone": {
+                    "ulx": "574",
+                    "uly": "328",
+                    "lrx": "683",
+                    "lry": "342"
+                },
+                "page-url": "http://diglib.hab.de/mss/50-weiss/00011.jpg"
+            }
+        },
+        {
+            "id": "gloss-1-7-3",
+            "reading": {
+                "witness": "Codex 50",
+                "place": "interlinear above",
+                "hand": "main scribe",
+                "text": "|CONSTRUE MARK TWO CONVERGING STROKES-DIPLE| ",
+                "analysis": ["construe-marks, i.e. symbols or letters, correlating words belonging together or establishing word order"],
+                "zone": {
+                    "ulx": "603",
+                    "uly": "335",
+                    "lrx": "610",
+                    "lry": "344"
+                },
+                "page-url": "http://diglib.hab.de/mss/50-weiss/00011.jpg"
+            }
+        },
+        {
+            "id": "gloss-1-7-2",
+            "reading": {
+                "witness": "Codex 50",
+                "place": "interlinear above",
+                "hand": "main scribe",
+                "text": "|CONSTRUE MARK TWO CONVERGING STROKES-DIPLE| ",
+                "analysis": ["construe-marks, i.e. symbols or letters, correlating words belonging together or establishing word order"],
+                "zone": {
+                    "ulx": "736",
+                    "uly": "329",
+                    "lrx": "743",
+                    "lry": "339"
+                },
+                "page-url": "http://diglib.hab.de/mss/50-weiss/00011.jpg"
+            }
+        },
+        {
+            "id": "gloss-1-8-1",
+            "reading": {
+                "witness": "Codex 50",
+                "place": "interlinear above",
+                "hand": "main scribe",
+                "text": "|CONSTRUE MARK TWO CONVERGING STROKES-DIPLE| ",
+                "analysis": ["construe-marks, i.e. symbols or letters, correlating words belonging together or establishing word order"],
+                "zone": {
+                    "ulx": "188",
+                    "uly": "353",
+                    "lrx": "196",
+                    "lry": "363"
+                },
+                "page-url": "http://diglib.hab.de/mss/50-weiss/00011.jpg"
+            }
+        },
+        {
+            "id": "gloss-1-8-2",
+            "reading": {
+                "witness": "Codex 50",
+                "place": "interlinear above",
+                "hand": "main scribe",
+                "text": "|CONSTRUE MARK TWO CONVERGING STROKES-DIPLE| ",
+                "analysis": ["construe-marks, i.e. symbols or letters, correlating words belonging together or establishing word order"],
+                "zone": {
+                    "ulx": "350",
+                    "uly": "353",
+                    "lrx": "358",
+                    "lry": "361"
+                },
+                "page-url": "http://diglib.hab.de/mss/50-weiss/00011.jpg"
+            }
+        },
+        {
+            "id": "gloss-1-9-1",
+            "reading": {
+                "witness": "Codex 50",
+                "place": "interlinear above",
+                "hand": "first glossator",
+                "text": "firmius",
+                "analysis": ["Lexical gloss providing a synonym"],
+                "zone": {
+                    "ulx": "693",
+                    "uly": "352",
+                    "lrx": "726",
+                    "lry": "365"
+                },
+                "page-url": "http://diglib.hab.de/mss/50-weiss/00011.jpg"
+            }
+        },
+        {
+            "id": "gloss-1-9-2",
+            "reading": {
+                "witness": "Codex 50",
+                "place": "interlinear above",
+                "hand": "first glossator",
+                "text": "[6 chars illegible]ilioribus",
+                "analysis": ["Lexical gloss providing a synonym"],
+                "zone": {
+                    "ulx": "155",
+                    "uly": "374",
+                    "lrx": "208",
+                    "lry": "386"
+                },
+                "page-url": "http://diglib.hab.de/mss/50-weiss/00011.jpg"
+            }
+        },
+        {
+            "id": "gloss-1-10-1",
+            "reading": {
+                "witness": "Codex 50",
+                "place": "right margin",
+                "hand": "first glossator",
+                "text": "|REFERENCE SIGN TWO HORIZONTAL DOTS WITH ACUTE|  apertius uel manifestius",
+                "analysis": ["commentary glosses beginning often with id est, providing a paraphrase or an explanation of the lemma"],
+                "zone": {
+                    "ulx": "774",
+                    "uly": "382",
+                    "lrx": "847",
+                    "lry": "401"
+                },
+                "page-url": "http://diglib.hab.de/mss/50-weiss/00011.jpg"
+            }
+        },
+        {
+            "id": "gloss-1-10-2",
+            "reading": {
+                "witness": "Codex 50",
+                "place": "interlinear above",
+                "hand": "main scribe",
+                "text": "quia",
+                "analysis": ["glosses giving variant reading of the main text"],
+                "zone": {
+                    "ulx": "459",
+                    "uly": "368",
+                    "lrx": "481",
+                    "lry": "381"
+                },
+                "page-url": "http://diglib.hab.de/mss/50-weiss/00011.jpg"
+            }
+        },
+        {
+            "id": "gloss-1-10-7",
+            "reading": {
+                "witness": "Codex 50",
+                "place": "interlinear above",
+                "hand": "main scribe",
+                "text": "|CONSTRUE MARK DOT WITH RIGHT HALF RING - INSULAR QUOTATION SIGN| ",
+                "analysis": ["construe-marks, i.e. symbols or letters, correlating words belonging together or establishing word order"],
+                "zone": {
+                    "ulx": "466",
+                    "uly": "379",
+                    "lrx": "475",
+                    "lry": "387"
+                },
+                "page-url": "http://diglib.hab.de/mss/50-weiss/00011.jpg"
+            }
+        },
+        {
+            "id": "gloss-1-10-3",
+            "reading": {
+                "witness": "Codex 50",
+                "place": "interlinear above",
+                "hand": "main scribe",
+                "text": "|CONSTRUE MARK DOT WITH RIGHT HALF RING - INSULAR QUOTATION SIGN| ",
+                "analysis": ["construe-marks, i.e. symbols or letters, correlating words belonging together or establishing word order"],
+                "zone": {
+                    "ulx": "486",
+                    "uly": "378",
+                    "lrx": "495",
+                    "lry": "388"
+                },
+                "page-url": "http://diglib.hab.de/mss/50-weiss/00011.jpg"
+            }
+        },
+        {
+            "id": "gloss-1-10-4",
+            "reading": {
+                "witness": "Codex 50",
+                "place": "interlinear above",
+                "hand": "main scribe",
+                "text": "|CONSTRUE MARK - TWO HORIZONTAL DOTS, DISTIGME| ",
+                "analysis": ["construe-marks, i.e. symbols or letters, correlating words belonging together or establishing word order"],
+                "zone": {
+                    "ulx": "512",
+                    "uly": "380",
+                    "lrx": "521",
+                    "lry": "388"
+                },
+                "page-url": "http://diglib.hab.de/mss/50-weiss/00011.jpg"
+            }
+        },
+        {
+            "id": "gloss-1-10-5",
+            "reading": {
+                "witness": "Codex 50",
+                "place": "interlinear above",
+                "hand": "main scribe",
+                "text": "|CONSTRUE MARK - TWO HORIZONTAL DOTS, DISTIGME| ",
+                "analysis": ["construe-marks, i.e. symbols or letters, correlating words belonging together or establishing word order"],
+                "zone": {
+                    "ulx": "533",
+                    "uly": "380",
+                    "lrx": "543",
+                    "lry": "386"
+                },
+                "page-url": "http://diglib.hab.de/mss/50-weiss/00011.jpg"
+            }
+        },
+        {
+            "id": "gloss-1-10-6",
+            "reading": {
+                "witness": "Codex 50",
+                "place": "interlinear above",
+                "hand": "main scribe",
+                "text": "|CONSTRUE MARK - TWO HORIZONTAL DOTS, DISTIGME| ",
+                "analysis": ["construe-marks, i.e. symbols or letters, correlating words belonging together or establishing word order"],
+                "zone": {
+                    "ulx": "585",
+                    "uly": "381",
+                    "lrx": "599",
+                    "lry": "388"
+                },
+                "page-url": "http://diglib.hab.de/mss/50-weiss/00011.jpg"
+            }
+        },
+        {
+            "id": "gloss-1-11-1",
+            "reading": {
+                "witness": "Codex 50",
+                "place": "right margin",
+                "hand": "first glossator",
+                "text": "|REFERENCE SIGN INVERTED N WITH DOT BELOW| |id est|  breuibus scriptis",
+                "analysis": ["commentary glosses beginning often with id est, providing a paraphrase or an explanation of the lemma"],
+                "zone": {
+                    "ulx": "770",
+                    "uly": "406",
+                    "lrx": "849",
+                    "lry": "427"
+                },
+                "page-url": "http://diglib.hab.de/mss/50-weiss/00011.jpg"
+            }
+        },
+        {
+            "id": "gloss-1-11-2",
+            "reading": {
+                "witness": "Codex 50",
+                "place": "interlinear above",
+                "hand": "main scribe",
+                "text": "|CONSTRUE MARK - TWO HORIZONTAL DOTS, DISTIGME| ",
+                "analysis": ["construe-marks, i.e. symbols or letters, correlating words belonging together or establishing word order"],
+                "zone": {
+                    "ulx": "309",
+                    "uly": "404",
+                    "lrx": "320",
+                    "lry": "411"
+                },
+                "page-url": "http://diglib.hab.de/mss/50-weiss/00011.jpg"
+            }
+        },
+        {
+            "id": "gloss-1-11-3",
+            "reading": {
+                "witness": "Codex 50",
+                "place": "interlinear above",
+                "hand": "main scribe",
+                "text": "|CONSTRUE MARK - TWO HORIZONTAL DOTS, DISTIGME| ",
+                "analysis": ["construe-marks, i.e. symbols or letters, correlating words belonging together or establishing word order"],
+                "zone": {
+                    "ulx": "361",
+                    "uly": "405",
+                    "lrx": "369",
+                    "lry": "411"
+                },
+                "page-url": "http://diglib.hab.de/mss/50-weiss/00011.jpg"
+            }
+        },
+        {
+            "id": "gloss-1-12-1",
+            "reading": {
+                "witness": "Codex 50",
+                "place": "interlinear above",
+                "hand": "first glossator",
+                "text": "emendasse",
+                "analysis": ["Lexical gloss providing a synonym"],
+                "zone": {
+                    "ulx": "435",
+                    "uly": "400",
+                    "lrx": "472",
+                    "lry": "411"
+                },
+                "page-url": "http://diglib.hab.de/mss/50-weiss/00011.jpg"
+            }
+        },
+        {
+            "id": "gloss-1-12-3",
+            "reading": {
+                "witness": "Codex 50",
+                "place": "interlinear above",
+                "hand": "main scribe",
+                "text": "|CONSTRUE MARK - TWO HORIZONTAL DOTS, DISTIGME| ",
+                "analysis": ["construe-marks, i.e. symbols or letters, correlating words belonging together or establishing word order"],
+                "zone": {
+                    "ulx": "424",
+                    "uly": "404",
+                    "lrx": "434",
+                    "lry": "409"
+                },
+                "page-url": "http://diglib.hab.de/mss/50-weiss/00011.jpg"
+            }
+        },
+        {
+            "id": "gloss-1-12-2",
+            "reading": {
+                "witness": "Codex 50",
+                "place": "interlinear above",
+                "hand": "main scribe",
+                "text": "|CONSTRUE MARK DOT WITH RIGHT HALF RING - INSULAR QUOTATION SIGN| ",
+                "analysis": ["construe-marks, i.e. symbols or letters, correlating words belonging together or establishing word order"],
+                "zone": {
+                    "ulx": "497",
+                    "uly": "401",
+                    "lrx": "503",
+                    "lry": "410"
+                },
+                "page-url": "http://diglib.hab.de/mss/50-weiss/00011.jpg"
+            }
+        },
+        {
+            "id": "gloss-1-13-1",
+            "reading": {
+                "witness": "Codex 50",
+                "place": "interlinear above",
+                "hand": "first glossator",
+                "text": "in desidiam",
+                "analysis": ["Lexical gloss providing a synonym"],
+                "zone": {
+                    "ulx": "509",
+                    "uly": "418",
+                    "lrx": "552",
+                    "lry": "433"
+                },
+                "page-url": "http://diglib.hab.de/mss/50-weiss/00011.jpg"
+            }
+        },
+        {
+            "id": "gloss-2-1-1",
+            "reading": {
+                "witness": "Codex 50",
+                "place": "interlinear above",
+                "hand": "first glossator",
+                "text": "pigritiam",
+                "analysis": ["Lexical gloss providing a synonym"],
+                "zone": {
+                    "ulx": "144",
+                    "uly": "442",
+                    "lrx": "178",
+                    "lry": "457"
+                },
+                "page-url": "http://diglib.hab.de/mss/50-weiss/00011.jpg"
+            }
+        },
+        {
+            "id": "gloss-2-2-1",
+            "reading": {
+                "witness": "Codex 50",
+                "place": "right margin",
+                "hand": "first glossator",
+                "text": "|REFERENCE SIGN HALF RING WITH DOT BELOW|  inreuerenter uel inrationabiliter. cum uerecundia et reuerentia",
+                "analysis": ["commentary glosses beginning often with id est, providing a paraphrase or an explanation of the lemma"],
+                "zone": {
+                    "ulx": "767",
+                    "uly": "444",
+                    "lrx": "869",
+                    "lry": "479"
+                },
+                "page-url": "http://diglib.hab.de/mss/50-weiss/00011.jpg"
+            }
+        },
+        {
+            "id": "gloss-2-2-7",
+            "reading": {
+                "witness": "Codex 50",
+                "place": "interlinear above",
+                "hand": "first glossator",
+                "text": "[2 chars illegible]denter",
+                "analysis": ["Lexical gloss providing a synonym"],
+                "zone": {
+                    "ulx": "466",
+                    "uly": "442",
+                    "lrx": "498",
+                    "lry": "453"
+                },
+                "page-url": "http://diglib.hab.de/mss/50-weiss/00011.jpg"
+            }
+        },
+        {
+            "id": "gloss-2-2-2",
+            "reading": {
+                "witness": "Codex 50",
+                "place": "interlinear above",
+                "hand": "main scribe",
+                "text": "|CONSTRUE MARK - TWO HORIZONTAL DOTS, DISTIGME| ",
+                "analysis": ["construe-marks, i.e. symbols or letters, correlating words belonging together or establishing word order"],
+                "zone": {
+                    "ulx": "516",
+                    "uly": "446",
+                    "lrx": "525",
+                    "lry": "455"
+                },
+                "page-url": "http://diglib.hab.de/mss/50-weiss/00011.jpg"
+            }
+        },
+        {
+            "id": "gloss-2-2-3",
+            "reading": {
+                "witness": "Codex 50",
+                "place": "interlinear above",
+                "hand": "first glossator",
+                "text": "estimo",
+                "analysis": ["Lexical gloss providing a synonym"],
+                "zone": {
+                    "ulx": "528",
+                    "uly": "442",
+                    "lrx": "553",
+                    "lry": "455"
+                },
+                "page-url": "http://diglib.hab.de/mss/50-weiss/00011.jpg"
+            }
+        },
+        {
+            "id": "gloss-2-2-4",
+            "reading": {
+                "witness": "Codex 50",
+                "place": "interlinear above",
+                "hand": "first glossator",
+                "text": "coepi",
+                "analysis": ["Lexical gloss providing a synonym"],
+                "zone": {
+                    "ulx": "584",
+                    "uly": "446",
+                    "lrx": "613",
+                    "lry": "457"
+                },
+                "page-url": "http://diglib.hab.de/mss/50-weiss/00011.jpg"
+            }
+        },
+        {
+            "id": "gloss-2-2-5",
+            "reading": {
+                "witness": "Codex 50",
+                "place": "interlinear above",
+                "hand": "main scribe",
+                "text": "|CONSTRUE MARK - TWO HORIZONTAL DOTS, DISTIGME| ",
+                "analysis": ["construe-marks, i.e. symbols or letters, correlating words belonging together or establishing word order"],
+                "zone": {
+                    "ulx": "724",
+                    "uly": "448",
+                    "lrx": "735",
+                    "lry": "456"
+                },
+                "page-url": "http://diglib.hab.de/mss/50-weiss/00011.jpg"
+            }
+        },
+        {
+            "id": "gloss-2-2-6",
+            "reading": {
+                "witness": "Codex 50",
+                "place": "interlinear above",
+                "hand": "main scribe",
+                "text": "|CONSTRUE MARK - TWO HORIZONTAL DOTS, DISTIGME| ",
+                "analysis": ["construe-marks, i.e. symbols or letters, correlating words belonging together or establishing word order"],
+                "zone": {
+                    "ulx": "753",
+                    "uly": "449",
+                    "lrx": "764",
+                    "lry": "458"
+                },
+                "page-url": "http://diglib.hab.de/mss/50-weiss/00011.jpg"
+            }
+        },
+        {
+            "id": "gloss-2-3-2",
+            "reading": {
+                "witness": "Codex 50",
+                "place": "interlinear above",
+                "hand": "first glossator",
+                "text": "uoluntatis. uel quia grammaticus uocor",
+                "analysis": [
+                    "Lexical gloss providing a synonym",
+                    "commentary glosses beginning with quia"
+                ],
+                "zone": {
+                    "ulx": "252",
+                    "uly": "464",
+                    "lrx": "389",
+                    "lry": "479"
+                },
+                "page-url": "http://diglib.hab.de/mss/50-weiss/00011.jpg"
+            }
+        },
+        {
+            "id": "gloss-2-6-1",
+            "reading": {
+                "witness": "Codex 50",
+                "place": "interlinear above",
+                "hand": "first glossator",
+                "text": "breuibus scriptis",
+                "analysis": ["commentary glosses beginning often with id est, providing a paraphrase or an explanation of the lemma"],
+                "zone": {
+                    "ulx": "156",
+                    "uly": "510",
+                    "lrx": "222",
+                    "lry": "526"
+                },
+                "page-url": "http://diglib.hab.de/mss/50-weiss/00011.jpg"
+            }
+        },
+        {
+            "id": "gloss-2-7-1",
+            "reading": {
+                "witness": "Codex 50",
+                "place": "right margin",
+                "hand": "first glossator",
+                "text": "|REFERENCE SIGN CRYPHIA| mode..am..",
+                "analysis": ["commentary glosses beginning often with id est, providing a paraphrase or an explanation of the lemma"],
+                "zone": {
+                    "ulx": "770",
+                    "uly": "515",
+                    "lrx": "831",
+                    "lry": "533"
+                },
+                "page-url": "http://diglib.hab.de/mss/50-weiss/00011.jpg"
+            }
+        },
+        {
+            "id": "gloss-2-7-2",
+            "reading": {
+                "witness": "Codex 50",
+                "place": "interlinear above",
+                "hand": "first glossator",
+                "text": "pulchriora",
+                "analysis": ["Lexical gloss providing a synonym"],
+                "zone": {
+                    "ulx": "149",
+                    "uly": "531",
+                    "lrx": "196",
+                    "lry": "549"
+                },
+                "page-url": "http://diglib.hab.de/mss/50-weiss/00011.jpg"
+            }
+        },
+        {
+            "id": "gloss-2-8-1",
+            "reading": {
+                "witness": "Codex 50",
+                "place": "interlinear above",
+                "hand": "first glossator",
+                "text": "conueniant",
+                "analysis": ["Lexical gloss providing a synonym"],
+                "zone": {
+                    "ulx": "270",
+                    "uly": "537",
+                    "lrx": "312",
+                    "lry": "547"
+                },
+                "page-url": "http://diglib.hab.de/mss/50-weiss/00011.jpg"
+            }
+        },
+        {
+            "id": "gloss-2-11-1",
+            "reading": {
+                "witness": "Codex 50",
+                "place": "left margin",
+                "hand": "first glossator",
+                "text": "|REFERENCE SIGN TWO HORIZONTAL DOTS-DISTIGME|  .s..si",
+                "analysis": ["commentary glosses beginning often with id est, providing a paraphrase or an explanation of the lemma"],
+                "zone": {
+                    "ulx": "56",
+                    "uly": "582",
+                    "lrx": "90",
+                    "lry": "606"
+                },
+                "page-url": "http://diglib.hab.de/mss/50-weiss/00011.jpg"
+            }
+        },
+        {
+            "id": "gloss-2-14-1",
+            "reading": {
+                "witness": "Codex 50",
+                "place": "right margin",
+                "hand": "first glossator",
+                "text": "|REFERENCE SIGN DOT WITH ACUTE|  sua industria",
+                "analysis": ["Glosses on syntax, elucidating the construction of a sentence"],
+                "zone": {
+                    "ulx": "769",
+                    "uly": "626",
+                    "lrx": "845",
+                    "lry": "661"
+                },
+                "page-url": "http://diglib.hab.de/mss/50-weiss/00011.jpg"
+            }
+        },
+        {
+            "id": "gloss-2-16-1",
+            "reading": {
+                "witness": "Codex 50",
+                "place": "interlinear above",
+                "hand": "first glossator",
+                "text": "|REFERENCE SIGN TWO HORIZONTAL DOTS-DISTIGME|  collatione uel comparatione",
+                "analysis": ["commentary glosses beginning often with id est, providing a paraphrase or an explanation of the lemma"],
+                "zone": {
+                    "ulx": "124",
+                    "uly": "647",
+                    "lrx": "240",
+                    "lry": "665"
+                },
+                "page-url": "http://diglib.hab.de/mss/50-weiss/00011.jpg"
+            }
+        },
+        {
+            "id": "gloss-2-17-1",
+            "reading": {
+                "witness": "Codex 50",
+                "place": "interlinear above",
+                "hand": "first glossator",
+                "text": "statuere",
+                "analysis": ["Lexical gloss providing a synonym"],
+                "zone": {
+                    "ulx": "619",
+                    "uly": "648",
+                    "lrx": "653",
+                    "lry": "661"
+                },
+                "page-url": "http://diglib.hab.de/mss/50-weiss/00011.jpg"
+            }
+        },
+        {
+            "id": "gloss-2-19-1",
+            "reading": {
+                "witness": "Codex 50",
+                "place": "interlinear above",
+                "hand": "first glossator",
+                "text": "inlicita",
+                "analysis": ["Lexical gloss providing a synonym"],
+                "zone": {
+                    "ulx": "211",
+                    "uly": "692",
+                    "lrx": "247",
+                    "lry": "706"
+                },
+                "page-url": "http://diglib.hab.de/mss/50-weiss/00011.jpg"
+            }
+        },
+        {
+            "id": "gloss-2-21-1",
+            "reading": {
+                "witness": "Codex 50",
+                "place": "interlinear above",
+                "hand": "first glossator",
+                "text": "|id est|  magnitudinis",
+                "analysis": ["Lexical gloss providing a synonym"],
+                "zone": {
+                    "ulx": "421",
+                    "uly": "711",
+                    "lrx": "486",
+                    "lry": "726"
+                },
+                "page-url": "http://diglib.hab.de/mss/50-weiss/00011.jpg"
+            }
+        },
+        {
+            "id": "gloss-2-25-1",
+            "reading": {
+                "witness": "Codex 50",
+                "place": "right margin",
+                "hand": "first glossator",
+                "text": " ...quo patris",
+                "analysis": ["commentary glosses beginning often with id est, providing a paraphrase or an explanation of the lemma"],
+                "zone": {
+                    "ulx": "780",
+                    "uly": "760",
+                    "lrx": "867",
+                    "lry": "794"
+                },
+                "page-url": "http://diglib.hab.de/mss/50-weiss/00011.jpg"
+            }
+        },
+        {
+            "id": "gloss-2-29-1",
+            "reading": {
+                "witness": "Codex 50",
+                "place": "right margin",
+                "hand": "second glossator",
+                "text": "|REFERENCE SIGN ACUTE FOLLOWED BY DOT|  uel arcem",
+                "analysis": ["glosses giving variant reading of the main text"],
+                "zone": {
+                    "ulx": "768",
+                    "uly": "826",
+                    "lrx": "823",
+                    "lry": "852"
+                },
+                "page-url": "http://diglib.hab.de/mss/50-weiss/00011.jpg"
+            }
+        },
+        {
+            "id": "gloss-2-31-1",
+            "reading": {
+                "witness": "Codex 50",
+                "place": "interlinear above",
+                "hand": "first glossator",
+                "text": "commendo. uel promitto",
+                "analysis": ["Lexical gloss providing a synonym"],
+                "zone": {
+                    "ulx": "686",
+                    "uly": "852",
+                    "lrx": "746",
+                    "lry": "867"
+                },
+                "page-url": "http://diglib.hab.de/mss/50-weiss/00011.jpg"
+            }
+        },
+        {
+            "id": "gloss-3-1-1",
+            "reading": {
+                "witness": "Codex 50",
+                "place": "right margin",
+                "hand": "second glossator",
+                "text": "|REFERENCE SIGN TRIGON|  uel quantum gloriae...",
+                "analysis": ["glosses giving variant reading of the main text"],
+                "zone": {
+                    "ulx": "765",
+                    "uly": "871",
+                    "lrx": "831",
+                    "lry": "916"
+                },
+                "page-url": "http://diglib.hab.de/mss/50-weiss/00011.jpg"
+            }
+        },
+        {
+            "id": "gloss-3-1-2",
+            "reading": {
+                "witness": "Codex 50",
+                "place": "right margin",
+                "hand": "second glossator",
+                "text": "|REFERENCE SIGN TRIGON|  uel quantum gloriae...",
+                "analysis": ["glosses giving variant reading of the main text"],
+                "zone": {
+                    "ulx": "765",
+                    "uly": "871",
+                    "lrx": "831",
+                    "lry": "916"
+                },
+                "page-url": "http://diglib.hab.de/mss/50-weiss/00011.jpg"
+            }
+        },
+        {
+            "id": "gloss-3-1-3",
+            "reading": {
+                "witness": "Codex 50",
+                "place": "interlinear above",
+                "hand": "first glossator",
+                "text": "per diffinitionem",
+                "analysis": ["commentary glosses beginning often with id est, providing a paraphrase or an explanation of the lemma"],
+                "zone": {
+                    "ulx": "521",
+                    "uly": "870",
+                    "lrx": "580",
+                    "lry": "883"
+                },
+                "page-url": "http://diglib.hab.de/mss/50-weiss/00011.jpg"
+            }
+        },
+        {
+            "id": "gloss-5-0-1",
+            "reading": {
+                "witness": "Codex 50",
+                "place": "interlinear-one-line-above",
+                "hand": "second glossator",
+                "text": "Vox est",
+                "analysis": ["commentary glosses"],
+                "zone": {
+                    "ulx": "783",
+                    "uly": "335",
+                    "lrx": "812",
+                    "lry": "353"
+                },
+                "page-url": "http://diglib.hab.de/mss/50-weiss/00012.jpg"
+            }
+        },
+        {
+            "id": "gloss-5-1-1",
+            "reading": {
+                "witness": "Codex 50",
+                "place": "left margin",
+                "hand": "first glossator",
+                "text": "|REFERENCE SIGN INVERTED N WITH DOT BELOW|  amatores scientiae definio. uniuscuiusque rei proprietas",
+                "analysis": ["commentary glosses beginning often with id est, providing a paraphrase or an explanation of the lemma"],
+                "zone": {
+                    "ulx": "149",
+                    "uly": "372",
+                    "lrx": "228",
+                    "lry": "405"
+                },
+                "page-url": "http://diglib.hab.de/mss/50-weiss/00012.jpg"
+            }
+        },
+        {
+            "id": "gloss-5-1-8",
+            "reading": {
+                "witness": "Codex 50",
+                "place": "left margin",
+                "hand": "second glossator",
+                "text": "|REFERENCE SIGN OBLIQUE BALLON WITH ROPE|  leniter insinuat se unum esse e philosophis",
+                "analysis": ["glosses commenting on the content of Priscian's work"],
+                "zone": {
+                    "ulx": "145",
+                    "uly": "329",
+                    "lrx": "254",
+                    "lry": "369"
+                },
+                "page-url": "http://diglib.hab.de/mss/50-weiss/00012.jpg"
+            }
+        },
+        {
+            "id": "gloss-5-1-2",
+            "reading": {
+                "witness": "Codex 50",
+                "place": "interlinear above",
+                "hand": "second glossator",
+                "text": "scribunt. breuiter exponunt.",
+                "analysis": ["Lexical gloss providing a synonym"],
+                "zone": {
+                    "ulx": "325",
+                    "uly": "361",
+                    "lrx": "446",
+                    "lry": "377"
+                },
+                "page-url": "http://diglib.hab.de/mss/50-weiss/00012.jpg"
+            }
+        },
+        {
+            "id": "gloss-5-1-3",
+            "reading": {
+                "witness": "Codex 50",
+                "place": "interlinear above",
+                "hand": "second glossator",
+                "text": "|REFERENCE SIGN OBLIQUE V| lûtnussa",
+                "analysis": ["Lexical gloss providing a translation of the lemma into Old-High-German"],
+                "zone": {
+                    "ulx": "440",
+                    "uly": "360",
+                    "lrx": "491",
+                    "lry": "376"
+                },
+                "page-url": "http://diglib.hab.de/mss/50-weiss/00012.jpg"
+            }
+        },
+        {
+            "id": "gloss-5-1-4",
+            "reading": {
+                "witness": "Codex 50",
+                "place": "interlinear above",
+                "hand": "second glossator",
+                "text": "subtilissimum",
+                "analysis": ["Lexical gloss providing a synonym"],
+                "zone": {
+                    "ulx": "501",
+                    "uly": "366",
+                    "lrx": "566",
+                    "lry": "379"
+                },
+                "page-url": "http://diglib.hab.de/mss/50-weiss/00012.jpg"
+            }
+        },
+        {
+            "id": "gloss-5-1-5",
+            "reading": {
+                "witness": "Codex 50",
+                "place": "interlinear above",
+                "hand": "second glossator",
+                "text": "percussum. pulsatum",
+                "analysis": ["Lexical gloss providing a synonym"],
+                "zone": {
+                    "ulx": "590",
+                    "uly": "361",
+                    "lrx": "652",
+                    "lry": "377"
+                },
+                "page-url": "http://diglib.hab.de/mss/50-weiss/00012.jpg"
+            }
+        },
+        {
+            "id": "gloss-5-1-6",
+            "reading": {
+                "witness": "Codex 50",
+                "place": "interlinear-one-line-above",
+                "hand": "second glossator",
+                "text": "|REFERENCE SIGN TWO HORIZONTAL DOTS WITH STROKE BELOW|  sensus est talis. siue percuciatur aer nullo audiente seu sonus aliquis aures tangat.",
+                "analysis": ["commentary glosses beginning often with id est, providing a paraphrase or an explanation of the lemma"],
+                "zone": {
+                    "ulx": "416",
+                    "uly": "339",
+                    "lrx": "782",
+                    "lry": "358"
+                },
+                "page-url": "http://diglib.hab.de/mss/50-weiss/00012.jpg"
+            }
+        },
+        {
+            "id": "gloss-5-1-7",
+            "reading": {
+                "witness": "Codex 50",
+                "place": "interlinear above",
+                "hand": "first glossator",
+                "text": "|id est|  proprium",
+                "analysis": ["Lexical gloss providing a synonym"],
+                "zone": {
+                    "ulx": "647",
+                    "uly": "365",
+                    "lrx": "673",
+                    "lry": "381"
+                },
+                "page-url": "http://diglib.hab.de/mss/50-weiss/00012.jpg"
+            }
+        },
+        {
+            "id": "gloss-5-2-1",
+            "reading": {
+                "witness": "Codex 50",
+                "place": "interlinear above",
+                "hand": "second glossator",
+                "text": "sensum",
+                "analysis": ["Lexical gloss providing a synonym"],
+                "zone": {
+                    "ulx": "671",
+                    "uly": "361",
+                    "lrx": "704",
+                    "lry": "379"
+                },
+                "page-url": "http://diglib.hab.de/mss/50-weiss/00012.jpg"
+            }
+        },
+        {
+            "id": "gloss-5-0-2",
+            "reading": {
+                "witness": "Codex 50",
+                "place": "interlinear above",
+                "hand": "second glossator",
+                "text": "Vox est proprius sensus aurium. sicut uisus oculorum et reliqua",
+                "analysis": [
+                    "commentary glosses",
+                    "commentary glosses beginning often with id est, providing a paraphrase or an explanation of the lemma"
+                ],
+                "zone": {
+                    "ulx": "751",
+                    "uly": "357",
+                    "lrx": "965",
+                    "lry": "379"
+                },
+                "page-url": "http://diglib.hab.de/mss/50-weiss/00012.jpg"
+            }
+        },
+        {
+            "id": "gloss-5-2-2",
+            "reading": {
+                "witness": "Codex 50",
+                "place": "interlinear below",
+                "hand": "second glossator",
+                "text": "|id est|  quia accidit auribus uocem audire",
+                "analysis": ["commentary glosses beginning often with id est, providing a paraphrase or an explanation of the lemma"],
+                "zone": {
+                    "ulx": "788",
+                    "uly": "386",
+                    "lrx": "923",
+                    "lry": "398"
+                },
+                "page-url": "http://diglib.hab.de/mss/50-weiss/00012.jpg"
+            }
+        },
+        {
+            "id": "gloss-5-2-3",
+            "reading": {
+                "witness": "Codex 50",
+                "place": "interlinear above",
+                "hand": "second glossator",
+                "text": "|id est|  ut sentiant uocem",
+                "analysis": ["commentary glosses beginning often with id est, providing a paraphrase or an explanation of the lemma"],
+                "zone": {
+                    "ulx": "250",
+                    "uly": "391",
+                    "lrx": "342",
+                    "lry": "405"
+                },
+                "page-url": "http://diglib.hab.de/mss/50-weiss/00012.jpg"
+            }
+        },
+        {
+            "id": "gloss-5-2-4",
+            "reading": {
+                "witness": "Codex 50",
+                "place": "interlinear above",
+                "hand": "second glossator",
+                "text": "AVGAugustinus substantia uocis est aer tenuissimus",
+                "analysis": ["commentary glosses beginning often with id est"],
+                "zone": {
+                    "ulx": "337",
+                    "uly": "386",
+                    "lrx": "503",
+                    "lry": "402"
+                },
+                "page-url": "http://diglib.hab.de/mss/50-weiss/00012.jpg"
+            }
+        },
+        {
+            "id": "gloss-5-3-1",
+            "reading": {
+                "witness": "Codex 50",
+                "place": "left margin",
+                "hand": "second glossator",
+                "text": "|REFERENCE SIGN QUADRIGON| |id est|  ab ictu aeris.",
+                "analysis": ["commentary glosses beginning often with id est, providing a paraphrase or an explanation of the lemma"],
+                "zone": {
+                    "ulx": "178",
+                    "uly": "400",
+                    "lrx": "242",
+                    "lry": "420"
+                },
+                "page-url": "http://diglib.hab.de/mss/50-weiss/00012.jpg"
+            }
+        },
+        {
+            "id": "gloss-5-3-2",
+            "reading": {
+                "witness": "Codex 50",
+                "place": "interlinear above",
+                "hand": "second glossator",
+                "text": "|id est|  a cognitione |id est|  ab auditu icti aeris.",
+                "analysis": [
+                    "Lexical gloss providing a synonym",
+                    "commentary glosses beginning often with id est, providing a paraphrase or an explanation of the lemma"
+                ],
+                "zone": {
+                    "ulx": "594",
+                    "uly": "386",
+                    "lrx": "749",
+                    "lry": "399"
+                },
+                "page-url": "http://diglib.hab.de/mss/50-weiss/00012.jpg"
+            }
+        },
+        {
+            "id": "gloss-5-4-1",
+            "reading": {
+                "witness": "Codex 50",
+                "place": "interlinear above",
+                "hand": "first glossator",
+                "text": "|id est|  potest uox audiri",
+                "analysis": ["commentary glosses beginning often with id est, providing a paraphrase or an explanation of the lemma"],
+                "zone": {
+                    "ulx": "319",
+                    "uly": "412",
+                    "lrx": "411",
+                    "lry": "424"
+                },
+                "page-url": "http://diglib.hab.de/mss/50-weiss/00012.jpg"
+            }
+        },
+        {
+            "id": "gloss-5-4-2",
+            "reading": {
+                "witness": "Codex 50",
+                "place": "left margin",
+                "hand": "second glossator",
+                "text": "|REFERENCE SIGN ELONGATED M| |id est|  secundum quantitatem uocis. si magna fit aut parua. nam alia VOX plus alia minus sonat.",
+                "analysis": ["commentary glosses beginning often with id est, providing a paraphrase or an explanation of the lemma"],
+                "zone": {
+                    "ulx": "146",
+                    "uly": "411",
+                    "lrx": "263",
+                    "lry": "485"
+                },
+                "page-url": "http://diglib.hab.de/mss/50-weiss/00012.jpg"
+            }
+        },
+        {
+            "id": "gloss-5-4-3",
+            "reading": {
+                "witness": "Codex 50",
+                "place": "interlinear above",
+                "hand": "first glossator",
+                "text": "uoce",
+                "analysis": ["syntactical glosses adding words omitted by Priscian"],
+                "zone": {
+                    "ulx": "483",
+                    "uly": "411",
+                    "lrx": "517",
+                    "lry": "423"
+                },
+                "page-url": "http://diglib.hab.de/mss/50-weiss/00012.jpg"
+            }
+        },
+        {
+            "id": "gloss-5-6-1",
+            "reading": {
+                "witness": "Codex 50",
+                "place": "interlinear above",
+                "hand": "second glossator",
+                "text": "Intelectualis |id est|  quę intellegi potest",
+                "analysis": [
+                    "Lexical gloss providing a synonym",
+                    "commentary glosses beginning often with id est, providing a paraphrase or an explanation of the lemma"
+                ],
+                "zone": {
+                    "ulx": "328",
+                    "uly": "432",
+                    "lrx": "491",
+                    "lry": "448"
+                },
+                "page-url": "http://diglib.hab.de/mss/50-weiss/00012.jpg"
+            }
+        },
+        {
+            "id": "gloss-5-6-2",
+            "reading": {
+                "witness": "Codex 50",
+                "place": "interlinear above",
+                "hand": "second glossator",
+                "text": "|id est|  cum sensu mentis. Idem",
+                "analysis": ["syntactical glosses adding words omitted by Priscian"],
+                "zone": {
+                    "ulx": "521",
+                    "uly": "431",
+                    "lrx": "643",
+                    "lry": "447"
+                },
+                "page-url": "http://diglib.hab.de/mss/50-weiss/00012.jpg"
+            }
+        },
+        {
+            "id": "gloss-5-7-1",
+            "reading": {
+                "witness": "Codex 50",
+                "place": "interlinear above",
+                "hand": "second glossator",
+                "text": "In qua nihil intelli[gi - C. G.] potest",
+                "analysis": ["commentary glosses beginning often with id est, providing a paraphrase or an explanation of the lemma"],
+                "zone": {
+                    "ulx": "828",
+                    "uly": "426",
+                    "lrx": "936",
+                    "lry": "446"
+                },
+                "page-url": "http://diglib.hab.de/mss/50-weiss/00012.jpg"
+            }
+        },
+        {
+            "id": "gloss-5-7-2",
+            "reading": {
+                "witness": "Codex 50",
+                "place": "interlinear above",
+                "hand": "second glossator",
+                "text": "|scilicet| articulatę",
+                "analysis": ["syntactical glosses adding words omitted by Priscian"],
+                "zone": {
+                    "ulx": "272",
+                    "uly": "455",
+                    "lrx": "334",
+                    "lry": "475"
+                },
+                "page-url": "http://diglib.hab.de/mss/50-weiss/00012.jpg"
+            }
+        },
+        {
+            "id": "gloss-5-8-1",
+            "reading": {
+                "witness": "Codex 50",
+                "place": "interlinear above",
+                "hand": "second glossator",
+                "text": "|id est|  sensu",
+                "analysis": ["Lexical gloss providing a synonym"],
+                "zone": {
+                    "ulx": "402",
+                    "uly": "457",
+                    "lrx": "450",
+                    "lry": "471"
+                },
+                "page-url": "http://diglib.hab.de/mss/50-weiss/00012.jpg"
+            }
+        },
+        {
+            "id": "gloss-5-9-1",
+            "reading": {
+                "witness": "Codex 50",
+                "place": "interlinear above",
+                "hand": "second glossator",
+                "text": "Articulata et literata",
+                "analysis": ["commentary glosses beginning often with id est, providing a paraphrase or an explanation of the lemma"],
+                "zone": {
+                    "ulx": "881",
+                    "uly": "449",
+                    "lrx": "971",
+                    "lry": "468"
+                },
+                "page-url": "http://diglib.hab.de/mss/50-weiss/00012.jpg"
+            }
+        },
+        {
+            "id": "gloss-5-12-1",
+            "reading": {
+                "witness": "Codex 50",
+                "place": "interlinear above",
+                "hand": "second glossator",
+                "text": "articulata et inliterata",
+                "analysis": ["commentary glosses beginning often with id est, providing a paraphrase or an explanation of the lemma"],
+                "zone": {
+                    "ulx": "765",
+                    "uly": "476",
+                    "lrx": "873",
+                    "lry": "494"
+                },
+                "page-url": "http://diglib.hab.de/mss/50-weiss/00012.jpg"
+            }
+        },
+        {
+            "id": "gloss-5-13-1",
+            "reading": {
+                "witness": "Codex 50",
+                "place": "interlinear above",
+                "hand": "second glossator",
+                "text": "sibilus ad aliquid significandum agitur",
+                "analysis": ["commentary glosses beginning often with id est, providing a paraphrase or an explanation of the lemma"],
+                "zone": {
+                    "ulx": "584",
+                    "uly": "498",
+                    "lrx": "744",
+                    "lry": "517"
+                },
+                "page-url": "http://diglib.hab.de/mss/50-weiss/00012.jpg"
+            }
+        },
+        {
+            "id": "gloss-5-14-1",
+            "reading": {
+                "witness": "Codex 50",
+                "place": "left margin",
+                "hand": "second glossator",
+                "text": "inarticulata et literata",
+                "analysis": ["commentary glosses beginning often with id est, providing a paraphrase or an explanation of the lemma"],
+                "zone": {
+                    "ulx": "146",
+                    "uly": "521",
+                    "lrx": "254",
+                    "lry": "546"
+                },
+                "page-url": "http://diglib.hab.de/mss/50-weiss/00012.jpg"
+            }
+        },
+        {
+            "id": "gloss-5-15-1",
+            "reading": {
+                "witness": "Codex 50",
+                "place": "interlinear above",
+                "hand": "second glossator",
+                "text": "Vox ranum.",
+                "analysis": ["commentary glosses beginning often with id est, providing a paraphrase or an explanation of the lemma"],
+                "zone": {
+                    "ulx": "750",
+                    "uly": "522",
+                    "lrx": "803",
+                    "lry": "539"
+                },
+                "page-url": "http://diglib.hab.de/mss/50-weiss/00012.jpg"
+            }
+        },
+        {
+            "id": "gloss-5-15-2",
+            "reading": {
+                "witness": "Codex 50",
+                "place": "interlinear above",
+                "hand": "second glossator",
+                "text": "Vox coruorum.",
+                "analysis": ["commentary glosses beginning often with id est, providing a paraphrase or an explanation of the lemma"],
+                "zone": {
+                    "ulx": "799",
+                    "uly": "523",
+                    "lrx": "871",
+                    "lry": "535"
+                },
+                "page-url": "http://diglib.hab.de/mss/50-weiss/00012.jpg"
+            }
+        },
+        {
+            "id": "gloss-5-15-3",
+            "reading": {
+                "witness": "Codex 50",
+                "place": "right margin",
+                "hand": "second glossator",
+                "text": "|REFERENCE SIGN OBLIQUE V| |id est|  a sen[2 chars illegible][su - C. G.]",
+                "analysis": ["commentary glosses beginning often with id est, providing a paraphrase or an explanation of the lemma"],
+                "zone": {
+                    "ulx": "951",
+                    "uly": "549",
+                    "lrx": "971",
+                    "lry": "564"
+                },
+                "page-url": "http://diglib.hab.de/mss/50-weiss/00012.jpg"
+            }
+        },
+        {
+            "id": "gloss-5-15-4",
+            "reading": {
+                "witness": "Codex 50",
+                "place": "left margin",
+                "hand": "second glossator",
+                "text": "inarticulata et inliterata",
+                "analysis": ["commentary glosses beginning often with id est, providing a paraphrase or an explanation of the lemma"],
+                "zone": {
+                    "ulx": "146",
+                    "uly": "574",
+                    "lrx": "242",
+                    "lry": "596"
+                },
+                "page-url": "http://diglib.hab.de/mss/50-weiss/00012.jpg"
+            }
+        },
+        {
+            "id": "gloss-6-2-1",
+            "reading": {
+                "witness": "Codex 50",
+                "place": "right margin",
+                "hand": "second glossator",
+                "text": "|REFERENCE SIGN DOTTED OBELUS|  Explanatio super[2 chars illegible][io - C. G.]ris senten[4 chars illegible][tiae - C. G.]",
+                "analysis": ["commentary glosses beginning often with id est, providing a paraphrase or an explanation of the lemma"],
+                "zone": {
+                    "ulx": "907",
+                    "uly": "563",
+                    "lrx": "979",
+                    "lry": "589"
+                },
+                "page-url": "http://diglib.hab.de/mss/50-weiss/00012.jpg"
+            }
+        },
+        {
+            "id": "gloss-6-3-1",
+            "reading": {
+                "witness": "Codex 50",
+                "place": "interlinear above",
+                "hand": "second glossator",
+                "text": "|id est|  specialitates",
+                "analysis": ["Lexical gloss providing a synonym"],
+                "zone": {
+                    "ulx": "353",
+                    "uly": "591",
+                    "lrx": "426",
+                    "lry": "607"
+                },
+                "page-url": "http://diglib.hab.de/mss/50-weiss/00012.jpg"
+            }
+        },
+        {
+            "id": "gloss-6-4-1",
+            "reading": {
+                "witness": "Codex 50",
+                "place": "interlinear one line above",
+                "hand": "second glossator",
+                "text": "|REFERENCE SIGN CURSIVE ZETA|  Articulata· et literata· Vt arma· Articulata· et inliterata· Vt sibili hominum· Inarticulata· et literata· Vt coax· Inarticulata· et inliterata· Vt crepitus;",
+                "analysis": ["commentary glosses"],
+                "zone": {
+                    "ulx": "231",
+                    "uly": "562",
+                    "lrx": "910",
+                    "lry": "584"
+                },
+                "page-url": "http://diglib.hab.de/mss/50-weiss/00012.jpg"
+            }
+        },
+        {
+            "id": "gloss-6-4-2",
+            "reading": {
+                "witness": "Codex 50",
+                "place": "interlinear above",
+                "hand": "first glossator",
+                "text": "differentię",
+                "analysis": ["syntactical glosses adding words omitted by Priscian"],
+                "zone": {
+                    "ulx": "786",
+                    "uly": "592",
+                    "lrx": "825",
+                    "lry": "604"
+                },
+                "page-url": "http://diglib.hab.de/mss/50-weiss/00012.jpg"
+            }
+        },
+        {
+            "id": "gloss-6-4-3",
+            "reading": {
+                "witness": "Codex 50",
+                "place": "interlinear above",
+                "hand": "second glossator",
+                "text": ". Inferiores species uocum.",
+                "analysis": ["syntactical glosses adding words omitted by Priscian"],
+                "zone": {
+                    "ulx": "826",
+                    "uly": "588",
+                    "lrx": "939",
+                    "lry": "603"
+                },
+                "page-url": "http://diglib.hab.de/mss/50-weiss/00012.jpg"
+            }
+        },
+        {
+            "id": "gloss-6-5-1",
+            "reading": {
+                "witness": "Codex 50",
+                "place": "interlinear above",
+                "hand": "second glossator",
+                "text": "|id est|  a sonando quia Vox sonus dicitur.",
+                "analysis": ["commentary glosses beginning often with id est, providing a paraphrase or an explanation of the lemma"],
+                "zone": {
+                    "ulx": "342",
+                    "uly": "612",
+                    "lrx": "478",
+                    "lry": "628"
+                },
+                "page-url": "http://diglib.hab.de/mss/50-weiss/00012.jpg"
+            }
+        },
+        {
+            "id": "gloss-6-5-2",
+            "reading": {
+                "witness": "Codex 50",
+                "place": "interlinear above",
+                "hand": "second glossator",
+                "text": "|id est|  ab hoc sono",
+                "analysis": ["Lexical gloss explaining Greek words or translating them into Latin"],
+                "zone": {
+                    "ulx": "513",
+                    "uly": "612",
+                    "lrx": "573",
+                    "lry": "627"
+                },
+                "page-url": "http://diglib.hab.de/mss/50-weiss/00012.jpg"
+            }
+        },
+        {
+            "id": "gloss-6-5-3",
+            "reading": {
+                "witness": "Codex 50",
+                "place": "left margin",
+                "hand": "first glossator",
+                "text": "APOTOY |id est|  ab· BOƜ |id est| sono·et a boo·boatus·dicitur",
+                "analysis": ["Lexical gloss explaining Greek words or translating them into Latin"],
+                "zone": {
+                    "ulx": "140",
+                    "uly": "622",
+                    "lrx": "242",
+                    "lry": "653"
+                },
+                "page-url": "http://diglib.hab.de/mss/50-weiss/00012.jpg"
+            }
+        },
+        {
+            "id": "gloss-6-7-1",
+            "reading": {
+                "witness": "Codex 50",
+                "place": "interlinear above and right margin",
+                "hand": "second glossator",
+                "text": "Non dicit litera aliarum rerum minimam esse partem nisi tantum litera ... uocis.",
+                "analysis": ["commentary glosses beginning often with id est, providing a paraphrase or an explanation of the lemma"],
+                "zone": {
+                    "ulx": "713",
+                    "uly": "604",
+                    "lrx": "973",
+                    "lry": "634"
+                },
+                "page-url": "http://diglib.hab.de/mss/50-weiss/00012.jpg"
+            }
+        },
+        {
+            "id": "gloss-6-7-2",
+            "reading": {
+                "witness": "Codex 50",
+                "place": "above",
+                "hand": "second glossator",
+                "text": "|id est|  syllabę et dictionis",
+                "analysis": ["commentary glosses beginning often with id est, providing a paraphrase or an explanation of the lemma"],
+                "zone": {
+                    "ulx": "276",
+                    "uly": "638",
+                    "lrx": "371",
+                    "lry": "656"
+                },
+                "page-url": "http://diglib.hab.de/mss/50-weiss/00012.jpg"
+            }
+        },
+        {
+            "id": "gloss-6-7-3",
+            "reading": {
+                "witness": "Codex 50",
+                "place": "left margin",
+                "hand": "first glossator",
+                "text": "|REFERENCE SIGN TWO HORIZONTAL DOTS-DISTIGME| |id est|  litteris comprehensę",
+                "analysis": ["commentary glosses beginning often with id est, providing a paraphrase or an explanation of the lemma"],
+                "zone": {
+                    "ulx": "138",
+                    "uly": "652",
+                    "lrx": "224",
+                    "lry": "668"
+                },
+                "page-url": "http://diglib.hab.de/mss/50-weiss/00012.jpg"
+            }
+        },
+        {
+            "id": "gloss-6-8-1",
+            "reading": {
+                "witness": "Codex 50",
+                "place": "interlinear above",
+                "hand": "second glossator",
+                "text": "Vt sunt syllabae et dictiones",
+                "analysis": ["commentary glosses beginning often with id est, providing a paraphrase or an explanation of the lemma"],
+                "zone": {
+                    "ulx": "501",
+                    "uly": "634",
+                    "lrx": "627",
+                    "lry": "653"
+                },
+                "page-url": "http://diglib.hab.de/mss/50-weiss/00012.jpg"
+            }
+        },
+        {
+            "id": "gloss-6-8-2",
+            "reading": {
+                "witness": "Codex 50",
+                "place": "interlinear above",
+                "hand": "second glossator",
+                "text": "|scilicet|  est",
+                "analysis": ["syntactical glosses adding words omitted by Priscian"],
+                "zone": {
+                    "ulx": "684",
+                    "uly": "638",
+                    "lrx": "712",
+                    "lry": "655"
+                },
+                "page-url": "http://diglib.hab.de/mss/50-weiss/00012.jpg"
+            }
+        },
+        {
+            "id": "gloss-6-8-6",
+            "reading": {
+                "witness": "Codex 50",
+                "place": "interlinear above and right margin",
+                "hand": "second glossator",
+                "text": "Duobus modis minima pars dicitur· uel sy[5 chars illegible][llabae - C. G.] uel dict[5 chars illegible][ionis - C. G.] minima p[3 chars illegible][ars - C. G.] est uel quia [5 chars illegible] uel dictio diu[3 chars illegible][idi - C. G.] potest lite[2 chars illegible][ra - C. G.] autem diuid [1 char illegible][i - C. G.] non potest·",
+                "analysis": ["commentary glosses beginning often with id est, providing a paraphrase or an explanation of the lemma"],
+                "zone": {
+                    "ulx": "784",
+                    "uly": "629",
+                    "lrx": "976",
+                    "lry": "735"
+                },
+                "page-url": "http://diglib.hab.de/mss/50-weiss/00012.jpg"
+            }
+        },
+        {
+            "id": "gloss-6-8-4",
+            "reading": {
+                "witness": "Codex 50",
+                "place": "interlinear above",
+                "hand": "second glossator",
+                "text": "|scilicet|  pertinet·",
+                "analysis": ["syntactical glosses adding words omitted by Priscian"],
+                "zone": {
+                    "ulx": "733",
+                    "uly": "638",
+                    "lrx": "776",
+                    "lry": "650"
+                },
+                "page-url": "http://diglib.hab.de/mss/50-weiss/00012.jpg"
+            }
+        },
+        {
+            "id": "gloss-6-8-5",
+            "reading": {
+                "witness": "Codex 50",
+                "place": "upper margin of the leaf",
+                "hand": "second glossator",
+                "text": "|REFERENCE SIGN CROSS|  quasi dicat· Ego discerno ut omnes litterae· longe quoque uocales ad hanc comprehensionem pertineant.",
+                "analysis": ["commentary glosses beginning often with id est, providing a paraphrase or an explanation of the lemma"],
+                "zone": {
+                    "ulx": "216",
+                    "uly": "78",
+                    "lrx": "692",
+                    "lry": "121"
+                },
+                "page-url": "http://diglib.hab.de/mss/50-weiss/00012.jpg"
+            }
+        },
+        {
+            "id": "gloss-6-9-1",
+            "reading": {
+                "witness": "Codex 50",
+                "place": "interlinear above",
+                "hand": "second glossator",
+                "text": "cum literis compositae·",
+                "analysis": ["commentary glosses beginning often with id est, providing a paraphrase or an explanation of the lemma"],
+                "zone": {
+                    "ulx": "262",
+                    "uly": "663",
+                    "lrx": "346",
+                    "lry": "681"
+                },
+                "page-url": "http://diglib.hab.de/mss/50-weiss/00012.jpg"
+            }
+        },
+        {
+            "id": "gloss-6-9-2",
+            "reading": {
+                "witness": "Codex 50",
+                "place": "left margin",
+                "hand": "first glossator",
+                "text": "|REFERENCE SIGN OCULUS| quia quando per se stant partem faciunt siue quia per se nominantur quod aliae litterę non faciunt",
+                "analysis": ["commentary glosses beginning with quia"],
+                "zone": {
+                    "ulx": "135",
+                    "uly": "665",
+                    "lrx": "259",
+                    "lry": "704"
+                },
+                "page-url": "http://diglib.hab.de/mss/50-weiss/00012.jpg"
+            }
+        },
+        {
+            "id": "gloss-6-13-1",
+            "reading": {
+                "witness": "Codex 50",
+                "place": "left margin",
+                "hand": "first glossator",
+                "text": "|REFERENCE SIGN CURSIVE ZETA| [a - expunction by first glossator] l[e - expunction by first glossator][i]tera· a lego et itere uel lituris [dilenne - added by first glossator] liniuntur enim cum cera tabulę. fricando enim deletur tabula",
+                "analysis": [
+                    "commentary glosses explaining the etymology of the lemma",
+                    "commentary glosses beginning often with id est, providing a paraphrase or an explanation of the lemma",
+                    "Lexical gloss providing a translation of the lemma into Old-High-German"
+                ],
+                "zone": {
+                    "ulx": "145",
+                    "uly": "709",
+                    "lrx": "260",
+                    "lry": "764"
+                },
+                "page-url": "http://diglib.hab.de/mss/50-weiss/00012.jpg"
+            }
+        },
+        {
+            "id": "gloss-6-14-1",
+            "reading": {
+                "witness": "Codex 50",
+                "place": "above",
+                "hand": "first glossator",
+                "text": "|id est|  a deletionibus",
+                "analysis": ["Lexical gloss providing a synonym"],
+                "zone": {
+                    "ulx": "523",
+                    "uly": "705",
+                    "lrx": "583",
+                    "lry": "718"
+                },
+                "page-url": "http://diglib.hab.de/mss/50-weiss/00012.jpg"
+            }
+        },
+        {
+            "id": "gloss-6-16-1",
+            "reading": {
+                "witness": "Codex 50",
+                "place": "above",
+                "hand": "first glossator",
+                "text": ".elementum dicitur uniuersitatis materia.",
+                "analysis": ["commentary glosses beginning often with id est, providing a paraphrase or an explanation of the lemma"],
+                "zone": {
+                    "ulx": "749",
+                    "uly": "723",
+                    "lrx": "896",
+                    "lry": "739"
+                },
+                "page-url": "http://diglib.hab.de/mss/50-weiss/00012.jpg"
+            }
+        },
+        {
+            "id": "gloss-6-18-1",
+            "reading": {
+                "witness": "Codex 50",
+                "place": "interlinear above",
+                "hand": "first glossator",
+                "text": "aduerbium",
+                "analysis": ["morphological gloss on the adverb"],
+                "zone": {
+                    "ulx": "878",
+                    "uly": "747",
+                    "lrx": "912",
+                    "lry": "762"
+                },
+                "page-url": "http://diglib.hab.de/mss/50-weiss/00012.jpg"
+            }
+        },
+        {
+            "id": "gloss-6-21-1",
+            "reading": {
+                "witness": "Codex 50",
+                "place": "interlinear above",
+                "hand": "first glossator",
+                "text": "supra se",
+                "analysis": ["commentary glosses beginning often with id est, providing a paraphrase or an explanation of the lemma"],
+                "zone": {
+                    "ulx": "452",
+                    "uly": "800",
+                    "lrx": "479",
+                    "lry": "810"
+                },
+                "page-url": "http://diglib.hab.de/mss/50-weiss/00012.jpg"
+            }
+        },
+        {
+            "id": "gloss-6-21-2",
+            "reading": {
+                "witness": "Codex 50",
+                "place": "interlinear above",
+                "hand": "first glossator",
+                "text": "ex utrisque partibus",
+                "analysis": ["commentary glosses beginning often with id est, providing a paraphrase or an explanation of the lemma"],
+                "zone": {
+                    "ulx": "515",
+                    "uly": "795",
+                    "lrx": "569",
+                    "lry": "810"
+                },
+                "page-url": "http://diglib.hab.de/mss/50-weiss/00012.jpg"
+            }
+        },
+        {
+            "id": "gloss-6-21-3",
+            "reading": {
+                "witness": "Codex 50",
+                "place": "interlinear above",
+                "hand": "first glossator",
+                "text": "ante se",
+                "analysis": ["commentary glosses beginning often with id est, providing a paraphrase or an explanation of the lemma"],
+                "zone": {
+                    "ulx": "585",
+                    "uly": "796",
+                    "lrx": "617",
+                    "lry": "811"
+                },
+                "page-url": "http://diglib.hab.de/mss/50-weiss/00012.jpg"
+            }
+        }
+    ]
+}

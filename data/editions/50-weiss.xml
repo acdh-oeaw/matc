@@ -1908,7 +1908,7 @@
                            quantity="3"/><supplied resp="#CG">idi</supplied> potest lite<gap
                            reason="illegible" unit="char" quantity="2"/><supplied resp="#CG"
                            >ra</supplied> autem diuid <gap reason="illegible" unit="char"
-                           quantity="1"/><supplied resp="#CG">i non</supplied> potest·</add></rdg>
+                              quantity="1"/><supplied resp="#CG">i</supplied> non potest·</add></rdg>
                </app>
                <app type="reference-signs" xml:id="rs-6-8-1">
                   <lem wit="#EDITION">quantum</lem>
@@ -1929,7 +1929,7 @@
                   <lem wit="#EDITION">ad totam</lem>
                   <rdg wit="#COD_50"><add place="upper margin of the leaf" hand="#gl-2"
                         facs="#zone.1v.64" ana="#glosses-elucidating-the-main-text"><g
-                           ref="reference-sign-cross"/> quasi dicat· Ego discerno ut omnes litterae·
+                           ref="#reference-sign-cross"/> quasi dicat· Ego discerno ut omnes litterae·
                         longe quoque uocales ad hanc comprehensionem pertineant.</add></rdg>
                </app>
                <quote source="#EDITION" n="II 6,9">uocis<lb n="26" ed="1v"/> literatae (ad hanc enim etiam
@@ -1978,10 +1978,10 @@
                            subtype="new-finding" n="2"><foreign xml:lang="goh"
                            >dilenne</foreign></add> liniuntur enim cum cera tabulę. fricando enim
                         deletur tabula</add></rdg>
+                  <note corresp="#ohg-2-6-13-1" type="explanation" resp="#CG"> for the OHG word dilenne
+                     see Gerhard Köbler, Lateinisch-althochdeutsches Wörterbuch, Göttingen 1971, s.v.
+                     delere = (ar)dilen, p. 51</note>
                </app>
-               <note corresp="#ohg-2-6-13-1" type="explanation" resp="#CG"> for the OHG word dilenne
-                  see Gerhard Köbler, Lateinisch-althochdeutsches Wörterbuch, Göttingen 1971, s.v.
-                  delere = (ar)dilen, p. 51</note>
                <quote source="#EDITION" n="II 6,14">uel a lituris, ut quibusdam placet, quod
                   plerumque in ceratis tabulis</quote>
                <app type="gloss" xml:id="gloss-6-14-1">

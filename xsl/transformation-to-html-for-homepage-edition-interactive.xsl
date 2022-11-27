@@ -14,6 +14,11 @@
     </xsl:template>
     
     <xsl:template match="tei:TEI">
+        <xsl:result-document encoding="UTF-8" href="json/glosses.json" media-type="text/plain" omit-xml-declaration="true" method="text">
+            <xsl:text>{ "glosses" : [</xsl:text>
+                <xsl:apply-templates select="//tei:app[@type = 'gloss']" mode="glosses-as-json"/>
+            <xsl:text>]}</xsl:text>
+        </xsl:result-document>
         <head>
             <meta charset="UTF-8"/>
             <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
@@ -547,7 +552,7 @@
     <xsl:template match="tei:g">
         <xsl:text>|</xsl:text>
         <xsl:value-of select="root()//tei:glyph[@xml:id = substring-after(current()/@ref,'#')]/tei:localProp[@name = 'Name']/@value"/>
-        <xsl:text>|</xsl:text>
+        <xsl:text>| </xsl:text>
     </xsl:template>
     
     <xsl:template match="tei:w[parent::tei:rdg]">
@@ -633,6 +638,194 @@
         <xsl:text> (</xsl:text>
             <xsl:value-of select="tei:expan/text()"/>
         <xsl:text>)</xsl:text>
+    </xsl:template>
+    
+    <xsl:template match="tei:app[@type = 'gloss']" mode="glosses-as-json">
+        <xsl:text>{ "id" : "</xsl:text>
+            <xsl:value-of select="@xml:id"/>
+        <xsl:text>",</xsl:text>
+        <xsl:apply-templates select="child::tei:rdg" mode="glosses-as-json"/>
+        <xsl:text>}</xsl:text>
+        <xsl:if test="position() != last()">
+            <xsl:text>,</xsl:text>
+        </xsl:if>
+    </xsl:template>
+    
+    <xsl:template match="tei:rdg" mode="glosses-as-json">
+        <xsl:text> "reading" : {</xsl:text>
+            <xsl:text> "witness" : "</xsl:text>
+                <xsl:if test="@wit = '#COD_50'">
+                    <xsl:text>Codex 50</xsl:text>
+                </xsl:if>
+                <xsl:if test="@wit != '#COD_50'">
+                    <xsl:value-of select="substring-after(@wit,'#')"/>
+                </xsl:if>
+            <xsl:text>",</xsl:text>
+            <xsl:apply-templates select="tei:add" mode="glosses-as-json"/>
+        <xsl:text>}</xsl:text>
+    </xsl:template>
+    
+    <xsl:template match="tei:add" mode="glosses-as-json">
+        <xsl:text> "place" : "</xsl:text>
+            <xsl:value-of select="@place"/>
+        <xsl:text>",</xsl:text>
+        <xsl:text> "hand" : "</xsl:text>
+            <xsl:if test="substring-after(@hand,'#') = 'scr-1' or substring-after(@hand,'#') = 'scr'">
+                <xsl:text>main scribe</xsl:text>
+            </xsl:if>
+            <xsl:if test="substring-after(@hand,'#') = 'sec'">
+                <xsl:text>secondary scribe</xsl:text>
+            </xsl:if>
+            <xsl:if test="substring-after(@hand,'#') = 'gl-1'">
+                <xsl:text>first glossator</xsl:text>
+            </xsl:if>
+            <xsl:if test="substring-after(@hand,'#') = 'gl-2'">
+                <xsl:text>second glossator</xsl:text>
+            </xsl:if>
+        <xsl:text>",</xsl:text>
+        <xsl:text> "text" : "</xsl:text>
+            <xsl:apply-templates select="child::node()" mode="glosses-as-json"/>
+        <xsl:text>",</xsl:text>
+        <xsl:text> "analysis" : [</xsl:text>
+            <xsl:variable name="root-node" select="root()/tei:TEI" as="node()"/>
+            <xsl:for-each select="tokenize(@ana,'\s*#')">
+                <xsl:if test=". != ''">
+                    <xsl:text>"</xsl:text>
+                        <xsl:value-of select="normalize-space($root-node//tei:category[@xml:id = current()]/tei:catDesc/text())"/>
+                    <xsl:text>"</xsl:text>
+                    <xsl:if test="position() != last()"><xsl:text>,</xsl:text></xsl:if>
+                </xsl:if>
+            </xsl:for-each>
+        <xsl:text>],</xsl:text>
+        <xsl:text> "zone" : {</xsl:text>
+            <xsl:text> "ulx" : "</xsl:text>
+                <xsl:value-of select="root()/tei:TEI/tei:facsimile/tei:surface/tei:zone[@xml:id = substring-after(current()/@facs,'#')]/@ulx"/>
+            <xsl:text>",</xsl:text>
+            <xsl:text> "uly" : "</xsl:text>
+                <xsl:value-of select="root()/tei:TEI/tei:facsimile/tei:surface/tei:zone[@xml:id = substring-after(current()/@facs,'#')]/@uly"/>
+            <xsl:text>",</xsl:text>
+            <xsl:text> "lrx" : "</xsl:text>
+                <xsl:value-of select="root()/tei:TEI/tei:facsimile/tei:surface/tei:zone[@xml:id = substring-after(current()/@facs,'#')]/@lrx"/>
+            <xsl:text>",</xsl:text>
+            <xsl:text> "lry" : "</xsl:text>
+                <xsl:value-of select="root()/tei:TEI/tei:facsimile/tei:surface/tei:zone[@xml:id = substring-after(current()/@facs,'#')]/@lry"/>
+            <xsl:text>"</xsl:text>
+        <xsl:text>},</xsl:text>
+        <xsl:text> "page-url" : "</xsl:text>
+            <xsl:value-of select="root()/tei:TEI/tei:facsimile/tei:surface/tei:zone[@xml:id = substring-after(current()/@facs,'#')]/parent::tei:surface/tei:graphic/@url"/>
+        <xsl:text>"</xsl:text>
+    </xsl:template>
+    
+    <xsl:template match="tei:del[@type = 'expunction']" mode="glosses-as-json">
+        <xsl:text>[</xsl:text>
+            <xsl:value-of select="text()"/>
+        <xsl:if test="exists(@resp)">
+            <xsl:text> - expunction by </xsl:text>
+            <xsl:if test="substring-after(@resp,'#') = 'scr-1' or substring-after(@resp,'#') = 'scr'">
+                <xsl:text>main scribe</xsl:text>
+            </xsl:if>
+            <xsl:if test="substring-after(@resp,'#') = 'sec'">
+                <xsl:text>secondary scribe</xsl:text>
+            </xsl:if>
+            <xsl:if test="substring-after(@resp,'#') = 'gl-1'">
+                <xsl:text>first glossator</xsl:text>
+            </xsl:if>
+            <xsl:if test="substring-after(@resp,'#') = 'gl-2'">
+                <xsl:text>second glossator</xsl:text>
+            </xsl:if>
+        </xsl:if>
+        <xsl:text>]</xsl:text>
+    </xsl:template>
+    
+    <xsl:template match="tei:add[parent::tei:add]" mode="glosses-as-json">
+        <xsl:text>[</xsl:text>
+            <xsl:apply-templates select="child::node()" mode="glosses-as-json"/>
+        <xsl:if test="exists(@resp) or exists(@hand)">
+            <xsl:text> - added by </xsl:text>
+            <xsl:if test="exists(@resp)">
+                <xsl:if test="substring-after(@resp,'#') = 'scr-1' or substring-after(@resp,'#') = 'scr'">
+                    <xsl:text>main scribe</xsl:text>
+                </xsl:if>
+                <xsl:if test="substring-after(@resp,'#') = 'sec'">
+                    <xsl:text>secondary scribe</xsl:text>
+                </xsl:if>
+                <xsl:if test="substring-after(@resp,'#') = 'gl-1'">
+                    <xsl:text>first glossator</xsl:text>
+                </xsl:if>
+                <xsl:if test="substring-after(@resp,'#') = 'gl-2'">
+                    <xsl:text>second glossator</xsl:text>
+                </xsl:if>
+            </xsl:if>
+            <xsl:if test="not(exists(@resp)) and exists(@hand)">
+                <xsl:if test="substring-after(@hand,'#') = 'scr-1' or substring-after(@hand,'#') = 'scr'">
+                    <xsl:text>main scribe</xsl:text>
+                </xsl:if>
+                <xsl:if test="substring-after(@hand,'#') = 'sec'">
+                    <xsl:text>secondary scribe</xsl:text>
+                </xsl:if>
+                <xsl:if test="substring-after(@hand,'#') = 'gl-1'">
+                    <xsl:text>first glossator</xsl:text>
+                </xsl:if>
+                <xsl:if test="substring-after(@hand,'#') = 'gl-2'">
+                    <xsl:text>second glossator</xsl:text>
+                </xsl:if>
+            </xsl:if>
+        </xsl:if>
+        <xsl:text>]</xsl:text>
+    </xsl:template>
+    
+    <xsl:template match="tei:gap" mode="glosses-as-json">
+        <xsl:text>[</xsl:text>
+            <xsl:if test="@quantity = 1">
+                <xsl:value-of select="@quantity"/>
+                <xsl:text> </xsl:text>
+                <xsl:value-of select="@unit"/>
+                <xsl:text> </xsl:text>
+                <xsl:value-of select="@reason"/>
+            </xsl:if>
+            <xsl:if test="@quantity != 1">
+                <xsl:value-of select="@quantity"/>
+                <xsl:text> </xsl:text>
+                <xsl:value-of select="@unit"/>
+                <xsl:text>s </xsl:text>
+                <xsl:value-of select="@reason"/>
+            </xsl:if>
+        <xsl:text>]</xsl:text>
+    </xsl:template>
+    
+    <xsl:template match="tei:supplied" mode="glosses-as-json">
+        <xsl:text>[</xsl:text>
+            <xsl:apply-templates select="child::node()"/>
+            <xsl:if test="exists(@resp) and @resp = '#CG'">
+                <xsl:text> - C. G.</xsl:text>
+            </xsl:if>
+        <xsl:text>]</xsl:text>
+    </xsl:template>
+    
+    <xsl:template match="tei:g" mode="glosses-as-json">
+        <xsl:text>|</xsl:text>
+        <xsl:value-of select="root()//tei:glyph[@xml:id = substring-after(current()/@ref,'#')]/tei:localProp[@name = 'Name']/@value"/>
+        <xsl:text>| </xsl:text>
+    </xsl:template>
+    
+    <xsl:template match="tei:foreign" mode="glosses-as-json">
+        <xsl:apply-templates select="child::node()"/>
+    </xsl:template>
+    
+    <xsl:template match="text()" mode="glosses-as-json">
+        <xsl:choose>
+            <xsl:when test="contains(.,'&#xA;')">
+                <xsl:if test="starts-with(.,' ')">
+                    <xsl:value-of select="concat(' ',normalize-space(translate(.,'&#xA;','')))"/>
+                </xsl:if>
+                <xsl:if test="not(starts-with(.,' '))">
+                    <xsl:value-of select="normalize-space(translate(.,'&#xA;',''))"/>
+                </xsl:if>
+            </xsl:when>
+            <xsl:when test="not(contains(.,'&#xA;'))">
+                <xsl:value-of select="."/>
+            </xsl:when>
+        </xsl:choose>
     </xsl:template>
     
 </xsl:stylesheet>
