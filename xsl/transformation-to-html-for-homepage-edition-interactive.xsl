@@ -123,7 +123,66 @@
                         </div>
                     </div>
                 </div>
+            <div class="wrapper fundament-default-footer" id="wrapper-footer-full">
+                <div class="container" id="footer-full-content" tabindex="-1">
+                    <div class="footer-separator">
+                        <i data-feather="message-circle"></i> CONTACT
+                    </div>
+                    <div class="row">
+                        <div class="footer-widget col-lg-1 col-md-2 col-sm-2 col-xs-6 col-3">
+                            <div class="textwidget custom-html-widget">
+                                <a href="/"><img src="https://fundament.acdh.oeaw.ac.at/common-assets/images/acdh_logo.svg" class="image" alt="ACDH Logo" style="max-width: 100%; height: auto;" title="ACDH Logo"></img></a>
+                            </div>
+                        </div>
+                        <!-- .footer-widget -->
+                        <div class="footer-widget col-lg-4 col-md-4 col-sm-6 col-9">
+                            <div class="textwidget custom-html-widget">
+                                <p>
+                                    ACDH-CH
+                                    <br/>
+                                        Austrian Centre for Digital Humanities <br/> and Cultural Heritage
+                                        <br/>
+                                            Austrian Academy of Sciences
+                                </p>
+                                <p>
+                                    Sonnenfelsgasse 19,
+                                    <br/>
+                                        1010 Vienna
+                                </p>
+                                <p>
+                                    T: +43 1 51581-2200
+                                    <br/>
+                                        E: <a href="mailto:acdh-ch@oeaw.ac.at">acdh-ch@oeaw.ac.at</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="footer-widget col-lg-1 col-md-2 col-sm-2 col-xs-6 col-3">
+                            <div class="textwidget custom-html-widget">
+                                <a href="https://www.fwf.ac.at/"><img src="./images/fwf-logo.png" class="image" alt="FWF Logo" style="max-width: 250%; height: auto;" title="FWF Logo"></img></a>
+                            </div>
+                        </div>
+                        <!-- .footer-widget -->
+                        <div class="footer-widget col-lg-3 col-md-4 col-sm-4 ml-auto">
+                            <div class="textwidget custom-html-widget">
+                                <h6>HELPDESK</h6>
+                                <p>ACDH-CH runs a helpdesk offering advice for questions related to various digital humanities topics.</p>
+                                <p>
+                                    <a class="helpdesk-button" href="mailto:acdh-helpdesk@oeaw.ac.at">ASK US!</a>
+                                </p>
+                            </div>
+                        </div>
+                        <!-- .footer-widget -->
+                    </div>
+                </div>
             </div>
+            <!-- #wrapper-footer-full -->
+            <div class="footer-imprint-bar" id="wrapper-footer-secondary" style="text-align:center; padding:0.4rem 0; font-size: 0.9rem;">
+                © Copyright OEAW | <a href="https://www.oeaw.ac.at/die-oeaw/impressum/">Impressum/Imprint</a>
+            </div>
+            </div>
+            <!-- #page we need this extra closing tag here -->
+            <script type="text/javascript" src="./vendor/jquery/jquery.min.js"></script>
+            <script type="text/javascript" src="./js/fundament.min.js"></script>
         </body>
     </xsl:template>
     
@@ -432,8 +491,19 @@
     <xsl:template match="tei:app[@type = 'gloss']">
         <p class="type-of-intervention"><xsl:text>Gloss:</xsl:text></p>
         <div class="apparatus">
-            <xsl:apply-templates select="tei:lem"/>
-            <xsl:apply-templates select="tei:rdg"/>
+            <xsl:apply-templates select="tei:lem" mode="gloss-lemma"/>
+            <span class="around-link">
+            <xsl:element name="a">
+                <xsl:attribute name="class" select="'link-for-gloss'"/>
+                <xsl:attribute name="href" select="@xml:id"/>
+                <xsl:attribute name="id" select="@xml:id"/>
+                <i class="fa-solid fa-info"></i>
+            </xsl:element>
+            </span>
+            <xsl:element name="div">
+                <xsl:attribute name="class" select="'apparatus-reading apparatus-hidden'"/>
+                <xsl:attribute name="id" select="concat('div-for-',@xml:id)"/>
+            </xsl:element>
         </div>
     </xsl:template>
     
@@ -490,6 +560,20 @@
             <xsl:text>: </xsl:text>
             <xsl:value-of select="text()"/>
         </p>
+    </xsl:template>
+    
+    <xsl:template match="tei:lem" mode="gloss-lemma">
+        <xsl:if test="substring-after(@wit,'#') = 'EDITION'">
+                <xsl:text>Edition</xsl:text>
+            </xsl:if>
+            <xsl:if test="substring-after(@wit,'#') = 'COD_50'">
+                <xsl:text>Codex 50</xsl:text>
+            </xsl:if>
+            <xsl:if test="not(substring-after(@wit,'#') = 'EDITION' or substring-after(@wit,'#') = 'COD_50')">
+                <xsl:value-of select="substring-after(@wit,'#')"/>
+            </xsl:if>
+            <xsl:text>: </xsl:text>
+            <xsl:value-of select="text()"/>
     </xsl:template>
     
     <xsl:template match="tei:rdg">
@@ -643,9 +727,11 @@
     <xsl:template match="tei:app[@type = 'gloss']" mode="glosses-as-json">
         <xsl:text>{ "id" : "</xsl:text>
             <xsl:value-of select="@xml:id"/>
-        <xsl:text>",</xsl:text>
+        <xsl:text>", "</xsl:text>
+        <xsl:value-of select="@xml:id"/>
+        <xsl:text>" : {</xsl:text>
         <xsl:apply-templates select="child::tei:rdg" mode="glosses-as-json"/>
-        <xsl:text>}</xsl:text>
+        <xsl:text>}}</xsl:text>
         <xsl:if test="position() != last()">
             <xsl:text>,</xsl:text>
         </xsl:if>
@@ -663,6 +749,42 @@
             <xsl:text>",</xsl:text>
             <xsl:apply-templates select="tei:add" mode="glosses-as-json"/>
         <xsl:text>}</xsl:text>
+        <xsl:if test="exists(following-sibling::tei:note[1])">
+            <xsl:text>, "note" : "</xsl:text>
+            <xsl:apply-templates select="following-sibling::tei:note[1]" mode="glosses-as-json"/>
+            <xsl:text>"</xsl:text>
+        </xsl:if>
+        <xsl:if test="exists(tei:ptr)">
+            <xsl:text>, "pointer" : "</xsl:text>
+            <xsl:apply-templates select="tei:ptr" mode="glosses-as-json"/>
+            <xsl:text>"</xsl:text>
+        </xsl:if>
+    </xsl:template>
+    
+    <xsl:template match="tei:note" mode="glosses-as-json">
+        <xsl:value-of select="replace(normalize-space(text()),'(&quot;)','\\$1')"/>
+    </xsl:template>
+    
+    <xsl:template match="tei:ptr" mode="glosses-as-json">
+        <xsl:value-of select="parent::tei:rdg/parent::tei:app/tei:lem/text()"/>
+        <xsl:text> &#8594; </xsl:text>
+        <xsl:variable name="root-node" select="root()/tei:TEI" as="node()"/>
+        <xsl:for-each select="tokenize(@target,'\s')">
+            <xsl:value-of select="$root-node//tei:w[@xml:id = substring-after(current(),'#')]/text()"/>
+            <xsl:text> </xsl:text>
+            <xsl:text>(</xsl:text>
+                <xsl:if test="exists($root-node//tei:w[@xml:id = substring-after(current(),'#')]/parent::tei:quote)">
+                    <xsl:value-of select="$root-node//tei:w[@xml:id = substring-after(current(),'#')]/parent::tei:quote/@n"/>
+                </xsl:if>
+                <xsl:if test="not(exists($root-node//tei:w[@xml:id = substring-after(current(),'#')]/parent::tei:quote))">
+                    <xsl:value-of select="$root-node//tei:w[@xml:id = substring-after(current(),'#')]/parent::tei:rdg/parent::tei:app/preceding-sibling::tei:quote[1]/@n"/>
+                    <xsl:text> </xsl:text>
+                    <xsl:value-of select="$root-node//tei:w[@xml:id = substring-after(current(),'#')]/parent::tei:rdg/preceding-sibling::tei:lem/text()"/>
+                    <xsl:text> v.l.</xsl:text>
+                </xsl:if>
+             <xsl:text>)</xsl:text>
+            <xsl:if test="position() != last()"><xsl:text> </xsl:text></xsl:if>
+            </xsl:for-each>
     </xsl:template>
     
     <xsl:template match="tei:add" mode="glosses-as-json">

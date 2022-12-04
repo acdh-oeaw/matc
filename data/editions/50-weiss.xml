@@ -1163,12 +1163,12 @@
                   <lem wit="#EDITION">gloriam</lem>
                   <rdg wit="#COD_50"><add place="interlinear above" hand="#gl-1" facs="#zone.1r.74"
                         ana="#glosses-elucidating-the-main-text">per diffinitionem</add></rdg>
+                  <note resp="#CG" type="explanation" target="#gloss-3-1-3">Otfrid wrote this gloss
+                     AFTER the second glossator had added the reference sign and the marginal gloss
+                     concerning "gloriam". Sometimes, however (see below), the second glossator clearly
+                     wrote after Otfrid. Thus, the two writers added their glosses and worked with this
+                     manuscript almost at the same time</note>
                </app>
-               <note resp="#CG" type="explanation" target="#gloss-3-1-3">Otfrid wrote this gloss
-                  AFTER the second glossator had added the reference sign and the marginal gloss
-                  concerning "gloriam". Sometimes, however (see below), the second glossator clearly
-                  wrote after Otfrid. Thus, the two writers added their glosses and worked with this
-                  manuscript almost at the same time</note>
                <quote source="#EDITION" n="II 3,2">te comite quasi sole quodam dilu<lb n="32"
                   break="no" ed="1r"/>cidius crescat.</quote>
                <quote source="#EDITION" n="II 3,3">titulos etiam uniuersi operis per singulos
@@ -1408,7 +1408,7 @@
                   <rdg wit="#COD_50" xml:id="rdg-2-5-2-1" next="#rdg-2-5-2-2"><add
                         place="interlinear-one-line-above" hand="#gl-2" facs="#zone.1v.15"
                         ana="#glosses-summarizing-content">Vox est</add></rdg>
-                  <note resp="#CG" type="explanation" target="#gloss-5-0-1 #gloss-5-0-2">Glossator-2
+                  <note resp="#CG" type="explanation" target="#gloss-5-0-1 #gloss-5-0-2">The second glossator
                      wrote "Vox est" above the lemma, then stopped and re-started writing his gloss
                      below the lemma linking it to line II 5, 2</note>
                </app>

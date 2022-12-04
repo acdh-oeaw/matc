@@ -44,3 +44,6 @@ p.pointer {margin-top: 1em; }
 span.typewriter { font-family: courier, fixed, monospace; }
 p.type-of-intervention { margin-left: 40pt; font-style: italic; }
 span.expunction { text-decoration: line-through; }
+span.around-link { margin-left: 20pt; border: black 1pt solid; padding: 4pt; border-radius: 3pt; }
+.apparatus-hidden { display: none; }
+.apparatus-visible { display: block; }
