@@ -29,9 +29,11 @@ span.bold-italic-text { font-style: italic; font-weight: bold; }
 div.page-of-edition { margin: 20pt; }
 div.apparatus { margin-left: 70pt; }
 p.glyph-section { margin-top: 10pt; margin-bottom: 10pt; margin-left: 50pt; height: 40pt; }
-span.emphasize-analysis { margin-left: 20pt; background-color: white; border-radius: 3pt; padding: 2pt; }
-span.emphasize-hand { margin-left: 20pt; background-color: white; border-radius: 3pt; padding: 2pt; }
-span.emphasize-location { margin-left: 20pt; background-color: white; border-radius: 3pt; padding: 2pt; }
+span.emphasize-analysis { margin-left: 20pt; background-color: white; padding: 2pt; }
+span.emphasize-hand { margin-left: 20pt; background-color: white; padding: 2pt; }
+span.emphasize-location { margin-left: 20pt; background-color: white; padding: 2pt; }
+span.emphasize-note { margin-left: 20pt; background-color: white; padding: 2pt; }
+span.emphasize-pointer { margin-left: 20pt; background-color: white; padding: 2pt; }
 span.referred-word { background-color: white; border-radius: 3pt; padding: 2pt; }
 span.pointer-targets { margin-left: 3pt; background-color: white; border-radius: 3pt; padding: 2pt; }
 span.pointer-target-source { font-style: italic; }
@@ -47,3 +49,4 @@ span.expunction { text-decoration: line-through; }
 span.around-link { margin-left: 20pt; border: black 1pt solid; padding: 4pt; border-radius: 3pt; }
 .apparatus-hidden { display: none; }
 .apparatus-visible { display: block; }
+#overlay { border: red 2pt solid; }
