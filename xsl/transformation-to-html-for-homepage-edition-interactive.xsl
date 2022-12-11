@@ -835,7 +835,14 @@
         <xsl:text>},</xsl:text>
         <xsl:text> "page-url" : "</xsl:text>
             <xsl:value-of select="root()/tei:TEI/tei:facsimile/tei:surface/tei:zone[@xml:id = substring-after(current()/@facs,'#')]/parent::tei:surface/tei:graphic/@url"/>
+        <xsl:text>", "index" : "</xsl:text>
+        <xsl:apply-templates select="root()/tei:TEI/tei:facsimile/tei:surface/tei:zone[@xml:id = substring-after(current()/@facs,'#')]/parent::tei:surface/tei:graphic" mode="indizes"/>
+<!--        <xsl:number select="root()/tei:TEI/tei:facsimile/tei:surface/tei:zone[@xml:id = substring-after(current()/@facs,'#')]/parent::tei:surface/tei:graphic/@url" count="//tei:surface/tei:graphic/@url" level="any"/> -->
         <xsl:text>"</xsl:text>
+    </xsl:template>
+    
+    <xsl:template match="tei:surface/tei:graphic" mode="indizes">
+        <xsl:number select="." count="root()//tei:surface/tei:graphic" level="any"/>
     </xsl:template>
     
     <xsl:template match="tei:del[@type = 'expunction']" mode="glosses-as-json">

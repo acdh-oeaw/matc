@@ -1,18 +1,73 @@
 var viewer = OpenSeadragon({
     id: "openseadragon",
 	prefixUrl: "https://cdnjs.cloudflare.com/ajax/libs/openseadragon/3.0.0/images/",
-	tileSources: {
-      type: "image",
-      url: "http://diglib.hab.de/mss/50-weiss/max/00011.jpg"
+	tileSources: [
+	{
+		type: "image",
+		url: "http://diglib.hab.de/mss/50-weiss/max/00001.jpg"
     },
+	{ 
+		type: "image",
+		url: "http://diglib.hab.de/mss/50-weiss/max/00002.jpg"
+	},
+	{
+		type: "image",
+		url: "http://diglib.hab.de/mss/50-weiss/max/00003.jpg"
+    },
+	{
+		type: "image",
+		url: "http://diglib.hab.de/mss/50-weiss/max/00004.jpg"
+    },
+	{
+		type: "image",
+		url: "http://diglib.hab.de/mss/50-weiss/max/00005.jpg"
+    },
+	{
+		type: "image",
+		url: "http://diglib.hab.de/mss/50-weiss/max/00006.jpg"
+    },
+	{
+		type: "image",
+		url: "http://diglib.hab.de/mss/50-weiss/max/00007.jpg"
+    },
+	{
+		type: "image",
+		url: "http://diglib.hab.de/mss/50-weiss/max/00008.jpg"
+    },
+	{
+		type: "image",
+		url: "http://diglib.hab.de/mss/50-weiss/max/00009.jpg"
+    },
+	{
+		type: "image",
+		url: "http://diglib.hab.de/mss/50-weiss/max/00010.jpg"
+    },
+	{
+		type: "image",
+		url: "http://diglib.hab.de/mss/50-weiss/max/00011.jpg"
+    },
+	{
+		type: "image",
+		url: "http://diglib.hab.de/mss/50-weiss/max/00012.jpg"
+    },
+	{
+		type: "image",
+		url: "http://diglib.hab.de/mss/50-weiss/max/00013.jpg"
+    },
+	{
+		type: "image",
+		url: "http://diglib.hab.de/mss/50-weiss/max/00011.jpg"
+    },
+	],
 	showNavigationControl: true,
 	showReferenceStrip: true,
 	defaultZoomLevel : 0,
 	maxZoomLevel : 10,
-	fitHorizontally : true,
+	fitHorizontally : true
 });
 
 $(window).on('load', function(){
+	viewer.goToPage(10);
 	$.ajax({
 		url: "./json/glosses.json"
 	})
@@ -65,6 +120,8 @@ $(window).on('load', function(){
 				$(resultDiv).removeClass("apparatus-visible");
 				$(resultDiv).addClass("apparatus-hidden");
 			}
+			let indexOfImage = jsonGlosses.glosses[position][id]["reading"]["index"];
+			viewer.goToPage(indexOfImage - 1);
 			let rectangle = jsonGlosses.glosses[position][id]["reading"]["zone"];
 			let upperLeftX = rectangle["ulx"];
 			let upperLeftY = rectangle["uly"];
@@ -74,14 +131,11 @@ $(window).on('load', function(){
 			let idOfOverlay = document.createAttribute("id");
 			idOfOverlay.value = "overlay";
 			overlayElement.setAttributeNode(idOfOverlay);
-			document.getElementById
-			let widthOfPicture = 1024;
-			let heightOfPicture = 1217;
+			let widthOfPicture = 2000;
+			let heightOfPicture = 2369;
 			let upperLeftXScaled = upperLeftX / widthOfPicture;
-			//let upperLeftYScaled = upperLeftY / heightOfPicture * 1217/1024;
 			let upperLeftYScaled = upperLeftY / heightOfPicture * 2369/2000;
 			let lowerRightXScaled = lowerRightX / widthOfPicture;
-			//let lowerRightYScaled = lowerRightY / heightOfPicture * 1217/1024;
 			let lowerRightYScaled = lowerRightY / heightOfPicture * 2369/2000;
 			let widthScaled = lowerRightXScaled - upperLeftXScaled;
 			let heightScaled = lowerRightYScaled - upperLeftYScaled;
