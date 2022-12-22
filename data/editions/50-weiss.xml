@@ -144,6 +144,8 @@
                   change of ci/ti ignored</p>
                <p>change of e/ae/e caudata ignored</p>
                <p>change of i/y ignored (e.g. sillaba/syllaba)</p>
+               <p>change of i/e ignored, when morphologically insignificant (e.g.
+                  elementum/elimentum)</p>
                <p>change of t/tt ignored (e.g. litera/littera; quatuor/quattuor)</p>
                <p>assimilations ignored (e.g. inliterata/illiterata; subposui/supposui)</p>
                <p>abbreviation of et, per, quae, quia, vel, and word endings silently expanded</p>
@@ -312,6 +314,12 @@
                   <catDesc> symbol added to link a lemma with a further lemma in order to highlight
                      their connection within Priscian's text. The two lemmata are not part of the
                      same sentence. Their connection regards the content, not the syntax.</catDesc>
+               </category>
+            </taxonomy>
+            <taxonomy xml:id="annotation-signs">
+               <category xml:id="nota-sign">
+                  <catDesc> symbol added in the margin of the text to call attention to a word,
+                     sentence or passage</catDesc>
                </category>
             </taxonomy>
          </classDecl>
@@ -530,6 +538,22 @@
                   <graphic url="../pictures/reference-sign-cross.png"/>
                </figure>
             </glyph>
+            <glyph xml:id="reference-sign-waved-obelus-with-underdot">
+               <localProp name="Name" value="REFERENCE SIGN WAVED OBELUS WITH UNDERDOT"/>
+               <localProp name="entity" value="reference-sign-waved-obelus-with-underdot"/>
+               <figure>
+                  <graphic url="../pictures/reference-sign-waved-obelus-with-underdot.png"/>
+               </figure>
+            </glyph>
+         </charDecl>
+         <charDecl n="annotation signs">
+            <glyph xml:id="Nota-sign">
+               <localProp name="Name" value="marginal annotation sign Nota"/>
+               <localProp name="entity" value="nota"/>
+               <figure>
+                  <graphic url="../pictures/nota-sign.png"/>
+               </figure>
+            </glyph>
          </charDecl>
       </encodingDesc>
    </teiHeader>
@@ -570,7 +594,7 @@
                      unit="char" quantity="7"/><supplied resp="#CG" reason="illegible"
                      >praeful</supplied>gens a Graecorum fontibus deriuatum Latinos proprio</quote>
                <quote source="#EDITION" n="II 1,3">sermone inuenio celebrasse et in omni<lb n="5"
-                  break="no" ed="1r"/>bus illorum uestigia <w xml:id="II-1-4-3">liberalibus</w></quote>
+                     break="no" ed="1r"/>bus illorum uestigia <w xml:id="II-1-4-3">liberalibus</w></quote>
                <app type="gloss" xml:id="gloss-1-3-1">
                   <lem wit="#EDITION">inuenio</lem>
                   <rdg wit="#COD_50"><add place="interlinear above" hand="#scr" facs="#zone.1r.9"
@@ -618,7 +642,7 @@
                </app>
                <quote source="#EDITION" n="II 1,4">consecutos <w xml:id="II-1-4-2">artibus</w>
                   <w xml:id="II-1-4-1">uideo</w>, nec solum ea, quae emendate ab illis sunt
-                  prolata,<lb n="6" ed="1r"/> sed</quote>
+                     prolata,<lb n="6"/> sed</quote>
                <app type="gloss" xml:id="gloss-1-4-1">
                   <lem wit="#EDITION">artibus</lem>
                   <rdg wit="#COD_50"><add place="interlinear above" hand="#scr" facs="#zone.1r.8"
@@ -936,7 +960,7 @@
                         scriptis</add></rdg>
                </app>
                <quote source="#EDITION" n="II 2,7">temperamentum, si ex utriusque linguae modera<lb
-                  n="16" break="no" ed="1r"/>toribus elegantiora in unum</quote>
+                     n="16" break="no"/>toribus elegantiora in unum</quote>
                <app type="reference-signs" xml:id="rs-2-7-1">
                   <lem wit="#EDITION">moderatoribus</lem>
                   <rdg wit="#COD_50"><add place="interlinear above" hand="#gl-1" facs="#zone.1r.54"
@@ -991,7 +1015,7 @@
                   <rdg wit="#COD_50" hand="#scr">sunt laudem</rdg>
                </app>
                <quote source="#EDITION" n="II 2,12">exemplum etiam proponere placuit, ne pi<lb
-                  n="19" break="no" ed="1r"/>geat alios etiam a me uel</quote>
+                     n="19" break="no"/>geat alios etiam a me uel</quote>
                <quote source="#EDITION" n="II 2,13">ignorantia forte praetermissa uel uitiose dicta
                   (nihil enim ex omni parte</quote>
                <quote source="#EDITION" n="II 2,14">perfectum in huma<lb n="20" break="no" ed="1r"/>nis
@@ -1028,7 +1052,7 @@
                         comparatione</add></rdg>
                </app>
                <quote source="#EDITION" n="II 2,17">uolui hos edere me libros compule<lb n="22"
-                  break="no" ed="1r"/>runt, qui alienis laboribus insidiantes</quote>
+                     break="no"/>runt, qui alienis laboribus insidiantes</quote>
                <app type="gloss" xml:id="gloss-2-17-1">
                   <lem wit="#EDITION">edere</lem>
                   <rdg wit="#COD_50"><add place="interlinear above" hand="#gl-1" facs="#zone.1r.63"
@@ -1089,7 +1113,7 @@
                <quote source="#EDITION" n="II 2,27">gradibus honorum<lb n="28" ed="1r"/> pretii, quantum
                   illis decoris addens tui, cuius mentem</quote>
                <quote source="#EDITION" n="II 2,28">tam Homeri credo quam Virgilii anima constare,
-                  quo<lb n="29" break="no" ed="1r"/>rum uterque</quote>
+                     quo<lb n="29" break="no"/>rum uterque</quote>
                <quote source="#EDITION" n="II 2,29">arcem possederat musicae, te tertium ex utroque
                   compositum esse</quote>
                <app type="text-variation" xml:id="tv-2-29-1">
@@ -1769,7 +1793,9 @@
                         ana="#lemma-lemma"><g ref="#reference-sign-lemma-lemma-1"/></add></rdg>
                </app>
                <quote source="#EDITION" n="II 6,4">accidentes, binae per singulas inuicem
-                  coeuntes.<lb n="24" ed="1v"/> uox autem dicta est uel</quote>
+                  coeuntes.<lb n="24" ed="1v"/> uox autem dicta <add type="text-variation"
+                     xml:id="tv-6-4-1" source="#COD_50" hand="#scr" place="inline"><g
+                        ref="#irish-est"/></add> uel</quote>
                <app type="emendation" xml:id="emendation-6-4-1">
                   <lem wit="#EDITION">accidentes</lem>
                   <rdg wit="#COD_50" hand="#scr">acc<del type="expunction">e</del><add
@@ -1804,10 +1830,6 @@
                <app type="rubrication" xml:id="rubr-6-4-1">
                   <lem wit="#EDITION">uox</lem>
                   <rdg wit="#COD_50" hand="#scr"><hi rend="red capitalis rustica">V</hi>ox</rdg>
-               </app>
-               <app type="text-variation" xml:id="tv-6-4-1">
-                  <lem wit="#EDITION">est</lem>
-                  <rdg wit="#COD_50" hand="#scr"><g ref="#irish-est"/></rdg>
                </app>
                <quote source="#EDITION" n="II 6,5">a uocando, ut dux a ducendo, uel ἀπὸ τοῦ βοῶ, ut
                   quibusdam placet.</quote>
@@ -1954,11 +1976,9 @@
                <quote source="#EDITION" n="II 6,10">partes inueniuntur) uel quod omnium est
                   breuissimum eorum,<lb n="27" ed="1v"/> quae diuidi </quote>
                <quote source="#EDITION" n="II 6,11">possunt, id quod diuidi non potest. possumus et
-                  sic definire: litera est uox,</quote>
-               <app type="text-variation" xml:id="tv-6-11-1">
-                  <lem wit="#EDITION">est</lem>
-                  <rdg wit="#COD_50" hand="#scr"><g ref="#irish-est"/></rdg>
-               </app>
+                  sic definire: litera <add type="text-variation" xml:id="tv-6-11-1"
+                     source="#COD_50" hand="#scr" place="inline"><g ref="#irish-est"
+                  /></add> uox,</quote>
                <quote source="#EDITION" n="II 6,12">quae scribi potest indiuidua.</quote>
                <quote source="#EDITION" n="II 6,13">dicitur autem lit<lb n="28" break="no" ed="1v"/>era uel
                   quasi legitera, quod legendi iter praebeat,</quote>
@@ -2013,7 +2033,9 @@
                <quote source="#EDITION" n="II 6,17">perficiunt corpus, sic etiam haec coniuncta
                   literalem uocem quasi corpus</quote>
                <quote source="#EDITION" n="II 6,18">aliquod componunt uel magis uere cor<lb n="31"
-                  break="no" ed="1v"/>pus. nam si aer corpus est, et uox,</quote>
+                  break="no" ed="1v"/>pus. nam si aer corpus <add type="text-variation"
+                     xml:id="tv-6-18-1" source="#COD_50" hand="#scr" place="inline"><g
+                        ref="#irish-est"/></add> et uox,</quote>
                <app type="gloss" xml:id="gloss-6-18-1">
                   <lem wit="#EDITION">uere</lem>
                   <rdg wit="#COD_50"><add place="interlinear above" hand="#gl-1" facs="#zone.1v.73"
@@ -2023,24 +2045,22 @@
                   <lem wit="#EDITION">si</lem>
                   <rdg wit="#COD_50" hand="#scr"><del type="expunction">qua</del>si</rdg>
                </app>
-               <app type="text-variation" xml:id="tv-6-18-1">
-                  <lem wit="#EDITION">est</lem>
-                  <rdg wit="#COD_50" hand="#scr"><g ref="#irish-est"/></rdg>
+               <app type="gloss" xml:id="gloss-6-18-2">
+                  <lem wit="#EDITION">aer corpus</lem>
+                  <rdg wit="#COD_50"><add place="left margin" hand="#gl-1" facs="#zone.1v.78"
+                        ana="#text-variant">aer corpus est· ita et uox quae ex lingua et aere
+                        constat</add></rdg>
                </app>
                <quote source="#EDITION" n="II 6,19">quae ex aere icto constat, corpus esse
                   ostenditur, quippe cum et tangit</quote>
                <quote source="#EDITION" n="II 6,20">aurem et tripertito <lb n="32" ed="1v"/>diuiditur, quod
-                  est suum corporis, hoc est <add type="text-variation" xml:id="tv-6-20-3"
+                     <add type="text-variation" xml:id="tv-6-20-1" source="#COD_50" hand="#scr"
+                     place="inline"><g ref="#irish-est"/></add> suum corporis, hoc<add
+                     type="text-variation" xml:id="tv-6-20-2" source="#COD_50" hand="#scr"
+                     place="inline"><g ref="#irish-est"/></add>
+                  <add type="text-variation" xml:id="tv-6-20-3"
                      source="#COD_50" hand="#scr" place="interlinear above" facs="#zone.1v.74"
                      >in</add></quote>
-               <app type="text-variation" xml:id="tv-6-20-1">
-                  <lem wit="#EDITION">quod est</lem>
-                  <rdg wit="#COD_50" hand="#scr">quod <g ref="#irish-est"/></rdg>
-               </app>
-               <app type="text-variation" xml:id="tv-6-20-2">
-                  <lem wit="#EDITION">hoc est</lem>
-                  <rdg wit="#COD_50" hand="#scr">hoc <g ref="#irish-est"/></rdg>
-               </app>
                <quote source="#EDITION" n="II 6,21">altitudinem, latitudinem, longitudinem, unde ex
                   omni quoque parte potest audiri.</quote>
                <app type="text-variation" xml:id="tv-6-21-1">
@@ -2066,6 +2086,66 @@
                   <rdg wit="#COD_50"><add place="interlinear above" hand="#gl-1" facs="#zone.1v.77"
                      ana="#glosses-elucidating-the-main-text">ante se</add></rdg>
                </app>
+               <app type="gloss" xml:id="gloss-6-21-4">
+                  <lem wit="#EDITION">altitudinem, latitudinem, longitudinem</lem>
+                  <rdg wit="#COD_50"><add place="left margin" hand="#gl-1" facs="#zone.1v.79"
+                        ana="#nota-sign"><g ref="#nota-sign"/></add></rdg>
+               </app>
+               <quote source="#EDITION" n="II 6,22">praeterea <lb n="32"/>tamen singulae syllabae
+                  altitudinem quidem habent in tenore,</quote>
+               <app type="rubrication" xml:id="rubr-6-22-1">
+                  <lem wit="#EDITION">praeterea</lem>
+                  <rdg wit="#COD_50" hand="#scr"><hi rend="red capitalis">P</hi>raeterea</rdg>
+               </app>
+               <quote source="#EDITION" n="II 6,23">crassitudinem uero uel latitudinem in spiritu,
+                  longitudinem in tempore.<lb n="33"/></quote>
+               <quote source="#EDITION" n="II 6,24">litera igitur <add type="text-variation"
+                     xml:id="tv-6-23-1" source="#COD_50" hand="#scr" place="inline"><g
+                        ref="#irish-est"/></add> nota elementi et uelut imago quaedam uocis
+                  literatae,</quote>
+               <quote source="#EDITION" n="II 6,25">quae cognoscitur ex qualitate et quantitate
+                  figurae linearum. <lb n="34"/>hoc ergo</quote>
+               <app type="rubrication" xml:id="rubr-6-25-1">
+                  <lem wit="#EDITION">hoc</lem>
+                  <rdg wit="#COD_50" hand="#scr"><hi rend="red capitalis">H</hi>oc</rdg>
+               </app>
+               <quote source="#EDITION" n="II 6,26">interest inter elementa et literas, quod
+                  elementa proprie dicuntur ipsae</quote>
+               <app type="gloss" xml:id="gloss-6-26-1">
+                  <lem wit="#EDITION">inter elementa et literas</lem>
+                  <rdg wit="#COD_50"><add place="left margin" hand="#gl-1" facs="#zone.1v.80"
+                        ana="#glosses-elucidating-the-main-text">Litterę caracteres· Elementa
+                        pronuntiationes</add></rdg>
+               </app>
+            </div>
+            <div type="page-of-Hertz-edition" n="Liber Primus" xml:id="liber-primus.3"
+               next="#liber-primus.4" prev="liber-primus.2" corresp="images-keil:Keil_v2_007.gif"
+               xml:lang="la">
+               <quote source="#EDITION" n="II 7,1">pronuntiationes, notae autem earum literae.<lb
+                     n="35"/> abusiue tamen et elementa pro</quote>
+               <app type="reference-signs" xml:id="rs-7-1-1">
+                  <lem wit="#EDITION">abusiue</lem>
+                  <rdg wit="#COD_50"><add place="above" hand="#gl-1" facs="#zone.1v.81"
+                        ana="#lemma-gloss"><g ref="#reference-sign-waved-obelus-with-underdot"
+                        /></add></rdg>
+               </app>
+               <app type="gloss" xml:id="gloss-7-1-1" subtype="to-be-checked">
+                  <lem wit="#EDITION">abusiue</lem>
+                  <rdg wit="#COD_50"><add place="left margin" hand="#gl-1" facs="#zone.1v.82"
+                        ana="#glosses-elucidating-the-main-text"><g
+                           ref="#reference-sign-waved-obelus-with-underdot"/>non naturaliter sed in
+                        usu asumptum</add></rdg>
+               </app>
+               <quote source="#EDITION" n="II 7,2">literis et literae pro elementis uocantur. cum
+                  enim dicimus non posse</quote>
+               <quote source="#EDITION" n="II 7,3">constare in eadem syllaba r <lb n="36"/> ante p,
+                  non de literis dicimus, sed de</quote>
+               <quote source="#EDITION" n="II 7,4">pronuntiatione earum: nam quantum ad scripturam
+                  possunt coniungi, non tamen</quote>
+               <quote source="#EDITION" n="II 7,5">etiam enuntiari,<lb n="37"/> nisi postposita r.</quote>
+
+
+
                <!--  -->
             </div>
 
@@ -2469,6 +2549,11 @@
          <zone xml:id="zone.1v.73" ulx="1715" uly="1454" lrx="1781" lry="1483"/>
          <zone xml:id="zone.1v.76" ulx="1006" uly="1548" lrx="1111" lry="1577"/>
          <zone xml:id="zone.1v.77" ulx="1143" uly="1549" lrx="1205" lry="1579"/>
+         <zone xml:id="zone.1v.78" ulx="153" uly="782" lrx="261" lry="815"/>
+         <zone xml:id="zone.1v.79" ulx="227" uly="809" lrx="243" lry="829"/>
+         <zone xml:id="zone.1v.80" ulx="163" uly="873" lrx="266" lry="906"/>
+         <zone xml:id="zone.1v.81" ulx="273" uly="892" lrx="292" lry="906"/>
+         <zone xml:id="zone.1v.82" ulx="165" uly="901" lrx="265" lry="920"/>
          <zone xml:id="zone.1v.75" ulx="883" uly="1557" lrx="936" lry="1577"/>
          <zone xml:id="zone.1v.74" ulx="857" uly="1565" lrx="885" lry="1581"/>
          <zone xml:id="zone.1v.70" ulx="283" uly="1380" lrx="508" lry="1487"/>
@@ -2491,6 +2576,11 @@
          <zone xml:id="zone.1v.5" ulx="531" uly="705" lrx="561" lry="734"/>
          <zone xml:id="zone.1v.4" ulx="283" uly="640" lrx="496" lry="718"/>
          <zone xml:id="zone.1v.3" ulx="291" uly="724" lrx="445" lry="788"/>
+         <zone xml:id="zone.1v.7" ulx="388" uly="371" lrx="399" lry="381"/>
+         <zone xml:id="zone.1v.6" ulx="325" uly="361" lrx="446" lry="377"/>
+         <zone xml:id="zone.1v.5" ulx="272" uly="362" lrx="287" lry="377"/>
+         <zone xml:id="zone.1v.4" ulx="145" uly="329" lrx="254" lry="369"/>
+         <zone xml:id="zone.1v.3" ulx="149" uly="372" lrx="228" lry="405"/>
          <zone xml:id="zone.1v.2" ulx="516" uly="714" lrx="541" lry="738"/>
       </surface>
       <surface xml:id="facs__00013" n="2r">
