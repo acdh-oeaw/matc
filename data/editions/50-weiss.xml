@@ -2186,11 +2186,77 @@
                <quote source="#EDITION" n="II 7,9">quattuor habet soni diffe<lb n="39" break="no"
                      ed="1v"/>rentias,<pb n="2r" xml:id="page__00013" facs="#facs__00013"/><lb n="1"
                      ed="2r"/> cum habet aspirationem et acuitur uel</quote>
-               <quote source="#EDITION" n="II 7,10">grauatur, et rursus cum sine aspiratione
-                     acuitur <add type="text-variation" xml:id="tv-7-10-1" source="#COD_50"
-                     hand="#scr" place="inline"><g ref="#vel"/></add> grauatur, ut
-                  hábeo</quote>
-
+               <quote source="#EDITION" n="II 7,10">grauatur, et rursus cum sine aspiratione acuitur
+                  uel grauatur, ut hábeo</quote>
+               <app type="text-variation" xml:id="tv-7-10-1">
+                  <lem wit="#EDITION">uel</lem>
+                  <rdg wit="#COD_50"><add place="inline" hand="#scr"><g ref="#vel"/></add></rdg>
+               </app>
+               <quote source="#EDITION" n="II 7,11">hàbemus, ábeo àbimus. <lb n="2" ed="2r"/> longa
+                  uero eadem sex modis sonat: cum habet</quote>
+               <app type="rubrication" xml:id="rubr-2-0-1">
+                  <lem wit="#EDITION">longa</lem>
+                  <rdg wit="#COD_50" hand="#scr"><hi rend="red capitalis">L</hi>onga</rdg>
+               </app>
+               <quote source="#EDITION" n="II 7,12">aspirationem et acuitur uel grauatur uel
+                  circumflectitur et rursus cum sine</quote>
+               <app type="text-variation" xml:id="tv-7-12-1">
+                  <lem wit="#EDITION">uel grauatur</lem>
+                  <rdg wit="#COD_50"><add place="inline" hand="#scr"><g ref="#vel"/>
+                     grauatur</add></rdg>
+               </app>
+               <quote source="#EDITION" n="II 7,13">aspiratione <lb n="3" ed="2r"/>acuitur uel
+                  grauatur uel circumflectitur, ut hámis hàmorum </quote>
+               <app type="text-variation" xml:id="tv-7-13-1">
+                  <lem wit="#EDITION">hàmorum</lem>
+                  <rdg wit="#COD_50"><add place="inline" hand="#scr"> hàmôrum</add></rdg>
+               </app>
+               <quote source="#EDITION" n="II 7,14">hâmus, árae àrarum âra. similiter aliae uocales
+                  possunt pro<lb n="4" break="no" ed="2r"/>ferri.</quote>
+               <app type="gloss" xml:id="gloss-7-14-1">
+                  <lem wit="#EDITION">hâmus, árae àrarum âra</lem>
+                  <rdg wit="#COD_50"><add place="right margin" hand="#gl-1" facs="#zone.2r.1"
+                        ana="#glosses-elucidating-the-main-text">hamus· aculeus· Arę· stabulum
+                        porcorum Ara <g ref="#id est"/> altare</add></rdg>
+               </app>
+               <app type="text-variation" xml:id="tv-7-13-2">
+                  <lem wit="#EDITION">àrarum</lem>
+                  <rdg wit="#COD_50"><add place="inline" hand="#scr"> àrârum</add></rdg>
+               </app>
+               <app type="text-variation" xml:id="tv-7-13-3">
+                  <lem wit="#EDITION">âra.</lem>
+                  <rdg wit="#COD_50"><add place="inline" hand="#scr"> âra et</add></rdg>
+               </app>
+               <quote source="#EDITION" n="II 7,15">praeterea tamen i et u uocales, quando mediae
+                  sunt, alternos inter</quote>
+               <app type="rubrication" xml:id="rubr-2-0-2">
+                  <lem wit="#EDITION">praeterea</lem>
+                  <rdg wit="#COD_50" hand="#scr"><hi rend="red capitalis">P</hi>reterea</rdg>
+               </app>
+               <quote source="#EDITION" n="II 7,16">se sonos uidentur confundere, teste Donato, ut
+                  uir, <lb n="5" ed="2r"/>optumus, quis.</quote>
+               <app type="emendation" xml:id="emendation-7-16-1">
+                  <lem wit="#EDITION">optumus</lem>
+                  <rdg wit="#COD_50" hand="#scr">opt<del type="expunction">i</del><add
+                        place="interlinear above">u</add>mus</rdg>
+               </app>
+               <quote source="#EDITION" n="II 7,17">et i quidem, quando post u consonantem loco
+                  digamma functam Aeolici</quote>
+               <quote source="#EDITION" n="II 7,18">ponitur breuis, sequente d uel m <lb n="6"
+                     ed="2r"/>uel r uel t uel x, sonum y Graecae</quote>
+               <app type="text-variation" xml:id="tv-7-18-1">
+                  <lem wit="#EDITION">uel m</lem>
+                  <rdg wit="#COD_50"><add place="inline" hand="#scr"><g ref="#vel"/> m</add></rdg>
+               </app>
+               <quote source="#EDITION" n="II 7,19">uidetur habere, ut uideo, uim, uirtus, uitium,
+                  uix, u autem,</quote>
+               <app type="rubrication" xml:id="rubr-2-0-3">
+                  <lem wit="#EDITION">u autem</lem>
+                  <rdg wit="#COD_50" hand="#scr"><hi rend="red capitalis">U</hi> autem</rdg>
+               </app>
+               <quote source="#EDITION" n="II 7,20">quamuis contractum, eun<lb n="7" break="no"
+                     ed="2r"/>dem tamen [hoc est y] sonum habet, inter q et e uel</quote>
+               
 
 
 
@@ -2625,6 +2691,7 @@
       </surface>
       <surface xml:id="facs__00013" n="2r">
          <graphic url="http://diglib.hab.de/mss/50-weiss/max/00013.jpg"/>
+         <zone xml:id="zone.2r.1" ulx="1504" uly="362" lrx="1681" lry="438"/>
       </surface>
       <surface xml:id="facs__00014" n="2v">
          <graphic url="http://diglib.hab.de/mss/50-weiss/max/00014.jpg"/>
