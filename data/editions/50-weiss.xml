@@ -91,9 +91,11 @@
                      </supportDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote xml:id="scr">writer of the main text</handNote>
-                     <handNote xml:id="gl-1">first glossator, id est Otfrid of
-                        Wissembourg</handNote>
+                     <handNote xml:id="scr">writer of the main text. The main text was written by
+                        two writers who alternated very often. One of them was Otfrid. A precise
+                        distinction of the parts either of them wrote will be made before completion
+                        of this edition</handNote>
+                     <handNote xml:id="gl-1">first glossator, i.e. Otfrid of Wissembourg</handNote>
                      <handNote xml:id="gl-2">second glossator, probably the same person who also
                         corrected the main text</handNote>
                      <handNote xml:id="sec">unclear whether the first or the second glossator was
@@ -242,15 +244,12 @@
                   <catDesc>construe-marks, i.e. symbols or letters, correlating words belonging
                      together or establishing word order</catDesc>
                </category>
-               <category xml:id="syntactical-glosses-using-words" n="42">
+               <category xml:id="suppletive-glosses" n="42">
                   <catDesc>glosses simplifying the understanding of a sentence by adding words which
                      Priscian had only implied</catDesc>
                </category>
                <category xml:id="glosses-identifying-a-speaker-or-an-example" n="421">
                   <catDesc>syntactical glosses adding an example</catDesc>
-               </category>
-               <category xml:id="suppletive-glosses" n="422">
-                  <catDesc>syntactical glosses adding words omitted by Priscian</catDesc>
                </category>
                <category xml:id="commentary-glosses" n="5">
                   <catDesc>glosses commenting on the content of Priscian's work</catDesc>
@@ -276,6 +275,10 @@
                </category>
                <category xml:id="glosses-elucidating-the-main-text-with-siglum-auctoris" n="544">
                   <catDesc>commentary glosses beginning often with id est</catDesc>
+               </category>
+               <category xml:id="glosses-elucidating-the-main-text-with-red-marginal-title" n="545">
+                  <catDesc>marginal titles in red minuscule resuming the content of a text segment.
+                     Otfrid wrote these titles</catDesc>
                </category>
                <category xml:id="etymological-glosses" n="55">
                   <catDesc>commentary glosses explaining the etymology of the lemma</catDesc>
@@ -320,6 +323,12 @@
                <category xml:id="nota-sign">
                   <catDesc> symbol added in the margin of the text to call attention to a word,
                      sentence or passage</catDesc>
+               </category>
+            </taxonomy>
+            <taxonomy xml:id="omission-signs">
+               <category xml:id="capital-delta">
+                  <catDesc> sign added above a lemma to mark omissions. It is repeated in the margin
+                     and introduces the missing segment of the main text.</catDesc>
                </category>
             </taxonomy>
          </classDecl>
@@ -552,6 +561,13 @@
                   <graphic url="../pictures/reference-sign-waved-obelus-with-underdot.png"/>
                </figure>
             </glyph>
+            <glyph xml:id="reference-sign-y">
+               <localProp name="Name" value="REFERENCE SIGN Y"/>
+               <localProp name="entity" value="reference-sign-y"/>
+               <figure>
+                  <graphic url="../pictures/reference-sign-y.png"/>
+               </figure>
+            </glyph>
          </charDecl>
          <charDecl n="annotation signs">
             <glyph xml:id="Nota-sign">
@@ -559,6 +575,15 @@
                <localProp name="entity" value="nota"/>
                <figure>
                   <graphic url="../pictures/nota-sign.png"/>
+               </figure>
+            </glyph>
+         </charDecl>
+         <charDecl n="omission signs">
+            <glyph xml:id="omission-sign-capital-delta">
+               <localProp name="Name" value="omission sign capital delta"/>
+               <localProp name="entity" value="omission-sign-capital-delta"/>
+               <figure>
+                  <graphic url="../pictures/omission-sign-capital-delta.png"/>
                </figure>
             </glyph>
          </charDecl>
@@ -687,7 +712,7 @@
                <app type="gloss" xml:id="gloss-1-5-1">
                   <lem wit="#EDITION">eorum</lem>
                   <rdg wit="#COD_50"><add place="interlinear above" hand="#scr" facs="#zone.1r.10"
-                        ana="#syntactical-glosses-using-words"><choice>
+                        ana="#suppletive-glosses"><choice>
                            <abbr><hi rend="overline">gr</hi></abbr>
                            <expan>grecorum</expan>
                         </choice></add></rdg>
@@ -1624,7 +1649,7 @@
                <app type="gloss" xml:id="gloss-5-4-3">
                   <lem wit="#EDITION">ipsa</lem>
                   <rdg wit="#COD_50"><add place="interlinear above" hand="#gl-1" facs="#zone.1v.29"
-                        ana="#suppletive-glosses">uoce</add></rdg>
+                        ana="#glosses-elucidating-the-main-text">uoce</add></rdg>
                </app>
                <quote source="#EDITION" n="II 5,5">uocis autem <w xml:id="w-2-5-5-1"
                      corresp="#w-2-6-3-1">differentiae</w> sunt quattuor: articulata, inarticulata,
@@ -1647,8 +1672,8 @@
                <app type="gloss" xml:id="gloss-5-6-2">
                   <lem wit="#EDITION">copulata</lem>
                   <rdg wit="#COD_50"><add place="interlinear above" hand="#gl-2" facs="#zone.1v.31"
-                        ana="#suppletive-glosses"><g ref="#idest"/> cum sensu mentis.
-                     Idem</add></rdg>
+                        ana="#glosses-elucidating-the-main-text"><g ref="#idest"/> cum sensu mentis.
+                        Idem</add></rdg>
                   <note resp="#CG" type="explanation" target="#gloss-5-6-2">perhaps written by a
                      third glossator?</note>
                </app>
@@ -1667,7 +1692,8 @@
                <app type="gloss" xml:id="gloss-5-7-2">
                   <lem wit="#EDITION">contraria</lem>
                   <rdg wit="#COD_50"><add place="interlinear above" hand="#gl-2" facs="#zone.1v.33"
-                        ana="#suppletive-glosses"><g ref="#sdot"/>articulatę</add></rdg>
+                        ana="#glosses-elucidating-the-main-text"><g ref="#sdot"
+                     />articulatę</add></rdg>
                   <note resp="#CG" type="explanation" target="#gloss-5-7-2">perhaps written by a
                      third glossator?</note>
                </app>
@@ -1836,7 +1862,8 @@
                <app type="gloss" xml:id="gloss-6-4-3">
                   <lem wit="#EDITION">singulas</lem>
                   <rdg wit="#COD_50"><add place="interlinear above" hand="#gl-2" facs="#zone.1v.50"
-                        ana="#suppletive-glosses">. Inferiores species uocum.</add></rdg>
+                        ana="#glosses-elucidating-the-main-text">. Inferiores species
+                     uocum.</add></rdg>
                </app>
                <app type="rubrication" xml:id="rubr-6-4-1">
                   <lem wit="#EDITION">uox</lem>
@@ -2097,7 +2124,7 @@
                   <rdg wit="#COD_50"><add place="interlinear above" hand="#gl-1" facs="#zone.1v.77"
                         ana="#glosses-elucidating-the-main-text">ante se</add></rdg>
                </app>
-               <app type="gloss" xml:id="gloss-6-21-4">
+               <app type="annotation-signs" xml:id="as-6-21-1">
                   <lem wit="#EDITION">altitudinem, latitudinem, longitudinem</lem>
                   <rdg wit="#COD_50"><add place="left margin" hand="#gl-1" facs="#zone.1v.79"
                         ana="#nota-sign"><g ref="#nota-sign"/></add></rdg>
@@ -2256,7 +2283,89 @@
                </app>
                <quote source="#EDITION" n="II 7,20">quamuis contractum, eun<lb n="7" break="no"
                      ed="2r"/>dem tamen [hoc est y] sonum habet, inter q et e uel</quote>
-               
+               <app type="reference-signs" xml:id="rs-7-20-1">
+                  <lem wit="#EDITION">contractum</lem>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#gl-1" facs="#zone.2r.2"
+                        ana="#lemma-gloss"><g ref="#reference-sign-y"/></add></rdg>
+               </app>
+               <app type="gloss" xml:id="gloss-7-20-1">
+                  <lem wit="#EDITION">contractum</lem>
+                  <rdg wit="#COD_50"><add place="right margin" hand="#gl-1" facs="#zone.2r.3"
+                        ana="#synonyms"><g ref="#reference-sign-y"/>
+                        <g ref="#id est"/>breuem· non plenum succinctum</add></rdg>
+               </app>
+               <app type="emendation" xml:id="emendation-7-20-1">
+                  <lem wit="#EDITION">habet</lem>
+                  <rdg wit="#COD_50" hand="#scr"><del type="expunction">cum</del><add place="inline"
+                     /></rdg>
+               </app>
+               <quote source="#EDITION" n="II 7,21">i uel ae diphthongum positum, ut que, quis,
+                  quae, nec non inter</quote>
+               <app type="text-variation" xml:id="tv-7-21-1">
+                  <lem wit="#EDITION">diphthongum</lem>
+                  <rdg wit="#COD_50" hand="#scr">diptongon</rdg>
+               </app>
+               <quote source="#EDITION" n="II 7,22">g et eas<lb n="8" break="no" ed="2r"/>dem
+                  uocales, cum in una syllaba sic inuenitur, ut pingue,</quote>
+               <quote source="#EDITION" n="II 7,23">sanguis, linguae.</quote>
+               <quote source="#EDITION" n="II 7,24">in consonantibus etiam sunt differentiae plures,
+                     trans<lb n="9" break="no" ed="2r"/>euntium in alias</quote>
+               <app type="rubrication" xml:id="rubr-7-24-1">
+                  <lem wit="#EDITION">in consonantibus</lem>
+                  <rdg wit="#COD_50" hand="#scr"><hi rend="red capitalis">I</hi>n
+                     consonantibus</rdg>
+               </app>
+               <app type="text-variation" xml:id="tv-7-24-1">
+                  <lem wit="#EDITION">sunt differentiae plures</lem>
+                  <rdg wit="#COD_50" hand="#scr">differentiae plures sunt</rdg>
+               </app>
+               <quote source="#EDITION" n="II 7,25">et non transeuntium, quippe diuersae sunt
+                  potestatis.</quote>
+               <quote source="#EDITION" n="II 7,26">accidit igitur literae nomen, figura,
+                  potestas:</quote>
+               <app type="rubrication" xml:id="rubr-7-26-1">
+                  <lem wit="#EDITION">accidit</lem>
+                  <rdg wit="#COD_50" hand="#scr"><hi rend="red capitalis">A</hi>ccidit</rdg>
+               </app>
+               <app type="gloss" xml:id="gloss-7-26-1">
+                  <lem wit="#EDITION">accidit</lem>
+                  <rdg wit="#COD_50"><add place="right margin" hand="#gl-1" facs="#zone.2r.4"
+                        ana="#glosses-elucidating-the-main-text-with-red-marginal-title"> de
+                        accidentibus litteris</add></rdg>
+               </app>
+               <quote source="#EDITION" n="II 7,27">nomen,<lb n="10" ed="2r"/> uelut a, b. et sunt
+                  indeclinabilia tam apud Graecos </quote>
+            </div>
+            <div type="page-of-Hertz-edition" n="Liber Primus" xml:id="liber-primus.4"
+               next="#liber-primus.5" prev="liber-primus.3" corresp="images-keil:Keil_v2_008.gif"
+               xml:lang="la">
+               <quote source="#EDITION" n="II 8,1">elementorum nomina quam apud Latinos, siue quod a
+                  barbaris inuen<lb n="11" break="no" ed="2r"/>ta dicuntur,</quote>
+               <app type="omission-signs" xml:id="os-8-1-1">
+                  <lem wit="#EDITION">dicuntur</lem>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#gl-2" facs="#zone.2r.5"
+                        ana="#capital-delta"><g ref="#omission-sign-capital-delta"/></add></rdg>
+               </app>
+               <app type="emendation" subtype="addition-of-omitted-text" xml:id="emendation-8-1-1">
+                  <lem wit="#EDITION">dicuntur</lem>
+                  <rdg wit="#COD_50"><add place="upper margin of the leaf" hand="#gl-2"
+                        facs="#zone.2r.6"><g ref="#omission-sign-capital-delta"/> quod esse ostendit
+                        uarro in secundo libro de antiquitate litterarum docens lingua caldaeorum
+                        singularum nomina litterarum ad earum formas esse facta et ex hoc certum
+                        fieri, eos esse primos auctores litterarum</add></rdg>
+                  <note resp="#CG" type="explanation">the scribe of the main text - i.e. Otfrid as
+                     for this segment - has omiited to copy a segment of Priscian's text
+                     corresponding to the lines II 8,2 to 8,4a of Hertz' edition. The second
+                     glossator emends this error and adds the missing text into the upper margin of
+                     the page</note>
+               </app>
+               <quote source="#EDITION" n="II 8,4b">siue quod</quote>
+
+
+
+
+
+
 
 
 
@@ -2692,6 +2801,11 @@
       <surface xml:id="facs__00013" n="2r">
          <graphic url="http://diglib.hab.de/mss/50-weiss/max/00013.jpg"/>
          <zone xml:id="zone.2r.1" ulx="1504" uly="362" lrx="1681" lry="438"/>
+         <zone xml:id="zone.2r.6" ulx="93" uly="125" lrx="1704" lry="244"/>
+         <zone xml:id="zone.2r.2" ulx="1315" uly="481" lrx="1352" lry="508"/>
+         <zone xml:id="zone.2r.3" ulx="1507" uly="485" lrx="1673" lry="556"/>
+         <zone xml:id="zone.2r.4" ulx="1494" uly="607" lrx="1694" lry="684"/>
+         <zone xml:id="zone.2r.5" ulx="280" uly="688" lrx="310" lry="711"/>
       </surface>
       <surface xml:id="facs__00014" n="2v">
          <graphic url="http://diglib.hab.de/mss/50-weiss/max/00014.jpg"/>
