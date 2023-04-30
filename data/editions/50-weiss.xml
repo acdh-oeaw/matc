@@ -568,6 +568,13 @@
                   <graphic url="../pictures/reference-sign-y.png"/>
                </figure>
             </glyph>
+            <glyph xml:id="reference-sign-converging-strokes-with-dicolon">
+               <localProp name="Name" value="reference sign converging strokes with dicolon"/>
+               <localProp name="entity" value="reference-sign-converging-strokes-with-dicolon"/>
+               <figure>
+                  <graphic url="../pictures/reference-sign-converging-strokes-with-dicolon.png"/>
+               </figure>
+            </glyph>
          </charDecl>
          <charDecl n="annotation signs">
             <glyph xml:id="Nota-sign">
@@ -2360,15 +2367,37 @@
                      the page</note>
                </app>
                <quote source="#EDITION" n="II 8,4b">siue quod</quote>
-
-
-
-
-
-
-
-
-
+               <quote source="#EDITION" n="II 8,5">simplicia haec et stabilia esse debent quasi
+                  fundamentum omnis doctrinae</quote>
+               <quote source="#EDITION" n="II 8,6">immobile, siue quod nec aliter <lb n="12" ed="2r"
+                  />apud Latinos poterant esse, cum a suis</quote>
+               <quote source="#EDITION" n="II 8,7">uocibus uocales nominentur, semiuocales uero in
+                  se desinant, mutae a se</quote>
+               <app type="gloss" xml:id="gloss-8-7-1">
+                  <lem wit="#EDITION">uocales</lem>
+                  <rdg wit="#COD_50"><add place="right margin" hand="#gl-1" facs="#zone.2r.7"
+                        ana="#glosses-elucidating-the-main-text">uocales dicuntur quia per se
+                        faciunt suam uocem aliisque praestant ut sonant</add></rdg>
+               </app>
+               <quote source="#EDITION" n="II 8,8">incipientes uo<lb n="13" break="no" ed="2r"/>cali
+                  terminentur, quas si flectas, significatio quoque nominum</quote>
+               <quote source="#EDITION" n="II 8,9">una euanescit.</quote>
+               <app type="reference-signs" xml:id="rs-8-9-1">
+                  <lem wit="#EDITION">una</lem>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#gl-1" facs="#zone.2r.8"
+                     ana="#lemma-gloss"><g ref="#reference-sign-converging-strokes-with-dicolon"/></add></rdg>
+               </app>
+               <app type="gloss" xml:id="gloss-8-9-1" subtype="to-be-checked">
+                  <lem wit="#EDITION">una</lem>
+                  <rdg wit="#COD_50"><add place="left margin" hand="#gl-1" facs="#zone.2r.9"
+                     ana="#glosses-elucidating-the-main-text"><gap unit="char"
+                        quantity="4" reason="illegible"/><supplied resp="#CG"
+                           reason="illegible">quem</supplied>admodum si di<gap unit="char"
+                              quantity="4" reason="illegible"/><supplied resp="#CG"
+                                 reason="illegible">citur</supplied> hoc·a· haec ·e·</add></rdg>
+               </app>
+               
+               
                <!--  -->
             </div>
 
@@ -2806,6 +2835,10 @@
          <zone xml:id="zone.2r.3" ulx="1507" uly="485" lrx="1673" lry="556"/>
          <zone xml:id="zone.2r.4" ulx="1494" uly="607" lrx="1694" lry="684"/>
          <zone xml:id="zone.2r.5" ulx="280" uly="688" lrx="310" lry="711"/>
+         <zone xml:id="zone.2r.7" ulx="1489" uly="772" lrx="1710" lry="832"/>
+         <zone xml:id="zone.2r.9" ulx="83" uly="778" lrx="178" lry="830"/>
+         <zone xml:id="zone.2r.8" ulx="839" uly="787" lrx="867" lry="808"/>
+
       </surface>
       <surface xml:id="facs__00014" n="2v">
          <graphic url="http://diglib.hab.de/mss/50-weiss/max/00014.jpg"/>
