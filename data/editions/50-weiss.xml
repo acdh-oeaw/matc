@@ -1766,12 +1766,12 @@
                      />Intellegimus de quo sint uolucre profectę, tamen inarticulatae dicuntur, quia
                      uox ut superius Inarticulata est quę a nullo affectu <lb n="22" ed="1v"
                      />proficiscitur.</add> aliae</quote>
-               <note resp="#CG" type="explanation">The addition is recorded in the apparatus of
-                  Hertz' edition, p. II, 5. MS St. Gallen 904 shares this same reading. MS Köln 200
-                  features the addition in the margin. MS Karlsruhe, BLB, Aug. perg. 132 features
-                  the addition on a schedula (f. 3r) along with the comment: "sed in libro romano
-                  non habetur". On this see <bibl corresp="#Cinato_2015">Cinato 2015, pp.
-                     527-529.</bibl></note>
+               <note resp="#CG" type="explanation" target="#tv-5-15-1">The addition is recorded in
+                  the apparatus of Hertz' edition, p. II, 5. MS St. Gallen 904 shares this same
+                  reading. MS Köln 200 features the addition in the margin. MS Karlsruhe, BLB, Aug.
+                  perg. 132 features the addition on a schedula (f. 3r) along with the comment: "sed
+                  in libro romano non habetur". On this see <bibl corresp="#Cinato_2015">Cinato
+                     2015, pp. 527-529.</bibl></note>
                <app type="gloss" xml:id="gloss-5-15-1">
                   <lem wit="#EDITION">coax</lem>
                   <rdg wit="#COD_50"><add place="interlinear above" hand="#gl-2" facs="#zone.1v.39"
@@ -1857,9 +1857,9 @@
                            ref="#reference-sign-cursive-Zeta"/> Articulata· et literata· Vt arma·
                         Articulata· et inliterata· Vt sibili hominum· Inarticulata· et literata· Vt
                         coax· Inarticulata· et inliterata· Vt crepitus; </add></rdg>
-                  <note resp="#CG" type="explanation"> The second glossator uses both the typically
-                     insular sign "7" and the common ligature for "et". A similar gloss occurs in MS
-                     Köln 200, f. 2r, in the superior margin.</note>
+                  <note resp="#CG" type="explanation" target="#gloss-6-4-1"> The second glossator
+                     uses both the typically insular sign "7" and the common ligature for "et". A
+                     similar gloss occurs in MS Köln 200, f. 2r, in the superior margin.</note>
                </app>
                <app type="gloss" xml:id="gloss-6-4-2">
                   <lem wit="#EDITION">binae</lem>
@@ -2058,8 +2058,8 @@
                <app type="text-variation" xml:id="tv-6-14-1">
                   <lem wit="#EDITION">in</lem>
                   <rdg wit="#COD_50" hand="#scr">antiqui in</rdg>
-                  <note resp="#CG" type="explanation">transposition of "antiqui" in MS 50
-                     Weiss.</note>
+                  <note resp="#CG" type="explanation" target="#tv-6-14-1">transposition of "antiqui"
+                     in MS 50 Weiss.</note>
                </app>
                <quote source="#EDITION" n="II 6,15">antiqui scri<lb n="29" break="no" ed="1v"/>bere
                   solebant <add type="text-variation" hand="#scr" source="#COD_50">litteris</add>.
@@ -2360,11 +2360,11 @@
                         uarro in secundo libro de antiquitate litterarum docens lingua caldaeorum
                         singularum nomina litterarum ad earum formas esse facta et ex hoc certum
                         fieri, eos esse primos auctores litterarum</add></rdg>
-                  <note resp="#CG" type="explanation">the scribe of the main text - i.e. Otfrid as
-                     for this segment - has omiited to copy a segment of Priscian's text
-                     corresponding to the lines II 8,2 to 8,4a of Hertz' edition. The second
-                     glossator emends this error and adds the missing text into the upper margin of
-                     the page</note>
+                  <note resp="#CG" type="explanation" target="#emendation-8-1-1"> the scribe of the
+                     main text - i.e. Otfrid as for this segment - has omiited to copy a part of
+                     Priscian's text corresponding to the lines II 8,2 to 8,4a of Hertz' edition.
+                     The second glossator emends this error and adds the missing text into the upper
+                     margin of the page</note>
                </app>
                <quote source="#EDITION" n="II 8,4b">siue quod</quote>
                <quote source="#EDITION" n="II 8,5">simplicia haec et stabilia esse debent quasi
@@ -2385,19 +2385,57 @@
                <app type="reference-signs" xml:id="rs-8-9-1">
                   <lem wit="#EDITION">una</lem>
                   <rdg wit="#COD_50"><add place="interlinear above" hand="#gl-1" facs="#zone.2r.8"
-                     ana="#lemma-gloss"><g ref="#reference-sign-converging-strokes-with-dicolon"/></add></rdg>
+                        ana="#lemma-gloss"><g ref="#reference-sign-converging-strokes-with-dicolon"
+                        /></add></rdg>
                </app>
                <app type="gloss" xml:id="gloss-8-9-1" subtype="to-be-checked">
                   <lem wit="#EDITION">una</lem>
                   <rdg wit="#COD_50"><add place="left margin" hand="#gl-1" facs="#zone.2r.9"
-                     ana="#glosses-elucidating-the-main-text"><gap unit="char"
-                        quantity="4" reason="illegible"/><supplied resp="#CG"
-                           reason="illegible">quem</supplied>admodum si di<gap unit="char"
-                              quantity="4" reason="illegible"/><supplied resp="#CG"
-                                 reason="illegible">citur</supplied> hoc·a· haec ·e·</add></rdg>
+                        ana="#glosses-elucidating-the-main-text"><gap unit="char" quantity="4"
+                           reason="illegible"/><supplied resp="#CG" reason="illegible"
+                           >quem</supplied>admodum si di<gap unit="char" quantity="4"
+                           reason="illegible"/><supplied resp="#CG" reason="illegible"
+                           >citur</supplied> hoc·a· haec ·e·</add></rdg>
                </app>
-               
-               
+               <quote source="#EDITION" n="II 8,10">uocales igitur, ut dictum est, per se prolatae
+                     no<lb n="14" break="no" ed="2r"/>men suum ostendunt,</quote>
+               <quote source="#EDITION" n="II 8,11">semiuocales uero ab e incipientes et in se
+                  terminantes, absque x, quae <add type="text-variation" xml:id="tv-8-11-1"
+                     hand="#scr">sola</add> ab</quote>
+               <quote source="#EDITION" n="II 8,12">i incipit per anastrophen <lb n="15" ed="2r"
+                  />Graeci nominis ξῖ, quia necesse fuit, cum sit</quote>
+               <app type="text-variation" xml:id="tv-8-12-1">
+                  <lem wit="#EDITION">anastrophen</lem>
+                  <rdg wit="#COD_50" hand="#scr">apostrophen</rdg>
+               </app>
+               <app type="reference-signs" xml:id="rs-8-12-1">
+                  <lem wit="#COD_50">apostrophen</lem>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#gl-1" facs="#zone.2r.10"
+                        ana="#lemma-gloss"><g ref="#reference-sign-two-horizontal-dots-distigme"
+                        /></add></rdg>
+               </app>
+               <app type="gloss" xml:id="gloss-8-12-1">
+                  <lem wit="#COD_50">apostrophen</lem>
+                  <rdg wit="#COD_50"><add place="right margin" hand="#gl-1" facs="#zone.2r.11"
+                        ana="#Greek-glosses"><g ref="#reference-sign-two-horizontal-dots-distigme"/>
+                        id est per conuersionem.</add></rdg>
+               </app>
+               <app type="text-variation" xml:id="tv-8-12-2">
+                  <lem wit="#EDITION">ξῖ</lem>
+                  <rdg wit="#COD_50" hand="#scr">ξ csi</rdg>
+               </app>
+               <quote source="#EDITION" n="II 8,13">semiuocalis, a uocali incipere et in se
+                  terminare, quae nouissime a Latinis<lb n="16" ed="2r"/></quote>
+               <app type="gloss" xml:id="gloss-8-13-1">
+                  <lem wit="#EDITION">Latinis</lem>
+                  <rdg wit="#COD_50"><add place="right margin" hand="#gl-1" facs="#zone.2r.12"
+                        ana="#glosses-elucidating-the-main-text"> Non habentes latini ·x· literam
+                        acceperunt figuram ·chi· x· grece consonantis et nomen ξ per imitationem
+                        ultime uocalis ·ix· dicentes et posuerunt inter suas literas· pro c· et ·s·
+                        siue ·g· et ·s·</add></rdg>
+               </app>
+
+
                <!--  -->
             </div>
 
@@ -2838,7 +2876,9 @@
          <zone xml:id="zone.2r.7" ulx="1489" uly="772" lrx="1710" lry="832"/>
          <zone xml:id="zone.2r.9" ulx="83" uly="778" lrx="178" lry="830"/>
          <zone xml:id="zone.2r.8" ulx="839" uly="787" lrx="867" lry="808"/>
-
+         <zone xml:id="zone.2r.10" ulx="1407" uly="840" lrx="1428" lry="855"/>
+         <zone xml:id="zone.2r.11" ulx="1483" uly="847" lrx="1633" lry="869"/>
+         <zone xml:id="zone.2r.12" ulx="1487" uly="871" lrx="1710" lry="1003"/>
       </surface>
       <surface xml:id="facs__00014" n="2v">
          <graphic url="http://diglib.hab.de/mss/50-weiss/max/00014.jpg"/>
