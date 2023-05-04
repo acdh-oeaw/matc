@@ -2251,7 +2251,7 @@
                   <lem wit="#EDITION">hâmus, árae àrarum âra</lem>
                   <rdg wit="#COD_50"><add place="right margin" hand="#gl-1" facs="#zone.2r.1"
                         ana="#glosses-elucidating-the-main-text">hamus· aculeus· Arę· stabulum
-                        porcorum Ara <g ref="#id est"/> altare</add></rdg>
+                        porcorum Ara <g ref="#idest"/> altare</add></rdg>
                </app>
                <app type="text-variation" xml:id="tv-7-13-2">
                   <lem wit="#EDITION">àrarum</lem>
@@ -2299,7 +2299,7 @@
                   <lem wit="#EDITION">contractum</lem>
                   <rdg wit="#COD_50"><add place="right margin" hand="#gl-1" facs="#zone.2r.3"
                         ana="#synonyms"><g ref="#reference-sign-y"/>
-                        <g ref="#id est"/>breuem· non plenum succinctum</add></rdg>
+                        <g ref="#idest"/>breuem· non plenum succinctum</add></rdg>
                </app>
                <app type="emendation" xml:id="emendation-7-20-1">
                   <lem wit="#EDITION">habet</lem>
@@ -2356,7 +2356,7 @@
                <app type="emendation" subtype="addition-of-omitted-text" xml:id="emendation-8-1-1">
                   <lem wit="#EDITION">dicuntur</lem>
                   <rdg wit="#COD_50"><add place="upper margin of the leaf" hand="#gl-2"
-                        facs="#zone.2r.6"><g ref="#omission-sign-capital-delta"/> quod esse ostendit
+                        facs="#zone.2r.6"><g ref="#omission-sign-capital-delta"/>quod esse ostendit
                         uarro in secundo libro de antiquitate litterarum docens lingua caldaeorum
                         singularum nomina litterarum ad earum formas esse facta et ex hoc certum
                         fieri, eos esse primos auctores litterarum</add></rdg>
