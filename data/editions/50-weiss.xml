@@ -654,10 +654,17 @@
                            ref="#construe-mark-two-vertical-dots-dicolon"/></add><ptr
                         target="#II-1-4-1 #II-1-4-5"/></rdg>
                </app>
+               <app type="gloss" subtype="to-be-checked" xml:id="gloss-1-3-5-1">
+                  <lem wit="#EDITION">et</lem>
+                  <rdg wit="#COD_50"><add place="right margin" hand="#gl-1" facs="#zone.1r.3" xml:lang="la"
+                     ana="#glosses-elucidating-the-main-text">propter sententiae prolixitatem ... eandem
+                     particulam <g ref="#idest"/> ... addidit...</add></rdg>
+               </app>
                <app type="gloss" xml:id="gloss-1-3-4">
                   <lem wit="#EDITION">in</lem>
                   <rdg wit="#COD_50"><add place="interlinear above" hand="#scr" facs="#zone.1r.2"
-                        xml:lang="la" ana="#text-variant"><g ref="#sdot"/> cum</add></rdg>
+                        xml:lang="la" ana="#glosses-elucidating-the-main-text"><g ref="#sdot"/>
+                        cum</add></rdg>
                </app>
                <app type="gloss" xml:id="gloss-1-3-5">
                   <lem wit="#EDITION">omnibus</lem>
@@ -666,9 +673,6 @@
                            ref="#construe-mark-two-horizontal-dots-distigme"/></add><ptr
                         target="#II-1-4-3 #II-1-4-2"/></rdg>
                </app>
-               <note place="right margin" type="gloss" subtype="to-be-checked" hand="#gl-1"
-                  facs="#zone.1r.3" xml:lang="la">propter sententiae prolixitatem ... addidit
-                  ...</note>
                <app type="gloss" xml:id="gloss-1-3-6">
                   <lem wit="#EDITION">liberalibus</lem>
                   <rdg wit="#COD_50"><add place="interlinear above" hand="#scr" facs="#zone.1r.7"
@@ -679,7 +683,7 @@
                   <lem wit="#EDITION">liberalibus</lem>
                   <rdg wit="#COD_50"><add place="interlinear above" hand="#gl-1" facs="#zone.1r.4"
                         xml:lang="la" ana="#synonyms #quia-glosses">nobilibus quia liberi homines
-                        artem discebant uel quia liberos faciunt homines a uitiis</add></rdg>
+                        artem discebant <g ref="#vel"/> quia liberos faciunt homines a uitiis</add></rdg>
                </app>
                <quote source="#EDITION" n="II 1,4">consecutos <w xml:id="II-1-4-2">artibus</w>
                   <w xml:id="II-1-4-1">uideo</w>, nec solum ea, quae emendate ab illis sunt
@@ -721,7 +725,7 @@
                   <rdg wit="#COD_50"><add place="interlinear above" hand="#scr" facs="#zone.1r.10"
                         ana="#suppletive-glosses"><choice>
                            <abbr><hi rend="overline">gr</hi></abbr>
-                           <expan>grecorum</expan>
+                           <expan>Grecorum</expan>
                         </choice></add></rdg>
                </app>
                <app type="reference-signs" xml:id="rs-1-5-1">
@@ -735,8 +739,7 @@
                   <rdg wit="#COD_50"><add place="right margin" hand="#gl-1" facs="#zone.1r.12"
                         ana="#glosses-elucidating-the-main-text"><g
                            ref="#two-horizontal-dots-with-acute" corresp="#ref-1"/> inter quas artes
-                        liberales uetustissima grammatica arguitur arte p<gap unit="char"
-                           quantity="3" reason="illegible"/>asse</add></rdg>
+                        liberales uetustissima grammatica arguitur arte peccasse</add></rdg>
                </app>
                <quote source="#EDITION" n="II 1,6">maxime uetustissi<lb n="7" break="no" ed="1r"/>ma
                   grammatica ars arguitur peccasse, <w xml:id="II-1-6-1">cuius</w> auctores,</quote>
