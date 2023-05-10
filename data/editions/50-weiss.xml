@@ -823,7 +823,7 @@
                   <lem wit="#EDITION">enucleatius</lem>
                   <rdg wit="#COD_50"><add place="right margin" hand="#gl-1" facs="#zone.1r.27"
                         ana="#glosses-elucidating-the-main-text"><g
-                           ref="#two-horizontal-dots-with-acute" corresp="#ref-2"/> apertius uel
+                           ref="#two-horizontal-dots-with-acute" corresp="#ref-2"/> apertius <g ref="#vel"/>
                         manifestius</add></rdg>
                </app>
                <app type="gloss" xml:id="gloss-1-10-2">
@@ -946,7 +946,7 @@
                   <lem wit="#EDITION">impudenter</lem>
                   <rdg wit="#COD_50"><add subtype="to-be-checked" place="right margin" hand="#gl-1"
                         facs="#zone.1r.45" ana="#glosses-elucidating-the-main-text"><g
-                           ref="#reference-sign-half-ring-with-dot-below"/> inreuerenter uel
+                           ref="#reference-sign-half-ring-with-dot-below"/> inreuerenter <g ref="#vel"/>
                         inrationabiliter. cum uerecundia et reuerentia</add></rdg>
                </app>
                <app type="gloss" xml:id="gloss-2-2-7">
@@ -2729,7 +2729,7 @@
          <zone xml:id="zone.1r.25" ulx="303" uly="728" lrx="406" lry="751"/>
          <zone xml:id="zone.1r.34" ulx="949" uly="736" lrx="967" lry="755"/>
          <zone xml:id="zone.1r.29" ulx="910" uly="738" lrx="928" lry="753"/>
-         <zone xml:id="zone.1r.36" ulx="1041" uly="740" lrx="1061" lry="751"/>
+         <zone xml:id="zone.1r.36" ulx="1040" uly="740" lrx="1061" lry="756"/>
          <zone xml:id="zone.1r.37" ulx="1143" uly="742" lrx="1170" lry="755"/>
          <zone xml:id="zone.1r.30" ulx="1000" uly="740" lrx="1018" lry="755"/>
          <zone xml:id="zone.1r.26" ulx="576" uly="738" lrx="594" lry="755"/>
@@ -2737,7 +2737,7 @@
          <zone xml:id="zone.1r.31" ulx="266" uly="773" lrx="301" lry="798"/>
          <zone xml:id="zone.1r.33" ulx="850" uly="779" lrx="922" lry="800"/>
          <zone xml:id="zone.1r.35" ulx="971" uly="781" lrx="982" lry="798"/>
-         <zone xml:id="zone.1r.40" ulx="828" uly="786" lrx="848" lry="796"/>
+         <zone xml:id="zone.1r.40" ulx="826" uly="786" lrx="848" lry="802"/>
          <zone xml:id="zone.1r.38" ulx="604" uly="786" lrx="625" lry="800"/>
          <zone xml:id="zone.1r.39" ulx="705" uly="788" lrx="721" lry="800"/>
          <zone xml:id="zone.1r.32" ulx="1504" uly="790" lrx="1658" lry="831"/>
