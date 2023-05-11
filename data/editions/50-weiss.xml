@@ -2707,24 +2707,24 @@
       <surface xml:id="facs__00011" n="1r">
          <graphic url="http://diglib.hab.de/mss/50-weiss/max/00011.jpg"/>
          <zone xml:id="zone.1r.1" ulx="1252" uly="510" lrx="1365" lry="537"/>
-         <zone xml:id="zone.1r.15" ulx="1391" uly="508" lrx="1402" lry="526"/>
-         <zone xml:id="zone.1r.9" ulx="1164" uly="516" lrx="1178" lry="529"/>
-         <zone xml:id="zone.1r.6" ulx="1451" uly="528" lrx="1465" lry="537"/>
+         <zone xml:id="zone.1r.15" ulx="1384" uly="508" lrx="1402" lry="532"/>
+         <zone xml:id="zone.1r.9" ulx="1159" uly="516" lrx="1177" lry="535"/>
+         <zone xml:id="zone.1r.6" ulx="1451" uly="528" lrx="1467" lry="541"/>
          <zone xml:id="zone.1r.5" ulx="1195" uly="551" lrx="1266" lry="580"/>
          <zone xml:id="zone.1r.17" ulx="1471" uly="566" lrx="1482" lry="580"/>
          <zone xml:id="zone.1r.16" ulx="924" uly="566" lrx="936" lry="584"/>
          <zone xml:id="zone.1r.8" ulx="826" uly="574" lrx="844" lry="584"/>
          <zone xml:id="zone.1r.11" ulx="1195" uly="596" lrx="1223" lry="617"/>
-         <zone xml:id="zone.1r.10" ulx="576" uly="598" lrx="609" lry="623"/>
+         <zone xml:id="zone.1r.10" ulx="576" uly="598" lrx="611" lry="624"/>
          <zone xml:id="zone.1r.12" ulx="1496" uly="609" lrx="1701" lry="711"/>
          <zone xml:id="zone.1r.19" ulx="676" uly="633" lrx="691" lry="658"/>
-         <zone xml:id="zone.1r.13" ulx="574" uly="638" lrx="684" lry="660"/>
-         <zone xml:id="zone.1r.21" ulx="1438" uly="640" lrx="1451" lry="660"/>
+         <zone xml:id="zone.1r.13" ulx="574" uly="638" lrx="678" lry="665"/>
+         <zone xml:id="zone.1r.21" ulx="1429" uly="640" lrx="1462" lry="663"/>
          <zone xml:id="zone.1r.14" ulx="1121" uly="638" lrx="1334" lry="666"/>
          <zone xml:id="zone.1r.18" ulx="393" uly="640" lrx="410" lry="660"/>
          <zone xml:id="zone.1r.20" ulx="1178" uly="652" lrx="1191" lry="670"/>
-         <zone xml:id="zone.1r.24" ulx="1354" uly="685" lrx="1418" lry="711"/>
-         <zone xml:id="zone.1r.23" ulx="684" uly="687" lrx="699" lry="703"/>
+         <zone xml:id="zone.1r.24" ulx="1354" uly="685" lrx="1423" lry="716"/>
+         <zone xml:id="zone.1r.23" ulx="680" uly="687" lrx="699" lry="707"/>
          <zone xml:id="zone.1r.28" ulx="896" uly="716" lrx="939" lry="742"/>
          <zone xml:id="zone.1r.25" ulx="303" uly="728" lrx="406" lry="751"/>
          <zone xml:id="zone.1r.34" ulx="949" uly="736" lrx="967" lry="755"/>
@@ -2743,43 +2743,43 @@
          <zone xml:id="zone.1r.32" ulx="1504" uly="790" lrx="1658" lry="831"/>
          <zone xml:id="zone.1r.42" ulx="994" uly="814" lrx="1078" lry="843"/>
          <zone xml:id="zone.1r.41" ulx="100" uly="821" lrx="184" lry="892"/>
-         <zone xml:id="zone.1r.50" ulx="1031" uly="860" lrx="1080" lry="886"/>
+         <zone xml:id="zone.1r.50" ulx="1031" uly="860" lrx="1085" lry="890"/>
          <zone xml:id="zone.1r.46" ulx="910" uly="860" lrx="973" lry="882"/>
-         <zone xml:id="zone.1r.44" ulx="877" uly="860" lrx="898" lry="884"/>
-         <zone xml:id="zone.1r.45" ulx="1498" uly="864" lrx="1697" lry="932"/>
+         <zone xml:id="zone.1r.44" ulx="877" uly="860" lrx="899" lry="889"/>
+         <zone xml:id="zone.1r.45" ulx="1498" uly="855" lrx="1701" lry="932"/>
          <zone xml:id="zone.1r.51" ulx="1141" uly="868" lrx="1197" lry="890"/>
-         <zone xml:id="zone.1r.47" ulx="1008" uly="868" lrx="1025" lry="886"/>
-         <zone xml:id="zone.1r.48" ulx="1414" uly="872" lrx="1436" lry="888"/>
-         <zone xml:id="zone.1r.49" ulx="1471" uly="874" lrx="1492" lry="892"/>
+         <zone xml:id="zone.1r.47" ulx="1007" uly="868" lrx="1034" lry="890"/>
+         <zone xml:id="zone.1r.48" ulx="1414" uly="872" lrx="1435" lry="894"/>
+         <zone xml:id="zone.1r.49" ulx="1465" uly="874" lrx="1492" lry="896"/>
          <zone xml:id="zone.1r.52" ulx="492" uly="903" lrx="760" lry="932"/>
-         <zone xml:id="zone.1r.53" ulx="305" uly="993" lrx="434" lry="1024"/>
-         <zone xml:id="zone.1r.54" ulx="1426" uly="1001" lrx="1449" lry="1022"/>
+         <zone xml:id="zone.1r.53" ulx="305" uly="993" lrx="436" lry="1031"/>
+         <zone xml:id="zone.1r.54" ulx="1426" uly="1001" lrx="1450" lry="1026"/>
          <zone xml:id="zone.1r.55" ulx="1504" uly="1002" lrx="1623" lry="1038"/>
-         <zone xml:id="zone.1r.56" ulx="291" uly="1034" lrx="383" lry="1069"/>
-         <zone xml:id="zone.1r.57" ulx="527" uly="1045" lrx="609" lry="1065"/>
-         <zone xml:id="zone.1r.58" ulx="375" uly="1131" lrx="395" lry="1148"/>
+         <zone xml:id="zone.1r.56" ulx="291" uly="1034" lrx="387" lry="1073"/>
+         <zone xml:id="zone.1r.57" ulx="527" uly="1045" lrx="615" lry="1069"/>
+         <zone xml:id="zone.1r.58" ulx="375" uly="1131" lrx="397" lry="1158"/>
          <zone xml:id="zone.1r.59" ulx="109" uly="1133" lrx="176" lry="1180"/>
-         <zone xml:id="zone.1r.65" ulx="506" uly="1209" lrx="541" lry="1236"/>
-         <zone xml:id="zone.1r.60" ulx="549" uly="1215" lrx="584" lry="1238"/>
+         <zone xml:id="zone.1r.65" ulx="506" uly="1209" lrx="554" lry="1244"/>
+         <zone xml:id="zone.1r.60" ulx="549" uly="1215" lrx="586" lry="1246"/>
          <zone xml:id="zone.1r.61" ulx="1502" uly="1219" lrx="1650" lry="1287"/>
          <zone xml:id="zone.1r.62" ulx="242" uly="1259" lrx="469" lry="1294"/>
          <zone xml:id="zone.1r.63" ulx="1209" uly="1261" lrx="1275" lry="1287"/>
-         <zone xml:id="zone.1r.64" ulx="412" uly="1347" lrx="482" lry="1374"/>
-         <zone xml:id="zone.1r.66" ulx="822" uly="1384" lrx="949" lry="1413"/>
+         <zone xml:id="zone.1r.64" ulx="411" uly="1347" lrx="482" lry="1379"/>
+         <zone xml:id="zone.1r.66" ulx="824" uly="1384" lrx="949" lry="1422"/>
          <zone xml:id="zone.1r.67" ulx="1523" uly="1479" lrx="1693" lry="1546"/>
-         <zone xml:id="zone.1r.69" ulx="1500" uly="1608" lrx="1607" lry="1658"/>
-         <zone xml:id="zone.1r.68" ulx="342" uly="1614" lrx="367" lry="1635"/>
-         <zone xml:id="zone.1r.70" ulx="1340" uly="1658" lrx="1457" lry="1688"/>
-         <zone xml:id="zone.1r.74" ulx="1018" uly="1694" lrx="1133" lry="1719"/>
+         <zone xml:id="zone.1r.69" ulx="1500" uly="1608" lrx="1609" lry="1667"/>
+         <zone xml:id="zone.1r.68" ulx="342" uly="1614" lrx="369" lry="1644"/>
+         <zone xml:id="zone.1r.70" ulx="1340" uly="1658" lrx="1475" lry="1697"/>
+         <zone xml:id="zone.1r.74" ulx="1018" uly="1694" lrx="1137" lry="1730"/>
          <zone xml:id="zone.1r.73" ulx="1494" uly="1695" lrx="1623" lry="1783"/>
-         <zone xml:id="zone.1r.72" ulx="1082" uly="1705" lrx="1105" lry="1725"/>
-         <zone xml:id="zone.1r.71" ulx="506" uly="1705" lrx="537" lry="1725"/>
+         <zone xml:id="zone.1r.72" ulx="1082" uly="1705" lrx="1107" lry="1733"/>
+         <zone xml:id="zone.1r.71" ulx="506" uly="1705" lrx="538" lry="1736"/>
          <zone xml:id="zone.1r.43" ulx="281" uly="860" lrx="348" lry="890"/>
          <zone xml:id="zone.1r.22" ulx="367" uly="687" lrx="383" lry="707"/>
-         <zone xml:id="zone.1r.7" ulx="574" uly="574" lrx="588" lry="582"/>
+         <zone xml:id="zone.1r.7" ulx="571" uly="574" lrx="588" lry="588"/>
          <zone xml:id="zone.1r.4" ulx="557" uly="551" lrx="1080" lry="584"/>
          <zone xml:id="zone.1r.3" ulx="1486" uly="467" lrx="1713" lry="574"/>
-         <zone xml:id="zone.1r.2" ulx="1393" uly="508" lrx="1463" lry="531"/>
+         <zone xml:id="zone.1r.2" ulx="1389" uly="508" lrx="1455" lry="536"/>
       </surface>
       <surface xml:id="facs__00012" n="1v">
          <graphic url="http://diglib.hab.de/mss/50-weiss/max/00012.jpg"/>
@@ -2808,7 +2808,7 @@
          <zone xml:id="zone.1v.38" ulx="285" uly="1014" lrx="496" lry="1063"/>
          <zone xml:id="zone.1v.39" ulx="1465" uly="1016" lrx="1568" lry="1049"/>
          <zone xml:id="zone.1v.40" ulx="1561" uly="1018" lrx="1701" lry="1041"/>
-         <zone xml:id="zone.1v.41" ulx="1762" uly="1067" lrx="1783" lry="1082"/>
+         <zone xml:id="zone.1v.41" ulx="1762" uly="1067" lrx="1784" lry="1089"/>
          <zone xml:id="zone.1v.42" ulx="1857" uly="1069" lrx="1896" lry="1098"/>
          <zone xml:id="zone.1v.48" ulx="451" uly="1094" lrx="1777" lry="1137"/>
          <zone xml:id="zone.1v.45" ulx="1771" uly="1096" lrx="1912" lry="1147"/>
@@ -2819,27 +2819,27 @@
          <zone xml:id="zone.1v.49" ulx="1535" uly="1152" lrx="1611" lry="1176"/>
          <zone xml:id="zone.1v.56" ulx="1393" uly="1176" lrx="1900" lry="1234"/>
          <zone xml:id="zone.1v.51" ulx="668" uly="1191" lrx="934" lry="1222"/>
-         <zone xml:id="zone.1v.54" ulx="1416" uly="1201" lrx="1451" lry="1221"/>
+         <zone xml:id="zone.1v.54" ulx="1416" uly="1201" lrx="1451" lry="1227"/>
          <zone xml:id="zone.1v.53" ulx="273" uly="1211" lrx="473" lry="1271"/>
          <zone xml:id="zone.1v.60" ulx="979" uly="1234" lrx="1225" lry="1271"/>
          <zone xml:id="zone.1v.65" ulx="1531" uly="1224" lrx="1906" lry="1431"/>
-         <zone xml:id="zone.1v.62" ulx="1432" uly="1242" lrx="1516" lry="1265"/>
-         <zone xml:id="zone.1v.61" ulx="1336" uly="1242" lrx="1391" lry="1275"/>
+         <zone xml:id="zone.1v.62" ulx="1430" uly="1242" lrx="1516" lry="1267"/>
+         <zone xml:id="zone.1v.61" ulx="1336" uly="1242" lrx="1393" lry="1279"/>
          <zone xml:id="zone.1v.55" ulx="1400" uly="1244" lrx="1434" lry="1275"/>
          <zone xml:id="zone.1v.59" ulx="539" uly="1242" lrx="725" lry="1277"/>
          <zone xml:id="zone.1v.57" ulx="609" uly="1269" lrx="629" lry="1285"/>
          <zone xml:id="zone.1v.66" ulx="512" uly="1291" lrx="676" lry="1326"/>
          <zone xml:id="zone.1v.67" ulx="943" uly="1293" lrx="969" lry="1320"/>
-         <zone xml:id="zone.1v.68" ulx="264" uly="1294" lrx="506" lry="1370"/>
+         <zone xml:id="zone.1v.68" ulx="264" uly="1294" lrx="505" lry="1372"/>
          <zone xml:id="zone.1v.71" ulx="1021" uly="1372" lrx="1139" lry="1398"/>
          <zone xml:id="zone.1v.69" ulx="559" uly="1382" lrx="582" lry="1409"/>
          <zone xml:id="zone.1v.72" ulx="1463" uly="1407" lrx="1750" lry="1439"/>
-         <zone xml:id="zone.1v.73" ulx="1715" uly="1454" lrx="1781" lry="1483"/>
+         <zone xml:id="zone.1v.73" ulx="1715" uly="1454" lrx="1781" lry="1489"/>
          <zone xml:id="zone.1v.78" ulx="293" uly="1527" lrx="502" lry="1590"/>
-         <zone xml:id="zone.1v.76" ulx="1006" uly="1548" lrx="1111" lry="1577"/>
+         <zone xml:id="zone.1v.76" ulx="1002" uly="1548" lrx="1111" lry="1584"/>
          <zone xml:id="zone.1v.77" ulx="1143" uly="1549" lrx="1205" lry="1579"/>
-         <zone xml:id="zone.1v.75" ulx="883" uly="1557" lrx="936" lry="1577"/>
-         <zone xml:id="zone.1v.74" ulx="857" uly="1565" lrx="885" lry="1581"/>
+         <zone xml:id="zone.1v.75" ulx="883" uly="1557" lrx="936" lry="1581"/>
+         <zone xml:id="zone.1v.74" ulx="857" uly="1565" lrx="884" lry="1587"/>
          <zone xml:id="zone.1v.79" ulx="441" uly="1583" lrx="476" lry="1624"/>
          <zone xml:id="zone.1v.80" ulx="315" uly="1709" lrx="518" lry="1772"/>
          <zone xml:id="zone.1v.81" ulx="533" uly="1745" lrx="576" lry="1770"/>
@@ -2847,7 +2847,7 @@
          <zone xml:id="zone.1v.83" ulx="1054" uly="1869" lrx="1149" lry="1894"/>
          <zone xml:id="zone.1v.84" ulx="329" uly="1895" lrx="441" lry="1934"/>
          <zone xml:id="zone.1v.70" ulx="283" uly="1380" lrx="508" lry="1487"/>
-         <zone xml:id="zone.1v.63" ulx="1465" uly="1254" lrx="1510" lry="1277"/>
+         <zone xml:id="zone.1v.63" ulx="1465" uly="1254" lrx="1508" lry="1283"/>
          <zone xml:id="zone.1v.58" ulx="270" uly="1269" lrx="438" lry="1300"/>
          <zone xml:id="zone.1v.52" ulx="1002" uly="1191" lrx="1119" lry="1221"/>
          <zone xml:id="zone.1v.50" ulx="1613" uly="1145" lrx="1834" lry="1174"/>
