@@ -273,7 +273,11 @@
                   <catDesc>commentary glosses beginning with an abbreviated reference to an author's
                      name</catDesc>
                </category>
-               <category xml:id="glosses-elucidating-the-main-text-with-red-marginal-title" n="545">
+               <category xml:id="glosses-elucidating-the-main-text-with-a-title" n="545">
+                  <catDesc>Titles added in the interlinear space or in the margin to resume the
+                     content of a text segment. </catDesc>
+               </category>
+               <category xml:id="glosses-elucidating-the-main-text-with-red-marginal-title" n="546">
                   <catDesc>marginal titles in red minuscule resuming the content of a text segment.
                      Otfrid wrote these titles</catDesc>
                </category>
@@ -1728,7 +1732,8 @@
                <app type="gloss" xml:id="gloss-5-9-1">
                   <lem wit="#EDITION">inueniuntur</lem>
                   <rdg wit="#COD_50"><add place="interlinear above" hand="#gl-2" facs="#zone.1v.35"
-                        ana="#glosses-elucidating-the-main-text">Articulata et literata</add></rdg>
+                        ana="#glosses-elucidating-the-main-text">Articulata <g ref="#et"/>
+                        literata</add></rdg>
                   <note resp="#CG" type="explanation" target="#gloss-5-9-1">MS St. Gallen 904 p.
                      3a18 and MS Köln 200 f. 2r contain the same gloss.</note>
                </app>
@@ -1739,8 +1744,8 @@
                <app type="gloss" xml:id="gloss-5-12-1">
                   <lem wit="#EDITION">quaedam</lem>
                   <rdg wit="#COD_50"><add place="interlinear above" hand="#gl-2" facs="#zone.1v.36"
-                        ana="#glosses-elucidating-the-main-text">articulata et
-                     inliterata</add></rdg>
+                     ana="#glosses-elucidating-the-main-text-with-a-title">articulata <g ref="#et"/>
+                        inliterata</add></rdg>
                   <note resp="#CG" type="explanation" target="#gloss-5-12-1">MS St. Gallen 904 p.
                      3a18 and MS Köln 200 f. 2r contain the same gloss.</note>
                </app>
@@ -1765,8 +1770,8 @@
                <app type="gloss" xml:id="gloss-5-14-1">
                   <lem wit="#EDITION">aliae</lem>
                   <rdg wit="#COD_50"><add place="left margin" hand="#gl-2" facs="#zone.1v.38"
-                        ana="#glosses-elucidating-the-main-text">inarticulata et
-                     literata</add></rdg>
+                     ana="#glosses-elucidating-the-main-text-with-a-title">inarticulata <g
+                           ref="#et"/> literata</add></rdg>
                   <note resp="#CG" type="explanation" target="#gloss-5-14-1">MS St. Gallen 904 p.
                      3a21 contains the same gloss.</note>
                </app>
@@ -1807,8 +1812,8 @@
                <app type="gloss" xml:id="gloss-5-15-4">
                   <lem wit="#EDITION">aliae</lem>
                   <rdg wit="#COD_50"><add place="left margin" hand="#gl-2" facs="#zone.1v.43"
-                        ana="#glosses-elucidating-the-main-text">inarticulata et
-                     inliterata</add></rdg>
+                     ana="#glosses-elucidating-the-main-text-with-a-title">inarticulata <g
+                           ref="#et"/> inliterata</add></rdg>
                </app>
             </div>
             <div type="page-of-Hertz-edition" n="Liber Primus" xml:id="liber-primus.2"
