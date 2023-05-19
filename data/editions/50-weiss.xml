@@ -562,6 +562,13 @@
                   <graphic url="../pictures/reference-sign-cross.png"/>
                </figure>
             </glyph>
+            <glyph xml:id="reference-sign-S">
+               <localProp name="Name" value="REFERENCE SIGN S"/>
+               <localProp name="entity" value="reference-sign-s"/>
+               <figure>
+                  <graphic url="../pictures/reference-sign-S.png"/>
+               </figure>
+            </glyph>
             <glyph xml:id="reference-sign-waved-obelus-with-underdot">
                <localProp name="Name" value="REFERENCE SIGN WAVED OBELUS WITH UNDERDOT"/>
                <localProp name="entity" value="reference-sign-waved-obelus-with-underdot"/>
@@ -1744,8 +1751,8 @@
                <app type="gloss" xml:id="gloss-5-12-1">
                   <lem wit="#EDITION">quaedam</lem>
                   <rdg wit="#COD_50"><add place="interlinear above" hand="#gl-2" facs="#zone.1v.36"
-                     ana="#glosses-elucidating-the-main-text-with-a-title">articulata <g ref="#et"/>
-                        inliterata</add></rdg>
+                        ana="#glosses-elucidating-the-main-text-with-a-title">articulata <g
+                           ref="#et"/> inliterata</add></rdg>
                   <note resp="#CG" type="explanation" target="#gloss-5-12-1">MS St. Gallen 904 p.
                      3a18 and MS Köln 200 f. 2r contain the same gloss.</note>
                </app>
@@ -1770,7 +1777,7 @@
                <app type="gloss" xml:id="gloss-5-14-1">
                   <lem wit="#EDITION">aliae</lem>
                   <rdg wit="#COD_50"><add place="left margin" hand="#gl-2" facs="#zone.1v.38"
-                     ana="#glosses-elucidating-the-main-text-with-a-title">inarticulata <g
+                        ana="#glosses-elucidating-the-main-text-with-a-title">inarticulata <g
                            ref="#et"/> literata</add></rdg>
                   <note resp="#CG" type="explanation" target="#gloss-5-14-1">MS St. Gallen 904 p.
                      3a21 contains the same gloss.</note>
@@ -1812,7 +1819,7 @@
                <app type="gloss" xml:id="gloss-5-15-4">
                   <lem wit="#EDITION">aliae</lem>
                   <rdg wit="#COD_50"><add place="left margin" hand="#gl-2" facs="#zone.1v.43"
-                     ana="#glosses-elucidating-the-main-text-with-a-title">inarticulata <g
+                        ana="#glosses-elucidating-the-main-text-with-a-title">inarticulata <g
                            ref="#et"/> inliterata</add></rdg>
                </app>
             </div>
@@ -1852,9 +1859,12 @@
                         ana="#lemma-lemma"><g ref="#reference-sign-lemma-lemma-1"/></add></rdg>
                </app>
                <quote source="#EDITION" n="II 6,4">accidentes, binae per singulas inuicem
-                     coeuntes.<lb n="23" ed="1v"/> uox autem dicta <add type="text-variation"
-                     xml:id="tv-6-4-1" source="#COD_50" hand="#scr" place="inline"><g
-                        ref="#irish-est"/></add> uel</quote>
+                     coeuntes.<lb n="23" ed="1v"/> uox autem dicta est uel</quote>
+               <app type="text-variation" xml:id="tv-6-4-1">
+                  <lem wit="#EDITION">est uel</lem>
+                  <rdg wit="#COD_50" hand="#scr"><g ref="#irish-est"/>
+                     <g ref="#vel"/></rdg>
+               </app>
                <app type="emendation" xml:id="emendation-6-4-1">
                   <lem wit="#EDITION">accidentes</lem>
                   <rdg wit="#COD_50" hand="#scr">acc<del type="expunction">e</del><add
@@ -1869,9 +1879,10 @@
                   <lem wit="#EDITION">accidentes</lem>
                   <rdg wit="#COD_50"><add place="interlinear one line above" hand="#gl-2"
                         facs="#zone.1v.48" ana="#glosses-summarizing-content"><g
-                           ref="#reference-sign-cursive-Zeta"/> Articulata· et literata· Vt arma·
-                        Articulata· et inliterata· Vt sibili hominum· Inarticulata· et literata· Vt
-                        coax· Inarticulata· et inliterata· Vt crepitus; </add></rdg>
+                           ref="#reference-sign-cursive-Zeta"/> Articulata· <g ref="#et"/> literata·
+                        Vt arma· Articulata· <g ref="#et"/> inliterata· Vt sibili hominum·
+                        Inarticulata· <g ref="#et"/> literata· Vt coax· Inarticulata· et inliterata·
+                        Vt crepitus; </add></rdg>
                   <note resp="#CG" type="explanation" target="#gloss-6-4-1"> The second glossator
                      uses both the typically insular sign "7" and the common ligature for "et". A
                      similar gloss occurs in MS Köln 200, f. 2r, in the superior margin.</note>
@@ -1901,7 +1912,7 @@
                </app>
                <app type="text-variation" xml:id="tv-6-5-1">
                   <lem wit="#EDITION">ἀπὸ τοῦ βοῶ</lem>
-                  <rdg wit="#COD_50" hand="#scr">AΠOT<add hand="#sec" place="above">o</add>YB<add
+                  <rdg wit="#COD_50" hand="#scr">AΠOT<add hand="#sec" place="inline">o</add>YB<add
                         hand="#scr" place="above">O</add>Ɯ</rdg>
                </app>
                <app type="gloss" xml:id="gloss-6-5-2">
@@ -1944,12 +1955,9 @@
                <app type="gloss" xml:id="gloss-6-7-2">
                   <lem wit="#EDITION">uocis compositae</lem>
                   <rdg wit="#COD_50"><add place="above" hand="#gl-2" facs="#zone.1v.59"
-                        ana="#glosses-elucidating-the-main-text"><g ref="#idest"/> syllabę et
-                        dictionis</add></rdg>
+                        ana="#glosses-elucidating-the-main-text"><g ref="#idest"/> syllabę <g
+                           ref="#et"/> dictionis</add></rdg>
                </app>
-               <note resp="#CG" type="explanation">
-                  <ref target="#gloss-6-7-2">This gloss</ref> was added after Otfrid had written
-                     <ref target="#gloss-6-7-3">his annotation</ref></note>
                <app type="reference-signs" xml:id="rs-6-7-2">
                   <lem wit="#EDITION">compositae</lem>
                   <rdg wit="#COD_50"><add place="above" hand="#gl-1" facs="#zone.1v.57"
@@ -1981,16 +1989,17 @@
                   <lem wit="#EDITION">minima</lem>
                   <rdg wit="#COD_50"><add place="interlinear above and right margin" hand="#gl-2"
                         facs="#zone.1v.65" ana="#glosses-elucidating-the-main-text">Duobus modis
-                        minima pars dicitur· uel sy<gap reason="illegible" unit="char" quantity="5"
-                           /><supplied resp="#CG">llabae</supplied> uel dict<gap reason="illegible"
-                           unit="char" quantity="5"/><supplied resp="#CG">ionis</supplied> minima
-                           p<gap reason="illegible" unit="char" quantity="3"/><supplied resp="#CG"
-                           >ars</supplied> est uel quia <gap reason="illegible" unit="char"
-                           quantity="5"/> uel dictio diu<gap reason="illegible" unit="char"
-                           quantity="3"/><supplied resp="#CG">idi</supplied> potest lite<gap
-                           reason="illegible" unit="char" quantity="2"/><supplied resp="#CG"
-                           >ra</supplied> autem diuid <gap reason="illegible" unit="char"
-                           quantity="1"/><supplied resp="#CG">i</supplied> non potest·</add></rdg>
+                        minima pars dicitur· <g ref="#vel"/> quia totius sy<gap reason="illegible"
+                           unit="char" quantity="5"/><supplied resp="#CG">llabae</supplied> uel
+                           dict<gap reason="illegible" unit="char" quantity="5"/><supplied
+                           resp="#CG">ionis</supplied> minima p<gap reason="illegible" unit="char"
+                           quantity="3"/><supplied resp="#CG">ars</supplied> est uel quia <gap
+                           reason="illegible" unit="char" quantity="5"/>
+                        <g ref="#vel"/> dictio diu<gap reason="illegible" unit="char" quantity="3"
+                           /><supplied resp="#CG">idi</supplied> potest lite<gap reason="illegible"
+                           unit="char" quantity="2"/><supplied resp="#CG">ra</supplied> autem diuid
+                           <gap reason="illegible" unit="char" quantity="2"/><supplied resp="#CG">i
+                           non</supplied> potest·</add></rdg>
                </app>
                <app type="reference-signs" xml:id="rs-6-8-1">
                   <lem wit="#EDITION">quantum</lem>
@@ -2046,15 +2055,15 @@
                <app type="reference-signs" xml:id="rs-6-13-1">
                   <lem wit="#EDITION">litera</lem>
                   <rdg wit="#COD_50"><add place="above" hand="#gl-1" facs="#zone.1v.69"
-                        ana="#lemma-gloss"><g ref="#reference-sign-cursive-Zeta"/></add></rdg>
+                     ana="#lemma-gloss"><g ref="#reference-sign-S"/></add></rdg>
                </app>
                <app type="gloss" subtype="to-be-checked" xml:id="gloss-6-13-1">
                   <lem wit="#EDITION">litera</lem>
                   <rdg wit="#COD_50"><add place="left margin" hand="#gl-1" facs="#zone.1v.70"
                         ana="#etymological-glosses #glosses-elucidating-the-main-text #translation-into-Old-High-German"
-                           ><g ref="#reference-sign-cursive-Zeta"/><del type="expunction"
+                     ><g ref="#reference-sign-S"/><del type="expunction"
                            resp="#gl-1">a</del> l<del type="expunction" resp="#gl-1">e</del><add
-                           place="above">i</add>tera· a lego et itere uel lituris <add
+                           place="above">i</add>tera· a lego et itere <g ref="#vel"/> lituris <add
                            xml:id="ohg-2-6-13-1" place="above" resp="#gl-1" type="OHG-gloss"
                            subtype="new-finding" n="2"><foreign xml:lang="goh"
                            >dilenne</foreign></add> liniuntur enim cum cera tabulę. fricando enim
