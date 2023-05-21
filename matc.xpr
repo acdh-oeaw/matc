@@ -10,7 +10,27 @@
                         <scenarioAssociation-array>
                             <scenarioAssociation>
                                 <field name="url">
-                                    <String>../matc/data/editions/50-weiss.xml</String>
+                                    <String>introduction.html</String>
+                                </field>
+                                <field name="scenarioIds">
+                                    <list>
+                                        <String>50-weiss-to-html-edition</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioTypes">
+                                    <list>
+                                        <String>XSL</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioStorageLocations">
+                                    <list>
+                                        <Byte>2</Byte>
+                                    </list>
+                                </field>
+                            </scenarioAssociation>
+                            <scenarioAssociation>
+                                <field name="url">
+                                    <String>data/editions/50-weiss.xml</String>
                                 </field>
                                 <field name="scenarioIds">
                                     <list>

@@ -231,7 +231,7 @@
                   <catDesc>morphological gloss on the preposition</catDesc>
                </category>
                <category xml:id="grammatical-glosses-on-the-interjection" n="37">
-                  <catDesc>morphological gloss on the interjenction</catDesc>
+                  <catDesc>morphological gloss on the interjection</catDesc>
                </category>
                <category xml:id="syntactical-glosses" n="4">
                   <catDesc>Glosses on syntax, elucidating the construction of a sentence</catDesc>
@@ -321,9 +321,13 @@
                </category>
             </taxonomy>
             <taxonomy xml:id="annotation-signs">
-               <category xml:id="nota-sign">
+               <category xml:id="annotation-sign-nota">
                   <catDesc> symbol added in the margin of the text to call attention to a word,
                      sentence or passage</catDesc>
+               </category>
+               <category xml:id="annotation-sign-diple">
+                  <catDesc> symbol added in the margin of the text to mark the end of the passage
+                     highlighted through a Nota sign</catDesc>
                </category>
             </taxonomy>
             <taxonomy xml:id="omission-signs">
@@ -592,11 +596,18 @@
             </glyph>
          </charDecl>
          <charDecl n="annotation signs">
-            <glyph xml:id="Nota-sign">
+            <glyph xml:id="nota-sign">
                <localProp name="Name" value="marginal annotation sign Nota"/>
                <localProp name="entity" value="nota"/>
                <figure>
-                  <graphic url="../pictures/nota-sign.png"/>
+                  <graphic url="../pictures/annotation-sign-nota.png"/>
+               </figure>
+            </glyph>
+            <glyph xml:id="diple">
+               <localProp name="Name" value="marginal annotation sign diple"/>
+               <localProp name="entity" value="diple"/>
+               <figure>
+                  <graphic url="../pictures/annotation-sign-diple.png"/>
                </figure>
             </glyph>
          </charDecl>
@@ -1910,10 +1921,11 @@
                         ana="#glosses-elucidating-the-main-text"><g ref="#idest"/> a sonando quia
                         Vox sonus dicitur.</add></rdg>
                </app>
-               <app type="text-variation" xml:id="tv-6-5-1">
+               <app type="emendation" xml:id="emendation-6-5-1">
                   <lem wit="#EDITION">ἀπὸ τοῦ βοῶ</lem>
-                  <rdg wit="#COD_50" hand="#scr">AΠOT<add hand="#sec" place="inline">o</add>YB<add
-                        hand="#scr" place="above">O</add>Ɯ</rdg>
+                  <rdg wit="#COD_50" hand="#scr">AΠOT</rdg>
+                  <rdg wit="#COD_50"><add hand="#sec" place="inline">o</add></rdg>
+                  <rdg wit="#COD_50" hand="#scr">YB<add hand="#scr" place="above">O</add>Ɯ</rdg>
                </app>
                <app type="gloss" xml:id="gloss-6-5-2">
                   <lem wit="#EDITION">ἀπὸ τοῦ βοῶ</lem>
@@ -2055,15 +2067,15 @@
                <app type="reference-signs" xml:id="rs-6-13-1">
                   <lem wit="#EDITION">litera</lem>
                   <rdg wit="#COD_50"><add place="above" hand="#gl-1" facs="#zone.1v.69"
-                     ana="#lemma-gloss"><g ref="#reference-sign-S"/></add></rdg>
+                        ana="#lemma-gloss"><g ref="#reference-sign-S"/></add></rdg>
                </app>
                <app type="gloss" subtype="to-be-checked" xml:id="gloss-6-13-1">
                   <lem wit="#EDITION">litera</lem>
                   <rdg wit="#COD_50"><add place="left margin" hand="#gl-1" facs="#zone.1v.70"
                         ana="#etymological-glosses #glosses-elucidating-the-main-text #translation-into-Old-High-German"
-                     ><g ref="#reference-sign-S"/><del type="expunction"
-                           resp="#gl-1">a</del> l<del type="expunction" resp="#gl-1">e</del><add
-                           place="above">i</add>tera· a lego et itere <g ref="#vel"/> lituris <add
+                           ><g ref="#reference-sign-S"/><del type="expunction" resp="#gl-1">a</del>
+                           l<del type="expunction" resp="#gl-1">e</del><add place="above"
+                        >i</add>tera· a lego et itere <g ref="#vel"/> lituris <add
                            xml:id="ohg-2-6-13-1" place="above" resp="#gl-1" type="OHG-gloss"
                            subtype="new-finding" n="2"><foreign xml:lang="goh"
                            >dilenne</foreign></add> liniuntur enim cum cera tabulę. fricando enim
@@ -2158,7 +2170,7 @@
                <app type="annotation-signs" xml:id="as-6-21-1">
                   <lem wit="#EDITION">altitudinem, latitudinem, longitudinem</lem>
                   <rdg wit="#COD_50"><add place="left margin" hand="#gl-1" facs="#zone.1v.79"
-                        ana="#nota-sign"><g ref="#Nota-sign"/></add></rdg>
+                        ana="#annotation-sign-nota"><g ref="#nota-sign"/></add></rdg>
                </app>
                <quote source="#EDITION" n="II 6,22">praeterea <lb n="32" ed="1v"/>tamen singulae
                   syllabae altitudinem quidem habent in tenore,</quote>
@@ -2168,6 +2180,11 @@
                </app>
                <quote source="#EDITION" n="II 6,23">crassitudinem uero uel latitudinem in spiritu,
                   longitudinem in tempore.<lb n="33" ed="1v"/></quote>
+               <app type="annotation-signs" xml:id="as-6-23-1">
+                  <lem wit="#EDITION">longitudinem in tempore</lem>
+                  <rdg wit="#COD_50"><add place="right margin" hand="#gl-1" facs="#zone.1v.85"
+                        ana="#annotation-sign-diple"><g ref="#diple"/></add></rdg>
+               </app>
                <quote source="#EDITION" n="II 6,24">litera igitur <add type="text-variation"
                      xml:id="tv-6-23-1" source="#COD_50" hand="#scr" place="inline"><g
                         ref="#irish-est"/></add> nota elementi et uelut imago quaedam uocis
@@ -2326,9 +2343,8 @@
                         <g ref="#idest"/>breuem· non plenum succinctum</add></rdg>
                </app>
                <app type="emendation" xml:id="emendation-7-20-1">
-                  <lem wit="#EDITION">habet</lem>
-                  <rdg wit="#COD_50" hand="#scr"><del type="expunction">cum</del><add place="inline"
-                     /></rdg>
+                  <lem wit="#EDITION">inter</lem>
+                  <rdg wit="#COD_50" hand="#scr"><del type="expunction">cum</del> inter</rdg>
                </app>
                <quote source="#EDITION" n="II 7,21">i uel ae diphthongum positum, ut que, quis,
                   quae, nec non inter</quote>
@@ -2380,14 +2396,14 @@
                <app type="emendation" subtype="addition-of-omitted-text" xml:id="emendation-8-1-1">
                   <lem wit="#EDITION">dicuntur</lem>
                   <rdg wit="#COD_50"><add place="upper margin of the leaf" hand="#gl-2"
-                        facs="#zone.2r.6"><g ref="#omission-sign-capital-delta"/>quod esse ostendit
+                        facs="#zone.2r.6"><g ref="#omission-sign-capital-delta"/> quod esse ostendit
                         uarro in secundo libro de antiquitate litterarum docens lingua caldaeorum
                         singularum nomina litterarum ad earum formas esse facta et ex hoc certum
                         fieri, eos esse primos auctores litterarum</add></rdg>
                   <note resp="#CG" type="explanation" target="#emendation-8-1-1"> the scribe of the
-                     main text - i.e. Otfrid as for this segment - has omiited to copy a part of
+                     main text - i.e. Otfrid as for this segment - omiited to copy a part of
                      Priscian's text corresponding to the lines II 8,2 to 8,4a of Hertz' edition.
-                     The second glossator emends this error and adds the missing text into the upper
+                     The second glossator emended this error and added the missing text into the upper
                      margin of the page</note>
                </app>
                <quote source="#EDITION" n="II 8,4b">siue quod</quote>
@@ -2415,17 +2431,25 @@
                <app type="gloss" xml:id="gloss-8-9-1" subtype="to-be-checked">
                   <lem wit="#EDITION">una</lem>
                   <rdg wit="#COD_50"><add place="left margin" hand="#gl-1" facs="#zone.2r.9"
-                        ana="#glosses-elucidating-the-main-text"><gap unit="char" quantity="4"
+                        ana="#glosses-elucidating-the-main-text"><gap unit="char" quantity="2"
                            reason="illegible"/><supplied resp="#CG" reason="illegible"
-                           >quem</supplied>admodum si di<gap unit="char" quantity="4"
+                              >qu</supplied>emadmodum si di<gap unit="char" quantity="4"
                            reason="illegible"/><supplied resp="#CG" reason="illegible"
                            >citur</supplied> hoc·a· haec ·e·</add></rdg>
                </app>
                <quote source="#EDITION" n="II 8,10">uocales igitur, ut dictum est, per se prolatae
                      no<lb n="14" break="no" ed="2r"/>men suum ostendunt,</quote>
+               <app type="rubrication" xml:id="rubr-8-10-1">
+                  <lem wit="#EDITION">uocales</lem>
+                  <rdg wit="#COD_50" hand="#scr"><hi rend="red capitalis">V</hi>ocales</rdg>
+               </app>
                <quote source="#EDITION" n="II 8,11">semiuocales uero ab e incipientes et in se
                   terminantes, absque x, quae <add type="text-variation" xml:id="tv-8-11-1"
                      hand="#scr">sola</add> ab</quote>
+               <app type="rubrication" xml:id="rubr-8-11-1">
+                  <lem wit="#EDITION">semiuocales</lem>
+                  <rdg wit="#COD_50" hand="#scr"><hi rend="red capitalis">S</hi>emiuocales</rdg>
+               </app>
                <quote source="#EDITION" n="II 8,12">i incipit per anastrophen <lb n="15" ed="2r"
                   />Graeci nominis ξῖ, quia necesse fuit, cum sit</quote>
                <app type="text-variation" xml:id="tv-8-12-1">
@@ -2450,7 +2474,7 @@
                </app>
                <quote source="#EDITION" n="II 8,13">semiuocalis, a uocali incipere et in se
                   terminare, quae nouissime a Latinis<lb n="16" ed="2r"/></quote>
-               <app type="gloss" xml:id="gloss-8-13-1">
+               <app type="gloss" subtype="to-be-checked" xml:id="gloss-8-13-1">
                   <lem wit="#EDITION">Latinis</lem>
                   <rdg wit="#COD_50"><add place="right margin" hand="#gl-1" facs="#zone.2r.12"
                         ana="#glosses-elucidating-the-main-text"> Non habentes latini ·x· literam
@@ -2906,6 +2930,7 @@
          <zone xml:id="zone.1v.75" ulx="883" uly="1557" lrx="936" lry="1581"/>
          <zone xml:id="zone.1v.74" ulx="857" uly="1565" lrx="884" lry="1587"/>
          <zone xml:id="zone.1v.79" ulx="441" uly="1583" lrx="476" lry="1624"/>
+         <zone xml:id="zone.1v.85" ulx="1821" uly="1601" lrx="1871" lry="1643"/>
          <zone xml:id="zone.1v.80" ulx="315" uly="1709" lrx="518" lry="1772"/>
          <zone xml:id="zone.1v.81" ulx="533" uly="1745" lrx="576" lry="1770"/>
          <zone xml:id="zone.1v.82" ulx="309" uly="1759" lrx="514" lry="1798"/>
