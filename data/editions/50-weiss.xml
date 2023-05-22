@@ -146,7 +146,9 @@
                   elementum/elimentum)</p>
                <p>change of t/tt ignored (e.g. litera/littera; quatuor/quattuor)</p>
                <p>assimilations ignored (e.g. inliterata/illiterata; subposui/supposui)</p>
-               <p>abbreviation of et, per, quae, quia, vel, and word endings silently expanded</p>
+               <p>common abbreviations for et, per, quae, quia, and word endings have been silently
+                  expanded. The Irish abbreviations for et (7-shaped form) and est, as well as the
+                  abbreviations for scilicet, vel and id est are recorded</p>
                <p>differences from Hertz' edition in the use of capital letters for proper names
                   ignored</p>
             </normalization>
@@ -2403,8 +2405,8 @@
                   <note resp="#CG" type="explanation" target="#emendation-8-1-1"> the scribe of the
                      main text - i.e. Otfrid as for this segment - omiited to copy a part of
                      Priscian's text corresponding to the lines II 8,2 to 8,4a of Hertz' edition.
-                     The second glossator emended this error and added the missing text into the upper
-                     margin of the page</note>
+                     The second glossator emended this error and added the missing text into the
+                     upper margin of the page</note>
                </app>
                <quote source="#EDITION" n="II 8,4b">siue quod</quote>
                <quote source="#EDITION" n="II 8,5">simplicia haec et stabilia esse debent quasi
@@ -2433,7 +2435,7 @@
                   <rdg wit="#COD_50"><add place="left margin" hand="#gl-1" facs="#zone.2r.9"
                         ana="#glosses-elucidating-the-main-text"><gap unit="char" quantity="2"
                            reason="illegible"/><supplied resp="#CG" reason="illegible"
-                              >qu</supplied>emadmodum si di<gap unit="char" quantity="4"
+                        >qu</supplied>emadmodum si di<gap unit="char" quantity="4"
                            reason="illegible"/><supplied resp="#CG" reason="illegible"
                            >citur</supplied> hoc·a· haec ·e·</add></rdg>
                </app>
