@@ -380,7 +380,7 @@
                <localProp name="Name" value="et"/>
                <localProp name="entity" value="Irish et"/>
                <figure>
-                  <graphic url="../pictures/et.png"/>
+                  <graphic url="../pictures/et.png" height="44px" width="25px"/>
                </figure>
             </glyph>
             <glyph xml:id="irish-est">

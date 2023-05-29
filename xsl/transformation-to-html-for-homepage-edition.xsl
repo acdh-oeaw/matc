@@ -114,7 +114,7 @@
     <xsl:template match="tei:teiHeader">
         <!-- <xsl:apply-templates select="tei:fileDesc/tei:sourceDesc"/> -->
         <!-- <xsl:apply-templates select="tei:encodingDesc/tei:editorialDecl"/> -->
-        <xsl:apply-templates select="tei:encodingDesc/tei:charDecl"/>
+        <xsl:apply-templates select="tei:encodingDesc/tei:charDecl[(@n = 'abbreviations') or (@n = 'construe-marks') or (@n = 'reference signs') or (@n = 'attention signs')]"/>
     </xsl:template>
     
     <xsl:template match="tei:sourceDesc">
@@ -194,10 +194,42 @@
         </div>
     </xsl:template>
     
+    <xsl:template match="tei:charDecl[@n = 'attention signs']">
+        <div class="pictures">
+            <p class="heading-2">Annotation signs:</p>
+            <div>
+                <xsl:apply-templates select="tei:glyph"/>
+            </div>
+            <xsl:apply-templates select="following-sibling::tei:charDecl[1][@n = 'excerption signs']" mode="annotation-signs-heading"/>
+        </div>
+    </xsl:template>
+    
+    <xsl:template match="tei:charDecl[@n = 'excerption signs']" mode="annotation-signs-heading">
+        <div>
+            <xsl:apply-templates select="tei:glyph"/>
+        </div>
+        <xsl:apply-templates select="following-sibling::tei:charDecl[1][@n = 'omission signs']" mode="annotation-signs-heading"/>
+    </xsl:template>
+    
+    <xsl:template match="tei:charDecl[@n = 'omission signs']" mode="annotation-signs-heading">
+        <div>
+            <xsl:apply-templates select="tei:glyph"/>
+        </div>
+    </xsl:template>
+    
     <xsl:template match="tei:glyph">
         <p class="glyph-section">
             <xsl:element name="img">
-               <xsl:attribute name="src" select="replace(tei:figure/tei:graphic/@url,'../pictures','./data/pictures')"/>
+                <xsl:attribute name="src" select="replace(tei:figure/tei:graphic/@url,'../pictures','./data/pictures')"/>
+                <xsl:if test="exists(child::tei:figure/child::tei:graphic/@height) and exists(child::tei:figure/child::tei:graphic/@width)">
+                    <xsl:attribute name="style">
+                        <xsl:text>width: </xsl:text>
+                        <xsl:value-of select="child::tei:figure/child::tei:graphic/@width"/>
+                        <xsl:text>; height: </xsl:text>
+                        <xsl:value-of select="child::tei:figure/child::tei:graphic/@height"/>
+                        <xsl:text>;</xsl:text>
+                    </xsl:attribute>
+                </xsl:if>
             </xsl:element>
             <xsl:text> - </xsl:text>
             <xsl:value-of select="tei:localProp[@name = 'Name']/@value"/>
