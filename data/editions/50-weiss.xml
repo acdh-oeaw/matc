@@ -313,6 +313,9 @@
                   <catDesc>glosses giving information about the socio-historical context of the
                      glossator</catDesc>
                </category>
+               <category xml:id="incomprehensible-glosses" n="60">
+                  <catDesc>glosses which do not make sense and need further study</catDesc>
+               </category>
             </taxonomy>
             <taxonomy xml:id="reference-signs">
                <category xml:id="lemma-gloss">
@@ -2104,9 +2107,14 @@
                            subtype="new-finding" n="2"><foreign xml:lang="goh"
                            >dilenne</foreign></add> liniuntur enim cum cera tabulę. fricando enim
                         deletur tabula</add></rdg>
-                  <note corresp="#ohg-2-6-13-1" type="explanation" resp="#CG"> for the OHG word
-                     dilenne see Gerhard Köbler, Lateinisch-althochdeutsches Wörterbuch, Göttingen
-                     1971, s.v. delere = (ar)dilen, p. 51</note>
+                  <note corresp="#ohg-2-6-13-1" type="explanation" resp="#CG"> for the OHG word <hi
+                        rend="italic">dilenne</hi> see Rudolf Schützeichel,<hi rend="italic">
+                        Althochdeutsches Wörterbuch. Siebente durchgesehene und verbesserte
+                        Auflage</hi> Berlin/Boston 2012, p. 312, s.v. <hi rend="bold">ardīlēn</hi> =
+                        <hi rend="italic">to delete</hi>. <hi rend="italic">Dilenne</hi> is an
+                     infinitive in the dative case translating the instrumental ablative <hi
+                        rend="italic">lituris</hi> of the gloss. We have here a gloss of a gloss. I
+                     am very thankful to Prof. Wolfgang Haubrichs for his expertise and precious help.</note>
                </app>
                <quote source="#EDITION" n="II 6,14">uel a lituris, ut quibusdam placet, quod
                   plerumque in ceratis tabulis</quote>
@@ -2743,27 +2751,29 @@
                   carent, sed quae exiguam partem uocis </quote>
                <quote source="#EDITION" n="II 9,29">habent.</quote>
                <quote source="#EDITION" n="II 9,30">uocales apud Latinos omnes sunt ancipites uel
-                  liquidae,<lb n="36" ed="2r"/> hoc est quae</quote>
+                     liquidae,<lb n="36" ed="2r"/> hoc est quae</quote>
                <app type="gloss" subtype="to-be-checked" xml:id="gloss-9-30-1">
                   <lem wit="#EDITION">liquidae</lem>
                   <rdg wit="#COD_50"><add place="interlinear above" hand="#gl-1" facs="#zone.2r.27"
-                     ana="#glosses-elucidating-the-main-text #translation-into-Old-High-German" xml:id="ohg-9-30-1" type="OHG-gloss"
-                           subtype="new-finding" n="3"><foreign xml:lang="goh"
-                              >twatu·</foreign></add></rdg>
-                  <note corresp="#ohg-9-30-1" type="explanation" resp="#CG"> for the OHG word
-                     "twatu" see SchG s.v. "zwene"</note>
+                        ana="#incomprehensible-glosses">tωatu·</add></rdg>
+                  <note corresp="#gloss-9-30-1" type="explanation" resp="#CG"> It seems that Otfrid
+                     tried to write something using Greek letters. The meaning of this word is not
+                     clear to me</note>
                </app>
-               <!--  -->
                <quote source="#EDITION" n="II 9,31">facile modo produci modo corripi possunt, sicut
                   etiam apud antiquissimos</quote>
-               <quote source="#EDITION" n="II 9,32">erant Graecorum ante inuentio<lb n="37" break="no" ed="2r"
-                  />nem η et ω, quibus inuentis ε et ο, quae</quote>
+               <quote source="#EDITION" n="II 9,32">erant Graecorum ante inuentio<lb n="37"
+                     break="no" ed="2r"/>nem η et ω, quibus inuentis ε et ο, quae</quote>
                <app type="text-variation" xml:id="tv-9-32-1">
                   <lem wit="#EDITION">η et ω</lem>
                   <rdg wit="#COD_50" hand="#scr">H et W</rdg>
                </app>
-
-
+            </div>
+               <div type="page-of-Hertz-edition" n="Liber Primus" xml:id="liber-primus.6"
+                  next="#liber-primus.5" prev="liber-primus.7" corresp="images-keil:Keil_v2_010.gif"
+                  xml:lang="la">
+                  <quote source="#EDITION" n="II 10,1">ante ancipites erant, remanserunt perpetuo breues, cum earum</quote>
+ 
 
 
 
