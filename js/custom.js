@@ -143,7 +143,161 @@ $(window).on('load', function(){
 			let lowerRightYScaled = lowerRightY / heightOfPicture * 2369/2000;
 			let widthScaled = lowerRightXScaled - upperLeftXScaled;
 			let heightScaled = lowerRightYScaled - upperLeftYScaled;
-			viewer.addOverlay(overlayElement,new OpenSeadragon.Rect(upperLeftXScaled,upperLeftYScaled,widthScaled,heightScaled));
+			viewer.addHandler('tile-loaded',function(){
+				viewer.removeOverlay(idOfOverlay.value);
+				viewer.addOverlay(overlayElement,new OpenSeadragon.Rect(upperLeftXScaled,upperLeftYScaled,widthScaled,heightScaled));
+			});
+			viewer.addHandler('add-overlay',function(){
+				let point = new OpenSeadragon.Point(upperLeftXScaled, upperLeftYScaled);
+				viewer.viewport.zoomTo(2, point, false);
+			});
+			});
+		});
+	});
+	
+	$.ajax({
+		url: "./json/text-variations.json"
+	})
+	.done(function(data) {
+		let jsonTextVariation = data;
+		
+		$(".link-for-text-variation").each(function(){
+		let id = this.id;
+		this.addEventListener('click', function(event) {
+			event.preventDefault();
+			let position = 0;
+			for (let i = 0; i < jsonTextVariation["text-variations"].length; i++)
+			{
+				if (jsonTextVariation["text-variations"][i]["id"] === id){
+					position = i;
+					break;
+				}
+			}
+		let indexOfImage = jsonTextVariation["text-variations"][position][id]["index"];
+			viewer.goToPage(indexOfImage - 1);
+			let rectangle = jsonTextVariation["text-variations"][position][id]["zone"];
+			let upperLeftX = rectangle["ulx"];
+			let upperLeftY = rectangle["uly"];
+			let lowerRightX = rectangle["lrx"];
+			let lowerRightY = rectangle["lry"];
+			let overlayElement = document.createElement("div");
+			let idOfOverlay = document.createAttribute("id");
+			idOfOverlay.value = "overlay";
+			overlayElement.setAttributeNode(idOfOverlay);
+			let widthOfPicture = 2000;
+			let heightOfPicture = 2369;
+			let upperLeftXScaled = upperLeftX / widthOfPicture;
+			let upperLeftYScaled = upperLeftY / heightOfPicture * 2369/2000;
+			let lowerRightXScaled = lowerRightX / widthOfPicture;
+			let lowerRightYScaled = lowerRightY / heightOfPicture * 2369/2000;
+			let widthScaled = lowerRightXScaled - upperLeftXScaled;
+			let heightScaled = lowerRightYScaled - upperLeftYScaled;
+			viewer.addHandler('tile-loaded',function(){
+				viewer.removeOverlay(idOfOverlay.value);
+				viewer.addOverlay(overlayElement,new OpenSeadragon.Rect(upperLeftXScaled,upperLeftYScaled,widthScaled,heightScaled));
+			});
+			viewer.addHandler('add-overlay',function(){
+				let point = new OpenSeadragon.Point(upperLeftXScaled, upperLeftYScaled);
+				viewer.viewport.zoomTo(2, point, false);
+			});
+			});
+		});
+	});
+	
+	$.ajax({
+		url: "./json/reference-signs.json"
+	})
+	.done(function(data) {
+		let jsonReferenceSigns = data;
+		
+		$(".link-for-reference-sign").each(function(){
+		let id = this.id;
+		this.addEventListener('click', function(event) {
+			event.preventDefault();
+			let position = 0;
+			for (let i = 0; i < jsonReferenceSigns["reference-signs"].length; i++)
+			{
+				if (jsonReferenceSigns["reference-signs"][i]["id"] === id){
+					position = i;
+					break;
+				}
+			}
+		    let indexOfImage = jsonReferenceSigns["reference-signs"][position][id]["index"];
+			viewer.goToPage(indexOfImage - 1);
+			let rectangle = jsonReferenceSigns["reference-signs"][position][id]["zone"];
+			let upperLeftX = rectangle["ulx"];
+			let upperLeftY = rectangle["uly"];
+			let lowerRightX = rectangle["lrx"];
+			let lowerRightY = rectangle["lry"];
+			let overlayElement = document.createElement("div");
+			let idOfOverlay = document.createAttribute("id");
+			idOfOverlay.value = "overlay";
+			overlayElement.setAttributeNode(idOfOverlay);
+			let widthOfPicture = 2000;
+			let heightOfPicture = 2369;
+			let upperLeftXScaled = upperLeftX / widthOfPicture;
+			let upperLeftYScaled = upperLeftY / heightOfPicture * 2369/2000;
+			let lowerRightXScaled = lowerRightX / widthOfPicture;
+			let lowerRightYScaled = lowerRightY / heightOfPicture * 2369/2000;
+			let widthScaled = lowerRightXScaled - upperLeftXScaled;
+			let heightScaled = lowerRightYScaled - upperLeftYScaled;
+			viewer.addHandler('tile-loaded',function(){
+				viewer.removeOverlay(idOfOverlay.value);
+				viewer.addOverlay(overlayElement,new OpenSeadragon.Rect(upperLeftXScaled,upperLeftYScaled,widthScaled,heightScaled));
+			});
+			viewer.addHandler('add-overlay',function(){
+				let point = new OpenSeadragon.Point(upperLeftXScaled, upperLeftYScaled);
+				viewer.viewport.zoomTo(2, point, false);
+			});
+			});
+		});
+	});
+	
+	$.ajax({
+		url: "./json/notes.json"
+	})
+	.done(function(data) {
+		let jsonNotes = data;
+		
+		$(".link-for-note").each(function(){
+		let id = this.id;
+		this.addEventListener('click', function(event) {
+			event.preventDefault();
+			let position = 0;
+			for (let i = 0; i < jsonNotes["notes"].length; i++)
+			{
+				if (jsonNotes["notes"][i]["id"] === id){
+					position = i;
+					break;
+				}
+			}
+		let indexOfImage = jsonNotes["notes"][position][id]["index"];
+			viewer.goToPage(indexOfImage - 1);
+			let rectangle = jsonNotes["notes"][position][id]["zone"];
+			let upperLeftX = rectangle["ulx"];
+			let upperLeftY = rectangle["uly"];
+			let lowerRightX = rectangle["lrx"];
+			let lowerRightY = rectangle["lry"];
+			let overlayElement = document.createElement("div");
+			let idOfOverlay = document.createAttribute("id");
+			idOfOverlay.value = "overlay";
+			overlayElement.setAttributeNode(idOfOverlay);
+			let widthOfPicture = 2000;
+			let heightOfPicture = 2369;
+			let upperLeftXScaled = upperLeftX / widthOfPicture;
+			let upperLeftYScaled = upperLeftY / heightOfPicture * 2369/2000;
+			let lowerRightXScaled = lowerRightX / widthOfPicture;
+			let lowerRightYScaled = lowerRightY / heightOfPicture * 2369/2000;
+			let widthScaled = lowerRightXScaled - upperLeftXScaled;
+			let heightScaled = lowerRightYScaled - upperLeftYScaled;
+			viewer.addHandler('tile-loaded',function(){
+				viewer.removeOverlay(idOfOverlay.value);
+				viewer.addOverlay(overlayElement,new OpenSeadragon.Rect(upperLeftXScaled,upperLeftYScaled,widthScaled,heightScaled));
+			});
+			viewer.addHandler('add-overlay',function(){
+				let point = new OpenSeadragon.Point(upperLeftXScaled, upperLeftYScaled);
+				viewer.viewport.zoomTo(2, point, false);
+			});
 			});
 		});
 	});

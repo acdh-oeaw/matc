@@ -19,6 +19,21 @@
                 <xsl:apply-templates select="//tei:app[@type = 'gloss']" mode="glosses-as-json"/>
             <xsl:text>]}</xsl:text>
         </xsl:result-document>
+        <xsl:result-document encoding="UTF-8" href="json/text-variations.json" media-type="text/plain" omit-xml-declaration="true" method="text">
+            <xsl:text>{ "text-variations" : [</xsl:text>
+            <xsl:apply-templates select="//tei:app[(@type = 'text-variation') and exists(child::tei:rdg/child::tei:add/@facs)]" mode="text-variations-as-json"/>
+            <xsl:text>]}</xsl:text>
+        </xsl:result-document>
+        <xsl:result-document encoding="UTF-8" href="json/reference-signs.json" media-type="text/plain" omit-xml-declaration="true" method="text">
+            <xsl:text>{ "reference-signs" : [</xsl:text>
+            <xsl:apply-templates select="//tei:app[(@type = 'reference-signs') and exists(child::tei:rdg/child::tei:add/@facs)]" mode="reference-signs-as-json"/>
+            <xsl:text>]}</xsl:text>
+        </xsl:result-document>
+        <xsl:result-document encoding="UTF-8" href="json/notes.json" media-type="text/plain" omit-xml-declaration="true" method="text">
+            <xsl:text>{ "notes" : [</xsl:text>
+            <xsl:apply-templates select="//tei:note[exists(@facs)]" mode="notes-as-json"/>
+            <xsl:text>]}</xsl:text>
+        </xsl:result-document>
         <head>
             <meta charset="UTF-8"/>
             <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
@@ -591,6 +606,21 @@
                 </i>
             </xsl:if>
             <xsl:apply-templates/>
+            <xsl:if test="exists(child::tei:add/@facs)">
+                <span class="around-link">
+                    <xsl:element name="a">
+                        <xsl:if test="parent::tei:app[@type = 'text-variation']">
+                            <xsl:attribute name="class" select="'link-for-text-variation'"/>
+                        </xsl:if>
+                        <xsl:if test="parent::tei:app[@type = 'reference-signs']">
+                            <xsl:attribute name="class" select="'link-for-reference-sign'"/>
+                        </xsl:if>
+                        <xsl:attribute name="href" select="parent::tei:app/@xml:id"/>
+                        <xsl:attribute name="id" select="parent::tei:app/@xml:id"/>
+                        <i class="fa-solid fa-info"></i>
+                    </xsl:element>
+                </span>
+            </xsl:if>
         </div>
     </xsl:template>
     
@@ -654,7 +684,17 @@
     </xsl:template>
     
     <xsl:template match="tei:note[@type = 'gloss']">
-        <p class="type-of-intervention"><xsl:text>Note:</xsl:text></p>
+        <p class="type-of-intervention">
+            <xsl:text>Note:</xsl:text>
+            <span class="around-link">
+                <xsl:element name="a">
+                    <xsl:attribute name="class" select="'link-for-note'"/>
+                    <xsl:attribute name="href" select="@xml:id"/>
+                    <xsl:attribute name="id" select="@xml:id"/>
+                    <i class="fa-solid fa-info"></i>
+                </xsl:element>
+            </span>
+        </p>
         <div class="note">
             <span class="set-margin-left-and-right"><i class="far fa-comment"></i></span>
             <xsl:apply-templates/>
@@ -724,6 +764,99 @@
         <xsl:text>)</xsl:text>
     </xsl:template>
     
+    <xsl:template match="tei:app[(@type = 'text-variation') and exists(child::tei:rdg/child::tei:add/@facs)]" mode="text-variations-as-json">
+        <xsl:text>{ "id" : "</xsl:text>
+        <xsl:value-of select="@xml:id"/>
+        <xsl:text>", "</xsl:text>
+        <xsl:value-of select="@xml:id"/>
+        <xsl:text>" : { </xsl:text>
+            <xsl:text>"zone" : { </xsl:text>
+                <xsl:text> "ulx" : "</xsl:text>
+                <xsl:value-of select="root()/tei:TEI/tei:facsimile/tei:surface/tei:zone[@xml:id = substring-after(current()/child::tei:rdg/child::tei:add/@facs,'#')]/@ulx"/>
+                <xsl:text>",</xsl:text>
+                <xsl:text> "uly" : "</xsl:text>
+                <xsl:value-of select="root()/tei:TEI/tei:facsimile/tei:surface/tei:zone[@xml:id = substring-after(current()/child::tei:rdg/child::tei:add/@facs,'#')]/@uly"/>
+                <xsl:text>",</xsl:text>
+                <xsl:text> "lrx" : "</xsl:text>
+                <xsl:value-of select="root()/tei:TEI/tei:facsimile/tei:surface/tei:zone[@xml:id = substring-after(current()/child::tei:rdg/child::tei:add/@facs,'#')]/@lrx"/>
+                <xsl:text>",</xsl:text>
+                <xsl:text> "lry" : "</xsl:text>
+                <xsl:value-of select="root()/tei:TEI/tei:facsimile/tei:surface/tei:zone[@xml:id = substring-after(current()/child::tei:rdg/child::tei:add/@facs,'#')]/@lry"/>
+                <xsl:text>"</xsl:text>
+            <xsl:text> },</xsl:text>
+        <xsl:text> "page-url" : "</xsl:text>
+        <xsl:value-of select="root()/tei:TEI/tei:facsimile/tei:surface/tei:zone[@xml:id = substring-after(current()/child::tei:rdg/child::tei:add/@facs,'#')]/parent::tei:surface/tei:graphic/@url"/>
+        <xsl:text>", "index" : "</xsl:text>
+        <xsl:apply-templates select="root()/tei:TEI/tei:facsimile/tei:surface/tei:zone[@xml:id = substring-after(current()/child::tei:rdg/child::tei:add/@facs,'#')]/parent::tei:surface/tei:graphic" mode="indizes"/>
+        <xsl:text>"</xsl:text>
+        <xsl:text>}}</xsl:text>
+        <xsl:if test="position() != last()">
+            <xsl:text>,</xsl:text>
+        </xsl:if>
+     </xsl:template>
+    
+    <xsl:template match="tei:app[(@type = 'reference-signs') and exists(child::tei:rdg/child::tei:add/@facs)]" mode="reference-signs-as-json">
+        <xsl:text>{ "id" : "</xsl:text>
+        <xsl:value-of select="@xml:id"/>
+        <xsl:text>", "</xsl:text>
+        <xsl:value-of select="@xml:id"/>
+        <xsl:text>" : { </xsl:text>
+            <xsl:text>"zone" : { </xsl:text>
+                <xsl:text> "ulx" : "</xsl:text>
+                <xsl:value-of select="root()/tei:TEI/tei:facsimile/tei:surface/tei:zone[@xml:id = substring-after(current()/child::tei:rdg/child::tei:add/@facs,'#')]/@ulx"/>
+                <xsl:text>",</xsl:text>
+                <xsl:text> "uly" : "</xsl:text>
+                <xsl:value-of select="root()/tei:TEI/tei:facsimile/tei:surface/tei:zone[@xml:id = substring-after(current()/child::tei:rdg/child::tei:add/@facs,'#')]/@uly"/>
+                <xsl:text>",</xsl:text>
+                <xsl:text> "lrx" : "</xsl:text>
+                <xsl:value-of select="root()/tei:TEI/tei:facsimile/tei:surface/tei:zone[@xml:id = substring-after(current()/child::tei:rdg/child::tei:add/@facs,'#')]/@lrx"/>
+                <xsl:text>",</xsl:text>
+                <xsl:text> "lry" : "</xsl:text>
+                <xsl:value-of select="root()/tei:TEI/tei:facsimile/tei:surface/tei:zone[@xml:id = substring-after(current()/child::tei:rdg/child::tei:add/@facs,'#')]/@lry"/>
+                <xsl:text>"</xsl:text>
+            <xsl:text> },</xsl:text>
+        <xsl:text> "page-url" : "</xsl:text>
+        <xsl:value-of select="root()/tei:TEI/tei:facsimile/tei:surface/tei:zone[@xml:id = substring-after(current()/child::tei:rdg/child::tei:add/@facs,'#')]/parent::tei:surface/tei:graphic/@url"/>
+        <xsl:text>", "index" : "</xsl:text>
+        <xsl:apply-templates select="root()/tei:TEI/tei:facsimile/tei:surface/tei:zone[@xml:id = substring-after(current()/child::tei:rdg/child::tei:add/@facs,'#')]/parent::tei:surface/tei:graphic" mode="indizes"/>
+        <xsl:text>"</xsl:text>
+        <xsl:text>}}</xsl:text>
+        <xsl:if test="position() != last()">
+            <xsl:text>,</xsl:text>
+        </xsl:if>
+    </xsl:template>
+    
+    <xsl:template match="tei:note[exists(@facs)]" mode="notes-as-json">
+        <xsl:text>{ "id" : "</xsl:text>
+        <xsl:value-of select="@xml:id"/>
+        <xsl:text>", "</xsl:text>
+        <xsl:value-of select="@xml:id"/>
+        <xsl:text>" : { </xsl:text>
+        <xsl:text>"zone" : { </xsl:text>
+        <xsl:text> "ulx" : "</xsl:text>
+        <xsl:value-of select="root()/tei:TEI/tei:facsimile/tei:surface/tei:zone[@xml:id = substring-after(current()/@facs,'#')]/@ulx"/>
+        <xsl:text>",</xsl:text>
+        <xsl:text> "uly" : "</xsl:text>
+        <xsl:value-of select="root()/tei:TEI/tei:facsimile/tei:surface/tei:zone[@xml:id = substring-after(current()/@facs,'#')]/@uly"/>
+        <xsl:text>",</xsl:text>
+        <xsl:text> "lrx" : "</xsl:text>
+        <xsl:value-of select="root()/tei:TEI/tei:facsimile/tei:surface/tei:zone[@xml:id = substring-after(current()/@facs,'#')]/@lrx"/>
+        <xsl:text>",</xsl:text>
+        <xsl:text> "lry" : "</xsl:text>
+        <xsl:value-of select="root()/tei:TEI/tei:facsimile/tei:surface/tei:zone[@xml:id = substring-after(current()/@facs,'#')]/@lry"/>
+        <xsl:text>"</xsl:text>
+        <xsl:text> },</xsl:text>
+        <xsl:text> "page-url" : "</xsl:text>
+        <xsl:value-of select="root()/tei:TEI/tei:facsimile/tei:surface/tei:zone[@xml:id = substring-after(current()/@facs,'#')]/parent::tei:surface/tei:graphic/@url"/>
+        <xsl:text>", "index" : "</xsl:text>
+        <xsl:apply-templates select="root()/tei:TEI/tei:facsimile/tei:surface/tei:zone[@xml:id = substring-after(current()/@facs,'#')]/parent::tei:surface/tei:graphic" mode="indizes"/>
+        <xsl:text>"</xsl:text>
+        <xsl:text>}}</xsl:text>
+        <xsl:if test="position() != last()">
+            <xsl:text>,</xsl:text>
+        </xsl:if>
+    </xsl:template>
+    
     <xsl:template match="tei:app[@type = 'gloss']" mode="glosses-as-json">
         <xsl:text>{ "id" : "</xsl:text>
             <xsl:value-of select="@xml:id"/>
@@ -761,8 +894,36 @@
         </xsl:if>
     </xsl:template>
     
-    <xsl:template match="tei:note" mode="glosses-as-json">
+    <!-- <xsl:template match="tei:note" mode="glosses-as-json">
         <xsl:value-of select="replace(normalize-space(text()),'(&quot;)','\\$1')"/>
+    </xsl:template> -->
+    
+    <xsl:template match="tei:note" mode="glosses-as-json">
+        <xsl:apply-templates select="child::node()" mode="note-content"/>
+    </xsl:template>
+    
+    <xsl:template match="tei:hi[@rend = 'italic']" mode="note-content">
+        <xsl:apply-templates select="child::node()" mode="note-content"/>
+    </xsl:template>
+    
+    <xsl:template match="tei:hi[@rend = 'bold']" mode="note-content">
+        <xsl:apply-templates select="child::node()" mode="note-content"/>
+    </xsl:template>
+    
+    <xsl:template match="text()" mode="note-content">
+        <xsl:choose>
+            <xsl:when test="contains(.,'&#xA;')">
+                <xsl:if test="starts-with(.,' ')">
+                    <xsl:value-of select="concat(' ',normalize-space(translate(.,'&#xA;','')))"/>
+                </xsl:if>
+                <xsl:if test="not(starts-with(.,' '))">
+                    <xsl:value-of select="normalize-space(translate(.,'&#xA;',''))"/>
+                </xsl:if>
+            </xsl:when>
+            <xsl:when test="not(contains(.,'&#xA;'))">
+                <xsl:value-of select="."/>
+            </xsl:when>
+        </xsl:choose>
     </xsl:template>
     
     <xsl:template match="tei:ptr" mode="glosses-as-json">
@@ -837,7 +998,6 @@
             <xsl:value-of select="root()/tei:TEI/tei:facsimile/tei:surface/tei:zone[@xml:id = substring-after(current()/@facs,'#')]/parent::tei:surface/tei:graphic/@url"/>
         <xsl:text>", "index" : "</xsl:text>
         <xsl:apply-templates select="root()/tei:TEI/tei:facsimile/tei:surface/tei:zone[@xml:id = substring-after(current()/@facs,'#')]/parent::tei:surface/tei:graphic" mode="indizes"/>
-<!--        <xsl:number select="root()/tei:TEI/tei:facsimile/tei:surface/tei:zone[@xml:id = substring-after(current()/@facs,'#')]/parent::tei:surface/tei:graphic/@url" count="//tei:surface/tei:graphic/@url" level="any"/> -->
         <xsl:text>"</xsl:text>
     </xsl:template>
     

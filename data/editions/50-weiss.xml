@@ -758,7 +758,7 @@
                </app>
                <quote source="#EDITION" n="II 1,4">consecutos <w xml:id="II-1-4-2">artibus</w>
                   <w xml:id="II-1-4-1">uideo</w>, nec solum ea, quae emendate ab illis sunt
-                     prolata,<lb n="6"/> sed</quote>
+                     prolata,<lb n="6" ed="1r"/> sed</quote>
                <app type="gloss" xml:id="gloss-1-4-1">
                   <lem wit="#EDITION">artibus</lem>
                   <rdg wit="#COD_50"><add place="interlinear above" hand="#scr" facs="#zone.1r.8"
@@ -980,7 +980,7 @@
                         ana="#syntactical-glosses-using-symbols"><g
                            ref="#construe-mark-dot-with-right-half-ring"/></add></rdg>
                </app>
-               <note place="left margin" type="gloss" subtype="to-be-checked" hand="#gl-1"
+               <note xml:id="note-1-12-1" place="left margin" type="gloss" subtype="to-be-checked" hand="#gl-1"
                   facs="#zone.1r.41" xml:lang="la"><gap unit="char" quantity="12" reason="illegible"
                   /></note>
                <quote source="#EDITION" n="II 1,13">neminem post illos imitatorem eorum extitisse,
@@ -1076,7 +1076,7 @@
                         scriptis</add></rdg>
                </app>
                <quote source="#EDITION" n="II 2,7">temperamentum, si ex utriusque linguae modera<lb
-                     n="16" break="no"/>toribus elegantiora in unum</quote>
+                     n="16" break="no" ed="1r"/>toribus elegantiora in unum</quote>
                <app type="reference-signs" xml:id="rs-2-7-1">
                   <lem wit="#EDITION">moderatoribus</lem>
                   <rdg wit="#COD_50"><add place="interlinear above" hand="#gl-1" facs="#zone.1r.54"
@@ -1127,7 +1127,7 @@
                   <rdg wit="#COD_50" hand="#scr">sunt laudem</rdg>
                </app>
                <quote source="#EDITION" n="II 2,12">exemplum etiam proponere placuit, ne pi<lb
-                     n="19" break="no"/>geat alios etiam a me uel</quote>
+                     n="19" break="no" ed="1r"/>geat alios etiam a me uel</quote>
                <quote source="#EDITION" n="II 2,13">ignorantia forte praetermissa uel uitiose dicta
                   (nihil enim ex omni parte</quote>
                <quote source="#EDITION" n="II 2,14">perfectum in huma<lb n="20" break="no" ed="1r"
@@ -1164,7 +1164,7 @@
                            ref="#vel"/> comparatione</add></rdg>
                </app>
                <quote source="#EDITION" n="II 2,17">uolui hos edere me libros compule<lb n="22"
-                     break="no"/>runt, qui alienis laboribus insidiantes</quote>
+                     break="no" ed="1r"/>runt, qui alienis laboribus insidiantes</quote>
                <app type="gloss" xml:id="gloss-2-17-1">
                   <lem wit="#EDITION">edere</lem>
                   <rdg wit="#COD_50"><add place="interlinear above" hand="#gl-1" facs="#zone.1r.63"
@@ -1225,7 +1225,7 @@
                <quote source="#EDITION" n="II 2,27">gradibus honorum<lb n="28" ed="1r"/> pretii,
                   quantum illis decoris addens tui, cuius mentem</quote>
                <quote source="#EDITION" n="II 2,28">tam Homeri credo quam Virgilii anima constare,
-                     quo<lb n="29" break="no"/>rum uterque</quote>
+                     quo<lb n="29" break="no" ed="1r"/>rum uterque</quote>
                <quote source="#EDITION" n="II 2,29">arcem possederat musicae, te tertium ex utroque
                   compositum esse</quote>
                <app type="text-variation" xml:id="tv-2-29-1">
@@ -1301,7 +1301,7 @@
                         ana="#glosses-elucidating-the-main-text">per diffinitionem</add></rdg>
                   <note resp="#CG" type="explanation" target="#gloss-3-1-3">Otfrid wrote this gloss
                      AFTER the second glossator had added the reference sign and the marginal gloss
-                     concerning "gloriam". Sometimes, however (see below), the second glossator
+                     concerning 'gloriam'. Sometimes, however (see below), the second glossator
                      clearly wrote after Otfrid. Thus, the two writers added their glosses and
                      worked with this manuscript almost at the same time</note>
                </app>
@@ -1533,7 +1533,7 @@
                         place="interlinear-one-line-above" hand="#gl-2" facs="#zone.1v.15"
                         ana="#glosses-summarizing-content">Vox <g ref="#irish-est"/></add></rdg>
                   <note resp="#CG" type="explanation" target="#gloss-5-0-1 #gloss-5-0-2">The second
-                     glossator wrote "Vox est" above the lemma, then stopped and re-started writing
+                     glossator wrote 'Vox est' above the lemma, then stopped and re-started writing
                      his gloss below the lemma linking it to line II 5, 2</note>
                </app>
                <quote source="#EDITION" n="II 5,1"><lb n="12" ed="1v"/>philosophi definiunt, uocem
@@ -1559,8 +1559,8 @@
                   <rdg wit="#COD_50"><add place="left margin" hand="#gl-1" facs="#zone.1v.3"
                         ana="#glosses-elucidating-the-main-text"><g ref="#inverted-N-with-dot-below"
                         /> amatores scientiae definio· uniuscuiusque rei proprietas</add></rdg>
-                  <note resp="#CG" type="explanation" target="#gloss-5-1-1">perhaps "definio" of the
-                     gloss should read "definitio"</note>
+                  <note resp="#CG" type="explanation" target="#gloss-5-1-1">perhaps 'definio' of the
+                     gloss should read 'definitio'</note>
                </app>
                <app type="gloss" xml:id="gloss-5-1-8">
                   <lem wit="#EDITION">philosophi</lem>
@@ -1585,7 +1585,7 @@
                            ref="#reference-sign-oblique-v"/>
                         <foreign xml:lang="goh">lûtnussa</foreign></add></rdg>
                   <note resp="#CG" type="explanation" target="#gloss-5-1-3">see AHDW s.v.
-                     [h]lûtnussa = nominative or accusative singular = "Klang, Laut"; Schwarz 1977,
+                     [h]lûtnussa = nominative or accusative singular = 'Klang, Laut'; Schwarz 1977,
                      p. 31. Not only Otfrid, but also the second glossator wrote glosses in the
                      vernacular</note>
                </app>
@@ -1922,7 +1922,7 @@
                         Inarticulata· <g ref="#et"/> literata· Vt coax· Inarticulata· et inliterata·
                         Vt crepitus; </add></rdg>
                   <note resp="#CG" type="explanation" target="#gloss-6-4-1"> The second glossator
-                     uses both the typically insular sign "7" and the common ligature for "et". A
+                     uses both the typically insular sign '7' and the common ligature for 'et'. A
                      similar gloss occurs in MS Köln 200, f. 2r, in the superior margin.</note>
                </app>
                <app type="gloss" xml:id="gloss-6-4-2">
@@ -2037,8 +2037,7 @@
                         <g ref="#vel"/> dictio diu<gap reason="illegible" unit="char" quantity="3"
                            /><supplied resp="#CG">idi</supplied> potest lite<gap reason="illegible"
                            unit="char" quantity="2"/><supplied resp="#CG">ra</supplied> autem diuid
-                           <gap reason="illegible" unit="char" quantity="2"/><supplied resp="#CG">i
-                           non</supplied> potest·</add></rdg>
+                           <gap reason="illegible" unit="char" quantity="2"/><supplied resp="#CG">i non</supplied> potest·</add></rdg>
                </app>
                <app type="reference-signs" xml:id="rs-6-8-1">
                   <lem wit="#EDITION">quantum</lem>
@@ -2108,8 +2107,7 @@
                            >dilenne</foreign></add> liniuntur enim cum cera tabulę. fricando enim
                         deletur tabula</add></rdg>
                   <note corresp="#ohg-2-6-13-1" type="explanation" resp="#CG"> for the OHG word <hi
-                        rend="italic">dilenne</hi> see Rudolf Schützeichel,<hi rend="italic">
-                        Althochdeutsches Wörterbuch. Siebente durchgesehene und verbesserte
+                        rend="italic">dilenne</hi> see Rudolf Schützeichel, <hi rend="italic">Althochdeutsches Wörterbuch. Siebente durchgesehene und verbesserte
                         Auflage</hi> Berlin/Boston 2012, p. 312, s.v. <hi rend="bold">ardīlēn</hi> =
                         <hi rend="italic">to delete</hi>. <hi rend="italic">Dilenne</hi> is an
                      infinitive in the dative case translating the instrumental ablative <hi
