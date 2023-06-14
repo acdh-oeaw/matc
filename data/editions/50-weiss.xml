@@ -980,9 +980,9 @@
                         ana="#syntactical-glosses-using-symbols"><g
                            ref="#construe-mark-dot-with-right-half-ring"/></add></rdg>
                </app>
-               <note xml:id="note-1-12-1" place="left margin" type="gloss" subtype="to-be-checked" hand="#gl-1"
-                  facs="#zone.1r.41" xml:lang="la"><gap unit="char" quantity="12" reason="illegible"
-                  /></note>
+               <note xml:id="note-1-12-1" place="left margin" type="gloss" subtype="to-be-checked"
+                  hand="#gl-1" facs="#zone.1r.41" xml:lang="la"><gap unit="char" quantity="12"
+                     reason="illegible"/></note>
                <quote source="#EDITION" n="II 1,13">neminem post illos imitatorem eorum extitisse,
                   quippe in neglegentiam</quote>
                <app type="gloss" xml:id="gloss-1-13-1">
@@ -1950,9 +1950,9 @@
                </app>
                <app type="emendation" xml:id="emendation-6-5-1">
                   <lem wit="#EDITION">ἀπὸ τοῦ βοῶ</lem>
-                  <rdg wit="#COD_50" hand="#scr">AΠOT</rdg>
-                  <rdg wit="#COD_50"><add hand="#sec" place="inline">o</add></rdg>
-                  <rdg wit="#COD_50" hand="#scr">YB<add hand="#scr" place="above">O</add>Ɯ</rdg>
+                  <rdg wit="#COD_50" hand="#scr">AΠOT<add type="correction" hand="#sec"
+                        place="inline">o</add>YB<add type="correction" hand="#scr" place="above"
+                        >O</add>Ɯ</rdg>
                </app>
                <app type="gloss" xml:id="gloss-6-5-2">
                   <lem wit="#EDITION">ἀπὸ τοῦ βοῶ</lem>
@@ -2037,7 +2037,8 @@
                         <g ref="#vel"/> dictio diu<gap reason="illegible" unit="char" quantity="3"
                            /><supplied resp="#CG">idi</supplied> potest lite<gap reason="illegible"
                            unit="char" quantity="2"/><supplied resp="#CG">ra</supplied> autem diuid
-                           <gap reason="illegible" unit="char" quantity="2"/><supplied resp="#CG">i non</supplied> potest·</add></rdg>
+                           <gap reason="illegible" unit="char" quantity="2"/><supplied resp="#CG">i
+                           non</supplied> potest·</add></rdg>
                </app>
                <app type="reference-signs" xml:id="rs-6-8-1">
                   <lem wit="#EDITION">quantum</lem>
@@ -2107,12 +2108,14 @@
                            >dilenne</foreign></add> liniuntur enim cum cera tabulę. fricando enim
                         deletur tabula</add></rdg>
                   <note corresp="#ohg-2-6-13-1" type="explanation" resp="#CG"> for the OHG word <hi
-                        rend="italic">dilenne</hi> see Rudolf Schützeichel, <hi rend="italic">Althochdeutsches Wörterbuch. Siebente durchgesehene und verbesserte
+                        rend="italic">dilenne</hi> see Rudolf Schützeichel, <hi rend="italic"
+                        >Althochdeutsches Wörterbuch. Siebente durchgesehene und verbesserte
                         Auflage</hi> Berlin/Boston 2012, p. 312, s.v. <hi rend="bold">ardīlēn</hi> =
                         <hi rend="italic">to delete</hi>. <hi rend="italic">Dilenne</hi> is an
                      infinitive in the dative case translating the instrumental ablative <hi
                         rend="italic">lituris</hi> of the gloss. We have here a gloss of a gloss. I
-                     am very thankful to Prof. Wolfgang Haubrichs for his expertise and precious help.</note>
+                     am very thankful to Prof. Wolfgang Haubrichs for his expertise and precious
+                     help.</note>
                </app>
                <quote source="#EDITION" n="II 6,14">uel a lituris, ut quibusdam placet, quod
                   plerumque in ceratis tabulis</quote>
@@ -2767,11 +2770,12 @@
                   <rdg wit="#COD_50" hand="#scr">H et W</rdg>
                </app>
             </div>
-               <div type="page-of-Hertz-edition" n="Liber Primus" xml:id="liber-primus.6"
-                  next="#liber-primus.5" prev="liber-primus.7" corresp="images-keil:Keil_v2_010.gif"
-                  xml:lang="la">
-                  <quote source="#EDITION" n="II 10,1">ante ancipites erant, remanserunt perpetuo breues, cum earum</quote>
- 
+            <div type="page-of-Hertz-edition" n="Liber Primus" xml:id="liber-primus.6"
+               next="#liber-primus.5" prev="liber-primus.7" corresp="images-keil:Keil_v2_010.gif"
+               xml:lang="la">
+               <quote source="#EDITION" n="II 10,1">ante ancipites erant, remanserunt perpetuo
+                  breues, cum earum</quote>
+
 
 
 
