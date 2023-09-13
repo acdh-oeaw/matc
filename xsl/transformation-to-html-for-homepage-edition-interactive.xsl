@@ -48,7 +48,6 @@
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer"></link>
             <link rel="shortcut icon" type="image/x-icon" href="./images/favicon.png"/>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/openseadragon/3.1.0/openseadragon.min.js" integrity="sha512-uZWCk71Y8d7X/dnBNU9sISZQv78vDTglLF8Uaga0AimD7xmjJhFoa67VIcIySAoTHqxIt/0ly9l5ft9MUkynQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-            <script type="text/javascript" src="./js/custom.js" defer="defer"/>
         </head>
         <body class="page">
             <div class="hfeed site" id="page">
@@ -78,7 +77,7 @@
                                         </ul>
                                     </li>
                                     <li class="nav-item dropdown">
-                                        <a title="Digital Edition" href="./introduction.html" data-toggle="dropdown" class="nav-link dropdown-toggle underline">Digital Edition <span class="caret"></span></a>
+                                        <a title="Digital Edition" href="./introduction.html" data-toggle="dropdown" class="nav-link dropdown-toggle">Digital Edition <span class="caret"></span></a>
                                         <ul class=" dropdown-menu" role="menu">
                                             <li class="nav-item dropdown-submenu">
                                                 <a title="Introduction" href="./introduction.html" class="nav-link">Introduction</a>
@@ -86,6 +85,7 @@
                                             <li class="nav-item dropdown-submenu">
                                                 <a title="Edition" href="./edition.html" class="nav-link">Edition</a>
                                             </li>
+                                            <li class="nav-item dropdown-submenu"><a title="Interactive Edition" href="./edition-interactive.html" class="nav-link">Interactive Edition</a></li>
                                             <li class="nav-item dropdown-submenu">
                                                 <a title="Technical Documentation" href="./technical-documentation.html" class="nav-link">Technical Documentation</a>
                                             </li>
@@ -198,13 +198,14 @@
             <!-- #page we need this extra closing tag here -->
             <script type="text/javascript" src="./vendor/jquery/jquery.min.js"></script>
             <script type="text/javascript" src="./js/fundament.min.js"></script>
+            <script type="text/javascript" src="./js/custom.js"/>
         </body>
     </xsl:template>
     
     <xsl:template match="tei:teiHeader">
         <!-- <xsl:apply-templates select="tei:fileDesc/tei:sourceDesc"/> -->
         <!-- <xsl:apply-templates select="tei:encodingDesc/tei:editorialDecl"/> -->
-        <!-- <xsl:apply-templates select="tei:encodingDesc/tei:charDecl"/> -->
+        <xsl:apply-templates select="tei:encodingDesc/tei:charDecl[(@n = 'abbreviations') or (@n = 'construe-marks') or (@n = 'reference signs') or (@n = 'attention signs')]"/>
     </xsl:template>
     
     <xsl:template match="tei:sourceDesc">
@@ -284,16 +285,48 @@
         </div>
     </xsl:template>
     
+    <xsl:template match="tei:charDecl[@n = 'attention signs']">
+        <div class="pictures">
+            <p class="heading-2">Annotation signs:</p>
+            <div>
+                <xsl:apply-templates select="tei:glyph"/>
+            </div>
+            <xsl:apply-templates select="following-sibling::tei:charDecl[1][@n = 'excerption signs']" mode="annotation-signs-heading"/>
+        </div>
+    </xsl:template>
+    
+    <xsl:template match="tei:charDecl[@n = 'excerption signs']" mode="annotation-signs-heading">
+        <div>
+            <xsl:apply-templates select="tei:glyph"/>
+        </div>
+        <xsl:apply-templates select="following-sibling::tei:charDecl[1][@n = 'omission signs']" mode="annotation-signs-heading"/>
+    </xsl:template>
+    
+    <xsl:template match="tei:charDecl[@n = 'omission signs']" mode="annotation-signs-heading">
+        <div>
+            <xsl:apply-templates select="tei:glyph"/>
+        </div>
+    </xsl:template>
+    
     <xsl:template match="tei:glyph">
         <p class="glyph-section">
             <xsl:element name="img">
-               <xsl:attribute name="src" select="replace(tei:figure/tei:graphic/@url,'../pictures','./data/pictures')"/>
+                <xsl:attribute name="src" select="replace(tei:figure/tei:graphic/@url,'../pictures','./data/pictures')"/>
+                <xsl:if test="exists(child::tei:figure/child::tei:graphic/@height) and exists(child::tei:figure/child::tei:graphic/@width)">
+                    <xsl:attribute name="style">
+                        <xsl:text>width: </xsl:text>
+                        <xsl:value-of select="child::tei:figure/child::tei:graphic/@width"/>
+                        <xsl:text>; height: </xsl:text>
+                        <xsl:value-of select="child::tei:figure/child::tei:graphic/@height"/>
+                        <xsl:text>;</xsl:text>
+                    </xsl:attribute>
+                </xsl:if>
             </xsl:element>
             <xsl:text> - </xsl:text>
             <xsl:value-of select="tei:localProp[@name = 'Name']/@value"/>
             <xsl:if test="exists(child::tei:note)">
                 <xsl:text> - (</xsl:text>
-                    <xsl:value-of select="tei:note/text()"/>
+                <xsl:value-of select="tei:note/text()"/>
                 <xsl:text>)</xsl:text>
             </xsl:if>
         </p>

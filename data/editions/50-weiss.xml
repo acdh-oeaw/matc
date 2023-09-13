@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:mods="http://www.loc.gov/mods/v3"
    xmlns:mets="http://www.loc.gov/METS/" xmlns:tei="http://www.tei-c.org/ns/1.0">
-   <teiHeader xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Priscianus: Ars Grammatica (Cod. Guelf. 50 Weiss.) — Signaturdokument</title>
@@ -631,7 +634,7 @@
          </charDecl>
          <charDecl n="attention signs">
             <glyph xml:id="nota-sign">
-               <localProp name="Name" value="marginal attention sign Nota"/>
+               <localProp name="Name" value="MARGINAL ATTENTION SIGN NOTA"/>
                <localProp name="entity" value="nota"/>
                <figure>
                   <graphic url="../pictures/attention-sign-nota.png"/>
@@ -640,14 +643,14 @@
          </charDecl>
          <charDecl n="excerption signs">
             <glyph xml:id="positura">
-               <localProp name="Name" value="excerption sign positura"/>
+               <localProp name="Name" value="EXCERPTION SIGN POSITURA"/>
                <localProp name="entity" value="positura"/>
                <figure>
                   <graphic url="../pictures/excerption-sign-positura.png"/>
                </figure>
             </glyph>
             <glyph xml:id="inverted-paragraphus">
-               <localProp name="Name" value="excerption sign inverted paragraphus"/>
+               <localProp name="Name" value="EXCERPTION SIGN INVERTED PARAGRAPHUS"/>
                <localProp name="entity" value="inverted-paragraphus"/>
                <figure>
                   <graphic url="../pictures/excerption-sign-inverted-paragraphus.png"/>
@@ -656,7 +659,7 @@
          </charDecl>
          <charDecl n="omission signs">
             <glyph xml:id="omission-sign-capital-delta">
-               <localProp name="Name" value="omission sign capital delta"/>
+               <localProp name="Name" value="OMISSION SIGN CAPITAL DELTA"/>
                <localProp name="entity" value="omission-sign-capital-delta"/>
                <figure>
                   <graphic url="../pictures/omission-sign-capital-delta.png"/>
@@ -2036,9 +2039,7 @@
                            reason="illegible" unit="char" quantity="5"/>
                         <g ref="#vel"/> dictio diu<gap reason="illegible" unit="char" quantity="3"
                            /><supplied resp="#CG">idi</supplied> potest lite<gap reason="illegible"
-                           unit="char" quantity="2"/><supplied resp="#CG">ra</supplied> autem diuid
-                           <gap reason="illegible" unit="char" quantity="2"/><supplied resp="#CG">i
-                           non</supplied> potest·</add></rdg>
+                           unit="char" quantity="2"/><supplied resp="#CG">ra</supplied> autem diuid<gap reason="illegible" unit="char" quantity="2"/><supplied resp="#CG">i non</supplied> potest·</add></rdg>
                </app>
                <app type="reference-signs" xml:id="rs-6-8-1">
                   <lem wit="#EDITION">quantum</lem>
