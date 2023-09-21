@@ -1007,7 +1007,63 @@
             <xsl:for-each select="tokenize(@ana,'\s*#')">
                 <xsl:if test=". != ''">
                     <xsl:text>"</xsl:text>
-                        <xsl:value-of select="normalize-space($root-node//tei:category[@xml:id = current()]/tei:catDesc/text())"/>
+                        <!-- <xsl:value-of select="normalize-space($root-node//tei:category[@xml:id = current()]/tei:catDesc/text())"/> -->
+                    <xsl:choose>
+                        <xsl:when test="current() = 'glosses-on-prosody'"><xsl:text>glosses on prosody</xsl:text></xsl:when>
+                        <xsl:when test="current() = 'length-mark'"><xsl:text>length mark</xsl:text></xsl:when>
+                        <xsl:when test="current() = 'length-of-syllables'"><xsl:text>length of syllables</xsl:text></xsl:when>
+                        <xsl:when test="current() = 'comment-on-metre'"><xsl:text>comment on metre</xsl:text></xsl:when>
+                        <xsl:when test="current() = 'lexical glosses'"><xsl:text>lexical glosses</xsl:text></xsl:when>
+                        <xsl:when test="current() = 'translation-into-Old-High-German'"><xsl:text>translation into Old-High German</xsl:text></xsl:when>
+                        <xsl:when test="current() = 'synonyms'"><xsl:text>synonyms</xsl:text></xsl:when>
+                        <xsl:when test="current() = 'negated-antonyms'"><xsl:text>negated antonyms</xsl:text></xsl:when>
+                        <xsl:when test="current() = 'definition-given-by-an-entire-sentence'"><xsl:text>definition given by an entire sentence</xsl:text></xsl:when>
+                        <xsl:when test="current() = 'Greek-glosses'"><xsl:text>Greek glosses</xsl:text></xsl:when>
+                        <xsl:when test="current() = 'use-of-different-prefixes'"><xsl:text>use of different prefixes</xsl:text></xsl:when>
+                        <xsl:when test="current() = 'adjectives-glossed-with-a-noun'"><xsl:text>adjectives glossed with a noun</xsl:text></xsl:when>
+                        <xsl:when test="current() = 'differentiae'"><xsl:text>differentiae</xsl:text></xsl:when>
+                        <xsl:when test="current() = 'further-derivations'"><xsl:text>further derivations</xsl:text></xsl:when>
+                        <xsl:when test="current() = 'original-parts-of-a-word'"><xsl:text>original parts of a word</xsl:text></xsl:when>
+                        <xsl:when test="current() = 'grammatical-glosses'"><xsl:text>grammatical glosses</xsl:text></xsl:when>
+                        <xsl:when test="current() = 'grammatical-glosses-on-the-noun'"><xsl:text>grammatical glosses on the noun</xsl:text></xsl:when>
+                        <xsl:when test="current() = 'grammatical-glosses-on-the-pronoun'"><xsl:text>grammatical glosses on the pronoun</xsl:text></xsl:when>
+                        <xsl:when test="current() = 'grammatical-glosses-on-verb-participle-and-gerund'"><xsl:text>grammatical glosses on verb, participle and gerund</xsl:text></xsl:when>
+                        <xsl:when test="current() = 'grammatical-glosses-on-the-adverb'"><xsl:text>grammatical glosses on the adverb</xsl:text></xsl:when>
+                        <xsl:when test="current() = 'grammatical-glosses-on-the-conjunction'"><xsl:text>grammatical glosses on the conjunction</xsl:text></xsl:when>
+                        <xsl:when test="current() = 'grammatical-glosses-on-the-preposition'"><xsl:text>grammatical glosses on the preposition</xsl:text></xsl:when>
+                        <xsl:when test="current() = 'grammatical-glosses-on-the-interjection'"><xsl:text>grammatical glosses on the interjection</xsl:text></xsl:when>
+                        <xsl:when test="current() = 'syntactical-glosses'"><xsl:text>syntactical glosses</xsl:text></xsl:when>
+                        <xsl:when test="current() = 'syntactical-glosses-using-symbols'"><xsl:text>syntactical glosses using symbols</xsl:text></xsl:when>
+                        <xsl:when test="current() = 'suppletive-glosses'"><xsl:text>suppletive glosses</xsl:text></xsl:when>
+                        <xsl:when test="current() = 'glosses-identifying-a-speaker-or-an-example'"><xsl:text>glosses identifying a speaker or an example</xsl:text></xsl:when>
+                        <xsl:when test="current() = 'commentary-glosses'"><xsl:text>commentary glosses</xsl:text></xsl:when>
+                        <xsl:when test="current() = 'glosses-decoding-figures-of-speech'"><xsl:text>glosses decoding figures of speech</xsl:text></xsl:when>
+                        <xsl:when test="current() = 'glosses-summarizing-content'"><xsl:text>glosses summarizing content</xsl:text></xsl:when>
+                        <xsl:when test="current() = 'cross-references'"><xsl:text>cross references</xsl:text></xsl:when>
+                        <xsl:when test="current() = 'elaborate-comment-on-the-main-text'"><xsl:text>elaborate comment on the main text</xsl:text></xsl:when>
+                        <xsl:when test="current() = 'quia-glosses'"><xsl:text></xsl:text>quia glosses</xsl:when>
+                        <xsl:when test="current() = 'glosses-elucidating-the-main-text'"><xsl:text>glosses elucidating the main text</xsl:text></xsl:when>
+                        <xsl:when test="current() = 'glosses-elucidating-the-main-text-with-siglum-auctoris'"><xsl:text>glosses elucidating the main text with siglum auctoris</xsl:text></xsl:when>
+                        <xsl:when test="current() = 'glosses-elucidating-the-main-text-with-a-title'"><xsl:text>glosses elucidating the main text with a title</xsl:text></xsl:when>
+                        <xsl:when test="current() = 'glosses-elucidating-the-main-text-with-red-marginal-title'"><xsl:text>glosses elucidating the main text with red marginal title</xsl:text></xsl:when>
+                        <xsl:when test="current() = 'etymological-glosses'"><xsl:text>etymological glosses</xsl:text></xsl:when>
+                        <xsl:when test="current() = 'encyclopedic-glosses'"><xsl:text>encyclopedic glosses</xsl:text></xsl:when>
+                        <xsl:when test="current() = 'geographical-names'"><xsl:text>geographical names</xsl:text></xsl:when>
+                        <xsl:when test="current() = 'source-glosses'"><xsl:text>source glosses</xsl:text></xsl:when>
+                        <xsl:when test="current() = 'source-or-comparison'"><xsl:text>source or comparison</xsl:text></xsl:when>
+                        <xsl:when test="current() = 'acquaintance-with-classics'"><xsl:text>acquaintance with classics</xsl:text></xsl:when>
+                        <xsl:when test="current() = 'text-variant'"><xsl:text>text variant</xsl:text></xsl:when>
+                        <xsl:when test="current() = 'contemporary-socio-historical-context'"><xsl:text>contemporary socio historical context</xsl:text></xsl:when>
+                        <xsl:when test="current() = 'lemma-gloss'"><xsl:text>Reference sign: lemma - gloss</xsl:text></xsl:when>
+                        <xsl:when test="current() = 'lemma-lemma'"><xsl:text>Reference sign: lemma - lemma</xsl:text></xsl:when>
+                        <xsl:when test="current() = 'attention-sign-nota'"><xsl:text>attention sign nota</xsl:text></xsl:when>
+                        <xsl:when test="current() = 'excerption-signs'"><xsl:text>excerption signs</xsl:text></xsl:when>
+                        <xsl:when test="current() = 'excerption-sign-inverted-paragraphus'"><xsl:text>excerption sign inverted paragraphus</xsl:text></xsl:when>
+                        <xsl:when test="current() = 'capital-delta'"><xsl:text>capital delta</xsl:text></xsl:when>
+                        <xsl:otherwise>
+                            <xsl:value-of select="replace(current(),'-',' ')"/>
+                        </xsl:otherwise>
+                    </xsl:choose>
                     <xsl:text>"</xsl:text>
                     <xsl:if test="position() != last()"><xsl:text>,</xsl:text></xsl:if>
                 </xsl:if>
@@ -1132,6 +1188,24 @@
     
     <xsl:template match="tei:foreign" mode="glosses-as-json">
         <xsl:apply-templates select="child::node()"/>
+    </xsl:template>
+    
+    <xsl:template match="tei:choice" mode="glosses-as-json">
+        <xsl:apply-templates select="child::node()" mode="glosses-as-json"/>
+    </xsl:template>
+    
+    <xsl:template match="tei:abbr[parent::tei:choice]" mode="glosses-as-json">
+        <xsl:apply-templates select="child::node()" mode="glosses-as-json"/>
+    </xsl:template>
+    
+    <xsl:template match="tei:hi[@rend = 'overline'][parent::tei:abbr]" mode="glosses-as-json">
+        <xsl:apply-templates select="child::node()" mode="glosses-as-json"/>
+    </xsl:template>
+    
+    <xsl:template match="tei:expan[parent::tei:choice]" mode="glosses-as-json">
+        <xsl:text> (</xsl:text>
+        <xsl:apply-templates select="child::node()" mode="glosses-as-json"/>
+        <xsl:text>) </xsl:text>
     </xsl:template>
     
     <xsl:template match="text()" mode="glosses-as-json">
