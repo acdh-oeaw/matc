@@ -9,7 +9,6 @@
 .entry-content-heading-level-1 { color: black; font-family: Garamond; font-size: 20pt; font-weight: bold; }
 .entry-content-heading-level-2 { color: black; font-family: Garamond; font-size: 18pt; font-weight: bold; }
 .entry-content-main-paragraph-new-finding { color: black; font-family: Garamond; font-size: 16pt; font-weight: normal; margin: 1em; line-height: 19pt; text-align: justify; border-left: 5px solid #914d03; padding-left: 1em; border-right: 5px solid #914d03; padding-left: 1em; }
-
 .heading-1 { font-family: Garamond; font-size: 24pt; font-weight: bold; }
 .heading-2 { font-family: Garamond; font-size: 18pt; font-weight: bold; }
 .list-of-witnesses { font-family: Garamond; font-size: 14pt; font-weight: normal; }
@@ -17,7 +16,6 @@
 .editorial-declaration { font-family: Garamond; font-size: 14pt; font-weight: normal; }
 .pictures { font-family: Garamond; font-size: 14pt; font-weight: normal; }
 body.body-formats { margin: 20pt; }
-
 div.page-of-edition { font-family: Garamond; font-size: 14pt; font-weight: normal; }
 div.page-of-edition a:link { color: black; text-decoration: none; }
 div.page-of-edition a:active { color: black; text-decoration: none; }
@@ -39,7 +37,7 @@ span.pointer-targets { margin-left: 3pt; background-color: white; border-radius:
 span.pointer-target-source { font-style: italic; }
 span.edition-heading-1 { font-family: Garamond; font-size: 24pt; font-weight: bold; }
 span.set-margin-left { margin-left: 20pt; }
-span.set-margin-left-and-right { margin-left: 20pt; margin-right: 20pt; }
+span.set-margin-left-and-right { margin-left: 10pt; margin-right: 10pt; }
 div.apparatus-reading { margin-top: 1em; margin-bottom: 1em; }
 div.note { margin-left: 50pt; margin-top: 1em; }
 p.pointer {margin-top: 1em; }

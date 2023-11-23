@@ -2426,7 +2426,7 @@
                   <rdg wit="#COD_50"><add place="interlinear above" hand="#gl-2" facs="#zone.2r.5"
                         ana="#capital-delta"><g ref="#omission-sign-capital-delta"/></add></rdg>
                </app>
-               <app type="emendation" subtype="addition-of-omitted-text" xml:id="emendation-8-1-1">
+               <app type="gloss" subtype="addition-of-omitted-text" xml:id="gloss-8-1-1">
                   <lem wit="#EDITION">dicuntur</lem>
                   <rdg wit="#COD_50"><add place="upper margin of the leaf" hand="#gl-2"
                         facs="#zone.2r.6"><g ref="#omission-sign-capital-delta"/> quod esse ostendit

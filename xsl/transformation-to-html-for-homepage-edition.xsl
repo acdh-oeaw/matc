@@ -433,7 +433,17 @@
     </xsl:template>
     
     <xsl:template match="tei:hi">
-        <xsl:value-of select="text()"/>
+        <xsl:choose>
+            <xsl:when test="(@rend = 'red capitalis') or (@rend = 'red capitalis rustica')">
+                <xsl:element name="span">
+                    <xsl:attribute name="style" select="'color: #9e1b16;'"/>
+                    <xsl:value-of select="text()"/>
+                </xsl:element>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:value-of select="text()"/>
+            </xsl:otherwise>
+        </xsl:choose>
     </xsl:template>
     
     <xsl:template match="tei:pb">
@@ -534,7 +544,7 @@
         <xsl:if test="substring-after(parent::tei:rdg/@hand,'#') = 'scr-1' or substring-after(parent::tei:rdg/@hand,'#') = 'scr'">
             <xsl:text>main scribe</xsl:text>
         </xsl:if>
-        <xsl:if test="substring-after(@hand,'#') = 'sec'">
+        <xsl:if test="substring-after(parent::tei:rdg/@hand,'#') = 'sec'">
             <xsl:text>secondary scribe</xsl:text>
         </xsl:if>
         <xsl:if test="substring-after(parent::tei:rdg/@hand,'#') = 'gl-1'">
@@ -587,7 +597,7 @@
             </xsl:if>
             <xsl:text>: </xsl:text>
             <xsl:apply-templates select="child::node()"/>
-            <xsl:text> - </xsl:text>
+            <xsl:text> [</xsl:text>
             <xsl:value-of select="child::tei:hi/@rend"/>
             <span class="set-margin-left"><i class="far fa-hand-paper"></i></span>
             <xsl:element name="span">
@@ -605,6 +615,7 @@
                     <xsl:text>second glossator</xsl:text>
                 </xsl:if>
             </xsl:element>
+            <xsl:text>]</xsl:text>
         </div>
     </xsl:template>
     
