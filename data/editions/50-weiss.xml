@@ -1018,14 +1018,14 @@
                </app>
                <app type="gloss" xml:id="gloss-2-2-1">
                   <lem wit="#EDITION">impudenter</lem>
-                  <rdg wit="#COD_50"><add subtype="to-be-checked" place="right margin" hand="#gl-1"
+                  <rdg wit="#COD_50"><add type="to-be-checked" place="right margin" hand="#gl-1"
                         facs="#zone.1r.45" ana="#glosses-elucidating-the-main-text"><g
                            ref="#reference-sign-half-ring-with-dot-below"/> inreuerenter <g
                            ref="#vel"/> inrationabiliter. cum uerecundia et reuerentia</add></rdg>
                </app>
                <app type="gloss" xml:id="gloss-2-2-7">
                   <lem wit="#EDITION">impudenter</lem>
-                  <rdg wit="#COD_50"><add subtype="to-be-checked" place="interlinear above"
+                  <rdg wit="#COD_50"><add type="to-be-checked" place="interlinear above"
                         hand="#gl-1" facs="#zone.1r.46" xml:lang="la" ana="#synonyms"><gap
                            unit="char" quantity="2" reason="illegible"/>denter</add></rdg>
                </app>
@@ -1151,7 +1151,7 @@
                </app>
                <app type="gloss" xml:id="gloss-2-14-1">
                   <lem wit="#EDITION">sua</lem>
-                  <rdg wit="#COD_50"><add subtype="to-be-checked" place="right margin" hand="#gl-1"
+                  <rdg wit="#COD_50"><add type="to-be-checked" place="right margin" hand="#gl-1"
                         facs="#zone.1r.61" ana="#syntactical-glosses"><g
                            ref="#reference-sign-dot-with-acute"/> sua industria</add></rdg>
                </app>
@@ -1869,10 +1869,8 @@
                xml:lang="la">
                <quote source="#EDITION" n="II 6,1">uero sunt inarticulatae et illiteratae, quae nec
                   scribi possunt nec intellegi,</quote>
-               <quote source="#EDITION" n="II 6,2">ut <add type="text-variation" xml:id="tv-6-2-1"
-                     source="#COD_50" hand="#scr" place="inline"><g ref="#irish-est"
-                  /></add>crepitus, mugitus et similia. scire autem debemus,<lb n="22" ed="1v"/>
-                  quod has quattuor </quote>
+               <quote source="#EDITION" n="II 6,2">ut <g ref="#irish-est"/> crepitus, mugitus et
+                  similia. scire autem debemus,<lb n="22" ed="1v"/> quod has quattuor </quote>
                <app type="reference-signs" xml:id="rs-6-2-1">
                   <lem wit="#COD_50">scire</lem>
                   <rdg wit="#COD_50"><add place="interlinear above" hand="#gl-2" facs="#zone.1v.44"
@@ -2039,7 +2037,9 @@
                            reason="illegible" unit="char" quantity="5"/>
                         <g ref="#vel"/> dictio diu<gap reason="illegible" unit="char" quantity="3"
                            /><supplied resp="#CG">idi</supplied> potest lite<gap reason="illegible"
-                           unit="char" quantity="2"/><supplied resp="#CG">ra</supplied> autem diuid<gap reason="illegible" unit="char" quantity="2"/><supplied resp="#CG">i non</supplied> potest·</add></rdg>
+                           unit="char" quantity="2"/><supplied resp="#CG">ra</supplied> autem
+                           diuid<gap reason="illegible" unit="char" quantity="2"/><supplied
+                           resp="#CG">i non</supplied> potest·</add></rdg>
                </app>
                <app type="reference-signs" xml:id="rs-6-8-1">
                   <lem wit="#EDITION">quantum</lem>
@@ -2086,9 +2086,7 @@
                <quote source="#EDITION" n="II 6,10">partes inueniuntur) uel quod omnium est
                   breuissimum eorum,<lb n="26" ed="1v"/> quae diuidi </quote>
                <quote source="#EDITION" n="II 6,11">possunt, id quod diuidi non potest. possumus et
-                  sic definire: litera <add type="text-variation" xml:id="tv-6-11-1"
-                     source="#COD_50" hand="#scr" place="inline"><g ref="#irish-est"/></add>
-                  uox,</quote>
+                  sic definire: litera <g ref="#irish-est"/> uox,</quote>
                <quote source="#EDITION" n="II 6,12">quae scribi potest indiuidua.</quote>
                <quote source="#EDITION" n="II 6,13">dicitur autem lit<lb n="27" break="no" ed="1v"
                   />era uel quasi legitera, quod legendi iter praebeat,</quote>
@@ -2112,7 +2110,9 @@
                         rend="italic">dilenne</hi> see Rudolf Schützeichel, <hi rend="italic"
                         >Althochdeutsches Wörterbuch. Siebente durchgesehene und verbesserte
                         Auflage</hi> Berlin/Boston 2012, p. 312, s.v. <hi rend="bold">ardīlēn</hi> =
-                        <hi rend="italic">to delete</hi>. <hi rend="italic">Dilenne</hi> is an infinitive in the dative case translating the instrumental ablative <hi rend="italic">lituris</hi> of the gloss. We have here a gloss of a gloss. I
+                        <hi rend="italic">to delete</hi>. <hi rend="italic">Dilenne</hi> is an
+                     infinitive in the dative case translating the instrumental ablative <hi
+                        rend="italic">lituris</hi> of the gloss. We have here a gloss of a gloss. I
                      am very thankful to Prof. Wolfgang Haubrichs for his expertise and precious
                      help.</note>
                </app>
@@ -2148,9 +2148,8 @@
                <quote source="#EDITION" n="II 6,17">perficiunt corpus, sic etiam haec coniuncta
                   literalem uocem quasi corpus</quote>
                <quote source="#EDITION" n="II 6,18">aliquod componunt uel magis uere cor<lb n="30"
-                     break="no" ed="1v"/>pus. nam si aer corpus <add type="text-variation"
-                     xml:id="tv-6-18-1" source="#COD_50" hand="#scr" place="inline"><g
-                        ref="#irish-est"/></add> et uox,</quote>
+                     break="no" ed="1v"/>pus. nam si aer corpus <g ref="#irish-est"/> et
+                  uox,</quote>
                <app type="gloss" xml:id="gloss-6-18-1">
                   <lem wit="#EDITION">uere</lem>
                   <rdg wit="#COD_50"><add place="interlinear above" hand="#gl-1" facs="#zone.1v.73"
@@ -2163,27 +2162,20 @@
                <app type="gloss" xml:id="gloss-6-18-2">
                   <lem wit="#EDITION">aer corpus</lem>
                   <rdg wit="#COD_50"><add place="left margin" hand="#gl-1" facs="#zone.1v.78"
-                        ana="#text-variant">aer corpus est· ita et uox quae ex lingua et aere
-                        constat</add></rdg>
+                        ana="glosses-elucidating-the-main-text">aer corpus est· ita et uox quae ex
+                        lingua et aere constat</add></rdg>
                </app>
                <quote source="#EDITION" n="II 6,19">quae ex aere icto constat, corpus esse
                   ostenditur, quippe cum et tangit</quote>
                <quote source="#EDITION" n="II 6,20">aurem et tripertito <lb n="31" ed="1v"
-                  />diuiditur, quod <add type="text-variation" xml:id="tv-6-20-1" source="#COD_50"
-                     hand="#scr" place="inline"><g ref="#irish-est"/></add> suum corporis, hoc<add
-                     type="text-variation" xml:id="tv-6-20-2" source="#COD_50" hand="#scr"
-                     place="inline"><g ref="#irish-est"/></add>
+                  />diuiditur, quod <g ref="#irish-est"/> suum corporis, hoc <g ref="#irish-est"/>
                   <add type="text-variation" xml:id="tv-6-20-3" source="#COD_50" hand="#scr"
                      place="interlinear above" facs="#zone.1v.74">in</add></quote>
                <quote source="#EDITION" n="II 6,21">altitudinem, latitudinem, longitudinem, unde ex
-                  omni quoque parte potest audiri.</quote>
+                  omni quoque parte pot<g ref="#irish-est"/> audiri.</quote>
                <app type="text-variation" xml:id="tv-6-21-1">
                   <lem wit="#EDITION">ex omni quoque parte</lem>
                   <rdg wit="#COD_50" hand="#scr">quoque ex omni parte</rdg>
-               </app>
-               <app type="text-variation" xml:id="tv-6-21-2">
-                  <lem wit="#EDITION">potest</lem>
-                  <rdg wit="#COD_50" hand="#scr">pot<g ref="#irish-est"/></rdg>
                </app>
                <app type="gloss" xml:id="gloss-6-21-1">
                   <lem wit="#EDITION">altitudinem</lem>
@@ -2218,10 +2210,8 @@
                   <rdg wit="#COD_50"><add place="right margin" hand="#gl-1" facs="#zone.1v.85"
                         ana="#excerption-sign-positura"><g ref="#positura"/></add></rdg>
                </app>
-               <quote source="#EDITION" n="II 6,24">litera igitur <add type="text-variation"
-                     xml:id="tv-6-23-1" source="#COD_50" hand="#scr" place="inline"><g
-                        ref="#irish-est"/></add> nota elementi et uelut imago quaedam uocis
-                  literatae,</quote>
+               <quote source="#EDITION" n="II 6,24">litera igitur <g ref="#irish-est"/> nota
+                  elementi et uelut imago quaedam uocis literatae,</quote>
                <quote source="#EDITION" n="II 6,25">quae cognoscitur ex qualitate et quantitate
                   figurae linearum. <lb n="34" ed="1v"/>hoc ergo</quote>
                <app type="rubrication" xml:id="rubr-6-25-1">
@@ -2295,24 +2285,15 @@
                      ed="1v"/>rentias,<pb n="2r" xml:id="page__00013" facs="#facs__00013"/><lb n="1"
                      ed="2r"/> cum habet aspirationem et acuitur uel</quote>
                <quote source="#EDITION" n="II 7,10">grauatur, et rursus cum sine aspiratione acuitur
-                  uel grauatur, ut hábeo</quote>
-               <app type="text-variation" xml:id="tv-7-10-1">
-                  <lem wit="#EDITION">uel</lem>
-                  <rdg wit="#COD_50"><add place="inline" hand="#scr"><g ref="#vel"/></add></rdg>
-               </app>
+                     <g ref="#vel"/> grauatur, ut hábeo</quote>
                <quote source="#EDITION" n="II 7,11">hàbemus, ábeo àbimus. <lb n="2" ed="2r"/> longa
                   uero eadem sex modis sonat: cum habet</quote>
                <app type="rubrication" xml:id="rubr-2-0-1">
                   <lem wit="#EDITION">longa</lem>
                   <rdg wit="#COD_50" hand="#scr"><hi rend="red capitalis">L</hi>onga</rdg>
                </app>
-               <quote source="#EDITION" n="II 7,12">aspirationem et acuitur uel grauatur uel
+               <quote source="#EDITION" n="II 7,12">aspirationem et acuitur <g ref="#vel"/> grauatur uel
                   circumflectitur et rursus cum sine</quote>
-               <app type="text-variation" xml:id="tv-7-12-1">
-                  <lem wit="#EDITION">uel grauatur</lem>
-                  <rdg wit="#COD_50"><add place="inline" hand="#scr"><g ref="#vel"/>
-                     grauatur</add></rdg>
-               </app>
                <quote source="#EDITION" n="II 7,13">aspiratione <lb n="3" ed="2r"/>acuitur uel
                   grauatur uel circumflectitur, ut hámis hàmorum </quote>
                <app type="text-variation" xml:id="tv-7-13-1">
@@ -2350,12 +2331,8 @@
                </app>
                <quote source="#EDITION" n="II 7,17">et i quidem, quando post u consonantem loco
                   digamma functam Aeolici</quote>
-               <quote source="#EDITION" n="II 7,18">ponitur breuis, sequente d uel m <lb n="6"
+               <quote source="#EDITION" n="II 7,18">ponitur breuis, sequente d <g ref="#vel"/> m <lb n="6"
                      ed="2r"/>uel r uel t uel x, sonum y Graecae</quote>
-               <app type="text-variation" xml:id="tv-7-18-1">
-                  <lem wit="#EDITION">uel m</lem>
-                  <rdg wit="#COD_50"><add place="inline" hand="#scr"><g ref="#vel"/> m</add></rdg>
-               </app>
                <quote source="#EDITION" n="II 7,19">uidetur habere, ut uideo, uim, uirtus, uitium,
                   uix, u autem,</quote>
                <app type="rubrication" xml:id="rubr-2-0-3">
@@ -2703,11 +2680,7 @@
                         ana="#glosses-elucidating-the-main-text">ut eunuchi</add></rdg>
                </app>
                <quote source="#EDITION" n="II 9,20">appellamus, non qui dimidiam partem <lb n="31"
-                     ed="2r"/> habent deorum uel uirorum, sed qui</quote>
-               <app type="text-variation" xml:id="tv-9-20-1">
-                  <lem wit="#EDITION">uel</lem>
-                  <rdg wit="#COD_50" hand="#scr"><g ref="#vel"/></rdg>
-               </app>
+                  ed="2r"/> habent deorum <g ref="#vel"/> uirorum, sed qui</quote>
                <quote source="#EDITION" n="II 9,21">pleni dii uel uiri non sunt.</quote>
                <quote source="#EDITION" n="II 9,22">reliquae sunt mutae, ut quibusdam uidetur,
                   numero nouem: <lb n="32" ed="2r"/> b c d g</quote>
@@ -2730,12 +2703,8 @@
                   <rdg wit="#COD_50" hand="#scr">uel<del type="expunction">i</del><add
                         place="interlinear above">u</add>t</rdg>
                </app>
-               <quote source="#EDITION" n="II 9,26">caret forma, sed quae male est <lb n="34"
+               <quote source="#EDITION" n="II 9,26">caret forma, sed <g ref="#quae-two-semicolons"/> male est <lb n="34"
                      ed="2r"/> formata, et frigidum dicimus eum, qui</quote>
-               <app type="text-variation" xml:id="tv-9-26-1">
-                  <lem wit="#EDITION">quae</lem>
-                  <rdg wit="#COD_50" hand="#scr"><g ref="#quae-two-semicolons"/></rdg>
-               </app>
                <quote source="#EDITION" n="II 9,27">non penitus expers est caloris, sed qui minimo
                   hoc utitur: sic igitur etiam</quote>
                <app type="gloss" xml:id="gloss-9-27-1">
