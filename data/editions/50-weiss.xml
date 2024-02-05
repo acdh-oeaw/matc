@@ -160,6 +160,8 @@
             <punctuation>
                <p>I followed the punctuation of Hertz' edition of Priscian's text. As for the
                   glosses, I reproduced the original punctuation, when occurring</p>
+               <p>I have recorded the presence of positurae only when they served as en excerption
+                  sign. They often occur as a punctuation sign in the manuscript</p>
             </punctuation>
          </editorialDecl>
          <classDecl>
@@ -528,6 +530,13 @@
                   <graphic url="../pictures/reference-sign-inverted-trigon.png"/>
                </figure>
             </glyph>
+            <glyph xml:id="reference-sign-dotted-S">
+               <localProp name="Name" value="REFERENCE SIGN DOTTED S"/>
+               <localProp name="entity" value="reference-sign-dotted-S"/>
+               <figure>
+                  <graphic url="../pictures/reference-sign-dotted-S.png"/>
+               </figure>
+            </glyph>
             <glyph xml:id="reference-sign-oblique-balloon-with-rope">
                <localProp name="Name" value="REFERENCE SIGN OBLIQUE BALLON WITH ROPE"/>
                <localProp name="entity" value="reference-sign-oblique-balloon-with-rope"/>
@@ -632,6 +641,13 @@
                <localProp name="entity" value="reference-sign-y"/>
                <figure>
                   <graphic url="../pictures/reference-sign-y.png"/>
+               </figure>
+            </glyph>
+            <glyph xml:id="reference-sign-dicolon-slash">
+               <localProp name="Name" value="REFERENCE SIGN DICOLON SLASH"/>
+               <localProp name="entity" value="reference-sign-dicolon-slash"/>
+               <figure>
+                  <graphic url="../pictures/reference-sign-dicolon-slash.png"/>
                </figure>
             </glyph>
             <glyph xml:id="reference-sign-converging-strokes-with-dicolon">
@@ -2419,7 +2435,7 @@
                   <lem wit="#EDITION">dicuntur</lem>
                   <rdg wit="#COD_50"><add place="upper margin of the leaf" hand="#gl-2"
                         facs="#zone.2r.6"><g ref="#omission-sign-capital-delta"/> quod esse ostendit
-                        uarro in secundo libro de antiquitate litterarum docens lingua caldaeorum
+                        uarro in secundo libro de antiquitate litterarum docens lingua caldeorum
                         singularum nomina litterarum ad earum formas esse facta et ex hoc certum
                         fieri, eos esse primos auctores litterarum</add></rdg>
                   <note resp="#CG" type="explanation" target="#emendation-8-1-1"> the scribe of the
@@ -2879,7 +2895,7 @@
                </app>
             </div>
             <div type="page-of-Hertz-edition" n="Liber Primus" xml:id="liber-primus.7"
-               next="#liber-primus.6" prev="liber-primus.8" corresp="images-keil:Keil_v2_011.gif"
+               next="#liber-primus.8" prev="liber-primus.6" corresp="images-keil:Keil_v2_011.gif"
                xml:lang="la">
                <quote source="#EDITION" n="II 11,1">apud antiquissimos Graecorum non plus sedecim<lb
                      n="7" ed="2v"/> erant literae, quibus</quote>
@@ -2931,7 +2947,7 @@
                <app type="rubrication" xml:id="rubr-11-5-1">
                   <lem wit="#EDITION">Ϝ</lem>
                   <rdg wit="#COD_50" hand="#scr"><hi rend="red capitalis">Ϝ</hi></rdg>
-               </app> 
+               </app>
                <app type="reference-signs" xml:id="rs-11-5-1">
                   <lem wit="#EDITION">eandem</lem>
                   <rdg wit="#COD_50"><add place="interlinear above" hand="#gl-1" facs="#zone.2v.12"
@@ -2940,10 +2956,10 @@
                <app type="gloss" subtype="to-be-checked" xml:id="gloss-11-5-1">
                   <lem wit="#EDITION">eandem</lem>
                   <rdg wit="#COD_50"><add place="right margin" hand="#gl-1" facs="#zone.2v.13"
-                        ana="#glosses-elucidating-the-main-text"><g
-                           ref="#reference-sign-trigon"/><g ref="#idest"/> quam apud nos·u· ante u <gap unit="char"
-                              quantity="2" reason="illegible"/>tinetur ut seruus <g ref="#idest"/>duci<gap unit="char"
-                                 quantity="2" reason="illegible"/>uau·</add></rdg>
+                        ana="#glosses-elucidating-the-main-text"><g ref="#reference-sign-trigon"/><g
+                           ref="#idest"/> quam apud nos·u· ante u <gap unit="char" quantity="2"
+                           reason="illegible"/>tinetur ut seruus <g ref="#idest"/>duci<gap
+                           unit="char" quantity="2" reason="illegible"/>uau·</add></rdg>
                </app>
                <quote source="#EDITION" n="II 11,6">quam apud Aeolis habuit. eum autem prope sonum,
                   quem nunc habet,</quote>
@@ -2954,67 +2970,366 @@
                <app type="gloss" xml:id="gloss-11-6-1">
                   <lem wit="#EDITION">habuit</lem>
                   <rdg wit="#COD_50"><add place="interlinear above" hand="#gl-2" facs="#zone.2v.14"
-                     ana="#glosses-elucidating-the-main-text">Φ</add></rdg>
+                        ana="#glosses-elucidating-the-main-text">Φ</add></rdg>
                </app>
                <app type="reference-signs" xml:id="rs-11-6-1">
                   <lem wit="#EDITION">nunc habet</lem>
-                  <rdg wit="#COD_50"><add place="interlinear above" hand="#gl-2" facs="#zone.2v.15"
-                     ana="#lemma-gloss"><g ref="#reference-sign-trigon"/></add></rdg>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#scr" facs="#zone.2v.15"
+                        ana="#lemma-gloss"><g ref="#reference-sign-trigon"/></add></rdg>
                </app>
                <app type="gloss" xml:id="gloss-11-6-2">
-                  <lem wit="#EDITION">eandem</lem>
-                  <rdg wit="#COD_50"><add place="right margin" hand="#gl-1" facs="#zone.2v.16"
-                     ana="#glosses-elucidating-the-main-text"><g
-                        ref="#reference-sign-trigon"/>subaudis·f·</add></rdg>
+                  <lem wit="#EDITION">nunc habet</lem>
+                  <rdg wit="#COD_50"><add place="left margin" hand="#scr" facs="#zone.2v.16"
+                        ana="#glosses-elucidating-the-main-text"><g ref="#reference-sign-trigon"
+                        />subaudis·f·</add></rdg>
                </app>
-               
-               <!--  -->
                <quote source="#EDITION" n="II 11,7">significabat p cum aspiratione, sicut etiam apud
-                  ueteres Graecos pro φ π </quote>
-               <quote source="#EDITION" n="II 11,8">et, unde nunc quoque in Graecis nominibus
+                     <lb n="10" ed="2v"/> ueteres Graecos pro φ π </quote>
+               <quote source="#EDITION" n="II 11,8">et Ͱ, unde nunc quoque in Graecis nominibus
                   antiquam scripturam</quote>
-               <quote source="#EDITION" n="II 11,9">seruamus pro φ p et h ponentes, ut Orpheus,
-                  Phaethon. postea uero in</quote>
+               <quote source="#EDITION" n="II 11,9">seruamus pro φ p et h ponentes, ut Or<lb n="11"
+                     break="no" ed="2v"/>pheus, Phaethon. postea uero in</quote>
+               <app type="gloss" xml:id="gloss-11-9-1">
+                  <lem wit="#EDITION">Orpheus</lem>
+                  <rdg wit="#COD_50"><add place="left margin" hand="#gl-1" facs="#zone.2v.19"
+                        ana="#glosses-elucidating-the-main-text">orpheus quidam theologus qui
+                        inuestigauit de diuinitate deorum</add></rdg>
+                  <note corresp="#gloss-11-24-1" type="explanation" resp="#CG">A similar gloss
+                     recurs in MS München BSB Clm 18375, f. 7v</note>
+               </app>
+               <app type="gloss" xml:id="gloss-11-9-2">
+                  <lem wit="#EDITION">Phaetho</lem>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#gl-1" facs="#zone.2v.20"
+                        ana="#glosses-elucidating-the-main-text">filius solis</add></rdg>
+                  <note corresp="#gloss-11-9-2" type="explanation" resp="#CG">The same gloss recurs
+                     in MS München BSB Clm 18375, f. 7v</note>
+               </app>
                <quote source="#EDITION" n="II 11,10">Latinis uerbis placuit pro p et h f scribi, ut
                   fama, filius, facio,</quote>
-               <quote source="#EDITION" n="II 11,11">loco autem digamma u pro consonante, quod
-                  cognatione soni uidebatur</quote>
+               <quote source="#EDITION" n="II 11,11">loco autem digamma u pro con<lb n="12"
+                     break="no" ed="2v"/>sonante, quod cognatione soni uidebatur</quote>
                <quote source="#EDITION" n="II 11,12">affinis esse digamma ea litera. quare cum f
                   loco mutae ponatur [id est p</quote>
-               <quote source="#EDITION" n="II 11,13">et h siue φ], miror hanc inter semiuocales
-                  posuisse artium scriptores:</quote>
+               <app type="text-variation" xml:id="tv-11-12-1">
+                  <lem wit="#EDITION">ponatur</lem>
+                  <rdg wit="#COD_50" hand="#scr">pon<del type="expunction">i</del><add
+                        place="interlinear below" hand="#scr">a</add>tur</rdg>
+               </app>
+               <app type="gloss" xml:id="gloss-11-12-1">
+                  <lem wit="#EDITION">affinis</lem>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#gl-1" facs="#zone.2v.21"
+                        ana="#synonyms">propinqua</add></rdg>
+                  <note corresp="#gloss-11-12-1" type="explanation" resp="#CG">The same gloss recurs
+                     in MS Köln 200, f. 3v</note>
+               </app>
+               <quote source="#EDITION" n="II 11,13">et h siue φ], <lb n="13" ed="2v"/>miror hanc
+                  inter semiuocales posuisse artium scriptores:</quote>
                <quote source="#EDITION" n="II 11,14">nihil enim aliud habet haec litera semiuocalis
-                  nisi nominis prolationem, quae</quote>
+                  nisi nominis prolationem, <lb n="14" ed="2v"/>quae</quote>
                <quote source="#EDITION" n="II 11,15">a uocali incipit. sed hoc potestatem mutare
                   literae non debuit: si enim</quote>
                <quote source="#EDITION" n="II 11,16">esset semiuocalis, necessario terminalis
-                  nominum inueniretur, quod minime</quote>
+                  nominum inueniretur,<lb n="15" ed="2v"/> quod minime</quote>
                <quote source="#EDITION" n="II 11,17">reperies, nec ante l uel r in eadem syllaba
                   poni posset, qui locus</quote>
-               <quote source="#EDITION" n="II 11,18">mutarum est dum taxat, nec communem ante easdem
-                  posita faceret syllabam.</quote>
+               <quote source="#EDITION" n="II 11,18">mutarum <g ref="#irish-est"/> dum taxat, nec
+                  communem ante easdem <lb n="16" ed="2v"/>posita faceret syllabam.</quote>
                <quote source="#EDITION" n="II 11,19">postremo Graeci, quibus in omnia doctrinae
                   auctoribus utimur, φ, cuius</quote>
-               <quote source="#EDITION" n="II 11,20">locum apud nos f obtinet, quod ostenditur in
-                  his maxime dictionibus, quas</quote>
-               <quote source="#EDITION" n="II 11,21">a Graecis sumpsimus, hoc est fama, fuga, fur,
-                  mutam esse</quote>
-               <quote source="#EDITION" n="II 11,22">confirmant. sciendum tamen, quod hic quoque
-                  error a quibusdam antiquis</quote>
+               <app type="text-variation" xml:id="tv-11-19-1">
+                  <lem wit="#EDITION">in omnia doctrinae</lem>
+                  <rdg wit="#COD_50" hand="#scr">in omni<del cause="emendation" rend="rasura"
+                        resp="unknown">a</del> doctrina<del cause="emendation" rend="rasura"
+                        resp="unknown">e</del></rdg>
+               </app>
+               <app type="gloss" xml:id="gloss-11-19-1">
+                  <lem wit="#EDITION">omnia</lem>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#gl-1" facs="#zone.2v.17"
+                        ana="#glosses-elucidating-the-main-text"><g ref="#idest"/>per
+                     omnia</add></rdg>
+               </app>
+               <app type="reference-signs" xml:id="rs-11-19-1">
+                  <lem wit="#EDITION">in omnia</lem>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#scr" facs="#zone.2v.18"
+                        ana="#lemma-gloss"><g ref="#reference-sign-dicolon-slash"/></add></rdg>
+               </app>
+               <app type="gloss" xml:id="gloss-11-19-2">
+                  <lem wit="#EDITION">in omnia</lem>
+                  <rdg wit="#COD_50"><add place="left margin" hand="#scr" facs="#zone.2v.22"
+                        ana="#text-variant"><g ref="#reference-sign-dicolon-slash"/><g ref="#vel"/>
+                        in omni doctrina</add></rdg>
+               </app>
+               <quote source="#EDITION" n="II 11,20">locum apud nos f obtinet, quod osten<lb n="17"
+                     break="no" ed="2v"/>ditur in his maxime dictionibus, quas</quote>
+               <quote source="#EDITION" n="II 11,21">a Graecis sumpsimus, hoc <g ref="#irish-est"/>
+                  fama, fuga, fur, mutam esse</quote>
+               <quote source="#EDITION" n="II 11,22">confirmant. sciendum tamen, quod hic quoque<lb
+                     n="18" ed="2v"/> error a quibusdam antiquis</quote>
                <quote source="#EDITION" n="II 11,23">Graecorum grammaticis inuasit Latinos, qui φ et
                   θ et χ semiuocales putabant,</quote>
+               <app type="gloss" xml:id="gloss-11-23-1">
+                  <lem wit="#EDITION">inuasit</lem>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#gl-1" facs="#zone.2v.23"
+                        ana="#synonyms">adprehendit</add></rdg>
+               </app>
                <quote source="#EDITION" n="II 11,24">nulla alia causa, nisi quod spiritus in eis
-                  abundet, inducti. quod si esset</quote>
-               <quote source="#EDITION" n="II 11,25">uerum, debuit c quoque uel t addita aspiratione
-                  semiuocalis esse, quod</quote>
+                     a<lb n="19" break="no" ed="2v"/>bundet, inducti. quod si esset</quote>
+               <app type="gloss" xml:id="gloss-11-24-1">
+                  <lem wit="#EDITION">inducti</lem>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#gl-1" facs="#zone.2v.24"
+                        ana="#glosses-elucidating-the-main-text">decepti</add></rdg>
+                  <note corresp="#gloss-11-24-1" type="explanation" resp="#CG">A similar gloss
+                     recurs in MS Köln 200, f. 3v. The same gloss recurs in MS München BSB Clm
+                     18375, f. 8r</note>
+               </app>
+               <quote source="#EDITION" n="II 11,25">uerum, debuit c quoque <g ref="#vel"/> t addita
+                  aspiratione semiuocalis esse, quod</quote>
+               <app type="text-variation" xml:id="tv-11-25-1">
+                  <lem wit="#EDITION">semiuocalis</lem>
+                  <rdg wit="#COD_50" hand="#scr">semiuocal<del type="expunction">e</del><add
+                        place="interlinear above" hand="#scr">i</add>s</rdg>
+               </app>
                <quote source="#EDITION" n="II 11,26">omni caret ratione: spiritus enim potestatem
-                  literae non mutat, unde nec</quote>
+                     lit<lb n="20" break="no" ed="2v"/>erae non mutat, unde nec</quote>
                <quote source="#EDITION" n="II 11,27">uocales addita aspiratione aliae fiunt et aliae
                   ea dempta. hoc tamen scire</quote>
             </div>
-            <!--  -->
+            <div type="page-of-Hertz-edition" n="Liber Primus" xml:id="liber-primus.8"
+               next="#liber-primus.9" prev="liber-primus.7" corresp="images-keil:Keil_v2_012.gif"
+               xml:lang="la">
+               <quote source="#EDITION" n="II 12,1">debemus, quod non fixis labris <lb n="21"
+                     ed="2v"/>est pronuntianda f, quomodo ph, atque</quote>
+               <app type="text-variation" xml:id="tv-12-1-1">
+                  <lem wit="#EDITION">ph</lem>
+                  <rdg wit="#COD_50" hand="#scr">p et H</rdg>
+               </app>
+               <app type="gloss" xml:id="gloss-12-1-1">
+                  <lem wit="#EDITION">fixis labri</lem>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#gl-1" facs="#zone.2v.25"
+                        ana="#glosses-elucidating-the-main-text">non inuicem sed
+                     dentibus</add></rdg>
+               </app>
+               <quote source="#EDITION" n="II 12,2">hoc solum inter<g ref="#irish-est"/>.</quote>
+               <quote source="#EDITION" n="II 12,3">x etiam duplicem loco c et s uel g et s postea a
+                  Graecis inuentam</quote>
+               <quote source="#EDITION" n="II 12,4">as<lb n="22" break="no" ed="2v"
+                  />sumpsimus.</quote>
+               <quote source="#EDITION" n="II 12,5">k enim et q, quamuis figura et nomine uideantur
+                  aliquam habere</quote>
+               <quote source="#EDITION" n="II 12,6">differentiam, cum c tamen eandem tam in sono
+                  uocum quam <lb n="23" ed="2v"/>in metro</quote>
+               <quote source="#EDITION" n="II 12,7">potestatem continent. et k quidem penitus
+                  superuacua <g ref="#irish-est"/>: nulla enim</quote>
+               <quote source="#EDITION" n="II 12,8">uidetur ratio, cur a sequente haec scribi
+                  debeat: <lb n="24" ed="2v"/> Carthago enim et</quote>
+               <app type="text-variation" xml:id="tv-12-8-1">
+                  <lem wit="#EDITION">a sequente</lem>
+                  <rdg wit="#COD_50" hand="#scr">a sequente k</rdg>
+               </app>
+               <quote source="#EDITION" n="II 12,9">caput, siue per c siue per k scribantur, nullam
+                  faciunt nec in sono nec in</quote>
+               <quote source="#EDITION" n="II 12,10">potestate eiusdem consonantis dif<lb n="25"
+                     break="no" ed="2v"/>ferentiam. q uero propter nihil aliud</quote>
+               <quote source="#EDITION" n="II 12,11">scribenda uidetur esse, nisi ut ostendat,
+                  sequens u ante alteram uocalem in</quote>
+               <app type="text-variation" xml:id="tv-12-11-1">
+                  <lem wit="#EDITION">esse</lem>
+                  <rdg wit="#COD_50"/>
+               </app>
+               <quote source="#EDITION" n="II 12,12">eadem syllaba <lb n="26" ed="2v"/>positam
+                  perdere uim literae in metro. quod si ideo alia</quote>
+               <app type="reference-signs" xml:id="rs-12-12-1">
+                  <lem wit="#EDITION">in metro</lem>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#gl-1" facs="#zone.2v.26"
+                        ana="#lemma-gloss"><g ref="#reference-sign-trigon"/></add></rdg>
+               </app>
+               <app type="gloss" xml:id="gloss-12-12-1" subtype="to-be-checked">
+                  <lem wit="#EDITION">in metro</lem>
+                  <rdg wit="#COD_50"><add place="left margin" hand="#gl-1" facs="#zone.2v.27"
+                        ana="#quia-glosses"><g ref="#reference-sign-trigon"/>Quia in metro uis
+                        litterarum potest perspici· si enim esset litera coniunctione duarum
+                        uocalium quam diptongon dicunt produceretur aut <gap reason="illegible"
+                           unit="char" quantity="4"/> duarum consonantium producerent priorem
+                        uocalem</add></rdg>
+               </app>
+               <quote source="#EDITION" n="II 12,13">litera est existimanda quam c, debet g quoque,
+                  cum similiter praepo<lb n="27" break="no" ed="2v"/>nitur</quote>
+               <quote source="#EDITION" n="II 12,14">u amittenti uim literae, alia putari, et alia,
+                  cum id non facit. dicimus</quote>
+               <quote source="#EDITION" n="II 12,15">enim anguis sicuti quis et augur sicuti
+                  cur.</quote>
+               <app type="reference-signs" xml:id="rs-12-15-1">
+                  <lem wit="#EDITION">augur</lem>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#gl-1" facs="#zone.2v.28"
+                        ana="#lemma-gloss"><g ref="#reference-sign-trigon"/></add></rdg>
+               </app>
+               <app type="gloss" xml:id="gloss-12-15-1">
+                  <lem wit="#EDITION">augur</lem>
+                  <rdg wit="#COD_50"><add place="right margin" hand="#gl-1" facs="#zone.2v.29"
+                        ana="#glosses-elucidating-the-main-text"><g ref="#reference-sign-trigon"
+                        />qui augurandi scientiam habet</add></rdg>
+               </app>
+               <quote source="#EDITION" n="II 12,16"><lb n="28" ed="2v"/>unde si uelimus cum
+                  ueritate contemplari, ut diximus, non plus</quote>
+               <quote source="#EDITION" n="II 12,17">decem et octo literas in Latino sermone
+                  habemus, hoc est sedecim anti<lb n="29" break="no" ed="2v"/>quas</quote>
+               <app type="text-variation" xml:id="tv-12-17-1">
+                  <lem wit="#EDITION">decem et octo</lem>
+                  <rdg wit="#COD_50" hand="#scr">XVI</rdg>
+               </app>
+               <app type="text-variation" xml:id="tv-12-17-2">
+                  <lem wit="#EDITION">sedecim</lem>
+                  <rdg wit="#COD_50" hand="#scr">XVIII</rdg>
+               </app>
+               <quote source="#EDITION" n="II 12,18">Graecorum et f et x postea additas, et eas
+                  quoque ab eisdem sumptas.</quote>
+               <quote source="#EDITION" n="II 12,19">nam y et z Graecorum causa, ut supra dictum
+                  est, <lb n="30" ed="2v"/>asciuimus nominum,</quote>
+               <quote source="#EDITION" n="II 12,20">h autem aspirationis est nota et nihil aliud
+                  habet literae nisi figuram et</quote>
+               <quote source="#EDITION" n="II 12,21">quod in uersu scribitur inter alias <lb n="31"
+                     ed="2v"/>literas. quod si sufficeret, ut</quote>
+               <quote source="#EDITION" n="II 12,22">elementum putaretur, nihilominus quorundam
+                  etiam numerorum figurae, quia in</quote>
+               <app type="reference-signs" xml:id="rs-12-22-1">
+                  <lem wit="#EDITION">numerorum</lem>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#gl-1" facs="#zone.2v.30"
+                        ana="#lemma-gloss"><g ref="#reference-sign-oculus"/></add></rdg>
+               </app>
+               <app type="gloss" xml:id="gloss-12-22-1">
+                  <lem wit="#EDITION">numerorum</lem>
+                  <rdg wit="#COD_50"><add place="left margin" hand="#gl-1" facs="#zone.2v.31"
+                        ana="#glosses-elucidating-the-main-text"><g ref="#reference-sign-oculus"
+                        />·VI· Episimon· <add place="above">S</add> XC· cophe· <add place="above"
+                           >Ɋ</add> DCCCC ennachose <add place="above">↑</add>
+                     </add></rdg>
+                  <note corresp="#gloss-12-22-1" type="explanation" resp="#CG">The same gloss
+                     recurs in MS München BSB Clm 18375, f. 8r and in Köln 200, f. 4r</note>
+               </app>
+               <quote source="#EDITION" n="II 12,23">uersu inter <lb n="32" ed="2v"/>alias literas
+                  scribuntur, quamuis eis dissimiles sint, elementa</quote>
+            </div>
+            <div type="page-of-Hertz-edition" n="Liber Primus" xml:id="liber-primus.9"
+               next="#liber-primus.10" prev="liber-primus.8" corresp="images-keil:Keil_v2_013.gif"
+               xml:lang="la">
+               <quote source="#EDITION" n="II 13,1">sunt habenda. sed minime hoc est adhibendum, nec
+                  aliud aliquid <lb n="33" ed="2v"/> ex</quote>
+               <app type="gloss" xml:id="gloss-13-1-1">
+                  <lem wit="#EDITION">adhibendum</lem>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#gl-1" facs="#zone.2v.32"
+                     ana="#synonyms">accipiendum</add></rdg>
+               </app>
+               <quote source="#EDITION" n="II 13,2">accidentibus proprietatem ostendit uniuscuiusque
+                  elementi, quomodo potestas,</quote>
+               <quote source="#EDITION" n="II 13,3">qua caret aspiratio; neque enim uocalis nec
+                  consonans <lb n="34" ed="2v"/> esse pot<g ref="#irish-est"/>.</quote>
+               <quote source="#EDITION" n="II 13,4">uocalis non <g ref="#irish-est"/> h, quia a se uocem non facit,
+                  nec semiuocalis, cum nulla</quote>
+               <quote source="#EDITION" n="II 13,5">syllaba Latina uel Graeca per integras dictiones
+                  in eam desinit, <lb n="35" ed="2v"/> nec muta,</quote>
+               <quote source="#EDITION" n="II 13,6">cum in eadem syllaba cum duabus mutis bis
+                  ponitur, ut Phthius,</quote>
+               <app type="gloss" xml:id="gloss-13-6-1">
+                  <lem wit="#EDITION">Phthius</lem>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#gl-1" facs="#zone.2v.33"
+                     ana="#glosses-elucidating-the-main-text">pronomen</add></rdg>
+               </app>
+               <app type="reference-signs" xml:id="rs-13-6-1">
+                  <lem wit="#EDITION">Phthius</lem>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#scr" facs="#zone.2v.35"
+                     ana="#lemma-gloss"><g ref="#reference-sign-dicolon-slash"/></add></rdg>
+               </app>
+               <app type="gloss" xml:id="gloss-13-6-2">
+                  <lem wit="#EDITION">Phthius</lem>
+                  <rdg wit="#COD_50"><add place="left margin" hand="#scr" facs="#zone.2v.36"
+                     ana="#glosses-elucidating-the-main-text"><g ref="#reference-sign-dicolon-slash"
+                     />apollo</add></rdg>
+               </app>
+               <quote source="#EDITION" n="II 13,7">Erichthonius. nulla enim syllaba plus duabus
+                  potest mutis <lb n="36" ed="2v"/>habere iuxta se</quote>
+               <app type="text-variation" xml:id="tv-13-7-1">
+                  <lem wit="#EDITION">potest mutis</lem>
+                  <rdg wit="#COD_50" hand="#scr">mutis potest</rdg>
+               </app>
+               <app type="gloss" xml:id="gloss-13-7-1">
+                  <lem wit="#EDITION">Erichthonius</lem>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#gl-1" facs="#zone.2v.34"
+                     ana="#glosses-elucidating-the-main-text">pronomen</add></rdg>
+               </app>
+               <app type="reference-signs" xml:id="rs-13-7-1">
+                  <lem wit="#EDITION">Erichthonius</lem>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#scr" facs="#zone.2v.37"
+                     ana="#lemma-gloss"><g ref="#reference-sign-dotted-S"/></add></rdg>
+               </app>
+               <app type="gloss" xml:id="gloss-13-7-2">
+                  <lem wit="#EDITION">Erichthonius</lem>
+                  <rdg wit="#COD_50"><add place="left margin" hand="#scr" facs="#zone.2v.38"
+                     ana="#glosses-elucidating-the-main-text"><g ref="#reference-sign-dotted-S"
+                     />filius apollonis</add></rdg>
+               </app>
+               <quote source="#EDITION" n="II 13,8">positis, nec plus tribus consonantibus
+                  continuare. auctoritas quoque tam</quote>
+               <app type="gloss" xml:id="gloss-13-8-1">
+                  <lem wit="#EDITION">continuare</lem>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#gl-1" facs="#zone.2v.39"
+                     ana="#glosses-elucidating-the-main-text">simul tenere</add></rdg>
+               </app>
+               <quote source="#EDITION" n="II 13,9">Varronis quam Macri teste Censori<lb n="37" break="no" ed="2v"/>no nec k nec q
+                  nec h in</quote>
+               <quote source="#EDITION" n="II 13,10">numero adhibet literarum.</quote>
+               <quote source="#EDITION" n="II 13,11">uidentur tamen i et u, cum in consonantes
+                  transeunt, quantum <lb n="38" ed="2v"/>ad</quote>
+               <app type="rubrication" xml:id="rubr-13-11-1">
+                  <lem wit="#EDITION">uidentur</lem>
+                  <rdg wit="#COD_50" hand="#scr"><hi rend="red capitalis">V</hi>identur</rdg>
+               </app>
+               <quote source="#EDITION" n="II 13,12">potestatem, quod maximum est in elementis,
+                  aliae literae esse praeter</quote>
+               <quote source="#EDITION" n="II 13,13">supra dictas; multum enim interest, utrum
+                  uocales sint <pb n="3r" xml:id="page__00015"
+                     facs="#facs__00015"/><lb n="1" ed="3r"/>an consonantes. sicut</quote>
+               <app type="text-variation" xml:id="tv-13-13-1">
+                  <lem wit="#EDITION">dictas</lem>
+                  <rdg wit="#COD_50" hand="#scr">dictis</rdg>
+               </app>
+               <app type="text-variation" xml:id="tv-13-13-2">
+                  <lem wit="#EDITION">enim</lem>
+               <rdg wit="#COD_50"/>
+               </app>
+               <quote source="#EDITION" n="II 13,14">enim, quamuis in uaria figura et uario nomine
+                  sint k et q et c, tamen,</quote>
+               <quote source="#EDITION" n="II 13,15">quia unam uim habent tam in metro quam in sono,
+                  pro una litera accipi</quote>
+               <quote source="#EDITION" n="II 13,16">debent, sic i et u, quamuis unum nomen et unam
+                  habeant figuram tam</quote>
+               <quote source="#EDITION" n="II 13,17">uocales quam consonantes, tamen, quia diuersum
+                  sonum et diuersam uim</quote>
+               <quote source="#EDITION" n="II 13,18">habent in metris et in pronuntiatione
+                  syllabarum, non sunt in eisdem</quote>
+               <quote source="#EDITION" n="II 13,19">meo iudicio elementis accipiendae, quamuis et
+                  Censorino, doctissimo</quote>
+               <quote source="#EDITION" n="II 13,20">artis grammaticae, idem placuit.</quote>
+               <quote source="#EDITION" n="II 13,21">multa enim est differentia inter consonantes,
+                  ut diximus, et uocales.</quote>
+               <quote source="#EDITION" n="II 13,22">tantum enim fere interest inter uocales et
+                  consonantes, quantum inter</quote>
+               <quote source="#EDITION" n="II 13,23">animas et corpora. animae enim per se mouentur,
+                  ut philosophis uidetur, et</quote>
+               <quote source="#EDITION" n="II 13,24">corpora mouent, corpora uero nec per se sine
+                  anima moueri possunt nec</quote>
+               <quote source="#EDITION" n="II 13,25">animas mouent, sed ab illis mouentur. uocales
+                  similiter et per se</quote>
+               <quote source="#EDITION" n="II 13,26">mouentur ad perficiendam syllabam et
+                  consonantes mouent secum, consonantes</quote>
+               <quote source="#EDITION" n="II 13,27">uero sine uocalibus immobiles sunt. et i quidem
+                  modo pro simplici modo</quote>
+            </div>
 
-            <pb n="3r" xml:id="page__00015" facs="#facs__00015"/>
+
+
+
+
+            
             <pb n="3v" xml:id="page__00016" facs="#facs__00016"/>
             <pb n="4r" xml:id="page__00017" facs="#facs__00017"/>
             <pb n="4v" xml:id="page__00018" facs="#facs__00018"/>
@@ -3487,6 +3802,29 @@
          <zone xml:id="zone.2v.13" ulx="1803" uly="577" lrx="1893" lry="664"/>
          <zone xml:id="zone.2v.15" ulx="1211" uly="594" lrx="1234" lry="614"/>
          <zone xml:id="zone.2v.16" ulx="283" uly="605" lrx="413" lry="650"/>
+         <zone xml:id="zone.2v.20" ulx="562" uly="683" lrx="635" lry="711"/>
+         <zone xml:id="zone.2v.19" ulx="268" uly="697" lrx="484" lry="755"/>
+         <zone xml:id="zone.2v.21" ulx="920" uly="726" lrx="973" lry="760"/>
+         <zone xml:id="zone.2v.22" ulx="272" uly="897" lrx="480" lry="959"/>
+         <zone xml:id="zone.2v.18" ulx="962" uly="908" lrx="985" lry="934"/>
+         <zone xml:id="zone.2v.23" ulx="941" uly="993" lrx="1019" lry="1021"/>
+         <zone xml:id="zone.2v.24" ulx="557" uly="1039" lrx="618" lry="1063"/>
+         <zone xml:id="zone.2v.25" ulx="1698" uly="1065" lrx="1837" lry="1096"/>
+         <zone xml:id="zone.2v.27" ulx="276" uly="1342" lrx="484" lry="1492"/>
+         <zone xml:id="zone.2v.26" ulx="793" uly="1347" lrx="820" lry="1375"/>
+         <zone xml:id="zone.2v.29" ulx="1798" uly="1390" lrx="1890" lry="1442"/>
+         <zone xml:id="zone.2v.28" ulx="1615" uly="1401" lrx="1632" lry="1420"/>
+         <zone xml:id="zone.2v.31" ulx="278" uly="1551" lrx="426" lry="1672"/>
+         <zone xml:id="zone.2v.30" ulx="1410" uly="1578" lrx="1434" lry="1598"/>
+         <zone xml:id="zone.2v.32" ulx="1563" uly="1617" lrx="1632" lry="1640"/>
+         <zone xml:id="zone.2v.37" ulx="1291" uly="1751" lrx="1322" lry="1779"/>
+         <zone xml:id="zone.2v.33" ulx="1124" uly="1751" lrx="1160" lry="1784"/>
+         <zone xml:id="zone.2v.35" ulx="1161" uly="1752" lrx="1187" lry="1775"/>
+         <zone xml:id="zone.2v.34" ulx="1224" uly="1758" lrx="1263" lry="1781"/>
+         <zone xml:id="zone.2v.36" ulx="283" uly="1759" lrx="416" lry="1802"/>
+         <zone xml:id="zone.2v.39" ulx="1083" uly="1790" lrx="1183" lry="1830"/>
+         <zone xml:id="zone.2v.38" ulx="280" uly="1797" lrx="464" lry="1840"/>
+         <zone xml:id="zone.2v.17" ulx="980" uly="908" lrx="1036" lry="932"/>
          <zone xml:id="zone.2v.14" ulx="843" uly="594" lrx="869" lry="623"/>
          <zone xml:id="zone.2v.2" ulx="1272" uly="248" lrx="1475" lry="279"/>
       </surface>
