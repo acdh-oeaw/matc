@@ -143,27 +143,29 @@
       <encodingDesc>
          <editorialDecl>
             <normalization>
-               <p>as for the text of Priscian, with regard to the text published in Hertz' edition:
-                  change of ci/ti ignored</p>
-               <p>change of e/ae/e caudata ignored</p>
-               <p>change of i/y ignored (e.g. sillaba/syllaba)</p>
-               <p>change of i/e ignored, when morphologically insignificant (e.g.
-                  elementum/elimentum; elegantiora/eligantiora)</p>
-               <p>change of t/tt and p/pp ignored (e.g. litera/littera; quatuor/quattuor;
-                  apellantur/appellantur)</p>
-               <p>assimilations ignored (e.g. inliterata/illiterata; subposui/supposui)</p>
-               <p>common abbreviations for et, per, quae, quia, and word endings have been silently
-                  expanded. The Irish abbreviations for et (7-shaped form), quae (q followed by
-                  three dots), and est, as well as the abbreviations for scilicet, vel and id est
-                  are recorded</p>
-               <p>differences from Hertz' edition in the use of capital letters for proper names
-                  ignored</p>
+               <p>Following changes with regard to the text of Priscian as published in Hertz'
+                  edition have not been recorded:</p>
+               <p>change of ci/ti;</p>
+               <p>change of e/ae/e caudata;</p>
+               <p>change of i/y (e.g. sillaba/syllaba;</p>
+               <p>change of i/e when morphologically insignificant (e.g. elementum/elimentum;
+                  elegantiora/eligantiora);</p>
+               <p>change of t/tt and p/pp (e.g. litera/littera; quatuor/quattuor;
+                  apellantur/appellantur);</p>
+               <p>change regarding "h" at word beginning;</p>
+               <p>assimilations (e.g. inliterata/illiterata; subposui/supposui);</p>
+               <p>differences from Hertz' edition in the use of capital letters for proper
+                  names.</p>
+               <p>Common abbreviations for "et", "per", "quae", "quia", and word endings have been
+                  silently expanded. The Irish abbreviations for "et" (7-shaped form), "quae" (q
+                  followed by trigon), and "est", as well as the abbreviations for "scilicet", "vel"
+                  and "id est" are recorded</p>
             </normalization>
             <punctuation>
                <p>I followed the punctuation of Hertz' edition of Priscian's text. As for the
-                  glosses, I reproduced the original punctuation, when occurring</p>
+                  glosses, I reproduced the original punctuation, when occurring.</p>
                <p>I have recorded the presence of positurae only when they served as en excerption
-                  sign. They often occur as a punctuation sign in the manuscript</p>
+                  sign. They often occur as a punctuation sign in the manuscript.</p>
             </punctuation>
          </editorialDecl>
          <classDecl>
@@ -339,6 +341,10 @@
                   <catDesc> symbol added in the margin of the text to call attention to a word,
                      sentence or passage</catDesc>
                </category>
+               <category xml:id="attention-sign-require">
+                  <catDesc> A capital R is added in the margin of the text to call attention to a
+                     word, sentence or passage that needed to be checked</catDesc>
+               </category>
                <category xml:id="excerption-sign-positura">
                   <catDesc> symbol added in the margin of the text either to mark the end of a
                      passage highlighted through a Nota-sign or the end of an excerpt.</catDesc>
@@ -504,6 +510,13 @@
                   <graphic url="../pictures/reference-sign-two-horizontal-dots-distigme.png"/>
                </figure>
             </glyph>
+            <glyph xml:id="reference-sign-dicolon">
+               <localProp name="Name" value="REFERENCE SIGN DICOLON"/>
+               <localProp name="entity" value="reference-sign-dicolon"/>
+               <figure>
+                  <graphic url="../pictures/reference-sign-dicolon.png"/>
+               </figure>
+            </glyph>
             <glyph xml:id="reference-sign-dot-with-acute">
                <localProp name="Name" value="REFERENCE SIGN DOT WITH ACUTE"/>
                <localProp name="entity" value="reference-sign-dot-with-acute"/>
@@ -662,10 +675,17 @@
          </charDecl>
          <charDecl n="attention signs">
             <glyph xml:id="nota-sign">
-               <localProp name="Name" value="MARGINAL ATTENTION SIGN NOTA"/>
+               <localProp name="Name" value="ATTENTION SIGN NOTA"/>
                <localProp name="entity" value="nota"/>
                <figure>
                   <graphic url="../pictures/attention-sign-nota.png"/>
+               </figure>
+            </glyph>
+            <glyph xml:id="require-sign">
+               <localProp name="Name" value="ATTENTION SIGN REQUIRE"/>
+               <localProp name="entity" value="require"/>
+               <figure>
+                  <graphic url="../pictures/attention-sign-require.png"/>
                </figure>
             </glyph>
          </charDecl>
@@ -3586,33 +3606,278 @@
             <div type="page-of-Hertz-edition" n="Liber Primus" xml:id="liber-primus.12"
                next="#liber-primus.13" prev="liber-primus.11" corresp="images-keil:Keil_v2_016.gif"
                xml:lang="la">
-               <!--  -->
-               <quote source="#EDITION" n="II 16,1"></quote>
-               <quote source="#EDITION" n="II 16,2"></quote>
-               <quote source="#EDITION" n="II 16,3"></quote>
-               <quote source="#EDITION" n="II 16,4"></quote>
-               <quote source="#EDITION" n="II 16,5"></quote>
-               <quote source="#EDITION" n="II 16,6"></quote>
-               <quote source="#EDITION" n="II 16,7"></quote>
-               <quote source="#EDITION" n="II 16,8"></quote>
-               <quote source="#EDITION" n="II 16,9"></quote>
-               <quote source="#EDITION" n="II 16,10"></quote>
-               <quote source="#EDITION" n="II 16,11"></quote>
-               <quote source="#EDITION" n="II 16,12"></quote>
-               <quote source="#EDITION" n="II 16,13"></quote>
-               <quote source="#EDITION" n="II 16,14"></quote>
-               <quote source="#EDITION" n="II 16,15"></quote>
-               <quote source="#EDITION" n="II 16,16"></quote>
-               <quote source="#EDITION" n="II 16,17"></quote>
-               <quote source="#EDITION" n="II 16,18"></quote>
-               <quote source="#EDITION" n="II 16,19"></quote>
-               <quote source="#EDITION" n="II 16,20"></quote>
-               
-               
-               
+               <quote source="#EDITION" n="II 16,1">tertiae et quartae <lb n="26" ed="3r"/>
+                  coniugationis, in quibus i ante u consonantem posita</quote>
+               <quote source="#EDITION" n="II 16,2">producitur eademque subtracta corripitur, ut
+                  cupiui cupii, cupiueram</quote>
+               <quote source="#EDITION" n="II 16,3">cupieram,<lb n="27" ed="3r"/> audiui audii,
+                  audiueram audieram. inueniuntur etiam pro</quote>
+               <quote source="#EDITION" n="II 16,4">uocali correpta hoc digamma illi usi, ut
+                  Ἀλκμάν·</quote>
+               <app type="reference-signs" xml:id="rs-16-4-1">
+                  <lem wit="#COD_50">usi</lem>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#gl-1" facs="#zone.3r.14"
+                        ana="#lemma-gloss"><g ref="#reference-sign-two-horizontal-dots-distigme"
+                        /></add></rdg>
+               </app>
+               <app type="gloss" xml:id="gloss-16-4-1">
+                  <lem wit="#COD_50">usi</lem>
+                  <rdg wit="#COD_50"><add place="right margin" hand="#gl-1" facs="#zone.3r.15"
+                        ana="#synonyms"><g ref="#reference-sign-two-horizontal-dots-distigme"/>
+                        potiti</add></rdg>
+               </app>
+               <app type="text-variation" xml:id="tv-16-4-1">
+                  <lem wit="#EDITION">Ἀλκμάν</lem>
+                  <rdg wit="#COD_50" hand="#scr">alcman</rdg>
+               </app>
+               <quote source="#EDITION" n="II 16,5">«καὶ χεῖμα πῦρ τε δά<lb n="28" break="no"
+                     ed="3r"/>Ϝιον»,</quote>
+               <app type="text-variation" xml:id="tv-16-4-2">
+                  <lem wit="#EDITION">τε δάϜιον</lem>
+                  <rdg wit="#COD_50" hand="#scr">TΛδΛΦFION</rdg>
+               </app>
+               <quote source="#EDITION" n="II 16,6">est enim dimetrum iambicum, et sic <g
+                     ref="#irish-est"/> proferendum, Ϝ ut faciat </quote>
+               <app type="reference-signs" xml:id="rs-16-6-1">
+                  <lem wit="#COD_50">dimetrum iambicum</lem>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#gl-1" facs="#zone.3r.16"
+                        ana="#lemma-gloss"><g ref="#reference-sign-half-ring-with-inner-dot"
+                     /></add></rdg>
+               </app>
+               <app type="gloss" xml:id="gloss-16-6-1">
+                  <lem wit="#COD_50">dimetrum iambicum</lem>
+                  <rdg wit="#COD_50"><add place="right margin" hand="#gl-1" facs="#zone.3r.17"
+                        ana="#glosses-elucidating-the-main-text"><g
+                           ref="#reference-sign-half-ring-with-inner-dot"/> ex duobus iunctis
+                        iambis</add></rdg>
+               </app>
+               <app type="gloss" xml:id="gloss-16-6-2">
+                  <lem wit="#COD_50">Ϝ</lem>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#sec" facs="#zone.3r.18"
+                        ana="#glosses-elucidating-the-main-text">uau</add></rdg>
+               </app>
+               <quote source="#EDITION" n="II 16,7">breuem syllabam. nostri quoque hoc ipsum fecisse
+                  inueniuntur <lb n="29" ed="3r"/> et pro</quote>
+               <quote source="#EDITION" n="II 16,8">consonante u uocalem breuem accepisse, ut
+                  Horatius siluae trisyllabum</quote>
+               <app type="gloss" xml:id="gloss-16-8-1">
+                  <lem wit="#COD_50">accepisse</lem>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#gl-1" facs="#zone.3r.19"
+                        ana="#glosses-elucidating-the-main-text">ut soluuit et siluae in ceteris
+                           n<supplied resp="#CG" reason="abbreviation"
+                     >ominibus</supplied></add></rdg>
+                  <note type="explanation" resp="CG">Otfrid takes the example of "soluuit" from
+                     Catullus's verse quoted by Priscian a few lines afterwards, at II 16, 14</note>
+               </app>
+               <quote source="#EDITION" n="II 16,9">protulit in epodo hoc uersu:</quote>
+               <app type="reference-signs" xml:id="rs-16-9-1">
+                  <lem wit="#COD_50">epodo</lem>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#gl-1" facs="#zone.3r.20"
+                        ana="#lemma-gloss"><g ref="#reference-sign-cryphia"/></add></rdg>
+               </app>
+               <app type="gloss" xml:id="gloss-16-9-1">
+                  <lem wit="#COD_50">epodo</lem>
+                  <rdg wit="#COD_50"><add place="right margin" hand="#gl-1" facs="#zone.3r.21"
+                        ana="#glosses-elucidating-the-main-text #acquaintance-with-classics"><g
+                           ref="#reference-sign-cryphia"/> in illo libro</add></rdg>
+               </app>
+               <quote source="#EDITION" n="II 16,10">«niuesque deducunt Iouem, <lb n="30" ed="3r"/>
+                  nunc mare nunc siluae»:</quote>
+               <quote source="#EDITION" n="II 16,11"><g ref="#irish-est"/> enim dimetrum iambicum
+                  coniunctum penthemimeri heroico, quod aliter</quote>
+               <app type="emendation" xml:id="emendation-16-11-1">
+                  <lem wit="#EDITION">penthemimeri</lem>
+                  <rdg wit="#COD_50" hand="#scr">penth<del type="expunction">e</del><add
+                        place="above">i</add>m<del type="expunction">e</del><add place="above"
+                        >i</add>mer<del type="expunction">e</del><add place="above">i</add></rdg>
+               </app>
+               <quote source="#EDITION" n="II 16,12">stare non pot<g ref="#irish-est"/>, nisi siluae
+                     <lb n="31" ed="3r"/> trisyllabum accipiatur. similiter Catullus</quote>
+               <quote source="#EDITION" n="II 16,13">Veronensis</quote>
+               <quote source="#EDITION" n="II 16,14">«quod zonam soluit diu ligatam»</quote>
+               <quote source="#EDITION" n="II 16,15">inter hendecasyllabos phalaecios posuit, <lb
+                     n="32" ed="3r"/>ergo nisi soluit trisyllabum</quote>
+               <app type="gloss" xml:id="gloss-16-15-1">
+                  <lem wit="#COD_50">hendecasyllabos</lem>
+                  <rdg wit="#COD_50"><add place="right margin" hand="#gl-1" facs="#zone.3r.23"
+                        ana="#glosses-elucidating-the-main-text">id est .XI. syllabos.</add></rdg>
+               </app>
+               <app type="text-variation" xml:id="tv-16-15-1">
+                  <lem wit="#EDITION">phalaecios</lem>
+                  <rdg wit="#COD_50" hand="#scr">phalleutios</rdg>
+               </app>
+               <app type="annotation-signs" xml:id="as-16-15-1">
+                  <lem wit="#COD_50">phalleutios</lem>
+                  <rdg wit="#COD_50"><add place="right margin" hand="#gl-1" facs="#zone.3r.22"
+                        ana="#attention-sign-require"><g ref="#require-sign"/></add></rdg>
+               </app>
+               <quote source="#EDITION" n="II 16,16">accipias, uersus stare non possit. hoc tamen
+                  ipsum in deriuatiuis uel</quote>
+               <quote source="#EDITION" n="II 16,17">compositis frequenter solet <lb n="33" ed="3r"
+                  /> fieri, ut uoluo uolutus, soluo solutus, auis</quote>
+               <quote source="#EDITION" n="II 16,18">auceps, auspicium, augurium, augustus, lauo
+                  lautus, faueo fautor.</quote>
+               <app type="reference-signs" xml:id="rs-16-18-1">
+                  <lem wit="#COD_50">auceps</lem>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#gl-1" facs="#zone.3r.24"
+                        ana="#lemma-gloss"><g ref="#reference-sign-two-horizontal-dots-distigme"
+                        /></add></rdg>
+               </app>
+               <app type="gloss" xml:id="gloss-16-18-1">
+                  <lem wit="#COD_50">auceps</lem>
+                  <rdg wit="#COD_50"><add place="left margin" hand="#gl-1" facs="#zone.3r.25"
+                        ana="#glosses-elucidating-the-main-text #original-parts-of-a-word">aues
+                        capiens</add></rdg>
+                  <note corresp="#gloss-16-18-1" type="explanation" resp="#CG">The same gloss recurs
+                     in MS München BSB Clm 18375, f. 9r and in Köln 200, f. 4v</note>
+               </app>
+               <app type="reference-signs" xml:id="rs-16-18-2">
+                  <lem wit="#COD_50">auspicium</lem>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#gl-1" facs="#zone.3r.26"
+                        ana="#lemma-gloss"><g ref="#reference-sign-dicolon"/></add></rdg>
+               </app>
+               <app type="gloss" xml:id="gloss-16-18-2">
+                  <lem wit="#COD_50">auspicium</lem>
+                  <rdg wit="#COD_50"><add place="left margin" hand="#gl-1" facs="#zone.3r.27"
+                        ana="#glosses-elucidating-the-main-text #original-parts-of-a-word">auium
+                        inspectio</add></rdg>
+                  <note corresp="#gloss-16-18-2" type="explanation" resp="#CG">The same gloss recurs
+                     in MS München BSB Clm 18375, f. 9r. A similar gloss occurs in Köln 200, f.
+                     4v</note>
+               </app>
+               <app type="reference-signs" xml:id="rs-16-18-3">
+                  <lem wit="#COD_50">augurium</lem>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#gl-1" facs="#zone.3r.28"
+                        ana="#lemma-gloss"><g ref="#reference-sign-dotted-S"/></add></rdg>
+               </app>
+               <app type="gloss" xml:id="gloss-16-18-3">
+                  <lem wit="#COD_50">augurium</lem>
+                  <rdg wit="#COD_50"><add place="right margin" hand="#gl-1" facs="#zone.3r.29"
+                        ana="#glosses-elucidating-the-main-text #original-parts-of-a-word"><g
+                           ref="#reference-sign-dotted-S"/> auium garrium.</add></rdg>
+                  <note corresp="#gloss-16-18-3" type="explanation" resp="#CG">The same gloss recurs
+                     in MS München BSB Clm 18375, f. 9r.</note>
+               </app>
+               <app type="reference-signs" xml:id="rs-16-18-4">
+                  <lem wit="#COD_50">augustus</lem>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#gl-1" facs="#zone.3r.30"
+                        ana="#lemma-gloss"><g ref="#reference-sign-half-ring-with-inner-dot"
+                     /></add></rdg>
+               </app>
+               <app type="gloss" xml:id="gloss-16-18-4">
+                  <lem wit="#COD_50">augustus</lem>
+                  <rdg wit="#COD_50"><add place="right margin" hand="#gl-1" facs="#zone.3r.31"
+                        ana="#glosses-elucidating-the-main-text #original-parts-of-a-word"><g
+                           ref="#reference-sign-half-ring-with-inner-dot"/> auium gestus</add></rdg>
+               </app>
+               <app type="gloss" xml:id="gloss-16-18-5">
+                  <lem wit="#COD_50">fautor</lem>
+                  <rdg wit="#COD_50"><add place="interlienar above" hand="#gl-1" facs="#zone.3r.32"
+                        ana="#synonyms">adiutor</add></rdg>
+                  <note corresp="#gloss-16-18-5" type="explanation" resp="#CG">The same gloss recurs
+                     in MS München BSB Clm 18375, f. 9r.</note>
+               </app>
+               <quote source="#EDITION" n="II 16,19"><add type="text-variation" xml:id="tv-16-19-1"
+                     hand="#scr" source="#COD_50" place="inline">F</add> digamma Aeolis <g
+                     ref="#irish-est"/> quan<lb n="34" break="no" ed="3r"/>do in metris pro nihilo
+                  accipiebant, ut:</quote>
+               <app type="text-variation" xml:id="tv-16-19-2">
+                  <lem wit="#EDITION">in metris pro nihilo accipiebant</lem>
+                  <rdg wit="#COD_50" hand="#scr">pro nihilo accipiebant in metris</rdg>
+               </app>
+               <quote source="#EDITION" n="II 16,20">«ἁμὲς δ᾽ Ϝειρήναν † τὸ δὲ γὰρ θέτο Μῶσα
+                  λίγεια»,</quote>
+               <app type="text-variation" xml:id="tv-16-20-1">
+                  <lem wit="#EDITION">θέτο Μῶσα λίγεια</lem>
+                  <rdg wit="#COD_50" hand="#scr">OETO MꞶoCAALTAIA</rdg>
+               </app>
             </div>
+            <div type="page-of-Hertz-edition" n="Liber Primus" xml:id="liber-primus.13"
+               next="#liber-primus.14" prev="liber-primus.12" corresp="images-keil:Keil_v2_017.gif"
+               xml:lang="la">
+               <quote source="#EDITION" n="II 17,1">est enim hexametrum heroicum. apud <lb n="35"
+                     ed="3r"/> Latinos quoque hoc idem inuenitur</quote>
+               <quote source="#EDITION" n="II 17,2">pro nihilo in metris, et maxime apud
+                  uetustissimos comicorum, ut</quote>
+               <app type="gloss" xml:id="gloss-17-2-1">
+                  <lem wit="#COD_50">comicorum</lem>
+                  <rdg wit="#COD_50"><add place="right margin" hand="#gl-1" facs="#zone.3r.33"
+                        ana="#synonyms #glosses-elucidating-the-main-text">comici· istriones· inde
+                           come<supplied resp="#CG" reason="illegible">dia</supplied></add></rdg>
+               </app>
+               <quote source="#EDITION" n="II 17,3">Terentius in Andria:</quote>
+               <quote source="#EDITION" n="II 17,4">«sine inuidia <lb n="36" ed="3r"/> laudem
+                  inuenias et amicos pares»:</quote>
+               <quote source="#EDITION" n="II 17,5"><g ref="#irish-est"/> enim iambicum trimetrum,
+                  quod, nisi sine inui. pro tribracho</quote>
+               <app type="emendation" xml:id="emendation-17-5-1">
+                  <lem wit="#EDITION">tribracho</lem>
+                  <rdg wit="#COD_50" hand="#scr">tribrach<del type="expunction">i</del>o</rdg>
+               </app>
+               <quote source="#EDITION" n="II 17,6">accipiatur, stare [uersus] non pot<g
+                     ref="#irish-est"/>. sci<lb n="37" break="no" ed="3r"/>endum tamen, quod hoc
+                  ipsum</quote>
+               <quote source="#EDITION" n="II 17,7">Aeolis quidem ubique loco aspirationis ponebant
+                  effugientes spiritus</quote>
+               <quote source="#EDITION" n="II 17,8">asperitatem, nos autem in mul<lb n="38"
+                     break="no" ed="3r"/>tis quidem, non tamen in omnibus illos sequimur,</quote>
+               <quote source="#EDITION" n="II 17,9">ut cum dicimus uespera, uis, uestis.</quote>
+               <app type="gloss" xml:id="gloss-17-9-1">
+                  <lem wit="#COD_50">uespera</lem>
+                  <rdg wit="#COD_50"><add place="interlienar above" hand="#gl-1" facs="#zone.3r.34"
+                        ana="#glosses-elucidating-the-main-text">pro hespera</add></rdg>
+                  <note corresp="#gloss-17-9-1" type="explanation" resp="#CG">The same gloss recurs
+                     in MS München BSB Clm 18375, f. 9v and MS Köln 200, f. 5r.</note>
+               </app>
+               <app type="gloss" xml:id="gloss-17-9-2">
+                  <lem wit="#COD_50">uis</lem>
+                  <rdg wit="#COD_50"><add place="interlienar above" hand="#gl-1" facs="#zone.3r.35"
+                        ana="#glosses-elucidating-the-main-text">pro his</add></rdg>
+                  <note corresp="#gloss-17-9-2" type="explanation" resp="#CG">The same gloss recurs
+                     in MS München BSB Clm 18375, f. 9v and MS Köln 200, f. 5r.</note>
+               </app>
+               <app type="gloss" xml:id="gloss-17-9-3">
+                  <lem wit="#COD_50">uestis</lem>
+                  <rdg wit="#COD_50"><add place="interlienar above" hand="#gl-1" facs="#zone.3r.36"
+                        ana="#glosses-elucidating-the-main-text">pro hestis</add></rdg>
+                  <note corresp="#gloss-17-9-3" type="explanation" resp="#CG">The same gloss recurs
+                     in MS München BSB Clm 18375, f. 9v and MS Köln 200, f. 5r.</note>
+               </app>
+               <quote source="#EDITION" n="II 17,10">hiatus quoque causa solebant illi interponere
+                     <pb n="3v" xml:id="page__00016" facs="#facs__00016"/><lb n="1" ed="3v"/>
+                  <add type="text-variation" xml:id="tv-17-10-1" hand="#scr" source="#COD_50"
+                     place="inline">digamma</add> Ϝ, quod ostendunt et</quote>
+               <app type="reference-signs" xml:id="rs-17-10-1">
+                  <lem wit="#COD_50">hiatus</lem>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#gl-1" facs="#zone.3r.37"
+                     ana="#lemma-gloss"><g ref="#reference-sign-half-ring-with-dot-below"
+                     /></add></rdg>
+               </app>
+               <app type="gloss" xml:id="gloss-17-10-1">
+                  <lem wit="#COD_50">hiatus</lem>
+                  <rdg wit="#COD_50"><add place="right margin" hand="#gl-1" facs="#zone.3r.38"
+                     ana="#glosses-elucidating-the-main-text"><g
+                        ref="#reference-sign-half-ring-with-dot-below"/> oris apertio</add></rdg>
+               </app>
+               
+               <!--  -->
+               
+               <quote source="#EDITION" n="II 17,11">poetae Aeolide usi (Ἀλκμάν· </quote>
+               <quote source="#EDITION" n="II 17,12">«καὶ χεῖμα πῦρ τε δάϜιον»):</quote>
+               <quote source="#EDITION" n="II 17,13">et epigrammata, quae egomet legi in tripode
+                  uetustissimo Apollinis, qui</quote>
+               <quote source="#EDITION" n="II 17,14">stat in Xerolopho Byzantii, sic
+                  scripta:</quote>
+               <quote source="#EDITION" n="II 17,15">ΔημοφαϜων ΛαϜοκοϜων.</quote>
+               <quote source="#EDITION" n="II 17,16">nos quoque hiatus causa interponimus u loco Ϝ,
+                  ut Dauus, Argiuus,</quote>
+               <quote source="#EDITION" n="II 17,17">pauo, ouum, ouis, bouis. hoc tamen etiam per
+                  alias quasdam</quote>
+               <quote source="#EDITION" n="II 17,18">consonantes hiatus uel euphoniae causa solet
+                  fieri, ut prodest, comburo,</quote>
 
-            <pb n="3v" xml:id="page__00016" facs="#facs__00016"/>
+            </div>
+            
             <pb n="4r" xml:id="page__00017" facs="#facs__00017"/>
             <pb n="4v" xml:id="page__00018" facs="#facs__00018"/>
             <pb n="5r" xml:id="page__00019" facs="#facs__00019"/>
@@ -4126,6 +4391,31 @@
          <zone xml:id="zone.3r.11" ulx="400" uly="1010" lrx="436" lry="1035"/>
          <zone xml:id="zone.3r.12" ulx="1491" uly="1026" lrx="1632" lry="1072"/>
          <zone xml:id="zone.3r.13" ulx="414" uly="1042" lrx="487" lry="1081"/>
+         <zone xml:id="zone.3r.14" ulx="1063" uly="1429" lrx="1084" lry="1440"/>
+         <zone xml:id="zone.3r.15" ulx="1507" uly="1431" lrx="1583" lry="1457"/>
+         <zone xml:id="zone.3r.18" ulx="745" uly="1461" lrx="805" lry="1485"/>
+         <zone xml:id="zone.3r.16" ulx="463" uly="1462" lrx="501" lry="1482"/>
+         <zone xml:id="zone.3r.17" ulx="1472" uly="1473" lrx="1689" lry="1507"/>
+         <zone xml:id="zone.3r.19" ulx="551" uly="1498" lrx="756" lry="1522"/>
+         <zone xml:id="zone.3r.20" ulx="1059" uly="1511" lrx="1084" lry="1529"/>
+         <zone xml:id="zone.3r.21" ulx="1481" uly="1513" lrx="1606" lry="1547"/>
+         <zone xml:id="zone.3r.22" ulx="1645" uly="1583" lrx="1695" lry="1614"/>
+         <zone xml:id="zone.3r.23" ulx="1505" uly="1599" lrx="1647" lry="1650"/>
+         <zone xml:id="zone.3r.28" ulx="775" uly="1679" lrx="795" lry="1708"/>
+         <zone xml:id="zone.3r.32" ulx="1143" uly="1681" lrx="1219" lry="1713"/>
+         <zone xml:id="zone.3r.24" ulx="565" uly="1682" lrx="590" lry="1702"/>
+         <zone xml:id="zone.3r.29" ulx="1492" uly="1683" lrx="1616" lry="1714"/>
+         <zone xml:id="zone.3r.30" ulx="875" uly="1685" lrx="895" lry="1707"/>
+         <zone xml:id="zone.3r.26" ulx="638" uly="1686" lrx="656" lry="1706"/>
+         <zone xml:id="zone.3r.27" ulx="69" uly="1705" lrx="161" lry="1740"/>
+         <zone xml:id="zone.3r.31" ulx="1491" uly="1710" lrx="1605" lry="1740"/>
+         <zone xml:id="zone.3r.33" ulx="1474" uly="1782" lrx="1690" lry="1824"/>
+         <zone xml:id="zone.3r.35" ulx="890" uly="1912" lrx="930" lry="1940"/>
+         <zone xml:id="zone.3r.36" ulx="936" uly="1913" lrx="999" lry="1941"/>
+         <zone xml:id="zone.3r.37" ulx="1040" uly="1925" lrx="1058" lry="1940"/>
+         <zone xml:id="zone.3r.38" ulx="1462" uly="1930" lrx="1567" lry="1962"/>
+         <zone xml:id="zone.3r.34" ulx="815" uly="1912" lrx="885" lry="1939"/>
+         <zone xml:id="zone.3r.25" ulx="75" uly="1686" lrx="158" lry="1714"/>
       </surface>
       <surface xml:id="facs__00016" n="3v">
          <graphic url="http://diglib.hab.de/mss/50-weiss/max/00016.jpg"/>
