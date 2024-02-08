@@ -76,7 +76,7 @@
                                     <String></String>
                                 </field>
                                 <field name="inputXSLURL">
-                                    <String>file:/Z:/MARGINS%20AT%20THE%20CENTRE/digitale-edition-margins-28-01-2022/matc/xsl/transformation-to-html-for-homepage-edition.xsl</String>
+                                    <String>${pdu}/xsl/transformation-to-html-for-homepage-edition.xsl</String>
                                 </field>
                                 <field name="inputXMLURL">
                                     <String>${currentFileURL}</String>
@@ -112,7 +112,7 @@
                                     <Boolean>false</Boolean>
                                 </field>
                                 <field name="showInXMLPane">
-                                    <Boolean>true</Boolean>
+                                    <Boolean>false</Boolean>
                                 </field>
                                 <field name="showInSVGPane">
                                     <Boolean>false</Boolean>
