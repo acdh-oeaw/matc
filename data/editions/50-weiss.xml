@@ -657,11 +657,11 @@
                   <graphic url="../pictures/reference-sign-y.png"/>
                </figure>
             </glyph>
-            <glyph xml:id="reference-sign-dicolon-virga">
-               <localProp name="Name" value="REFERENCE SIGN DICOLON VIRGA"/>
-               <localProp name="entity" value="reference-sign-dicolon-virga"/>
+            <glyph xml:id="reference-sign-dotted-virga">
+               <localProp name="Name" value="REFERENCE SIGN DOTTED VIRGA"/>
+               <localProp name="entity" value="reference-sign-dotted-virga"/>
                <figure>
-                  <graphic url="../pictures/reference-sign-dicolon-virga.png"/>
+                  <graphic url="../pictures/reference-sign-dotted-virga.png"/>
                </figure>
             </glyph>
             <glyph xml:id="reference-sign-converging-strokes-with-dicolon">
@@ -2970,7 +2970,7 @@
                         ana="#glosses-elucidating-the-main-text"><g ref="#reference-sign-trigon"/><g
                            ref="#idest"/> quam apud nos·u· ante u <gap unit="char" quantity="2"
                            reason="illegible"/>tinetur ut seruus <g
-                           ref="#reference-sign-dicolon-virga"/>dici<gap unit="char" quantity="2"
+                              ref="#reference-sign-dotted-virga"/>dici<gap unit="char" quantity="2"
                            reason="illegible"/>uau·</add></rdg>
                   <note corresp="#gloss-11-5-1" resp="#CG">compare Priscian's text on II 15,
                      3</note>
@@ -3065,12 +3065,12 @@
                <app type="reference-signs" xml:id="rs-11-19-1">
                   <lem wit="#EDITION">in omnia</lem>
                   <rdg wit="#COD_50"><add place="interlinear above" hand="#scr" facs="#zone.2v.18"
-                        ana="#lemma-gloss"><g ref="#reference-sign-dicolon-virga"/></add></rdg>
+                     ana="#lemma-gloss"><g ref="#reference-sign-dotted-virga"/></add></rdg>
                </app>
                <app type="gloss" xml:id="gloss-11-19-2">
                   <lem wit="#EDITION">in omnia</lem>
                   <rdg wit="#COD_50"><add place="left margin" hand="#scr" facs="#zone.2v.22"
-                        ana="#text-variant"><g ref="#reference-sign-dicolon-virga"/><g ref="#vel"/>
+                     ana="#text-variant"><g ref="#reference-sign-dotted-virga"/><g ref="#vel"/>
                         in omni doctrina</add></rdg>
                </app>
                <quote source="#EDITION" n="II 11,20">locum apud nos f obtinet, quod osten<lb n="17"
@@ -3251,13 +3251,13 @@
                <app type="reference-signs" xml:id="rs-13-6-1">
                   <lem wit="#EDITION">Phthius</lem>
                   <rdg wit="#COD_50"><add place="interlinear above" hand="#scr" facs="#zone.2v.35"
-                        ana="#lemma-gloss"><g ref="#reference-sign-dicolon-virga"/></add></rdg>
+                     ana="#lemma-gloss"><g ref="#reference-sign-dotted-virga"/></add></rdg>
                </app>
                <app type="gloss" xml:id="gloss-13-6-2">
                   <lem wit="#EDITION">Phthius</lem>
                   <rdg wit="#COD_50"><add place="left margin" hand="#scr" facs="#zone.2v.36"
                         ana="#glosses-elucidating-the-main-text"><g
-                           ref="#reference-sign-dicolon-virga"/>apollo</add></rdg>
+                           ref="#reference-sign-dotted-virga"/>apollo</add></rdg>
                </app>
                <quote source="#EDITION" n="II 13,7">Erichthonius. nulla enim syllaba plus duabus
                   potest mutis <lb n="36" ed="2v"/>habere iuxta se</quote>
@@ -3469,12 +3469,12 @@
                <app type="reference-signs" xml:id="rs-14-19-1">
                   <lem wit="#COD_50">·i· litteram</lem>
                   <rdg wit="#COD_50"><add place="interlinear above" hand="#scr" facs="#zone.3r.9"
-                        ana="#lemma-gloss"><g ref="#reference-sign-dicolon-virga"/></add></rdg>
+                     ana="#lemma-gloss"><g ref="#reference-sign-dotted-virga"/></add></rdg>
                </app>
                <app type="gloss" xml:id="gloss-14-19-1">
                   <lem wit="#COD_50">·i· litteram</lem>
                   <rdg wit="#COD_50"><add place="right margin" hand="#scr" facs="#zone.3r.10"
-                        ana="#text-variant"><g ref="#reference-sign-dicolon-virga"/>
+                     ana="#text-variant"><g ref="#reference-sign-dotted-virga"/>
                         <g ref="#vel"/> ante eam</add></rdg>
                </app>
                <quote source="#EDITION" n="II 14,20">inueniri, sicut nec ante <lb n="18" ed="3r"/> u
@@ -3864,16 +3864,77 @@
                         ana="#Greek-glosses">in mensa <g ref="#vel"/> uase tres pedes habentia <g
                            ref="#vel"/> quod mensę supponitur</add></rdg>
                </app>
-               <!--  -->
                <quote source="#EDITION" n="II 17,14">stat in Xerolopho Byzantii, sic
                   scripta:</quote>
+               <app type="gloss" xml:id="gloss-17-14-1">
+                  <lem wit="#EDITION">in Xerolopho</lem>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#gl-1" facs="#zone.3v.3"
+                        ana="#Greek-glosses">in illo loco <g ref="#idest"/> in sicco
+                     ceruo</add></rdg>
+               </app>
+               <app type="reference-signs" xml:id="rs-17-14-1">
+                  <lem wit="#EDITION">in Xerolopho</lem>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#scr" facs="#zone.3v.4"
+                        ana="#lemma-gloss"><g ref="#reference-sign-dotted-obelus"/></add></rdg>
+               </app>
+               <app type="gloss" xml:id="gloss-17-14-2">
+                  <lem wit="#EDITION">in Xerolopho</lem>
+                  <rdg wit="#COD_50"><add place="left margin" hand="#scr" facs="#zone.3v.5"
+                        ana="#Greek-glosses">in xero <g ref="#idest"/> in cornu· <del hand="scr"
+                           cause="emendation" rend="rasura">lopho <g ref="#idest"/> in cornu·</del>
+                        lopho <add hand="scr" place="above"><g ref="#idest"/></add> cerui· elophos·
+                        ceruus </add></rdg>
+               </app>
+               <app type="reference-signs" xml:id="rs-17-14-2">
+                  <lem wit="#EDITION">Byzantii</lem>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#gl-1" facs="#zone.3v.6"
+                        ana="#lemma-gloss"><g ref="#reference-sign-half-ring-with-dot-below"
+                     /></add></rdg>
+               </app>
+               <app type="gloss" xml:id="gloss-17-14-3">
+                  <lem wit="#EDITION">Byzantii</lem>
+                  <rdg wit="#COD_50"><add place="left margin" hand="#gl-1" facs="#zone.3v.7"
+                        ana="#geographical-names"><g ref="#reference-sign-half-ring-with-dot-below"
+                        />constantinopolis quae ante bizantium dic<supplied reason="abbreviation"
+                           resp="#CG">eban</supplied>t</add></rdg>
+               </app>
                <quote source="#EDITION" n="II 17,15">ΔημοφαϜων ΛαϜοκοϜων.</quote>
-               <quote source="#EDITION" n="II 17,16">nos quoque hiatus causa interponimus u loco Ϝ,
+               <app type="text-variation" xml:id="tv-17-15-1">
+                  <rdg wit="#COD_50" hand="#scr">BUMaΦaFONΛaFOKaFON</rdg>
+               </app>
+               <quote source="#EDITION" n="II 17,16">nos quoque hiatus causa inter<lb
+                  n="3" break="no" ed="3v"/>ponimus u loco Ϝ,
                   ut Dauus, Argiuus,</quote>
+               <app type="text-variation" xml:id="tv-17-16-1">
+                  <lem wit="#EDITION">nos</lem>
+                  <rdg wit="#COD_50" hand="#scr">&amp; nos</rdg>
+               </app>
+               <app type="text-variation" xml:id="tv-17-16-2">
+                  <lem wit="#EDITION">Ϝ</lem>
+                  <rdg wit="#COD_50" hand="#scr">digamma Ϝ</rdg>
+               </app>
+               <app type="gloss" xml:id="gloss-17-16-1">
+                  <lem wit="#EDITION">argiuus</lem>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#gl-1" facs="#zone.3v.8"
+                     ana="#Greek-glosses">grecus· apud grecos argus</add></rdg>
+               </app>
                <quote source="#EDITION" n="II 17,17">pauo, ouum, ouis, bouis. hoc tamen etiam per
                   alias quasdam</quote>
                <quote source="#EDITION" n="II 17,18">consonantes hiatus uel euphoniae causa solet
                   fieri, ut prodest, comburo,</quote>
+               <app type="reference-signs" xml:id="rs-17-18-1">
+                  <lem wit="#EDITION">hiatus</lem>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#scr" facs="#zone.3v.9"
+                     ana="#lemma-gloss"><g ref="#reference-sign-dotted-virga"
+                     /></add></rdg>
+               </app>
+               <app type="gloss" xml:id="gloss-17-18-1">
+                  <lem wit="#EDITION">hiatus</lem>
+                  <rdg wit="#COD_50"><add place="right margin" hand="#scr" facs="#zone.3v.10"
+                     ana="#glosses-elucidating-the-main-text"><g ref="#reference-sign-dotted-virga"
+                     /> apertio oris</add></rdg>
+               </app>
+               
                <!--  -->
             </div>
 
@@ -4419,6 +4480,14 @@
       <surface xml:id="facs__00016" n="3v">
          <graphic url="http://diglib.hab.de/mss/50-weiss/max/00016.jpg"/>
          <zone xml:id="zone.3v.1" ulx="1379" uly="240" lrx="1502" lry="276"/>
+         <zone xml:id="zone.3v.5" ulx="273" uly="200" lrx="597" lry="322"/>
+         <zone xml:id="zone.3v.4" ulx="896" uly="321" lrx="923" lry="331"/>
+         <zone xml:id="zone.3v.10" ulx="1757" uly="330" lrx="1873" lry="353"/>
+         <zone xml:id="zone.3v.8" ulx="945" uly="343" lrx="1126" lry="379"/>
+         <zone xml:id="zone.3v.9" ulx="1701" uly="348" lrx="1717" lry="360"/>
+         <zone xml:id="zone.3v.3" ulx="845" uly="296" lrx="1019" lry="332"/>
+         <zone xml:id="zone.3v.6" ulx="1022" uly="311" lrx="1036" lry="331"/>
+         <zone xml:id="zone.3v.7" ulx="269" uly="318" lrx="490" lry="373"/>
          <zone xml:id="zone.3v.2" ulx="1718" uly="229" lrx="1893" lry="309"/>
       </surface>
       <surface xml:id="facs__00017" n="4r">
