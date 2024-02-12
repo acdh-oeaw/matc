@@ -143,8 +143,8 @@
       <encodingDesc>
          <editorialDecl>
             <normalization>
-               <p>Following changes against the text of Priscian as published in Hertz'
-                  edition have not been recorded:</p>
+               <p>Following changes against the text of Priscian as published in Hertz' edition have
+                  not been recorded:</p>
                <p>change of ci/ti;</p>
                <p>change of e/ae/e caudata;</p>
                <p>change regarding "h" at word beginning;</p>
@@ -3995,7 +3995,7 @@
                   <rdg wit="#COD_50"><add place="left margin" hand="#gl-1" facs="#zone.3v.17"
                         ana="#glosses-elucidating-the-main-text"><g ref="#reference-sign-quadrigon"
                         /> Quamuis produceretur <gap unit="char" quantity="4" reason="illegible"/>
-                        uocalis ut est audui quod non est uerum· tamen pro simplici &amp; non pro
+                        uocalis ut est audiui quod non est uerum· tamen pro simplici &amp; non pro
                         duplici ut i· sicut est troia· <g ref="#nota-sign"/></add></rdg>
                </app>
                <quote source="#EDITION" n="II 18,3">loco digamma posita] potestas simplicis
@@ -4080,7 +4080,7 @@
                         ille instituit de generibus locutionum</add></rdg>
                </app>
                <quote source="#EDITION" n="II 18,14">euphoniae causa conuerti inuenimus, ut aufero
-                  <lb n="12" ed="3v"/> pro abfero.</quote>
+                     <lb n="12" ed="3v"/> pro abfero.</quote>
                <app type="text-variation" xml:id="tv-18-14-1">
                   <lem wit="#EDITION">ut</lem>
                   <rdg wit="#COD_50"/>
@@ -4097,8 +4097,8 @@
                   Chremes,</quote>
                <quote source="#EDITION" n="II 18,18">Thraso, Philippus, Pyrrhus. ideo autem
                   extrinsecus ascribitur</quote>
-               <quote source="#EDITION" n="II 18,19"><lb n="14" ed="3v"/> uocalibus, ut minimum sonet, consonantibus
-                  autem intrinsecus, ut</quote>
+               <quote source="#EDITION" n="II 18,19"><lb n="14" ed="3v"/> uocalibus, ut minimum
+                  sonet, consonantibus autem intrinsecus, ut</quote>
                <app type="text-variation" xml:id="tv-18-19-1">
                   <lem wit="#EDITION">sonet</lem>
                   <rdg wit="#COD_50" hand="#scr">sonat</rdg>
@@ -4106,7 +4106,7 @@
                <app type="gloss" xml:id="gloss-18-19-1">
                   <lem wit="#EDITION">minimum</lem>
                   <rdg wit="#COD_50"><add place="interlinear above" hand="#sec" facs="#zone.3v.24"
-                     ana="#glosses-elucidating-the-main-text">pro paruum</add></rdg>
+                        ana="#glosses-elucidating-the-main-text">pro paruum</add></rdg>
                   <note corresp="#gloss-18-6-1" type="explanation" resp="#CG">A similar gloss recurs
                      in MS München BSB Clm 18375, f. 9v</note>
                </app>
@@ -4116,8 +4116,184 @@
             <div type="page-of-Hertz-edition" n="Liber Primus" xml:id="liber-primus.15"
                next="#liber-primus.16" prev="liber-primus.14" corresp="images-keil:Keil_v2_019.gif"
                xml:lang="la">
-               
-               
+               <quote source="#EDITION" n="II 19,1">quam cum anteponitur, quod uocalibus accidens
+                  esse uidetur, nec, si</quote>
+               <app type="gloss" xml:id="gloss-19-1-1">
+                  <lem wit="#EDITION">anteponitur, quod</lem>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#gl-1" facs="#zone.3v.25"
+                        ana="#glosses-elucidating-the-main-text #text-variant">h· <g ref="#vel"/>
+                        quae</add></rdg>
+               </app>
+               <quote source="#EDITION" n="II 19,2">tollatur ea, perit etiam uis sig<lb n="16"
+                     break="no" ed="3v"/>nificationis, ut si dicam Erennius absque</quote>
+               <quote source="#EDITION" n="II 19,3">aspiratione, quamuis uitium uidear facere,
+                  intellectus tamen permanet.</quote>
+               <quote source="#EDITION" n="II 19,4">consonan<lb n="17" break="no" ed="3v"/>tibus
+                  autem sic cohaeret, ut eiusdem penitus substantiae sit, ut, si</quote>
+               <quote source="#EDITION" n="II 19,5">auferatur, significationis uim minuat prorsus,
+                  ut si dicam <lb n="18" ed="3v"/>Cremes pro</quote>
+               <app type="gloss" xml:id="gloss-19-5-1">
+                  <lem wit="#EDITION">prorsus</lem>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#gl-1" facs="#zone.3v.26"
+                        ana="#glosses-elucidating-the-main-text"><g ref="#idest"/>
+                     penitus</add></rdg>
+               </app>
+               <quote source="#EDITION" n="II 19,6">Chremes. unde hac considerata ratione Graecorum
+                  doctissimi singulas</quote>
+               <app type="reference-signs" xml:id="rs-19-6-1">
+                  <lem wit="#EDITION">Chremes</lem>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#gl-1" facs="#zone.3v.27"
+                        ana="#lemma-gloss"><g ref="#reference-sign-half-ring-with-dot-below"
+                     /></add></rdg>
+               </app>
+               <app type="gloss" xml:id="gloss-19-6-1">
+                  <lem wit="#EDITION">Chremes</lem>
+                  <rdg wit="#COD_50"><add place="left margin" hand="#gl-1" facs="#zone.3v.28"
+                        ana="#glosses-elucidating-the-main-text"><g
+                           ref="#reference-sign-half-ring-with-dot-below"/>proprium nomen <g
+                           ref="#vel"/> ciuitas. <del cause="problem-solved" type="rasura"><g
+                              ref="#nota-sign"/></del><add>a cremo· cremas·</add></add></rdg>
+               </app>
+               <quote source="#EDITION" n="II 19,7">fecerunt eas quoque literas, quippe <lb n="19"
+                     ed="3v"/>pro τ⊦ θ, pro π⊦ φ, pro κ⊦ χ</quote>
+               <app type="text-variation" xml:id="tv-19-7-1">
+                  <lem wit="#EDITION">τ⊦</lem>
+                  <rdg wit="#COD_50" hand="#scr">t·H</rdg>
+               </app>
+               <app type="text-variation" xml:id="tv-19-7-2">
+                  <lem wit="#EDITION">π⊦</lem>
+                  <rdg wit="#COD_50" hand="#scr">π·H</rdg>
+               </app>
+               <app type="text-variation" xml:id="tv-19-7-3">
+                  <lem wit="#EDITION">κ⊦</lem>
+                  <rdg wit="#COD_50" hand="#scr"><del cause="emendation" type="expunction"
+                        >k</del><add place="interlinear above">c</add>·H</rdg>
+               </app>
+               <app type="gloss" xml:id="gloss-19-7-1">
+                  <lem wit="#EDITION">t</lem>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#sec" facs="#zone.3v.29"
+                        ana="#Greek-glosses">tau</add></rdg>
+               </app>
+               <app type="gloss" xml:id="gloss-19-7-2">
+                  <lem wit="#EDITION">θ</lem>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#sec" facs="#zone.3v.30"
+                        ana="#Greek-glosses">theta</add></rdg>
+               </app>
+               <app type="gloss" xml:id="gloss-19-7-3">
+                  <lem wit="#EDITION">χ</lem>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#sec" facs="#zone.3v.31"
+                        ana="#Greek-glosses">chi</add></rdg>
+               </app>
+               <quote source="#EDITION" n="II 19,8">scribentes. nos autem antiquam scripturam
+                  seruauimus. in Latinis tamen</quote>
+               <quote source="#EDITION" n="II 19,9">dictionibus <lb n="20" ed="3v"/> nos quoque pro
+                  ph coepimus f scribere, ut filius, fama,</quote>
+               <quote source="#EDITION" n="II 19,10">fuga, nisi quod, ut supra docuimus, est aliqua
+                  in pronuntiatione <lb n="21" ed="3v"/> eius</quote>
+               <quote source="#EDITION" n="II 19,11">literae differentia <add type="text-variation"
+                     xml:id="tv-19-11-1" hand="#scr" source="#COD_50" place="inline">·f·</add>cum
+                  sono ph.</quote>
+               <quote source="#EDITION" n="II 19,12">ρ⊦ autem ideo non est translatum ab illis in
+                  aliam figuram, quod nec</quote>
+               <app type="gloss" xml:id="gloss-19-12-1">
+                  <lem wit="#EDITION">ab illis</lem>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#gl-1" facs="#zone.3v.32"
+                        ana="#suppletive-glosses">grecis</add></rdg>
+               </app>
+               <quote source="#EDITION" n="II 19,13">sic cohaeret <lb n="22" ed="3v"/> huic quomodo
+                  mutis nec, si tollatur, minuit significationem.</quote>
+               <quote source="#EDITION" n="II 19,14">quamuis enim subtracta aspiratione dicam retor,
+                     Pyr<lb n="23" break="no" ed="3v"/>rus, intellectus</quote>
+               <quote source="#EDITION" n="II 19,15">integer manet, non aliter quam si antecedens
+                  uocalibus auferatur, unde</quote>
+               <quote source="#EDITION" n="II 19,16">ostenditur ex hoc quoque aliqua esse <lb n="24"
+                     ed="3v"/>cognatio r literae cum uocalibus. ex</quote>
+               <app type="reference-signs" xml:id="rs-19-16-1">
+                  <lem wit="#EDITION">cognatio</lem>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#sec" facs="#zone.3v.33"
+                        ana="#lemma-gloss"><g ref="#reference-sign-dicolon"/></add></rdg>
+               </app>
+               <app type="gloss" xml:id="gloss-19-16-1">
+                  <lem wit="#EDITION">cognatio</lem>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#sec" facs="#zone.3v.34"
+                        ana="#glosses-elucidating-the-main-text"><g ref="#reference-sign-dicolon"
+                        />similitudo naturę</add></rdg>
+               </app>
+               <quote source="#EDITION" n="II 19,17">quo quidam dubitauerunt, utrum praeponi debeat
+                  huic aspiratio an</quote>
+               <quote source="#EDITION" n="II 19,18">sub<lb n="25" break="no" ed="3v"/>iungi. unde
+                  Aeolis loco, ut diximus, aspirationis digamma ponentes in</quote>
+               <app type="text-variation" xml:id="tv-19-18-1">
+                  <lem wit="#EDITION">Aeolis</lem>
+                  <rdg wit="#COD_50" hand="#scr">eoles</rdg>
+               </app>
+               <quote source="#EDITION" n="II 19,19">dictionibus ab ρ incipientibus, solent lo<lb
+                     n="26" break="no" ed="3v"/>co digamma β scribere, iudicantes</quote>
+               <app type="text-variation" xml:id="tv-19-19-1">
+                  <lem wit="#EDITION">ρ</lem>
+                  <rdg wit="#COD_50" hand="#scr"><del cause="emendation" type="expunction"
+                        >r</del><add place="interlinear above">P</add></rdg>
+               </app>
+               <app type="text-variation" xml:id="tv-19-19-2">
+                  <lem wit="#EDITION">ρ</lem>
+                  <rdg wit="#COD_50" hand="#scr"><del cause="emendation" type="expunction"
+                        >b</del><add place="interlinear above">B</add></rdg>
+               </app>
+               <quote source="#EDITION" n="II 19,20">debere praeponi digamma quasi uocali: sed
+                  rursus quasi consonanti digamma</quote>
+               <quote source="#EDITION" n="II 19,21">in eadem sylla<lb n="27" break="no" ed="3v"/>ba
+                  praeponere recusantes, commutabant id in β,</quote>
+               <app type="text-variation" xml:id="tv-19-20-1">
+                  <lem wit="#EDITION">β</lem>
+                  <rdg wit="#COD_50" hand="#scr">·b· ut</rdg>
+               </app>
+               <quote source="#EDITION" n="II 19,22">βρήτωρ, βρόδος dicentes. sed apud Graecos haec
+                  litera, id est ρ, multis</quote>
+               <app type="text-variation" xml:id="tv-19-22-1">
+                  <lem wit="#EDITION">βρήτωρ, βρόδος</lem>
+                  <rdg wit="#COD_50" hand="#scr">bretor brodos</rdg>
+               </app>
+               <app type="gloss" xml:id="gloss-19-22-1">
+                  <lem wit="#EDITION">βρόδος</lem>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#gl-1" facs="#zone.3v.35"
+                        ana="#geographical-names">insula <g ref="#vel"/> opidum</add></rdg>
+               </app>
+               <quote source="#EDITION" n="II 19,23">modis <lb n="28" ed="3v"/> fungitur loco
+                  uocalis, ut in declinatione nominum in ρα et in α</quote>
+               <app type="text-variation" xml:id="tv-19-23-1">
+                  <lem wit="#EDITION">fungitur</lem>
+                  <rdg wit="#COD_50" hand="#scr">iungitur</rdg>
+               </app>
+               <app type="text-variation" xml:id="tv-19-23-2">
+                  <lem wit="#EDITION">ρα</lem>
+                  <rdg wit="#COD_50" hand="#scr"><del cause="emendation" type="expunction"
+                        >r</del><add place="interlinear above">P</add>a</rdg>
+               </app>
+               <quote source="#EDITION" n="II 19,24">puram desinentium, quae similiter a seruant per
+                  obliquos casus, <lb n="29" ed="3v"/>ut ὥρα</quote>
+               <app type="reference-signs" xml:id="rs-19-24-1">
+                  <lem wit="#EDITION">puram</lem>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#gl-1" facs="#zone.3v.36"
+                        ana="#lemma-gloss"><g ref="#reference-sign-half-ring-with-dot-below"
+                     /></add></rdg>
+               </app>
+               <app type="gloss" xml:id="gloss-19-24-1">
+                  <lem wit="#EDITION">puram</lem>
+                  <rdg wit="#COD_50"><add place="left margin" hand="#gl-1" facs="#zone.3v.37"
+                        ana="#quia-glosses"><g ref="#reference-sign-half-ring-with-dot-below"/>quia
+                        sicut · a· in greca declinatione manet in obliquis· similiter ·ra· quod in
+                        aliis consonantibus grecorum non manet.</add></rdg>
+               </app>
+               <app type="gloss" xml:id="gloss-19-24-2">
+                  <lem wit="#EDITION">ὥρα</lem>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#gl-1" facs="#zone.3v.38"
+                     ana="#Greek-glosses">finis</add></rdg>
+               </app>
+               <quote source="#EDITION" n="II 19,25">ὥρας, σοφία σοφίας, apud Latinos autem non
+                  adeo.</quote>
+               <quote source="#EDITION" n="II 19,26">(quaeritur, cur in uah, ah post uocales ponitur
+                  aspiratio, et</quote>
+
             </div>
             <!--  -->
             <pb n="4r" xml:id="page__00017" facs="#facs__00017"/>
@@ -4681,6 +4857,20 @@
          <zone xml:id="zone.3v.23" ulx="265" uly="688" lrx="525" lry="727"/>
          <zone xml:id="zone.3v.22" ulx="827" uly="701" lrx="853" lry="716"/>
          <zone xml:id="zone.3v.24" ulx="659" uly="826" lrx="779" lry="856"/>
+         <zone xml:id="zone.3v.25" ulx="994" uly="865" lrx="1060" lry="897"/>
+         <zone xml:id="zone.3v.26" ulx="1620" uly="954" lrx="1714" lry="980"/>
+         <zone xml:id="zone.3v.28" ulx="256" uly="995" lrx="472" lry="1101"/>
+         <zone xml:id="zone.3v.27" ulx="660" uly="1018" lrx="685" lry="1038"/>
+         <zone xml:id="zone.3v.31" ulx="873" uly="1042" lrx="913" lry="1069"/>
+         <zone xml:id="zone.3v.30" ulx="615" uly="1048" lrx="667" lry="1071"/>
+         <zone xml:id="zone.3v.29" ulx="565" uly="1055" lrx="609" lry="1074"/>
+         <zone xml:id="zone.3v.32" ulx="1401" uly="1127" lrx="1466" lry="1159"/>
+         <zone xml:id="zone.3v.34" ulx="446" uly="1271" lrx="640" lry="1300"/>
+         <zone xml:id="zone.3v.33" ulx="512" uly="1292" lrx="533" lry="1306"/>
+         <zone xml:id="zone.3v.37" ulx="268" uly="1372" lrx="516" lry="1490"/>
+         <zone xml:id="zone.3v.35" ulx="1086" uly="1399" lrx="1234" lry="1430"/>
+         <zone xml:id="zone.3v.36" ulx="1160" uly="1451" lrx="1184" lry="1476"/>
+         <zone xml:id="zone.3v.38" ulx="553" uly="1502" lrx="609" lry="1534"/>
          <zone xml:id="zone.3v.3" ulx="845" uly="296" lrx="1019" lry="332"/>
          <zone xml:id="zone.3v.6" ulx="1022" uly="311" lrx="1036" lry="331"/>
          <zone xml:id="zone.3v.7" ulx="269" uly="318" lrx="490" lry="373"/>
