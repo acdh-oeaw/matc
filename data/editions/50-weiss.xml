@@ -595,6 +595,13 @@
                   <graphic url="../pictures/reference-sign-elongated-M.png"/>
                </figure>
             </glyph>
+            <glyph xml:id="reference-sign-hook">
+               <localProp name="Name" value="REFERENCE SIGN HOOK"/>
+               <localProp name="entity" value="reference-sign-hook"/>
+               <figure>
+                  <graphic url="../pictures/reference-sign-hook.png"/>
+               </figure>
+            </glyph>
             <glyph xml:id="reference-sign-oculus">
                <localProp name="Name" value="REFERENCE SIGN OCULUS"/>
                <localProp name="entity" value="reference-sign-oculus"/>
@@ -4412,34 +4419,318 @@
                         facs="#zone.3v.42" ana="#glosses-elucidating-the-main-text"><gap unit="char"
                            quantity="1" reason="illegible"/>t·che·ge·ce·</add></rdg>
                </app>
-               <!--  -->
-               <quote source="#EDITION" n="II 20,10">th est d et inter p et ph siue f <g
-                     ref="#irish-est"/> b. sunt igitur hae tres, hoc <g ref="#irish-est"/> b
+               <quote source="#EDITION" n="II 20,10">th est d <lb n="35" ed="3v"/>et inter p et ph
+                  siue f <g ref="#irish-est"/> b. sunt igitur hae tres, hoc <g ref="#irish-est"/> b
                   g</quote>
+               <app type="text-variation" xml:id="tv-20-10-1">
+                  <lem wit="#EDITION">th est d</lem>
+                  <rdg wit="#COD_50" hand="#scr">th d</rdg>
+               </app>
+               <app type="text-variation" xml:id="tv-20-10-2">
+                  <lem wit="#EDITION">et inter</lem>
+                  <rdg wit="#COD_50" hand="#scr">Inter</rdg>
+               </app>
                <quote source="#EDITION" n="II 20,11">d, mediae, quae nec penitus carent aspiratione
-                  nec eam plenam possident.</quote>
+                  nec eam plenam possi<lb n="36" break="no" ed="3v"/>dent.</quote>
+               <app type="text-variation" xml:id="tv-20-11-1">
+                  <lem wit="#EDITION">plenam</lem>
+                  <rdg wit="#COD_50"><add hand="#sec" place="interlinear above" cause="emendation"
+                        >plene</add></rdg>
+               </app>
                <quote source="#EDITION" n="II 20,12">hoc autem ostendit etiam ipsius palati pulsus
                   et linguae uel labrorum</quote>
                <quote source="#EDITION" n="II 20,13">consimilis quidem in ternis, in p et ph uel f
-                  et b et rursus in c et ch et g, </quote>
+                  et b et rur<lb n="37" break="no" ed="3v"/>sus in c et ch et g, </quote>
+               <app type="gloss" xml:id="gloss-20-12-1">
+                  <lem wit="#EDITION">in ternis</lem>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#Otfrid"
+                        facs="#zone.3v.43" ana="#glosses-elucidating-the-main-text">in
+                     tribus·</add></rdg>
+               </app>
+               <app type="text-variation" xml:id="tv-20-12-1">
+                  <lem wit="#EDITION">in p et ph</lem>
+                  <rdg wit="#COD_50"><add hand="#scr" place="interlinear above" cause="emendation"
+                        >in· p·</add> ph</rdg>
+               </app>
+               <app type="reference-signs" xml:id="rs-20-12-1">
+                  <lem wit="#EDITION">in ternis</lem>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#Otfrid"
+                        facs="#zone.3v.44" ana="#lemma-gloss"><g ref="#reference-sign-hook"
+                     /></add></rdg>
+               </app>
+               <app type="gloss" xml:id="gloss-20-12-2" subtype="to-be-checked">
+                  <lem wit="#EDITION">in ternis</lem>
+                  <rdg wit="#COD_50"><add place="right margin" hand="#Otfrid" facs="#zone.3v.45"
+                        ana="#glosses-elucidating-the-main-text"><g ref="#reference-sign-hook"/><g
+                           ref="#idest"/> tribus <g ref="#Insular-quae"/> faciunt·VIIII· simul ut·
+                           <gap unit="char" quantity="2" reason="illegible"/> ch· g· su<gap
+                           unit="char" quantity="2" reason="illegible"/></add></rdg>
+               </app>
                <quote source="#EDITION" n="II 20,14">similiter in t et th et d. sed in leuibus
                   exterior fit pulsus, in asperis</quote>
-               <quote source="#EDITION" n="II 20,15">interior, in mediis inter utrumque supra
-                  dictorum locum, quod facile</quote>
+               <quote source="#EDITION" n="II 20,15">interior, in mediis inter utrumque supra <lb
+                     n="38" ed="3v"/> dictorum locum, quod facile</quote>
                <quote source="#EDITION" n="II 20,16">dinoscitur, si attendamus in supra dictis
                   motibus ora mirabili naturae lege</quote>
-               <quote source="#EDITION" n="II 20,17">modulantibus uoces. tanta autem est cognatio
-                  earum, quod inuicem</quote>
+               <app type="gloss" xml:id="gloss-20-16-1">
+                  <lem wit="#EDITION">supra dictis</lem>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#Otfrid"
+                        facs="#zone.3v.46" ana="#suppletive-glosses">literis</add></rdg>
+               </app>
+               <quote source="#EDITION" n="II 20,17">modulantibus <pb n="4r" xml:id="page__00017"
+                     facs="#facs__00017"/><lb n="1" ed="4r"/> uoces. tanta autem est cognatio earum,
+                  quod inuicem</quote>
                <quote source="#EDITION" n="II 20,18">inueniuntur pro se positae in quibusdam
                   dictionibus, ut ambo pro ἄμφω,</quote>
-               <quote source="#EDITION" n="II 20,19">buxus pro πύξος et publicus pro puplicus,
-                  triumphus pro</quote>
+               <app type="gloss" xml:id="gloss-20-18-1">
+                  <lem wit="#EDITION">ambo</lem>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#Otfrid" facs="#zone.4r.3"
+                        ana="#lexical-glosses">l<supplied resp="#CG" reason="abbreviation"
+                           >atine</supplied></add></rdg>
+               </app>
+               <app type="gloss" xml:id="gloss-20-18-2">
+                  <lem wit="#EDITION">ἄμφω</lem>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#Otfrid" facs="#zone.4r.1"
+                        ana="#lexical-glosses">g·<supplied resp="#CG" reason="abbreviation"
+                           >raece</supplied></add></rdg>
+                  <note resp="#CG" type="explanation" target="#gloss-20-18-2"> In this, in the
+                     following and at the beginning of the third line Otfrid marked all occurring
+                     Greek words drawing a horizontal line in the interlinear above.</note>
+               </app>
+               <quote source="#EDITION" n="II 20,19">buxus pro πύξος et publicus pro <lb n="2"
+                     ed="4r"/>puplicus, triumphus pro</quote>
+               <app type="gloss" xml:id="gloss-20-19-1">
+                  <lem wit="#EDITION">buxus pro πύξος</lem>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#Otfrid" facs="#zone.4r.2"
+                        ana="#lexical-glosses">l·<supplied resp="#CG" reason="abbreviation"
+                           >atine</supplied>g·<supplied resp="#CG" reason="abbreviation"
+                           >raece</supplied></add></rdg>
+               </app>
+               <app type="text-variation" xml:id="tv-20-19-1">
+                  <lem wit="#EDITION">puplicus</lem>
+                  <rdg wit="#COD_50" hand="#scr">πuπlikos</rdg>
+               </app>
+               <app type="gloss" xml:id="gloss-20-19-2">
+                  <lem wit="#EDITION">publicus</lem>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#Otfrid" facs="#zone.4r.4"
+                        ana="#contemporary-socio-historical-context">moderni</add></rdg>
+               </app>
+               <app type="gloss" xml:id="gloss-20-19-3">
+                  <lem wit="#COD_50">πuπlikos</lem>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#Otfrid" facs="#zone.4r.5"
+                        ana="#contemporary-socio-historical-context">antiqui</add></rdg>
+               </app>
+               <app type="gloss" xml:id="gloss-20-19-4">
+                  <lem wit="#EDITION">triumphus</lem>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#Otfrid" facs="#zone.4r.6"
+                        ana="#lexical-glosses">l<supplied resp="#CG" reason="abbreviation"
+                           >atine</supplied></add></rdg>
+               </app>
                <quote source="#EDITION" n="II 20,20">θρίαμβος, gubernator κυβερνήτης, gobio κωβιός,
-                  Caere ἀπὸ τοῦ</quote>
+                     <lb n="3" ed="4r"/> Caere ἀπὸ τοῦ</quote>
+               <app type="gloss" xml:id="gloss-20-20-1">
+                  <lem wit="#EDITION">θρίαμβος</lem>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#Otfrid" facs="#zone.4r.7"
+                        ana="#lexical-glosses #glosses-elucidating-the-main-text">g·<supplied
+                           resp="#CG" reason="abbreviation">raece</supplied> ab exultatione
+                        dictum</add></rdg>
+               </app>
+               <app type="gloss" xml:id="gloss-20-20-2">
+                  <lem wit="#EDITION">κυβερνήτης</lem>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#Otfrid" facs="#zone.4r.8"
+                        ana="#lexical-glosses">g<supplied resp="#CG" reason="abbreviation"
+                           >raece</supplied></add></rdg>
+               </app>
+               <app type="reference-signs" xml:id="rs-20-20-1">
+                  <lem wit="#EDITION">gobio</lem>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#Otfrid" facs="#zone.4r.9"
+                        ana="#lemma-gloss"><g ref="#reference-sign-distigme"/></add></rdg>
+               </app>
+               <app type="gloss" xml:id="gloss-20-20-3">
+                  <lem wit="#EDITION">gobio</lem>
+                  <rdg wit="#COD_50"><add place="right margin" hand="#Otfrid" facs="#zone.4r.10"
+                        ana="#glosses-elucidating-the-main-text #translation-into-Old-High-German"
+                           ><g ref="#reference-sign-distigme"/>nomen piscis <add
+                           xml:id="ohg-20-20-1" place="inline" hand="#Otfrid" type="OHG-gloss" n="3"
+                              ><foreign xml:lang="goh"><g ref="#idest"
+                     />kresso</foreign></add></add></rdg>
+                  <note corresp="#ohg-20-20-1" type="explanation" resp="#CG"> This OHG gloss was
+                     first edited by Hans Butzmann, <hi rend="italic">Althochdeutsche
+                        Priscian-Glossen aus Weissenburg</hi>, PBB. 86 (Halle 1964), pp. 391-398, at
+                     p. 391, no. 1. See also BStK Online:
+                     https://glossen.germ-ling.uni-bamberg.de/bstk/972 [accessed 13.02.2024].
+                  </note>
+               </app>
+               <app type="gloss" xml:id="gloss-20-20-4">
+                  <lem wit="#EDITION">Caere</lem>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#Otfrid"
+                        facs="#zone.4r.11" ana="#geographical-names">urbs in italia</add></rdg>
+               </app>
+            </div>
+            <div type="page-of-Hertz-edition" n="Liber Primus" xml:id="liber-primus.17"
+               next="#liber-primus.18" prev="liber-primus.16" corresp="images-keil:Keil_v2_021.gif"
+               xml:lang="la">
+               <quote source="#EDITION" n="II 21,1">χαῖρε, puniceus φοινίκεος, deus θεός,
+                  purpureum</quote>
+               <app type="gloss" xml:id="gloss-21-1-1">
+                  <lem wit="#EDITION">puniceus</lem>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#Otfrid"
+                        facs="#zone.4r.12" ana="#synonyms">rubicundus <g ref="#vel"/>
+                     pulcher</add></rdg>
+               </app>
+               <app type="text-variation" xml:id="tv-21-1-1">
+                  <lem wit="#EDITION">φοινίκεος</lem>
+                  <rdg wit="#COD_50" hand="#scr">φ<del type="expunction" cause="emendation"
+                     >p</del>οινίκεως</rdg>
+               </app>
+               <app type="gloss" xml:id="gloss-21-1-2">
+                  <lem wit="#EDITION">φοινίκεος</lem>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#Otfrid"
+                        facs="#zone.4r.13" ana="#lexical-glosses">g<supplied resp="#CG"
+                           reason="abbreviation">raece</supplied></add></rdg>
+               </app>
+               <app type="gloss" xml:id="gloss-21-1-3">
+                  <lem wit="#EDITION">θεός</lem>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#Otfrid"
+                        facs="#zone.4r.14" ana="#lexical-glosses">g<supplied resp="#CG"
+                           reason="abbreviation">raece</supplied></add></rdg>
+               </app>
+               <quote source="#EDITION" n="II 21,2">πορφύρεον.</quote>
+               <app type="gloss" xml:id="gloss-21-2-1">
+                  <lem wit="#EDITION">πορφύρεον</lem>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#Otfrid"
+                        facs="#zone.4r.15" ana="#lexical-glosses">g<supplied resp="#CG"
+                           reason="abbreviation">raece</supplied></add></rdg>
+               </app>
+               <quote source="#EDITION" n="II 21,3">hoc quoque obseruandum est, quod <lb n="4"
+                     ed="4r"/> ad comparationem aliarum</quote>
+               <app type="rubrication" xml:id="rubr-21-3-1">
+                  <lem wit="#EDITION">hoc</lem>
+                  <rdg wit="#COD_50" hand="#scr"><hi rend="red capitalis">H</hi>oc</rdg>
+               </app>
+               <app type="gloss" xml:id="gloss-21-3-1">
+                  <lem wit="#EDITION">hoc quoque</lem>
+                  <rdg wit="#COD_50"><add place="right margin" hand="#Otfrid" facs="#zone.4r.16"
+                        ana="#glosses-elucidating-the-main-text-with-red-marginal-title"><hi
+                           rend="red script">de consonantibus quę mutantur in nominibus &amp; quę
+                           non</hi></add></rdg>
+                  <note corresp="#gloss-20-9-1" type="explanation" resp="#CG">The same marginal
+                     title recurs in MS München BSB Clm 18375, f. 10v; a very similar one in MS Köln
+                     200, f. 5v</note>
+               </app>
+               <quote source="#EDITION" n="II 21,4">consonantium, quae solent mutari uel abici per
+                  casus, immutabiles sunt apud nos</quote>
+               <quote source="#EDITION" n="II 21,5">tres, l n r: <lb n="5" ed="4r"/> per omnes enim
+                  casus eaedem permanent ut sal salis, </quote>
+               <quote source="#EDITION" n="II 21,6">flumen fluminis, Caesar Caesaris. t quoque et c,
+                  quamuis in tribus</quote>
+               <quote source="#EDITION" n="II 21,7">solis <lb n="6" ed="4r"/> inueniantur nominibus,
+                  quae possunt declinari, hoc idem seruant, ut</quote>
+               <quote source="#EDITION" n="II 21,8">caput capitis et ab eo composita sinciput
+                  sincipitis, <lb n="7" ed="4r"/>occiput occipitis,</quote>
+               <app type="reference-signs" xml:id="rs-21-8-1">
+                  <lem wit="#EDITION">sinciput</lem>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#Otfrid"
+                        facs="#zone.4r.17" ana="#lemma-gloss"><g
+                           ref="#reference-sign-half-ring-with-dot-below"/></add></rdg>
+               </app>
+               <app type="gloss" xml:id="gloss-21-8-1">
+                  <lem wit="#EDITION">sinciput</lem>
+                  <rdg wit="#COD_50"><add place="right margin" hand="#Otfrid" facs="#zone.4r.18"
+                        ana="#glosses-elucidating-the-main-text"><g
+                           ref="#reference-sign-half-ring-with-dot-below"/>semis caput <g ref="#vel"
+                        /> anterior pars capitis <g ref="#vel"/> sinodis caput. <g ref="#vel"/> sine
+                        capite</add></rdg>
+                  <note corresp="#gloss-21-8-1" type="explanation" resp="#CG">The explanation "sine
+                     capite" recurs in MS Köln 200, f. 5v</note>
+               </app>
+               <app type="reference-signs" xml:id="rs-21-8-2">
+                  <lem wit="#EDITION">occiput</lem>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#Otfrid"
+                        facs="#zone.4r.19" ana="#lemma-gloss"><g ref="#reference-sign-distigme"
+                        /></add></rdg>
+               </app>
+               <app type="gloss" xml:id="gloss-21-8-2">
+                  <lem wit="#EDITION">occiput</lem>
+                  <rdg wit="#COD_50"><add place="left margin" hand="#Otfrid" facs="#zone.4r.20"
+                        ana="#glosses-elucidating-the-main-text">Posterior pars capitis· ceruici
+                        iuncta</add></rdg>
+                  <note corresp="#gloss-21-8-2" type="explanation" resp="#CG">The explanation
+                     "posterior pars capitis" recurs in MS Köln 200, f. 5v; "posterior pars" recurs
+                     in MS München, BSB Clm 18375, f. 10v</note>
+               </app>
+               <quote source="#EDITION" n="II 21,9">allec allecis, lac lactis, in quo etiam t
+                  additur. quare a quibusdam</quote>
+               <quote source="#EDITION" n="II 21,10">non irrationabiliter nomina<lb n="8" break="no"
+                     ed="4r"/>tiuus hoc lacte prolatus inuenitur. reliquae</quote>
+               <quote source="#EDITION" n="II 21,11">uero consonantes mutantur uel abiciuntur: d, ut
+                  aliquid alicuius; m,</quote>
+               <app type="rubrication" xml:id="rubr-21-11-1">
+                  <lem wit="#EDITION">d</lem>
+                  <rdg wit="#COD_50" hand="#scr"><hi rend="red capitalis">D</hi></rdg>
+               </app>
+               <app type="rubrication" xml:id="rubr-21-11-2">
+                  <lem wit="#EDITION">m</lem>
+                  <rdg wit="#COD_50" hand="#scr"><hi rend="red script">m</hi></rdg>
+               </app>
+               <quote source="#EDITION" n="II 21,12">tem<lb n="9" break="no" ed="4r"/>plum templi,
+                  Pelium Pelii; s, magnus magni; x, rex regis, nix</quote>
+               <app type="reference-signs" xml:id="rs-21-12-1">
+                  <lem wit="#EDITION">Pelium</lem>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#Otfrid"
+                        facs="#zone.4r.21" ana="#lemma-gloss"><g ref="#reference-sign-virga-dot"
+                        /></add></rdg>
+               </app>
+               <app type="gloss" xml:id="gloss-21-12-1">
+                  <lem wit="#EDITION">Pelium</lem>
+                  <rdg wit="#COD_50"><add place="left margin" hand="#Otfrid" facs="#zone.4r.22"
+                        ana="#glosses-elucidating-the-main-text">templum saturni <supplied
+                           resp="#CG" reason="illegible">uel</supplied> montis nomen</add></rdg>
+                  <note corresp="#gloss-21-12-1" type="explanation" resp="#CG">Pelium is defined as
+                     "templum Iouis" in MS Köln 200, f. 6r and as "mons ingens" in MS München, BSB
+                     Clm 18375, f. 10v</note>
+               </app>
+               <app type="rubrication" xml:id="rubr-21-12-1">
+                  <lem wit="#EDITION">s</lem>
+                  <rdg wit="#COD_50" hand="#scr"><hi rend="red script">s</hi></rdg>
+               </app>
+               <app type="rubrication" xml:id="rubr-21-12-2">
+                  <lem wit="#EDITION">x</lem>
+                  <rdg wit="#COD_50" hand="#scr"><hi rend="red capitalis">X</hi></rdg>
+               </app>
+               <quote source="#EDITION" n="II 21,13">niuis.</quote>
+               
+               <!--  -->
+               
+               
+               <quote source="#EDITION" n="II 21,14">in uerborum quoque praeteritis perfectis solent
+                  omnes modo mutari</quote>
+               <quote source="#EDITION" n="II 21,15">modo manere, exceptis l p s x. hae enim numquam
+                  mutantur, ut</quote>
+               <quote source="#EDITION" n="II 21,16">habeo habui, iubeo iussi, compesco compescui,
+                  dico dixi, ascendo</quote>
+               <quote source="#EDITION" n="II 21,17">ascendi, laedo laesi, lego legi, pingo pinxi,
+                  demo dempsi, premo</quote>
+               <quote source="#EDITION" n="II 21,18">pressi, moneo monui, sino siui, nequeo nequiui,
+                  torqueo torsi,</quote>
+               <quote source="#EDITION" n="II 21,19">dissero disserui, uro ussi, uerto uerti, flecto
+                  flexi. illae autem</quote>
+               <quote source="#EDITION" n="II 21,20">quattuor, ut supra diximus, numquam mutantur in
+                  praeterito perfecto: l,</quote>
+               <quote source="#EDITION" n="II 21,21">caelo caelaui, doleo dolui, uolo uolui, mollio
+                  molliui; p, turpo</quote>
+               <quote source="#EDITION" n="II 21,22">turpaui, stupeo stupui, scalpo scalpsi, lippio
+                  lippiui; s, quasso</quote>
+               <quote source="#EDITION" n="II 21,23">quassaui, censeo censui, arcesso arcessiui; x,
+                  nexo nexui, texo</quote>
+               <quote source="#EDITION" n="II 21,24">texui.</quote>
+
+
+
 
             </div>
+            <!--  -->
 
-            <pb n="4r" xml:id="page__00017" facs="#facs__00017"/>
             <pb n="4v" xml:id="page__00018" facs="#facs__00018"/>
             <pb n="5r" xml:id="page__00019" facs="#facs__00019"/>
             <pb n="5v" xml:id="page__00020" facs="#facs__00020"/>
@@ -5017,6 +5308,10 @@
          <zone xml:id="zone.3v.40" ulx="327" uly="1502" lrx="405" lry="1558"/>
          <zone xml:id="zone.3v.41" ulx="305" uly="1707" lrx="523" lry="1847"/>
          <zone xml:id="zone.3v.42" ulx="1241" uly="1712" lrx="1388" lry="1737"/>
+         <zone xml:id="zone.3v.45" ulx="1803" uly="1784" lrx="1896" lry="1866"/>
+         <zone xml:id="zone.3v.44" ulx="1599" uly="1802" lrx="1621" lry="1818"/>
+         <zone xml:id="zone.3v.43" ulx="1531" uly="1806" lrx="1602" lry="1830"/>
+         <zone xml:id="zone.3v.46" ulx="1209" uly="1894" lrx="1263" lry="1926"/>
          <zone xml:id="zone.3v.38" ulx="553" uly="1502" lrx="609" lry="1534"/>
          <zone xml:id="zone.3v.3" ulx="845" uly="296" lrx="1019" lry="332"/>
          <zone xml:id="zone.3v.6" ulx="1022" uly="311" lrx="1036" lry="331"/>
@@ -5025,6 +5320,28 @@
       </surface>
       <surface xml:id="facs__00017" n="4r">
          <graphic url="http://diglib.hab.de/mss/50-weiss/max/00017.jpg"/>
+         <zone xml:id="zone.4r.1" ulx="159" uly="325" lrx="259" lry="372"/>
+         <zone xml:id="zone.4r.9" ulx="1353" uly="338" lrx="1379" lry="352"/>
+         <zone xml:id="zone.4r.10" ulx="1534" uly="341" lrx="1676" lry="381"/>
+         <zone xml:id="zone.4r.12" ulx="441" uly="364" lrx="625" lry="396"/>
+         <zone xml:id="zone.4r.13" ulx="638" uly="372" lrx="671" lry="394"/>
+         <zone xml:id="zone.4r.11" ulx="150" uly="374" lrx="240" lry="414"/>
+         <zone xml:id="zone.4r.15" ulx="960" uly="375" lrx="1095" lry="417"/>
+         <zone xml:id="zone.4r.14" ulx="758" uly="378" lrx="804" lry="409"/>
+         <zone xml:id="zone.4r.16" ulx="1493" uly="379" lrx="1692" lry="533"/>
+         <zone xml:id="zone.4r.17" ulx="1299" uly="504" lrx="1328" lry="522"/>
+         <zone xml:id="zone.4r.18" ulx="1502" uly="522" lrx="1705" lry="608"/>
+         <zone xml:id="zone.4r.20" ulx="73" uly="542" lrx="169" lry="616"/>
+         <zone xml:id="zone.4r.19" ulx="175" uly="546" lrx="192" lry="560"/>
+         <zone xml:id="zone.4r.21" ulx="279" uly="633" lrx="304" lry="653"/>
+         <zone xml:id="zone.4r.22" ulx="74" uly="637" lrx="157" lry="692"/>
+         <zone xml:id="zone.4r.8" ulx="1175" uly="323" lrx="1342" lry="387"/>
+         <zone xml:id="zone.4r.7" ulx="872" uly="318" lrx="1052" lry="374"/>
+         <zone xml:id="zone.4r.6" ulx="725" uly="320" lrx="859" lry="373"/>
+         <zone xml:id="zone.4r.5" ulx="603" uly="315" lrx="716" lry="352"/>
+         <zone xml:id="zone.4r.4" ulx="470" uly="313" lrx="557" lry="347"/>
+         <zone xml:id="zone.4r.3" ulx="1364" uly="264" lrx="1442" lry="329"/>
+         <zone xml:id="zone.4r.2" ulx="269" uly="322" lrx="437" lry="370"/>
       </surface>
       <surface xml:id="facs__00018" n="4v">
          <graphic url="http://diglib.hab.de/mss/50-weiss/max/00018.jpg"/>
