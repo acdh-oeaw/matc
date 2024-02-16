@@ -362,8 +362,17 @@
                      passage to be excerpted.</catDesc>
                </category>
                <category xml:id="omission-sign-delta">
-                  <catDesc> sign added above a lemma to mark omissions. It is repeated in the margin
-                     and introduces the missing segment of the main text.</catDesc>
+                  <catDesc> A sign added above a lemma to mark omissions in the main text. It is
+                     repeated in the margin and introduces the missing segment of the main
+                     text.</catDesc>
+               </category>
+               <category xml:id="omission-sign-d">
+                  <catDesc> A sign added above a lemma to mark omissions in the main text. It
+                     correlates a "h".</catDesc>
+               </category>
+               <category xml:id="omission-sign-h">
+                  <catDesc> This sign introduces the re-integration of omitted segments of the main
+                     text. It correlates a "d".</catDesc>
                </category>
             </taxonomy>
          </classDecl>
@@ -525,6 +534,20 @@
                   <graphic url="../pictures/reference-sign-dicolon.png"/>
                </figure>
             </glyph>
+            <glyph xml:id="reference-sign-virga">
+               <localProp name="Name" value="REFERENCE SIGN VIRGA"/>
+               <localProp name="entity" value="reference-sign-virga"/>
+               <figure>
+                  <graphic url="../pictures/reference-sign-virga.png"/>
+               </figure>
+            </glyph>
+            <glyph xml:id="reference-sign-dotted-virga">
+               <localProp name="Name" value="REFERENCE SIGN DOTTED VIRGA"/>
+               <localProp name="entity" value="reference-sign-dotted-virga"/>
+               <figure>
+                  <graphic url="../pictures/reference-sign-dotted-virga.png"/>
+               </figure>
+            </glyph>
             <glyph xml:id="reference-sign-dot-virga">
                <localProp name="Name" value="REFERENCE SIGN DOT VIRGA"/>
                <localProp name="entity" value="reference-sign-dot-virga"/>
@@ -672,13 +695,6 @@
                   <graphic url="../pictures/reference-sign-y.png"/>
                </figure>
             </glyph>
-            <glyph xml:id="reference-sign-dotted-virga">
-               <localProp name="Name" value="REFERENCE SIGN DOTTED VIRGA"/>
-               <localProp name="entity" value="reference-sign-dotted-virga"/>
-               <figure>
-                  <graphic url="../pictures/reference-sign-dotted-virga.png"/>
-               </figure>
-            </glyph>
             <glyph xml:id="reference-sign-converging-strokes-with-dicolon">
                <localProp name="Name" value="REFERENCE SIGN CONVERGING STROKES WITH DICOLON"/>
                <localProp name="entity" value="reference-sign-converging-strokes-with-dicolon"/>
@@ -732,6 +748,20 @@
                <localProp name="entity" value="omission-sign-capital-delta"/>
                <figure>
                   <graphic url="../pictures/omission-sign-capital-delta.png"/>
+               </figure>
+            </glyph>
+            <glyph xml:id="omission-sign-dotted-delta">
+               <localProp name="Name" value="OMISSION SIGN DOTTED DELTA"/>
+               <localProp name="entity" value="omission-sign-dotted-delta"/>
+               <figure>
+                  <graphic url="../pictures/omission-sign-dotted-delta.png"/>
+               </figure>
+            </glyph>
+            <glyph xml:id="omission-sign-dotted-h">
+               <localProp name="Name" value="OMISSION SIGN DOTTED H"/>
+               <localProp name="entity" value="omission-sign-dotted-h"/>
+               <figure>
+                  <graphic url="../pictures/omission-sign-dotted-h.png"/>
                </figure>
             </glyph>
          </charDecl>
@@ -1053,9 +1083,11 @@
                         ana="#syntactical-glosses-using-symbols"><g
                            ref="#construe-mark-dot-with-right-half-ring"/></add></rdg>
                </app>
-               <note xml:id="note-1-12-1" place="left margin" type="gloss" subtype="to-be-checked"
-                  hand="#Otfrid" facs="#zone.1r.41" xml:lang="la"><gap unit="char" quantity="12"
-                     reason="illegible"/></note>
+               <app type="gloss" xml:id="gloss-1-12-4" subtype="to-be-checked">
+                  <rdg wit="#COD_50"><add place="left margi" hand="#Otfrid" facs="#zone.1r.41"
+                        xml:lang="la"><gap unit="char" quantity="12" reason="illegible"
+                     /></add></rdg>
+               </app>
                <quote source="#EDITION" n="II 1,13">neminem post illos imitatorem eorum extitisse,
                   quippe in neglegentiam</quote>
                <app type="gloss" xml:id="gloss-1-13-1">
@@ -2480,9 +2512,9 @@
                         ana="#omission-sign-delta"><g ref="#omission-sign-capital-delta"
                      /></add></rdg>
                </app>
-               <app type="gloss" subtype="addition-of-omitted-text" xml:id="gloss-8-1-1">
+               <app type="emendation" subtype="addition-of-omitted-text" xml:id="emendation-8-1-1">
                   <lem wit="#EDITION">dicuntur</lem>
-                  <rdg wit="#COD_50"><add place="upper margin of the leaf" hand="#gl-2"
+                  <rdg wit="#COD_50"><add place="upper margin of the page" hand="#gl-2"
                         facs="#zone.2r.6"><g ref="#omission-sign-capital-delta"/> quod esse ostendit
                         uarro in secundo libro de antiquitate litterarum docens lingua caldeorum
                         singularum nomina litterarum ad earum formas esse facta et ex hoc certum
@@ -2493,7 +2525,21 @@
                      The second glossator emended this error and added the missing text into the
                      upper margin of the page</note>
                </app>
-               <quote source="#EDITION" n="II 8,4b">siue quod</quote>
+               <quote source="#EDITION" n="II 8,2">quod esse ostendit Varro in II de antiquitate
+                  literarum, docens</quote>
+               <app type="text-variation" xml:id="tv-8-2-1">
+                  <rdg wit="#COD_50"/>
+               </app>
+               <quote source="#EDITION" n="II 8,3">lingua Chaldaeorum singularum nomina literarum ad
+                  earum formas esse facta</quote>
+               <app type="text-variation" xml:id="tv-8-3-1">
+                  <rdg wit="#COD_50"/>
+               </app>
+               <quote source="#EDITION" n="II 8,4">et ex hoc certum fieri, eos esse primos auctores
+                  literarum, siue quod</quote>
+               <app type="text-variation" xml:id="tv-8-4-1">
+                  <rdg wit="#COD_50">siue quod</rdg>
+               </app>
                <quote source="#EDITION" n="II 8,5">simplicia haec et stabilia esse debent quasi
                   fundamentum omnis doctrinae</quote>
                <quote source="#EDITION" n="II 8,6">immobile, siue quod nec aliter <lb n="12" ed="2r"
@@ -3037,7 +3083,7 @@
                </app>
                <app type="gloss" xml:id="gloss-11-6-2">
                   <lem wit="#EDITION">nunc habet</lem>
-                  <rdg wit="#COD_50"><add place="left margin" hand="#scr" facs="#zone.2v.16"
+                  <rdg wit="#COD_50"><add place="left margin" hand="#sec" facs="#zone.2v.16"
                         ana="#glosses-elucidating-the-main-text"><g ref="#reference-sign-trigon"
                         />subaudis·f·</add></rdg>
                </app>
@@ -3109,12 +3155,12 @@
                </app>
                <app type="reference-signs" xml:id="rs-11-19-1">
                   <lem wit="#EDITION">in omnia</lem>
-                  <rdg wit="#COD_50"><add place="interlinear above" hand="#scr" facs="#zone.2v.18"
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#sec" facs="#zone.2v.18"
                         ana="#lemma-gloss"><g ref="#reference-sign-dotted-virga"/></add></rdg>
                </app>
                <app type="gloss" xml:id="gloss-11-19-2">
                   <lem wit="#EDITION">in omnia</lem>
-                  <rdg wit="#COD_50"><add place="left margin" hand="#scr" facs="#zone.2v.22"
+                  <rdg wit="#COD_50"><add place="left margin" hand="#sec" facs="#zone.2v.22"
                         ana="#text-variant"><g ref="#reference-sign-dotted-virga"/><g ref="#vel"/>
                         in omni doctrina</add></rdg>
                </app>
@@ -4556,10 +4602,10 @@
                      />kresso</foreign></add></add></rdg>
                   <note corresp="#ohg-20-20-1" type="explanation" resp="#CG"> This OHG gloss was
                      first edited by Hans Butzmann, <hi rend="italic">Althochdeutsche
-                        Priscian-Glossen aus Weissenburg</hi>, PBB. 86 (Halle 1964), pp. 391-398, at
-                     p. 391, no. 1. See also BStK Online:
-                     https://glossen.germ-ling.uni-bamberg.de/bstk/972 [accessed 13.02.2024].
-                  </note>
+                        Priscian-Glossen aus Weissenburg</hi>, PBB. 86/3 (Halle 1964), pp. 388-402,
+                     at p. 391, no. 1. See also BStK Online: <ref
+                        target="https://glossen.germ-ling.uni-bamberg.de/bstk/972"/> [accessed
+                     13.02.2024]. </note>
                </app>
                <app type="gloss" xml:id="gloss-20-20-4">
                   <lem wit="#EDITION">Caere</lem>
@@ -4614,7 +4660,7 @@
                         ana="#glosses-elucidating-the-main-text-with-red-marginal-title"><hi
                            rend="red script">de consonantibus quę mutantur in nominibus &amp; quę
                            non</hi></add></rdg>
-                  <note corresp="#gloss-20-9-1" type="explanation" resp="#CG">The same marginal
+                  <note corresp="#gloss-21-3-1" type="explanation" resp="#CG">The same marginal
                      title recurs in MS München BSB Clm 18375, f. 10v; a very similar one in MS Köln
                      200, f. 5v</note>
                </app>
@@ -4699,37 +4745,505 @@
                   <rdg wit="#COD_50" hand="#scr"><hi rend="red capitalis">X</hi></rdg>
                </app>
                <quote source="#EDITION" n="II 21,13">niuis.</quote>
-               
-               <!--  -->
-               
-               
                <quote source="#EDITION" n="II 21,14">in uerborum quoque praeteritis perfectis solent
-                  omnes modo mutari</quote>
+                  omnes modo mu<lb n="10" break="no" ed="4r"/>tari</quote>
+               <app type="rubrication" xml:id="rubr-21-14-1">
+                  <lem wit="#EDITION">in</lem>
+                  <rdg wit="#COD_50" hand="#scr"><hi rend="red capitalis">I</hi>n</rdg>
+               </app>
+               <app type="gloss" xml:id="gloss-21-14-1">
+                  <lem wit="#EDITION">in uerborum</lem>
+                  <rdg wit="#COD_50"><add place="right margin" hand="#Otfrid" facs="#zone.4r.23"
+                        ana="#glosses-elucidating-the-main-text-with-red-marginal-title"><hi
+                           rend="red script">de consonantibus quę mutantur in uerbis &amp; quę
+                           non</hi></add></rdg>
+                  <note corresp="#gloss-20-9-1" type="explanation" resp="#CG">The same marginal
+                     title recurs in MS München BSB Clm 18375, f. 10v.</note>
+               </app>
                <quote source="#EDITION" n="II 21,15">modo manere, exceptis l p s x. hae enim numquam
                   mutantur, ut</quote>
                <quote source="#EDITION" n="II 21,16">habeo habui, iubeo iussi, compesco compescui,
-                  dico dixi, ascendo</quote>
+                     <lb n="11" ed="4r"/> dico dixi, ascendo</quote>
                <quote source="#EDITION" n="II 21,17">ascendi, laedo laesi, lego legi, pingo pinxi,
                   demo dempsi, premo</quote>
-               <quote source="#EDITION" n="II 21,18">pressi, moneo monui, sino siui, nequeo nequiui,
-                  torqueo torsi,</quote>
+               <app type="gloss" xml:id="gloss-21-17-1">
+                  <lem wit="#EDITION">pingo</lem>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#Otfrid"
+                        facs="#zone.4r.24" ana="#translation-into-Old-High-German"
+                        xml:id="ohg-21-17-1" type="OHG-gloss" n="4"><foreign xml:lang="goh"
+                           >malon</foreign>></add></rdg>
+                  <note corresp="#ohg-21-17-1" type="explanation" resp="#CG"> This OHG gloss was
+                     first edited by Hans Butzmann, <hi rend="italic">Althochdeutsche
+                        Priscian-Glossen aus Weissenburg</hi>, PBB. 86/3 (Halle 1964), pp. 388-402,
+                     at p. 391, no. 2. See also BStK Online: <ref
+                        target="https://glossen.germ-ling.uni-bamberg.de/bstk/972"/> [accessed
+                     13.02.2024]. </note>
+               </app>
+               <quote source="#EDITION" n="II 21,18">pressi, moneo monui, sino siui, <lb n="12"
+                     ed="4r"/> nequeo nequiui, torqueo torsi,</quote>
                <quote source="#EDITION" n="II 21,19">dissero disserui, uro ussi, uerto uerti, flecto
                   flexi. illae autem</quote>
-               <quote source="#EDITION" n="II 21,20">quattuor, ut supra diximus, numquam mutantur in
-                  praeterito perfecto: l,</quote>
-               <quote source="#EDITION" n="II 21,21">caelo caelaui, doleo dolui, uolo uolui, mollio
-                  molliui; p, turpo</quote>
-               <quote source="#EDITION" n="II 21,22">turpaui, stupeo stupui, scalpo scalpsi, lippio
-                  lippiui; s, quasso</quote>
+               <quote source="#EDITION" n="II 21,20">quattuor, ut supra dixi<lb n="13" break="no"
+                     ed="4r"/>mus, numquam mutantur in praeterito perfecto: l,</quote>
+               <quote source="#EDITION" n="II 21,21"><add type="text-variation" xml:id="tv-21-21-1"
+                     hand="#scr" source="#COD_50" place="inline">ut</add> caelo caelaui, doleo
+                  dolui, uolo uolui, mollio molliui; p, turpo</quote>
+               <app type="rubrication" xml:id="rubr-21-21-1">
+                  <lem wit="#EDITION">p</lem>
+                  <rdg wit="#COD_50" hand="#scr"><hi rend="red capitalis">P</hi></rdg>
+               </app>
+               <app type="gloss" xml:id="gloss-21-21-1">
+                  <lem wit="#EDITION">caelo</lem>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#Otfrid"
+                        facs="#zone.4r.25" ana="#synonyms">abscondo</add></rdg>
+               </app>
+               <app type="gloss" xml:id="gloss-21-21-2">
+                  <lem wit="#EDITION">mollio</lem>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#Otfrid"
+                        facs="#zone.4r.26" ana="#translation-into-Old-High-German"
+                        xml:id="ohg-21-21-1" type="OHG-gloss" n="5"><foreign xml:lang="goh"
+                           >uueichu</foreign>></add></rdg>
+                  <note corresp="#ohg-21-17-1" type="explanation" resp="#CG"> This OHG gloss was
+                     first edited by Hans Butzmann, <hi rend="italic">Althochdeutsche
+                        Priscian-Glossen aus Weissenburg</hi>, PBB. 86/3 (Halle 1964), pp. 388-402,
+                     at p. 391, no. 3. See also BStK Online: <ref
+                        target="https://glossen.germ-ling.uni-bamberg.de/bstk/972"/> [accessed
+                     16.02.2024]. </note>
+               </app>
+               <quote source="#EDITION" n="II 21,22">turpaui, stu<lb n="14" break="no" ed="4r"/>peo
+                  stupui, scalpo scalpsi, lippio lippiui; s, quasso</quote>
+               <app type="text-variation" xml:id="tv-21-22-1">
+                  <lem wit="#EDITION">stupui</lem>
+                  <rdg wit="#COD_50" hand="#scr">stup<del cause="emendation" type="expunction"
+                        >e</del><add place="interlinear above">u</add>i</rdg>
+               </app>
+               <app type="text-variation" xml:id="tv-21-22-2">
+                  <lem wit="#EDITION">scalpsi</lem>
+                  <rdg wit="#COD_50">scalp<add hand="#scr" place="interlinear above"
+                        cause="emendation">s</add>i</rdg>
+               </app>
+               <app type="reference-signs" xml:id="rs-21-22-1">
+                  <lem wit="#EDITION">scalpo</lem>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#Otfrid"
+                        facs="#zone.4r.27" ana="#lemma-gloss"><g ref="#reference-sign-virga"
+                     /></add></rdg>
+               </app>
+               <app type="gloss" xml:id="gloss-21-22-1" subtype="to-be-checked">
+                  <lem wit="#EDITION">scalpo</lem>
+                  <rdg wit="#COD_50"><add place="left margin" hand="#Otfrid" facs="#zone.4r.28"
+                        ana="#glosses-elucidating-the-main-text"><gap unit="char" quantity="2"
+                           reason="illegible"/><supplied resp="#CG">cl</supplied>abu <g ref="#vel"/>
+                        clauu</add></rdg>
+                  <note corresp="#gloss-21-22-1" type="explanation" resp="#CG"> See: „clavus, m.“,
+                     in: Mittellateinisches Wörterbuch <ref
+                        target="https://www.woerterbuchnetz.de/MLW?lemid=C04857"/> accessed
+                     16.02.2024. It seems to me that Otfrid declined here the word "clavus/clabus,
+                     -i" (i.e. nail, second Latin declension) according to the fourth declension.
+                     "Clabu vel clauu" seems to be an ablativus instrumentalis that Otfrid wrote as
+                     a gloss the verb "scalpo", in order to explain what one scratches with.</note>
+               </app>
+               <app type="gloss" xml:id="gloss-21-22-2">
+                  <lem wit="#EDITION">lippio</lem>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#Otfrid"
+                        facs="#zone.4r.29" ana="#synonyms #translation-into-Old-High-German"
+                        xml:id="ohg-21-22-1" type="OHG-gloss" n="6"> male uideo <g ref="#idest"/>
+                        <foreign xml:lang="goh">blitichu</foreign>></add></rdg>
+                  <note corresp="#ohg-21-17-1" type="explanation" resp="#CG"> This OHG gloss was
+                     first edited by Hans Butzmann, <hi rend="italic">Althochdeutsche
+                        Priscian-Glossen aus Weissenburg</hi>, PBB. 86/3 (Halle 1964), pp. 388-402,
+                     at p. 391, no. 4.</note>
+               </app>
                <quote source="#EDITION" n="II 21,23">quassaui, censeo censui, arcesso arcessiui; x,
                   nexo nexui, texo</quote>
-               <quote source="#EDITION" n="II 21,24">texui.</quote>
-
+               <app type="gloss" xml:id="gloss-21-23-1">
+                  <lem wit="#EDITION">arcesso</lem>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#Otfrid"
+                        facs="#zone.4r.30" ana="#synonyms">aduoco</add></rdg>
+               </app>
+               <app type="rubrication" xml:id="rubr-21-23-1">
+                  <lem wit="#EDITION">x</lem>
+                  <rdg wit="#COD_50" hand="#scr"><hi rend="red capitalis">X</hi></rdg>
+               </app>
+               <quote source="#EDITION" n="II 21,24"><lb n="15" ed="4r"/> texui.</quote>
+            </div>
+            <div type="page-of-Hertz-edition" n="Liber Primus" xml:id="liber-primus.18"
+               next="#liber-primus.19" prev="liber-primus.17" corresp="images-keil:Keil_v2_022.gif"
+               xml:lang="la">
+               <quote source="#EDITION" n="II 22,1">uocales quoque in eisdem perfectis, quae in
+                  principalibus syllabis</quote>
+               <app type="rubrication" xml:id="rubr-22-1-1">
+                  <lem wit="#EDITION">uocales</lem>
+                  <rdg wit="#COD_50" hand="#scr"><hi rend="red capitalis">V</hi>ocales</rdg>
+               </app>
+               <app type="text-variation" xml:id="tv-22-1-1">
+                  <lem wit="#EDITION">eisdem</lem>
+                  <rdg wit="#COD_50">isdem</rdg>
+               </app>
+               <app type="gloss" xml:id="gloss-22-1-1">
+                  <lem wit="#EDITION">uocales</lem>
+                  <rdg wit="#COD_50"><add place="right margin" hand="#Otfrid" facs="#zone.4r.31"
+                        ana="#glosses-elucidating-the-main-text-with-red-marginal-title"><hi
+                           rend="red script">de uocalibus quę mutantur in praeterito &amp; quę
+                           non</hi></add></rdg>
+               </app>
+               <quote source="#EDITION" n="II 22,2">inueniuntur uerborum, modo ex correptis
+                  producuntur, modo mutantur in</quote>
+               <quote source="#EDITION" n="II 22,3">alias uocales, modo manent eaedem. pro<lb n="16"
+                     break="no" ed="4r"/>ducuntur plerumque omnes, ut</quote>
+               <quote source="#EDITION" n="II 22,4">faueo fāui, caueo <lb n="17" ed="4r"/> cāui,
+                  sedeo sēdi, lego lēgi, uideo uīdi, moueo</quote>
+               <app type="text-variation" xml:id="tv-22-4-1">
+                  <rdg wit="#COD_50">faueo faui caueo caui sedeo sedi lego legi uideo uidi
+                     moueo</rdg>
+               </app>
+               <app type="gloss" xml:id="gloss-22-4-1">
+                  <lem wit="#EDITION">caueo</lem>
+                  <rdg wit="#COD_50"><add place="right margin" hand="#Otfrid" facs="#zone.4r.32"
+                        ana="#glosses-elucidating-the-main-text #synonyms">obseruo· confirmo· Inde
+                        est · <quote source="Gospel of Luke" xml:id="Luke-16-6">accipe cautionem
+                              t<supplied resp="#CG" reason="biblical quotation">uam</supplied>
+                           <g ref="#et"/> s<supplied resp="#CG" reason="biblical quotation"
+                              >ede</supplied></quote></add></rdg>
+               </app>
+               <quote source="#EDITION" n="II 22,5">mōui, foueo fōui, fugio fūgi.</quote>
+               <app type="text-variation" xml:id="tv-22-5-1">
+                  <rdg wit="#COD_50">moui, foueo foui, fugio fugi</rdg>
+               </app>
+               <quote source="#EDITION" n="II 22,6">mutantur a et e: a quidem in e modo produc<lb
+                     n="18" break="no" ed="4r"/>tam modo correptam;</quote>
+               <app type="rubrication" xml:id="rubr-22-6-1">
+                  <lem wit="#EDITION">mutantur</lem>
+                  <rdg wit="#COD_50" hand="#scr"><hi rend="red capitalis">M</hi>utantur</rdg>
+               </app>
+               <app type="gloss" xml:id="gloss-22-6-1">
+                  <lem wit="#EDITION">a et e</lem>
+                  <rdg wit="#COD_50"><add place="left margin" hand="#Otfrid" facs="#zone.4r.33"
+                        ana="#glosses-elucidating-the-main-text-with-red-marginal-title"><hi
+                           rend="red script">de a· &amp;· e·</hi></add></rdg>
+                  <note corresp="#gloss-22-6-1" type="explanation" resp="#CG">The same marginal
+                     title recurs in MS München BSB Clm 18375, f. 10v.</note>
+               </app>
+               <quote source="#EDITION" n="II 22,7">productam, ut ago ēgi, capio cēpi, facio fēci,
+                  frango frēgi;</quote>
+               <app type="text-variation" xml:id="tv-22-7-1">
+                  <lem wit="#EDITION">ago</lem>
+                  <rdg wit="#COD_50">ăgō</rdg>
+               </app>
+               <app type="text-variation" xml:id="tv-22-7-2">
+                  <lem wit="#EDITION">capio</lem>
+                  <rdg wit="#COD_50">căpio</rdg>
+               </app>
+               <app type="text-variation" xml:id="tv-22-7-3">
+                  <lem wit="#EDITION">facio</lem>
+                  <rdg wit="#COD_50">făcio</rdg>
+               </app>
+               <quote source="#EDITION" n="II 22,8">correptam, tango tĕtigi, cado cĕcidi, parco <lb
+                     n="19" ed="4r"/> pĕperci. e uero transit in i,</quote>
+               <app type="rubrication" xml:id="rubr-22-8-1">
+                  <lem wit="#EDITION">correptam</lem>
+                  <rdg wit="#COD_50" hand="#scr"><hi rend="capital letter filled with red ink"
+                        >C</hi>orreptam</rdg>
+               </app>
+               <app type="rubrication" xml:id="rubr-22-8-2">
+                  <lem wit="#EDITION">e</lem>
+                  <rdg wit="#COD_50" hand="#scr"><hi rend="capital letter filled with red ink"
+                        >E</hi></rdg>
+               </app>
+               <app type="text-variation" xml:id="tv-22-8-1">
+                  <lem wit="#EDITION">cĕcidi</lem>
+                  <rdg wit="#COD_50">cecidi</rdg>
+               </app>
+               <app type="text-variation" xml:id="tv-22-8-2">
+                  <lem wit="#EDITION">tĕtigi</lem>
+                  <rdg wit="#COD_50">tetigi</rdg>
+               </app>
+               <app type="text-variation" xml:id="tv-22-8-3">
+                  <lem wit="#EDITION">pĕperci</lem>
+                  <rdg wit="#COD_50">peperci</rdg>
+               </app>
+               <app type="gloss" xml:id="gloss-22-8-1">
+                  <lem wit="#EDITION">e uero</lem>
+                  <rdg wit="#COD_50"><add place="left margin" hand="#Otfrid" facs="#zone.4r.34"
+                        ana="#glosses-elucidating-the-main-text-with-red-marginal-title"><hi
+                           rend="red script">de ·e·</hi></add></rdg>
+                  <note corresp="#gloss-22-8-1" type="explanation" resp="#CG">The same marginal
+                     title recurs in MS München BSB Clm 18375, f. 10v.</note>
+               </app>
+               <quote source="#EDITION" n="II 22,9">ut eo iui uel ii - Solinus in collectaneis uel
+                  polyhistore:</quote>
+               <app type="gloss" xml:id="gloss-22-9-1">
+                  <lem wit="#EDITION">polyhistore</lem>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#Otfrid"
+                        facs="#zone.4r.35" ana="#glosses-elucidating-the-main-text">liber de
+                        diuersis storiis</add></rdg>
+                  <note corresp="#gloss-22-9-1" type="explanation" resp="#CG">The corresponding
+                     gloss in MS München BSB Clm 18375, f. 10v reads: "poli id est diuersis
+                     historiis vel nomen loci".</note>
+               </app>
+               <quote source="#EDITION" n="II 22,10">«Tatius in arce, ubi nunc aedes <g
+                     ref="#irish-est"/> Iunonis Mo<lb n="20" break="no" ed="4r"/>netae, qui
+                  anno</quote>
+               <app type="text-variation" xml:id="tv-22-10-1">
+                  <lem wit="#EDITION">aedes</lem>
+                  <rdg wit="#COD_50">edis</rdg>
+               </app>
+               <app type="text-variation" xml:id="tv-22-10-2">
+                  <lem wit="#EDITION">arce</lem>
+                  <rdg wit="#COD_50">arche</rdg>
+               </app>
+               <app type="gloss" xml:id="gloss-22-10-1">
+                  <lem wit="#EDITION">Iunonis Monetae</lem>
+                  <rdg wit="#COD_50"><add place="right margin" hand="#Otfrid" facs="#zone.4r.36"
+                        ana="#glosses-elucidating-the-main-text">quae preest monetis</add></rdg>
+               </app>
+               <quote source="#EDITION" n="II 22,11">quinto quam ingressus urbem fuerat, a
+                  Laurentibus </quote>
+               <app type="text-variation" xml:id="tv-22-11-1">
+                  <lem wit="#EDITION">urbem fuerat</lem>
+                  <rdg wit="#COD_50">fuerat <add hand="#scr" place="above" cause="emendation"
+                        >urbem</add></rdg>
+               </app>
+               <quote source="#EDITION" n="II 22,12">interemptus <g ref="#irish-est"/>, septima et
+                  uicensima Olympiade hominem exiuit» -,</quote>
+               <app type="text-variation" xml:id="tv-22-12-1">
+                  <lem wit="#EDITION">uicensima Olympiade</lem>
+                  <rdg wit="#COD_50">uicesima Olimphiade</rdg>
+               </app>
+               <app type="gloss" xml:id="gloss-22-12-1">
+                  <lem wit="#EDITION">Olympiade</lem>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#Otfrid"
+                        facs="#zone.4r.37" ana="#glosses-elucidating-the-main-text">IIII·
+                        aniis</add></rdg>
+               </app>
+               <app type="gloss" xml:id="gloss-22-12-2">
+                  <lem wit="#EDITION">exiuit</lem>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#Otfrid"
+                        facs="#zone.4r.38" ana="#glosses-elucidating-the-main-text"><g ref="#idest"
+                        /> mortuus est</add></rdg>
+               </app>
+               <quote source="#EDITION" n="II 22,13"><lb n="21" ed="4r"/>queo quiui uel quii. haec
+                  eadem uocalis paenultima in uerbis secundae</quote>
+               <app type="rubrication" xml:id="rubr-22-13-1">
+                  <lem wit="#EDITION">haec</lem>
+                  <rdg wit="#COD_50" hand="#scr"><hi rend="capital letter filled with red ink"
+                        >H</hi>aec</rdg>
+               </app>
+               <quote source="#EDITION" n="II 22,14">coniugationis saepe mutatur in u, ut doceo
+                  docui, <lb n="22" ed="4r"/> moneo monui,</quote>
+               <quote source="#EDITION" n="II 22,15">doleo dolui. quod similiter est quando in
+                  tertia uel quarta coniugatione </quote>
+               <app type="rubrication" xml:id="rubr-22-15-1">
+                  <lem wit="#EDITION">quod</lem>
+                  <rdg wit="#COD_50" hand="#scr"><hi rend="capital letter filled with red ink"
+                        >Q</hi>uod</rdg>
+               </app>
+               <app type="gloss" xml:id="gloss-22-15-1">
+                  <lem wit="#EDITION">quod similiter</lem>
+                  <rdg wit="#COD_50"><add place="left margin" hand="#Otfrid" facs="#zone.4r.39"
+                        ana="#glosses-elucidating-the-main-text-with-red-marginal-title"><hi
+                           rend="red script">de ·i·</hi></add></rdg>
+               </app>
+               <app type="annotation-signs" xml:id="as-22-15-1">
+                  <lem wit="#EDITION">quod similiter</lem>
+                  <rdg wit="#COD_50"><add place="right margin" hand="#Otfrid" facs="#zone.4r.41"
+                        ana="#attention-sign-nota"><g ref="#nota-sign"/></add></rdg>
+               </app>
+               <quote source="#EDITION" n="II 22,16">patitur i, ut rapio rapui, aperio <lb n="23"
+                     ed="4r"/> aperui.</quote>
+               <quote source="#EDITION" n="II 22,17">u et o manent in principalibus syllabis positae
+                  immutabiles, temporum</quote>
+               <app type="rubrication" xml:id="rubr-22-17-1">
+                  <lem wit="#EDITION">u</lem>
+                  <rdg wit="#COD_50" hand="#scr"><hi rend="capital letter filled with red ink"
+                        >U</hi></rdg>
+               </app>
+               <app type="gloss" xml:id="gloss-22-17-1">
+                  <lem wit="#EDITION">u</lem>
+                  <rdg wit="#COD_50"><add place="left margin" hand="#Otfrid" facs="#zone.4r.40"
+                        ana="#glosses-elucidating-the-main-text-with-red-marginal-title"><hi
+                           rend="red script">de ·u· &amp; ·o·</hi></add></rdg>
+                  <note corresp="#gloss-22-17-1" type="explanation" resp="#CG">MS München BSB Clm
+                     18375, f. 10v conveys the similar title: "De o et u".</note>
+               </app>
+               <quote source="#EDITION" n="II 22,18">quoque in quibusdam, ut ruo rui, domo <lb
+                     n="24" ed="4r"/> domui, doceo docui.</quote>
+               <quote source="#EDITION" n="II 22,19">hoc quoque obseruandum est, quod numquam in
+                  supra dicto tempore</quote>
+               <app type="rubrication" xml:id="rubr-22-19-1">
+                  <lem wit="#EDITION">hoc</lem>
+                  <rdg wit="#COD_50" hand="#scr"><hi rend="red capitalis">H</hi>oc</rdg>
+               </app>
+               <app type="gloss" xml:id="gloss-22-19-1">
+                  <lem wit="#EDITION">quod</lem>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#Otfrid"
+                        facs="#zone.4r.42" ana="#text-variant"><g ref="#vel"/> quia</add></rdg>
+               </app>
+               <app type="gloss" xml:id="gloss-22-19-2">
+                  <lem wit="#EDITION">hoc quoque obseruandum est</lem>
+                  <rdg wit="#COD_50"><add place="right margin" hand="#Otfrid" facs="#zone.4r.43"
+                        ana="#glosses-elucidating-the-main-text-with-red-marginal-title"><hi
+                           rend="red script">de consonantibus a quibus uerba <g ref="#Insular-quae"
+                           /> syllabam geminant incipiunt</hi></add></rdg>
+               </app>
+               <quote source="#EDITION" n="II 22,20">potest geminari nec in prin<lb n="25"
+                     break="no" ed="4r"/>cipio nec in fine syllaba, nisi quae a muta</quote>
+               <app type="text-variation" xml:id="tv-22-20-1">
+                  <lem wit="#EDITION">nec</lem>
+                  <rdg wit="#COD_50">neque</rdg>
+               </app>
+               <quote source="#EDITION" n="II 22,21">incipit, ut tondeo totondi, pendeo uel pendo
+                  pependi, disco didici,</quote>
+               <app type="text-variation" xml:id="tv-22-21-1">
+                  <rdg wit="#COD_50">incipit· ut tondeo·totondi·pendeo uel pendo·pependi</rdg>
+               </app>
+               <app type="annotation-signs" xml:id="as-22-21-1">
+                  <lem wit="#EDITION">pependi</lem>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#Otfrid"
+                        facs="#zone.4r.44" ana="#omission-sign-d"><g
+                           ref="#omission-sign-dotted-delta"/></add></rdg>
+               </app>
+               <app type="emendation" subtype="addition-of-omitted-text" xml:id="emendation-22-21-1">
+                  <lem wit="#EDITION">pependi</lem>
+                  <rdg wit="#COD_50"><add place="lower margin of the page" hand="#Otfrid"
+                        facs="#zone.4r.45">
+                        <g ref="#omission-sign-dotted-h"
+                        />disco·didici·posco·poposci·tundo·tutudi·pedo·pepedi</add></rdg>
+                  <note resp="#CG" type="explanation" target="#emendation-22-21-1"> Otfrid added in
+                     the lower margin of the page a segment of Priscian's text that had been omitted
+                     by the main scribe. The omission covers the end of II 22,21 and the beginning
+                     of II 22,22.</note>
+               </app>
+               <quote source="#EDITION" n="II 22,22">posco poposci, tundo tutudi, pedo pepedi, tango
+                  tetigi, caedo</quote>
+               <app type="text-variation" xml:id="tv-22-22-1">
+                  <rdg wit="#COD_50"> tango tetigi, cado</rdg>
+               </app>
+               <quote source="#EDITION" n="II 22,23">cecidi, <lb n="26" ed="4r"/> cado cecidi, pello
+                  pepuli, fallo fefelli, prodo prodidi, uendo</quote>
+               <app type="text-variation" xml:id="tv-22-23-1">
+                  <rdg wit="#COD_50"> cecidi· pello·pepuli·fallo·fefelli·cedo·c<del
+                        type="expunction">e</del><add place="interlinear above">i</add>cidi·prodo·
+                     prodidi·uendo</rdg>
+               </app>
+               <quote source="#EDITION" n="II 22,24">uendidi, ex quo etiam apparet, f uim magis
+                  mutae obtinere, <lb n="27" ed="4r"/> a qua</quote>
+               <quote source="#EDITION" n="II 22,25">incipiens geminata est syllaba.</quote>
+            </div>
+            <div type="page-of-Hertz-edition" n="Liber Primus" xml:id="liber-primus.19"
+               next="#liber-primus.18" prev="liber-primus.20" corresp="images-keil:Keil_v2_023.gif"
+               xml:lang="la">
+               <quote source="#EDITION" n="II 23,1">s ante mutam posita inueniuntur duo, quae
+                  geminant syllabam, sto</quote>
+               <app type="rubrication" xml:id="rubr-23-1-1">
+                  <lem wit="#EDITION">s</lem>
+                  <rdg wit="#COD_50" hand="#scr"><hi rend="capital letter filled with red ink"
+                        >S</hi></rdg>
+               </app>
+               <app type="gloss" xml:id="gloss-23-1-1">
+                  <lem wit="#EDITION">s ante mutam</lem>
+                  <rdg wit="#COD_50"><add place="left margin" hand="#Otfrid" facs="#zone.4r.46"
+                        ana="#glosses-elucidating-the-main-text-with-red-marginal-title"><hi
+                           rend="red script">de ·s·</hi></add></rdg>
+               </app>
+               <app type="gloss" xml:id="gloss-23-1-2">
+                  <lem wit="#EDITION">duo</lem>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#sec" facs="#zone.4r.47"
+                        ana="#suppletive-glosses"><g ref="#idest"/> duo uerba</add></rdg>
+               </app>
+               <quote source="#EDITION" n="II 23,2">steti, spondeo <lb n="28" ed="4r"/> spopondi.
+                  antiquissimi etiam scindo scicidi</quote>
+               <quote source="#EDITION" n="II 23,3">dicebant, quod iuniores scidi dixerunt, ut in
+                  praeterito perfecto uerbi</quote>
+               <app type="text-variation" xml:id="tv-23-3-1">
+                  <lem wit="#EDITION">uerbi</lem>
+                  <rdg wit="#COD_50"/>
+               </app>
+               <quote source="#EDITION" n="II 23,4">ostendemus. <lb n="29" ed="4r"/> nec sine
+                  ratione ante mutas inuenitur geminatum, cum s</quote>
+               <quote source="#EDITION" n="II 23,5">amittit uim suam plerumque sic posita ante
+                  mutam, unde <lb n="30" ed="4r"/> nec in secunda</quote>
+               <quote source="#EDITION" n="II 23,6">syllaba repetitur.</quote>
+               <quote source="#EDITION" n="II 23,7">m quoque geminatur (mordeo momordi) quae loco
+                  mutae in multis</quote>
+               <app type="gloss" xml:id="gloss-23-7-1">
+                  <lem wit="#EDITION">m quoque</lem>
+                  <rdg wit="#COD_50"><add place="left margin" hand="#Otfrid" facs="#zone.4r.48"
+                        ana="#glosses-elucidating-the-main-text-with-red-marginal-title"><hi
+                           rend="red script">de ·m·</hi></add></rdg>
+               </app>
+               <quote source="#EDITION" n="II 23,8">fungitur: nam et ante n po<lb n="31" break="no"
+                     ed="4r"/>sita communem facit syllabam, ut Ramnes</quote>
+               <app type="gloss" xml:id="gloss-23-8-1">
+                  <lem wit="#EDITION">Ramnes</lem>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#Otfrid"
+                        facs="#zone.4r.49" ana="#glosses-elucidating-the-main-text">proprium
+                        nomen</add></rdg>
+               </app>
+               <quote source="#EDITION" n="II 23,9">Ramnetis, sicut Chremes Chremetis (iambica enim
+                  sunt, quae sic</quote>
+               <app type="annotation-signs" xml:id="as-23-9-1">
+                  <lem wit="#COD_50">iambica enim
+                     sunt</lem>
+                  <rdg wit="#COD_50"><add place="right margin" hand="unknown" facs="#zone.4r.53"
+                     ana="#attention-sign-require"><g ref="#require-sign"/></add></rdg>
+               </app>
+               <app type="reference-signs" xml:id="rs-23-9-1">
+                  <lem wit="#EDITION">Chremes</lem>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#Otfrid"
+                        facs="#zone.4r.50" ana="#lemma-gloss"><g ref="#reference-sign-trigon"
+                        /></add></rdg>
+               </app>
+               <app type="gloss" xml:id="gloss-23-9-1" subtype="to-be-checked">
+                  <lem wit="#EDITION">Chremes</lem>
+                  <rdg wit="#COD_50"><add place="right margin" hand="#Otfrid" facs="#zone.4r.51"
+                        ana="#glosses-elucidating-the-main-text"><g ref="#reference-sign-trigon"/>
+                        Quia sicut chremes iambum <sic>facio</sic> ubi positio non est. similiter
+                        ramnes ubi est</add></rdg>
+               </app>
+               <app type="gloss" xml:id="gloss-23-9-2">
+                  <lem wit="#EDITION">iambica</lem>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#sec"
+                        facs="#zone.4r.52"
+                        ana="#suppletive-glosses #glosses-elucidating-the-main-text">ista nomina <g
+                           ref="#idest"/> iambis constant</add></rdg>
+               </app>
+               <!--  -->
+               <quote source="#EDITION" n="II 23,10">declinantur, <lb n="32" break="no"
+                  ed="4r"/> quod Callimachi quoque auctoritate
+                  confirmatur in Αἰτίοις</quote>
+               <quote source="#EDITION" n="II 23,11">sicut iam supra dictum est, hoc uersu:</quote>
+               <quote source="#EDITION" n="II 23,12">«τὼς μὲν ὁ Μνησάρχειος ἔφη ξένος, ὧδε
+                  συναινῶ»)</quote>
+               <quote source="#EDITION" n="II 23,13">et numquam tamen eadem m ante se natura longam
+                  [uocalem] patitur in</quote>
+               <quote source="#EDITION" n="II 23,14">eadem syllaba esse, ut illăm, artĕm, puppĭm,
+                  illŭm, rĕm, spĕm,</quote>
+               <quote source="#EDITION" n="II 23,15">diĕm, cum aliae omnes semiuocales hoc habent,
+                  ut Maecenās, paeān,</quote>
+               <quote source="#EDITION" n="II 23,16">sōl, pāx, pār. praeterea sola haec semiuocalis
+                  post s ponitur, quod</quote>
+               <quote source="#EDITION" n="II 23,17">mutarum est, ut Smyrna, smaragdus, et ante
+                  liquidam, ut Samnis,</quote>
+               <quote source="#EDITION" n="II 23,18">et quod ante s posita in finali syllaba
+                  [nominis] more mutae interposita i</quote>
+               <quote source="#EDITION" n="II 23,19">facit genetiuum, hiems hiemis, uelut inops
+                  inopis, caelebs caelibis.</quote>
+               <quote source="#EDITION" n="II 23,20">apparet igitur, quod elementorum alia sunt
+                  eiusdem generis, ut</quote>
+               <quote source="#EDITION" n="II 23,21">uocales et consonantes, alia eiusdem speciei,
+                  ut in uocalibus breues et longae</quote>
+               <quote source="#EDITION" n="II 23,22">et in consonantibus simplices et duplices, quae
+                  habent aspirationem et</quote>
+               <quote source="#EDITION" n="II 23,23">quae non habent et earum mediae. aliae uero
+                  sibi sunt affines per</quote>
 
 
 
             </div>
-            <!--  -->
+
+
+
+            
 
             <pb n="4v" xml:id="page__00018" facs="#facs__00018"/>
             <pb n="5r" xml:id="page__00019" facs="#facs__00019"/>
@@ -5333,8 +5847,39 @@
          <zone xml:id="zone.4r.18" ulx="1502" uly="522" lrx="1705" lry="608"/>
          <zone xml:id="zone.4r.20" ulx="73" uly="542" lrx="169" lry="616"/>
          <zone xml:id="zone.4r.19" ulx="175" uly="546" lrx="192" lry="560"/>
+         <zone xml:id="zone.4r.23" ulx="1480" uly="617" lrx="1710" lry="757"/>
          <zone xml:id="zone.4r.21" ulx="279" uly="633" lrx="304" lry="653"/>
          <zone xml:id="zone.4r.22" ulx="74" uly="637" lrx="157" lry="692"/>
+         <zone xml:id="zone.4r.24" ulx="746" uly="716" lrx="799" lry="743"/>
+         <zone xml:id="zone.4r.25" ulx="1042" uly="801" lrx="1116" lry="828"/>
+         <zone xml:id="zone.4r.26" ulx="609" uly="802" lrx="678" lry="829"/>
+         <zone xml:id="zone.4r.30" ulx="1044" uly="847" lrx="1109" lry="873"/>
+         <zone xml:id="zone.4r.27" ulx="318" uly="848" lrx="346" lry="868"/>
+         <zone xml:id="zone.4r.29" ulx="480" uly="850" lrx="623" lry="877"/>
+         <zone xml:id="zone.4r.28" ulx="74" uly="857" lrx="159" lry="902"/>
+         <zone xml:id="zone.4r.31" ulx="1480" uly="893" lrx="1694" lry="1018"/>
+         <zone xml:id="zone.4r.32" ulx="1413" uly="931" lrx="1714" lry="976"/>
+         <zone xml:id="zone.4r.33" ulx="71" uly="976" lrx="166" lry="1034"/>
+         <zone xml:id="zone.4r.35" ulx="889" uly="1062" lrx="1038" lry="1093"/>
+         <zone xml:id="zone.4r.34" ulx="70" uly="1066" lrx="135" lry="1136"/>
+         <zone xml:id="zone.4r.36" ulx="1500" uly="1087" lrx="1654" lry="1115"/>
+         <zone xml:id="zone.4r.38" ulx="1392" uly="1113" lrx="1508" lry="1133"/>
+         <zone xml:id="zone.4r.37" ulx="1205" uly="1116" lrx="1269" lry="1134"/>
+         <zone xml:id="zone.4r.41" ulx="1531" uly="1188" lrx="1584" lry="1240"/>
+         <zone xml:id="zone.4r.39" ulx="72" uly="1197" lrx="125" lry="1247"/>
+         <zone xml:id="zone.4r.40" ulx="72" uly="1258" lrx="169" lry="1302"/>
+         <zone xml:id="zone.4r.42" ulx="719" uly="1284" lrx="765" lry="1317"/>
+         <zone xml:id="zone.4r.43" ulx="1475" uly="1298" lrx="1672" lry="1489"/>
+         <zone xml:id="zone.4r.44" ulx="1187" uly="1325" lrx="1224" lry="1364"/>
+         <zone xml:id="zone.4r.46" ulx="76" uly="1408" lrx="134" lry="1471"/>
+         <zone xml:id="zone.4r.47" ulx="970" uly="1418" lrx="1071" lry="1450"/>
+         <zone xml:id="zone.4r.51" ulx="1480" uly="1500" lrx="1702" lry="1585"/>
+         <zone xml:id="zone.4r.48" ulx="70" uly="1540" lrx="140" lry="1616"/>
+         <zone xml:id="zone.4r.49" ulx="556" uly="1587" lrx="616" lry="1617"/>
+         <zone xml:id="zone.4r.52" ulx="1001" uly="1588" lrx="1221" lry="1618"/>
+         <zone xml:id="zone.4r.50" ulx="812" uly="1590" lrx="845" lry="1614"/>
+         <zone xml:id="zone.4r.53" ulx="1543" uly="1604" lrx="1609" lry="1641"/>
+         <zone xml:id="zone.4r.45" ulx="133" uly="1967" lrx="888" lry="2044"/>
          <zone xml:id="zone.4r.8" ulx="1175" uly="323" lrx="1342" lry="387"/>
          <zone xml:id="zone.4r.7" ulx="872" uly="318" lrx="1052" lry="374"/>
          <zone xml:id="zone.4r.6" ulx="725" uly="320" lrx="859" lry="373"/>
