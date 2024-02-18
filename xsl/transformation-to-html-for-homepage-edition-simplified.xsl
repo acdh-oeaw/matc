@@ -97,7 +97,7 @@
                                     <article>
                                         <header class="entry-header background-color-brown">
                                             <h1 class="heading-level-1">The Wissembourg Priscian Glosses</h1>
-                                            <h2 class="heading-level-2">Digital Edition</h2>
+                                            <h2 class="heading-level-2">Simplified Digital Edition</h2>
                                         </header><!-- .entry-header -->
                                         <div class="entry-content">
                                             <xsl:apply-templates select="child::node()"/>
@@ -169,53 +169,53 @@
     </xsl:template>
     
     <xsl:template match="tei:charDecl[@n = 'abbreviations']">
-        <div class="pictures">
+        <!-- <div class="pictures">
             <p class="heading-2">Signs for abbreviations:</p>
             <div>
                 <xsl:apply-templates select="tei:glyph"/>
             </div>
-        </div>
+        </div> -->
     </xsl:template>
     
     <xsl:template match="tei:charDecl[@n = 'construe-marks']">
-        <div class="pictures">
+        <!-- <div class="pictures">
             <p class="heading-2">Signs for construe marks:</p>
             <div>
                 <xsl:apply-templates select="tei:glyph"/>
             </div>
-        </div>
+        </div> -->
     </xsl:template>
     
     <xsl:template match="tei:charDecl[@n = 'reference signs']">
-        <div class="pictures">
+        <!-- <div class="pictures">
             <p class="heading-2">Reference signs:</p>
             <div>
                 <xsl:apply-templates select="tei:glyph"/>
             </div>
-        </div>
+        </div> -->
     </xsl:template>
     
     <xsl:template match="tei:charDecl[@n = 'attention signs']">
-        <div class="pictures">
+        <!-- <div class="pictures">
             <p class="heading-2">Annotation signs:</p>
             <div>
                 <xsl:apply-templates select="tei:glyph"/>
             </div>
             <xsl:apply-templates select="following-sibling::tei:charDecl[1][@n = 'excerption signs']" mode="annotation-signs-heading"/>
-        </div>
+        </div> -->
     </xsl:template>
     
     <xsl:template match="tei:charDecl[@n = 'excerption signs']" mode="annotation-signs-heading">
-        <div>
+        <!-- <div>
             <xsl:apply-templates select="tei:glyph"/>
         </div>
-        <xsl:apply-templates select="following-sibling::tei:charDecl[1][@n = 'omission signs']" mode="annotation-signs-heading"/>
+        <xsl:apply-templates select="following-sibling::tei:charDecl[1][@n = 'omission signs']" mode="annotation-signs-heading"/> -->
     </xsl:template>
     
     <xsl:template match="tei:charDecl[@n = 'omission signs']" mode="annotation-signs-heading">
-        <div>
+        <!-- <div>
             <xsl:apply-templates select="tei:glyph"/>
-        </div>
+        </div> -->
     </xsl:template>
     
     <xsl:template match="tei:glyph">
@@ -469,7 +469,7 @@
     </xsl:template>
     
     <xsl:template match="tei:app[@type = 'text-variation']">
-        <p class="type-of-intervention">
+        <!-- <p class="type-of-intervention">
             <xsl:text>Text variation:</xsl:text>
         </p>
         <div class="apparatus">
@@ -482,11 +482,11 @@
                     <xsl:value-of select="@xml:id"/>
                 </xsl:element>
             </p>
-        </div>
+        </div> -->
     </xsl:template>
     
     <xsl:template match="tei:app[@type = 'reference-signs']">
-        <p class="type-of-intervention"><xsl:text>Reference sign:</xsl:text></p>
+        <!-- <p class="type-of-intervention"><xsl:text>Reference sign:</xsl:text></p>
         <div class="apparatus">
             <xsl:apply-templates select="tei:lem"/>
             <xsl:apply-templates select="tei:rdg"/>
@@ -497,11 +497,11 @@
                     <xsl:value-of select="@xml:id"/>
                 </xsl:element>
             </p>
-        </div>
+        </div> -->
     </xsl:template>
     
     <xsl:template match="tei:app[@type = 'emendation']">
-        <p class="type-of-intervention"><xsl:text>Emendation:</xsl:text></p>
+        <!-- <p class="type-of-intervention"><xsl:text>Emendation:</xsl:text></p>
         <div class="apparatus">
             <xsl:apply-templates select="tei:lem"/>
             <xsl:apply-templates select="tei:rdg" mode="emendation"/>
@@ -512,7 +512,7 @@
                     <xsl:value-of select="@xml:id"/>
                 </xsl:element>
             </p>
-        </div>
+        </div> -->
     </xsl:template>
     
     <xsl:template match="tei:rdg" mode="emendation">
@@ -579,7 +579,7 @@
     </xsl:template>
     
     <xsl:template match="tei:app[@type = 'rubrication']">
-        <p class="type-of-intervention"><xsl:text>Rubrication:</xsl:text></p>
+        <!-- <p class="type-of-intervention"><xsl:text>Rubrication:</xsl:text></p>
         <div class="apparatus">
             <xsl:apply-templates select="tei:lem"/>
             <xsl:apply-templates select="tei:rdg" mode="rubrication"/>
@@ -590,7 +590,7 @@
                     <xsl:value-of select="@xml:id"/>
                 </xsl:element>
             </p>
-        </div>
+        </div> -->
     </xsl:template>
     
     <xsl:template match="tei:rdg" mode="rubrication">

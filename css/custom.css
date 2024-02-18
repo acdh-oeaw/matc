@@ -48,3 +48,7 @@ span.around-link { margin-left: 20pt; border: black 1pt solid; padding: 4pt; bor
 .apparatus-hidden { display: none; }
 .apparatus-visible { display: block; }
 #overlay { border: red 2pt solid; }
+.note a:link { text-decoration: none; }
+.note a:hover { text-decoration: none; }
+.note a:visited { text-decoration: none; }
+.note a:active { text-decoration: none; }
