@@ -4641,9 +4641,9 @@
                         facs="#zone.4r.14" ana="#lexical-glosses">g<supplied resp="#CG"
                            reason="abbreviation">raece</supplied></add></rdg>
                </app>
-               <quote source="#EDITION" n="II 21,2">πορφύρεον.</quote>
+               <quote source="#EDITION" n="II 21,2"><foreign xml:lang="grc">πορφύρεον</foreign>.</quote>
                <app type="gloss" xml:id="gloss-21-2-1">
-                  <lem wit="#EDITION">πορφύρεον</lem>
+                  <lem wit="#EDITION"><foreign xml:lang="grc">πορφύρεον</foreign></lem>
                   <rdg wit="#COD_50"><add place="interlinear above" hand="#Otfrid"
                         facs="#zone.4r.15" ana="#lexical-glosses">g<supplied resp="#CG"
                            reason="abbreviation">raece</supplied></add></rdg>
@@ -5212,8 +5212,8 @@
                   ed="4r"/> quod Callimachi quoque auctoritate
                   confirmatur in Αἰτίοις</quote>
                <quote source="#EDITION" n="II 23,11">sicut iam supra dictum est, hoc uersu:</quote>
-               <quote source="#EDITION" n="II 23,12">«τὼς μὲν ὁ Μνησάρχειος ἔφη ξένος, ὧδε
-                  συναινῶ»)</quote>
+               <quote source="#EDITION" n="II 23,12">«<foreign xml:lang="grc">τὼς μὲν ὁ Μνησάρχειος ἔφη ξένος, ὧδε
+                  συναινῶ</foreign>»)</quote>
                <quote source="#EDITION" n="II 23,13">et numquam tamen eadem m ante se natura longam
                   [uocalem] patitur in</quote>
                <quote source="#EDITION" n="II 23,14">eadem syllaba esse, ut illăm, artĕm, puppĭm,
