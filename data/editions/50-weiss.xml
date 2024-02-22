@@ -4232,7 +4232,7 @@
                   <lem wit="#EDITION">anteponitur, quod</lem>
                   <rdg wit="#COD_50"><add place="interlinear above" hand="#Otfrid"
                         facs="#zone.3v.25" ana="#glosses-elucidating-the-main-text #text-variant">h·
-                           <g ref="#vel"/> quae</add></rdg>
+                           <g ref="#vel"/> quia</add></rdg>
                </app>
                <quote source="#EDITION" n="II 19,2">tollatur ea, perit etiam uis sig<lb n="16"
                      break="no" ed="3v"/>nificationis, ut si dicam Erennius absque</quote>
@@ -4454,7 +4454,7 @@
                   <lem wit="#EDITION">inter c</lem>
                   <rdg wit="#COD_50"><add place="left margin" hand="#Otfrid" facs="#zone.3v.41"
                         ana="#glosses-elucidating-the-main-text-with-red-marginal-title"><hi
-                           rend="red script">de cognatione cog<add place="above" cause="emendaton"
+                           rend="red script">de cognatione co<del>g</del>g<add place="above" cause="emendaton"
                               hand="#Otfrid">n</add>sonantium inter se</hi></add></rdg>
                   <note corresp="#gloss-20-9-1" type="explanation" resp="#CG">The same marginal
                      title recurs in MS München BSB Clm 18375, f. 10r</note>
@@ -4840,14 +4840,14 @@
                      16.02.2024. It seems to me that Otfrid declined here the word "clavus/clabus,
                      -i" (i.e. nail, second Latin declension) according to the fourth declension.
                      "Clabu vel clauu" seems to be an ablativus instrumentalis that Otfrid wrote as
-                     a gloss the verb "scalpo", in order to explain what one scratches with.</note>
+                     a gloss on the verb "scalpo", in order to explain what one scratches with.</note>
                </app>
                <app type="gloss" xml:id="gloss-21-22-2">
                   <lem wit="#EDITION">lippio</lem>
                   <rdg wit="#COD_50"><add place="interlinear above" hand="#Otfrid"
                         facs="#zone.4r.29" ana="#synonyms #translation-into-Old-High-German"
                         xml:id="ohg-21-22-1" type="OHG-gloss" n="6"> male uideo <g ref="#idest"/>
-                        <foreign xml:lang="goh">blitichu</foreign>></add></rdg>
+                        <foreign xml:lang="goh">blitichu</foreign></add></rdg>
                   <note corresp="#ohg-21-17-1" type="explanation" resp="#CG"> This OHG gloss was
                      first edited by Hans Butzmann, <hi rend="italic">Althochdeutsche
                         Priscian-Glossen aus Weissenburg</hi>, PBB. 86/3 (Halle 1964), pp. 388-402,
