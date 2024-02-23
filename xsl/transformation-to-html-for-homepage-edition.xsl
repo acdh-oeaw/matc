@@ -26,6 +26,7 @@
             <link rel="stylesheet" id="fundament-styles"  href="./css/fundament.min.css" type="text/css"/>
             <link rel="stylesheet" id="fundament-custom-styles" href="./css/custom.css" type="text/css"/>
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer"></link>
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto Serif"></link>
             <link rel="shortcut icon" type="image/x-icon" href="./images/favicon.png"/>
         </head>
         <body class="page">
@@ -281,10 +282,14 @@
         </p>
     </xsl:template>
     
-    <xsl:template match="text()[parent::tei:quote]">
+    <xsl:template match="text()[parent::tei:quote and not(exists(parent::tei:quote/parent::tei:add/parent::tei:rdg))]">
         <span class="bold-text">
             <xsl:value-of select="."/>
         </span>
+    </xsl:template>
+    
+    <xsl:template match="text()[parent::tei:quote and exists(parent::tei:quote/parent::tei:add/parent::tei:rdg)]">
+        <xsl:value-of select="."/>
     </xsl:template>
     
     <xsl:template match="tei:lb[ancestor::tei:quote]">
@@ -305,7 +310,7 @@
         </xsl:if>
     </xsl:template>
     
-    <xsl:template match="tei:supplied[parent::tei:quote]">
+    <xsl:template match="tei:supplied[parent::tei:quote and not(exists(parent::tei:quote/parent::tei:add/parent::tei:rdg))]">
         <span class="bold-text">
             <xsl:text> 〈</xsl:text>
             <xsl:value-of select="text()"/>
@@ -351,6 +356,53 @@
                 </xsl:choose>
             </xsl:if>
             <xsl:text>〉</xsl:text></span>
+    </xsl:template>
+    
+    <xsl:template match="tei:supplied[parent::tei:quote and exists(parent::tei:quote/parent::tei:add/parent::tei:rdg)]">
+            <xsl:text> 〈</xsl:text>
+            <xsl:value-of select="text()"/>
+            <xsl:if test="exists(@resp)">
+                <xsl:text> - </xsl:text>
+                <xsl:choose>
+                    <xsl:when test="@resp = 'scr-1'">
+                        <xsl:element name="span">
+                            <xsl:attribute name="style" select="'font-style: italic;'"/>
+                            <xsl:text>main scribe</xsl:text>
+                        </xsl:element>
+                    </xsl:when>
+                    <xsl:when test="@resp = 'scr'">
+                        <xsl:element name="span">
+                            <xsl:attribute name="style" select="'font-style: italic;'"/>
+                            <xsl:text>main scribe</xsl:text>
+                        </xsl:element>
+                    </xsl:when>
+                    <xsl:when test="@resp = 'sec'">
+                        <xsl:element name="span">
+                            <xsl:attribute name="style" select="'font-style: italic;'"/>
+                            <xsl:text>secondary scribe</xsl:text>
+                        </xsl:element>
+                    </xsl:when>
+                    <xsl:when test="@resp = 'gl-1'">
+                        <xsl:element name="span">
+                            <xsl:attribute name="style" select="'font-style: italic;'"/>
+                            <xsl:text>first glossator</xsl:text>
+                        </xsl:element>
+                    </xsl:when>
+                    <xsl:when test="@resp = 'gl-2'">
+                        <xsl:element name="span">
+                            <xsl:attribute name="style" select="'font-style: italic;'"/>
+                            <xsl:text>second glossator</xsl:text>
+                        </xsl:element>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <xsl:element name="span">
+                            <xsl:attribute name="style" select="'font-style: italic;'"/>
+                            <xsl:text>C. G.</xsl:text>
+                        </xsl:element>
+                    </xsl:otherwise>
+                </xsl:choose>
+            </xsl:if>
+            <xsl:text>〉</xsl:text>
     </xsl:template>
     
     <xsl:template match="tei:supplied[parent::tei:add/parent::tei:rdg]">
@@ -440,11 +492,11 @@
             <xsl:when test="(@rend = 'red capitalis') or (@rend = 'red capitalis rustica') or (@rend = 'red script')">
                 <xsl:element name="span">
                     <xsl:attribute name="style" select="'color: #9e1b16;'"/>
-                    <xsl:value-of select="text()"/>
+                    <xsl:apply-templates/>
                 </xsl:element>
             </xsl:when>
             <xsl:otherwise>
-                <xsl:value-of select="text()"/>
+                <xsl:apply-templates/>
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>
@@ -473,8 +525,7 @@
             <xsl:text>Text variation:</xsl:text>
         </p>
         <div class="apparatus">
-            <xsl:apply-templates select="tei:lem"/>
-            <xsl:apply-templates select="tei:rdg"/>
+            <xsl:apply-templates select="tei:lem | tei:rdg"/>
             <p>
                 <xsl:text>Id: </xsl:text>
                 <xsl:element name="span">
@@ -655,8 +706,70 @@
                 <xsl:text>omitted</xsl:text>
                 </i>
             </xsl:if>
-            <xsl:apply-templates/>
+            <xsl:choose>
+                <xsl:when test="exists(child::tei:del) and exists(child::tei:add[@place = 'interlinear above']) and exists(child::tei:add[@place = 'interlinear above']/following-sibling::text())">
+                    <!-- construct text of reading -->
+                    <xsl:apply-templates select="tei:del | tei:add | text()" mode="reading-with-del-add-and-text"/>
+                    <!-- construct analytic information contained in tei:add -->
+                    <xsl:apply-templates select="tei:add" mode="insert-analytic-from-add"/>
+                </xsl:when>
+                <xsl:when test="not(exists(child::tei:del)) and exists(child::tei:add[@place = 'interlinear above']) and exists(child::tei:add[@place = 'interlinear above']/following-sibling::text())">
+                    <xsl:apply-templates select="tei:add | text()" mode="reading-with-del-add-and-text"/>
+                    <xsl:apply-templates select="tei:add" mode="insert-analytic-from-add"/>
+                </xsl:when>
+                <xsl:otherwise>
+                    <xsl:apply-templates/>
+                </xsl:otherwise>
+            </xsl:choose>
         </div>
+    </xsl:template>
+    
+    <xsl:template match="tei:del" mode="reading-with-del-add-and-text">
+        <xsl:element name="span">
+            <xsl:attribute name="class" select="'expunction'"/>
+            <xsl:text> </xsl:text>
+            <xsl:value-of select="text()"/>
+            <xsl:text> </xsl:text>
+        </xsl:element>
+    </xsl:template>
+    
+    <xsl:template match="tei:add" mode="reading-with-del-add-and-text">
+        <xsl:text>\</xsl:text>
+        <xsl:apply-templates select="child::node()"/>
+        <xsl:text>/</xsl:text>
+    </xsl:template>
+    
+    <xsl:template match="text()" mode="reading-with-del-add-and-text">
+        <xsl:value-of select="."/>
+    </xsl:template>
+    
+    <xsl:template match="tei:add" mode="insert-analytic-from-add">
+        <xsl:element name="br"/>
+        <span class="set-margin-left"><i class="far fa-compass"></i></span>
+        <xsl:element name="span">
+            <xsl:attribute name="class" select="'emphasize-location'"/>
+            <xsl:value-of select="@place"/>
+        </xsl:element>
+        <xsl:element name="br"/>
+        <span class="set-margin-left"><i class="far fa-hand-paper"></i></span>
+        <xsl:element name="span">
+            <xsl:attribute name="class" select="'emphasize-hand'"/>
+            <xsl:if test="substring-after(@hand,'#') = 'scr-1' or substring-after(@hand,'#') = 'scr'">
+                <xsl:text>main scribe</xsl:text>
+            </xsl:if>
+            <xsl:if test="substring-after(@hand,'#') = 'Otfrid'">
+                <xsl:text>Otfrid</xsl:text>
+            </xsl:if>
+            <xsl:if test="substring-after(@hand,'#') = 'sec'">
+                <xsl:text>secondary scribe</xsl:text>
+            </xsl:if>
+            <xsl:if test="substring-after(@hand,'#') = 'gl-1'">
+                <xsl:text>first glossator</xsl:text>
+            </xsl:if>
+            <xsl:if test="substring-after(@hand,'#') = 'gl-2'">
+                <xsl:text>second glossator</xsl:text>
+            </xsl:if>
+        </xsl:element>
     </xsl:template>
     
     <xsl:template match="tei:add[parent::tei:rdg and not(parent::tei:rdg/parent::tei:app[@type = 'emendation'])]">
@@ -874,8 +987,22 @@
         <xsl:text>/</xsl:text>
     </xsl:template>
     
+    <xsl:template match="tei:quote[(@type = 'biblical-quotation') and exists(parent::tei:add)]">
+        <xsl:apply-templates select="child::node()"/>
+        <xsl:text> (</xsl:text>
+        <xsl:value-of select="@n"/>
+        <xsl:text>)</xsl:text>
+    </xsl:template>
+    
     <xsl:template match="tei:foreign[@xml:lang = 'goh']">
         <xsl:apply-templates select="child::node()"/>
+    </xsl:template>
+    
+    <xsl:template match="tei:foreign[@xml:lang = 'grc']">
+        <xsl:element name="span">
+            <xsl:attribute name="style" select="'font-family: Noto Serif'"/>
+            <xsl:apply-templates select="child::node()"/>
+        </xsl:element>
     </xsl:template>
     
     <xsl:template match="tei:ref">

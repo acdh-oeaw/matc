@@ -4814,8 +4814,8 @@
                   stupui, scalpo scalpsi, lippio lippiui; s, quasso</quote>
                <app type="text-variation" xml:id="tv-21-22-1">
                   <lem wit="#EDITION">stupui</lem>
-                  <rdg wit="#COD_50" hand="#scr">stup<del cause="emendation" type="expunction"
-                        >e</del><add place="interlinear above">u</add>i</rdg>
+                  <rdg wit="#COD_50">stup<del cause="emendation" type="expunction"
+                     >e</del><add place="interlinear above" hand="#scr">u</add>i</rdg>
                </app>
                <app type="text-variation" xml:id="tv-21-22-2">
                   <lem wit="#EDITION">scalpsi</lem>
@@ -4900,7 +4900,7 @@
                   <lem wit="#EDITION">caueo</lem>
                   <rdg wit="#COD_50"><add place="right margin" hand="#Otfrid" facs="#zone.4r.32"
                         ana="#glosses-elucidating-the-main-text #synonyms">obseruo· confirmo· Inde
-                        est · <quote source="Gospel of Luke" xml:id="Luke-16-6">accipe cautionem
+                        est · <quote type="biblical-quotation" source="Gospel of Luke" xml:id="quot-bibl-luke-16-6" n="Luke 16:6">accipe cautionem
                               t<supplied resp="#CG" reason="biblical quotation">uam</supplied>
                            <g ref="#et"/> s<supplied resp="#CG" reason="biblical quotation"
                               >ede</supplied></quote></add></rdg>
