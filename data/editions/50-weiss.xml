@@ -5232,7 +5232,7 @@
                <quote source="#EDITION" n="II 23,9">Ramnetis, sicut Chremes Chremetis (iambica enim
                   sunt, quae sic</quote>
                <app type="annotation-signs" xml:id="as-23-9-1">
-                  <lem wit="#COD_50">iambica enim sunt</lem>
+                  <lem wit="#EDITION">iambica enim sunt</lem>
                   <rdg wit="#COD_50"><add place="right margin" hand="unknown" facs="#zone.4r.53"
                         ana="#attention-sign-require"><g ref="#require-sign"/></add></rdg>
                </app>
@@ -5284,7 +5284,7 @@
                <quote source="#EDITION" n="II 23,13">et numquam tamen eadem m ante se natura longam
                   [uocalem] patitur in</quote>
                <app type="gloss" xml:id="gloss-23-13-1">
-                  <lem wit="#COD_50">longam</lem>
+                  <lem wit="#EDITION">longam</lem>
                   <rdg wit="#COD_50"><add place="interlinear above" hand="#Otfrid"
                         facs="#zone.4r.55" ana="#suppletive-glosses">uocalem</add></rdg>
                </app>
@@ -5328,12 +5328,12 @@
                <quote source="#EDITION" n="II 23,17">mutarum est, ut Smyrna, smaragdus, et ante
                   liquidam, ut Samnis,</quote>
                <app type="gloss" xml:id="gloss-23-17-1">
-                  <lem wit="#COD_50">Smyrna</lem>
+                  <lem wit="#EDITION">Smyrna</lem>
                   <rdg wit="#COD_50"><add place="interlinear above" hand="#Otfrid"
                         facs="#zone.4r.59" ana="#geographical-names">ciuitas</add></rdg>
                </app>
                <app type="gloss" xml:id="gloss-23-17-2">
-                  <lem wit="#COD_50">smaragdus</lem>
+                  <lem wit="#EDITION">smaragdus</lem>
                   <rdg wit="#COD_50"><add place="interlinear above" hand="#Otfrid"
                         facs="#zone.4r.60" ana="#glosses-elucidating-the-main-text"
                      >lapis</add></rdg>
@@ -5373,7 +5373,7 @@
                      18375, f. 11r also conveys this title.</note>
                </app>
                <app type="gloss" xml:id="gloss-23-20-1">
-                  <lem wit="#COD_50">eiusdem generis</lem>
+                  <lem wit="#EDITION">eiusdem generis</lem>
                   <rdg wit="#COD_50"><add place="interlinear above" hand="#Otfrid"
                         facs="#zone.4r.63" ana="#glosses-elucidating-the-main-text">literę enim sunt
                         omnes</add></rdg>
@@ -5384,13 +5384,13 @@
                      type="text-variation" xml:id="tv-23-22-1" hand="#scr" source="#COD_50"
                      place="inline">&amp;</add> quae habent aspirationem et</quote>
                <app type="gloss" xml:id="gloss-23-22-1">
-                  <lem wit="#COD_50">simplices</lem>
+                  <lem wit="#EDITION">simplices</lem>
                   <rdg wit="#COD_50"><add place="interlinear above" hand="#Otfrid"
                         facs="#zone.4r.64" ana="#glosses-elucidating-the-main-text">cum
                         simplicibus</add></rdg>
                </app>
                <app type="gloss" xml:id="gloss-23-22-2">
-                  <lem wit="#COD_50">duplices</lem>
+                  <lem wit="#EDITION">duplices</lem>
                   <rdg wit="#COD_50"><add place="interlinear above" hand="#Otfrid"
                         facs="#zone.4r.65" ana="#glosses-elucidating-the-main-text">cum
                         duplicibus</add></rdg>
@@ -5417,12 +5417,12 @@
                <quote source="#EDITION" n="II 24,2">et lon<lb n="2" break="no" ed="4v"/>gae, quae
                   habent aspirationem et quae carent ea, aliae autem per</quote>
                <app type="gloss" xml:id="gloss-24-2-1">
-                  <lem wit="#COD_50">et longae</lem>
+                  <lem wit="#EDITION">et longae</lem>
                   <rdg wit="#COD_50"><add place="interlinear above" hand="#Otfrid" facs="#zone.4v.1"
                         ana="#glosses-containing-an-example">ut lege legi</add></rdg>
                </app>
                <app type="gloss" xml:id="gloss-24-2-2">
-                  <lem wit="#COD_50">quae carent ea</lem>
+                  <lem wit="#EDITION">quae carent ea</lem>
                   <rdg wit="#COD_50"><add place="interlinear above" hand="#Otfrid" facs="#zone.4v.3"
                         ana="#glosses-containing-an-example">ut ambo· pro ampho</add></rdg>
                </app>
@@ -5454,7 +5454,7 @@
                      contains the gloss: "sub uno iugo soni"</note>
                </app>
                <app type="gloss" xml:id="gloss-24-3-2">
-                  <lem wit="#COD_50">uel</lem>
+                  <lem wit="#EDITION">uel</lem>
                   <rdg wit="#COD_50"><add place="interlinear above" hand="#Otfrid" facs="#zone.4v.7"
                         ana="#glosses-elucidating-the-main-text">pro· id<g ref="#irish-est"
                      /></add></rdg>
@@ -5480,18 +5480,18 @@
                      end of II 24,4 and the beginning of II 24,5.</note>
                </app>
                <app type="gloss" xml:id="gloss-24-4-1">
-                  <lem wit="#COD_50">x</lem>
+                  <lem wit="#EDITION">x</lem>
                   <rdg wit="#COD_50"><add place="interlinear above" hand="#Otfrid" facs="#zone.4v.10"
                      ana="#glosses-elucidating-the-main-text">cognationem habet cum ·g·s· <g ref="#vel"
                      /> c·s·</add></rdg>
                </app>
                <app type="gloss" xml:id="gloss-24-4-2">
-                  <lem wit="#COD_50">similiter d et t</lem>
+                  <lem wit="#EDITION">similiter d et t</lem>
                   <rdg wit="#COD_50"><add place="interlinear above" hand="#Otfrid" facs="#zone.4v.11"
                      ana="#glosses-elucidating-the-main-text">sicut·c·ch·&amp; g</add></rdg>
                </app>
                <app type="gloss" xml:id="gloss-24-4-3">
-                  <lem wit="#COD_50">aspiratione</lem>
+                  <lem wit="#EDITION">aspiratione</lem>
                   <rdg wit="#COD_50"><add place="interlinear above" hand="#Otfrid" facs="#zone.4v.12"
                      ana="#glosses-elucidating-the-main-text">adfines sunt</add></rdg>
                </app>
