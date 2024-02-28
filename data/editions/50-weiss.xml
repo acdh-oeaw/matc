@@ -750,22 +750,22 @@
                   <graphic url="../pictures/omission-sign-capital-delta.png"/>
                </figure>
             </glyph>
-            <glyph xml:id="omission-sign-dotted-delta">
-               <localProp name="Name" value="OMISSION SIGN DOTTED DELTA"/>
-               <localProp name="entity" value="omission-sign-dotted-delta"/>
+            <glyph xml:id="omission-sign-dotted-d">
+               <localProp name="Name" value="OMISSION SIGN DOTTED D"/>
+               <localProp name="entity" value="omission-sign-dotted-d"/>
                <figure>
-                  <graphic url="../pictures/omission-sign-dotted-delta.png"/>
+                  <graphic url="../pictures/omission-sign-dotted-d.png"/>
                </figure>
             </glyph>
-            <glyph xml:id="omission-sign-delta-stroke">
-               <localProp name="Name" value="OMISSION SIGN D"/>
-               <localProp name="entity" value="omission-sign-delta-stroke"/>
+            <glyph xml:id="omission-sign-d-stroke">
+               <localProp name="Name" value="OMISSION SIGN D STROKE"/>
+               <localProp name="entity" value="omission-sign-d-stroke"/>
                <figure>
-                  <graphic url="../pictures/omission-sign-delta-stroke.png"/>
+                  <graphic url="../pictures/omission-sign-d-stroke.png"/>
                </figure>
             </glyph>
             <glyph xml:id="omission-sign-h-stroke">
-               <localProp name="Name" value="OMISSION SIGN H"/>
+               <localProp name="Name" value="OMISSION SIGN H STROKE"/>
                <localProp name="entity" value="omission-sign-h-stroke"/>
                <figure>
                   <graphic url="../pictures/omission-sign-h-stroke.png"/>
@@ -2520,7 +2520,7 @@
                xml:lang="la">
                <quote source="#EDITION" n="II 8,1">elementorum nomina quam apud Latinos, siue quod a
                   barbaris inuen<lb n="11" break="no" ed="2r"/>ta dicuntur,</quote>
-               <app type="annotation-signs" xml:id="os-8-1-1">
+               <app type="annotation-signs" xml:id="as-8-1-1">
                   <lem wit="#EDITION">dicuntur</lem>
                   <rdg wit="#COD_50"><add place="interlinear above" hand="#gl-2" facs="#zone.2r.5"
                         ana="#omission-sign-delta"><g ref="#omission-sign-capital-delta"
@@ -2760,7 +2760,7 @@
                   <lem wit="#EDITION">septem</lem>
                   <rdg wit="#COD_50" hand="#scr">·VII·</rdg>
                </app>
-               <app type="annotation-signs" xml:id="es-9-11-1">
+               <app type="annotation-signs" xml:id="as-9-11-1">
                   <lem wit="#EDITION">f</lem>
                   <rdg wit="#COD_50"><add place="interlinear below" hand="unknown"
                         facs="#zone.2r.19" ana="#excerption-sign-inverted-paragraphus"><g
@@ -2768,7 +2768,7 @@
                </app>
                <quote source="#EDITION" n="II 9,12">s x; sed f multis modis ostenditur muta magis,
                   de qua post docebimus.</quote>
-               <app type="annotation-signs" xml:id="es-9-12-1">
+               <app type="annotation-signs" xml:id="as-9-12-1">
                   <lem wit="#EDITION">docebimus</lem>
                   <rdg wit="#COD_50"><add place="interlinear above" hand="unknown"
                         facs="#zone.2r.20" ana="#excerption-sign-positura"><g ref="#positura"
@@ -5150,7 +5150,7 @@
                   <lem wit="#EDITION">pependi</lem>
                   <rdg wit="#COD_50"><add place="interlinear above" hand="#Otfrid"
                         facs="#zone.4r.44" ana="#omission-sign-d"><g
-                           ref="#omission-sign-dotted-delta"/></add></rdg>
+                           ref="#omission-sign-dotted-d"/></add></rdg>
                </app>
                <app type="emendation" subtype="addition-of-omitted-text" xml:id="emendation-22-21-1">
                   <lem wit="#EDITION">pependi</lem>
@@ -5467,7 +5467,7 @@
                <app type="annotation-signs" xml:id="as-24-4-1">
                   <lem wit="#EDITION">sine ea</lem>
                   <rdg wit="#COD_50"><add place="interlinear above" hand="#sec" facs="#zone.4v.9"
-                        ana="#omission-sign-d"><g ref="omission-sign-delta-stroke"/></add></rdg>
+                        ana="#omission-sign-d"><g ref="omission-sign-d-stroke"/></add></rdg>
                </app>
                <app type="emendation" subtype="addition-of-omitted-text" xml:id="emendation-24-4-1">
                   <lem wit="#EDITION">sine ea</lem>
