@@ -5686,8 +5686,7 @@
                <app type="gloss" xml:id="gloss-24-14-2">
                   <lem wit="#EDITION">e correpta siue producta</lem>
                   <rdg wit="#COD_50"><add place="right margin" hand="#Otfrid" facs="#zone.4v.29"
-                        ana="#glosses-containing-an-example"><g
-                           ref="#reference-half-ring-with-dot-below"/>Sicut corêa et corĕa pro
+                        ana="#glosses-containing-an-example"><g ref="#reference-half-ring-with-dot-below"/>Sicut corêa et corĕa pro
                         coreia</add></rdg>
                   <note resp="#CG" type="explanation" target="#gloss-24-14-2"> A very similar gloss
                      occurs in MS Köln 200, f. 6v.</note>
@@ -5754,7 +5753,7 @@
                   <rdg wit="#COD_50"><add place="interlinear above" hand="#Otfrid"
                      facs="#zone.4v.35" ana="#glosses-elucidating-the-main-text">secundum genetiuum</add></rdg>
                   <note resp="#CG" type="explanation" target="#gloss-25-2-1"> A very similar gloss
-                     occurs in MS Köln 200, f. 6v, which reads: "ideo seruuatur o in genitiuo".</note>
+                     occurs in MS Köln 200, f. 6v, which reads: "ideo seruatur o in genitiuo".</note>
                </app>
                <app type="gloss" xml:id="gloss-25-2-2">
                   <lem wit="#COD_50">platanos</lem>
