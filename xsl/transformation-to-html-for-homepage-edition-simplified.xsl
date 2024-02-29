@@ -57,7 +57,7 @@
                                     </li>
                                     <li class="nav-item dropdown">
                                         <a title="Digital Edition" href="./introduction.html" data-toggle="dropdown" class="nav-link dropdown-toggle">Digital Edition <span class="caret"></span></a>
-                                        <ul class=" dropdown-menu" role="menu">
+                                        <ul class="dropdown-menu" role="menu">
                                             <li class="nav-item dropdown-submenu">
                                                 <a title="Introduction" href="./introduction.html" class="nav-link">Introduction</a>
                                             </li>
@@ -65,6 +65,7 @@
                                                 <a title="Edition" href="./edition.html" class="nav-link">Edition</a>
                                             </li>
                                             <li class="nav-item dropdown-submenu"><a title="Interactive Edition" href="./edition-interactive.html" class="nav-link">Interactive Edition</a></li>
+                                            <li class="nav-item dropdown-submenu"><a title="Simplified Edition" href="./edition-simplified.html" class="nav-link">Simplified Edition</a></li>
                                             <li class="nav-item dropdown-submenu">
                                                 <a title="Technical Documentation" href="./technical-documentation.html" class="nav-link">Technical Documentation</a>
                                             </li>
@@ -109,6 +110,8 @@
                     </div>
                 </div>
             </div>
+            <script type="text/javascript" src="./vendor/jquery/jquery.min.js"></script>
+            <script type="text/javascript" src="./js/fundament.min.js"></script>
         </body>
     </xsl:template>
     

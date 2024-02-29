@@ -10,11 +10,13 @@
 .entry-content-heading-level-2 { color: black; font-family: Garamond; font-size: 18pt; font-weight: bold; }
 .entry-content-main-paragraph-new-finding { color: black; font-family: Garamond; font-size: 16pt; font-weight: normal; margin: 1em; line-height: 19pt; text-align: justify; border-left: 5px solid #914d03; padding-left: 1em; border-right: 5px solid #914d03; padding-left: 1em; }
 .heading-1 { font-family: Garamond; font-size: 24pt; font-weight: bold; }
-.heading-2 { font-family: Garamond; font-size: 18pt; font-weight: bold; }
+.heading-2 { font-family: Garamond; font-size: 18pt; font-weight: bold; margin-top: 2em; }
 .list-of-witnesses { font-family: Garamond; font-size: 14pt; font-weight: normal; }
 .list-of-hands { font-family: Garamond; font-size: 14pt; font-weight: normal; }
 .editorial-declaration { font-family: Garamond; font-size: 14pt; font-weight: normal; }
 .pictures { font-family: Garamond; font-size: 14pt; font-weight: normal; }
+p.manuscript-description-main-paragraph { color: black; font-family: Garamond; font-size: 16pt; font-weight: normal; line-height: 19pt; text-align: justify; }
+div.manuscript-description-content { margin-left: 20pt; color: black; font-family: Garamond; font-size: 16pt; font-weight: normal; line-height: 19pt; text-align: justify; }
 body.body-formats { margin: 20pt; }
 div.page-of-edition { font-family: Garamond; font-size: 14pt; font-weight: normal; }
 div.page-of-edition a:link { color: black; text-decoration: none; }
@@ -39,7 +41,7 @@ span.edition-heading-1 { font-family: Garamond; font-size: 24pt; font-weight: bo
 span.set-margin-left { margin-left: 20pt; }
 span.set-margin-left-and-right { margin-left: 10pt; margin-right: 10pt; }
 div.apparatus-reading { margin-top: 1em; margin-bottom: 1em; }
-div.note { margin-left: 50pt; margin-top: 1em; }
+div.note { margin-left: 50pt; margin-top: 1em; margin-bottom: 20pt; }
 p.pointer {margin-top: 1em; }
 span.typewriter { font-family: courier, fixed, monospace; }
 p.type-of-intervention { margin-left: 40pt; font-style: italic; }

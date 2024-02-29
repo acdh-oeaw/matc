@@ -5199,7 +5199,7 @@
                <quote source="#EDITION" n="II 22,25">incipiens geminata est syllaba.</quote>
             </div>
             <div type="page-of-Hertz-edition" n="Liber Primus" xml:id="liber-primus.19"
-               next="#liber-primus.18" prev="liber-primus.20" corresp="images-keil:Keil_v2_023.gif"
+               next="#liber-primus.18" prev="#liber-primus.20" corresp="images-keil:Keil_v2_023.gif"
                xml:lang="la">
                <quote source="#EDITION" n="II 23,1">s ante mutam posita inueniuntur duo, quae
                   geminant syllabam, sto</quote>

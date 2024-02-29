@@ -58,7 +58,7 @@
                                     </li>
                                     <li class="nav-item dropdown">
                                         <a title="Digital Edition" href="./introduction.html" data-toggle="dropdown" class="nav-link dropdown-toggle">Digital Edition <span class="caret"></span></a>
-                                        <ul class=" dropdown-menu" role="menu">
+                                        <ul class="dropdown-menu" role="menu">
                                             <li class="nav-item dropdown-submenu">
                                                 <a title="Introduction" href="./introduction.html" class="nav-link">Introduction</a>
                                             </li>
@@ -66,6 +66,7 @@
                                                 <a title="Edition" href="./edition.html" class="nav-link">Edition</a>
                                             </li>
                                             <li class="nav-item dropdown-submenu"><a title="Interactive Edition" href="./edition-interactive.html" class="nav-link">Interactive Edition</a></li>
+                                            <li class="nav-item dropdown-submenu"><a title="Simplified Edition" href="./edition-simplified.html" class="nav-link">Simplified Edition</a></li>
                                             <li class="nav-item dropdown-submenu">
                                                 <a title="Technical Documentation" href="./technical-documentation.html" class="nav-link">Technical Documentation</a>
                                             </li>
@@ -110,13 +111,124 @@
                     </div>
                 </div>
             </div>
+            <script type="text/javascript" src="./vendor/jquery/jquery.min.js"></script>
+            <script type="text/javascript" src="./js/fundament.min.js"></script>
         </body>
     </xsl:template>
     
     <xsl:template match="tei:teiHeader">
         <!-- <xsl:apply-templates select="tei:fileDesc/tei:sourceDesc"/> -->
         <!-- <xsl:apply-templates select="tei:encodingDesc/tei:editorialDecl"/> -->
+        <xsl:apply-templates select="tei:fileDesc/tei:sourceDesc/tei:msDesc"/>
+        <xsl:apply-templates select="tei:fileDesc/tei:sourceDesc/tei:listBibl"/>
         <xsl:apply-templates select="tei:encodingDesc/tei:charDecl[(@n = 'abbreviations') or (@n = 'construe-marks') or (@n = 'reference signs') or (@n = 'attention signs')]"/>
+    </xsl:template>
+    
+    <xsl:template match="tei:msDesc">
+        <div class="main-text">
+            <p class="heading-2">Description of the manuscript:</p>
+            <div class="manuscript-description-content">
+                <xsl:apply-templates select="tei:msIdentifier"/>
+                <xsl:apply-templates select="tei:head" mode="subelements-of-head"/>
+                <xsl:apply-templates select="tei:physDesc"/>
+            </div>
+        </div>
+    </xsl:template>
+    
+    <xsl:template match="tei:msIdentifier">
+        <p class="manuscript-description-main-paragraph">
+            <b><xsl:value-of select="tei:idno/text()"/></b>
+        </p>
+        <ul>
+            <li><xsl:value-of select="tei:settlement/text()"/></li>
+            <li><xsl:value-of select="tei:repository/text()"/></li>
+            <li><xsl:value-of select="tei:collection/text()"/></li>
+            <xsl:for-each select="tei:altIdentifier">
+                <li>
+                    <xsl:value-of select="./tei:collection/text()"/>
+                    <xsl:text> </xsl:text>
+                    <xsl:value-of select="./tei:idno/text()"/>
+                </li>
+            </xsl:for-each>
+        </ul>
+    </xsl:template>
+    
+    <xsl:template match="tei:head" mode="subelements-of-head">
+        <p class="manuscript-description-main-paragraph"><xsl:text>Content: </xsl:text><xsl:value-of select="tei:title/text()"/></p>
+        <p class="manuscript-description-main-paragraph"><xsl:text>Date: </xsl:text><xsl:value-of select="tei:origDate/@notBefore"/><xsl:text> - </xsl:text><xsl:value-of select="tei:origDate/@notAfter"/></p>
+        <p class="manuscript-description-main-paragraph"><xsl:text>Place: </xsl:text><xsl:value-of select="tei:origPlace/text()"/></p>
+    </xsl:template>
+    
+    <xsl:template match="tei:physDesc">
+        <p class="manuscript-description-main-paragraph">
+            <xsl:text>Form: </xsl:text>
+            <xsl:if test="tei:objectDesc/@form = 'codex'">
+                <xsl:value-of select="'Codex'"/>
+            </xsl:if>
+        </p>
+        <p class="manuscript-description-main-paragraph">
+            <xsl:text>Material: </xsl:text>
+            <xsl:value-of select="tei:objectDesc/tei:supportDesc/tei:support/tei:p/tei:material/text()"/>
+        </p>
+        <p class="manuscript-description-main-paragraph">
+            <xsl:text>Extent: </xsl:text>
+            <xsl:value-of select="tei:objectDesc/tei:supportDesc/tei:extent/tei:measure[@type = 'leavesCount']/text()"/>
+            <xsl:text>: </xsl:text>
+            <xsl:value-of select="tei:objectDesc/tei:supportDesc/tei:extent/tei:dimensions/tei:height/text()"/>
+            <xsl:value-of select="tei:objectDesc/tei:supportDesc/tei:extent/tei:dimensions/@unit"/>
+            <xsl:text> x </xsl:text>
+            <xsl:value-of select="tei:objectDesc/tei:supportDesc/tei:extent/tei:dimensions/tei:width/text()"/>
+            <xsl:value-of select="tei:objectDesc/tei:supportDesc/tei:extent/tei:dimensions/@unit"/>
+        </p>
+    </xsl:template>
+    
+    <xsl:template match="tei:listBibl">
+        <div class="main-text">
+            <p class="heading-2">Bibliography of Secondary Literature</p>
+            <div class="manuscript-description-content">
+                <xsl:for-each select="tei:biblStruct">
+                    <p class="manuscript-description-main-paragraph">
+                        <xsl:apply-templates select="./child::node()"/>
+                    </p>
+                </xsl:for-each>
+            </div>
+        </div>
+    </xsl:template>
+    
+    <xsl:template match="tei:monogr">
+        <xsl:for-each select="tei:author">
+            <xsl:element name="span">
+                <xsl:attribute name="style" select="'font-variant: small-caps'"/>
+                <xsl:value-of select="tei:persName/tei:surname/text()"/>
+                <xsl:text>, </xsl:text>
+                <xsl:value-of select="tei:persName/tei:forename/text()"/>
+            </xsl:element>
+            <xsl:if test="position() != last()">
+                <xsl:text>; </xsl:text>
+            </xsl:if>
+            <xsl:if test="position() = last()">
+                <xsl:text>, </xsl:text>
+            </xsl:if>
+        </xsl:for-each>
+        <xsl:apply-templates select="tei:title"/>
+        <xsl:apply-templates select="tei:imprint"/>
+    </xsl:template>
+    
+    <xsl:template match="tei:title">
+        <xsl:element name="span">
+            <xsl:attribute name="style" select="'font-style: italic'"/>
+            <xsl:value-of select="text()"/>
+            <xsl:text>, </xsl:text>
+        </xsl:element>
+    </xsl:template>
+    
+    <xsl:template match="tei:imprint">
+        <xsl:value-of select="tei:pubPlace/text()"/>
+        <xsl:text>: </xsl:text>
+        <xsl:value-of select="tei:publisher/text()"/>
+        <xsl:text>, </xsl:text>
+        <xsl:value-of select="tei:date/@when"/>
+        <xsl:text>.</xsl:text>
     </xsl:template>
     
     <xsl:template match="tei:sourceDesc">
@@ -564,6 +676,7 @@
                 </xsl:element>
             </p>
         </div>
+        <xsl:apply-templates select="tei:note"/>
     </xsl:template>
     
     <xsl:template match="tei:rdg" mode="emendation">
@@ -590,31 +703,67 @@
     
     <xsl:template match="tei:add[parent::tei:rdg/parent::tei:app[@type = 'emendation']]">
         <xsl:text> 〈</xsl:text>
-        <xsl:value-of select="text()"/>
+        <!-- <xsl:value-of select="text()"/> -->
+        <xsl:apply-templates select="child::node()"/>
         <xsl:text>〉</xsl:text>
         <xsl:text> [</xsl:text>
         <xsl:value-of select="@place"/>
         <span class="set-margin-left-and-right"><i class="far fa-hand-paper"></i></span>
-        <xsl:if test="substring-after(parent::tei:rdg/@hand,'#') = 'scr-1' or substring-after(parent::tei:rdg/@hand,'#') = 'scr'">
-            <xsl:text>main scribe</xsl:text>
+        <xsl:if test="exists(@hand)">
+            <xsl:if test="substring-after(@hand,'#') = 'scr-1' or substring-after(@hand,'#') = 'scr'">
+                <xsl:text>main scribe</xsl:text>
+            </xsl:if>
+            <xsl:if test="substring-after(@hand,'#') = 'Otfrid'">
+                <xsl:text>Otfrid</xsl:text>
+            </xsl:if>
+            <xsl:if test="substring-after(@hand,'#') = 'sec'">
+                <xsl:text>secondary scribe</xsl:text>
+            </xsl:if>
+            <xsl:if test="substring-after(@hand,'#') = 'gl-1'">
+                <xsl:text>first glossator</xsl:text>
+            </xsl:if>
+            <xsl:if test="substring-after(@hand,'#') = 'gl-2'">
+                <xsl:text>second glossator</xsl:text>
+            </xsl:if>
         </xsl:if>
-        <xsl:if test="substring-after(parent::tei:rdg/@hand,'#') = 'Otfrid'">
-            <xsl:text>Otfrid</xsl:text>
-        </xsl:if>
-        <xsl:if test="substring-after(parent::tei:rdg/@hand,'#') = 'sec'">
-            <xsl:text>secondary scribe</xsl:text>
-        </xsl:if>
-        <xsl:if test="substring-after(parent::tei:rdg/@hand,'#') = 'gl-1'">
-            <xsl:text>first glossator</xsl:text>
-        </xsl:if>
-        <xsl:if test="substring-after(parent::tei:rdg/@hand,'#') = 'gl-2'">
-            <xsl:text>second glossator</xsl:text>
+        <xsl:if test="not(exists(@hand))">
+            <xsl:if test="substring-after(parent::tei:rdg/@hand,'#') = 'scr-1' or substring-after(parent::tei:rdg/@hand,'#') = 'scr'">
+                <xsl:text>main scribe</xsl:text>
+            </xsl:if>
+            <xsl:if test="substring-after(parent::tei:rdg/@hand,'#') = 'Otfrid'">
+                <xsl:text>Otfrid</xsl:text>
+            </xsl:if>
+            <xsl:if test="substring-after(parent::tei:rdg/@hand,'#') = 'sec'">
+                <xsl:text>secondary scribe</xsl:text>
+            </xsl:if>
+            <xsl:if test="substring-after(parent::tei:rdg/@hand,'#') = 'gl-1'">
+                <xsl:text>first glossator</xsl:text>
+            </xsl:if>
+            <xsl:if test="substring-after(parent::tei:rdg/@hand,'#') = 'gl-2'">
+                <xsl:text>second glossator</xsl:text>
+            </xsl:if>
         </xsl:if>
         <xsl:text>]</xsl:text>
     </xsl:template>
     
     <xsl:template match="tei:app[@type = 'gloss']">
         <p class="type-of-intervention"><xsl:text>Gloss:</xsl:text></p>
+        <div class="apparatus">
+            <xsl:apply-templates select="tei:lem"/>
+            <xsl:apply-templates select="tei:rdg"/>
+            <p>
+                <xsl:text>Id: </xsl:text>
+                <xsl:element name="span">
+                    <xsl:attribute name="style" select="'font-family: monospace; font-style: italic; font-size: 12pt;'"/>
+                    <xsl:value-of select="@xml:id"/>
+                </xsl:element>
+            </p>
+        </div>
+        <xsl:apply-templates select="tei:note"/>
+    </xsl:template>
+    
+    <xsl:template match="tei:app[@type = 'annotation-signs']">
+        <p class="type-of-intervention"><xsl:text>Annotation sign:</xsl:text></p>
         <div class="apparatus">
             <xsl:apply-templates select="tei:lem"/>
             <xsl:apply-templates select="tei:rdg"/>
@@ -989,9 +1138,12 @@
     
     <xsl:template match="tei:quote[(@type = 'biblical-quotation') and exists(parent::tei:add)]">
         <xsl:apply-templates select="child::node()"/>
-        <xsl:text> (</xsl:text>
-        <xsl:value-of select="@n"/>
-        <xsl:text>)</xsl:text>
+        <xsl:element name="span">
+            <xsl:attribute name="style" select="'font-style: italic'"/>
+            <xsl:text> (</xsl:text>
+            <xsl:value-of select="@n"/>
+            <xsl:text>)</xsl:text>
+        </xsl:element>
     </xsl:template>
     
     <xsl:template match="tei:foreign[@xml:lang = 'goh']">
@@ -1000,7 +1152,7 @@
     
     <xsl:template match="tei:foreign[@xml:lang = 'grc']">
         <xsl:element name="span">
-            <xsl:attribute name="style" select="'font-family: Noto Serif'"/>
+            <xsl:attribute name="style" select="'font-family: Noto Serif; font-size: 12pt;'"/>
             <xsl:apply-templates select="child::node()"/>
         </xsl:element>
     </xsl:template>
