@@ -5651,7 +5651,7 @@
                   <rdg wit="#COD_50"><add place="interlinear above" hand="#Otfrid"
                         facs="#zone.4v.25" ana="#Greek-glosses"><g ref="#idest"/> uictus</add></rdg>
                   <note resp="#CG" type="explanation" target="#gloss-24-12-1"> The gloss occurs also
-                     in MS Köln 200, f. 6v and MSs München, BSB, clm 280a, f. 6r and clm 18375, f.
+                     in MS Köln 200, f. 6v and MSS München, BSB, clm 280a, f. 6r and clm 18375, f.
                      11v.</note>
                </app>
                <app type="gloss" xml:id="gloss-24-12-2">
@@ -5686,7 +5686,8 @@
                <app type="gloss" xml:id="gloss-24-14-2">
                   <lem wit="#EDITION">e correpta siue producta</lem>
                   <rdg wit="#COD_50"><add place="right margin" hand="#Otfrid" facs="#zone.4v.29"
-                        ana="#glosses-containing-an-example"><g ref="#reference-half-ring-with-dot-below"/>Sicut corêa et corĕa pro
+                        ana="#glosses-containing-an-example"><g
+                           ref="#reference-sign-half-ring-with-dot-below"/>Sicut corêa et corĕa pro
                         coreia</add></rdg>
                   <note resp="#CG" type="explanation" target="#gloss-24-14-2"> A very similar gloss
                      occurs in MS Köln 200, f. 6v.</note>
@@ -5751,42 +5752,194 @@
                <app type="gloss" xml:id="gloss-25-2-1">
                   <lem wit="#COD_50">robor</lem>
                   <rdg wit="#COD_50"><add place="interlinear above" hand="#Otfrid"
-                     facs="#zone.4v.35" ana="#glosses-elucidating-the-main-text">secundum genetiuum</add></rdg>
+                        facs="#zone.4v.35" ana="#glosses-elucidating-the-main-text">secundum
+                        genetiuum</add></rdg>
                   <note resp="#CG" type="explanation" target="#gloss-25-2-1"> A very similar gloss
-                     occurs in MS Köln 200, f. 6v, which reads: "ideo seruatur o in genitiuo".</note>
+                     occurs in MS Köln 200, f. 6v, which reads: "ideo seruatur o in
+                     genitiuo".</note>
                </app>
                <app type="gloss" xml:id="gloss-25-2-2">
                   <lem wit="#COD_50">platanos</lem>
                   <rdg wit="#COD_50"><add place="interlinear above" hand="#Otfrid"
-                     facs="#zone.4v.36" ana="#lexical-glosses">g<supplied resp="#CG"
-                        reason="abbreviation">raece</supplied></add></rdg>
+                        facs="#zone.4v.36" ana="#lexical-glosses">g<supplied resp="#CG"
+                           reason="abbreviation">raece</supplied></add></rdg>
+               </app>
+               <quote source="#EDITION" n="II 25,3">et i, arceo coerceo, facio inficio, nec <lb
+                     n="11" ed="4v"/> non aliae cum aliis. et quia</quote>
+               <quote source="#EDITION" n="II 25,4">frequenter hae in omnibus paene literis
+                  mutationes non solum per casus</quote>
+               <quote source="#EDITION" n="II 25,5">uel tempora, sed etiam per fi<lb n="12"
+                     break="no" ed="4v"/>gurarum compositiones uel deriuationes et</quote>
+               <quote source="#EDITION" n="II 25,6">translationes a Graeco in Latinum fieri solent,
+                  necessarium est ponere</quote>
+               <quote source="#EDITION" n="II 25,7">earum <lb n="13" ed="4v"/> exempla.</quote>
+               <note resp="#CG" type="explanation" target="#EDITION" n="II 25,7"> The scribe of
+                  Priscian's text adds in the interline a numbering of the individual examples using
+                  the Roman numerals I to VII. The same practice occurs in the MSS München, BSB, clm
+                  280a, f. 6r and clm 18375, f. 11v. </note>
+               <quote source="#EDITION" n="II 25,8"><add type="text-variation" xml:id="tv-25-8-1"
+                     hand="#scr" source="#COD_50" place="above"><hi rend="red script">I</hi></add> a
+                  correpta conuertitur in productam, făueo fāui, <add type="text-variation"
+                     xml:id="tv-25-8-2" hand="#scr" source="#COD_50" place="above"><hi
+                        rend="red script">II</hi></add> in e correptam</quote>
+               <app type="rubrication" xml:id="rubr-25-8-1">
+                  <lem wit="#EDITION">a</lem>
+                  <rdg wit="#COD_50" hand="#scr"><hi rend="red script">A</hi></rdg>
+               </app>
+               <app type="rubrication" xml:id="rubr-25-8-2">
+                  <lem wit="#EDITION">In e</lem>
+                  <rdg wit="#COD_50" hand="#scr"><hi rend="red capitalis">I</hi>n e</rdg>
+               </app>
+               <quote source="#EDITION" n="II 25,9">părco pepĕrci, ărmatus inĕrmis, <add
+                     type="text-variation" xml:id="tv-25-9-1" hand="#scr" source="#COD_50"
+                     place="above"><hi rend="red script">III</hi></add> produc<lb n="14" break="no"
+                     ed="4v"/>tam, făcio fēci, căpio cēpi,</quote>
+               <app type="text-variation" xml:id="tv-25-9-2">
+                  <lem wit="#EDITION">părco pepĕrci, ărmatus inĕrmis</lem>
+                  <rdg wit="#COD_50" hand="#scr">parco peperci· armatus inermis</rdg>
+               </app>
+               <app type="text-variation" xml:id="tv-25-9-3">
+                  <lem wit="#EDITION">făcio fēci, căpio cēpi</lem>
+                  <rdg wit="#COD_50" hand="#scr">facio. feci· capio· cepi·</rdg>
+               </app>
+               <app type="rubrication" xml:id="rubr-25-9-1">
+                  <lem wit="#EDITION">productam</lem>
+                  <rdg wit="#COD_50" hand="#scr"><hi rend="capital letter filled with red ink"
+                        >p</hi>roductam</rdg>
+               </app>
+               <app type="reference-signs" xml:id="rs-25-9-1">
+                  <lem wit="#EDITION">inermis</lem>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#Otfrid"
+                        facs="#zone.4v.37" ana="#lemma-gloss"><g ref="#reference-sign-trigon"
+                        /></add></rdg>
+               </app>
+               <app type="gloss" xml:id="gloss-25-9-1">
+                  <lem wit="#EDITION">inermis</lem>
+                  <rdg wit="#COD_50"><add place="right margin" hand="#Otfrid" facs="#zone.4v.38"
+                        ana="#glosses-containing-an-example"><g ref="#reference-sign-trigon"
+                        />Secundum naturam quae per accentum agnoscitur <g ref="#idest"/>
+                        acute</add></rdg>
+                  <note resp="#CG" type="explanation" target="#gloss-25-9-1"> The same gloss occurs
+                     in MS Köln 200, f. 6v.</note>
+               </app>
+               <quote source="#EDITION" n="II 25,10"><add type="text-variation" xml:id="tv-25-10-1"
+                     hand="#scr" source="#COD_50" place="above"><hi rend="red script"
+                     >IIII</hi></add> producta quoque a in e productam inuenitur, hālitus anhēlitus;
+                     <add type="text-variation" xml:id="tv-25-10-3" hand="#scr" source="#COD_50"
+                     place="above"><hi rend="red script">V</hi></add> in i</quote>
+               <app type="text-variation" xml:id="tv-25-10-2">
+                  <lem wit="#EDITION">hālitus anhēlitus</lem>
+                  <rdg wit="#COD_50" hand="#scr">hālitus· anhēlitus·</rdg>
+               </app>
+               <app type="rubrication" xml:id="rubr-25-10-1">
+                  <lem wit="#EDITION">producta</lem>
+                  <rdg wit="#COD_50" hand="#scr"><hi rend="capital letter filled with red ink"
+                        >P</hi>roducta</rdg>
+               </app>
+               <app type="rubrication" xml:id="rubr-25-10-2">
+                  <lem wit="#EDITION">in i</lem>
+                  <rdg wit="#COD_50" hand="#scr"><hi rend="red capitalis">I</hi>n i</rdg>
+               </app>
+               <quote source="#EDITION" n="II 25,11">correptam amicus <lb n="15" ed="4v"/> inĭmicus;
+                     <add type="text-variation" xml:id="tv-25-11-1" hand="#scr" source="#COD_50"
+                     place="above"><hi rend="red script">VI</hi></add> in o etiam, <foreign
+                     xml:lang="grc">μάρμαρον</foreign> marmor; <add type="text-variation"
+                     xml:id="tv-25-11-2" hand="#scr" source="#COD_50" place="above"><hi
+                        rend="red script">VII</hi></add> in u,</quote>
+               <app type="rubrication" xml:id="rubr-25-11-1">
+                  <lem wit="#EDITION">in o</lem>
+                  <rdg wit="#COD_50" hand="#scr"><hi rend="red capitalis">I</hi>n o</rdg>
+               </app>
+               <app type="rubrication" xml:id="rubr-25-11-2">
+                  <lem wit="#EDITION">in u</lem>
+                  <rdg wit="#COD_50" hand="#scr"><hi rend="red capitalis">I</hi>n u</rdg>
+               </app>
+               <app type="gloss" xml:id="gloss-25-11-1">
+                  <lem wit="#EDITION"><foreign xml:lang="grc">μάρμαρον</foreign></lem>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#Otfrid"
+                        facs="#zone.4v.39" ana="#lexical-glosses">g<supplied resp="#CG"
+                           reason="abbreviation">raece</supplied></add></rdg>
+               </app>
+               <app type="text-variation" xml:id="tv-25-11-3">
+                  <lem wit="#EDITION">inĭmicus</lem>
+                  <rdg wit="#COD_50" hand="#scr">inimicus</rdg>
+               </app>
+               <quote source="#EDITION" n="II 25,12">salsus insulsus, ara arula.</quote>
+               <quote source="#EDITION" n="II 25,13"><add type="text-variation" xml:id="tv-25-13-1"
+                     hand="#scr" source="#COD_50" place="above"><hi rend="red script">I</hi></add> e
+                  correpta transit in productam, lĕgo lēgi; <add type="text-variation"
+                     xml:id="tv-25-13-2" hand="#scr" source="#COD_50" place="above"><hi
+                        rend="red script">II</hi></add>in a, sĕror <lb n="16" ed="4v"/>
+                  satus,</quote>
+               <app type="text-variation" xml:id="tv-25-13-3">
+                  <lem wit="#EDITION">lĕgo lēgi</lem>
+                  <rdg wit="#COD_50" hand="#scr">lego legi</rdg>
+               </app>
+               <app type="text-variation" xml:id="tv-25-13-4">
+                  <lem wit="#EDITION">sĕror</lem>
+                  <rdg wit="#COD_50" hand="#scr">seror</rdg>
+               </app>
+               <app type="rubrication" xml:id="rubr-25-13-1">
+                  <lem wit="#EDITION">e</lem>
+                  <rdg wit="#COD_50" hand="#scr"><hi rend="letter filled with red ink">e</hi></rdg>
+               </app>
+               <app type="rubrication" xml:id="rubr-25-13-2">
+                  <lem wit="#EDITION">in a</lem>
+                  <rdg wit="#COD_50" hand="#scr"><hi rend="letter filled with red ink">I</hi>n <hi
+                        rend="letter filled with red ink">a</hi></rdg>
+               </app>
+               <app type="gloss" xml:id="gloss-25-13-1" subtype="to-be-checked">
+                  <lem wit="#COD_50">seror</lem>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#Otfrid"
+                        facs="#zone.4v.40" ana="#translation-into-Old-High-German"
+                        xml:id="ohg-25-13-1" type="OHG-gloss" n="8"><foreign xml:lang="goh"
+                           >gisaituuise</foreign></add></rdg>
+                  <note corresp="#ohg-25-13-1" type="explanation" resp="#CG"> This OHG gloss was
+                     first edited by Hans Butzmann, <hi rend="italic">Althochdeutsche
+                        Priscian-Glossen aus Weissenburg</hi>, PBB. 86/3 (Halle 1964), pp. 388-402,
+                     at p. 392, no. 6, however in the reading: "gisaituuisu".</note>
+               </app>
+               <quote source="#EDITION" n="II 25,14">rĕor ratus; <add type="text-variation"
+                     xml:id="tv-25-14-1" hand="#scr" source="#COD_50" place="above"><hi
+                        rend="red script">III</hi></add> in i, monĕo monitus, lĕgo diligo; <add
+                     type="text-variation" xml:id="tv-25-14-2" hand="#scr" source="#COD_50"
+                     place="above"><hi rend="red script">IIII</hi></add> in o, tĕgo toga:</quote>
+               <app type="rubrication" xml:id="rubr-25-14-3">
+                  <lem wit="#EDITION">in i</lem>
+                  <rdg wit="#COD_50" hand="#scr"><hi rend="letter filled with red ink">I</hi>n
+                     i</rdg>
+               </app>
+               <app type="rubrication" xml:id="rubr-25-14-4">
+                  <lem wit="#EDITION">in o</lem>
+                  <rdg wit="#COD_50" hand="#scr"><hi rend="letter filled with red ink">I</hi>n
+                     o</rdg>
+               </app>
+               <app type="text-variation" xml:id="tv-25-14-3">
+                  <lem wit="#EDITION">rĕor</lem>
+                  <rdg wit="#COD_50" hand="#scr">reor</rdg>
+               </app>
+               <app type="text-variation" xml:id="tv-25-14-4">
+                  <lem wit="#EDITION">monĕo</lem>
+                  <rdg wit="#COD_50" hand="#scr">moneo</rdg>
+               </app>
+               <app type="text-variation" xml:id="tv-25-14-5">
+                  <lem wit="#EDITION">lĕgo</lem>
+                  <rdg wit="#COD_50" hand="#scr">lego</rdg>
+               </app>
+               <app type="text-variation" xml:id="tv-25-14-6">
+                  <lem wit="#EDITION">tĕgo</lem>
+                  <rdg wit="#COD_50" hand="#scr">tego</rdg>
+               </app>
+               <app type="gloss" xml:id="gloss-25-14-1">
+                  <lem wit="#EDITION">toga</lem>
+                  <rdg wit="#COD_50"><add place="left margin" hand="#Otfrid" facs="#zone.4v.41"
+                        ana="#encyclopedic-glosses">Toga uestis alba quam romani tempore pacis
+                        portauerunt</add></rdg>
                </app>
                
                <!--  -->
-               <quote source="#EDITION" n="II 25,3">et i, arceo coerceo, facio inficio, nec non
-                  aliae cum aliis. et quia</quote>
-               <quote source="#EDITION" n="II 25,4">frequenter hae in omnibus paene literis
-                  mutationes non solum per casus</quote>
-               <quote source="#EDITION" n="II 25,5">uel tempora, sed etiam per figurarum
-                  compositiones uel deriuationes et</quote>
-               <quote source="#EDITION" n="II 25,6">translationes a Graeco in Latinum fieri solent,
-                  necessarium est ponere</quote>
-               <quote source="#EDITION" n="II 25,7">earum exempla.</quote>
-               <quote source="#EDITION" n="II 25,8">a correpta conuertitur in productam, făueo fāui,
-                  in e correptam</quote>
-               <quote source="#EDITION" n="II 25,9">părco pepĕrci, ărmatus inĕrmis, productam, făcio
-                  fēci, căpio cēpi,</quote>
-               <quote source="#EDITION" n="II 25,10">producta quoque a in e productam inuenitur,
-                  hālitus anhēlitus; in i</quote>
-               <quote source="#EDITION" n="II 25,11">correptam amicus inĭmicus; in o etiam, μάρμαρον
-                  marmor; in u,</quote>
-               <quote source="#EDITION" n="II 25,12">salsus insulsus, ara arula.</quote>
-               <quote source="#EDITION" n="II 25,13">e correpta transit in productam, lĕgo lēgi; in
-                  a, sĕror satus,</quote>
-               <quote source="#EDITION" n="II 25,14">rĕor ratus; in i, monĕo monitus, lĕgo diligo;
-                  in o, tĕgo toga:</quote>
-               <quote source="#EDITION" n="II 25,15">antiqui quoque amplocti pro amplĕcti dicebant
-                  et animum aduorti pro</quote>
+               <quote source="#EDITION" n="II 25,15">antiqui quoque amplocti pro amplĕcti
+                  dicebant et animum aduorti pro</quote>
                <quote source="#EDITION" n="II 25,16">animum aduĕrti; in u, tĕgo tugurium: et apud
                   antiquissimos,</quote>
                <quote source="#EDITION" n="II 25,17">quotienscumque nd sequuntur in his, quae a
@@ -5811,9 +5964,8 @@
                   homĭcida, cornu</quote>
                <quote source="#EDITION" n="II 25,27">cornĭger, stella stellĭger, arcus arcĭtenens,
                   fatum fatĭdicus, aurum</quote>
-
             </div>
-           
+            
 
             <pb n="5r" xml:id="page__00019" facs="#facs__00019"/>
             <pb n="5v" xml:id="page__00020" facs="#facs__00020"/>
@@ -6508,6 +6660,11 @@
          <zone xml:id="zone.4v.33" ulx="341" uly="640" lrx="409" lry="682"/>
          <zone xml:id="zone.4v.36" ulx="1120" uly="658" lrx="1151" lry="685"/>
          <zone xml:id="zone.4v.35" ulx="803" uly="659" lrx="929" lry="688"/>
+         <zone xml:id="zone.4v.38" ulx="1781" uly="779" lrx="1883" lry="836"/>
+         <zone xml:id="zone.4v.37" ulx="1633" uly="790" lrx="1656" lry="810"/>
+         <zone xml:id="zone.4v.40" ulx="1758" uly="871" lrx="1851" lry="904"/>
+         <zone xml:id="zone.4v.39" ulx="772" uly="889" lrx="798" lry="912"/>
+         <zone xml:id="zone.4v.41" ulx="270" uly="947" lrx="493" lry="1012"/>
       </surface>
       <surface xml:id="facs__00019" n="5r">
          <graphic url="http://diglib.hab.de/mss/50-weiss/max/00019.jpg"/>
