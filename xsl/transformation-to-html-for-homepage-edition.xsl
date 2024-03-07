@@ -856,7 +856,7 @@
                 <xsl:value-of select="substring-after(@wit,'#')"/>
             </xsl:if>
             <xsl:text>: </xsl:text>
-            <xsl:value-of select="text()"/>
+            <xsl:apply-templates select="child::node()"/>
         </p>
     </xsl:template>
     

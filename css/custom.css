@@ -41,6 +41,7 @@ span.pointer-target-source { font-style: italic; }
 span.edition-heading-1 { font-family: Garamond; font-size: 24pt; font-weight: bold; }
 span.set-margin-left { margin-left: 20pt; }
 span.set-margin-left-and-right { margin-left: 10pt; margin-right: 10pt; }
+p.main-text-paragraph { font-size: 16pt; }
 div.apparatus-reading { margin-top: 1em; margin-bottom: 1em; }
 div.note { margin-left: 50pt; margin-top: 1em; margin-bottom: 20pt; }
 p.pointer {margin-top: 1em; }

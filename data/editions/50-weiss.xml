@@ -4003,7 +4003,7 @@
                         ana="#glosses-elucidating-the-main-text"><g
                            ref="#reference-sign-half-ring-with-dot-below"/> oris apertio</add></rdg>
                </app>
-               <quote source="#EDITION" n="II 17,11">poetae Aeolide usi (Ἀλκμάν·</quote>
+               <quote source="#EDITION" n="II 17,11">poetae Aeolide usi (<foreign xml:lang="grc">Ἀλκμάν·</foreign></quote>
                <app type="text-variation" xml:id="tv-17-11-1">
                   <lem wit="#EDITION"><foreign xml:lang="grc">Ἀλκμάν</foreign></lem>
                   <rdg wit="#COD_50" hand="#scr">ΛNCMΛN</rdg>
@@ -4012,7 +4012,7 @@
                      δάϜιον</foreign>»):</quote>
                <app type="text-variation" xml:id="tv-17-12-1">
                   <lem wit="#EDITION"><foreign xml:lang="grc">χεῖμα</foreign></lem>
-                  <rdg wit="#COD_50" hand="#scr">XeM<add hand="scr" place="above">A</add></rdg>
+                  <rdg wit="#COD_50" hand="#scr">XeM<add hand="#scr" place="above">A</add></rdg>
                </app>
                <quote source="#EDITION" n="II 17,13">et epigrammata, quae egomet legi in tripo<lb
                      n="2" break="no" ed="3v"/>de uetustissimo Apollinis, qui</quote>
