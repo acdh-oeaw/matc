@@ -59,6 +59,10 @@
                   <collection>Weißenburger Handschriften</collection>
                   <idno sortKey="wf_hab_weiss-0050">Cod. Guelf. 50 Weiss.</idno>
                   <altIdentifier type="catalog">
+                     <collection>Hans Butzmann, Die Weißenburger Handschriften, p.</collection>
+                     <idno>187</idno>
+                  </altIdentifier>
+                  <altIdentifier type="catalog">
                      <collection>Heinemann-Nr.</collection>
                      <idno sortKey="heinemann-4134">4134</idno>
                   </altIdentifier>
@@ -4045,7 +4049,7 @@
                   <rdg wit="#COD_50"><add place="left margin" hand="#sec" facs="#zone.3v.5"
                         ana="#Greek-glosses">in xero <g ref="#idest"/> in cornu· <del hand="scr"
                            cause="emendation" rend="rasura">lopho <g ref="#idest"/> in cornu·</del>
-                        lopho <add hand="scr" place="above"><g ref="#idest"/></add> cerui· elophos·
+                        lopho <add hand="#scr" place="above"><g ref="#idest"/></add> cerui· elophos·
                         ceruus </add></rdg>
                </app>
                <app type="reference-signs" xml:id="rs-17-14-2">

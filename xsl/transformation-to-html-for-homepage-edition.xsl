@@ -140,9 +140,11 @@
             <b><xsl:value-of select="tei:idno/text()"/></b>
         </p>
         <ul>
-            <li><xsl:value-of select="tei:settlement/text()"/></li>
-            <li><xsl:value-of select="tei:repository/text()"/></li>
-            <li><xsl:value-of select="tei:collection/text()"/></li>
+            <li><xsl:value-of select="tei:settlement/text()"/>
+                <xsl:text>, </xsl:text>
+                <xsl:value-of select="tei:repository/text()"/>
+                <xsl:text>, </xsl:text>
+                <xsl:value-of select="tei:collection/text()"/></li>
             <xsl:for-each select="tei:altIdentifier">
                 <li>
                     <xsl:value-of select="./tei:collection/text()"/>
@@ -601,7 +603,7 @@
     
     <xsl:template match="tei:hi">
         <xsl:choose>
-            <xsl:when test="(@rend = 'red capitalis') or (@rend = 'red capitalis rustica') or (@rend = 'red script')">
+            <xsl:when test="(@rend = 'red capitalis') or (@rend = 'red capitalis rustica') or (@rend = 'red script') or (@rend = 'letter filled with red ink') or (@rend = 'capital letter filled with red ink')">
                 <xsl:element name="span">
                     <xsl:attribute name="style" select="'color: #9e1b16;'"/>
                     <xsl:apply-templates/>
@@ -698,6 +700,13 @@
             <xsl:text> </xsl:text>
             <xsl:value-of select="text()"/>
             <xsl:text> </xsl:text>
+        </xsl:element>
+    </xsl:template>
+    
+    <xsl:template match="tei:del[not(@type = 'expunction') and (@cause = 'emendation')]">
+        <xsl:element name="span">
+            <xsl:attribute name="class" select="'expunction'"/>
+            <xsl:apply-templates select="child::node()"/>
         </xsl:element>
     </xsl:template>
     
@@ -804,7 +813,17 @@
             <xsl:text>: </xsl:text>
             <xsl:apply-templates select="child::node()"/>
             <xsl:text> [</xsl:text>
-            <xsl:value-of select="child::tei:hi/@rend"/>
+            <xsl:if test="count(child::tei:hi) gt 1">
+                <xsl:for-each select="child::tei:hi">
+                    <xsl:value-of select="./@rend"/>
+                    <xsl:if test="position() != last()">
+                        <xsl:text> - </xsl:text>
+                    </xsl:if>
+                </xsl:for-each>
+            </xsl:if>
+            <xsl:if test="count(child::tei:hi) eq 1">
+                <xsl:value-of select="child::tei:hi/@rend"/>
+            </xsl:if>
             <span class="set-margin-left"><i class="far fa-hand-paper"></i></span>
             <xsl:element name="span">
                 <xsl:attribute name="class" select="'emphasize-hand'"/>
