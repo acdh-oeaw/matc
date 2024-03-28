@@ -941,7 +941,10 @@
     </xsl:template>
     
     <xsl:template match="tei:add[parent::tei:rdg and not(parent::tei:rdg/parent::tei:app[@type = 'emendation'])]">
-        <xsl:apply-templates/>
+        <xsl:element name="span">
+            <xsl:attribute name="class" select="'highlight-addition'"/>
+            <xsl:apply-templates/>
+        </xsl:element>
         <xsl:element name="br"/>
         <span class="set-margin-left"><i class="far fa-compass"></i></span>
         <xsl:element name="span">
@@ -1039,9 +1042,21 @@
     </xsl:template>
     
     <xsl:template match="tei:g">
-        <xsl:text>|</xsl:text>
-        <xsl:value-of select="root()//tei:glyph[@xml:id = substring-after(current()/@ref,'#')]/tei:localProp[@name = 'Name']/@value"/>
-        <xsl:text>|</xsl:text>
+        <xsl:choose>
+            <xsl:when test="root()//tei:glyph[@xml:id = substring-after(current()/@ref,'#')]/ancestor::tei:charDecl/@n = 'abbreviations'">
+                <xsl:text>|</xsl:text>
+                <xsl:value-of select="root()//tei:glyph[@xml:id = substring-after(current()/@ref,'#')]/tei:localProp[@name = 'Name']/@value"/>
+                <xsl:text>|</xsl:text>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:element name="span">
+                    <xsl:attribute name="class" select="'hide-emphasis'"/>
+                    <xsl:text>|</xsl:text>
+                    <xsl:value-of select="root()//tei:glyph[@xml:id = substring-after(current()/@ref,'#')]/tei:localProp[@name = 'Name']/@value"/>
+                    <xsl:text>|</xsl:text>
+                </xsl:element>
+            </xsl:otherwise>
+        </xsl:choose>
     </xsl:template>
     
     <xsl:template match="tei:w[parent::tei:rdg]">

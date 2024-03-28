@@ -1121,7 +1121,7 @@
                            ref="#construe-mark-dot-with-right-half-ring"/></add></rdg>
                </app>
                <app type="gloss" xml:id="gloss-1-12-4" subtype="to-be-checked">
-                  <rdg wit="#COD_50"><add place="left margi" hand="#Otfrid" facs="#zone.1r.41"
+                  <rdg wit="#COD_50"><add place="left margin" hand="#Otfrid" facs="#zone.1r.41"
                         xml:lang="la"><gap unit="char" quantity="12" reason="illegible"
                      /></add></rdg>
                </app>
@@ -1674,7 +1674,7 @@
                <app type="gloss" xml:id="gloss-5-0-1">
                   <lem wit="#EDITION">de uoce</lem>
                   <rdg wit="#COD_50" xml:id="rdg-2-5-2-1" next="#rdg-2-5-2-2"><add
-                        place="interlinear-one-line-above" hand="#gl-2" facs="#zone.1v.15"
+                        place="interlinear one line above" hand="#gl-2" facs="#zone.1v.15"
                         ana="#glosses-summarizing-content">Vox <g ref="#irish-est"/></add></rdg>
                   <note resp="#CG" type="explanation" target="#gloss-5-0-1 #gloss-5-0-2">The second
                      glossator wrote 'Vox est' above the lemma, then stopped and re-started writing
@@ -1752,7 +1752,7 @@
                </app>
                <app type="gloss" xml:id="gloss-5-1-6">
                   <lem wit="#EDITION">ictum</lem>
-                  <rdg wit="#COD_50"><add place="interlinear-one-line-above" hand="#gl-2"
+                  <rdg wit="#COD_50"><add place="interlinear one line above" hand="#gl-2"
                         facs="#zone.1v.12" ana="#glosses-elucidating-the-main-text"><g
                            ref="#reference-sign-distigme-virga-below"/> sensus <g ref="#irish-est"/>
                         talis. siue percuciatur aer nullo audiente seu sonus aliquis aures
@@ -2135,7 +2135,7 @@
                </app>
                <app type="gloss" xml:id="gloss-6-7-2">
                   <lem wit="#EDITION">uocis compositae</lem>
-                  <rdg wit="#COD_50"><add place="above" hand="#gl-2" facs="#zone.1v.59"
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#gl-2" facs="#zone.1v.59"
                         ana="#glosses-elucidating-the-main-text"><g ref="#idest"/> syllabę <g
                            ref="#et"/> dictionis</add></rdg>
                </app>
@@ -2197,7 +2197,7 @@
                </app>
                <app type="gloss" xml:id="gloss-6-8-5">
                   <lem wit="#EDITION">ad totam</lem>
-                  <rdg wit="#COD_50"><add place="upper margin of the leaf" hand="#gl-2"
+                  <rdg wit="#COD_50"><add place="upper margin" hand="#gl-2"
                         facs="#zone.1v.64" ana="#glosses-elucidating-the-main-text"><g
                            ref="#reference-sign-cross"/> quasi dicat· Ego discerno ut omnes
                         litterae· longe quoque uocales ad hanc comprehensionem
@@ -2259,7 +2259,7 @@
                   plerumque in ceratis tabulis</quote>
                <app type="gloss" xml:id="gloss-6-14-1">
                   <lem wit="#EDITION">a lituris</lem>
-                  <rdg wit="#COD_50"><add place="above" hand="#Otfrid" facs="#zone.1v.71"
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#Otfrid" facs="#zone.1v.71"
                         ana="#synonyms"><g ref="#idest"/> a deletionibus</add></rdg>
                </app>
                <app type="text-variation" xml:id="tv-6-14-1">
@@ -2280,7 +2280,7 @@
                   elementorum: sicut enim illa coeun<lb n="29" break="no" ed="1v"/>tia omne</quote>
                <app type="gloss" xml:id="gloss-6-16-1">
                   <lem wit="#EDITION">elementorum</lem>
-                  <rdg wit="#COD_50"><add place="above" hand="#Otfrid" facs="#zone.1v.72"
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#Otfrid" facs="#zone.1v.72"
                         ana="#glosses-elucidating-the-main-text">.elementum dicitur uniuersitatis
                         materia.</add></rdg>
                </app>
@@ -3911,7 +3911,7 @@
                </app>
                <app type="gloss" xml:id="gloss-16-18-5">
                   <lem wit="#EDITION">fautor</lem>
-                  <rdg wit="#COD_50"><add place="interlienar above" hand="#Otfrid"
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#Otfrid"
                         facs="#zone.3r.32" ana="#synonyms">adiutor</add></rdg>
                   <note corresp="#gloss-16-18-5" type="explanation" resp="#CG">The same gloss recurs
                      in MS München BSB Clm 18375, f. 9r.</note>
@@ -3963,7 +3963,7 @@
                <quote source="#EDITION" n="II 17,9">ut cum dicimus uespera, uis, uestis.</quote>
                <app type="gloss" xml:id="gloss-17-9-1">
                   <lem wit="#EDITION">uespera</lem>
-                  <rdg wit="#COD_50"><add place="interlienar above" hand="#Otfrid"
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#Otfrid"
                         facs="#zone.3r.34" ana="#glosses-elucidating-the-main-text">pro
                         hespera</add></rdg>
                   <note corresp="#gloss-17-9-1" type="explanation" resp="#CG">The same gloss recurs
@@ -3971,7 +3971,7 @@
                </app>
                <app type="gloss" xml:id="gloss-17-9-2">
                   <lem wit="#EDITION">uis</lem>
-                  <rdg wit="#COD_50"><add place="interlienar above" hand="#Otfrid"
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#Otfrid"
                         facs="#zone.3r.35" ana="#glosses-elucidating-the-main-text">pro
                      his</add></rdg>
                   <note corresp="#gloss-17-9-2" type="explanation" resp="#CG">The same gloss recurs
@@ -3979,7 +3979,7 @@
                </app>
                <app type="gloss" xml:id="gloss-17-9-3">
                   <lem wit="#EDITION">uestis</lem>
-                  <rdg wit="#COD_50"><add place="interlienar above" hand="#Otfrid"
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#Otfrid"
                         facs="#zone.3r.36" ana="#glosses-elucidating-the-main-text">pro
                      hestis</add></rdg>
                   <note corresp="#gloss-17-9-3" type="explanation" resp="#CG">The same gloss recurs

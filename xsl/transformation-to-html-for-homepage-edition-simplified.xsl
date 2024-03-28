@@ -25,6 +25,7 @@
             <title>The Wissembourg Priscian Glosses</title>
             <link rel="stylesheet" id="fundament-styles"  href="./css/fundament.min.css" type="text/css"/>
             <link rel="stylesheet" id="fundament-custom-styles" href="./css/custom.css" type="text/css"/>
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto Serif"></link>
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer"></link>
             <link rel="shortcut icon" type="image/x-icon" href="./images/favicon.png"/>
         </head>
@@ -101,6 +102,7 @@
                                             <h2 class="heading-level-2">Simplified Digital Edition</h2>
                                         </header><!-- .entry-header -->
                                         <div class="entry-content">
+                                            <xsl:call-template name="statistics"/>
                                             <xsl:apply-templates select="child::node()"/>
                                         </div>
                                     </article>
@@ -113,6 +115,214 @@
             <script type="text/javascript" src="./vendor/jquery/jquery.min.js"></script>
             <script type="text/javascript" src="./js/fundament.min.js"></script>
         </body>
+    </xsl:template>
+    
+    <xsl:template name="statistics">
+        <xsl:element name="div">
+            <xsl:attribute name="class" select="'statistics-content'"/>
+            <xsl:element name="p">
+                <xsl:attribute name="class" select="'statistics-content-heading'"/>
+                <xsl:text>Statistics</xsl:text>
+            </xsl:element>
+            <xsl:element name="p">
+                <xsl:text>Transcribed range (</xsl:text>
+                <xsl:value-of select="format-date(current-date(),'[Y]-[M]-[D]')"/>
+                <xsl:text>): </xsl:text>
+                <xsl:for-each select="root()//tei:quote[@source = '#EDITION']">
+                    <xsl:if test="position() = 1">
+                        <xsl:value-of select="@n"/>
+                        <xsl:text> to </xsl:text>
+                    </xsl:if>
+                    <xsl:if test="position() = last()">
+                        <xsl:value-of select="@n"/>
+                    </xsl:if>
+                </xsl:for-each>
+            </xsl:element>
+            <xsl:element name="p">
+                <xsl:attribute name="class" select="'statistics-level-1'"/>
+                <xsl:text>Number of added reference signs: </xsl:text>
+                <xsl:value-of select="count(root()//tei:app[@type = 'reference-signs'])"/>
+            </xsl:element>
+            <xsl:element name="p">
+                <xsl:attribute name="class" select="'statistics-level-1'"/>
+                <xsl:text>Number of rubrications: </xsl:text>
+                <xsl:value-of select="count(root()//tei:app[@type = 'rubrication'])"/>
+            </xsl:element>
+            <xsl:element name="p">
+                <xsl:attribute name="class" select="'statistics-level-1'"/>
+                <xsl:text>Number of emendations: </xsl:text>
+                <xsl:value-of select="count(root()//tei:app[@type = 'emendation'])"/>
+            </xsl:element>
+            <xsl:element name="p">
+                <xsl:attribute name="class" select="'statistics-level-1'"/>
+                <xsl:text>Number of text variations: </xsl:text>
+                <xsl:value-of select="count(root()//tei:app[@type = 'text-variation'])"/>
+            </xsl:element>
+            <xsl:element name="p">
+                <xsl:attribute name="class" select="'statistics-level-1'"/>
+                <xsl:text>Number of glosses: </xsl:text>
+                <xsl:value-of select="count(root()//tei:app[@type = 'gloss'])"/>
+            </xsl:element>
+            <xsl:element name="p">
+                <xsl:attribute name="class" select="'statistics-level-2'"/>
+                <xsl:text>By hand:</xsl:text>
+            </xsl:element>
+            <xsl:element name="p">
+                <xsl:attribute name="class" select="'statistics-level-3'"/>
+                <xsl:text>Writer of the main text: </xsl:text>
+                <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][child::tei:rdg/child::tei:add[@hand = '#scr']])"/>
+            </xsl:element>
+            <xsl:element name="p">
+                <xsl:attribute name="class" select="'statistics-level-3'"/>
+                <xsl:text>Otfrid of Wissembourg: </xsl:text>
+                <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][child::tei:rdg/child::tei:add[@hand = '#Otfrid']])"/>
+            </xsl:element>
+            <xsl:element name="p">
+                <xsl:attribute name="class" select="'statistics-level-3'"/>
+                <xsl:text>Second glossator: </xsl:text>
+                <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][child::tei:rdg/child::tei:add[@hand = '#gl-2']])"/>
+            </xsl:element>
+            <xsl:element name="p">
+                <xsl:attribute name="class" select="'statistics-level-3'"/>
+                <xsl:text>Secondary (unidentified) writer(s): </xsl:text>
+                <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][child::tei:rdg/child::tei:add[@hand = '#sec']])"/>
+            </xsl:element>
+            <xsl:element name="p">
+                <xsl:attribute name="class" select="'statistics-level-2'"/>
+                <xsl:attribute name="style" select="'margin-top: 1rem;'"/>
+                <xsl:text>By place:</xsl:text>
+            </xsl:element>
+            <xsl:element name="div">
+                <xsl:attribute name="class" select="'statistics-level-3'"/>
+                <xsl:text>interlinear above: </xsl:text>
+                <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][child::tei:rdg/child::tei:add[@place = 'interlinear above']])"/>
+                <p class="statistics-level-4">
+                    <xsl:text>Main scribe: </xsl:text>
+                    <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][child::tei:rdg/child::tei:add[@place = 'interlinear above'][@hand = '#scr']])"/>
+                    <xsl:text> / Otfrid: </xsl:text>
+                    <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][child::tei:rdg/child::tei:add[@place = 'interlinear above'][@hand = '#Otfrid']])"/>
+                    <xsl:text> / Second glossator: </xsl:text>
+                    <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][child::tei:rdg/child::tei:add[@place = 'interlinear above'][@hand = '#gl-2']])"/>
+                    <xsl:text> / Secondary writer(s): </xsl:text>
+                    <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][child::tei:rdg/child::tei:add[@place = 'interlinear above'][@hand = '#sec']])"/>
+                </p>
+            </xsl:element>
+            <xsl:element name="div">
+                <xsl:attribute name="class" select="'statistics-level-3'"/>
+                <xsl:text>interlinear below: </xsl:text>
+                <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][child::tei:rdg/child::tei:add[@place = 'interlinear below']])"/>
+                <p class="statistics-level-4">
+                    <xsl:text>Main scribe: </xsl:text>
+                    <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][child::tei:rdg/child::tei:add[@place = 'interlinear below'][@hand = '#scr']])"/>
+                    <xsl:text> / Otfrid: </xsl:text>
+                    <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][child::tei:rdg/child::tei:add[@place = 'interlinear below'][@hand = '#Otfrid']])"/>
+                    <xsl:text> / Second glossator: </xsl:text>
+                    <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][child::tei:rdg/child::tei:add[@place = 'interlinear below'][@hand = '#gl-2']])"/>
+                    <xsl:text> / Secondary writer(s): </xsl:text>
+                    <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][child::tei:rdg/child::tei:add[@place = 'interlinear below'][@hand = '#sec']])"/>
+                </p>
+            </xsl:element>
+            <xsl:element name="div">
+                <xsl:attribute name="class" select="'statistics-level-3'"/>
+                <xsl:text>interlinear one line above: </xsl:text>
+                <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][child::tei:rdg/child::tei:add[@place = 'interlinear one line above']])"/>
+                <p class="statistics-level-4">
+                    <xsl:text>Main scribe: </xsl:text>
+                    <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][child::tei:rdg/child::tei:add[@place = 'interlinear one line above'][@hand = '#scr']])"/>
+                    <xsl:text> / Otfrid: </xsl:text>
+                    <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][child::tei:rdg/child::tei:add[@place = 'interlinear one line above'][@hand = '#Otfrid']])"/>
+                    <xsl:text> / Second glossator: </xsl:text>
+                    <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][child::tei:rdg/child::tei:add[@place = 'interlinear one line above'][@hand = '#gl-2']])"/>
+                    <xsl:text> / Secondary writer(s): </xsl:text>
+                    <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][child::tei:rdg/child::tei:add[@place = 'interlinear one line above'][@hand = '#sec']])"/>
+                </p>
+            </xsl:element>
+            <xsl:element name="div">
+                <xsl:attribute name="class" select="'statistics-level-3'"/>
+                <xsl:text>interlinear above and right margin: </xsl:text>
+                <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][child::tei:rdg/child::tei:add[@place = 'interlinear above and right margin']])"/>
+                <p class="statistics-level-4">
+                    <xsl:text>Main scribe: </xsl:text>
+                    <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][child::tei:rdg/child::tei:add[@place = 'interlinear above and right margin'][@hand = '#scr']])"/>
+                    <xsl:text> / Otfrid: </xsl:text>
+                    <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][child::tei:rdg/child::tei:add[@place = 'interlinear above and right margin'][@hand = '#Otfrid']])"/>
+                    <xsl:text> / Second glossator: </xsl:text>
+                    <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][child::tei:rdg/child::tei:add[@place = 'interlinear above and right margin'][@hand = '#gl-2']])"/>
+                    <xsl:text> / Secondary writer(s): </xsl:text>
+                    <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][child::tei:rdg/child::tei:add[@place = 'interlinear above and right margin'][@hand = '#sec']])"/>
+                </p>
+            </xsl:element>
+            <xsl:element name="div">
+                <xsl:attribute name="class" select="'statistics-level-3'"/>
+                <xsl:text>right margin: </xsl:text>
+                <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][child::tei:rdg/child::tei:add[@place = 'right margin']])"/>
+                <p class="statistics-level-4">
+                    <xsl:text>Main scribe: </xsl:text>
+                    <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][child::tei:rdg/child::tei:add[@place = 'right margin'][@hand = '#scr']])"/>
+                    <xsl:text> / Otfrid: </xsl:text>
+                    <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][child::tei:rdg/child::tei:add[@place = 'right margin'][@hand = '#Otfrid']])"/>
+                    <xsl:text> / Second glossator: </xsl:text>
+                    <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][child::tei:rdg/child::tei:add[@place = 'right margin'][@hand = '#gl-2']])"/>
+                    <xsl:text> / Secondary writer(s): </xsl:text>
+                    <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][child::tei:rdg/child::tei:add[@place = 'right margin'][@hand = '#sec']])"/>
+                </p>
+            </xsl:element>
+            <xsl:element name="div">
+                <xsl:attribute name="class" select="'statistics-level-3'"/>
+                <xsl:text>left margin: </xsl:text>
+                <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][child::tei:rdg/child::tei:add[@place = 'left margin']])"/>
+                <p class="statistics-level-4">
+                    <xsl:text>Main scribe: </xsl:text>
+                    <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][child::tei:rdg/child::tei:add[@place = 'left margin'][@hand = '#scr']])"/>
+                    <xsl:text> / Otfrid: </xsl:text>
+                    <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][child::tei:rdg/child::tei:add[@place = 'left margin'][@hand = '#Otfrid']])"/>
+                    <xsl:text> / Second glossator: </xsl:text>
+                    <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][child::tei:rdg/child::tei:add[@place = 'left margin'][@hand = '#gl-2']])"/>
+                    <xsl:text> / Secondary writer(s): </xsl:text>
+                    <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][child::tei:rdg/child::tei:add[@place = 'left margin'][@hand = '#sec']])"/>
+                </p>
+            </xsl:element>
+            <xsl:element name="div">
+                <xsl:attribute name="class" select="'statistics-level-3'"/>
+                <xsl:text>upper margin: </xsl:text>
+                <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][child::tei:rdg/child::tei:add[@place = 'upper margin']])"/>
+                <p class="statistics-level-4">
+                    <xsl:text>Main scribe: </xsl:text>
+                    <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][child::tei:rdg/child::tei:add[@place = 'upper margin'][@hand = '#scr']])"/>
+                    <xsl:text> / Otfrid: </xsl:text>
+                    <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][child::tei:rdg/child::tei:add[@place = 'upper margin'][@hand = '#Otfrid']])"/>
+                    <xsl:text> / Second glossator: </xsl:text>
+                    <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][child::tei:rdg/child::tei:add[@place = 'upper margin'][@hand = '#gl-2']])"/>
+                    <xsl:text> / Secondary writer(s): </xsl:text>
+                    <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][child::tei:rdg/child::tei:add[@place = 'upper margin'][@hand = '#sec']])"/>
+                </p>
+            </xsl:element>
+            <xsl:element name="p">
+                <xsl:attribute name="class" select="'statistics-level-2'"/>
+                <xsl:attribute name="style" select="'margin-top: 1rem;'"/>
+                <xsl:text>By type of addition:</xsl:text>
+            </xsl:element>
+            <xsl:for-each select="root()//tei:taxonomy[@xml:id = 'common-glosses']/tei:category/@xml:id">
+                <xsl:element name="div">
+                    <xsl:attribute name="class" select="'statistics-level-3'"/>
+                    <xsl:value-of select="concat(replace(.,'-',' '),': ')"/>
+                    <xsl:variable name="type" select="concat('#',.)"/>
+                    <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][child::tei:rdg/child::tei:add[tokenize(@ana,' ') = $type]])"/>
+                    <xsl:if test="count(root()//tei:app[@type = 'gloss'][child::tei:rdg/child::tei:add[tokenize(@ana,' ') = $type]]) != 0">
+                        <p class="statistics-level-4">
+                            <xsl:text>Main scribe: </xsl:text>
+                            <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][child::tei:rdg/child::tei:add[tokenize(@ana,' ') = $type]][child::tei:rdg/child::tei:add[@hand = '#scr']])"/>
+                            <xsl:text> / Otfrid: </xsl:text>
+                            <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][child::tei:rdg/child::tei:add[tokenize(@ana,' ') = $type]][child::tei:rdg/child::tei:add[@hand = '#Otfrid']])"/>
+                            <xsl:text> / Second glossator: </xsl:text>
+                            <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][child::tei:rdg/child::tei:add[tokenize(@ana,' ') = $type]][child::tei:rdg/child::tei:add[@hand = '#gl-2']])"/>
+                            <xsl:text> / Secondary writer(s): </xsl:text>
+                            <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][child::tei:rdg/child::tei:add[tokenize(@ana,' ') = $type]][child::tei:rdg/child::tei:add[@hand = '#sec']])"/>
+                        </p>
+                    </xsl:if>
+                </xsl:element>
+            </xsl:for-each>
+        </xsl:element>
     </xsl:template>
     
     <xsl:template match="tei:teiHeader">
@@ -663,7 +873,10 @@
     </xsl:template>
     
     <xsl:template match="tei:add[parent::tei:rdg and not(parent::tei:rdg/parent::tei:app[@type = 'emendation'])]">
-        <xsl:apply-templates/>
+        <xsl:element name="span">
+            <xsl:attribute name="class" select="'highlight-addition'"/>
+            <xsl:apply-templates/>
+        </xsl:element>
         <xsl:element name="br"/>
         <span class="set-margin-left"><i class="far fa-compass"></i></span>
         <xsl:element name="span">
@@ -761,9 +974,21 @@
     </xsl:template>
     
     <xsl:template match="tei:g">
-        <xsl:text>|</xsl:text>
-        <xsl:value-of select="root()//tei:glyph[@xml:id = substring-after(current()/@ref,'#')]/tei:localProp[@name = 'Name']/@value"/>
-        <xsl:text>|</xsl:text>
+        <xsl:choose>
+            <xsl:when test="root()//tei:glyph[@xml:id = substring-after(current()/@ref,'#')]/ancestor::tei:charDecl/@n = 'abbreviations'">
+                <xsl:text>|</xsl:text>
+                <xsl:value-of select="root()//tei:glyph[@xml:id = substring-after(current()/@ref,'#')]/tei:localProp[@name = 'Name']/@value"/>
+                <xsl:text>|</xsl:text>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:element name="span">
+                    <xsl:attribute name="class" select="'hide-emphasis'"/>
+                    <xsl:text>|</xsl:text>
+                    <xsl:value-of select="root()//tei:glyph[@xml:id = substring-after(current()/@ref,'#')]/tei:localProp[@name = 'Name']/@value"/>
+                    <xsl:text>|</xsl:text>
+                </xsl:element>
+            </xsl:otherwise>
+        </xsl:choose>
     </xsl:template>
     
     <xsl:template match="tei:w[parent::tei:rdg]">
@@ -879,6 +1104,13 @@
     
     <xsl:template match="tei:foreign[@xml:lang = 'goh']">
         <xsl:apply-templates select="child::node()"/>
+    </xsl:template>
+    
+    <xsl:template match="tei:foreign[@xml:lang = 'grc']">
+        <xsl:element name="span">
+            <xsl:attribute name="style" select="'font-family: Noto Serif; font-size: 12pt;'"/>
+            <xsl:apply-templates select="child::node()"/>
+        </xsl:element>
     </xsl:template>
     
     <xsl:template match="tei:ref">

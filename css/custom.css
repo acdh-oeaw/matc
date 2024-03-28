@@ -41,7 +41,7 @@ span.pointer-target-source { font-style: italic; }
 span.edition-heading-1 { font-family: Garamond; font-size: 24pt; font-weight: bold; }
 span.set-margin-left { margin-left: 20pt; }
 span.set-margin-left-and-right { margin-left: 10pt; margin-right: 10pt; }
-p.main-text-paragraph { font-size: 16pt; }
+p.main-text-paragraph { font-size: 18pt; }
 div.apparatus-reading { margin-top: 1em; margin-bottom: 1em; }
 div.note { margin-left: 50pt; margin-top: 1em; margin-bottom: 20pt; }
 p.pointer {margin-top: 1em; }
@@ -56,3 +56,11 @@ span.around-link { margin-left: 20pt; border: black 1pt solid; padding: 4pt; bor
 .note a:hover { text-decoration: none; }
 .note a:visited { text-decoration: none; }
 .note a:active { text-decoration: none; }
+div.statistics-content { border: black 1pt solid; margin: 3rem; font-family: Garamond; font-size: 16pt; padding: 2rem; }
+p.statistics-content-heading { font-weight: bold; }
+p.statistics-level-1 { margin-left: 3rem; }
+p.statistics-level-2 { margin-left: 6rem; }
+.statistics-level-3 { margin-left: 9rem; margin-top: 0pt; margin-bottom: 0pt; }
+p.statistics-level-4 { margin-left: 3rem; margin-top: 0pt; margin-bottom: 0pt; }
+span.highlight-addition { background-color: #f5d3ab; }
+span.hide-emphasis { background-color: white; }
