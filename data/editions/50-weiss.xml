@@ -394,49 +394,49 @@
          </listPrefixDef>
          <charDecl n="abbreviations">
             <glyph xml:id="sdot">
-               <localProp name="Name" value="scilicet"/>
+               <localProp name="Name" value="ABBREVIATION SCILICET"/>
                <localProp name="entity" value="sdot"/>
                <figure>
                   <graphic url="../pictures/scilicet.png"/>
                </figure>
             </glyph>
             <glyph xml:id="vel">
-               <localProp name="Name" value="vel"/>
+               <localProp name="Name" value="ABBREVIATION VEL"/>
                <localProp name="entity" value="vel"/>
                <figure>
                   <graphic url="../pictures/vel.png"/>
                </figure>
             </glyph>
             <glyph xml:id="idest">
-               <localProp name="Name" value="id est"/>
+               <localProp name="Name" value="ABBREVIATION ID EST"/>
                <localProp name="entity" value="idest"/>
                <figure>
                   <graphic url="../pictures/idest.png"/>
                </figure>
             </glyph>
             <glyph xml:id="et">
-               <localProp name="Name" value="et"/>
+               <localProp name="Name" value="ABBREVIATION ET"/>
                <localProp name="entity" value="Irish et"/>
                <figure>
                   <graphic url="../pictures/et.png" height="44px" width="25px"/>
                </figure>
             </glyph>
             <glyph xml:id="irish-est">
-               <localProp name="Name" value="est"/>
+               <localProp name="Name" value="ABBREVIATION EST"/>
                <localProp name="entity" value="Irish abbreviation for est"/>
                <figure>
                   <graphic url="../pictures/est.png"/>
                </figure>
             </glyph>
             <glyph xml:id="Insular-quae">
-               <localProp name="Name" value="quae"/>
+               <localProp name="Name" value="ABBREVIATION INSULAR QUAE"/>
                <localProp name="entity" value="Insular abbreviation for quae-q-trigon"/>
                <figure>
                   <graphic url="../pictures/quae-q-three-dots.png"/>
                </figure>
             </glyph>
             <glyph xml:id="quae-two-semicolons">
-               <localProp name="Name" value="quae"/>
+               <localProp name="Name" value="ABBREVIATION QUAE"/>
                <localProp name="entity" value="rare abbreviation for quae-q-two-semicolons"/>
                <figure>
                   <graphic url="../pictures/quae-q-two-semicolons.png"/>
@@ -445,7 +445,7 @@
          </charDecl>
          <charDecl n="construe-marks">
             <glyph xml:id="construe-mark-two-horizontal-dots-distigme">
-               <localProp name="Name" value="CONSTRUE MARK - TWO HORIZONTAL DOTS, DISTIGME"/>
+               <localProp name="Name" value="CONSTRUE MARK TWO HORIZONTAL DOTS, DISTIGME"/>
                <localProp name="entity" value="construe-mark-two-horizontal-dots-distigme"/>
                <figure>
                   <graphic url="../pictures/construe-mark-two-horizontal-dots-distigme.png"/>
@@ -454,7 +454,7 @@
             </glyph>
             <glyph xml:id="construe-mark-dot-with-right-half-ring">
                <localProp name="Name"
-                  value="CONSTRUE MARK DOT WITH RIGHT HALF RING - INSULAR QUOTATION SIGN"/>
+                  value="CONSTRUE MARK DOT WITH RIGHT HALF RING INSULAR QUOTATION SIGN"/>
                <localProp name="entity" value="construe-mark-dot-with-right-half-ring"/>
                <figure>
                   <graphic url="../pictures/construe-mark-dot-with-right-half-ring.png"/>
@@ -462,7 +462,7 @@
                <note>marks the main verb in the sentence</note>
             </glyph>
             <glyph xml:id="construe-mark-two-vertical-dots-dicolon">
-               <localProp name="Name" value="CONSTRUE MARK - TWO VERTICAL DOTS, DICOLON"/>
+               <localProp name="Name" value="CONSTRUE MARK TWO VERTICAL DOTS, DICOLON"/>
                <localProp name="entity" value="construe-mark-two-vertical-dots-dicolon"/>
                <figure>
                   <graphic url="../pictures/construe-mark-two-vertical-dots-dicolon.png"/>
@@ -3802,7 +3802,7 @@
                         facs="#zone.3r.19" ana="#glosses-elucidating-the-main-text">ut soluuit et
                         siluae in ceteris n<supplied resp="#CG" reason="abbreviation"
                            >ominibus</supplied></add></rdg>
-                  <note type="explanation" resp="CG">Otfrid takes the example of "soluuit" from
+                  <note type="explanation" resp="CG">Otfrid takes the example of 'soluuit' from
                      Catullus's verse quoted by Priscian a few lines afterwards, at II 16, 14</note>
                </app>
                <quote source="#EDITION" n="II 16,9">protulit in epodo hoc uersu:</quote>
@@ -4755,8 +4755,8 @@
                            ref="#reference-sign-inverted-cryphia"/>semis caput <g ref="#vel"/>
                         anterior pars capitis <g ref="#vel"/> sinodis caput. <g ref="#vel"/> sine
                         capite</add></rdg>
-                  <note corresp="#gloss-21-8-1" type="explanation" resp="#CG">The explanation "sine
-                     capite" recurs in MS Köln 200, f. 5v</note>
+                  <note corresp="#gloss-21-8-1" type="explanation" resp="#CG">The explanation 'sine
+                     capite' recurs in MS Köln 200, f. 5v</note>
                </app>
                <app type="reference-signs" xml:id="rs-21-8-2">
                   <lem wit="#EDITION">occiput</lem>
@@ -4770,7 +4770,7 @@
                         ana="#glosses-elucidating-the-main-text">Posterior pars capitis· ceruici
                         iuncta</add></rdg>
                   <note corresp="#gloss-21-8-2" type="explanation" resp="#CG">The explanation
-                     "posterior pars capitis" recurs in MS Köln 200, f. 5v; "posterior pars" recurs
+                     'posterior pars capitis' recurs in MS Köln 200, f. 5v; 'posterior pars' recurs
                      in MS München, BSB Clm 18375, f. 10v</note>
                </app>
                <quote source="#EDITION" n="II 21,9">allec allecis, lac lactis, in quo etiam t
@@ -4801,7 +4801,7 @@
                         ana="#glosses-elucidating-the-main-text">templum saturni <supplied
                            resp="#CG" reason="illegible">uel</supplied> montis nomen</add></rdg>
                   <note corresp="#gloss-21-12-1" type="explanation" resp="#CG">Pelium is defined as
-                     "templum Iouis" in MS Köln 200, f. 6r and as "mons ingens" in MS München, BSB
+                     'templum Iouis' in MS Köln 200, f. 6r and as 'mons ingens' in MS München, BSB
                      Clm 18375, f. 10v</note>
                </app>
                <app type="rubrication" xml:id="rubr-21-12-1">
@@ -4901,13 +4901,13 @@
                         ana="#glosses-elucidating-the-main-text"><gap unit="char" quantity="2"
                            reason="illegible"/><supplied resp="#CG">cl</supplied>abu <g ref="#vel"/>
                         clauu</add></rdg>
-                  <note corresp="#gloss-21-22-1" type="explanation" resp="#CG"> See: „clavus, m.“,
+                  <note corresp="#gloss-21-22-1" type="explanation" resp="#CG"> See: 'clavus, m.',
                      in: Mittellateinisches Wörterbuch <ref
                         target="https://www.woerterbuchnetz.de/MLW?lemid=C04857"/> accessed
-                     16.02.2024. It seems to me that Otfrid declined here the word "clavus/clabus,
-                     -i" (i.e. nail, second Latin declension) according to the fourth declension.
-                     "Clabu vel clauu" seems to be an ablativus instrumentalis that Otfrid wrote as
-                     a gloss on the verb "scalpo", in order to explain what one scratches
+                     16.02.2024. It seems to me that Otfrid declined here the word 'clavus/clabus,
+                     -i' (i.e. nail, second Latin declension) according to the fourth declension.
+                     'Clabu vel clauu' seems to be an ablativus instrumentalis that Otfrid wrote as
+                     a gloss on the verb 'scalpo', in order to explain what one scratches
                      with.</note>
                </app>
                <app type="gloss" xml:id="gloss-21-22-2">
@@ -5046,8 +5046,8 @@
                         facs="#zone.4r.35" ana="#glosses-elucidating-the-main-text">liber de
                         diuersis storiis</add></rdg>
                   <note corresp="#gloss-22-9-1" type="explanation" resp="#CG">The corresponding
-                     gloss in MS München BSB Clm 18375, f. 10v reads: "poli id est diuersis
-                     historiis vel nomen loci".</note>
+                     gloss in MS München BSB Clm 18375, f. 10v reads: 'poli id est diuersis
+                     historiis vel nomen loci'.</note>
                </app>
                <quote source="#EDITION" n="II 22,10">«Tatius in arce, ubi nunc aedes <g
                      ref="#irish-est"/> Iunonis Mo<lb n="20" break="no" ed="4r"/>netae, qui
@@ -5131,7 +5131,7 @@
                         ana="#glosses-elucidating-the-main-text-with-red-marginal-title"><hi
                            rend="red script">de ·u· &amp; ·o·</hi></add></rdg>
                   <note corresp="#gloss-22-17-1" type="explanation" resp="#CG">MS München BSB Clm
-                     18375, f. 10v conveys the similar title: "De o et u".</note>
+                     18375, f. 10v conveys the similar title: 'De o et u'.</note>
                </app>
                <quote source="#EDITION" n="II 22,18">quoque in quibusdam, ut ruo rui, domo <lb
                      n="24" ed="4r"/> domui, doceo docui.</quote>
@@ -5335,7 +5335,7 @@
                         />genus carminis· laus apollinis</add></rdg>
                   <note corresp="#gloss-23-15-1" type="explanation" resp="#CG">MS Köln 200, f. 6v
                      contains the same gloss. MS München BSB Clm 18375, f. 11r conveys the gloss:
-                     "laus apollinis".</note>
+                     'laus apollinis'.</note>
                </app>
                <quote source="#EDITION" n="II 23,16">sōl, pāx, pār. praeterea sola haec <lb n="35"
                      ed="4r"/> semiuocalis post s ponitur, quod</quote>
@@ -5469,7 +5469,7 @@
                            ref="#reference-sign-inverted-trigon"/>Id est sub uno iugo sunt soni <g
                            ref="#vel"/> affinitatem habent</add></rdg>
                   <note corresp="#gloss-24-3-1" type="explanation" resp="#CG">MS Köln 200, f. 6v
-                     contains the gloss: "sub uno iugo soni"</note>
+                     contains the gloss: 'sub uno iugo soni'</note>
                </app>
                <app type="gloss" xml:id="gloss-24-3-2">
                   <lem wit="#EDITION">uel</lem>
@@ -5575,11 +5575,10 @@
                   <note corresp="#ohg-24-9-1" type="explanation" resp="#CG"> This OHG gloss was
                      first edited by Hans Butzmann, <hi rend="italic">Althochdeutsche
                         Priscian-Glossen aus Weissenburg</hi>, PBB. 86/3 (Halle 1964), pp. 388-402,
-                     at p. 392, no. 5. It recurs in MS München, BSB, clm 280a, f. 6r</note>
-                  <note resp="#CG" type="explanation" target="#gloss-24-9-3"> The gloss "frequenter
-                     spuo" occurs also in MS Köln 200, f. 6v and MS München, BSB, clm 18375, f. 11r.
-                     It seems that Otfrid firstly wrote "spuo uel rachison" and that he later added
-                     "frequenter" before "spuo" and "uel parum poto" after "rachison".</note>
+                     at p. 392, no. 5. It recurs in MS München, BSB, clm 280a, f. 6r. - The gloss 'frequenter
+                     spuo' occurs also in MS Köln 200, f. 6v and MS München, BSB, clm 18375, f. 11r.
+                     It seems that Otfrid firstly wrote 'spuo uel rachison' and that he later added
+                     'frequenter' before 'spuo' and 'uel parum poto' after 'rachison'.</note>
                </app>
                <app type="gloss" xml:id="gloss-24-9-4">
                   <lem wit="#EDITION">massa</lem>
@@ -5754,8 +5753,8 @@
                         facs="#zone.4v.35" ana="#glosses-elucidating-the-main-text">secundum
                         genetiuum</add></rdg>
                   <note resp="#CG" type="explanation" target="#gloss-25-2-1"> A very similar gloss
-                     occurs in MS Köln 200, f. 6v, which reads: "ideo seruatur o in
-                     genitiuo".</note>
+                     occurs in MS Köln 200, f. 6v, which reads: 'ideo seruatur o in
+                     genitiuo'.</note>
                </app>
                <app type="gloss" xml:id="gloss-25-2-2">
                   <lem wit="#COD_50">platanos</lem>
@@ -5896,7 +5895,7 @@
                   <note corresp="#ohg-25-13-1" type="explanation" resp="#CG"> This OHG gloss was
                      first edited by Hans Butzmann, <hi rend="italic">Althochdeutsche
                         Priscian-Glossen aus Weissenburg</hi>, PBB. 86/3 (Halle 1964), pp. 388-402,
-                     at p. 392, no. 6, however in the reading: "gisaituuisu".</note>
+                     at p. 392, no. 6, however in the reading: 'gisaituuisu'.</note>
                </app>
                <quote source="#EDITION" n="II 25,14">rĕor ratus; <add type="text-variation"
                      xml:id="tv-25-14-1" hand="#scr" source="#COD_50" place="above"><hi

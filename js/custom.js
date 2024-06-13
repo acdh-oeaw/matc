@@ -61,6 +61,26 @@ var viewer = OpenSeadragon({
 	{
 		type: "image",
 		url: "http://diglib.hab.de/mss/50-weiss/max/00015.jpg"
+    },
+	{
+		type: "image",
+		url: "http://diglib.hab.de/mss/50-weiss/max/00016.jpg"
+    },
+	{
+		type: "image",
+		url: "http://diglib.hab.de/mss/50-weiss/max/00017.jpg"
+    },
+	{
+		type: "image",
+		url: "http://diglib.hab.de/mss/50-weiss/max/00018.jpg"
+    },
+	{
+		type: "image",
+		url: "http://diglib.hab.de/mss/50-weiss/max/00019.jpg"
+    },
+	{
+		type: "image",
+		url: "http://diglib.hab.de/mss/50-weiss/max/00020.jpg"
     }
 	],
 	showNavigationControl: true,

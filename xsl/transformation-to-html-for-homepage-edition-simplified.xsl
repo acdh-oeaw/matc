@@ -67,6 +67,7 @@
                                             </li>
                                             <li class="nav-item dropdown-submenu"><a title="Interactive Edition" href="./edition-interactive.html" class="nav-link">Interactive Edition</a></li>
                                             <li class="nav-item dropdown-submenu"><a title="Simplified Edition" href="./edition-simplified.html" class="nav-link">Simplified Edition</a></li>
+                                            <li class="nav-item dropdown-submenu"><a title="Statistics" href="./statistics.html" class="nav-link">Statistics</a></li>
                                             <li class="nav-item dropdown-submenu">
                                                 <a title="Technical Documentation" href="./technical-documentation.html" class="nav-link">Technical Documentation</a>
                                             </li>
@@ -102,7 +103,7 @@
                                             <h2 class="heading-level-2">Simplified Digital Edition</h2>
                                         </header><!-- .entry-header -->
                                         <div class="entry-content">
-                                            <xsl:call-template name="statistics"/>
+                                            <!-- <xsl:call-template name="statistics"/> -->
                                             <xsl:apply-templates select="child::node()"/>
                                         </div>
                                     </article>

@@ -1,0 +1,42 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Schema for glosses",
+    "description": "Schema for validating the json of glosses",
+    "type": "object",
+    "properties": {
+        "glosses": {
+            "description": "wrapper for the glosses",
+            "type": "array",
+            "items": {
+                "type" : "object",
+                "properties": {
+                    "id": { "type": "string" },
+                    "patternProperties": { "^gloss-\n*-\n*-\n*": {
+                        "type": "object",
+                        "properties": {
+                            "reading": { "type": "object",
+                            "properties": {
+                                "witness": { "type" : "string" },
+                                "place": { "type": "string"},
+                                "hand": { "type": "string" },
+                                "text": { "type": "string" },
+                                "analysis": { "type": "array", "items": { "type": "string" } },
+                                "zone": { "type": "object"},
+                                "page-url": { "type": "string" },
+                                "index": { "type": "string" }
+                            },
+                            "required": ["witness","place","text","analysis","zone","page-url","index"]
+                            },
+                            "note": { "type": "string" }
+                        },
+                        "required": ["reading"]
+                        } 
+                    }
+                },
+                "required": ["id"]
+            },
+            "minItems": 1,
+            "uniqueItems": true
+        }
+    }
+}
