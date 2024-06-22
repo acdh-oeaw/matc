@@ -161,6 +161,7 @@
                <p>change of t/tt and p/pp (e.g. litera/littera; quatuor/quattuor;
                   apellantur/appellantur);</p>
                <p>change regarding "ms"/"mps" and similars (e.g. hiems/hiemps)</p>
+               <p>change of c/qu (e.g. secuntur/sequuntur;</p>
                <p>assimilations (e.g. inliterata/illiterata; subposui/supposui);</p>
                <p>differences from Hertz' edition in the use of capital letters for proper
                   names.</p>
@@ -2197,11 +2198,10 @@
                </app>
                <app type="gloss" xml:id="gloss-6-8-5">
                   <lem wit="#EDITION">ad totam</lem>
-                  <rdg wit="#COD_50"><add place="upper margin" hand="#gl-2"
-                        facs="#zone.1v.64" ana="#glosses-elucidating-the-main-text"><g
-                           ref="#reference-sign-cross"/> quasi dicat· Ego discerno ut omnes
-                        litterae· longe quoque uocales ad hanc comprehensionem
-                     pertineant.</add></rdg>
+                  <rdg wit="#COD_50"><add place="upper margin" hand="#gl-2" facs="#zone.1v.64"
+                        ana="#glosses-elucidating-the-main-text"><g ref="#reference-sign-cross"/>
+                        quasi dicat· Ego discerno ut omnes litterae· longe quoque uocales ad hanc
+                        comprehensionem pertineant.</add></rdg>
                </app>
                <quote source="#EDITION" n="II 6,9">uocis<lb n="25" ed="1v"/> literatae (ad hanc enim
                   etiam productae uocales breuissimae</quote>
@@ -2259,8 +2259,9 @@
                   plerumque in ceratis tabulis</quote>
                <app type="gloss" xml:id="gloss-6-14-1">
                   <lem wit="#EDITION">a lituris</lem>
-                  <rdg wit="#COD_50"><add place="interlinear above" hand="#Otfrid" facs="#zone.1v.71"
-                        ana="#synonyms"><g ref="#idest"/> a deletionibus</add></rdg>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#Otfrid"
+                        facs="#zone.1v.71" ana="#synonyms"><g ref="#idest"/> a
+                     deletionibus</add></rdg>
                </app>
                <app type="text-variation" xml:id="tv-6-14-1">
                   <lem wit="#EDITION">in</lem>
@@ -2280,9 +2281,9 @@
                   elementorum: sicut enim illa coeun<lb n="29" break="no" ed="1v"/>tia omne</quote>
                <app type="gloss" xml:id="gloss-6-16-1">
                   <lem wit="#EDITION">elementorum</lem>
-                  <rdg wit="#COD_50"><add place="interlinear above" hand="#Otfrid" facs="#zone.1v.72"
-                        ana="#glosses-elucidating-the-main-text">.elementum dicitur uniuersitatis
-                        materia.</add></rdg>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#Otfrid"
+                        facs="#zone.1v.72" ana="#glosses-elucidating-the-main-text">.elementum
+                        dicitur uniuersitatis materia.</add></rdg>
                </app>
                <quote source="#EDITION" n="II 6,17">perficiunt corpus, sic etiam haec coniuncta
                   literalem uocem quasi corpus</quote>
@@ -5575,10 +5576,11 @@
                   <note corresp="#ohg-24-9-1" type="explanation" resp="#CG"> This OHG gloss was
                      first edited by Hans Butzmann, <hi rend="italic">Althochdeutsche
                         Priscian-Glossen aus Weissenburg</hi>, PBB. 86/3 (Halle 1964), pp. 388-402,
-                     at p. 392, no. 5. It recurs in MS München, BSB, clm 280a, f. 6r. - The gloss 'frequenter
-                     spuo' occurs also in MS Köln 200, f. 6v and MS München, BSB, clm 18375, f. 11r.
-                     It seems that Otfrid firstly wrote 'spuo uel rachison' and that he later added
-                     'frequenter' before 'spuo' and 'uel parum poto' after 'rachison'.</note>
+                     at p. 392, no. 5. It recurs in MS München, BSB, clm 280a, f. 6r. - The gloss
+                     'frequenter spuo' occurs also in MS Köln 200, f. 6v and MS München, BSB, clm
+                     18375, f. 11r. It seems that Otfrid firstly wrote 'spuo uel rachison' and that
+                     he later added 'frequenter' before 'spuo' and 'uel parum poto' after
+                     'rachison'.</note>
                </app>
                <app type="gloss" xml:id="gloss-24-9-4">
                   <lem wit="#EDITION">massa</lem>
@@ -5746,6 +5748,12 @@
                <app type="rubrication" xml:id="rubr-25-2-1">
                   <lem wit="#EDITION">a</lem>
                   <rdg wit="#COD_50" hand="#scr"><hi rend="red capitalis">A</hi></rdg>
+               </app>
+               <app type="gloss" xml:id="gloss-25-2-3">
+                  <lem wit="#EDITION">a quoque</lem>
+                  <rdg wit="#COD_50"><add place="left margin" hand="#Otfrid" facs="#zone.4v.45"
+                        ana="#glosses-elucidating-the-main-text-with-red-marginal-title"><hi
+                           rend="red script">De· a·</hi></add></rdg>
                </app>
                <app type="gloss" xml:id="gloss-25-2-1">
                   <lem wit="#COD_50">robor</lem>
@@ -5934,7 +5942,7 @@
                         ana="#encyclopedic-glosses">Toga uestis alba quam romani tempore pacis
                         portauerunt</add></rdg>
                </app>
-               <quote source="#EDITION" n="II 25,15">antiqui quoque amplocti pro amplĕcti dicebant
+               <quote source="#EDITION" n="II 25,15">antiqui quoque anmplocti pro amplĕcti dicebant
                   et animum aduorti <lb n="17" ed="4v"/> pro</quote>
                <app type="rubrication" xml:id="rubr-25-15-1">
                   <lem wit="#EDITION">antiqui</lem>
@@ -5977,88 +5985,373 @@
                            ref="#reference-sign-inverted-cryphia"/>habitaculum pastorum <g
                            ref="#vel"/> eorum qui in uineis prouident</add></rdg>
                </app>
-               <!--  -->
-               <quote source="#EDITION" n="II 25,17">quotienscumque nd sequuntur in his, quae a
-                  tertia coniugatione nascuntur, loco ĕ</quote>
+               <quote source="#EDITION" n="II 25,17">quotie<add type="correction" hand="#Otfrid"
+                     place="above">N</add>scumque nd sequuntur in his, quae a tertia coniugatione
+                     nas<lb n="18" break="no" ed="4v"/>cuntur, loco ĕ</quote>
+               <app type="text-variation" xml:id="tv-25-17-1">
+                  <lem wit="#EDITION">nd</lem>
+                  <rdg wit="#COD_50" hand="#scr">·D· N</rdg>
+               </app>
+               <app type="gloss" xml:id="gloss-25-17-1">
+                  <lem wit="#COD_50">·D· N</lem>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#Otfrid"
+                        facs="#zone.4v.44" ana="#glosses-elucidating-the-main-text">ad ordinem
+                        literarum respexit</add></rdg>
+                  <note resp="#CG" type="explanation" target="#gloss-25-17-1"> The same gloss occurs
+                     in MS Köln 200, f. 6v.</note>
+               </app>
                <quote source="#EDITION" n="II 25,18">u scriptum inuenimus, ut faciundum, legundum,
                   dicundum,</quote>
                <quote source="#EDITION" n="II 25,19">uertundum pro faciĕndum, legĕndum, dicĕndum,
-                  uertĕndum.</quote>
-               <quote source="#EDITION" n="II 25,20">i transit in a, ut genus generis generatim,
-                  paulus pauli paulatim;</quote>
-               <quote source="#EDITION" n="II 25,21">in e, fortis forte, sapiens sapientis
-                  sapienter; in o, patris patronus</quote>
+                     uertĕn<lb n="19" break="no" ed="4v"/>dum.</quote>
+               <quote source="#EDITION" n="II 25,20"><add type="text-variation" xml:id="tv-25-20-1"
+                     hand="#scr" source="#COD_50" place="left margin"><hi rend="red script"
+                     >I·</hi></add> i transit in a, ut genus generis generatim, paulus pauli
+                  paulatim;</quote>
+               <app type="gloss" xml:id="gloss-25-20-1">
+                  <lem wit="#EDITION">i</lem>
+                  <rdg wit="#COD_50"><add place="left margin" hand="#Otfrid" facs="#zone.4v.46"
+                        ana="#glosses-elucidating-the-main-text-with-red-marginal-title"><hi
+                           rend="red script">De i·</hi></add></rdg>
+               </app>
+               <app type="rubrication" xml:id="rubr-25-20-1">
+                  <lem wit="#EDITION">i</lem>
+                  <rdg wit="#COD_50" hand="#scr"><hi rend="red capitalis">I</hi></rdg>
+               </app>
+               <app type="gloss" xml:id="gloss-25-20-2">
+                  <lem wit="#EDITION">paulus</lem>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#Otfrid"
+                        facs="#zone.4v.47" ana="#synonyms">paruus</add></rdg>
+                  <note resp="#CG" type="explanation" target="#gloss-25-20-1">MS Köln 200, f. 6v
+                     contains the similar gloss "paruus unde pauxillus diminutiuum".</note>
+               </app>
+               <app type="gloss" xml:id="gloss-25-20-3">
+                  <lem wit="#EDITION">paulatim</lem>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#Otfrid"
+                        facs="#zone.4v.48" ana="#synonyms">patienter</add></rdg>
+                  <note resp="#CG" type="explanation" target="#gloss-25-20-1">MS Köln 200, f. 7r
+                     contains the similar gloss "ordinatim caute gradatim pacienter".</note>
+               </app>
+               <quote source="#EDITION" n="II 25,21"><add type="text-variation" xml:id="tv-25-21-1"
+                     hand="#scr" source="#COD_50" place="above"><hi rend="red script">II</hi></add>
+                  in e, fortis forte, sapiens sapientis sapienter; <add type="text-variation"
+                     xml:id="tv-25-21-2" hand="#scr" source="#COD_50" place="above"><hi
+                        rend="red script">III</hi></add> in o, patris <lb n="20" ed="4v"/>
+                  patronus</quote>
+               <app type="rubrication" xml:id="rubr-25-21-1">
+                  <lem wit="#EDITION">in e</lem>
+                  <rdg wit="#COD_50" hand="#scr"><hi rend="red capitalis">I</hi>n e</rdg>
+               </app>
+               <app type="rubrication" xml:id="rubr-25-21-2">
+                  <lem wit="#EDITION">in o</lem>
+                  <rdg wit="#COD_50" hand="#scr"><hi rend="red capitalis">I</hi>n o</rdg>
+               </app>
+               <app type="emendation" xml:id="emendation-25-21-1">
+                  <lem wit="#EDITION">patris</lem>
+                  <rdg wit="#COD_50">patr<del type="expunction">u</del><add hand="#scr"
+                        place="above">i</add>s</rdg>
+               </app>
+               <app type="gloss" xml:id="gloss-25-21-1">
+                  <lem wit="#EDITION">patronus</lem>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#Otfrid"
+                        facs="#zone.4v.49" ana="#glosses-elucidating-the-main-text">qui tuetur more
+                        patris</add></rdg>
+               </app>
+               <app type="reference-signs" xml:id="rs-25-21-1">
+                  <lem wit="#EDITION">patronus</lem>
+                  <rdg wit="#COD_50"><add place="left margin" hand="#scr" facs="#zone.4v.50"
+                        ana="#lemma-gloss"><g ref="#reference-sign-virga-dot"/></add></rdg>
+               </app>
+               <app type="gloss" xml:id="gloss-25-21-2">
+                  <lem wit="#EDITION">patronus</lem>
+                  <rdg wit="#COD_50"><add place="left margin" hand="#scr" facs="#zone.4v.51"
+                        ana="#synonyms"><g ref="#reference-sign-virga-dot"/>patrosus
+                     defensor</add></rdg>
+                  <note resp="#CG" type="explanation" target="#gloss-25-21-2">I could not find any
+                     other occurrence of the word "patrosus". It is probably an error for
+                     "patronus". "Defensor" as a synonym for "patronus" occurs also in MS Köln 200,
+                     f. 7r and in MS BSB Clm 280a, f. 6r</note>
+               </app>
                <quote source="#EDITION" n="II 25,22">et patro uerbum, olli pro illi, saxi saxosus;
-                  in u, carnis</quote>
+                     <add type="text-variation" xml:id="tv-25-22-1" hand="#scr" source="#COD_50"
+                     place="above"><hi rend="red script">IIII</hi></add> in u, carnis</quote>
+               <app type="rubrication" xml:id="rubr-25-22-1">
+                  <lem wit="#EDITION">in u</lem>
+                  <rdg wit="#COD_50" hand="#scr"><hi rend="red capitalis">I</hi>n V</rdg>
+               </app>
+               <app type="reference-signs" xml:id="rs-25-22-1">
+                  <lem wit="#EDITION">patro</lem>
+                  <rdg wit="#COD_50"><add place="above" hand="#Otfrid" facs="#zone.4v.52"
+                        ana="#lemma-gloss"><g ref="#reference-sign-trigon"/></add></rdg>
+               </app>
+               <app type="gloss" xml:id="gloss-25-22-1">
+                  <lem wit="#EDITION">patro</lem>
+                  <rdg wit="#COD_50"><add place="left margin" hand="#Otfrid" facs="#zone.4v.53"
+                        ana="#synonyms"><g ref="#reference-sign-trigon"/>genero· semen
+                     fundo</add></rdg>
+                  <note resp="#CG" type="explanation" target="#gloss-25-22-1">MS Köln 200, f. 7r
+                     contains the same gloss. The gloss "genero" occurs also in MSS BSB Clm 280a f.
+                     6r and BSB Clm 18375, f. 11v.</note>
+               </app>
+               <app type="reference-signs" xml:id="rs-25-22-2">
+                  <lem wit="#EDITION">patro</lem>
+                  <rdg wit="#COD_50"><add place="above" hand="#scr" facs="#zone.4v.54"
+                        ana="#lemma-gloss"><g ref="#reference-sign-virga-dot"/></add></rdg>
+               </app>
+               <app type="gloss" xml:id="gloss-25-22-2">
+                  <lem wit="#EDITION">patro</lem>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#scr" facs="#zone.4v.55"
+                        ana="#synonyms"><g ref="#reference-sign-virga-dot"/>perficio</add></rdg>
+                  <note resp="#CG" type="explanation" target="#gloss-25-22-2">"perficio" as a
+                     synonym for "patro" occurs also in MS Köln 200, f. 7r; MS BSB Clm 18375, f.
+                     11v; MS BSB Clm 280a f. 6r.</note>
+               </app>
                <quote source="#EDITION" n="II 25,23">carnufex antiqui pro carnifex, ut lubens pro
                   libens et pessumus pro</quote>
-               <quote source="#EDITION" n="II 25,24">pessimus. sciendum tamen est, quod pleraque
-                  nomina, quae cum</quote>
-               <quote source="#EDITION" n="II 25,25">uerbis siue participiis componuntur, uel
-                  nominatiui mutant extremam syllabam</quote>
+               <quote source="#EDITION" n="II 25,24">pes<lb n="21" break="no" ed="4v"/>simus.
+                  sciendum tamen <g ref="#irish-est"/>, quod pleraque nomina, quae cum</quote>
+               <app type="rubrication" xml:id="rubr-25-24-1">
+                  <lem wit="#EDITION">sciendum</lem>
+                  <rdg wit="#COD_50" hand="#scr"><hi rend="letter filled with red ink"
+                     >S</hi>ciendum</rdg>
+               </app>
+               <app type="gloss" xml:id="gloss-25-24-1">
+                  <lem wit="#EDITION">sciendum</lem>
+                  <rdg wit="#COD_50"><add place="left margin" hand="#Otfrid" facs="#zone.4v.56"
+                        ana="#glosses-elucidating-the-main-text-with-red-marginal-title"><hi
+                           rend="red script">De nominatiui ultima uocali mutata in ·i·
+                        correpta</hi></add></rdg>
+               </app>
+               <quote source="#EDITION" n="II 25,25">uerbis siue participiis componuntur, <g
+                     ref="#vel"/> nominatiui mutant extremam <lb n="22" ed="4v"/> syllabam</quote>
                <quote source="#EDITION" n="II 25,26">in i correptam, ut arma armĭpotens, homo
                   homĭcida, cornu</quote>
                <quote source="#EDITION" n="II 25,27">cornĭger, stella stellĭger, arcus arcĭtenens,
-                  fatum fatĭdicus, aurum</quote>
+                  fatum <lb n="23" ed="4v"/> fatĭdicus, aurum</quote>
+               <app type="gloss" xml:id="gloss-25-27-1">
+                  <lem wit="#COD_50">fatidicus</lem>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#Otfrid"
+                        facs="#zone.4v.57" ana="#etymological-glosses">qui fatum dicit</add></rdg>
+                  <note resp="#CG" type="explanation" target="#gloss-25-20-1">MS BSB Clm 18375, f.
+                     11v contains the same gloss.</note>
+               </app>
             </div>
             <div type="page-of-Hertz-edition" n="Liber Primus" xml:id="liber-primus.22"
                next="#liber-primus.23" prev="liber-primus.21" corresp="images-keil:Keil_v2_026.gif"
                xml:lang="la">
-               <quote source="#EDITION" n="II 26,1">aurĭfex, causa causĭdicus, luctus luctĭficus, cornu cornĭcen, tuba</quote>
-               <quote source="#EDITION" n="II 26,2">tubĭcen, fides fidĭcen (tibia tibīcen pro tibiicen: tibia enim a in</quote>
-               <quote source="#EDITION" n="II 26,3">i debuit mutare, ut supra dictum est, unde pro duabus i breuibus una</quote>
-               <quote source="#EDITION" n="II 26,4">longa facta est, quod in alia huiuscemodi compositione non inuenies),</quote>
-               <quote source="#EDITION" n="II 26,5">uulnus uulnĭficus, magnus magnĭficus, amplus amplĭficus, fructus</quote>
-               <quote source="#EDITION" n="II 26,6">fructĭfer, opus opĭfex, uel genetiui, ut uir uiri uirĭpotens, par paris</quote>
-               <quote source="#EDITION" n="II 26,7">parrĭcida, quod uel a pari componitur uel, ut alii, a patre: ergo si</quote>
-               <quote source="#EDITION" n="II 26,8">est a pari, r euphoniae causa additur, sin a patre, t in r conuertitur;</quote>
-               <quote source="#EDITION" n="II 26,9">quibusdam tamen a parente uidetur esse compositum et pro</quote>
-               <quote source="#EDITION" n="II 26,10">parenticida per syncopam et commutationem t in r factum parricida. lux</quote>
-               <quote source="#EDITION" n="II 26,11">quoque lucis lucĭfer, flos floris florĭfer, sacer sacri sacrĭficus, frater</quote>
-               <quote source="#EDITION" n="II 26,12">fratris fratrĭcida, soror sororis sororĭcida, ars artis artĭfex. pauca</quote>
-               <quote source="#EDITION" n="II 26,13">sunt, quae hanc non seruant regulam, ut auceps, aues capiens,</quote>
-               <quote source="#EDITION" n="II 26,14">menceps, mente captus, augustus et similia et quae ex duobus nominatiuis</quote>
-               <quote source="#EDITION" n="II 26,15">componuntur. sed ea, cum de figuris dicemus, latius tractabimus.</quote>
-               <quote source="#EDITION" n="II 26,16">o aliquot Italiae ciuitates teste Plinio non habebant, sed loco eius</quote>
-               <quote source="#EDITION" n="II 26,17">ponebant u, et maxime Vmbri et Tusci. transit o in a, ut creo creaui;</quote>
-               <quote source="#EDITION" n="II 26,18">in e, tutor tutela, bonus bene, <foreign xml:lang="grc">γόνυ</foreign> genu, <foreign xml:lang="grc">πός</foreign> pes, antiqui</quote>
-               <quote source="#EDITION" n="II 26,19">compes pro compos, in quo Aeolis sequimur: illi enim <foreign xml:lang="grc">ἐδόντα</foreign> pro</quote>
-               <quote source="#EDITION" n="II 26,20"><foreign xml:lang="grc">ὀδόντα</foreign> dicunt. conuertitur o etiam in i, uirgo uirginis; in u, tremo</quote>
-               <quote source="#EDITION" n="II 26,21">tremui, huc illuc pro hoc et illoc (Virgilius in VIII:</quote>
-               <quote source="#EDITION" n="II 26,22">«hoc tunc ignipotens caelo descendit ab alto»)</quote>
-               <quote source="#EDITION" n="II 26,23">et pleraque, quae apud Graecos nominatiuum in <foreign xml:lang="grc">ος</foreign> terminant, o in u</quote>
-               <quote source="#EDITION" n="II 26,24">conuertunt apud nos, ut <foreign xml:lang="grc">Κῦρος</foreign> Cyrus, <foreign xml:lang="grc">σπονδεῖος</foreign> spondeus, <foreign xml:lang="grc">Κύπρος</foreign></quote>
-               <quote source="#EDITION" n="II 26,25">Cyprus, <foreign xml:lang="grc">πέλαγος</foreign> pelagus. multa praeterea uetustissimi etiam in</quote>
-               <quote source="#EDITION" n="II 26,26">principalibus mutabant syllabis, gungrum pro gongrum, cunchin pro</quote>
+               <quote source="#EDITION" n="II 26,1">aurĭfex, causa causĭdicus, luctus luctĭficus,
+                  cornu cornĭcen, tuba</quote>
+               <app type="gloss" xml:id="gloss-26-1-1">
+                  <lem wit="#COD_50">aurifex</lem>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#Otfrid"
+                        facs="#zone.4v.58" ana="#glosses-elucidating-the-main-text">faber
+                     auri</add></rdg>
+                  <note resp="#CG" type="explanation" target="#gloss-26-1-1">MSS BSB Clm 18375, f.
+                     11v and BSB Clm 280a f. 6r contain the similar gloss: "aurum faciens".</note>
+               </app>
+               <app type="gloss" xml:id="gloss-26-1-2">
+                  <lem wit="#COD_50">causidicus</lem>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#Otfrid"
+                        facs="#zone.4v.59" ana="#etymological-glosses">qui causam dicit</add></rdg>
+                  <note resp="#CG" type="explanation" target="#gloss-26-1-2">MS BSB Clm 18375, f.
+                     11v and MS Köln 200, f. 7r contain the same gloss.</note>
+               </app>
+               <app type="gloss" xml:id="gloss-26-1-3">
+                  <lem wit="#COD_50">luctificus</lem>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#Otfrid"
+                        facs="#zone.4v.60" ana="#etymological-glosses">luctum faciens</add></rdg>
+                  <note resp="#CG" type="explanation" target="#gloss-26-1-3">MS Köln 200, f. 7r
+                     contain the same gloss; MS BSB Clm 18375, f. 11v contains the very similar
+                     form: "qui luctum facit".</note>
+               </app>
+               <quote source="#EDITION" n="II 26,2">tubĭcen, fides fidĭcen <add
+                     type="text-variation" xml:id="tv-26-2-1" hand="#scr" source="#COD_50"
+                     place="inline">fides plurale· Cuius sin<lb n="24" break="no" ed="4v"/>gulare
+                     fidis <g ref="#irish-est"/>· unde et diminutiuum fidicula· fidicen</add> (tibia
+                  tibīcen pro tibiicen: tibia enim a in</quote>
+               <app type="emendation" xml:id="emendation-26-2-1">
+                  <lem wit="#COD_50">fidicen</lem>
+                  <rdg wit="#COD_50">fidicen <add hand="#Otfrid"
+                     place="above">&amp;</add>s</rdg>
+               </app>
+               <app type="gloss" xml:id="gloss-26-2-1">
+                  <lem wit="#COD_50">fides fidicen</lem>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#Otfrid"
+                     facs="#zone.4v.61" ana="#glosses-elucidating-the-main-text">corda citharę</add></rdg>
+                  </app>
+               <quote source="#EDITION" n="II 26,3">i debuit mutare, ut supra dic<lb n="25" break="no" ed="4v"/>tum <g ref="#irish-est"/>, unde pro
+                  duabus i breuibus una</quote>
+               <quote source="#EDITION" n="II 26,4">longa facta est, quod in alia huiuscemodi
+                  compositione non inuenies),</quote>
+               <quote source="#EDITION" n="II 26,5">uulnus uulnĭficus, <lb n="26" ed="4v"/> magnus magnĭficus, amplus
+                  amplĭficus, fructus</quote>
+               <quote source="#EDITION" n="II 26,6">fructĭfer, opus opĭfex, uel genetiui, ut uir
+                  uiri uirĭpotens, par paris</quote>
+               <app type="rubrication" xml:id="rubr-26-6-1">
+                  <lem wit="#EDITION">uel</lem>
+                  <rdg wit="#COD_50" hand="#scr"><hi rend="letter filled with red ink"
+                     >u</hi>el</rdg>
+               </app>
+               <app type="gloss" xml:id="gloss-26-6-1">
+                  <lem wit="#EDITION">uel genetiui</lem>
+                  <rdg wit="#COD_50"><add place="left margin" hand="#Otfrid" facs="#zone.4v.62"
+                     ana="#glosses-elucidating-the-main-text-with-red-marginal-title"><hi
+                        rend="red script">De uocali genetiui</hi></add></rdg>
+               </app>
+               <quote source="#EDITION" n="II 26,7">parrĭcida, <lb n="27" ed="4v"/> quod uel a pari componitur uel, ut
+                  alii, a patre: ergo si</quote>
+               <quote source="#EDITION" n="II 26,8">est a pari, r euphoniae causa additur, sin a
+                  patre, t in r conuertitur;</quote>
+               <quote source="#EDITION" n="II 26,9"><lb n="28" ed="4v"/> quibusdam tamen a parente uidetur esse
+                  compositum et pro</quote>
+               <quote source="#EDITION" n="II 26,10">parenticida per syncopam et commutationem t in
+                  r factum par<lb n="29" break="no" ed="4v"/>ricida. lux</quote>
+               <quote source="#EDITION" n="II 26,11">quoque lucis lucĭfer, flos floris florĭfer,
+                  sacer sacri sacrĭficus, frater</quote>
+               <quote source="#EDITION" n="II 26,12">fratris fratrĭcida, soror sororis sororĭcida,
+                  ars ar<lb n="30" break="no" ed="4v"/>tis artĭfex. pauca</quote>
+               <quote source="#EDITION" n="II 26,13">sunt, quae hanc non seruant regulam, ut auceps,
+                  aues capiens,</quote>
+               <quote source="#EDITION" n="II 26,14">menceps, mente captus, au<lb n="31" break="no" ed="4v"/>gustus et similia et
+                  quae ex duobus nominatiuis</quote>
+               <app type="text-variation" xml:id="tv-26-14-1">
+                  <lem wit="#EDITION">menceps</lem>
+                  <rdg wit="#COD_50" hand="#scr">mens mentis</rdg>
+               </app>
+               <app type="text-variation" xml:id="tv-26-14-2">
+                  <lem wit="#EDITION">augustus</lem>
+                  <rdg wit="#COD_50" hand="#scr">auctus augustus</rdg>
+               </app>
+               <app type="gloss" xml:id="gloss-26-14-1">
+                  <lem wit="#COD_50">mens mentis</lem>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#Otfrid"
+                     facs="#zone.4v.63" ana="#text-variant">menceps· alii·</add></rdg>
+                  <note resp="#CG" type="explanation" target="#gloss-26-14-1">MSS BSB Clm 18375, f. 12r and Köln 200, f. 7r
+                     correct the reading "mens mentis" with "menceps".</note>
+               </app>
+               <app type="gloss" xml:id="gloss-26-14-2">
+                  <lem wit="#EDITION">mente captus</lem>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#Otfrid"
+                     facs="#zone.4v.64" ana="#glosses-elucidating-the-main-text"><g ref="#idest"/> debilis</add></rdg>
+                  <note resp="#CG" type="explanation" target="#gloss-26-14-2">MS Köln 200, f. 7r
+                     contains the similar gloss "una parte debilis".</note>
+               </app>
+               <app type="gloss" xml:id="gloss-26-14-3">
+                  <lem wit="#COD_50">auctus</lem>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#Otfrid"
+                     facs="#zone.4v.65" ana="#etymological-glosses">auium actus</add></rdg>
+                  </app>
+               <app type="gloss" xml:id="gloss-26-14-4">
+                  <lem wit="#COD_50">auctus</lem>
+                  <rdg wit="#COD_50"><add place="interlinear below" hand="#scr"
+                     facs="#zone.4v.66" ana="#text-variant">augur</add></rdg>
+               </app>
+               <app type="gloss" xml:id="gloss-26-14-5">
+                  <lem wit="#EDITION">augustus</lem>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#Otfrid"
+                     facs="#zone.4v.67" ana="#etymological-glosses">ab augendo</add></rdg>
+               </app>
+               <quote source="#EDITION" n="II 26,15">componuntur. sed ea, cum de figuris dicemus,
+                  latius tractabimus.</quote>
+               <quote source="#EDITION" n="II 26,16"><lb n="32" ed="4v"/>o aliquot Italiae ciuitates teste Plinio non
+                  habebant, sed loco eius</quote>
+               <app type="rubrication" xml:id="rubr-26-16-1">
+                  <lem wit="#EDITION">o</lem>
+                  <rdg wit="#COD_50" hand="#scr"><hi rend="letter filled with red ink"
+                     >o</hi></rdg>
+               </app>
+               <app type="gloss" xml:id="gloss-26-16-1">
+                  <lem wit="#EDITION">o</lem>
+               <rdg wit="#COD_50"><add place="left margin" hand="#Otfrid" facs="#zone.4v.68"
+                  ana="#glosses-elucidating-the-main-text-with-red-marginal-title"><hi
+                     rend="red script">De o</hi></add></rdg>
+                     </app>
+               <app type="gloss" xml:id="gloss-26-16-2">
+                  <lem wit="#EDITION">aliquot</lem>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#scr"
+                     facs="#zone.4v.69" ana="#glosses-elucidating-the-main-text">pro aliquid</add></rdg>
+               </app>
+               
+               
+               
+               <!--  -->
+               <quote source="#EDITION" n="II 26,17">ponebant u, et maxime Vmbri et Tusci. transit o
+                  in a, ut creo creaui;</quote>
+               <quote source="#EDITION" n="II 26,18">in e, tutor tutela, bonus bene, <foreign
+                     xml:lang="grc">γόνυ</foreign> genu, <foreign xml:lang="grc">πός</foreign> pes,
+                  antiqui</quote>
+               <quote source="#EDITION" n="II 26,19">compes pro compos, in quo Aeolis sequimur: illi
+                  enim <foreign xml:lang="grc">ἐδόντα</foreign> pro</quote>
+               <quote source="#EDITION" n="II 26,20"><foreign xml:lang="grc">ὀδόντα</foreign>
+                  dicunt. conuertitur o etiam in i, uirgo uirginis; in u, tremo</quote>
+               <quote source="#EDITION" n="II 26,21">tremui, huc illuc pro hoc et illoc (Virgilius
+                  in VIII:</quote>
+               <quote source="#EDITION" n="II 26,22">«hoc tunc ignipotens caelo descendit ab
+                  alto»)</quote>
+               <quote source="#EDITION" n="II 26,23">et pleraque, quae apud Graecos nominatiuum in
+                     <foreign xml:lang="grc">ος</foreign> terminant, o in u</quote>
+               <quote source="#EDITION" n="II 26,24">conuertunt apud nos, ut <foreign xml:lang="grc"
+                     >Κῦρος</foreign> Cyrus, <foreign xml:lang="grc">σπονδεῖος</foreign> spondeus,
+                     <foreign xml:lang="grc">Κύπρος</foreign></quote>
+               <quote source="#EDITION" n="II 26,25">Cyprus, <foreign xml:lang="grc"
+                     >πέλαγος</foreign> pelagus. multa praeterea uetustissimi etiam in</quote>
+               <quote source="#EDITION" n="II 26,26">principalibus mutabant syllabis, gungrum pro
+                  gongrum, cunchin pro</quote>
             </div>
             <div type="page-of-Hertz-edition" n="Liber Primus" xml:id="liber-primus.23"
                next="#liber-primus.24" prev="liber-primus.22" corresp="images-keil:Keil_v2_027.gif"
                xml:lang="la">
-               <quote source="#EDITION" n="II 27,1">conchin, huminem pro hominem proferentes, funtes pro fontes,</quote>
-               <quote source="#EDITION" n="II 27,2">frundes pro frondes, unde Lucretius in libro primo:</quote>
-               <quote source="#EDITION" n="II 27,3">«angustoque fretu rapidum mare diuidit undis»,</quote>
+               <quote source="#EDITION" n="II 27,1">conchin, huminem pro hominem proferentes, funtes
+                  pro fontes,</quote>
+               <quote source="#EDITION" n="II 27,2">frundes pro frondes, unde Lucretius in libro
+                  primo:</quote>
+               <quote source="#EDITION" n="II 27,3">«angustoque fretu rapidum mare diuidit
+                  undis»,</quote>
                <quote source="#EDITION" n="II 27,4">pro freto; idem in tertio:</quote>
-               <quote source="#EDITION" n="II 27,5">«atque ea nimirum quaecumque Acherunte profundo»,</quote>
+               <quote source="#EDITION" n="II 27,5">«atque ea nimirum quaecumque Acherunte
+                  profundo»,</quote>
                <quote source="#EDITION" n="II 27,6">pro Acheronte; in eodem:</quote>
-               <quote source="#EDITION" n="II 27,7">«nec Tityon uolucres ineunt Acherunte iacentem»,</quote>
-               <quote source="#EDITION" n="II 27,8">quae tamen a iunioribus repudiata sunt, quasi rustico more dicta.</quote>
-               <quote source="#EDITION" n="II 27,9">u quoque multis Italiae populis in usu non erat, sed e contrario o,</quote>
-               <quote source="#EDITION" n="II 27,10">unde Romanorum quoque uetustissimi in multis dictionibus loco eius o</quote>
-               <quote source="#EDITION" n="II 27,11">posuisse inueniuntur, poblicum pro publicum, quod testatur Papirianus</quote>
-               <quote source="#EDITION" n="II 27,12">de orthographia, polchrum pro pulchrum, colpam pro culpam</quote>
-               <quote source="#EDITION" n="II 27,13">dicentes et Hercolem pro Herculem. et maxime digamma antecedente</quote>
-               <quote source="#EDITION" n="II 27,14">hoc faciebant, ut seruos pro seruus, uolgus pro uulgus, Dauos</quote>
-               <quote source="#EDITION" n="II 27,15">pro Dauus. transit u in a, ueredus ueredarius; in e, pondus</quote>
-               <quote source="#EDITION" n="II 27,16">ponderis, deierat peierat pro deiurat peiurat, labrum labellum,</quote>
-               <quote source="#EDITION" n="II 27,17">sacrum sacellum, antiqui auger et augeratus pro augur et</quote>
-               <quote source="#EDITION" n="II 27,18">auguratus dicebant; in i, ut cornu cornicen, arcus arcitenens, fluctus</quote>
-               <quote source="#EDITION" n="II 27,19">fluctiuagus, currus uel cursus curriculus uel curriculum; in o,</quote>
-               <quote source="#EDITION" n="II 27,20">nemus nemoris, ebur eboris, robur roboris. ponitur haec eadem</quote>
-               <quote source="#EDITION" n="II 27,21">litera in Graecis nominibus modo loco <foreign xml:lang="grc">ου</foreign> diphthongi, ut Musa pro</quote>
-               <quote source="#EDITION" n="II 27,22"><foreign xml:lang="grc">Μοῦσα</foreign>, modo pro ο correpta, ut Homerus pro <foreign xml:lang="grc">Ὅμηρος</foreign>, pro eadem</quote>
-               <quote source="#EDITION" n="II 27,23">producta, ut fur pro <foreign xml:lang="grc">φώρ</foreign>, sicut e contrario pro <foreign xml:lang="grc">βοῦς</foreign> bōs, modo</quote>
-               <quote source="#EDITION" n="II 27,24">pro <foreign xml:lang="grc">υ</foreign> longa, ut <foreign xml:lang="grc">μῦς</foreign> mus, modo pro correpta, <foreign xml:lang="grc">πορφύρα</foreign> purpura. in</quote>
-               <quote source="#EDITION" n="II 27,25">plerisque tamen Aeolis secuti hoc facimus: illi enim <foreign xml:lang="grc">θουγάτηρ</foreign> dicunt pro</quote>
+               <quote source="#EDITION" n="II 27,7">«nec Tityon uolucres ineunt Acherunte
+                  iacentem»,</quote>
+               <quote source="#EDITION" n="II 27,8">quae tamen a iunioribus repudiata sunt, quasi
+                  rustico more dicta.</quote>
+               <quote source="#EDITION" n="II 27,9">u quoque multis Italiae populis in usu non erat,
+                  sed e contrario o,</quote>
+               <quote source="#EDITION" n="II 27,10">unde Romanorum quoque uetustissimi in multis
+                  dictionibus loco eius o</quote>
+               <quote source="#EDITION" n="II 27,11">posuisse inueniuntur, poblicum pro publicum,
+                  quod testatur Papirianus</quote>
+               <quote source="#EDITION" n="II 27,12">de orthographia, polchrum pro pulchrum, colpam
+                  pro culpam</quote>
+               <quote source="#EDITION" n="II 27,13">dicentes et Hercolem pro Herculem. et maxime
+                  digamma antecedente</quote>
+               <quote source="#EDITION" n="II 27,14">hoc faciebant, ut seruos pro seruus, uolgus pro
+                  uulgus, Dauos</quote>
+               <quote source="#EDITION" n="II 27,15">pro Dauus. transit u in a, ueredus ueredarius;
+                  in e, pondus</quote>
+               <quote source="#EDITION" n="II 27,16">ponderis, deierat peierat pro deiurat peiurat,
+                  labrum labellum,</quote>
+               <quote source="#EDITION" n="II 27,17">sacrum sacellum, antiqui auger et augeratus pro
+                  augur et</quote>
+               <quote source="#EDITION" n="II 27,18">auguratus dicebant; in i, ut cornu cornicen,
+                  arcus arcitenens, fluctus</quote>
+               <quote source="#EDITION" n="II 27,19">fluctiuagus, currus uel cursus curriculus uel
+                  curriculum; in o,</quote>
+               <quote source="#EDITION" n="II 27,20">nemus nemoris, ebur eboris, robur roboris.
+                  ponitur haec eadem</quote>
+               <quote source="#EDITION" n="II 27,21">litera in Graecis nominibus modo loco <foreign
+                     xml:lang="grc">ου</foreign> diphthongi, ut Musa pro</quote>
+               <quote source="#EDITION" n="II 27,22"><foreign xml:lang="grc">Μοῦσα</foreign>, modo
+                  pro ο correpta, ut Homerus pro <foreign xml:lang="grc">Ὅμηρος</foreign>, pro
+                  eadem</quote>
+               <quote source="#EDITION" n="II 27,23">producta, ut fur pro <foreign xml:lang="grc"
+                     >φώρ</foreign>, sicut e contrario pro <foreign xml:lang="grc">βοῦς</foreign>
+                  bōs, modo</quote>
+               <quote source="#EDITION" n="II 27,24">pro <foreign xml:lang="grc">υ</foreign> longa,
+                  ut <foreign xml:lang="grc">μῦς</foreign> mus, modo pro correpta, <foreign
+                     xml:lang="grc">πορφύρα</foreign> purpura. in</quote>
+               <quote source="#EDITION" n="II 27,25">plerisque tamen Aeolis secuti hoc facimus: illi
+                  enim <foreign xml:lang="grc">θουγάτηρ</foreign> dicunt pro</quote>
             </div>
             <!--  -->
             <pb n="5r" xml:id="page__00019" facs="#facs__00019"/>
@@ -6754,13 +7047,39 @@
          <zone xml:id="zone.4v.33" ulx="341" uly="640" lrx="409" lry="682"/>
          <zone xml:id="zone.4v.36" ulx="1120" uly="658" lrx="1151" lry="685"/>
          <zone xml:id="zone.4v.35" ulx="803" uly="659" lrx="929" lry="688"/>
+         <zone xml:id="zone.4v.45" ulx="281" uly="685" lrx="423" lry="739"/>
          <zone xml:id="zone.4v.38" ulx="1781" uly="779" lrx="1883" lry="836"/>
          <zone xml:id="zone.4v.37" ulx="1633" uly="790" lrx="1656" lry="810"/>
          <zone xml:id="zone.4v.40" ulx="1758" uly="871" lrx="1851" lry="904"/>
          <zone xml:id="zone.4v.39" ulx="772" uly="889" lrx="798" lry="912"/>
          <zone xml:id="zone.4v.41" ulx="270" uly="947" lrx="493" lry="1012"/>
+         <zone xml:id="zone.4v.44" ulx="1287" uly="964" lrx="1479" lry="990"/>
          <zone xml:id="zone.4v.42" ulx="837" uly="980" lrx="861" lry="1001"/>
          <zone xml:id="zone.4v.43" ulx="260" uly="1006" lrx="488" lry="1064"/>
+         <zone xml:id="zone.4v.47" ulx="955" uly="1056" lrx="1017" lry="1081"/>
+         <zone xml:id="zone.4v.48" ulx="1084" uly="1058" lrx="1148" lry="1086"/>
+         <zone xml:id="zone.4v.46" ulx="282" uly="1078" lrx="351" lry="1116"/>
+         <zone xml:id="zone.4v.51" ulx="317" uly="1079" lrx="444" lry="1125"/>
+         <zone xml:id="zone.4v.55" ulx="614" uly="1103" lrx="690" lry="1125"/>
+         <zone xml:id="zone.4v.49" ulx="486" uly="1107" lrx="624" lry="1136"/>
+         <zone xml:id="zone.4v.52" ulx="653" uly="1118" lrx="681" lry="1133"/>
+         <zone xml:id="zone.4v.53" ulx="302" uly="1114" lrx="468" lry="1157"/>
+         <zone xml:id="zone.4v.54" ulx="611" uly="1116" lrx="629" lry="1136"/>
+         <zone xml:id="zone.4v.50" ulx="474" uly="1128" lrx="502" lry="1149"/>
+         <zone xml:id="zone.4v.56" ulx="271" uly="1153" lrx="520" lry="1314"/>
+         <zone xml:id="zone.4v.61" ulx="1417" uly="1226" lrx="1514" lry="1259"/>
+         <zone xml:id="zone.4v.60" ulx="1032" uly="1228" lrx="1129" lry="1262"/>
+         <zone xml:id="zone.4v.59" ulx="849" uly="1229" lrx="947" lry="1267"/>
+         <zone xml:id="zone.4v.58" ulx="689" uly="1243" lrx="778" lry="1271"/>
+         <zone xml:id="zone.4v.57" ulx="508" uly="1244" lrx="603" lry="1275"/>
+         <zone xml:id="zone.4v.62" ulx="287" uly="1378" lrx="506" lry="1474"/>
+         <zone xml:id="zone.4v.65" ulx="1712" uly="1524" lrx="1799" lry="1552"/>
+         <zone xml:id="zone.4v.64" ulx="1575" uly="1528" lrx="1667" lry="1562"/>
+         <zone xml:id="zone.4v.63" ulx="1440" uly="1529" lrx="1546" lry="1566"/>
+         <zone xml:id="zone.4v.66" ulx="1706" uly="1553" lrx="1803" lry="1584"/>
+         <zone xml:id="zone.4v.67" ulx="489" uly="1587" lrx="599" lry="1620"/>
+         <zone xml:id="zone.4v.69" ulx="536" uly="1626" lrx="646" lry="1663"/>
+         <zone xml:id="zone.4v.68" ulx="318" uly="1647" lrx="416" lry="1701"/>
       </surface>
       <surface xml:id="facs__00019" n="5r">
          <graphic url="http://diglib.hab.de/mss/50-weiss/max/00019.jpg"/>
