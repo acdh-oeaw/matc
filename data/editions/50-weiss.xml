@@ -6794,149 +6794,150 @@
             <div type="page-of-Hertz-edition" n="Liber Primus" xml:id="liber-primus.24"
                next="#liber-primus.25" prev="liber-primus.23" corresp="images-keil:Keil_v2_028.gif"
                xml:lang="la">
-               <quote source="#EDITION" n="II 28,1"><foreign xml:lang="grc">θυγάτηρ</foreign> ου corripientes, uel magis υ sono u soliti sunt pronuntiare</quote>
-               <quote source="#EDITION" n="II 28,2">ideoque ascribunt ο, non ut diphthongum faciant, sed ut sonum υ Aeolicum</quote>
+               <quote source="#EDITION" n="II 28,1"><foreign xml:lang="grc">θυγάτηρ</foreign> ου corripientes, uel magis <foreign xml:lang="grc">υ</foreign> sono u soliti sunt pronuntia<lb n="13" break="no" ed="5r"/>re</quote>
+               <quote source="#EDITION" n="II 28,2">ideoque ascribunt ο, non ut diphthongum faciant, sed ut sonum <foreign xml:lang="grc">υ</foreign> Aeolicum</quote>
                <quote source="#EDITION" n="II 28,3">ostendant, ut:</quote>
-               <quote source="#EDITION" n="II 28,4"><foreign xml:lang="grc">«Καλλιχόρου χθονὸς Οὐρίας θουγάτηρ»,</foreign></quote>
+               <quote source="#EDITION" n="II 28,4"><foreign xml:lang="grc">«Καλλιχόρου χθονὸς Οὐρίας <lb n="14" ed="5r"/> θουγάτηρ»,</foreign></quote>
                <quote source="#EDITION" n="II 28,5">quod nos secuti u modo correptam modo productam habemus, quamuis</quote>
-               <quote source="#EDITION" n="II 28,6">uideatur ου diphthongi sonum habere. pro ο quoque ου solent frequenter</quote>
+               <quote source="#EDITION" n="II 28,6">uideatur <foreign xml:lang="grc">ου</foreign> diphthongi sonum habere. <lb n="15" ed="5r"/> pro <foreign xml:lang="grc">ο</foreign> quoque <foreign xml:lang="grc">ου</foreign> solent frequenter</quote>
                <quote source="#EDITION" n="II 28,7">ponere Graeci, <foreign xml:lang="grc">οὖρος οὖλος</foreign> pro <foreign xml:lang="grc">ὅρος ὅλος, νοῦσος νόσος</foreign></quote>
-               <quote source="#EDITION" n="II 28,8">dicentes, quod nos frequenter habemus in finalibus maxime syllabis, ut</quote>
+               <quote source="#EDITION" n="II 28,8">dicentes, quod nos frequenter <lb n="16" ed="5r"/> habemus in finalibus maxime syllabis, ut</quote>
                <quote source="#EDITION" n="II 28,9">Priamus, Pylus, Pelium, u tamen corripientes. est quando amittit</quote>
-               <quote source="#EDITION" n="II 28,10">uim tam uocalis quam consonantis, ut cum inter q et aliam uocalem</quote>
-               <quote source="#EDITION" n="II 28,11">ponitur, sicut iam commemorauimus, ut quis, quoniam. hoc idem</quote>
+               <quote source="#EDITION" n="II 28,10">uim tam <lb n="17" ed="5r"/> uocalis quam consonantis, ut cum inter q et aliam uocalem</quote>
+               <quote source="#EDITION" n="II 28,11">ponitur, sicut iam commemorauimus, ut quis, quoniam. hoc <lb n="18" ed="5r"/> idem</quote>
                <quote source="#EDITION" n="II 28,12">plerumque patitur etiam inter g et aliquam uocalem, ut sanguis, lingua.</quote>
-               <quote source="#EDITION" n="II 28,13">s quoque antecedente et sequente a uel e hoc idem saepe fit, ut suadeo,</quote>
-               <quote source="#EDITION" n="II 28,14">suauis, suesco, suetus, quod apud Aeolis quoque υ saepe patitur et</quote>
-               <quote source="#EDITION" n="II 28,15">amittit uim literae in metro, ut <foreign xml:lang="grc">Σάπφω</foreign></quote>
+               <quote source="#EDITION" n="II 28,13">s quoque antecedente et sequente a uel <lb n="19" ed="5r"/> e hoc idem saepe fit, ut suadeo,</quote>
+               <quote source="#EDITION" n="II 28,14">suauis, suesco, suetus, quod apud Aeolis quoque <foreign xml:lang="grc">υ</foreign> saepe patitur et</quote>
+               <quote source="#EDITION" n="II 28,15">amittit uim literae in metro, <lb n="20" ed="5r"/> ut <foreign xml:lang="grc">Σάπφω</foreign></quote>
                <quote source="#EDITION" n="II 28,16"><foreign xml:lang="grc">«ἀλλὰ τυίδ᾽ ἔλθ᾽ αἴποτα κἀτέρωτα».</foreign></quote>
             </div>
             <div type="page-of-Hertz-edition" n="Liber Primus" xml:id="liber-primus.25"
                next="#liber-primus.26" prev="liber-primus.24" corresp="images-keil:Keil_v2_029.gif"
                xml:lang="la">
                <quote source="#EDITION" n="II 29,1">similiter <foreign xml:lang="grc">πήλυι</foreign> disyllabum inuenitur apud eosdem, cum <foreign xml:lang="grc">υι</foreign> non est</quote>
-               <quote source="#EDITION" n="II 29,2">diphthongus. est quando transit in consonantem u, ut nauta nauita,</quote>
-               <quote source="#EDITION" n="II 29,3">gaudeo gauisus, sicut econtra a consonante transit in uocalem, ut supra</quote>
+               <quote source="#EDITION" n="II 29,2">diphthongus. <lb n="21" ed="5r"/> est quando transit in consonantem u, ut nauta nauita,</quote>
+               <quote source="#EDITION" n="II 29,3">gaudeo gauisus, sicut econtra a consonante tran<lb n="22" ed="5r" break="no"/>sit in uocalem, ut supra</quote>
                <quote source="#EDITION" n="II 29,4">diximus, caueo cautus, soluo solutus, uoluo uolutus, faueo fautor.</quote>
-               <quote source="#EDITION" n="II 29,5">saepe interponitur inter cl uel cm in Graecis nominibus, ut <foreign xml:lang="grc">Ἡρακλῆς</foreign></quote>
+               <quote source="#EDITION" n="II 29,5">saepe interponitur inter <lb n="23" ed="5r"/> cl uel cm in Graecis nominibus, ut <foreign xml:lang="grc">Ἡρακλῆς</foreign></quote>
                <quote source="#EDITION" n="II 29,6">Hercules, <foreign xml:lang="grc">Ἀσκληπιός</foreign> Aesculapius, et antiqui <foreign xml:lang="grc">Ἀλκμήνη</foreign> Alcumena,</quote>
                <quote source="#EDITION" n="II 29,7"><foreign xml:lang="grc">Ἀλκμαίων</foreign> Alcumaeon.</quote>
-               <quote source="#EDITION" n="II 29,8">in consonantibus quoque multae fiunt similiter commutationes. l</quote>
+               <quote source="#EDITION" n="II 29,8">in consonanti<lb n="24" ed="5r" break="no"/>bus quoque multae fiunt similiter commutationes. l</quote>
                <quote source="#EDITION" n="II 29,9">triplicem, ut Plinio uidetur, sonum habet: exilem, quando geminatur</quote>
-               <quote source="#EDITION" n="II 29,10">secundo loco posita, ut ille, Metellus; plenum, quando finit nomina uel</quote>
-               <quote source="#EDITION" n="II 29,11">syllabas et quando aliquam habet ante se in eadem syllaba consonantem,</quote>
+               <quote source="#EDITION" n="II 29,10">secundo lo<lb n="25" ed="5r" break="no"/>co posita, ut ille, Metellus; plenum, quando finit nomina uel</quote>
+               <quote source="#EDITION" n="II 29,11">syllabas et quando aliquam habet ante se in eadem syllaba <lb n="26" ed="5r"/> consonantem,</quote>
                <quote source="#EDITION" n="II 29,12">ut sol, silua, flauus, clarus; medium in aliis, ut lectum, lectus.</quote>
-               <quote source="#EDITION" n="II 29,13">transit in x, ut paulum pauxillum, mala maxilla, uelum uexillum; in</quote>
+               <quote source="#EDITION" n="II 29,13">transit in x, ut paulum pauxillum, <lb n="27" ed="5r"/> mala maxilla, uelum uexillum; in</quote>
                <quote source="#EDITION" n="II 29,14">r, ut tabula taberna.</quote>
-               <quote source="#EDITION" n="II 29,15">m obscurum in extremitate dictionum sonat, ut templum, apertum</quote>
+               <quote source="#EDITION" n="II 29,15">m obscurum in extremitate dictionum sonat, ut tem<lb n="28" ed="5r" break="no"/>plum, apertum</quote>
                <quote source="#EDITION" n="II 29,16">in principio, ut magnus, mediocre in mediis, ut umbra. transit in n,</quote>
-               <quote source="#EDITION" n="II 29,17">et maxime d uel c uel t uel q sequentibus, ut tantum tantundem,</quote>
+               <quote source="#EDITION" n="II 29,17">et maxime d uel c uel t uel q <lb n="29" ed="5b"/> sequentibus, ut tantum tantundem,</quote>
                <quote source="#EDITION" n="II 29,18">idem identidem, eorum eorundem, num nuncubi et, ut Plinio</quote>
-               <quote source="#EDITION" n="II 29,19">placet, nunquis, nunquam, anceps pro amceps. am enim</quote>
+               <quote source="#EDITION" n="II 29,19">placet, nunquis, nunquam, <lb n="30" ed="5r"/> anceps pro amceps. am enim</quote>
                <quote source="#EDITION" n="II 29,20">praepositio f uel c uel q sequentibus in n mutat m: anfractus, ancisus,</quote>
-               <quote source="#EDITION" n="II 29,21">anquiro, uocali uero sequente intercipit b: ambitus, ambesus,</quote>
-               <quote source="#EDITION" n="II 29,22">ambustus, ambages, nec non etiam in comburo combustus idem fit.</quote>
+               <quote source="#EDITION" n="II 29,21">anqui<lb n="31" break="no" ed="5r"/>ro, uocali uero sequente intercipit b: ambitus, ambesus,</quote>
+               <quote source="#EDITION" n="II 29,22">ambustus, ambages, nec non etiam in comburo com<lb n="32" break="no" ed="5r"/>bustus idem fit.</quote>
             </div>
             <div type="page-of-Hertz-edition" n="Liber Primus" xml:id="liber-primus.26"
                next="#liber-primus.27" prev="liber-primus.25" corresp="images-keil:Keil_v2_030.gif"
                xml:lang="la">
                <quote source="#EDITION" n="II 30,1">finalis dictionis subtrahitur m in metro plerumque, si a uocali incipit sequens</quote>
                <quote source="#EDITION" n="II 30,2">dictio, ut:</quote>
-               <quote source="#EDITION" n="II 30,3">«illum expirantem transfixo pectore flammas»,</quote>
+               <quote source="#EDITION" n="II 30,3">«illum <lb n="33" ed="5r"/> expirantem transfixo pectore flammas»,</quote>
                <quote source="#EDITION" n="II 30,4">uetustissimi tamen non semper eam subtrahebant; Ennius in X annalium:</quote>
-               <quote source="#EDITION" n="II 30,5">«insigneita fere tum milia militum octo</quote>
+               <quote source="#EDITION" n="II 30,5"><lb n="34" ed="5r"/>«insigneita fere tum milia militum octo</quote>
                <quote source="#EDITION" n="II 30,6">duxit dilectos bellum tolerare potentes».</quote>
-               <quote source="#EDITION" n="II 30,7">n quoque plenior in primis sonat et in ultimis partibus syllabarum,</quote>
-               <quote source="#EDITION" n="II 30,8">ut nomen, stamen, exilior in mediis, ut amnis, damnum. transit</quote>
+               <quote source="#EDITION" n="II 30,7">n quoque plenior in primis so<lb n="35" break="no" ed="5r"/>nat et in ultimis partibus syllabarum,</quote>
+               <quote source="#EDITION" n="II 30,8">ut nomen, stamen, exilior in mediis, ut amnis, damnum. tran<lb n="36" break="no" ed="5r"/>sit</quote>
                <quote source="#EDITION" n="II 30,9">in g, ut ignosco, ignauus, ignotus, ignarus, ignominia, cognosco,</quote>
-               <quote source="#EDITION" n="II 30,10">cognatus; potest tamen in quibusdam eorum etiam per concisionem</quote>
-               <quote source="#EDITION" n="II 30,11">adempta uideri n, quia in simplicibus quoque potest inueniri per adiectionem</quote>
+               <quote source="#EDITION" n="II 30,10">cognatus; potest tamen in quibu<lb n="37" break="no" ed="5r"/>sdam eorum etiam per concisionem</quote>
+               <quote source="#EDITION" n="II 30,11">adempta uideri n, quia in simplicibus quoque potest inueniri <lb n="38" ed="5r"/> per adiectionem</quote>
                <quote source="#EDITION" n="II 30,12">g, ut gnatus, gnarus. sequente g uel c, pro ea g scribunt Graeci et</quote>
-               <quote source="#EDITION" n="II 30,13">quidam tamen uetustissimi auctores Romanorum euphoniae causa bene hoc</quote>
+               <quote source="#EDITION" n="II 30,13">quidam <pb n="5v" xml:id="page__00020" facs="#facs__00020"/> tamen uetustissimi auctores Romanorum euphoniae causa bene hoc</quote>
                <quote source="#EDITION" n="II 30,14">facientes, ut Agchises, agceps, aggulus, aggens, quod ostendit</quote>
+               <!-- hier scheint ein Zeilensprung vorzuliegen: aggens (II 30,14) - aggens (II 30,18), oder das Zitat wurde ausgelassen. Es fehlt quod ostendit - his uerbis -->
                <quote source="#EDITION" n="II 30,15">Varro in primo de origine linguae Latinae his uerbis: ut Ion</quote>
                <quote source="#EDITION" n="II 30,16">scribit, quinta uicesima est litera, quam uocant agma, cuius</quote>
                <quote source="#EDITION" n="II 30,17">forma nulla est et uox communis est Graecis et Latinis, ut</quote>
-               <quote source="#EDITION" n="II 30,18">his uerbis: aggulus, aggens, agguilla, iggerunt. in</quote>
+               <quote source="#EDITION" n="II 30,18">his uerbis: aggulus, aggens, agguilla, iggerunt. <lb n="2" ed="5v"/> in</quote>
                <quote source="#EDITION" n="II 30,19">eiusmodi Graeci et Accius noster bina g scribunt, alii n et</quote>
                <quote source="#EDITION" n="II 30,20">g, quod in hoc ueritatem uidere facile non est. similiter</quote>
-               <quote source="#EDITION" n="II 30,21">agceps, agcora. transit n etiam in l, ut unus ullus, nullus,</quote>
+               <quote source="#EDITION" n="II 30,21">agceps, agcora. <lb n="3" ed="5v"/> transit n etiam in l, ut unus ullus, nullus,</quote>
                <quote source="#EDITION" n="II 30,22">uinum uillum, catena catella, bonus bellus, catinum catillum;</quote>
             </div>
             <div type="page-of-Hertz-edition" n="Liber Primus" xml:id="liber-primus.27"
                next="#liber-primus.28" prev="liber-primus.26" corresp="images-keil:Keil_v2_031.gif"
                xml:lang="la">
-               <quote source="#EDITION" n="II 31,1">similiter collega, colligo, illido, collido. transit in m, sequentibus b</quote>
+               <quote source="#EDITION" n="II 31,1">similiter collega, <lb n="4" ed="5v"/> colligo, illido, collido. transit in m, sequentibus b</quote>
                <quote source="#EDITION" n="II 31,2">uel m uel p, auctore Plinio et Papiriano et Probo, ut imbibo,</quote>
-               <quote source="#EDITION" n="II 31,3">imbellis, imbutus, immineo, immitto, immotus, improbus,</quote>
+               <quote source="#EDITION" n="II 31,3">imbellis, <lb n="5" ed="5v"/> imbutus, immineo, immitto, immotus, improbus,</quote>
                <quote source="#EDITION" n="II 31,4">imperator, impello, similiter in Graecis nominibus neutris in <foreign xml:lang="grc">ον</foreign></quote>
-               <quote source="#EDITION" n="II 31,5">desinentibus, <foreign xml:lang="grc">Παλλάδιον</foreign> Palladium, <foreign xml:lang="grc">Πήλιον</foreign> Pelium. transit etiam in r, ut</quote>
-               <quote source="#EDITION" n="II 31,6">corrigo, corrumpo, irrito. hanc autem mutationem sciendum</quote>
+               <quote source="#EDITION" n="II 31,5">desi<lb n="6" break="no" ed="5v"/>nentibus, <foreign xml:lang="grc">Παλλάδιον</foreign> Palladium, <foreign xml:lang="grc">Πήλιον</foreign> Pelium. transit etiam in r, ut</quote>
+               <quote source="#EDITION" n="II 31,6">corrigo, corrumpo, irrito. hanc autem <lb n="7" ed="5v"/> mutationem sciendum</quote>
                <quote source="#EDITION" n="II 31,7">naturali quadam fieri uocis ratione propter celeriorem motum linguae</quote>
-               <quote source="#EDITION" n="II 31,8">labrorumque ad uicinos facilius transeuntium pulsus. transit supra dicta consonans</quote>
+               <quote source="#EDITION" n="II 31,8">labrorumque ad uicinos <lb n="8" ed="5v"/> facilius transeuntium pulsus. transit supra dicta consonans</quote>
                <quote source="#EDITION" n="II 31,9">n etiam in s: scindo scissus, findo fissus; in t: canis catulus,</quote>
-               <quote source="#EDITION" n="II 31,10">catellus; in c: ecquid pro enquid. expellitur a Graecis in <foreign xml:lang="grc">ων</foreign></quote>
-               <quote source="#EDITION" n="II 31,11">desinentibus, cum in Latinam transeunt formam, ut Demipho, Simo, leo,</quote>
+               <quote source="#EDITION" n="II 31,10">catel<lb n="9" break="no" ed="5v"/>lus; in c: ecquid pro enquid. expellitur a Graecis in <foreign xml:lang="grc">ων</foreign></quote>
+               <quote source="#EDITION" n="II 31,11">desinentibus, cum in Latinam transeunt formam, ut Demipho, Simo, <lb n="10" ed="5v"/> leo,</quote>
                <quote source="#EDITION" n="II 31,12">draco, sicut contra additur Latinis nominibus in o desinentibus apud</quote>
-               <quote source="#EDITION" n="II 31,13">Graecos, ut <foreign xml:lang="grc">Κικέρων</foreign>, <foreign xml:lang="grc">Κάτων</foreign> pro Cicero, Cato. transit etiam in</quote>
+               <quote source="#EDITION" n="II 31,13">Graecos, ut <foreign xml:lang="grc">Κικέρων</foreign>, <foreign xml:lang="grc">Κάτων</foreign> pro Cice<lb n="11" break="no" ed="5v"/>ro, Cato. transit etiam in</quote>
                <quote source="#EDITION" n="II 31,14">u consonantem, ut sino siui, sterno straui.</quote>
-               <quote source="#EDITION" n="II 31,15">r sine aspiratione ponitur in Latinis, in Graecis uero principalis uel</quote>
+               <quote source="#EDITION" n="II 31,15">r sine aspiratione ponitur in Latinis, in Grae<lb n="11" break="no" ed="5v"/>cis uero principalis uel</quote>
                <quote source="#EDITION" n="II 31,16">geminata in media dictione aspiratur, ut rhetor, Rhenus, Rhodus,</quote>
-               <quote source="#EDITION" n="II 31,17">Pyrrhus, Tyrrhenus, Orrhoena, pro quo nunc Osrhoena dicentes</quote>
-               <quote source="#EDITION" n="II 31,18">aspirationem antiquae seruant scripturae. transit in l: niger nigellus,</quote>
+               <quote source="#EDITION" n="II 31,17">Pyrrhus, Tyrrhenus, <lb n="12" ed="5v"/> Orrhoena, pro quo nunc Osrhoena dicentes</quote>
+               <quote source="#EDITION" n="II 31,18">aspirationem antiquae seruant scripturae. transit in l: niger ni<lb n="13" break="no" ed="5v"/>gellus,</quote>
                <quote source="#EDITION" n="II 31,19">umbra umbella; in s: arbos pro arbor, odos pro odor (Plautus</quote>
                <quote source="#EDITION" n="II 31,20">in captiuis:</quote>
-               <quote source="#EDITION" n="II 31,21">«quorum odos subbasilicanos omnes † adegit in forum»),</quote>
+               <quote source="#EDITION" n="II 31,21">«quorum odos subbasilicanos om<lb n="14" break="no" ed="5v"/>nes † adegit in forum»),</quote>
                <quote source="#EDITION" n="II 31,22">uerror uersus; in duas s: uro ussi, gero gessi; in u consonantem:</quote>
-               <quote source="#EDITION" n="II 31,23">tero triui, sero seui; in n: aeneus pro aereus.</quote>
+               <quote source="#EDITION" n="II 31,23">tero triui, sero seui; in n: ae<lb n="15" break="no" ed="5v"/>neus pro aereus.</quote>
             </div>
             <div type="page-of-Hertz-edition" n="Liber Primus" xml:id="liber-primus.28"
                next="#liber-primus.29" prev="liber-primus.27" corresp="images-keil:Keil_v2_032.gif"
                xml:lang="la">
                <quote source="#EDITION" n="II 32,1">s in metro apud uetustissimos uim suam frequenter amittit.</quote>
                <quote source="#EDITION" n="II 32,2">Virgilius in XI:</quote>
-               <quote source="#EDITION" n="II 32,3">«ponite spes sibi quisque».</quote>
+               <quote source="#EDITION" n="II 32,3">«ponite spes sibi <lb n="16" ed="5v"/> quisque».</quote>
                <quote source="#EDITION" n="II 32,4">idem in XII:</quote>
                <quote source="#EDITION" n="II 32,5">«inter se coiisse uirosque discernere ferro».</quote>
-               <quote source="#EDITION" n="II 32,6">ne autem coniunctione sequente cum apostropho penitus tollitur, ut</quote>
+               <quote source="#EDITION" n="II 32,6">ne autem coniunctione sequente cum apostropho <lb n="17" ed="5v"/> penitus tollitur, ut</quote>
                <quote source="#EDITION" n="II 32,7">uiden, satin, uin pro uidesne, satisne, uisne. nec non etiam</quote>
-               <quote source="#EDITION" n="II 32,8">in Graecis nominibus as uel es terminantibus plerumque tollitur, cum sint</quote>
+               <quote source="#EDITION" n="II 32,8">in Graecis nominibus as uel <lb n="18" ed="5v"/> es terminantibus plerumque tollitur, cum sint</quote>
                <quote source="#EDITION" n="II 32,9">primae declinationis, ut Geta, Byrrhia, Phaedria, Chaerea, poeta,</quote>
-               <quote source="#EDITION" n="II 32,10">sophista quoque, Scytha, citharista, in quibus etiam e producta in</quote>
-               <quote source="#EDITION" n="II 32,11">a correptam conuertitur. transit haec eadem in m, ut rursum pro</quote>
+               <quote source="#EDITION" n="II 32,10"><lb n="19" ed="5v"/>sophista quoque, Scytha, citharista, in quibus etiam e producta in</quote>
+               <quote source="#EDITION" n="II 32,11">a correptam conuertitur. transit haec <lb n="20" ed="5v"/> eadem in m, ut rursum pro</quote>
                <quote source="#EDITION" n="II 32,12">rursus, dimminuo pro disminuo. Terentius in adelphis:</quote>
                <quote source="#EDITION" n="II 32,13">«dimminuetur tibi cerebrum».</quote>
-               <quote source="#EDITION" n="II 32,14">in n mutatur s: sanguis sanguinis; in r: flos floris, ius iuris,</quote>
-               <quote source="#EDITION" n="II 32,15">cursus curriculus uel curriculum; in x: Aiax pro <foreign xml:lang="grc">Αἴας</foreign> et pistrix</quote>
+               <quote source="#EDITION" n="II 32,14"><lb n="21" ed="5v"/>in n mutatur s: sanguis sanguinis; in r: flos floris, ius iuris,</quote>
+               <quote source="#EDITION" n="II 32,15">cursus curriculus uel curriculum; in x: Aiax pro <lb n="22" ed="5v"/> <foreign xml:lang="grc">Αἴας</foreign> et pistrix</quote>
                <quote source="#EDITION" n="II 32,16">pro <foreign xml:lang="grc">πίστρις</foreign>, in quo sequimur Doris: illi enim <foreign xml:lang="grc">ὄρνιξ</foreign> dicunt pro <foreign xml:lang="grc">ὄρνις</foreign>;</quote>
-               <quote source="#EDITION" n="II 32,17">in d: custos custodis, pes pedis, praeses praesidis, palus paludis;</quote>
+               <quote source="#EDITION" n="II 32,17">in d: custos custodis, <lb n="23" ed="5v"/> pes pedis, praeses praesidis, palus paludis;</quote>
                <quote source="#EDITION" n="II 32,18">in t: nepos nepotis, uirtus uirtutis, Samnis Samnitis; in u</quote>
-               <quote source="#EDITION" n="II 32,19">consonantem: bos bouis. saepe pro aspiratione ponitur in his dictionibus,</quote>
-               <quote source="#EDITION" n="II 32,20">quas a Graecis sumpsimus, ut semis, sex, septem, se, sal: nam</quote>
+               <quote source="#EDITION" n="II 32,19">con<lb n="24" break="no" ed="5v"/>sonantem: bos bouis. saepe pro aspiratione ponitur in his dictionibus,</quote>
+               <quote source="#EDITION" n="II 32,20">quas a Graecis sumpsimus, ut semis, sex, sep<lb n="25" break="no" ed="5v"/>tem, se, sal: nam</quote>
                <quote source="#EDITION" n="II 32,21"><foreign xml:lang="grc">ἥμισυ</foreign>, <foreign xml:lang="grc">ἕξ</foreign>, <foreign xml:lang="grc">ἑπτά</foreign>, <foreign xml:lang="grc">ἕ</foreign>, <foreign xml:lang="grc">ἅλς</foreign> apud illos aspirationem habent in</quote>
             </div>
             <div type="page-of-Hertz-edition" n="Liber Primus" xml:id="liber-primus.29"
                next="#liber-primus.30" prev="liber-primus.28" corresp="images-keil:Keil_v2_033.gif"
                xml:lang="la">
-               <quote source="#EDITION" n="II 33,1">principio. adeo autem cognatio est huic literae [id est s] cum aspiratione,</quote>
-               <quote source="#EDITION" n="II 33,2">quod pro ea in quibusdam dictionibus solebant Boeotis h ponere, Muha</quote>
+               <quote source="#EDITION" n="II 33,1">principio. a<lb n="26" break="no" ed="5v"/>deo autem cognatio est huic literae [id est s] cum aspiratione,</quote>
+               <quote source="#EDITION" n="II 33,2">quod pro ea in quibusdam dictionibus so<lb n="27" break="no" ed="5v"/>lebant Boeotis h ponere, Muha</quote>
                <quote source="#EDITION" n="II 33,3">pro Musa dicentes. huic praeponitur p et loco <foreign xml:lang="grc">ψ</foreign> Graecae fungitur, pro</quote>
-               <quote source="#EDITION" n="II 33,4">qua Claudius Caesar antisigma hac figura scribi uoluit. sed nulli</quote>
-               <quote source="#EDITION" n="II 33,5">ausi sunt antiquam scripturam mutare, quamuis non sine ratione haec</quote>
+               <quote source="#EDITION" n="II 33,4">qua <lb n="28" ed="5v"/> Claudius Caesar antisigma hac figura scribi uoluit. sed nulli</quote>
+               <quote source="#EDITION" n="II 33,5">ausi sunt antiquam scripturam mutare, quamuis non sine <lb n="29" ed="5v"/> ratione haec</quote>
                <quote source="#EDITION" n="II 33,6">quoque duplex a Graecis addita uideatur, nam multo molliorem et uolubiliorem</quote>
-               <quote source="#EDITION" n="II 33,7">sonum habet <foreign xml:lang="grc">ψ</foreign> quam ps uel bs. hae tamen, id est bs, non alias debent</quote>
+               <quote source="#EDITION" n="II 33,7">sonum habet <foreign xml:lang="grc">ψ</foreign> quam ps uel <lb n="30" ed="5v"/> bs. hae tamen, id est bs, non alias debent</quote>
                <quote source="#EDITION" n="II 33,8">poni pro <foreign xml:lang="grc">ψ</foreign>, hoc est in eadem syllaba coniunctae, nisi in fine nominatiui,</quote>
-               <quote source="#EDITION" n="II 33,9">cuius genetiuus in bis desinit, ut urbs urbis, caelebs caelibis, Arabs</quote>
-               <quote source="#EDITION" n="II 33,10">Arabis. sicut ergo <foreign xml:lang="grc">ψ</foreign> melius sonat, sic x etiam quam gs uel cs. et x</quote>
+               <quote source="#EDITION" n="II 33,9">cuius <lb n="31" ed="5v"/> genetiuus in bis desinit, ut urbs urbis, caelebs caelibis, Arabs</quote>
+               <quote source="#EDITION" n="II 33,10">Arabis. sicut ergo <foreign xml:lang="grc">ψ</foreign> melius sonat, sic x etiam quam <lb n="32" ed="5v"/> gs uel cs. et x</quote>
                <quote source="#EDITION" n="II 33,11">quidem assumpsimus, <foreign xml:lang="grc">ψ</foreign> autem non; sed quantum expeditior est <foreign xml:lang="grc">ψ</foreign> quam</quote>
-               <quote source="#EDITION" n="II 33,12">ps, tantum ps quam bs, ideoque non irrationabiliter plerisque uidetur loco</quote>
-               <quote source="#EDITION" n="II 33,13"><foreign xml:lang="grc">ψ</foreign> ps debere scribi, quod de ordine literarum docentes plenius tractabimus.</quote>
+               <quote source="#EDITION" n="II 33,12">ps, tantum ps quam bs, ideoque <lb n="33" ed="5v"/> non irrationabiliter plerisque uidetur loco</quote>
+               <quote source="#EDITION" n="II 33,13"><foreign xml:lang="grc">ψ</foreign> ps debere scribi, quod de ordine literarum docentes plenius trac<lb n="34" break="no" ed="5v"/>tabimus.</quote>
                <quote source="#EDITION" n="II 33,14">x duplex modo pro cs modo pro gs accipitur, ut apex apicis,</quote>
-               <quote source="#EDITION" n="II 33,15">grex gregis. transit tamen etiam in u consonantem, ut nix niuis</quote>
+               <quote source="#EDITION" n="II 33,15">grex gregis. transit tamen etiam <lb n="35" ed="5v"/> in u consonantem, ut nix niuis</quote>
                <quote source="#EDITION" n="II 33,16">nec non in ct, ut nox noctis, supellex supellectilis, sed haec contra</quote>
-               <quote source="#EDITION" n="II 33,17">regulam declinari uidentur. subit etiam loco aspirationis, ut ueho uexi,</quote>
-               <quote source="#EDITION" n="II 33,18">traho traxi; uertitur in f, ut efficio effero. et sciendum, quod,</quote>
-               <quote source="#EDITION" n="II 33,19">quotienscumque ex praepositio praeponitur composita dictionibus a</quote>
+               <quote source="#EDITION" n="II 33,17"><lb n="36" ed="5v"/>regulam declinari uidentur. subit etiam loco aspirationis, ut ueho uexi,</quote>
+               <quote source="#EDITION" n="II 33,18">traho traxi; uerti<lb n="37" break="no" ed="5v"/>tur in f, ut efficio effero. et sciendum, quod,</quote>
+               <quote source="#EDITION" n="II 33,19">quotienscumque ex praepositio praeponitur composita <pb n="6r" xml:id="page__00021" facs="#facs__00021"/> dictionibus a</quote>
                <quote source="#EDITION" n="II 33,20">uocalibus incipientibus uel ab his quattuor consonantibus, hoc est c p t s,</quote>
                <quote source="#EDITION" n="II 33,21">integra manet, ut exaro, exeo, exigo, exoleo, exuro, excutio,</quote>
                <quote source="#EDITION" n="II 33,22">expeto, extraho, exsequor, exspes, in quo uidemur contra</quote>
@@ -7215,8 +7216,6 @@
                <quote source="#EDITION" n="II 43,19">scribere.</quote>
             </div>
             <!-- With f. 44 starts the second book of the grammar: Priscian, Ars grammatica: book 2 (De syllaba, de dictione, de oratione, de nomine, etc.)  -->
-            <pb n="5v" xml:id="page__00020" facs="#facs__00020"/>
-            <pb n="6r" xml:id="page__00021" facs="#facs__00021"/>
             <pb n="6v" xml:id="page__00022" facs="#facs__00022"/>
             <pb n="7r" xml:id="page__00023" facs="#facs__00023"/>
             <pb n="7v" xml:id="page__00024" facs="#facs__00024"/>
