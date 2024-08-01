@@ -45,4 +45,4 @@ and the transcription continues further</p>
 * write some XSLT to create a nice looking HTML representation of the encoded xml
 * set up some automatic worfklow which e.g. runs transformations and generates some basic index.html linking to the individual Editions
 * configure according GitHub pages set-up
-* write script to derive ARCHE-MD from editions
+* write script to derive ARCHE-MD from editions.
