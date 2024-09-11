@@ -8616,9 +8616,13 @@
                   c.</quote>
                <quote source="#EDITION" n="II 36,5">de q quoque sufficienter supra tractatum est,
                   quae nisi eandem uim</quote>
-               <app type="rubrication" xml:id="rubr-36-5-1">
-                  <lem wit="#EDITION">de q</lem>
-                  <rdg wit="#COD_50" hand="#scr"><hi rend="letter filled with red ink">d</hi>e <hi rend="letter filled with red ink">q</hi></rdg>
+               <app type="rubrication" xml:id="rubr-36-5-1-1">
+                  <lem wit="#EDITION">de</lem>
+                  <rdg wit="#COD_50" hand="#scr"><hi rend="letter filled with red ink">d</hi>e</rdg>
+               </app>
+               <app type="rubrication" xml:id="rubr-36-5-1-2">
+                  <lem wit="#EDITION">q</lem>
+                  <rdg wit="#COD_50" hand="#scr"><hi rend="letter filled with red ink">q</hi></rdg>
                </app>
                <app type="gloss" xml:id="gloss-36-5-1">
                   <lem wit="#EDITION">q</lem>

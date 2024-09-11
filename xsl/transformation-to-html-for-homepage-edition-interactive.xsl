@@ -46,6 +46,7 @@
             <link rel="stylesheet" id="fundament-styles"  href="./css/fundament.min.css" type="text/css"/>
             <link rel="stylesheet" id="fundament-custom-styles" href="./css/custom.css" type="text/css"/>
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer"></link>
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto Serif"></link>
             <link rel="shortcut icon" type="image/x-icon" href="./images/favicon.png"/>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/openseadragon/3.1.0/openseadragon.min.js" integrity="sha512-uZWCk71Y8d7X/dnBNU9sISZQv78vDTglLF8Uaga0AimD7xmjJhFoa67VIcIySAoTHqxIt/0ly9l5ft9MUkynQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         </head>
@@ -373,6 +374,13 @@
         </p>
     </xsl:template>
     
+    <xsl:template match="tei:foreign[@xml:lang = 'grc'][parent::tei:quote]">
+        <xsl:element name="span">
+            <xsl:attribute name="style" select="'font-family: Noto Serif; font-size: 14pt;'"/>
+            <xsl:apply-templates select="child::node()"/>
+        </xsl:element>
+    </xsl:template>
+    
     <xsl:template match="text()[parent::tei:quote]">
         <span class="bold-text">
             <xsl:value-of select="."/>
@@ -537,7 +545,7 @@
     
     <xsl:template match="tei:hi">
         <xsl:choose>
-            <xsl:when test="(@rend = 'red capitalis') or (@rend = 'red capitalis rustica')">
+            <xsl:when test="(@rend = 'red capitalis') or (@rend = 'red capitalis rustica') or (@rend = 'letter filled with red ink')">
                 <xsl:element name="span">
                     <xsl:attribute name="style" select="'color: #9e1b16;'"/>
                     <xsl:value-of select="text()"/>
@@ -1190,6 +1198,9 @@
             <xsl:if test="substring-after(@hand,'#') = 'gl-2'">
                 <xsl:text>second glossator</xsl:text>
             </xsl:if>
+            <xsl:if test="substring-after(@hand,'#') = 'Otfrid'">
+                <xsl:text>Otfrid</xsl:text>
+            </xsl:if>
         <xsl:text>",</xsl:text>
         <xsl:text> "text" : "</xsl:text>
             <xsl:apply-templates select="child::node()" mode="glosses-as-json"/>
@@ -1303,7 +1314,7 @@
             <xsl:if test="substring-after(@resp,'#') = 'gl-2'">
                 <xsl:text>second glossator</xsl:text>
             </xsl:if>
-            <xsl:if test="substring-after(@reps,'#') = 'Otfrid'">
+            <xsl:if test="substring-after(@resp,'#') = 'Otfrid'">
                 <xsl:text>Otfrid</xsl:text>
             </xsl:if>
         </xsl:if>
