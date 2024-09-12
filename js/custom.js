@@ -184,6 +184,85 @@ $(window).on('load', function(){
 	});
 	
 	$.ajax({
+		url: "./json/annotation-signs.json"
+	})
+	.done(function(data) {
+		let jsonAnnotationSigns = data;
+		
+		$(".link-for-annotation-sign").each(function(){
+		let id = this.id;
+		this.addEventListener('click', function(event) {
+			event.preventDefault();
+			let idOfDiv = "div-for-" + id;
+			let resultDiv = document.getElementById(idOfDiv);
+			$(resultDiv).empty();
+			let position = 0;
+			for (let i = 0; i < jsonAnnotationSigns["annotation-signs"].length; i++)
+			{
+				if (jsonAnnotationSigns["annotation-signs"][i]["id"] === id){
+					position = i;
+					break;
+				}
+			}
+			let witness = jsonAnnotationSigns["annotation-signs"][position][id]["reading"]["witness"];
+			let textOfAnnotationSign = jsonAnnotationSigns["annotation-signs"][position][id]["reading"]["text"];
+			$(resultDiv).append("<p>" + witness + ": " + textOfAnnotationSign + "</p>");
+			let place = jsonAnnotationSigns["annotation-signs"][position][id]["reading"]["place"];
+			$(resultDiv).append("<p><span class='set-margin-left'><i class='far fa-compass'></i></span><span class='emphasize-location'>" + place + "</span></p>");
+			let hand = jsonAnnotationSigns["annotation-signs"][position][id]["reading"]["hand"];
+			$(resultDiv).append("<p><span class='set-margin-left'><i class='far fa-hand-paper'></i></span><span class='emphasize-hand'>" + hand + "</span></p>");
+			let analysis = jsonAnnotationSigns["annotation-signs"][position][id]["reading"]["analysis"];
+			for (let i = 0; i < analysis.length; i++){
+				let analysisItem = analysis[i];
+				$(resultDiv).append("<p><span class='set-margin-left'><i class='fas fa-glasses'></i></span><span class='emphasize-analysis'>" + analysisItem + "</span></p>");
+			}
+			let note = "";
+			if (jsonAnnotationSigns["annotation-signs"][position][id]["note"] !== undefined && jsonAnnotationSigns["annotation-signs"][position][id]["note"] !== null){
+				note = jsonAnnotationSigns["annotation-signs"][position][id]["note"];
+			}
+			if (note !== ""){
+				$(resultDiv).append("<p><span class='set-margin-left'><i class='far fa-comment'></i><span class='emphasize-note'>" + note + "</span></p>");
+			}
+			if($(resultDiv).hasClass("apparatus-hidden")){
+				$(resultDiv).removeClass("apparatus-hidden");
+				$(resultDiv).addClass("apparatus-visible");
+			}
+			else {
+				$(resultDiv).removeClass("apparatus-visible");
+				$(resultDiv).addClass("apparatus-hidden");
+			}
+			let indexOfImage = jsonAnnotationSigns["annotation-signs"][position][id]["reading"]["index"];
+			viewer.goToPage(indexOfImage - 1);
+			let rectangle = jsonAnnotationSigns["annotation-signs"][position][id]["reading"]["zone"];
+			let upperLeftX = rectangle["ulx"];
+			let upperLeftY = rectangle["uly"];
+			let lowerRightX = rectangle["lrx"];
+			let lowerRightY = rectangle["lry"];
+			let overlayElement = document.createElement("div");
+			let idOfOverlay = document.createAttribute("id");
+			idOfOverlay.value = "overlay";
+			overlayElement.setAttributeNode(idOfOverlay);
+			let widthOfPicture = 2000;
+			let heightOfPicture = 2369;
+			let upperLeftXScaled = upperLeftX / widthOfPicture;
+			let upperLeftYScaled = upperLeftY / heightOfPicture * 2369/2000;
+			let lowerRightXScaled = lowerRightX / widthOfPicture;
+			let lowerRightYScaled = lowerRightY / heightOfPicture * 2369/2000;
+			let widthScaled = lowerRightXScaled - upperLeftXScaled;
+			let heightScaled = lowerRightYScaled - upperLeftYScaled;
+			viewer.addHandler('tile-loaded',function(){
+				viewer.removeOverlay(idOfOverlay.value);
+				viewer.addOverlay(overlayElement,new OpenSeadragon.Rect(upperLeftXScaled,upperLeftYScaled,widthScaled,heightScaled));
+			});
+			viewer.addHandler('add-overlay',function(){
+				let point = new OpenSeadragon.Point(upperLeftXScaled, upperLeftYScaled);
+				viewer.viewport.zoomTo(2, point, false);
+			});
+			});
+		});
+	});
+	
+	$.ajax({
 		url: "./json/text-variations.json"
 	})
 	.done(function(data) {

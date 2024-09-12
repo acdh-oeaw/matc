@@ -19,6 +19,11 @@
                 <xsl:apply-templates select="//tei:app[@type = 'gloss']" mode="glosses-as-json"/>
             <xsl:text>]}</xsl:text>
         </xsl:result-document>
+        <xsl:result-document encoding="UTF-8" href="json/annotation-signs.json" media-type="text/plain" omit-xml-declaration="true" method="text">
+            <xsl:text>{ "annotation-signs" : [</xsl:text>
+                <xsl:apply-templates select="//tei:app[@type = 'annotation-signs']" mode="annotation-signs-as-json"/>
+            <xsl:text>]}</xsl:text>
+        </xsl:result-document>
         <xsl:result-document encoding="UTF-8" href="json/text-variations.json" media-type="text/plain" omit-xml-declaration="true" method="text">
             <xsl:text>{ "text-variations" : [</xsl:text>
             <xsl:apply-templates select="//tei:app[(@type = 'text-variation') and exists(child::tei:rdg/child::tei:add/@facs)]" mode="text-variations-as-json"/>
@@ -691,6 +696,32 @@
         </div>
     </xsl:template>
     
+    <xsl:template match="tei:app[@type = 'annotation-signs']">
+        <p class="type-of-intervention"><xsl:text>Annotation Sign:</xsl:text></p>
+        <div class="apparatus">
+            <xsl:apply-templates select="tei:lem" mode="gloss-lemma"/>
+            <span class="around-link">
+                <xsl:element name="a">
+                    <xsl:attribute name="class" select="'link-for-annotation-sign'"/>
+                    <xsl:attribute name="href" select="@xml:id"/>
+                    <xsl:attribute name="id" select="@xml:id"/>
+                    <i class="fa-solid fa-info"></i>
+                </xsl:element>
+            </span>
+            <xsl:element name="div">
+                <xsl:attribute name="class" select="'apparatus-reading apparatus-hidden'"/>
+                <xsl:attribute name="id" select="concat('div-for-',@xml:id)"/>
+            </xsl:element>
+            <p>
+                <xsl:text>Id: </xsl:text>
+                <xsl:element name="span">
+                    <xsl:attribute name="style" select="'font-family: monospace; font-style: italic; font-size: 12pt;'"/>
+                    <xsl:value-of select="@xml:id"/>
+                </xsl:element>
+            </p>
+        </div>
+    </xsl:template>
+    
     <xsl:template match="tei:app[@type = 'rubrication']">
         <p class="type-of-intervention"><xsl:text>Rubrication:</xsl:text></p>
         <div class="apparatus">
@@ -1093,6 +1124,19 @@
     <xsl:template match="tei:app[@type = 'gloss']" mode="glosses-as-json">
         <xsl:text>{ "id" : "</xsl:text>
             <xsl:value-of select="@xml:id"/>
+        <xsl:text>", "</xsl:text>
+        <xsl:value-of select="@xml:id"/>
+        <xsl:text>" : {</xsl:text>
+        <xsl:apply-templates select="child::tei:rdg" mode="glosses-as-json"/>
+        <xsl:text>}}</xsl:text>
+        <xsl:if test="position() != last()">
+            <xsl:text>,</xsl:text>
+        </xsl:if>
+    </xsl:template>
+    
+    <xsl:template match="tei:app[@type = 'annotation-signs']" mode="annotation-signs-as-json">
+        <xsl:text>{ "id" : "</xsl:text>
+        <xsl:value-of select="@xml:id"/>
         <xsl:text>", "</xsl:text>
         <xsl:value-of select="@xml:id"/>
         <xsl:text>" : {</xsl:text>
