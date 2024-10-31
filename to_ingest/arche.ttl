@@ -8,6 +8,9 @@
 <https://orcid.org/0000-0002-5146-1371> a acdh:Person ;
     acdh:hasTitle "Thomas Klampfl"@und .
 
+<https://d-nb.info/gnd/8989-8> a acdh:Organisation ;
+    acdh:hasTitle "Herzog August Bibliothek"@de .
+
 <https://id.acdh.oeaw.ac.at/priscian-glosses> a acdh:TopCollection ;
     acdh:hasTitle "Priscian Glosses - Codex Weiss 50"@de ;
     acdh:hasTitle "Priscian Glosses - Codex Weiss 50"@en ;
@@ -55,4 +58,24 @@
     acdh:hasDepositor <https://orcid.org/0000-0002-5146-1371> ;
     acdh:hasCurator <https://orcid.org/0000-0002-5146-1371> ;
     acdh:hasContributor <https://orcid.org/0000-0002-5146-1371> .
+
+<https://id.acdh.oeaw.ac.at/priscian-glosses/title-image.jpg> a acdh:Resource ;
+    acdh:isPartOf acdhi:priscian-glosses ;
+    acdh:hasTitle "Priscian Glosses - Codex Weiss 50 - Titelbild"@de ;
+    acdh:hasTitle "Priscian Glosses - Codex Weiss 50 - Title image"@en ;
+    acdh:hasUrl "http://diglib.hab.de/mss/50-weiss/max/00011.jpg" ;
+    acdh:hasDescription "Wolfenbüttel, Herzog August Bibliothek, Cod. Guelf. 50 Weiss, f. 1r, detail"@de ;
+    acdh:hasCategory <https://vocabs.acdh.oeaw.ac.at/archecategory/image> ;
+    acdh:hasContact <https://orcid.org/0000-0002-0560-6031> ;
+    acdh:hasDepositor <https://orcid.org/0000-0002-0560-6031> ;
+    acdh:hasMetadataCreator <https://orcid.org/0000-0002-5146-1371> ;
+    acdh:hasOwner <https://d-nb.info/gnd/8989-8> ;
+    acdh:hasRightsHolder <https://d-nb.info/gnd/8989-8> ;
+    acdh:hasLicensor <https://d-nb.info/gnd/8989-8> ;
+    acdh:hasLicense <https://vocabs.acdh.oeaw.ac.at/archelicenses/cc-by-4-0> ;
+    # to be discussed http://diglib.hab.de/nutzungshinweise.html
+    acdh:hasDepositor <https://orcid.org/0000-0002-5146-1371> ;
+    acdh:hasCurator <https://orcid.org/0000-0002-5146-1371> ;
+    acdh:hasContributor <https://orcid.org/0000-0002-5146-1371> .
+
     
