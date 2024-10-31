@@ -34,7 +34,7 @@ acdhi:priscian-glosses a acdh:TopCollection ;
     acdh:hasCurator <https://orcid.org/0000-0002-5146-1371> ;
     acdh:hasContributor <https://orcid.org/0000-0002-5146-1371> .
 
-acdhi:priscian-glosses/50-weiss.xml a acdh:Resource ;
+<acdhi:priscian-glosses/50-weiss.xml> a acdh:Resource ;
     acdh:isPartOf acdhi:priscian-glosses ;
     acdh:hasTitle "Priscian Glosses - Codex Weiss 50 - TEI Dokument"@de ;
     acdh:hasTitle "Priscian Glosses - Codex Weiss 50 - TEI Document"@en ;
