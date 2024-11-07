@@ -716,11 +716,11 @@
                   <graphic url="../pictures/reference-sign-y.png"/>
                </figure>
             </glyph>
-            <glyph xml:id="reference-sign-converging-strokes-with-dicolon">
-               <localProp name="Name" value="REFERENCE SIGN CONVERGING STROKES WITH DICOLON"/>
-               <localProp name="entity" value="reference-sign-converging-strokes-with-dicolon"/>
+            <glyph xml:id="reference-sign-half-H-with-dicolon">
+               <localProp name="Name" value="REFERENCE SIGN HALF H WITH DICOLON"/>
+               <localProp name="entity" value="reference-sign-half-H-with-dicolon"/>
                <figure>
-                  <graphic url="../pictures/reference-sign-converging-strokes-with-dicolon.png"/>
+                  <graphic url="../pictures/reference-sign-half-H-with-dicolon.png"/>
                </figure>
             </glyph>
          </charDecl>
@@ -2606,7 +2606,7 @@
                <app type="reference-signs" xml:id="rs-8-9-1">
                   <lem wit="#EDITION">una</lem>
                   <rdg wit="#COD_50"><add place="interlinear above" hand="#Otfrid" facs="#zone.2r.8"
-                        ana="#lemma-gloss"><g ref="#reference-sign-converging-strokes-with-dicolon"
+                     ana="#lemma-gloss"><g ref="#reference-sign-half-H-with-dicolon"
                         /></add></rdg>
                </app>
                <app type="gloss" xml:id="gloss-8-9-1" subtype="to-be-checked">
@@ -9586,6 +9586,13 @@
                         nomen</add><add place="interlinear above" hand="#sec" facs="#zone.7r.13"
                         ana="#glosses-elucidating-the-main-text">auctoris</add></rdg>
                </app>
+               <app type="gloss" xml:id="gloss-40-12-2">
+                  <lem wit="#EDITION"><foreign xml:lang="grc">ἦπον</foreign></lem>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#sec" facs="#zone.7r.13"
+                        ana="#glosses-elucidating-the-main-text">auctoris</add></rdg>
+                  <note corresp="#gloss-40-12-1 #gloss-40-12-2" type="explanation" resp="#CG">The
+                     second glossator completed Otfrid's gloss by adding 'auctoris'</note>
+               </app>
                <quote source="#EDITION" n="II 40,13">plerumque, cum ei apud Graecos sit pura
                   paenultima, in illis maxime</quote>
                <app type="reference-signs" xml:id="rs-40-13-1">
@@ -9783,15 +9790,15 @@
                <app type="gloss" xml:id="gloss-41-15-1">
                   <lem wit="#EDITION">uel um</lem>
                   <rdg wit="#COD_50"><add place="interlinear above" hand="#Otfrid"
-                     facs="#zone.7r.29" ana="#glosses-containing-an-example">ut chium</add></rdg>
+                        facs="#zone.7r.29" ana="#glosses-containing-an-example">ut chium</add></rdg>
                </app>
                <quote source="#EDITION" n="II 41,16">nominatiuos non inuenitur producta in Latinis
                   dictionibus nisi in dis<lb n="23" break="no" ed="7r"/>yllabis</quote>
-               
-               
-               
-               
-               
+
+
+
+
+
                <quote source="#EDITION" n="II 41,17">et ipsis Graecis. nam in Graecis saepe
                   inuenimus, ut Chīus et dīa</quote>
                <quote source="#EDITION" n="II 41,18">et in uno trisyllabo, quod apud Statium legi,
@@ -9799,8 +9806,8 @@
                <quote source="#EDITION" n="II 41,19">Thebaidos:</quote>
                <quote source="#EDITION" n="II 41,20">«at patrias si quando domos optataque,
                   Paean,</quote>
-               <quote source="#EDITION" n="II 41,21">templa, Lycie, dabis tot
-                  ditia dona sa<lb n="25" break="no" ed="7r"/>cratis</quote>
+               <quote source="#EDITION" n="II 41,21">templa, Lycie, dabis tot ditia dona sa<lb
+                     n="25" break="no" ed="7r"/>cratis</quote>
                <quote source="#EDITION" n="II 41,22">postibus et totidem uoti memor exige
                   tauros».</quote>
                <quote source="#EDITION" n="II 41,23">in aliis uero consonante sequente pro ei
