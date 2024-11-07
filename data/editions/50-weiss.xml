@@ -3579,7 +3579,7 @@
                <app type="gloss" xml:id="gloss-14-10-1">
                   <lem wit="#EDITION">mannus</lem>
                   <rdg wit="#COD_50"><add place="left margin" hand="#Otfrid" facs="#zone.3r.7"
-                        ana="#glosses-elucidating-the-main-text">proprium nomen</add></rdg>
+                        ana="#grammatical-glosses-on-the-noun">proprium nomen</add></rdg>
                </app>
                <quote source="#EDITION" n="II 14,11">genetiuum per tria i scribebant, quorum duo
                   superiora loco consonantium</quote>
@@ -3622,12 +3622,12 @@
                </app>
                <app type="reference-signs" xml:id="rs-14-19-1">
                   <lem wit="#COD_50">·i· litteram</lem>
-                  <rdg wit="#COD_50"><add place="interlinear above" hand="#scr" facs="#zone.3r.9"
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#sec" facs="#zone.3r.9"
                         ana="#lemma-gloss"><g ref="#reference-sign-dotted-virga"/></add></rdg>
                </app>
                <app type="gloss" xml:id="gloss-14-19-1">
                   <lem wit="#COD_50">·i· litteram</lem>
-                  <rdg wit="#COD_50"><add place="right margin" hand="#scr" facs="#zone.3r.10"
+                  <rdg wit="#COD_50"><add place="right margin" hand="#sec" facs="#zone.3r.10"
                         ana="#text-variant"><g ref="#reference-sign-dotted-virga"/>
                         <g ref="#vel"/> ante eam</add></rdg>
                </app>
@@ -4323,7 +4323,7 @@
                <app type="gloss" xml:id="gloss-19-6-1">
                   <lem wit="#EDITION">Chremes</lem>
                   <rdg wit="#COD_50"><add place="left margin" hand="#Otfrid" facs="#zone.3v.28"
-                        ana="#glosses-elucidating-the-main-text"><g
+                        ana="#grammatical-glosses-on-the-noun #glosses-elucidating-the-main-text"><g
                            ref="#reference-sign-inverted-cryphia"/>proprium nomen <g ref="#vel"/>
                         ciuitas. <del cause="problem-solved" type="rasura"><g ref="#nota-sign"
                            /></del><add>a cremo· cremas·</add></add></rdg>
@@ -5255,7 +5255,7 @@
                <app type="gloss" xml:id="gloss-23-8-1">
                   <lem wit="#EDITION">Ramnes</lem>
                   <rdg wit="#COD_50"><add place="interlinear above" hand="#Otfrid"
-                        facs="#zone.4r.49" ana="#glosses-elucidating-the-main-text">proprium
+                        facs="#zone.4r.49" ana="#grammatical-glosses-on-the-noun">proprium
                         nomen</add></rdg>
                </app>
                <quote source="#EDITION" n="II 23,9">Ramnetis, sicut Chremes Chremetis (iambica enim
@@ -6090,7 +6090,7 @@
                </app>
                <app type="gloss" xml:id="gloss-25-21-2">
                   <lem wit="#EDITION">patronus</lem>
-                  <rdg wit="#COD_50"><add place="left margin" hand="#scr" facs="#zone.4v.51"
+                  <rdg wit="#COD_50"><add place="left margin" hand="#sec" facs="#zone.4v.51"
                         ana="#synonyms"><g ref="#reference-sign-virga-dot"/>patrosus
                      defensor</add></rdg>
                   <note resp="#CG" type="explanation" target="#gloss-25-21-2">I could not find any
@@ -6126,7 +6126,7 @@
                </app>
                <app type="gloss" xml:id="gloss-25-22-2">
                   <lem wit="#EDITION">patro</lem>
-                  <rdg wit="#COD_50"><add place="interlinear above" hand="#scr" facs="#zone.4v.55"
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#sec" facs="#zone.4v.55"
                         ana="#synonyms"><g ref="#reference-sign-virga-dot"/>perficio</add></rdg>
                   <note resp="#CG" type="explanation" target="#gloss-25-22-2">'perficio' as a
                      synonym for 'patro' occurs also in MS Köln 200, f. 7r; MS BSB Clm 18375, f.
@@ -6372,7 +6372,7 @@
                </app>
                <app type="gloss" xml:id="gloss-26-14-4">
                   <lem wit="#COD_50">auctus</lem>
-                  <rdg wit="#COD_50"><add place="interlinear below" hand="#scr" facs="#zone.4v.66"
+                  <rdg wit="#COD_50"><add place="interlinear below" hand="#sec" facs="#zone.4v.66"
                         ana="#text-variant">augur</add></rdg>
                </app>
                <app type="gloss" xml:id="gloss-26-14-5">
@@ -6396,7 +6396,7 @@
                </app>
                <app type="gloss" xml:id="gloss-26-16-2">
                   <lem wit="#EDITION">aliquot</lem>
-                  <rdg wit="#COD_50"><add place="interlinear above" hand="#scr" facs="#zone.4v.69"
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#sec" facs="#zone.4v.69"
                         ana="#glosses-elucidating-the-main-text">pro aliquid</add></rdg>
                </app>
                <quote source="#EDITION" n="II 26,17">ponebant u, et maxime Vmbri et Tusci. <add
@@ -6425,7 +6425,7 @@
                      <lb n="34" ed="4v"/> enim <foreign xml:lang="grc">ἐδόντα</foreign> pro</quote>
                <app type="gloss" xml:id="gloss-26-19-1">
                   <lem wit="#EDITION">compes</lem>
-                  <rdg wit="#COD_50"><add place="interlinear above" hand="#scr" facs="#zone.4v.70"
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#sec" facs="#zone.4v.70"
                         ana="#glosses-elucidating-the-main-text">connumerator</add></rdg>
                </app>
                <app type="text-variation" xml:id="tv-26-19-1">
@@ -6555,7 +6555,7 @@
                   profundo»,</quote>
                <app type="gloss" xml:id="gloss-27-5-1">
                   <lem wit="#EDITION">Acherunte</lem>
-                  <rdg wit="#COD_50"><add place="interlinear above" hand="#scr" facs="#zone.5r.1"
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#sec" facs="#zone.5r.1"
                         ana="#acquaintance-with-classics">palus inferni</add></rdg>
                </app>
                <app type="reference-signs" xml:id="rs-27-5-1">
@@ -6619,7 +6619,7 @@
                   pro seruus, uolgus pro uulgus, Dauos</quote>
                <app type="gloss" xml:id="gloss-27-14-1">
                   <lem wit="#EDITION">Dauos</lem>
-                  <rdg wit="#COD_50"><add place="interlinear above" hand="#scr" facs="#zone.5r.6"
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#sec" facs="#zone.5r.6"
                         ana="#acquaintance-with-classics">seruus cuiusdam</add></rdg>
                   <note resp="#CG" type="explanation" target="#gloss-27-14-1">MMS BSB Clm 280a f. 6v
                      contains a similar gloss: 'proprium nomen serui'.</note>
@@ -6647,7 +6647,7 @@
                <app type="gloss" xml:id="gloss-27-15-1">
                   <lem wit="#EDITION">Dauus</lem>
                   <rdg wit="#COD_50"><add place="right margin" hand="#Otfrid" facs="#zone.5r.8"
-                        ana="#glosses-elucidating-the-main-text"><g
+                        ana="#grammatical-glosses-on-the-noun"><g
                            ref="#reference-sign-inverted-cryphia"/>proprium <g ref="#vel"/> qui de
                         datia est</add></rdg>
                   <note resp="#CG" type="explanation" target="#gloss-27-15-1"> MS Köln 200, f. 7v
@@ -6803,7 +6803,7 @@
                </app>
                <app type="gloss" xml:id="gloss-27-25-1">
                   <lem wit="#EDITION"><foreign xml:lang="grc">θουγάτηρ</foreign></lem>
-                  <rdg wit="#COD_50"><add place="interlinear above" hand="#scr" facs="#zone.5r.15"
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#sec" facs="#zone.5r.15"
                         ana="#Greek-glosses">filia</add></rdg>
                </app>
             </div>
@@ -6838,12 +6838,12 @@
                </app>
                <app type="gloss" xml:id="gloss-28-4-1">
                   <lem wit="#EDITION"><foreign xml:lang="grc">Καλλιχόρου</foreign></lem>
-                  <rdg wit="#COD_50"><add place="interlinear above" hand="#scr" facs="#zone.5r.17"
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#sec" facs="#zone.5r.17"
                         ana="#Greek-glosses">forma</add></rdg>
                </app>
                <app type="gloss" xml:id="gloss-28-4-2" subtype="to-be-checked">
                   <lem wit="#COD_50">eypeias</lem>
-                  <rdg wit="#COD_50"><add place="interlinear above" hand="#scr" facs="#zone.5r.18"
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#sec" facs="#zone.5r.18"
                         ana="#Greek-glosses">inuenians</add></rdg>
                </app>
                <quote source="#EDITION" n="II 28,5">quod nos secuti u modo correptam modo productam
@@ -7320,7 +7320,7 @@
                </app>
                <app type="gloss" xml:id="gloss-30-18-1">
                   <lem wit="#EDITION">iggerunt</lem>
-                  <rdg wit="#COD_50"><add place="above" hand="#scr" facs="#zone.5v.2"
+                  <rdg wit="#COD_50"><add place="above" hand="#sec" facs="#zone.5v.2"
                         ana="#synonyms"><g ref="#reference-sign-dicolon"/> subministrant</add></rdg>
                </app>
                <app type="text-variation" xml:id="tv-30-18-2">
@@ -7684,7 +7684,7 @@
                <app type="gloss" xml:id="gloss-32-9-2">
                   <lem wit="#EDITION">Byrrhia</lem>
                   <rdg wit="#COD_50"><add place="interlinear above" hand="#Otfrid"
-                        facs="#zone.5v.27" ana="#glosses-elucidating-the-main-text">proprium
+                        facs="#zone.5v.27" ana="#grammatical-glosses-on-the-noun">proprium
                         nomen</add></rdg>
                </app>
                <app type="gloss" xml:id="gloss-32-9-3">
@@ -7914,7 +7914,7 @@
                   subit etiam loco aspirationis, ut ueho uexi,</quote>
                <app type="gloss" xml:id="gloss-33-17-1">
                   <lem wit="#EDITION">subit</lem>
-                  <rdg wit="#COD_50"><add place="interlinear above" hand="#scr" facs="#zone.5v.39"
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#sec" facs="#zone.5v.39"
                         ana="#synonyms">subintrat</add></rdg>
                </app>
                <quote source="#EDITION" n="II 33,18">traho traxi; uerti<lb n="38" break="no" ed="5v"
@@ -7949,12 +7949,12 @@
                </app>
                <app type="reference-signs" xml:id="rs-33-21-1">
                   <lem wit="#EDITION">exoleo</lem>
-                  <rdg wit="#COD_50"><add place="above" hand="#scr" facs="#zone.6r.2"
+                  <rdg wit="#COD_50"><add place="above" hand="#sec" facs="#zone.6r.2"
                         ana="#lemma-gloss"><g ref="#reference-sign-virga-dot"/></add></rdg>
                </app>
                <app type="gloss" xml:id="gloss-33-21-2">
                   <lem wit="#EDITION">exoleo</lem>
-                  <rdg wit="#COD_50"><add place="above" hand="#scr" facs="#zone.6r.3"
+                  <rdg wit="#COD_50"><add place="above" hand="#sec" facs="#zone.6r.3"
                         ana="#synonyms"><g ref="#reference-sign-virga-dot"/> defenio</add></rdg>
                   <note corresp="#gloss-33-21-2" type="explanation" resp="#CG">The otherwise
                      unattested word 'defenio' is probably an erroneous transcription of 'deficio',
@@ -7969,7 +7969,7 @@
                </app>
                <app type="gloss" xml:id="gloss-33-22-2">
                   <lem wit="#EDITION">exsequor</lem>
-                  <rdg wit="#COD_50"><add place="interlinear above" hand="#scr" facs="#zone.6r.5"
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#sec" facs="#zone.6r.5"
                         ana="#glosses-containing-an-example"><g ref="#reference-sign-virga-dot"/>
                         extraneus <g ref="#reference-sign-virga-dot"/></add></rdg>
                </app>
@@ -8030,12 +8030,12 @@
                   obssessus, abs<lb n="7" break="no" ed="6r"/>sectus, quod</quote>
                <app type="reference-signs" xml:id="rs-34-5-1">
                   <lem wit="#EDITION">obssessus</lem>
-                  <rdg wit="#COD_50"><add place="above" hand="#scr" facs="#zone.6r.10"
+                  <rdg wit="#COD_50"><add place="above" hand="#sec" facs="#zone.6r.10"
                         ana="#lemma-gloss"><g ref="#reference-sign-dicolon"/></add></rdg>
                </app>
                <app type="gloss" xml:id="gloss-34-5-1">
                   <lem wit="#EDITION">obssessus</lem>
-                  <rdg wit="#COD_50"><add place="right margin" hand="#scr" facs="#zone.6r.11"
+                  <rdg wit="#COD_50"><add place="right margin" hand="#sec" facs="#zone.6r.11"
                         ana="#synonyms"><g ref="#reference-sign-dicolon"/> circumdatus</add></rdg>
                </app>
                <app type="gloss" xml:id="gloss-34-5-2">
@@ -8372,12 +8372,12 @@
                </app>
                <app type="reference-signs" xml:id="rs-35-6-1">
                   <lem wit="#COD_50">actio</lem>
-                  <rdg wit="#COD_50"><add place="above" hand="#scr" facs="#zone.6r.38"
+                  <rdg wit="#COD_50"><add place="above" hand="#sec" facs="#zone.6r.38"
                         ana="#lemma-gloss"><g ref="#reference-sign-trigon"/></add></rdg>
                </app>
                <app type="gloss" xml:id="gloss-35-6-1">
                   <lem wit="#COD_50">actio</lem>
-                  <rdg wit="#COD_50"><add place="left margin" hand="#scr" facs="#zone.6r.39"
+                  <rdg wit="#COD_50"><add place="left margin" hand="#sec" facs="#zone.6r.39"
                         ana="#synonyms"><g ref="#reference-sign-inverted-trigon"/>aduoco <g
                            ref="#vel"/> inuito</add></rdg>
                </app>
@@ -8385,7 +8385,7 @@
                   agger. transit etiam</quote>
                <app type="gloss" xml:id="gloss-35-7-1">
                   <lem wit="#EDITION">agger</lem>
-                  <rdg wit="#COD_50"><add place="interlinear above" hand="#scr" facs="#zone.6r.40"
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#sec" facs="#zone.6r.40"
                         ana="#glosses-elucidating-the-main-text">manufactum</add></rdg>
                </app>
                <quote source="#EDITION" n="II 35,8">in s: assideo, ra<lb n="22" break="no" ed="6r"
@@ -8409,12 +8409,12 @@
                </app>
                <app type="reference-signs" xml:id="rs-35-9-1">
                   <lem wit="#EDITION">attamino</lem>
-                  <rdg wit="#COD_50"><add place="above" hand="#scr" facs="#zone.6r.41"
+                  <rdg wit="#COD_50"><add place="above" hand="#sec" facs="#zone.6r.41"
                         ana="#lemma-gloss"><g ref="#reference-sign-distigme"/></add></rdg>
                </app>
                <app type="gloss" xml:id="gloss-35-9-1">
                   <lem wit="#EDITION">attamino</lem>
-                  <rdg wit="#COD_50"><add place="left margin" hand="#scr" facs="#zone.6r.42"
+                  <rdg wit="#COD_50"><add place="left margin" hand="#sec" facs="#zone.6r.42"
                         ana="#synonyms"><g ref="#reference-sign-distigme"/> contamino</add></rdg>
                </app>
                <quote source="#EDITION" n="II 35,10">tamen <lb n="23" ed="6r"/> frequenter
@@ -8745,7 +8745,7 @@
                <app type="gloss" xml:id="gloss-36-20-1">
                   <lem wit="#EDITION">Saguntum</lem>
                   <rdg wit="#COD_50"><add place="left margin" hand="#Otfrid" facs="#zone.6v.6"
-                        ana="#glosses-elucidating-the-main-text"><g ref="#reference-sign-cryphia"/>
+                        ana="#grammatical-glosses-on-the-noun"><g ref="#reference-sign-cryphia"/>
                         ciuitas in hispania· <g ref="#vel"/> proprium loci</add></rdg>
                </app>
                <app type="rubrication" xml:id="rubr-36-20-1">
@@ -8763,7 +8763,7 @@
                <app type="gloss" xml:id="gloss-36-21-1">
                   <lem wit="#EDITION">Sethus</lem>
                   <rdg wit="#COD_50"><add place="interlinear above" hand="#Otfrid" facs="#zone.6v.7"
-                        ana="#glosses-elucidating-the-main-text">proprium</add></rdg>
+                        ana="#grammatical-glosses-on-the-noun">proprium</add></rdg>
                </app>
                <quote source="#EDITION" n="II 36,22">pro Mezentius. ergo corylus et lympha ex ipsa
                   scriptura a Graecis</quote>
@@ -8893,7 +8893,7 @@
                   >υ</foreign></quote>
                <app type="gloss" xml:id="gloss-37-11-1">
                   <lem wit="#EDITION">scribebant</lem>
-                  <rdg wit="#COD_50"><add place="interlinear above" hand="#scr" facs="#zone.6v.17"
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#sec" facs="#zone.6v.17"
                         ana="#suppletive-glosses">·latini· <g ref="#sdot"/></add></rdg>
                </app>
                <app type="rubrication" xml:id="rubr-37-11-1">
@@ -9169,43 +9169,43 @@
                      any parallel occurrence of this gloss.</note>
                </app>
                <quote source="#EDITION" n="II 38,16">oe quoque idem patitur apud Graecos.
-                  Aeschylus:</quote> 
+                  Aeschylus:</quote>
                <app type="rubrication" xml:id="rubr-38-16-1">
                   <lem wit="#EDITION">oe</lem>
                   <rdg wit="#COD_50" hand="#scr"><hi rend="capital letter filled with red ink"
-                     >O</hi>e</rdg>
+                        >O</hi>e</rdg>
                </app>
                <app type="gloss" xml:id="gloss-38-16-1">
                   <lem wit="#EDITION">oe</lem>
                   <rdg wit="#COD_50"><add place="left margin" hand="#Otfrid" facs="#zone.6v.30"
-                     ana="#glosses-elucidating-the-main-text-with-red-marginal-title"><hi
-                        rend="red script">De· oe</hi></add></rdg>
+                        ana="#glosses-elucidating-the-main-text-with-red-marginal-title"><hi
+                           rend="red script">De· oe</hi></add></rdg>
                </app>
                <app type="reference-signs" xml:id="rs-38-16-1">
                   <lem wit="#EDITION">Aeschylus</lem>
                   <rdg wit="#COD_50"><add place="above" hand="#Otfrid" facs="#zone.6v.31"
-                     ana="#lemma-gloss"><g ref="#reference-sign-inverted-cryphia"/></add></rdg>
+                        ana="#lemma-gloss"><g ref="#reference-sign-inverted-cryphia"/></add></rdg>
                </app>
                <app type="gloss" xml:id="gloss-38-16-2">
                   <lem wit="#EDITION">Aeschylus</lem>
                   <rdg wit="#COD_50"><add place="right margin" hand="#Otfrid" facs="#zone.6v.32"
-                     ana="#acquaintance-with-classics"><g ref="#reference-sign-inverted-cryphia"/>nomen auctoris·</add></rdg>
+                        ana="#acquaintance-with-classics"><g ref="#reference-sign-inverted-cryphia"
+                        />nomen auctoris·</add></rdg>
                </app>
-               <quote source="#EDITION" n="II 38,17">«<foreign
-                     xml:lang="grc">Ἴστρος το<lb n="29" break="no" ed="6v"/>ιαύτας παρθένους
-                     λοχεύεται</foreign>».</quote>
+               <quote source="#EDITION" n="II 38,17">«<foreign xml:lang="grc">Ἴστρος το<lb n="29"
+                        break="no" ed="6v"/>ιαύτας παρθένους λοχεύεται</foreign>».</quote>
                <app type="text-variation" xml:id="tv-38-17-1">
-                  <lem wit="#EDITION">«<foreign
-                     xml:lang="grc">Ἴστρος τοιαύτας παρθένους
-                     λοχεύεται</foreign>».</lem>
+                  <lem wit="#EDITION">«<foreign xml:lang="grc">Ἴστρος τοιαύτας παρθένους
+                        λοχεύεται</foreign>».</lem>
                   <rdg wit="#COD_50" hand="#scr">ICTPONTOIAS TAC TIAPOENOVCAOXEIETAI</rdg>
                </app>
                <quote source="#EDITION" n="II 38,18">unde quidam non sine ratione unum semis
                   singulas eas habere tempus</quote>
                <app type="gloss" xml:id="gloss-38-18-1">
                   <lem wit="#EDITION">unum semis</lem>
-                  <rdg wit="#COD_50"><add place="interlinear above" hand="#Otfrid" facs="#zone.6v.33"
-                     ana="#glosses-elucidating-the-main-text"><g ref="#idest"/> unum &amp; dimidium</add></rdg>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#Otfrid"
+                        facs="#zone.6v.33" ana="#glosses-elucidating-the-main-text"><g ref="#idest"
+                        /> unum &amp; dimidium</add></rdg>
                </app>
                <quote source="#EDITION" n="II 38,19">dicunt, <lb n="30" ed="6v"/> ideoque, si
                   consequatur consonans, quae dimidium tempus habet,</quote>
@@ -9215,13 +9215,13 @@
                <app type="gloss" xml:id="gloss-38-21-1">
                   <lem wit="#EDITION">au</lem>
                   <rdg wit="#COD_50"><add place="left margin" hand="#Otfrid" facs="#zone.6v.34"
-                     ana="#glosses-elucidating-the-main-text-with-red-marginal-title"><hi
-                        rend="red script">De· au·</hi></add></rdg>
+                        ana="#glosses-elucidating-the-main-text-with-red-marginal-title"><hi
+                           rend="red script">De· au·</hi></add></rdg>
                </app>
                <app type="rubrication" xml:id="rubr-38-21-1">
                   <lem wit="#EDITION">au</lem>
                   <rdg wit="#COD_50" hand="#Otfrid"><hi rend="capital letter filled with red ink"
-                     >a·u·</hi></rdg>
+                        >a·u·</hi></rdg>
                </app>
             </div>
             <div type="page-of-Hertz-edition" n="Liber Primus" xml:id="liber-primus.35"
@@ -9237,7 +9237,7 @@
                <app type="rubrication" xml:id="rubr-39-3-1">
                   <lem wit="#EDITION">et</lem>
                   <rdg wit="#COD_50" hand="#Otfrid"><hi rend="capital letter filled with red ink"
-                     >e</hi>t</rdg>
+                        >e</hi>t</rdg>
                </app>
                <quote source="#EDITION" n="II 39,4">aufugio et aufero. ex contrario quoque
                   frequenter solet fieri, ut</quote>
@@ -9255,20 +9255,21 @@
                <app type="reference-signs" xml:id="rs-39-7-1">
                   <lem wit="#EDITION">augustus</lem>
                   <rdg wit="#COD_50"><add place="above" hand="#Otfrid" facs="#zone.6v.35"
-                     ana="#lemma-gloss"><g ref="#reference-sign-trigon"/></add></rdg>
+                        ana="#lemma-gloss"><g ref="#reference-sign-trigon"/></add></rdg>
                </app>
                <app type="gloss" xml:id="gloss-39-7-1">
                   <lem wit="#EDITION">augustus</lem>
                   <rdg wit="#COD_50"><add place="left margin" hand="#Otfrid" facs="#zone.6v.36"
-                     ana="#glosses-elucidating-the-main-text #etymological-glosses"><g ref="#reference-sign-trigon"
-                     />locus consecratus· ab auium gustu·</add></rdg>
+                        ana="#glosses-elucidating-the-main-text #etymological-glosses"><g
+                           ref="#reference-sign-trigon"/>locus consecratus· ab auium
+                     gustu·</add></rdg>
                </app>
                <quote source="#EDITION" n="II 39,8">transit in o productam more antiquo, <lb n="36"
                      ed="6v"/> ut lōtus pro lautus, plōstrum</quote>
                <app type="rubrication" xml:id="rubr-39-8-1">
                   <lem wit="#EDITION">transit</lem>
                   <rdg wit="#COD_50" hand="#Otfrid"><hi rend="capital letter filled with red ink"
-                     >T</hi>ransit</rdg>
+                        >T</hi>ransit</rdg>
                </app>
                <app type="text-variation" xml:id="tv-39-8-1">
                   <lem wit="#EDITION">lōtus</lem>
@@ -9287,12 +9288,13 @@
                <app type="rubrication" xml:id="rubr-39-9-1">
                   <lem wit="#EDITION">sicut</lem>
                   <rdg wit="#COD_50" hand="#Otfrid"><hi rend="capital letter filled with red ink"
-                     >S</hi>icut</rdg>
+                        >S</hi>icut</rdg>
                </app>
                <app type="gloss" xml:id="gloss-39-9-1">
                   <lem wit="#EDITION">cōtes</lem>
-                  <rdg wit="#COD_50"><add place="interlinear above" hand="#Otfrid" facs="#zone.6v.37"
-                     ana="#glosses-elucidating-the-main-text">lapides</add></rdg>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#Otfrid"
+                        facs="#zone.6v.37" ana="#glosses-elucidating-the-main-text"
+                     >lapides</add></rdg>
                </app>
                <quote source="#EDITION" n="II 39,10">austrum pro ostrum, <lb n="37" ed="6v"/>
                   ausculum pro osculum, frequentissimeque hoc</quote>
@@ -9301,7 +9303,7 @@
                <app type="rubrication" xml:id="rubr-39-11-1">
                   <lem wit="#EDITION">in</lem>
                   <rdg wit="#COD_50" hand="#Otfrid"><hi rend="capital letter filled with red ink"
-                     >I</hi>n</rdg>
+                        >I</hi>n</rdg>
                </app>
                <app type="text-variation" xml:id="tv-39-11-1">
                   <lem wit="#EDITION">defrūdo</lem>
@@ -9309,8 +9311,8 @@
                </app>
                <app type="gloss" xml:id="gloss-39-11-1">
                   <lem wit="#EDITION">defrūdo</lem>
-                  <rdg wit="#COD_50"><add place="interlinear above" hand="#Otfrid" facs="#zone.6v.38"
-                     ana="#synonyms">exsicco</add></rdg>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#Otfrid"
+                        facs="#zone.6v.38" ana="#synonyms">exsicco</add></rdg>
                </app>
                <quote source="#EDITION" n="II 39,12">inclūdo.</quote>
                <quote source="#EDITION" n="II 39,13">eu transit in e longam, ut Achillēs pro
@@ -9318,13 +9320,13 @@
                <app type="gloss" xml:id="gloss-39-13-1">
                   <lem wit="#EDITION">eu</lem>
                   <rdg wit="#COD_50"><add place="left margin" hand="#Otfrid" facs="#zone.6v.39"
-                     ana="#glosses-elucidating-the-main-text-with-red-marginal-title"><hi
-                        rend="red script">De· eu·</hi></add></rdg>
+                        ana="#glosses-elucidating-the-main-text-with-red-marginal-title"><hi
+                           rend="red script">De· eu·</hi></add></rdg>
                </app>
                <app type="rubrication" xml:id="rubr-39-13-1">
                   <lem wit="#EDITION">eu</lem>
                   <rdg wit="#COD_50" hand="#Otfrid"><hi rend="capital letter filled with red ink"
-                     >e</hi>u</rdg>
+                        >e</hi>u</rdg>
                </app>
                <app type="text-variation" xml:id="tv-39-13-1">
                   <lem wit="#EDITION">Achillēs</lem>
@@ -9334,18 +9336,18 @@
                   <lem wit="#EDITION">Vlixēs</lem>
                   <rdg wit="#COD_50" hand="#Otfrid">Vlixes</rdg>
                </app>
-              <quote source="#EDITION" n="II 39,14">Vlixeus, quod ostenditur ex genetiuo <pb n="7r"
+               <quote source="#EDITION" n="II 39,14">Vlixeus, quod ostenditur ex genetiuo <pb n="7r"
                      xml:id="page__00023" facs="#facs__00023"/> Vlixei. Horatius in</quote>
                <app type="reference-signs" xml:id="rs-39-14-1">
                   <lem wit="#EDITION">ex genetiuo</lem>
                   <rdg wit="#COD_50"><add place="above" hand="#Otfrid" facs="#zone.6v.40"
-                     ana="#lemma-gloss"><g ref="#reference-sign-trigon"/></add></rdg>
+                        ana="#lemma-gloss"><g ref="#reference-sign-trigon"/></add></rdg>
                </app>
                <app type="gloss" xml:id="gloss-39-14-1">
                   <lem wit="#EDITION">ex genetiuo</lem>
                   <rdg wit="#COD_50"><add place="right margin" hand="#Otfrid" facs="#zone.6v.41"
-                     ana="#suppletive-glosses"><g ref="#reference-sign-trigon"
-                     />quod ulixeus nominatiuus est</add></rdg>
+                        ana="#suppletive-glosses"><g ref="#reference-sign-trigon"/>quod ulixeus
+                        nominatiuus est</add></rdg>
                </app>
                <quote source="#EDITION" n="II 39,15">carminum primo:</quote>
                <quote source="#EDITION" n="II 39,16">«nec cursus duplices per mare Vlixei».</quote>
@@ -9360,19 +9362,19 @@
                <app type="gloss" xml:id="gloss-39-18-1">
                   <lem wit="#EDITION">oe</lem>
                   <rdg wit="#COD_50"><add place="right margin" hand="#Otfrid" facs="#zone.7r.1"
-                     ana="#glosses-elucidating-the-main-text-with-red-marginal-title"><hi
-                        rend="red script">De· oe·</hi></add></rdg>
+                        ana="#glosses-elucidating-the-main-text-with-red-marginal-title"><hi
+                           rend="red script">De· oe·</hi></add></rdg>
                </app>
                <app type="annotation-signs" xml:id="as-39-18-1">
                   <lem wit="#EDITION">oe</lem>
                   <rdg wit="#COD_50"><add place="right margin" hand="#sec" facs="#zone.7r.2"
-                     ana="#attention-sign-nota"><g ref="#nota-sign"/></add></rdg>
+                        ana="#attention-sign-nota"><g ref="#nota-sign"/></add></rdg>
                </app>
                <app type="gloss" xml:id="gloss-39-18-2">
                   <lem wit="#EDITION">diaeresin</lem>
                   <rdg wit="#COD_50"><add place="left margin" hand="#Otfrid" facs="#zone.7r.3"
-                     ana="#glosses-elucidating-the-main-text">discissionem <g ref="#vel"/>
-                     diffinitionem</add></rdg>
+                        ana="#glosses-elucidating-the-main-text">discissionem <g ref="#vel"/>
+                        diffinitionem</add></rdg>
                </app>
                <quote source="#EDITION" n="II 39,19">Graecam seruat scripturam. per o enim et i
                   ponitur, quae tamen, sicut supra</quote>
@@ -9390,14 +9392,13 @@
                   >Μαῖα</foreign>. in hoc quoque Aeolis sequimur; sic enim illi <lb n="4" ed="7r"/>
                   diuidentes</quote>
                <app type="text-variation" xml:id="tv-39-21-1">
-                  <lem wit="#EDITION">Maia pro <foreign xml:lang="grc"
-                     >Μαῖα</foreign></lem>
+                  <lem wit="#EDITION">Maia pro <foreign xml:lang="grc">Μαῖα</foreign></lem>
                   <rdg wit="#COD_50" hand="#Otfrid">ma·i·a pro maia</rdg>
                </app>
                <app type="gloss" xml:id="gloss-39-21-1">
                   <lem wit="#EDITION">Maia</lem>
                   <rdg wit="#COD_50"><add place="interlinear above" hand="#Otfrid" facs="#zone.7r.4"
-                     ana="#quia-glosses">quia illi dicunt trea· <g ref="#et"/> mea</add></rdg>
+                        ana="#quia-glosses">quia illi dicunt trea· <g ref="#et"/> mea</add></rdg>
                </app>
                <app type="rubrication" xml:id="rubr-39-21-1">
                   <lem wit="#EDITION">in hoc</lem>
@@ -9411,8 +9412,8 @@
                   <rdg wit="#COD_50" hand="#Otfrid">diptongum</rdg>
                </app>
                <app type="text-variation" xml:id="tv-39-22-2">
-                  <lem wit="#EDITION"><foreign xml:lang="grc"
-                     >κόϊλον</foreign> pro <foreign xml:lang="grc">κοῖλον</foreign></lem>
+                  <lem wit="#EDITION"><foreign xml:lang="grc">κόϊλον</foreign> pro <foreign
+                        xml:lang="grc">κοῖλον</foreign></lem>
                   <rdg wit="#COD_50" hand="#Otfrid">·KOYΛON· pro ·KOIΛON·</rdg>
                </app>
                <app type="text-variation" xml:id="tv-39-22-3">
@@ -9426,7 +9427,7 @@
                <app type="gloss" xml:id="gloss-39-22-1">
                   <lem wit="#COD_50">KOIΛON</lem>
                   <rdg wit="#COD_50"><add place="interlinear above" hand="#Otfrid" facs="#zone.7r.5"
-                     ana="#glosses-elucidating-the-main-text">proprium nomen</add></rdg>
+                        ana="#grammatical-glosses-on-the-noun">proprium nomen</add></rdg>
                </app>
                <quote source="#EDITION" n="II 39,23">sequente producere licet antecedentem <lb n="5"
                      ed="7r"/> breuem, ut Homerus in hoc uersu:</quote>
@@ -9448,7 +9449,8 @@
                      n="6" break="no" ed="7r"/>calis sequente e longa more</quote>
                <app type="emendation" xml:id="emendation-40-1-1">
                   <lem wit="#EDITION" hand="#Otfrid">ei [id est oe</lem>
-                  <rdg wit="#COD_50" hand="#Otfrid"><del type="expunction">ei id est oe</del><add place="above">i ab oi</add></rdg>
+                  <rdg wit="#COD_50" hand="#Otfrid"><del type="expunction">ei id est oe</del><add
+                        place="above">i ab oi</add></rdg>
                </app>
                <app type="text-variation" xml:id="tv-40-1-1">
                   <lem wit="#EDITION">diphthongo</lem>
@@ -9456,19 +9458,20 @@
                </app>
                <app type="emendation" xml:id="emendation-40-1-2">
                   <lem wit="#EDITION">e longa</lem>
-                  <rdg wit="#COD_50" hand="#Otfrid"><del type="expunction">e</del><add place="above">H</add> longa</rdg>
+                  <rdg wit="#COD_50" hand="#Otfrid"><del type="expunction">e</del><add place="above"
+                        >H</add> longa</rdg>
                </app>
                <quote source="#EDITION" n="II 40,2">Attico, ut poēta pro <foreign xml:lang="grc"
                      >ποιητής</foreign> et poēma pro <foreign xml:lang="grc">ποίημα</foreign>, nec
                   non pro</quote>
                <app type="text-variation" xml:id="tv-40-2-1">
-                  <lem wit="#EDITION">poēta pro <foreign xml:lang="grc"
-                     >ποιητής</foreign></lem>
+                  <lem wit="#EDITION">poēta pro <foreign xml:lang="grc">ποιητής</foreign></lem>
                   <rdg wit="#COD_50" hand="#Otfrid">poeta pro ΠꞶIHTA</rdg>
                </app>
-               <app type="text-variation" xml:id="tv-40-2-2">
+               <app type="emendation" xml:id="emendation-40-2-1">
                   <lem wit="#EDITION">poēma pro <foreign xml:lang="grc">ποίημα</foreign></lem>
-                  <rdg wit="#COD_50" hand="#Otfrid">poema pro ΠOI<del type="expunction">e</del><add place="above">H</add>MA</rdg>
+                  <rdg wit="#COD_50" hand="#Otfrid">poema pro ΠOI<del type="expunction">e</del><add
+                        place="above">H</add>MA</rdg>
                </app>
                <quote source="#EDITION" n="II 40,3"><foreign xml:lang="grc">ωι</foreign> diphthongo
                   Graeca nos <lb n="7" ed="7r"/> hanc [id est oe] ponimus, ut <foreign
@@ -9483,12 +9486,13 @@
                <app type="reference-signs" xml:id="rs-40-4-1">
                   <lem wit="#EDITION"><foreign xml:lang="grc">τραγῳδία</foreign></lem>
                   <rdg wit="#COD_50"><add place="above" hand="#Otfrid" facs="#zone.7r.6"
-                     ana="#lemma-gloss"><g ref="#reference-sign-inverted-cryphia"/></add></rdg>
+                        ana="#lemma-gloss"><g ref="#reference-sign-inverted-cryphia"/></add></rdg>
                </app>
                <app type="gloss" xml:id="gloss-40-4-1">
                   <lem wit="#EDITION"><foreign xml:lang="grc">τραγῳδία</foreign></lem>
                   <rdg wit="#COD_50"><add place="right margin" hand="#Otfrid" facs="#zone.7r.7"
-                     ana="#acquaintance-with-classics"><g ref="#reference-sign-inverted-cryphia"/>opus comicorum· sicut poema po&amp;ae</add></rdg>
+                        ana="#acquaintance-with-classics"><g ref="#reference-sign-inverted-cryphia"
+                        />opus comicorum· sicut poema po&amp;ae</add></rdg>
                </app>
                <quote source="#EDITION" n="II 40,5">habe<lb n="8" break="no" ed="7r"/>mus o et pro i
                   e in diphthongo accipimus. hoc tamen quoque ad</quote>
@@ -9509,12 +9513,13 @@
                <app type="reference-signs" xml:id="rs-40-6-1">
                   <lem wit="#COD_50">boetorum</lem>
                   <rdg wit="#COD_50"><add place="above" hand="#Otfrid" facs="#zone.7r.8"
-                     ana="#lemma-gloss"><g ref="#reference-sign-cryphia"/></add></rdg>
+                        ana="#lemma-gloss"><g ref="#reference-sign-cryphia"/></add></rdg>
                </app>
                <app type="gloss" xml:id="gloss-40-6-1">
                   <lem wit="#COD_50">boetorum</lem>
                   <rdg wit="#COD_50"><add place="right margin" hand="#Otfrid" facs="#zone.7r.9"
-                     ana="#glosses-elucidating-the-main-text"><g ref="#reference-sign-cryphia"/>Quidam grecorum</add></rdg>
+                        ana="#glosses-elucidating-the-main-text"><g ref="#reference-sign-cryphia"
+                        />Quidam grecorum</add></rdg>
                </app>
                <quote source="#EDITION" n="II 40,7">Pūnices, phoeniceon pūniceum, poena pūnio.
                   numquam diphthongus in</quote>
@@ -9536,43 +9541,138 @@
                </app>
                <app type="gloss" xml:id="gloss-40-7-1">
                   <lem wit="#EDITION">pūniceum</lem>
-                  <rdg wit="#COD_50"><add place="interlinear above" hand="#Otfrid" facs="#zone.7r.10"
-                     ana="#synonyms">rubeum</add></rdg>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#Otfrid"
+                        facs="#zone.7r.10" ana="#synonyms">rubeum</add></rdg>
                </app>
-              <quote source="#EDITION" n="II 40,8">praeterito perfecto mutatur, <lb n="10" ed="7r"
+               <quote source="#EDITION" n="II 40,8">praeterito perfecto mutatur, <lb n="10" ed="7r"
                   /> ut haereo haesi, audio audiui, moenio</quote>
                <app type="gloss" xml:id="gloss-40-8-1">
                   <lem wit="#EDITION">moenio</lem>
-                  <rdg wit="#COD_50"><add place="interlinear above" hand="#Otfrid" facs="#zone.7r.11"
-                     ana="#synonyms">edifico· munio</add></rdg>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#Otfrid"
+                        facs="#zone.7r.11" ana="#synonyms">edifico· munio</add></rdg>
                </app>
                <quote source="#EDITION" n="II 40,9">moeniui, excepto caedo cecidi.</quote>
-               
-               
-               
-               
-               
-               
                <quote source="#EDITION" n="II 40,10">ei diphthongo nunc non utimur, sed loco eius in
                      Grae<lb n="11" break="no" ed="7r"/>cis nominibus</quote>
+               <app type="rubrication" xml:id="rubr-40-10-1">
+                  <lem wit="#EDITION">ei</lem>
+                  <rdg wit="#COD_50" hand="#Otfrid"><hi rend="capital letter filled with red ink"
+                        >E</hi>i</rdg>
+               </app>
+               <app type="gloss" xml:id="gloss-40-10-1">
+                  <lem wit="#EDITION">ei</lem>
+                  <rdg wit="#COD_50"><add place="right margin" hand="#Otfrid" facs="#zone.7r.12"
+                        ana="#glosses-elucidating-the-main-text-with-red-marginal-title"><hi
+                           rend="red script">De· ei·</hi></add></rdg>
+               </app>
+               <app type="text-variation" xml:id="tv-40-10-1">
+                  <lem wit="#EDITION">diphthongo</lem>
+                  <rdg wit="#COD_50" hand="#Otfrid">diptongo</rdg>
+               </app>
                <quote source="#EDITION" n="II 40,11">e uel i productas ponimus. et in priore
                   sequimur Aeolis: illi enim <foreign xml:lang="grc">τῷ</foreign></quote>
+               <app type="text-variation" xml:id="tv-40-10-2">
+                  <lem wit="#EDITION">Aeolis</lem>
+                  <rdg wit="#COD_50" hand="#Otfrid">eoles</rdg>
+               </app>
                <quote source="#EDITION" n="II 40,12"><foreign xml:lang="grc">Δημοσθένη</foreign>
                   dicunt pro <foreign xml:lang="grc">Δημοσ</foreign><lb n="12" break="no" ed="7r"
                      /><foreign xml:lang="grc">θένει</foreign> et <foreign xml:lang="grc"
                      >ἦπον</foreign> pro <foreign xml:lang="grc">εἶπον</foreign>. et nos</quote>
+               <app type="gloss" xml:id="gloss-40-12-1">
+                  <lem wit="#EDITION"><foreign xml:lang="grc">ἦπον</foreign></lem>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#Otfrid"
+                        facs="#zone.7r.13" ana="#grammatical-glosses-on-the-noun">proprium
+                        nomen</add><add place="interlinear above" hand="#sec" facs="#zone.7r.13"
+                        ana="#glosses-elucidating-the-main-text">auctoris</add></rdg>
+               </app>
                <quote source="#EDITION" n="II 40,13">plerumque, cum ei apud Graecos sit pura
                   paenultima, in illis maxime</quote>
+               <app type="reference-signs" xml:id="rs-40-13-1">
+                  <lem wit="#EDITION">paenultima</lem>
+                  <rdg wit="#COD_50"><add place="above" hand="#Otfrid" facs="#zone.7r.14"
+                        ana="#lemma-gloss"><g ref="#reference-sign-dotted-virga"/></add></rdg>
+               </app>
+               <app type="gloss" xml:id="gloss-40-13-1">
+                  <lem wit="#EDITION">paenultima</lem>
+                  <rdg wit="#COD_50"><add place="right margin" hand="#Otfrid" facs="#zone.7r.15"
+                        ana="#glosses-elucidating-the-main-text"><g
+                           ref="#reference-sign-dotted-virga"/>non sequitur quicquam· post·
+                        ei·</add></rdg>
+               </app>
                <quote source="#EDITION" n="II 40,14">femininis, quae per adiec<lb n="13" break="no"
                      ed="7r"/>tionem assumunt a apud Graecos, mutamus <foreign xml:lang="grc"
                      >ει</foreign> in e</quote>
+               <app type="emendation" xml:id="emendation-40-14-1">
+                  <lem wit="#EDITION">e</lem>
+                  <rdg wit="#COD_50" hand="#Otfrid"><del type="expunction">e</del><add place="above"
+                        >H</add></rdg>
+               </app>
                <quote source="#EDITION" n="II 40,15">productam, ut <foreign xml:lang="grc">Δηϊόπη
                      Δηϊόπεια</foreign> Deiopēa, <foreign xml:lang="grc">Καλλιόπη
                      Καλλιόπεια</foreign></quote>
+               <app type="text-variation" xml:id="tv-40-15-1">
+                  <lem wit="#EDITION"><foreign xml:lang="grc">Δηϊόπη Δηϊόπεια</foreign> Deiopēa,
+                        <foreign xml:lang="grc">Καλλιόπη Καλλιόπεια</foreign></lem>
+                  <rdg wit="#COD_50" hand="#Otfrid">ΔHIꞶΠEY ΔHIꞶΠEIA ΔEIꞶΠHA CAΛΛIꞶΠHY
+                     CAΛΛIꞶΠeia</rdg>
+               </app>
                <quote source="#EDITION" n="II 40,16"><lb n="14" ed="7r"/> Calliopēa. nam in illis,
                   quae in ia solum desinunt apud Graecos, raro fit hoc,</quote>
+               <app type="text-variation" xml:id="tv-40-16-1">
+                  <lem wit="#EDITION">Calliopēa</lem>
+                  <rdg wit="#COD_50" hand="#Otfrid">CAΛΛIꞶΠea</rdg>
+               </app>
+               <app type="rubrication" xml:id="rubr-40-16-1">
+                  <lem wit="#EDITION">nam</lem>
+                  <rdg wit="#COD_50" hand="#Otfrid"><hi rend="capital letter filled with red ink"
+                        >N</hi>am</rdg>
+               </app>
+               <app type="text-variation" xml:id="tv-40-16-2">
+                  <lem wit="#EDITION">ia</lem>
+                  <rdg wit="#COD_50" hand="#Otfrid">·i·</rdg>
+               </app>
                <quote source="#EDITION" n="II 40,17">ut Argia, Alexandria, Nicomedia, Lan<lb n="15"
                      break="no" ed="7r"/>gia, Lampia.</quote>
+               <app type="reference-signs" xml:id="rs-40-17-1">
+                  <lem wit="#EDITION">Argia</lem>
+                  <rdg wit="#COD_50"><add place="above" hand="#Otfrid" facs="#zone.7r.16"
+                        ana="#lemma-gloss"><g ref="#reference-sign-inverted-cryphia"/></add></rdg>
+               </app>
+               <app type="gloss" xml:id="gloss-40-17-1" subtype="to-be-checked">
+                  <lem wit="#EDITION">Argia</lem>
+                  <rdg wit="#COD_50"><add place="right margin" hand="#Otfrid" facs="#zone.7r.17"
+                        ana="#acquaintance-with-classics #grammatical-glosses-on-the-noun"><g
+                           ref="#reference-sign-inverted-cryphia"/>proprium nomen femininum filia
+                        adastri <g ref="#vel"/> patr<gap reason="illegible"/></add></rdg>
+               </app>
+               <app type="gloss" xml:id="gloss-40-17-2">
+                  <lem wit="#EDITION">Alexandria</lem>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#Otfrid"
+                        facs="#zone.7r.18" ana="#geographical-names">ciuitas</add></rdg>
+               </app>
+               <app type="gloss" xml:id="gloss-40-17-3">
+                  <lem wit="#EDITION">Nicomedia</lem>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#Otfrid"
+                        facs="#zone.7r.18" ana="#geographical-names">ciuitas</add></rdg>
+               </app>
+               <app type="reference-signs" xml:id="rs-40-17-2">
+                  <lem wit="#EDITION">Langia</lem>
+                  <rdg wit="#COD_50"><add place="above" hand="#Otfrid" facs="#zone.7r.20"
+                        ana="#lemma-gloss"><g ref="#reference-sign-distigme"/></add></rdg>
+               </app>
+               <app type="gloss" xml:id="gloss-40-17-4">
+                  <lem wit="#EDITION">Langia</lem>
+                  <rdg wit="#COD_50"><add place="left margin" hand="#Otfrid" facs="#zone.7r.21"
+                        ana="#acquaintance-with-classics #grammatical-glosses-on-the-noun"><g
+                           ref="#reference-sign-distigme"/>locus <g ref="#vel"/> nomen
+                     femmine</add></rdg>
+               </app>
+               <app type="gloss" xml:id="gloss-40-17-5">
+                  <lem wit="#EDITION">Lampia</lem>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#Otfrid"
+                        facs="#zone.7r.22" ana="#geographical-names">mons</add></rdg>
+               </app>
                <quote source="#EDITION" n="II 40,18">Statius in IIII:</quote>
                <quote source="#EDITION" n="II 40,19">«candensque iugis Lampia niuosis».</quote>
             </div>
@@ -9584,31 +9684,114 @@
                   umbra».</quote>
                <quote source="#EDITION" n="II 41,3"><lb n="16" ed="7r"/> idem in II:</quote>
                <quote source="#EDITION" n="II 41,4">«tunc donis Argia nitet uilesque sororis</quote>
+               <app type="text-variation" xml:id="tv-41-4-1">
+                  <lem wit="#EDITION">nitet uilesque sororis</lem>
+                  <rdg wit="#COD_50" hand="#scr">nitęcuilesque sorores</rdg>
+               </app>
+               <app type="emendation" xml:id="emendation-41-4-1">
+                  <lem wit="#COD_50">nitęcuilesque</lem>
+                  <rdg wit="#COD_50" hand="#sec">nitęc<add place="inline">i</add>uilesque</rdg>
+               </app>
                <quote source="#EDITION" n="II 41,5">ornatus sacro praeculta superuenit
                   auro».</quote>
                <quote source="#EDITION" n="II 41,6">raro autem diximus prop<lb n="17" break="no"
                      ed="7r"/>ter Medeam, Plateam. nam quod Virgilius</quote>
+               <app type="rubrication" xml:id="rubr-41-6-1">
+                  <lem wit="#EDITION">raro</lem>
+                  <rdg wit="#COD_50" hand="#scr"><hi rend="capital letter filled with red ink"
+                        >R</hi>aro</rdg>
+               </app>
+               <app type="gloss" xml:id="gloss-41-6-1">
+                  <lem wit="#EDITION">Medeam</lem>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#Otfrid"
+                        facs="#zone.7r.23" ana="#acquaintance-with-classics">uxor iasonis. <g
+                           ref="#vel"/> silua·</add></rdg>
+               </app>
+               <app type="gloss" xml:id="gloss-41-6-2">
+                  <lem wit="#EDITION">Plateam</lem>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#Otfrid"
+                        facs="#zone.7r.24" ana="#Greek-glosses">graece platia media</add></rdg>
+                  <note corresp="#gloss-41-6-2" type="explanation" resp="#CG">MS München, BSB, clm
+                     280a, f. 9r contains the same gloss.</note>
+               </app>
                <quote source="#EDITION" n="II 41,7">«qui tela Typhoĕa temnis»</quote>
-               <quote source="#EDITION" n="II 41,8">e correptam protulit, Doricum est: illi enim
-                  solent <lb n="18" ed="7r"/> ei diphthongo abicere i.</quote>
+               <app type="gloss" xml:id="gloss-41-7-1">
+                  <lem wit="#EDITION">Typhoĕa</lem>
+                  <rdg wit="#COD_50"><add place="left margin" hand="#Otfrid" facs="#zone.7r.25"
+                        ana="#acquaintance-with-classics">Tiphoeus· gigans</add></rdg>
+               </app>
+               <quote source="#EDITION" n="II 41,8">e correptam protulit, Doricum <g
+                     ref="#irish-est"/>: illi enim solent <lb n="18" ed="7r"/> ei diphthongo abicere
+                  i.</quote>
+               <app type="text-variation" xml:id="tv-41-8-1">
+                  <lem wit="#EDITION">diphthongo</lem>
+                  <rdg wit="#COD_50" hand="#scr">dipthongo</rdg>
+               </app>
                <quote source="#EDITION" n="II 41,9">in Latinis autem dictionibus difficile inuenies
                   i longam ante uocalem</quote>
+               <app type="text-variation" xml:id="tv-41-9-1">
+                  <lem wit="#EDITION">inuenies</lem>
+                  <rdg wit="#COD_50" hand="#scr">inuenis</rdg>
+               </app>
                <quote source="#EDITION" n="II 41,10">positam, nisi in geneti<lb n="19" break="no"
                      ed="7r"/>uis in ius desinentibus, ut illius, solius, ullius,</quote>
+               <app type="text-variation" xml:id="tv-41-10-1">
+                  <lem wit="#EDITION">ullius</lem>
+                  <rdg wit="#COD_50"/>
+               </app>
                <quote source="#EDITION" n="II 41,11">quae tamen licet et corripere, et in uerbo fiam
                   fias fiat, quod ipsum</quote>
                <quote source="#EDITION" n="II 41,12">quoque <lb n="20" ed="7r"/> contra aliorum
                   eiusdem coniugationis fit regulam uerborum.</quote>
+               <app type="gloss" xml:id="gloss-41-12-1">
+                  <lem wit="#EDITION">uerborum</lem>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#Otfrid"
+                        facs="#zone.7r.26" ana="#glosses-containing-an-example">ut audio</add></rdg>
+                  <note corresp="#gloss-41-12-1" type="explanation" resp="#CG">This example stems
+                     possibly from Otfrid.</note>
+               </app>
                <quote source="#EDITION" n="II 41,13">in masculinis quoque ei pura in e longam
                      conuer<lb n="21" break="no" ed="7r"/>titur: <foreign xml:lang="grc"
                      >Ἀχίλλειος</foreign></quote>
+               <app type="rubrication" xml:id="rubr-41-13-1">
+                  <lem wit="#EDITION">in masculinis</lem>
+                  <rdg wit="#COD_50" hand="#scr"><hi rend="capital letter filled with red ink"
+                        >I</hi>n masculinis</rdg>
+               </app>
+               <app type="reference-signs" xml:id="rs-41-13-1">
+                  <lem wit="#EDITION">in e longam</lem>
+                  <rdg wit="#COD_50"><add place="above" hand="#Otfrid" facs="#zone.7r.27"
+                        ana="#lemma-gloss"><g ref="#reference-sign-trigon"/></add></rdg>
+               </app>
+               <app type="gloss" xml:id="gloss-41-13-1">
+                  <lem wit="#EDITION">in e longam</lem>
+                  <rdg wit="#COD_50"><add place="right margin" hand="#Otfrid" facs="#zone.7r.28"
+                        ana="#glosses-containing-an-example"><g ref="#reference-sign-trigon"/>ut
+                        spondei desinit secunda sillaba in ei· puram <g ref="#idest"/> non habentem
+                        consonantem post se</add></rdg>
+               </app>
                <quote source="#EDITION" n="II 41,14">Achillēus, <foreign xml:lang="grc"
                      >Ἀλφειός</foreign> Alphēus, <foreign xml:lang="grc">σπονδεῖος</foreign>
                   spondēus. non sine ratione</quote>
+               <app type="text-variation" xml:id="tv-41-14-1">
+                  <lem wit="#EDITION">Achillēus, <foreign xml:lang="grc">Ἀλφειός</foreign> Alphēus,
+                        <foreign xml:lang="grc">σπονδεῖος</foreign> spondēus</lem>
+                  <rdg wit="#COD_50" hand="#scr">achilleus alpheios alfeus spondeios spondeus</rdg>
+               </app>
                <quote source="#EDITION" n="II 41,15">tamen hoc fit, sed quia i pura <lb n="22"
                      ed="7r"/> paenultima ante us uel a uel um per</quote>
+               <app type="gloss" xml:id="gloss-41-15-1">
+                  <lem wit="#EDITION">uel um</lem>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#Otfrid"
+                     facs="#zone.7r.29" ana="#glosses-containing-an-example">ut chium</add></rdg>
+               </app>
                <quote source="#EDITION" n="II 41,16">nominatiuos non inuenitur producta in Latinis
                   dictionibus nisi in dis<lb n="23" break="no" ed="7r"/>yllabis</quote>
+               
+               
+               
+               
+               
                <quote source="#EDITION" n="II 41,17">et ipsis Graecis. nam in Graecis saepe
                   inuenimus, ut Chīus et dīa</quote>
                <quote source="#EDITION" n="II 41,18">et in uno trisyllabo, quod apud Statium legi,
@@ -9616,8 +9799,8 @@
                <quote source="#EDITION" n="II 41,19">Thebaidos:</quote>
                <quote source="#EDITION" n="II 41,20">«at patrias si quando domos optataque,
                   Paean,</quote>
-               <quote source="#EDITION" n="II 41,21">templa, Lycie, dabis tot ditia dona sa<lb
-                     n="25" break="no" ed="7r"/>cratis</quote>
+               <quote source="#EDITION" n="II 41,21">templa, Lycie, dabis tot
+                  ditia dona sa<lb n="25" break="no" ed="7r"/>cratis</quote>
                <quote source="#EDITION" n="II 41,22">postibus et totidem uoti memor exige
                   tauros».</quote>
                <quote source="#EDITION" n="II 41,23">in aliis uero consonante sequente pro ei
@@ -10659,7 +10842,25 @@
          <zone xml:id="zone.7r.8" ulx="1064" uly="581" lrx="1090" lry="603"/>
          <zone xml:id="zone.7r.9" ulx="1520" uly="588" lrx="1680" lry="630"/>
          <zone xml:id="zone.7r.10" ulx="651" uly="620" lrx="754" lry="655"/>
+         <zone xml:id="zone.7r.12" ulx="1522" uly="665" lrx="1648" lry="716"/>
          <zone xml:id="zone.7r.11" ulx="536" uly="666" lrx="649" lry="701"/>
+         <zone xml:id="zone.7r.15" ulx="1488" uly="708" lrx="1723" lry="762"/>
+         <zone xml:id="zone.7r.13" ulx="282" uly="736" lrx="435" lry="794"/>
+         <zone xml:id="zone.7r.14" ulx="1061" uly="754" lrx="1093" lry="780"/>
+         <zone xml:id="zone.7r.18" ulx="1176" uly="836" lrx="1252" lry="867"/>
+         <zone xml:id="zone.7r.19" ulx="1334" uly="841" lrx="1391" lry="871"/>
+         <zone xml:id="zone.7r.16" ulx="1068" uly="844" lrx="1094" lry="867"/>
+         <zone xml:id="zone.7r.17" ulx="1502" uly="847" lrx="1736" lry="898"/>
+         <zone xml:id="zone.7r.22" ulx="242" uly="888" lrx="298" lry="918"/>
+         <zone xml:id="zone.7r.21" ulx="77" uly="895" lrx="196" lry="942"/>
+         <zone xml:id="zone.7r.20" ulx="208" uly="903" lrx="226" lry="922"/>
+         <zone xml:id="zone.7r.24" ulx="331" uly="962" lrx="475" lry="1010"/>
+         <zone xml:id="zone.7r.23" ulx="225" uly="975" lrx="355" lry="1008"/>
+         <zone xml:id="zone.7r.25" ulx="81" uly="984" lrx="196" lry="1031"/>
+         <zone xml:id="zone.7r.28" ulx="1498" uly="1062" lrx="1724" lry="1174"/>
+         <zone xml:id="zone.7r.26" ulx="777" uly="1093" lrx="874" lry="1143"/>
+         <zone xml:id="zone.7r.27" ulx="1265" uly="1097" lrx="1312" lry="1137"/>
+         <zone xml:id="zone.7r.29" ulx="555" uly="1181" lrx="629" lry="1216"/>
          <zone xml:id="zone.7r.2" ulx="1525" uly="247" lrx="1555" lry="295"/>
       </surface>
       <surface xml:id="facs__00024" n="7v">
