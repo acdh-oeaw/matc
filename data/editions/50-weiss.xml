@@ -370,11 +370,11 @@
                </category>
                <category xml:id="omission-sign-d">
                   <catDesc> A sign added above a lemma to mark omissions in the main text. It
-                     correlates a "h".</catDesc>
+                     correlates a 'h'.</catDesc>
                </category>
                <category xml:id="omission-sign-h">
                   <catDesc> This sign introduces the re-integration of omitted segments of the main
-                     text. It correlates a "d".</catDesc>
+                     text. It correlates a 'd'.</catDesc>
                </category>
                <category xml:id="omission-sign-asteriscus">
                   <catDesc> This sign occurs above a lemma to mark omissions in the main text. It is
