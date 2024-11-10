@@ -8966,8 +8966,8 @@
                         ana="#glosses-elucidating-the-main-text">discisionem· <g ref="#vel"/>
                         diffinitionem</add></rdg>
                   <note resp="#CG" type="explanation" target="#gloss-37-15-2">The gloss
-                     'discisionem' recurs in all three manuscripts I have taken as a comparison,
-                     i.e. in München, BSB, clm 18375, f. 15r; clm 280a, f. 8v; Köln 200, f. 9v.
+                     'discisionem' recurs in all three manuscripts I have used for comparison, i.e.
+                     in München, BSB, clm 18375, f. 15r; clm 280a, f. 8v; Köln 200, f. 9v.
                      Conversely, the gloss 'diffinitionem' has no parallel in those books. </note>
                </app>
                <quote source="#EDITION" n="II 37,16"><lb n="18" ed="6v"/> profertur, secundum
@@ -9862,10 +9862,10 @@
                         ana="#lemma-gloss"><g ref="#reference-sign-dicolon"/></add></rdg>
                </app>
                <app type="gloss" xml:id="gloss-41-20-1">
-                  <lem wit="#EDITION">Chīus</lem>
+                  <lem wit="#EDITION">Paean</lem>
                   <rdg wit="#COD_50"><add place="interlinear above" hand="#sec" facs="#zone.7r.38"
-                        ana="#acquaintance-with-classics"><g ref="#reference-sign-dicolon"
-                     /></add></rdg>
+                        ana="#acquaintance-with-classics"><g ref="#reference-sign-dicolon"/> laus
+                        apollinis</add></rdg>
                </app>
                <quote source="#EDITION" n="II 41,21">templa, Lycie, dabis tot ditia dona sa<lb
                      n="25" break="no" ed="7r"/>cratis</quote>
@@ -9974,8 +9974,7 @@
                   in mutis</quote>
                <app type="rubrication" xml:id="rubr-42-8-1">
                   <lem wit="#EDITION">in</lem>
-                  <rdg wit="#COD_50" hand="#scr"><hi rend="capital letter filled with red ink"
-                        >I</hi>n</rdg>
+                  <rdg wit="#COD_50" hand="#Otfrid"><hi rend="red capitalis">I</hi>n</rdg>
                </app>
                <app type="gloss" xml:id="gloss-42-8-1">
                   <lem wit="#EDITION">falx</lem>
@@ -9989,32 +9988,208 @@
                   <rdg wit="#COD_50"><add place="interlinear above" hand="#sec" facs="#zone.7r.46"
                         ana="#glosses-elucidating-the-main-text">libra</add></rdg>
                   <note corresp="#gloss-42-8-2" type="explanation" resp="#CG">The same gloss occurs
-                     in MS München BSB, clm 280a, f. 9r 200, f. 10v </note>
+                     in MS München BSB, clm 280a, f. 9r and MS Köln 200, f. 10v </note>
                </app>
                <app type="gloss" xml:id="gloss-42-8-3">
                   <lem wit="#EDITION">in mutis</lem>
                   <rdg wit="#COD_50"><add place="right margin" hand="#Otfrid" facs="#zone.7r.47"
-                     ana="#glosses-elucidating-the-main-text-with-red-marginal-title"><hi
-                        rend="red script">De mutis ante alias in eodem ordine
+                        ana="#glosses-elucidating-the-main-text-with-red-marginal-title"><hi
+                           rend="red script">De mutis ante alias in eodem ordine
                         literarum</hi></add></rdg>
+               </app>
+               <quote source="#EDITION" n="II 42,9"><lb n="32" ed="7r"/> praeponuntur b et g
+                  sequente d, ut <foreign xml:lang="grc">βδελυρός</foreign>, bdellium, Abdera,
+                  abdomen,</quote>
+               <app type="text-variation" xml:id="tv-42-9-1">
+                  <lem wit="#EDITION">Abdera</lem>
+                  <rdg wit="#COD_50" hand="#Otfrid">abdira</rdg>
+               </app>
+               <app type="gloss" xml:id="gloss-42-9-1">
+                  <lem wit="#EDITION"><foreign xml:lang="grc">βδελυρός</foreign></lem>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#sec" facs="#zone.7r.48"
+                        ana="#Greek-glosses">sine sensu</add></rdg>
+                  <note corresp="#gloss-42-9-1" type="explanation" resp="#CG">Cf. the gloss
+                     'deliramentum' occurring in MS Köln 200, f. 10v.</note>
+               </app>
+               <app type="gloss" xml:id="gloss-42-9-2">
+                  <lem wit="#EDITION">bdellium</lem>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#Otfrid"
+                        facs="#zone.7r.49" ana="#glosses-elucidating-the-main-text">genus
+                        lapidis</add></rdg>
+                  <note corresp="#gloss-42-9-2" type="explanation" resp="#CG">'Genus lapidis' is
+                     part of the main text and follows 'bdellium' in the MSS Köln 200, f. 10v;
+                     München, BSB, clm 280a, f. 9r and clm 18375, f. 16r. Here it is an intelrinear
+                     gloss.</note>
+               </app>
+               <app type="gloss" xml:id="gloss-42-9-3">
+                  <lem wit="#COD_50">abdira</lem>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#sec" facs="#zone.7r.50"
+                        ana="#glosses-elucidating-the-main-text">ciuitas</add></rdg>
+               </app>
+               <app type="annotation-signs" xml:id="as-42-9-1">
+                  <lem wit="#COD_50">abdira</lem>
+                  <rdg wit="#COD_50"><add place="right margin" hand="#Otfrid" facs="#zone.7r.51"
+                        ana="#attention-sign-require"><g ref="#require-sign"/> abdira</add></rdg>
+                  <note corresp="#gloss-42-9-13 #as-42-9-1" type="explanation" resp="#CG">The lemma
+                     'abdira' has been interpreted in two different ways by medieval glossators.
+                     Firstly, 'abdira' has been regarded as the name of the Thracian city 'Abdera',
+                     as the gloss 'ciuitas' contained in this manuscript demonstrates. Martin Hertz
+                     also regarded 'Abdera' the word originally written by Priscian and included it
+                     in the main text of his edition. Secondly, other medieval glossators thought
+                     that 'abdira' was rather a reference to 'abdir', the name of the stone that
+                     Rhea gave Saturn to eat instead of baby Zeus. According to this interpretation,
+                     MS München BSB, clm 280a, f. 9r contains the gloss 'lapis'; clm 18375, f. 16r
+                     features both the interlinear gloss 'lapis' and the marginal annotation: 'Genus
+                     lapidis quem deuorauit Saturnus pro Ioue filio suo'; MS Köln 200, f. 10v
+                     contains the explanation: 'lapis quem Saturnus comedit'. Probably because of
+                     these differences in the interpretation, Otfrid marked this passage in the
+                     margin with 'require abdira'. The gloss 'ciuitas' could be interpreted as the
+                     result of Otfrid's search, which another glossator added, or as the
+                     interpretation that did not satisfied Otfrid and triggered his further research
+                     or again as a gloss that another glossator added indipendently from
+                     Otfrid.</note>
+               </app>
+               <app type="gloss" xml:id="gloss-42-9-4">
+                  <lem wit="#EDITION">abdomen</lem>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#Otfrid"
+                        facs="#zone.7r.52"
+                        ana="#translation-into-Old-High-German #glosses-elucidating-the-main-text"
+                        xml:id="ohg-42-9-1" type="OHG-gloss" subtype="new-finding" n="16"><foreign
+                           xml:lang="goh">amban</foreign>· <g ref="#vel"/> pingue </add></rdg>
+                  <note corresp="#ohg-42-9-1" type="explanation" resp="#CG">The occurrence of this
+                     OHG gloss in the MS Wolfenbüttel, HAB, 50 Weiss. had not been recorded yet. See
+                     the entry 'amban, st. m.' in the digital <hi rend="italic">Althochdeutsches
+                        Wörterbuch, digitalisierte Fassung bereitgestellt durch die Sächsische
+                        Akademie der Wissenschaften zu Leipzig</hi>,
+                     https://awb.saw-leipzig.de/AWB?lemid=A01079, accessed 09.11.2024. 'amban'
+                     occurs also in MS Köln 200, f. 10v and in MS München, BSB, Clm 280a, f. 9r.
+                     Otfrid's use of 'amban' is possibly one of the oldest occurences of this term,
+                     since other attestations date mostly back to the 11th c. according to the
+                     Althochdeutsches Wörterbuch.</note>
+               </app>
+               <quote source="#EDITION" n="II 42,10">Mygdonides. c uero et p praepo<lb n="33"
+                     break="no" ed="7r"/>nuntur sequente t, ut actus, lectus,</quote>
+               <app type="rubrication" xml:id="rubr-42-10-1">
+                  <lem wit="#EDITION">c uero</lem>
+                  <rdg wit="#COD_50" hand="#Otfrid"><hi rend="capital letter filled with red ink"
+                        >c</hi> uero</rdg>
+               </app>
+               <app type="text-variation" xml:id="tv-42-10-1">
+                  <lem wit="#EDITION">lectus</lem>
+                  <rdg wit="#COD_50"/>
+               </app>
+               <app type="gloss" xml:id="gloss-42-10-1">
+                  <lem wit="#EDITION">Mygdonides</lem>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#Otfrid"
+                        facs="#zone.7r.53"
+                        ana="#glosses-elucidating-the-main-text #grammatical-glosses #acquaintance-with-classics"
+                        >lapis· &amp; nomen proprium· <g ref="#vel"/> corebus a patria
+                     dictus</add></rdg>
+                  <note corresp="#gloss-42-10-1" type="explanation" resp="#CG"> I could not find any
+                     reference to Coroebus in other glossed manuscripts of Priscian's <hi
+                        rend="italic">Ars</hi> that I have used for comparison. For Coroebus, son of
+                     the Phrygian king Mygdon, see Vergil, Aeneid, 2:341 and 424. </note>
+               </app>
+               <app type="emendation" xml:id="emendation-42-10-1">
+                  <lem wit="#COD_50">actus</lem>
+                  <rdg wit="#COD_50" hand="#sec"><add place="above">lectus</add></rdg>
+               </app>
+               <quote source="#EDITION" n="II 42,11">aptus, diphthongus. semiuocalis nulla
+                  praeponitur mutis nisi s</quote>
+               <app type="text-variation" xml:id="tv-42-11-1">
+                  <lem wit="#EDITION">diphthongus</lem>
+                  <rdg wit="#COD_50" hand="#Otfrid">diptongus</rdg>
+               </app>
+               <app type="rubrication" xml:id="rubr-42-11-1">
+                  <lem wit="#EDITION">semiuocalis</lem>
+                  <rdg wit="#COD_50" hand="#Otfrid"><hi rend="capital letter filled with red ink"
+                        >S</hi>emiuocalis</rdg>
+               </app>
+               <quote source="#EDITION" n="II 42,12">sequente b, ut as<lb n="34" break="no" ed="7r"
+                  />bestus, Asbustes, c uel q: scutum, squalor, p, ut</quote>
+               <app type="rubrication" xml:id="rubr-42-12-1">
+                  <lem wit="#EDITION">p</lem>
+                  <rdg wit="#COD_50" hand="#Otfrid"><hi rend="capital letter filled with red ink"
+                        >p</hi></rdg>
+               </app>
+               <app type="text-variation" xml:id="tv-42-12-1">
+                  <lem wit="#EDITION">Asbustes</lem>
+                  <rdg wit="#COD_50"/>
+               </app>
+               <app type="emendation" xml:id="emendation-42-12-1">
+                  <lem wit="#COD_50">asbestus</lem>
+                  <rdg wit="#COD_50" hand="#sec"><add place="above">asbutes</add></rdg>
+               </app>
+               <app type="reference-signs" xml:id="rs-42-12-1">
+                  <lem wit="#EDITION">asbestus</lem>
+                  <rdg wit="#COD_50"><add place="above" hand="#Otfrid" facs="#zone.7r.54"
+                        ana="#lemma-gloss"><g ref="#reference-sign-trigon"/></add></rdg>
+               </app>
+               <app type="gloss" xml:id="gloss-42-12-1">
+                  <lem wit="#EDITION">asbestus</lem>
+                  <rdg wit="#COD_50"><add place="left margin" hand="#Otfrid" facs="#zone.7r.55"
+                        ana="#glosses-elucidating-the-main-text"><g ref="#reference-sign-trigon"/>
+                        nomen lapidis</add></rdg>
+               </app>
+               <app type="reference-signs" xml:id="rs-42-12-2">
+                  <lem wit="#COD_50">asbutes</lem>
+                  <rdg wit="#COD_50"><add place="above" hand="#sec" facs="#zone.7r.56"
+                        ana="#lemma-gloss"><g ref="#reference-sign-virga-dot"/></add></rdg>
+               </app>
+               <app type="gloss" xml:id="gloss-42-12-2" subtype="to-be-checked">
+                  <lem wit="#COD_50">asbutes</lem>
+                  <rdg wit="#COD_50"><add place="left margin" hand="#sec" facs="#zone.7r.57"
+                        ana="#glosses-elucidating-the-main-text"><g ref="#reference-sign-virga-dot"
+                        /> inumatus</add></rdg>
+                  <note corresp="#gloss-42-12-2" type="explanation" resp="#CG"> If my reading
+                     'inumatus' is correct, this is probably an ortographic variant for 'inhumatus',
+                     'unburied'. The gloss refers to 'asbutes', i.e. Asbytes, a Trojan soldier
+                     killed on the battle field by Turnus according to Vergil's Aeneid,
+                     12:362.</note>
+               </app>
+               <app type="gloss" xml:id="gloss-42-12-3">
+                  <lem wit="#COD_50">asbutes</lem>
+                  <rdg wit="#COD_50"><add place="inline" hand="#Otfrid" facs="#zone.7r.58"
+                        ana="#grammatical-glosses-on-the-noun">proprium nomen</add></rdg>
+                  <note corresp="#gloss-42-12-3" type="explanation" resp="#CG"> Otfrid wrote this
+                     segment of the main text, as far as I can judge. The glossator dubbed #sec
+                     added the name 'Asbutes' that Otfrid had skipped. In turn, Otfrid glossed the
+                     addition by his colleague explaining that 'asbutes' is a proper name. This is a
+                     clear example of the close collaboration of Otfrid and his fellow-glossator in
+                     both copying and annotating Priscian's text.</note>
+               </app>
+               <app type="gloss" xml:id="gloss-42-12-4">
+                  <lem wit="#EDITION">squalor</lem>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#sec" facs="#zone.7r.59"
+                     ana="#synonyms">inmundicia</add></rdg>
+               </app>
+               <quote source="#EDITION" n="II 42,13">spes, sphaera, t: status, Sthenius, ante aliam
+                  autem nullam</quote> 
+               <app type="text-variation" xml:id="tv-42-13-1">
+               <lem wit="#EDITION">sphaera, t: status, Sthenius</lem>
+                  <rdg wit="#COD_50" hand="#Otfrid">spera· t·stratus· stennius</rdg>
+               </app>
+               <quote source="#EDITION" n="II 42,14">mutarum. <lb n="35"
+                     ed="7r"/> mutae uero semiuocalibus praeponuntur liquidis absque m omnes</quote>
+               <app type="rubrication" xml:id="rubr-42-14-1">
+                  <lem wit="#EDITION">mutae</lem>
+                  <rdg wit="#COD_50" hand="#Otfrid"><hi rend="capital letter filled with red ink"
+                     >M</hi>utę</rdg>
+               </app>
+               <app type="rubrication" xml:id="rubr-42-14-2">
+                  <lem wit="#EDITION">omnes</lem>
+                  <rdg wit="#COD_50" hand="#Otfrid"><hi rend="letter filled with red ink"
+                     >o</hi>mnes</rdg>
+               </app>
+               <app type="gloss" xml:id="gloss-42-14-3">
+                  <lem wit="#EDITION">mutae</lem>
+                  <rdg wit="#COD_50"><add place="right margin" hand="#Otfrid" facs="#zone.7r.60"
+                     ana="#glosses-elucidating-the-main-text-with-red-marginal-title"><hi
+                        rend="red script">De mutis ante liquidas in eodem</hi></add></rdg>
                </app>
                
                
                
-               
-              <quote source="#EDITION" n="II 42,9"><lb n="32" ed="7r"/> praeponuntur b
-                  et g sequente d, ut <foreign xml:lang="grc">βδελυρός</foreign>, bdellium, Abdera,
-                  abdomen,</quote>
-               <quote source="#EDITION" n="II 42,10">Mygdonides. c uero et p praepo<lb n="33"
-                     break="no" ed="7r"/>nuntur sequente t, ut actus, lectus,</quote>
-               <quote source="#EDITION" n="II 42,11">aptus, diphthongus. semiuocalis nulla
-                  praeponitur mutis nisi s</quote>
-               <quote source="#EDITION" n="II 42,12">sequente b, ut as<lb n="34" break="no" ed="7r"
-                  />bestus, Asbustes, c uel q: scutum, squalor, p, ut</quote>
-               <quote source="#EDITION" n="II 42,13">spes, sphaera, t: status, Sthenius, ante aliam
-                  autem nullam</quote>
-               <quote source="#EDITION" n="II 42,14">mutarum. <lb n="35" ed="7r"/> mutae uero
-                  semiuocalibus praeponuntur liquidis absque m omnes</quote>
                <quote source="#EDITION" n="II 42,15">paene omnibus: bl, ut blandus; cl: clarus; dl,
                   ut <lb n="36" ed="7r"/> Abodlas,</quote>
                <quote source="#EDITION" n="II 42,16">nomen barbarum; gl: gladius, Glabrio; tl:
@@ -11050,6 +11225,19 @@
          <zone xml:id="zone.7r.45" ulx="1169" uly="1587" lrx="1259" lry="1627"/>
          <zone xml:id="zone.7r.46" ulx="1252" uly="1591" lrx="1327" lry="1623"/>
          <zone xml:id="zone.7r.47" ulx="1482" uly="1596" lrx="1686" lry="1732"/>
+         <zone xml:id="zone.7r.50" ulx="915" uly="1624" lrx="1006" lry="1666"/>
+         <zone xml:id="zone.7r.49" ulx="791" uly="1630" lrx="879" lry="1665"/>
+         <zone xml:id="zone.7r.48" ulx="676" uly="1635" lrx="782" lry="1671"/>
+         <zone xml:id="zone.7r.52" ulx="1019" uly="1631" lrx="1127" lry="1667"/>
+         <zone xml:id="zone.7r.53" ulx="1115" uly="1635" lrx="1417" lry="1670"/>
+         <zone xml:id="zone.7r.51" ulx="1607" uly="1657" lrx="1715" lry="1752"/>
+         <zone xml:id="zone.7r.57" ulx="68" uly="1708" lrx="174" lry="1748"/>
+         <zone xml:id="zone.7r.56" ulx="260" uly="1711" lrx="284" lry="1739"/>
+         <zone xml:id="zone.7r.59" ulx="482" uly="1726" lrx="615" lry="1755"/>
+         <zone xml:id="zone.7r.58" ulx="326" uly="1727" lrx="365" lry="1763"/>
+         <zone xml:id="zone.7r.54" ulx="187" uly="1739" lrx="203" lry="1759"/>
+         <zone xml:id="zone.7r.55" ulx="71" uly="1744" lrx="166" lry="1778"/>
+         <zone xml:id="zone.7r.60" ulx="1478" uly="1782" lrx="1682" lry="1910"/>
          <zone xml:id="zone.7r.2" ulx="1525" uly="247" lrx="1555" lry="295"/>
       </surface>
       <surface xml:id="facs__00024" n="7v">
