@@ -10054,13 +10054,13 @@
                   <rdg wit="#COD_50"><add place="interlinear above" hand="#Otfrid"
                         facs="#zone.7r.52"
                         ana="#translation-into-Old-High-German #glosses-elucidating-the-main-text"
-                        xml:id="ohg-42-9-1" type="OHG-gloss" subtype="new-finding" n="16"><foreign
-                           xml:lang="goh">amban</foreign>· <g ref="#vel"/> pingue </add></rdg>
+                        xml:id="ohg-42-9-1" type="OHG-gloss" n="16"><foreign xml:lang="goh"
+                           >amban</foreign>· <g ref="#vel"/> pinguedo </add></rdg>
                   <note corresp="#ohg-42-9-1" type="explanation" resp="#CG">The occurrence of this
-                     OHG gloss in the MS Wolfenbüttel, HAB, 50 Weiss. had not been recorded yet. See
-                     the entry 'amban, st. m.' in the digital <hi rend="italic">Althochdeutsches
-                        Wörterbuch, digitalisierte Fassung bereitgestellt durch die Sächsische
-                        Akademie der Wissenschaften zu Leipzig</hi>,
+                     OHG gloss in the MS Wolfenbüttel, HAB, 50 Weiss. has been recorded in Schwarz
+                     1977, p. 31 . See the entry 'amban, st. m.' in the digital <hi rend="italic"
+                        >Althochdeutsches Wörterbuch, digitalisierte Fassung bereitgestellt durch
+                        die Sächsische Akademie der Wissenschaften zu Leipzig</hi>,
                      https://awb.saw-leipzig.de/AWB?lemid=A01079, accessed 09.11.2024. 'amban'
                      occurs also in MS Köln 200, f. 10v and in MS München, BSB, Clm 280a, f. 9r.
                      Otfrid's use of 'amban' is possibly one of the oldest occurences of this term,
@@ -10144,7 +10144,7 @@
                   <note corresp="#gloss-42-12-2" type="explanation" resp="#CG"> If my reading
                      'inumatus' is correct, this is probably an ortographic variant for 'inhumatus',
                      'unburied'. The gloss refers to 'asbutes', i.e. Asbytes, a Trojan soldier
-                     killed on the battle field by Turnus according to Vergil's Aeneid,
+                     killed on the battlefield by Turnus according to Vergil's Aeneid,
                      12:362.</note>
                </app>
                <app type="gloss" xml:id="gloss-42-12-3">
@@ -10161,20 +10161,20 @@
                <app type="gloss" xml:id="gloss-42-12-4">
                   <lem wit="#EDITION">squalor</lem>
                   <rdg wit="#COD_50"><add place="interlinear above" hand="#sec" facs="#zone.7r.59"
-                     ana="#synonyms">inmundicia</add></rdg>
+                        ana="#synonyms">inmundicia</add></rdg>
                </app>
                <quote source="#EDITION" n="II 42,13">spes, sphaera, t: status, Sthenius, ante aliam
-                  autem nullam</quote> 
+                  autem nullam</quote>
                <app type="text-variation" xml:id="tv-42-13-1">
-               <lem wit="#EDITION">sphaera, t: status, Sthenius</lem>
+                  <lem wit="#EDITION">sphaera, t: status, Sthenius</lem>
                   <rdg wit="#COD_50" hand="#Otfrid">spera· t·stratus· stennius</rdg>
                </app>
-               <quote source="#EDITION" n="II 42,14">mutarum. <lb n="35"
-                     ed="7r"/> mutae uero semiuocalibus praeponuntur liquidis absque m omnes</quote>
+               <quote source="#EDITION" n="II 42,14">mutarum. <lb n="35" ed="7r"/> mutae uero
+                  semiuocalibus praeponuntur liquidis absque m omnes</quote>
                <app type="rubrication" xml:id="rubr-42-14-1">
                   <lem wit="#EDITION">mutae</lem>
                   <rdg wit="#COD_50" hand="#Otfrid"><hi rend="capital letter filled with red ink"
-                     >M</hi>utę</rdg>
+                        >M</hi>utę</rdg>
                </app>
                <app type="rubrication" xml:id="rubr-42-14-2">
                   <lem wit="#EDITION">omnes</lem>
@@ -10184,32 +10184,274 @@
                <app type="gloss" xml:id="gloss-42-14-3">
                   <lem wit="#EDITION">mutae</lem>
                   <rdg wit="#COD_50"><add place="right margin" hand="#Otfrid" facs="#zone.7r.60"
-                     ana="#glosses-elucidating-the-main-text-with-red-marginal-title"><hi
-                        rend="red script">De mutis ante liquidas in eodem</hi></add></rdg>
+                        ana="#glosses-elucidating-the-main-text-with-red-marginal-title"><hi
+                           rend="red script">De mutis ante liquidas in eodem</hi></add></rdg>
                </app>
-               
-               
-               
                <quote source="#EDITION" n="II 42,15">paene omnibus: bl, ut blandus; cl: clarus; dl,
                   ut <lb n="36" ed="7r"/> Abodlas,</quote>
+               <app type="rubrication" xml:id="rubr-42-15-1">
+                  <lem wit="#EDITION">bl</lem>
+                  <rdg wit="#COD_50" hand="#Otfrid"><hi rend="letter filled with red ink"
+                     >b</hi>l</rdg>
+               </app>
+               <app type="rubrication" xml:id="rubr-42-15-2">
+                  <lem wit="#EDITION">cl</lem>
+                  <rdg wit="#COD_50" hand="#Otfrid"><hi rend="letter filled with red ink"
+                     >c</hi>l</rdg>
+               </app>
+               <app type="rubrication" xml:id="rubr-42-15-3">
+                  <lem wit="#EDITION">dl</lem>
+                  <rdg wit="#COD_50" hand="#Otfrid"><hi rend="letter filled with red ink"
+                     >d</hi>l</rdg>
+               </app>
+               <app type="text-variation" xml:id="tv-42-15-1">
+                  <lem wit="#EDITION">cl: clarus</lem>
+                  <rdg wit="#COD_50" hand="#Otfrid">cl ut clarus</rdg>
+               </app>
+               <app type="text-variation" xml:id="tv-42-15-2">
+                  <lem wit="#EDITION">dl, ut Abodlas</lem>
+                  <rdg wit="#COD_50" hand="#Otfrid">dl Abodlas</rdg>
+               </app>
+               <app type="gloss" xml:id="gloss-42-15-1">
+                  <lem wit="#EDITION">Abodlas</lem>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#sec" facs="#zone.7r.61"
+                        ana="#grammatical-glosses-on-the-noun">prooprium nomen hominis</add></rdg>
+               </app>
                <quote source="#EDITION" n="II 42,16">nomen barbarum; gl: gladius, Glabrio; tl:
                   Tlepolemus, Atlas; pl:</quote>
+               <app type="rubrication" xml:id="rubr-42-16-1">
+                  <lem wit="#EDITION">gl</lem>
+                  <rdg wit="#COD_50" hand="#Otfrid"><hi rend="letter filled with red ink"
+                     >G</hi>l</rdg>
+               </app>
+               <app type="rubrication" xml:id="rubr-42-16-2">
+                  <lem wit="#EDITION">tl</lem>
+                  <rdg wit="#COD_50" hand="#Otfrid"><hi rend="letter filled with red ink"
+                     >t</hi>l</rdg>
+               </app>
+               <app type="rubrication" xml:id="rubr-42-16-3">
+                  <lem wit="#EDITION">pl</lem>
+                  <rdg wit="#COD_50" hand="#Otfrid"><hi rend="letter filled with red ink"
+                     >p</hi>l</rdg>
+               </app>
+               <app type="gloss" xml:id="gloss-42-16-1">
+                  <lem wit="#EDITION">Glabrio</lem>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#Otfrid"
+                        facs="#zone.7r.62" ana="#glosses-elucidating-the-main-text">caluus· <g
+                           ref="#vel"/> inberbis</add></rdg>
+                  <note corresp="#gloss-42-16-1" type="explanation" resp="#CG">'Glabrio' is a proper
+                     name of a Roman <hi rend="italic">gens</hi>. Some medieval glossators, and
+                     Otfrid among them, explained 'Glabrio' in connection with the adjective 'glaber
+                     = hairless, bald'. Accordingly, Otfrid glossed this name with 'caluus uel
+                     inberbis' and MS München clm 280 a, f. 9v with the multilingual 'inberbis
+                     grint'. Conversely, MS Köln 200, f. 10v features the more correct explanation
+                     'nomen viri', whereas MS München clm 18375, f. 16 r contains both types of
+                     explanation: 'proprium id est grint'.</note>
+               </app>
+               <app type="gloss" xml:id="gloss-42-16-2">
+                  <lem wit="#EDITION">Tlepolemus</lem>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#Otfrid"
+                        facs="#zone.7r.63" ana="#grammatical-glosses-on-the-noun"
+                     >proprium</add></rdg>
+               </app>
+               <app type="gloss" xml:id="gloss-42-16-3">
+                  <lem wit="#EDITION">Tlepolemus</lem>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#sec" facs="#zone.7r.63"
+                        ana="#glosses-elucidating-the-main-text">hominis inuentor aratri</add></rdg>
+                  <note corresp="#gloss-42-16-2 #gloss-42-16-3" type="explanation" resp="#CG">The
+                     explanation added by the glossator dubbed #sec completes that written by
+                     Otfrid. We have here a further example of the close collaboration of the two
+                     scholars.</note>
+               </app>
                <quote source="#EDITION" n="II 42,17">planus; fl: flauus; bn: abnuo, sed <lb n="37"
                      ed="7r"/> b magis superioris est syllabae;</quote>
+               <app type="rubrication" xml:id="rubr-42-17-1">
+                  <lem wit="#EDITION">fl</lem>
+                  <rdg wit="#COD_50" hand="#Otfrid"><hi rend="letter filled with red ink"
+                     >f</hi>l</rdg>
+               </app>
+               <app type="rubrication" xml:id="rubr-42-17-2">
+                  <lem wit="#EDITION">bn</lem>
+                  <rdg wit="#COD_50" hand="#Otfrid"><hi rend="letter filled with red ink"
+                     >b</hi>n</rdg>
+               </app>
                <quote source="#EDITION" n="II 42,18">cn: Cnidus; dn: Cydnus, Ariadne; gn: Gneus; tn:
                   Aetna; pn:</quote>
+               <app type="rubrication" xml:id="rubr-42-18-1">
+                  <lem wit="#EDITION">cn</lem>
+                  <rdg wit="#COD_50" hand="#Otfrid"><hi rend="letter filled with red ink"
+                     >cn</hi></rdg>
+               </app>
+               <app type="rubrication" xml:id="rubr-42-18-2">
+                  <lem wit="#EDITION">gn</lem>
+                  <rdg wit="#COD_50" hand="#Otfrid"><hi rend="letter filled with red ink"
+                     >gn</hi></rdg>
+               </app>
+               <app type="rubrication" xml:id="rubr-42-18-3">
+                  <lem wit="#EDITION">tn</lem>
+                  <rdg wit="#COD_50" hand="#Otfrid"><hi rend="letter filled with red ink"
+                     >tn</hi></rdg>
+               </app>
+               <app type="rubrication" xml:id="rubr-42-18-4">
+                  <lem wit="#EDITION">pn</lem>
+                  <rdg wit="#COD_50" hand="#Otfrid"><hi rend="letter filled with red ink"
+                     >pn</hi></rdg>
+               </app>
+               <app type="gloss" xml:id="gloss-42-18-1">
+                  <lem wit="#EDITION">Cnidus; dn: Cydnus</lem>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#Otfrid"
+                        facs="#zone.7r.64" ana="#geographical-names">nomina fluminum</add></rdg>
+               </app>
+               <app type="reference-signs" xml:id="rs-42-18-1">
+                  <lem wit="#EDITION">Ariadne</lem>
+                  <rdg wit="#COD_50"><add place="above" hand="#Otfrid" facs="#zone.7r.65"
+                        ana="#lemma-gloss"><g ref="#reference-sign-inverted-cryphia"/></add></rdg>
+               </app>
+               <app type="gloss" xml:id="gloss-42-18-2">
+                  <lem wit="#EDITION">Ariadne</lem>
+                  <rdg wit="#COD_50"><add place="left margin" hand="#Otfrid" facs="#zone.7r.66"
+                        ana="#glosses-elucidating-the-main-text"><g
+                           ref="#reference-sign-inverted-cryphia"/> nomen loci <g ref="#vel"/>
+                        femine filiae minois</add></rdg>
+               </app>
                <quote source="#EDITION" n="II 42,19">Therapnae, Siphnus; <lb n="38" ed="7r"/> br:
                   Brennus, umbrae; cr: creber; dr:</quote>
+               <app type="rubrication" xml:id="rubr-42-19-1">
+                  <lem wit="#EDITION">br</lem>
+                  <rdg wit="#COD_50" hand="#Otfrid"><hi rend="letter filled with red ink"
+                     >B</hi>r</rdg>
+               </app>
+               <app type="rubrication" xml:id="rubr-42-19-2">
+                  <lem wit="#EDITION">cr</lem>
+                  <rdg wit="#COD_50" hand="#Otfrid"><hi rend="letter filled with red ink"
+                     >c</hi>r</rdg>
+               </app>
+               <app type="rubrication" xml:id="rubr-42-19-3">
+                  <lem wit="#EDITION">dr</lem>
+                  <rdg wit="#COD_50" hand="#Otfrid"><hi rend="letter filled with red ink"
+                     >d</hi>r</rdg>
+               </app>
+               <app type="text-variation" xml:id="tv-42-19-1">
+                  <lem wit="#EDITION">Siphnus</lem>
+                  <rdg wit="#COD_50" hand="#Otfrid">sipnus</rdg>
+               </app>
+               <app type="gloss" xml:id="gloss-42-19-1">
+                  <lem wit="#EDITION">Therapnae</lem>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#Otfrid"
+                        facs="#zone.7r.67" ana="#glosses-elucidating-the-main-text">dominus
+                        apollinis· <g ref="#vel"/> portus italiae</add></rdg>
+               </app>
+               <app type="reference-signs" xml:id="rs-42-19-1">
+                  <lem wit="#COD_50">sipnus</lem>
+                  <rdg wit="#COD_50"><add place="above" hand="#Otfrid" facs="#zone.7r.68"
+                        ana="#lemma-gloss"><g ref="#reference-sign-cryphia"/></add></rdg>
+               </app>
+               <app type="gloss" xml:id="gloss-42-19-2">
+                  <lem wit="#COD_50">sipnus</lem>
+                  <rdg wit="#COD_50"><add place="right margin" hand="#Otfrid" facs="#zone.7r.69"
+                        ana="#grammatical-glosses-on-the-noun"><g ref="#reference-sign-cryphia"/>
+                        proprium nomen</add></rdg>
+               </app>
+               <app type="gloss" xml:id="gloss-42-19-3">
+                  <lem wit="#EDITION">Brennus</lem>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#Otfrid"
+                        facs="#zone.7r.70" ana="#glosses-elucidating-the-main-text">dux
+                        gallorum</add></rdg>
+               </app>
                <quote source="#EDITION" n="II 42,20">Drances; gr: gratus; fr: frater; pr: pratum;
                   tr: tractus. ante m</quote>
+               <app type="rubrication" xml:id="rubr-42-20-1">
+                  <lem wit="#EDITION">gr</lem>
+                  <rdg wit="#COD_50" hand="#Otfrid"><hi rend="letter filled with red ink"
+                     >G</hi>r</rdg>
+               </app>
+               <app type="rubrication" xml:id="rubr-42-20-2">
+                  <lem wit="#EDITION">fr</lem>
+                  <rdg wit="#COD_50" hand="#Otfrid"><hi rend="letter filled with red ink"
+                     >F</hi>r</rdg>
+               </app>
+               <app type="rubrication" xml:id="rubr-42-20-3">
+                  <lem wit="#EDITION">pr</lem>
+                  <rdg wit="#COD_50" hand="#Otfrid"><hi rend="letter filled with red ink"
+                     >P</hi>r</rdg>
+               </app>
+               <app type="rubrication" xml:id="rubr-42-20-4">
+                  <lem wit="#EDITION">tr</lem>
+                  <rdg wit="#COD_50" hand="#Otfrid"><hi rend="letter filled with red ink"
+                     >T</hi>r</rdg>
+               </app>
+               <app type="rubrication" xml:id="rubr-42-20-5">
+                  <lem wit="#EDITION">ante</lem>
+                  <rdg wit="#COD_50" hand="#Otfrid"><hi rend="letter filled with red ink"
+                     >a</hi>nte</rdg>
+               </app>
+               <app type="text-variation" xml:id="tv-42-20-1">
+                  <lem wit="#EDITION">pratum</lem>
+                  <rdg wit="#COD_50" hand="#Otfrid">primus</rdg>
+               </app>
+               <app type="gloss" xml:id="gloss-42-20-1">
+                  <lem wit="#EDITION">Drances</lem>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#Otfrid"
+                        facs="#zone.7r.71" ana="#glosses-elucidating-the-main-text">dux
+                        romanorum</add></rdg>
+                  <note corresp="#gloss-42-20-1" type="explanation" resp="#CG">Drances was no Roman
+                     leader (cf. Aeneid 11, 336f.). Also MS München 18375 f. 16r contains this
+                     incorrect explanation, while MS Köln 200, f. 10v presents him simply as a
+                     leader: 'dux fuit'.</note>
+               </app>
+               <app type="annotation-signs" xml:id="as-42-20-1">
+                  <rdg wit="#COD_50"><add place="bottom right corner" hand="#sec" facs="#zone.7r.72"
+                        ana="#attention-sign-require"><g ref="#require-sign"/></add></rdg>
+               </app>
                <quote source="#EDITION" n="II 42,21">autem <pb n="7v" xml:id="page__00024"
                      facs="#facs__00024"/> inueniuntur c d g t, ut Pyracmon, Alcmene, drachma,
                   Dmois,</quote>
+               <app type="reference-signs" xml:id="rs-42-21-1">
+                  <lem wit="#COD_50">Pyracmon</lem>
+                  <rdg wit="#COD_50"><add place="above" hand="#Otfrid" facs="#zone.7v.1"
+                        ana="#lemma-gloss"><g ref="#reference-sign-virga-dot"/></add></rdg>
+               </app>
+               <app type="gloss" xml:id="gloss-42-21-1">
+                  <lem wit="#COD_50">Pyracmon</lem>
+                  <rdg wit="#COD_50"><add place="above" hand="#Otfrid" facs="#zone.7v.2"
+                        ana="#glosses-elucidating-the-main-text #acquaintance-with-classics"><g
+                           ref="#reference-sign-virga-dot"/> ignis <g ref="#vel"/> nomen gigantis·
+                           <g ref="#vel"/> faber· <g ref="#vel"/> minister uulcani</add></rdg>
+                  <note corresp="#gloss-42-21-1" type="explanation" resp="#CG"> For Pyracmon see
+                     Virgil, Aeneid VIII: 56.</note>
+               </app>
+               <app type="gloss" xml:id="gloss-42-21-2" subtype="to-be-checked">
+                  <lem wit="#EDITION">Alcmene</lem>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#Otfrid" facs="#zone.7v.3"
+                        ana="#acquaintance-with-classics">proprium deae· mater erculis</add></rdg>
+               </app>
+               <app type="reference-signs" xml:id="rs-42-21-2">
+                  <lem wit="#COD_50">drachma</lem>
+                  <rdg wit="#COD_50"><add place="above" hand="#Otfrid" facs="#zone.7v.4"
+                        ana="#lemma-gloss"><g ref="#reference-sign-dotted-gamma"/></add></rdg>
+               </app>
+               <app type="gloss" xml:id="gloss-42-21-3">
+                  <lem wit="#COD_50">drachma</lem>
+                  <rdg wit="#COD_50"><add place="left margin" hand="#Otfrid" facs="#zone.7v.5"
+                        ana="#glosses-elucidating-the-main-text"><g
+                           ref="#reference-sign-dotted-gamma"/> igenus nummi· VIII pars unciae ·V·
+                        scrupulos habens siue ·III·</add></rdg>
+               </app>
+               <app type="gloss" xml:id="gloss-42-21-4">
+                  <lem wit="#EDITION">Dmois</lem>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#Otfrid" facs="#zone.7v.6"
+                     ana="#acquaintance-with-classics">mons</add></rdg>
+               </app>
                <quote source="#EDITION" n="II 42,22">Admetus, agmen, Tmolus, Isthmos. tres autem
                      consonan<lb n="2" break="no" ed="7v"/>tes non</quote>
+               
+               
+               
                <quote source="#EDITION" n="II 42,23">aliter possunt iungi in principio syllabae,
                   nisi sit prima s uel c uel p,</quote>
             </div>
+
+
             <div type="page-of-Hertz-edition" n="Liber Primus" xml:id="liber-primus.39"
                prev="liber-primus.38" corresp="images-keil:Keil_v2_043.gif" xml:lang="la">
                <!-- in den nächsten Zeilen ist etwas durcheinandergeraten -->
@@ -11238,10 +11480,28 @@
          <zone xml:id="zone.7r.54" ulx="187" uly="1739" lrx="203" lry="1759"/>
          <zone xml:id="zone.7r.55" ulx="71" uly="1744" lrx="166" lry="1778"/>
          <zone xml:id="zone.7r.60" ulx="1478" uly="1782" lrx="1682" lry="1910"/>
+         <zone xml:id="zone.7r.61" ulx="116" uly="1797" lrx="263" lry="1862"/>
+         <zone xml:id="zone.7r.62" ulx="610" uly="1806" lrx="752" lry="1841"/>
+         <zone xml:id="zone.7r.63" ulx="791" uly="1807" lrx="1034" lry="1845"/>
+         <zone xml:id="zone.7r.67" ulx="1287" uly="1851" lrx="1559" lry="1896"/>
+         <zone xml:id="zone.7r.64" ulx="592" uly="1860" lrx="796" lry="1891"/>
+         <zone xml:id="zone.7r.66" ulx="82" uly="1867" lrx="209" lry="1933"/>
+         <zone xml:id="zone.7r.65" ulx="829" uly="1871" lrx="850" lry="1894"/>
+         <zone xml:id="zone.7r.68" ulx="1463" uly="1881" lrx="1486" lry="1899"/>
+         <zone xml:id="zone.7r.69" ulx="1493" uly="1891" lrx="1609" lry="1934"/>
+         <zone xml:id="zone.7r.71" ulx="617" uly="1902" lrx="733" lry="1943"/>
+         <zone xml:id="zone.7r.70" ulx="222" uly="1903" lrx="331" lry="1947"/>
+         <zone xml:id="zone.7r.72" ulx="1631" uly="1934" lrx="1703" lry="1975"/>
          <zone xml:id="zone.7r.2" ulx="1525" uly="247" lrx="1555" lry="295"/>
       </surface>
       <surface xml:id="facs__00024" n="7v">
          <graphic url="http://diglib.hab.de/mss/50-weiss/max/00024.jpg"/>
+         <zone xml:id="zone.7v.1" ulx="709" uly="260" lrx="725" lry="278"/>
+         <zone xml:id="zone.7v.6" ulx="1105" uly="264" lrx="1159" lry="293"/>
+         <zone xml:id="zone.7v.4" ulx="1049" uly="253" lrx="1086" lry="285"/>
+         <zone xml:id="zone.7v.5" ulx="258" uly="198" lrx="555" lry="262"/>
+         <zone xml:id="zone.7v.3" ulx="847" uly="247" lrx="1010" lry="298"/>
+         <zone xml:id="zone.7v.2" ulx="694" uly="218" lrx="1035" lry="258"/>
       </surface>
       <surface xml:id="facs__00025" n="8r">
          <graphic url="http://diglib.hab.de/mss/50-weiss/max/00025.jpg"/>
