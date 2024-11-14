@@ -653,6 +653,13 @@
                   <graphic url="../pictures/reference-sign-oculus.png"/>
                </figure>
             </glyph>
+            <glyph xml:id="reference-sign-dotted-gamma">
+               <localProp name="Name" value="REFERENCE SIGN DOTTED GAMMA"/>
+               <localProp name="entity" value="reference-sign-dotted-gamma"/>
+               <figure>
+                  <graphic url="../pictures/reference-sign-dotted-gamma.png"/>
+               </figure>
+            </glyph>
             <glyph xml:id="reference-sign-lemma-lemma-1">
                <localProp name="Name" value="REFERENCE SIGN LEMMA LEMMA 1"/>
                <localProp name="entity" value="reference-sign-lemma-lemma-1"/>
@@ -5505,8 +5512,10 @@
                         similiter ·d· &amp; t· cum aspiratione siue sine ea·</add></rdg>
                   <note resp="#CG" type="explanation" target="#emendation-24-4-1"> A scribe added a
                      segment of Priscian's text in the upper margin of the page, which had been
-                     omitted by the main scribe because of a saut du même au même. The omission
-                     covers the end of II 24,4 and the beginning of II 24,5.</note>
+                     omitted by the main scribe(which is Otfrid in this segment) because of a saut
+                     du même au même. The omission covers the end of II 24,4 and the beginning of II
+                     24,5. Otfrid then glossed words of the added segment. This provides evidence of
+                     the close collaboration between Otfrid and his fellow glossator.</note>
                </app>
                <app type="gloss" xml:id="gloss-24-4-1">
                   <lem wit="#EDITION">x</lem>
@@ -5567,7 +5576,7 @@
                         facs="#zone.4v.14" ana="#definition-given-by-an-entire-sentence">more patris
                         ago</add></rdg>
                   <note resp="#CG" type="explanation" target="#gloss-24-9-1"> The same gloss occurs
-                     in MS München, BSB, clm 280a, f. 6r</note>
+                     in MS München, BSB, Clm 280a, f. 6r</note>
                </app>
                <app type="gloss" xml:id="gloss-24-9-2">
                   <lem wit="#EDITION"><foreign xml:lang="grc">πατρίζω</foreign></lem>
@@ -5586,8 +5595,8 @@
                   <note corresp="#ohg-24-9-1" type="explanation" resp="#CG"> This OHG gloss was
                      first edited by Hans Butzmann, <hi rend="italic">Althochdeutsche
                         Priscian-Glossen aus Weissenburg</hi>, PBB. 86/3 (Halle 1964), pp. 388-402,
-                     at p. 392, no. 5. It recurs in MS München, BSB, clm 280a, f. 6r. - The gloss
-                     'frequenter spuo' occurs also in MS Köln 200, f. 6v and MS München, BSB, clm
+                     at p. 392, no. 5. It recurs in MS München, BSB, Clm 280a, f. 6r. - The gloss
+                     'frequenter spuo' occurs also in MS Köln 200, f. 6v and MS München, BSB, Clm
                      18375, f. 11r. It seems that Otfrid firstly wrote 'spuo uel rachison' and that
                      he later added 'frequenter' before 'spuo' and 'uel parum poto' after
                      'rachison'.</note>
@@ -5643,14 +5652,14 @@
                   <rdg wit="#COD_50"><add place="interlinear above" hand="#Otfrid"
                         facs="#zone.4v.23" ana="#Greek-glosses"><g ref="#idest"/> mare</add></rdg>
                   <note resp="#CG" type="explanation" target="#gloss-24-11-1"> The gloss occurs also
-                     in MS Köln 200, f. 6v and MS München, BSB, clm 18375, f. 11v.</note>
+                     in MS Köln 200, f. 6v and MS München, BSB, Clm 18375, f. 11v.</note>
                </app>
                <app type="gloss" xml:id="gloss-24-11-2">
                   <lem wit="#EDITION">pro <foreign xml:lang="grc">Θρῇσσα</foreign></lem>
                   <rdg wit="#COD_50"><add place="interlinear above" hand="#Otfrid"
                         facs="#zone.4v.24" ana="#Greek-glosses"><g ref="#idest"/> terra</add></rdg>
                   <note resp="#CG" type="explanation" target="#gloss-24-11-2"> The gloss occurs also
-                     in MSS München, BSB, clm 280a, f. 6r and clm 18375, f. 11v.</note>
+                     in MSS München, BSB, Clm 280a, f. 6r and Clm 18375, f. 11v.</note>
                </app>
                <quote source="#EDITION" n="II 24,12"><foreign xml:lang="grc">ἧττον</foreign> pro
                      <foreign xml:lang="grc">ἧσσον</foreign> et <foreign xml:lang="grc"
@@ -5661,7 +5670,7 @@
                   <rdg wit="#COD_50"><add place="interlinear above" hand="#Otfrid"
                         facs="#zone.4v.25" ana="#Greek-glosses"><g ref="#idest"/> uictus</add></rdg>
                   <note resp="#CG" type="explanation" target="#gloss-24-12-1"> The gloss occurs also
-                     in MS Köln 200, f. 6v and MSS München, BSB, clm 280a, f. 6r and clm 18375, f.
+                     in MS Köln 200, f. 6v and MSS München, BSB, Clm 280a, f. 6r and Clm 18375, f.
                      11v.</note>
                </app>
                <app type="gloss" xml:id="gloss-24-12-2">
@@ -5791,8 +5800,8 @@
                <quote source="#EDITION" n="II 25,7">earum <lb n="13" ed="4v"/> exempla.</quote>
                <note resp="#CG" type="explanation" target="#EDITION" n="II 25,7"> The scribe of
                   Priscian's text adds in the interline a numbering of the individual examples using
-                  the Roman numerals I to VII. The same practice occurs in the MSS München, BSB, clm
-                  280a, f. 6r and clm 18375, f. 11v. </note>
+                  the Roman numerals I to VII. The same practice occurs in the MSS München, BSB, Clm
+                  280a, f. 6r and Clm 18375, f. 11v. </note>
                <quote source="#EDITION" n="II 25,8"><add type="text-variation" xml:id="tv-25-8-1"
                      hand="#scr" source="#COD_50" place="above"><hi rend="red script">I</hi></add> a
                   correpta conuertitur in productam, făueo fāui, <add type="text-variation"
@@ -8251,8 +8260,8 @@
                   <rdg wit="#COD_50"><add place="interlinear above" hand="#Otfrid"
                         facs="#zone.6r.32" ana="#glosses-elucidating-the-main-text">sic
                         antiqui</add></rdg>
-                  <note corresp="#gloss-34-21-2" type="explanation" resp="#CG">MSS München, BSB, clm
-                     18375, f. 14r, and clm 280a, f. 8r contain the similar gloss: 'sic dicebant
+                  <note corresp="#gloss-34-21-2" type="explanation" resp="#CG">MSS München, BSB, Clm
+                     18375, f. 14r, and Clm 280a, f. 8r contain the similar gloss: 'sic dicebant
                      antiqui'.</note>
                </app>
                <quote source="#EDITION" n="II 34,22">ante hanc solam mutam finalem inueniuntur
@@ -8967,7 +8976,7 @@
                         diffinitionem</add></rdg>
                   <note resp="#CG" type="explanation" target="#gloss-37-15-2">The gloss
                      'discisionem' recurs in all three manuscripts I have used for comparison, i.e.
-                     in München, BSB, clm 18375, f. 15r; clm 280a, f. 8v; Köln 200, f. 9v.
+                     in München, BSB, Clm 18375, f. 15r; Clm 280a, f. 8v; Köln 200, f. 9v.
                      Conversely, the gloss 'diffinitionem' has no parallel in those books. </note>
                </app>
                <quote source="#EDITION" n="II 37,16"><lb n="18" ed="6v"/> profertur, secundum
@@ -9718,7 +9727,7 @@
                   <lem wit="#EDITION">Plateam</lem>
                   <rdg wit="#COD_50"><add place="interlinear above" hand="#Otfrid"
                         facs="#zone.7r.24" ana="#Greek-glosses">graece platia media</add></rdg>
-                  <note corresp="#gloss-41-6-2" type="explanation" resp="#CG">MS München, BSB, clm
+                  <note corresp="#gloss-41-6-2" type="explanation" resp="#CG">MS München, BSB, Clm
                      280a, f. 9r contains the same gloss.</note>
                </app>
                <quote source="#EDITION" n="II 41,7">«qui tela Typhoĕa temnis»</quote>
@@ -9988,7 +9997,7 @@
                   <rdg wit="#COD_50"><add place="interlinear above" hand="#sec" facs="#zone.7r.46"
                         ana="#glosses-elucidating-the-main-text">libra</add></rdg>
                   <note corresp="#gloss-42-8-2" type="explanation" resp="#CG">The same gloss occurs
-                     in MS München BSB, clm 280a, f. 9r and MS Köln 200, f. 10v </note>
+                     in MS München BSB, Clm 280a, f. 9r and MS Köln 200, f. 10v </note>
                </app>
                <app type="gloss" xml:id="gloss-42-8-3">
                   <lem wit="#EDITION">in mutis</lem>
@@ -10018,7 +10027,7 @@
                         lapidis</add></rdg>
                   <note corresp="#gloss-42-9-2" type="explanation" resp="#CG">'Genus lapidis' is
                      part of the main text and follows 'bdellium' in the MSS Köln 200, f. 10v;
-                     München, BSB, clm 280a, f. 9r and clm 18375, f. 16r. Here it is an intelrinear
+                     München, BSB, Clm 280a, f. 9r and Clm 18375, f. 16r. Here it is an intelrinear
                      gloss.</note>
                </app>
                <app type="gloss" xml:id="gloss-42-9-3">
@@ -10038,7 +10047,7 @@
                      in the main text of his edition. Secondly, other medieval glossators thought
                      that 'abdira' was rather a reference to 'abdir', the name of the stone that
                      Rhea gave Saturn to eat instead of baby Zeus. According to this interpretation,
-                     MS München BSB, clm 280a, f. 9r contains the gloss 'lapis'; clm 18375, f. 16r
+                     MS München BSB, Clm 280a, f. 9r contains the gloss 'lapis'; Clm 18375, f. 16r
                      features both the interlinear gloss 'lapis' and the marginal annotation: 'Genus
                      lapidis quem deuorauit Saturnus pro Ioue filio suo'; MS Köln 200, f. 10v
                      contains the explanation: 'lapis quem Saturnus comedit'. Probably because of
@@ -10060,12 +10069,12 @@
                      OHG gloss in the MS Wolfenbüttel, HAB, 50 Weiss. has been recorded in Schwarz
                      1977, p. 31 . See the entry 'amban, st. m.' in the digital <hi rend="italic"
                         >Althochdeutsches Wörterbuch, digitalisierte Fassung bereitgestellt durch
-                        die Sächsische Akademie der Wissenschaften zu Leipzig</hi>,
-                     https://awb.saw-leipzig.de/AWB?lemid=A01079, accessed 09.11.2024. 'amban'
-                     occurs also in MS Köln 200, f. 10v and in MS München, BSB, Clm 280a, f. 9r.
-                     Otfrid's use of 'amban' is possibly one of the oldest occurences of this term,
-                     since other attestations date mostly back to the 11th c. according to the
-                     Althochdeutsches Wörterbuch.</note>
+                        die Sächsische Akademie der Wissenschaften zu Leipzig</hi>, <ref
+                        type="external-URL">https://awb.saw-leipzig.de/AWB?lemid=A01079</ref>,
+                     accessed 09.11.2024. 'amban' occurs also in MS Köln 200, f. 10v and in MS
+                     München, BSB, Clm 280a, f. 9r. Otfrid's use of 'amban' is possibly one of the
+                     oldest occurences of this term, since other attestations date mostly back to
+                     the 11th c. according to the Althochdeutsches Wörterbuch.</note>
                </app>
                <quote source="#EDITION" n="II 42,10">Mygdonides. c uero et p praepo<lb n="33"
                      break="no" ed="7r"/>nuntur sequente t, ut actus, lectus,</quote>
@@ -10243,9 +10252,9 @@
                      name of a Roman <hi rend="italic">gens</hi>. Some medieval glossators, and
                      Otfrid among them, explained 'Glabrio' in connection with the adjective 'glaber
                      = hairless, bald'. Accordingly, Otfrid glossed this name with 'caluus uel
-                     inberbis' and MS München clm 280 a, f. 9v with the multilingual 'inberbis
+                     inberbis' and MS München Clm 280 a, f. 9v with the multilingual 'inberbis
                      grint'. Conversely, MS Köln 200, f. 10v features the more correct explanation
-                     'nomen viri', whereas MS München clm 18375, f. 16 r contains both types of
+                     'nomen viri', whereas MS München Clm 18375, f. 16 r contains both types of
                      explanation: 'proprium id est grint'.</note>
                </app>
                <app type="gloss" xml:id="gloss-42-16-2">
@@ -10423,44 +10432,153 @@
                <app type="gloss" xml:id="gloss-42-21-2" subtype="to-be-checked">
                   <lem wit="#EDITION">Alcmene</lem>
                   <rdg wit="#COD_50"><add place="interlinear above" hand="#Otfrid" facs="#zone.7v.3"
-                        ana="#acquaintance-with-classics">proprium deae· mater erculis</add></rdg>
+                        ana="#acquaintance-with-classics">proprium <supplied resp="#CG"
+                           reason="illegible" cert="low">deae</supplied>· mater erculis</add></rdg>
+                  <note corresp="#gloss-42-21-2" type="explanation" resp="#CG">The reading 'deae'
+                     after 'proprium' is not certain and must be verified on the manuscript. The
+                     quality of the digital reproduction is too low.</note>
                </app>
                <app type="reference-signs" xml:id="rs-42-21-2">
-                  <lem wit="#COD_50">drachma</lem>
+                  <lem wit="#EDITION">drachma</lem>
                   <rdg wit="#COD_50"><add place="above" hand="#Otfrid" facs="#zone.7v.4"
                         ana="#lemma-gloss"><g ref="#reference-sign-dotted-gamma"/></add></rdg>
                </app>
                <app type="gloss" xml:id="gloss-42-21-3">
-                  <lem wit="#COD_50">drachma</lem>
+                  <lem wit="#EDITION">drachma</lem>
                   <rdg wit="#COD_50"><add place="left margin" hand="#Otfrid" facs="#zone.7v.5"
                         ana="#glosses-elucidating-the-main-text"><g
-                           ref="#reference-sign-dotted-gamma"/> igenus nummi· VIII pars unciae ·V·
+                           ref="#reference-sign-dotted-gamma"/> genus nummi· VIII pars unciae ·V·
                         scrupulos habens siue ·III·</add></rdg>
                </app>
                <app type="gloss" xml:id="gloss-42-21-4">
                   <lem wit="#EDITION">Dmois</lem>
                   <rdg wit="#COD_50"><add place="interlinear above" hand="#Otfrid" facs="#zone.7v.6"
-                     ana="#acquaintance-with-classics">mons</add></rdg>
+                        ana="#acquaintance-with-classics">mons</add></rdg>
                </app>
                <quote source="#EDITION" n="II 42,22">Admetus, agmen, Tmolus, Isthmos. tres autem
                      consonan<lb n="2" break="no" ed="7v"/>tes non</quote>
-               
-               
-               
+               <app type="rubrication" xml:id="rubr-42-22-1">
+                  <lem wit="#EDITION">tres</lem>
+                  <rdg wit="#COD_50" hand="#Otfrid"><hi rend="letter filled with red ink"
+                     >T</hi>res</rdg>
+               </app>
+               <app type="gloss" xml:id="gloss-42-22-1">
+                  <lem wit="#EDITION">tres autem consonantes</lem>
+                  <rdg wit="#COD_50"><add place="left margin" hand="#Otfrid" facs="#zone.7v.7"
+                        ana="#glosses-elucidating-the-main-text-with-red-marginal-title"><hi
+                           rend="red script">De tribus consonantibus pariter in
+                     eodem</hi></add></rdg>
+               </app>
+               <app type="gloss" xml:id="gloss-42-22-2">
+                  <lem wit="#EDITION">Admetus</lem>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#Otfrid" facs="#zone.7v.8"
+                        ana="#acquaintance-with-classics">mons <g ref="#vel"/> pastor
+                     ouium</add></rdg>
+               </app>
+               <app type="gloss" xml:id="gloss-42-22-3">
+                  <lem wit="#EDITION">Tmolus</lem>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#Otfrid" facs="#zone.7v.9"
+                        ana="#acquaintance-with-classics #geographical-names">mons</add></rdg>
+               </app>
+               <app type="gloss" xml:id="gloss-42-22-4">
+                  <lem wit="#EDITION">Isthmos</lem>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#Otfrid"
+                        facs="#zone.7v.10" ana="#acquaintance-with-classics #geographical-names"
+                        >nomen bestiae. <g ref="#vel"/> mons</add></rdg>
+               </app>
                <quote source="#EDITION" n="II 42,23">aliter possunt iungi in principio syllabae,
                   nisi sit prima s uel c uel p,</quote>
             </div>
-
-
             <div type="page-of-Hertz-edition" n="Liber Primus" xml:id="liber-primus.39"
                prev="liber-primus.38" corresp="images-keil:Keil_v2_043.gif" xml:lang="la">
-               <!-- in den nächsten Zeilen ist etwas durcheinandergeraten -->
                <quote source="#EDITION" n="II 43,1">secunda post s quidem c uel t uel p, post c
                   autem aut p principales</quote>
+               <app type="text-variation" xml:id="tv-43-1-1">
+                  <lem wit="#EDITION">quidem</lem>
+                  <rdg wit="#COD_50"/>
+               </app>
+               <app type="text-variation" xml:id="tv-43-1-2">
+                  <lem wit="#EDITION">uel p, post c</lem>
+                  <rdg wit="#COD_50" hand="#Otfrid">uel p· ut asclepiodotus <lb n="3" ed="7v"/>
+                     stratus· spretus· Post c</rdg>
+               </app>
+               <app type="gloss" xml:id="gloss-43-1-1">
+                  <lem wit="#COD_50">asclepiodotus</lem>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#Otfrid"
+                        facs="#zone.7v.11" ana="#grammatical-glosses-on-the-noun"
+                     >proprium</add></rdg>
+                  <note corresp="#gloss-43-1-1" type="explanation" resp="#CG"> Otfrid included the
+                     examples 'ut asclepiodotus stratus· spretus' into Priscian's main text. They
+                     are surrounded by a frame scratched with drypoint that indicates the presence
+                     of a textual problem. The apparatus of Hertz' edition demonstrates that these
+                     examples were originally a marginal gloss. The MS Köln 200, f. 10v does not
+                     convey them. In MS München, BSB, Clm 280a, f. 9v, they were originally part of
+                     the main text and were then deleted: the resulting blank lines are clearly
+                     visible on the page. In MS München, BSB, Clm 18375, f. 16r they were included
+                     into the main text, then erased and then written again by another scribe.
+                  </note>
+               </app>
                <quote source="#EDITION" n="II 43,2">secunda t, tertia l uel r, sed l in solis illis
                   quae ab s incipiunt, ut</quote>
-               <quote source="#EDITION" n="II 43,3">Asclepiodotus, scriba, stloppus, stratus,
-                  splendidus, spretus, <lb n="5" ed="7v"/> uictrix,</quote>
+               <app type="annotation-signs" xml:id="as-43-2-1">
+                  <lem wit="#EDITION">secunda t</lem>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#sec" facs="#zone.7v.12"
+                        ana="#omission-sign-d"><g ref="#omission-sign-d-stroke"/></add></rdg>
+               </app>
+               <app type="gloss" xml:id="gloss-43-2-1">
+                  <lem wit="#EDITION">sed l</lem>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#Otfrid"
+                        facs="#zone.7v.13" ana="#suppletive-glosses">· &amp; ·r·</add></rdg>
+               </app>
+               <quote source="#EDITION" n="II 43,3">Ascle<lb n="4" break="no" ed="7v"/>piodotus,
+                  scriba, stloppus, stratus, splendidus, spretus, <lb n="5" ed="7v"/>
+                  uictrix,</quote>
+               <app type="text-variation" xml:id="tv-43-3-1">
+                  <lem wit="#EDITION">Asclepiodotus</lem>
+                  <rdg wit="#COD_50" hand="#Otfrid">asclepiodotis</rdg>
+               </app>
+               <app type="emendation" xml:id="emendation-43-3-1">
+                  <lem wit="#EDITION">stloppus</lem>
+                  <rdg wit="#COD_50" hand="#Otfrid">st<add place="above">l</add>o<del
+                        type="expunction">l</del>pus</rdg>
+               </app>
+               <app type="text-variation" xml:id="tv-43-3-2">
+                  <lem wit="#EDITION">stratus</lem>
+                  <rdg wit="#COD_50"/>
+               </app>
+               <app type="text-variation" xml:id="tv-43-3-3">
+                  <lem wit="#EDITION">spretus, uictrix</lem>
+                  <rdg wit="#COD_50" hand="#Otfrid">spretus· <hi rend="letter filled with red ink"
+                        >I</hi>n grecis etiam <foreign xml:lang="grc">φ</foreign> secunda ponitur
+                     quam nos per ·ph· plerumque scribimus· <foreign xml:lang="grc"
+                        >cφραγιc</foreign> uictrix</rdg>
+                  <note resp="#CG" type="explanation" target="#tv-43-3-3">MS Köln 200, f. 10v and
+                     both MSS München, BSB, Clm 280a, f. 9v and Clm 18375, f. 16r contain this line.
+                     Hertz regards it as a gloss rather than Priscian's original text.</note>
+               </app>
+               <app type="annotation-signs" xml:id="as-43-3-1">
+                  <lem wit="#EDITION">uictrix</lem>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#sec" facs="#zone.7v.14"
+                        ana="#omission-sign-h-stroke"><g ref="#omission-sign-h-stroke"/></add></rdg>
+               </app>
+               <app type="gloss" xml:id="gloss-43-3-1">
+                  <lem wit="#EDITION">uictrix</lem>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#sec" facs="#zone.7v.15"
+                        ana="#syntactical-glosses-using-symbols">·t· secunda ponitur post ·c· <g
+                           ref="#vel"/> post p·</add></rdg>
+                  <note resp="#CG" type="explanation" target="#as-43-2-1 #as-43-3-1 #gloss-43-3-1">
+                     The glossator dubbed #sec added both omission signs and the interlinear gloss
+                     to emphasise that the word order in this segment of Priscian's grammar is
+                     confusing. According to him, it would be better if both the word 'uictrix' and
+                     the following 'sceptrum' occurred after 'secunda t' of line 43,2 since they
+                     provide an example of the rule expressed there. In so doing, the glossator
+                     highlights a problematic segment in Priscian's text.</note>
+               </app>
+
+
+
+
+            
                <quote source="#EDITION" n="II 43,4">sceptrum. nam post pt uel ct simul iunctas l non
                   inuenitur, ut</quote>
                <quote source="#EDITION" n="II 43,5">ostendimus, ipsa soni natura prohibente. in fine
@@ -10495,6 +10613,8 @@
                   per b, dicere et</quote>
                <quote source="#EDITION" n="II 43,19">scribere.</quote>
             </div>
+
+
             <!-- With f. 44 starts the second book of the grammar: Priscian, Ars grammatica: book 2 (De syllaba, de dictione, de oratione, de nomine, etc.)  -->
             <pb n="8r" xml:id="page__00025" facs="#facs__00025"/>
             <pb n="8v" xml:id="page__00026" facs="#facs__00026"/>
@@ -11497,7 +11617,16 @@
       <surface xml:id="facs__00024" n="7v">
          <graphic url="http://diglib.hab.de/mss/50-weiss/max/00024.jpg"/>
          <zone xml:id="zone.7v.1" ulx="709" uly="260" lrx="725" lry="278"/>
+         <zone xml:id="zone.7v.10" ulx="1480" uly="249" lrx="1609" lry="288"/>
+         <zone xml:id="zone.7v.9" ulx="1382" uly="248" lrx="1457" lry="292"/>
+         <zone xml:id="zone.7v.8" ulx="1189" uly="245" lrx="1328" lry="290"/>
+         <zone xml:id="zone.7v.7" ulx="278" uly="257" lrx="469" lry="371"/>
          <zone xml:id="zone.7v.6" ulx="1105" uly="264" lrx="1159" lry="293"/>
+         <zone xml:id="zone.7v.11" ulx="1662" uly="302" lrx="1731" lry="329"/>
+         <zone xml:id="zone.7v.12" ulx="1082" uly="338" lrx="1134" lry="366"/>
+         <zone xml:id="zone.7v.13" ulx="1346" uly="344" lrx="1398" lry="370"/>
+         <zone xml:id="zone.7v.15" ulx="483" uly="414" lrx="702" lry="451"/>
+         <zone xml:id="zone.7v.14" ulx="459" uly="428" lrx="491" lry="461"/>
          <zone xml:id="zone.7v.4" ulx="1049" uly="253" lrx="1086" lry="285"/>
          <zone xml:id="zone.7v.5" ulx="258" uly="198" lrx="555" lry="262"/>
          <zone xml:id="zone.7v.3" ulx="847" uly="247" lrx="1010" lry="298"/>
