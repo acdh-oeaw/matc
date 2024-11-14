@@ -16,8 +16,8 @@
     acdh:hasTitle "Priscian Glosses - Codex Weiss 50"@en ;
     acdh:hasIdentifier acdhi:priscian-glosses ;
     acdh:hasUrl "https://priscian-glosses.acdh-dev.oeaw.ac.at" ;
-    acdh:hasDescription "lorem ipsum"@en ;
-    acdh:hasDescription "lorem ipsum"@de ;
+    acdh:hasDescription "Dieses Projekt umfasst eine digitale Edition und eine Interpretation der rund 2000 lateinischen und 150 althochdeutschen Glossen, die sich in der Handschrift Wolfenbüttel, Herzog August Bibliothek, Cod. Guelf. 50 Weissenburg als Kommentare zu den ersten sechzehn Büchern der Grammatik des Priscian finden."@de ;
+    acdh:hasDescription "The project provides a digital edition and an interpretation of the roughly 2.000 Latin and 150 Old High German glosses on the first sixteen books of Priscian's Ars Grammatica contained in the manuscript Wolfenbüttel, Herzog August Bibliothek, Cod. Guelf. 50 Weissenburg."@en ;
     acdh:hasLanguage <https://vocabs.acdh.oeaw.ac.at/iso6393/lat> ;
     acdh:hasLanguage <https://vocabs.acdh.oeaw.ac.at/iso6393/deu> ;
     acdh:hasLifeCycleStatus <https://vocabs.acdh.oeaw.ac.at/archelifecyclestatus/active> ;
@@ -29,6 +29,10 @@
     acdh:hasMetadataCreator <https://orcid.org/0000-0002-5146-1371> ;
     acdh:hasSubject "Latin Grammar"@en ;
     acdh:hasSubject "Lateinische Grammatik"@de ;
+    acdh:hasSubject "Glosses"@en ;
+    acdh:hasSubject "Glossen"@de ;
+    acdh:hasSubject "Otfrid of Wissembourg"@en ;
+    acdh:hasSubject "Otfrid von Weissenburg"@de ;
     acdh:hasOwner acdhi:oeaw ;
     acdh:hasRightsHolder acdhi:oeaw ;
     acdh:hasLicensor acdhi:oeaw ;
@@ -42,8 +46,8 @@
     acdh:hasTitle "Priscian Glosses - Codex Weiss 50 - TEI Dokument"@de ;
     acdh:hasTitle "Priscian Glosses - Codex Weiss 50 - TEI Document"@en ;
     acdh:hasUrl "https://priscian-glosses.acdh-dev.oeaw.ac.at/edition.html" ;
-    acdh:hasDescription "lorem ipsum"@en ;
-    acdh:hasDescription "lorem ipsum"@de ;
+    acdh:hasDescription "This TEI/XML document contains the edition of the glosses on the grammar of Priscian according to the manuscript Wolfenbüttel, Herzog August Bibliothek, 50 Weiss."@en ;
+    acdh:hasDescription "In diesem TEI/XML Dokument findet sich die Edition der Glossen zu der Grammatik des Priscian gemäß der Handschrift Wolfenbüttel, Herzog August Bibliothek, 50 Weiss."@de ;
     acdh:hasCategory <https://vocabs.acdh.oeaw.ac.at/archecategory/text/tei> ;
     acdh:hasLanguage <https://vocabs.acdh.oeaw.ac.at/iso6393/lat> ;
     acdh:hasLanguage <https://vocabs.acdh.oeaw.ac.at/iso6393/deu> ;
