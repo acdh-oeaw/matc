@@ -10556,6 +10556,11 @@
                      both MSS München, BSB, Clm 280a, f. 9v and Clm 18375, f. 16r contain this line.
                      Hertz regards it as a gloss rather than Priscian's original text.</note>
                </app>
+               <app type="annotation-signs" xml:id="as-43-3-3">
+                  <lem wit="#COD_50">In grecis</lem>
+                  <rdg wit="#COD_50"><add place="left margin" hand="#sec" facs="#zone.7v.16"
+                        ana="#attention-sign-require"><g ref="#require-sign"/></add></rdg>
+               </app>
                <app type="annotation-signs" xml:id="as-43-3-1">
                   <lem wit="#EDITION">uictrix</lem>
                   <rdg wit="#COD_50"><add place="interlinear above" hand="#sec" facs="#zone.7v.14"
@@ -10567,34 +10572,83 @@
                         ana="#syntactical-glosses-using-symbols">·t· secunda ponitur post ·c· <g
                            ref="#vel"/> post p·</add></rdg>
                   <note resp="#CG" type="explanation" target="#as-43-2-1 #as-43-3-1 #gloss-43-3-1">
-                     The glossator dubbed #sec added both omission signs and the interlinear gloss
-                     to emphasise that the word order in this segment of Priscian's grammar is
+                     The glossator dubbed #sec added two annotation signs and an interlinear gloss
+                     to remark that the word order of this segment of Priscian's grammar is
                      confusing. According to him, it would be better if both the word 'uictrix' and
                      the following 'sceptrum' occurred after 'secunda t' of line 43,2 since they
-                     provide an example of the rule expressed there. In so doing, the glossator
-                     highlights a problematic segment in Priscian's text.</note>
+                     provide an example of the rule expressed there. The glossator highlights a
+                     problematic segment in Priscian's text.</note>
                </app>
-
-
-
-
-            
                <quote source="#EDITION" n="II 43,4">sceptrum. nam post pt uel ct simul iunctas l non
                   inuenitur, ut</quote>
+               <app type="rubrication" xml:id="rubr-43-4-1">
+                  <lem wit="#EDITION">nam</lem>
+                  <rdg wit="#COD_50" hand="#scr"><hi rend="letter filled with red ink"
+                     >N</hi>am</rdg>
+               </app>
                <quote source="#EDITION" n="II 43,5">ostendimus, ipsa soni natura prohibente. in fine
                      <lb n="6" ed="7v"/> uero dictionis contra inuenimus</quote>
+               <app type="rubrication" xml:id="rubr-43-5-1">
+                  <lem wit="#EDITION">in</lem>
+                  <rdg wit="#COD_50" hand="#scr"><hi rend="letter filled with red ink">I</hi>n</rdg>
+               </app>
+               <app type="gloss" xml:id="gloss-43-5-1">
+                  <lem wit="#EDITION">in fine</lem>
+                  <rdg wit="#COD_50"><add place="left margin" hand="#Otfrid" facs="#zone.7v.17"
+                        ana="#glosses-elucidating-the-main-text-with-red-marginal-title"><hi
+                           rend="red script">De consonantibus in quibus dictiones
+                        finiuntur</hi></add></rdg>
+               </app>
                <quote source="#EDITION" n="II 43,6">primam liquidam, sequentem mutam, postremam s,
                   ut urbs, stirps.</quote>
+               <app type="rubrication" xml:id="rubr-43-6-1">
+                  <lem wit="#EDITION">s</lem>
+                  <rdg wit="#COD_50" hand="#scr"><hi rend="letter filled with red ink">S</hi></rdg>
+               </app>
                <quote source="#EDITION" n="II 43,7">sin autem in duas de<lb n="7" break="no" ed="7v"
                   />sinit consonantes dictio, necesse est priorem liquidam</quote>
+               <app type="rubrication" xml:id="rubr-43-7-1">
+                  <lem wit="#EDITION">necesse</lem>
+                  <rdg wit="#COD_50" hand="#scr"><hi rend="letter filled with red ink"
+                     >N</hi>ecesse</rdg>
+               </app>
                <quote source="#EDITION" n="II 43,8">esse et sequentem s uel x, ut supra ostendimus,
                   uel c uel t an<lb n="8" break="no" ed="7v"/>tecedente</quote>
+               <app type="rubrication" xml:id="rubr-43-8-1">
+                  <lem wit="#EDITION">antecedente</lem>
+                  <rdg wit="#COD_50" hand="#scr"><hi rend="letter filled with red ink"
+                     >a</hi>ntecedente</rdg>
+               </app>
                <quote source="#EDITION" n="II 43,9">n, ut hinc, dicunt, amant, hunc, uel loco
                      <foreign xml:lang="grc">ψ</foreign> Graecae bs uel ps</quote>
+               <app type="rubrication" xml:id="rubr-43-9-1">
+                  <lem wit="#EDITION">n</lem>
+                  <rdg wit="#COD_50" hand="#scr"><hi rend="letter filled with red ink">N</hi></rdg>
+               </app>
+               <app type="rubrication" xml:id="rubr-43-9-2">
+                  <lem wit="#EDITION">bs</lem>
+                  <rdg wit="#COD_50" hand="#scr"><hi rend="letter filled with red ink">BS</hi></rdg>
+               </app>
                <quote source="#EDITION" n="II 43,10">scribere pro ratione genetiui, ut Arabs Arabis,
                      <lb n="9" ed="7v"/> Pelops Pelopis, caelebs</quote>
+               <app type="reference-signs" xml:id="rs-43-10-1">
+                  <lem wit="#EDITION">Pelops</lem>
+                  <rdg wit="#COD_50"><add place="above" hand="#Otfrid" facs="#zone.7v.18"
+                        ana="#lemma-gloss"><g ref="#reference-sign-virga-dot"/></add></rdg>
+               </app>
+               <app type="gloss" xml:id="gloss-43-10-1">
+                  <lem wit="#EDITION">Pelops</lem>
+                  <rdg wit="#COD_50"><add place="left margina" hand="#Otfrid" facs="#zone.7v.19"
+                        ana="#acquaintance-with-classics"><g ref="#reference-sign-virga-dot"/> deus
+                        gentilium cui humerus ex ebore factus</add></rdg>
+               </app>
                <quote source="#EDITION" n="II 43,11">caelibis, princeps principis. quibusdam tamen,
                   ut supra docuimus, non</quote>
+               <app type="rubrication" xml:id="rubr-43-11-1">
+                  <lem wit="#EDITION">non</lem>
+                  <rdg wit="#COD_50" hand="#scr"><hi rend="letter filled with red ink"
+                     >N</hi>on</rdg>
+               </app>
                <quote source="#EDITION" n="II 43,12">aliter uidetur <foreign xml:lang="grc"
                      >ψ</foreign> Graeca <lb n="10" ed="7v"/> nisi per ps scribenda. quamquam enim
                   ratio</quote>
@@ -10602,20 +10656,126 @@
                   cognationem soni <lb n="11" ed="7v"/> ad hoc</quote>
                <quote source="#EDITION" n="II 43,14">procliuiorem esse aiunt. hoc tamen sciendum,
                   quod principium syllabae omni</quote>
+               <app type="rubrication" xml:id="rubr-43-14-1">
+                  <lem wit="#EDITION">hoc</lem>
+                  <rdg wit="#COD_50" hand="#scr"><hi rend="letter filled with red ink"
+                     >h</hi>oc</rdg>
+               </app>
+               <app type="text-variation" xml:id="tv-43-14-1">
+                  <lem wit="#EDITION">sciendum</lem>
+                  <rdg wit="#COD_50" hand="#scr">sciendum <g ref="#irish-est"/></rdg>
+               </app>
                <quote source="#EDITION" n="II 43,15">modo pro <foreign xml:lang="grc">ψ</foreign> ps
                   debet habe<lb n="12" break="no" ed="7v"/>re, ut psittacus, Pseudulus, ipse;
                   nubo</quote>
+               <app type="reference-signs" xml:id="rs-43-15-1">
+                  <lem wit="#EDITION">psittacus</lem>
+                  <rdg wit="#COD_50"><add place="above" hand="#Otfrid" facs="#zone.7v.20"
+                        ana="#lemma-gloss"><g ref="#reference-sign-inverted-cryphia"/></add></rdg>
+               </app>
+               <app type="gloss" xml:id="gloss-43-15-1">
+                  <lem wit="#EDITION">psittacus</lem>
+                  <rdg wit="#COD_50"><add place="left margin" hand="#Otfrid" facs="#zone.7r.21"
+                        ana="#encyclopedic-glosses"><g ref="#reference-sign-inverted-cryphia"/> auis
+                        quae potest instrui literis· tam duram cutem habet ut in nullo ledi possit
+                        nisi ut ferro uerberetur in capite</add></rdg>
+                  <note resp="#CG" type="explanation" target="#gloss-43-15-1">In writing this
+                     explanation Otfrid erroneously penned 'ut in nullo ledi possit' before 'tam
+                     duram cutem habet' and then restored the correct oder of the words by using
+                     refecence signs. This amended error could provide evidence of the fact that
+                     Otfrid was copying from an exemplar. The content of this annotation is similar
+                     to Solinus, <hi rend="italic">Collectanea rerum memorabilium</hi>, ch. 52, but
+                     I was not able to find Otfrid's direct model. </note>
+               </app>
+               <app type="gloss" xml:id="gloss-43-15-2">
+                  <lem wit="#EDITION">psittacus</lem>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#Otfrid"
+                        facs="#zone.7v.22" ana="#grammatical-glosses-on-the-noun">
+                        <g ref="#vel"/> proprium</add></rdg>
+               </app>
+               <app type="gloss" xml:id="gloss-43-15-3">
+                  <lem wit="#EDITION">Pseudulus</lem>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#Otfrid"
+                        facs="#zone.7v.23"
+                        ana="#glosses-elucidating-the-main-text #grammatical-glosses-on-the-noun">
+                        falsus <g ref="#vel"/> proprium</add></rdg>
+               </app>
                <quote source="#EDITION" n="II 43,16">quoque nupsi, scribo scripsi faciunt, quamuis
                   analogia per b cogit</quote>
                <quote source="#EDITION" n="II 43,17">scribere, sed eu<lb n="13" break="no" ed="7v"
                   />phonia superat, quae etiam nuptam, non nubtam, et</quote>
                <quote source="#EDITION" n="II 43,18">scriptum, non scribtum, compellit per p, non
                   per b, dicere et</quote>
-               <quote source="#EDITION" n="II 43,19">scribere.</quote>
+               <app type="text-variation" xml:id="tv-43-18-1">
+                  <lem wit="#EDITION">scriptum, non scribtum</lem>
+                  <rdg wit="#COD_50" hand="#scr">scriptam non scribtam</rdg>
+               </app>
+               <app type="text-variation" xml:id="tv-43-18-2">
+                  <lem wit="#EDITION">compellit</lem>
+                  <rdg wit="#COD_50" hand="#scr">compellat</rdg>
+               </app>
+               <quote source="#EDITION" n="II 43,19">scribere.<lb n="14" ed="7v"/>
+                  <add type="text-variation" xml:id="tv-43-19-1" hand="#scr"><hi
+                        rend="red capitalis">EXPLICIT LIBER PRIMVS PRISCIANI GRAMMATICI CESARIENSIS
+                        DE LITERA</hi></add></quote>
+            </div>
+            <div type="page-of-Hertz-edition" n="Liber Secundus" xml:id="liber-secundus.1"
+               next="#liber-secundus.2" corresp="images-keil:Keil_v2_044.gif" xml:lang="la">
+               <milestone unit="chapter" n="de syllaba"/>
+               <quote source="#EDITION" n="II 44,1">LIBER SECVNDVS DE SILLABA</quote>
+               <app type="text-variation" xml:id="tv-44-1-1">
+                  <lem wit="#EDITION">LIBER SECVNDVS</lem>
+                  <rdg wit="#COD_50" hand="#scr"><hi rend="red capitalis rustica">INCIPIT LIBER
+                        SECVNDVS DE SILLABA</hi></rdg>
+               </app>
+               <quote source="#EDITION" n="II 44,2"><lb n="15" ed="7v"/> syllaba est comprehensio
+                  literarum consequens sub uno accentu et uno</quote>
+               <quote source="#EDITION" n="II 44,3">spiritu <lb n="16" ed="7v"/> prolata; abusiue
+                  tamen etiam singularum uocalium sonos syllabas</quote>
+               <quote source="#EDITION" n="II 44,4">nominamus. possumus tamen et sic defi<lb n="17" break="no" ed="7v"/>nire
+                  syllabam: syllaba est uox</quote>
+               <quote source="#EDITION" n="II 44,5">literalis, quae sub uno accentu et uno spiritu
+                  indistanter profertur. a</quote>
+               <quote source="#EDITION" n="II 44,6">singulis <lb n="18" ed="7v"/> tamen incipiens, non plus quam ad sex
+                  literas procedere syllaba</quote>
+               <quote source="#EDITION" n="II 44,7">potest in Latino sermone, ut: a, ab, arx,<lb n="19" ed="7v"/> mars,
+                  stans, stirps.</quote>
+               <quote source="#EDITION" n="II 44,8">et sciendum, quod syllabae, quae ex singulis
+                  constant literis, non</quote>
+               <quote source="#EDITION" n="II 44,9">plures sunt quam ipsae uo<lb n="20" break="no" ed="7v"/>cales, ex quibus fiunt,
+                  quae autem ex</quote>
+               <quote source="#EDITION" n="II 44,10">amplioribus literis, paene innumerabiles. nulla
+                  syllaba tres uocales habet, unde <lb n="21" ed="7v"/> u</quote>
+               <quote source="#EDITION" n="II 44,11">et i non aliter iunguntur diphthongis nisi loco
+                  positae consonantium, u</quote>
+               <quote source="#EDITION" n="II 44,12">tamen etiam tum iungi potest diphthongo, <lb n="22" ed="7v"/> cum
+                  amittit uim literae, ut</quote>
+               <quote source="#EDITION" n="II 44,13">quae, linguae. saepe inueniuntur pro duabus
+                  uocalibus iunctis, hoc est</quote>
+               <quote source="#EDITION" n="II 44,14">pro diphthongo, <lb n="23" ed="7v"/> singulae uocales positae, ut
+                  plostrum pro plaustrum</quote>
+               <quote source="#EDITION" n="II 44,15">et inquiro pro inquaero et ubique pro ei
+                  diphthongo e pro<lb n="24" break="no" ed="7v"/>ducta uel</quote>
+               <quote source="#EDITION" n="II 44,16">i, sicut supra dictum est; pro ου autem u in
+                  Graecis dictionibus ponimus,</quote>
+               <quote source="#EDITION" n="II 44,17">ut <foreign xml:lang="grc">σπονδεῖος</foreign>
+                  spondeus, <lb n="25" ed="7v"/> <foreign xml:lang="grc">Νεῖλος</foreign> Nilus, <foreign xml:lang="grc"
+                     >Μοῦσα</foreign> Musa. quae singularum</quote>
+               <quote source="#EDITION" n="II 44,18">literarum sunt syllabae ex uocalibus, ut dictum
+                  est, constant, <lb n="26" ed="7v"/> ut a, e,</quote>
+               <quote source="#EDITION" n="II 44,19">quae autem ex duabus constant, uel a uocalibus
+                  fiunt et inuenitur</quote>
+               <quote source="#EDITION" n="II 44,20">diphthongus, ut au, oe, uel a <lb n="27" ed="7v"/> uocali consonante
+                  antecedente uel sequente:</quote>
+               <quote source="#EDITION" n="II 44,21">antecedente, ut da, sequente, ut ad. non plus
+                  tamen quam <lb n="28" ed="7v"/> tres</quote>
+               <quote source="#EDITION" n="II 44,22">consonantes antecedere nec rursus consequi nisi
+                  tres possunt. sed tamen hoc</quote>
+
             </div>
 
 
-            <!-- With f. 44 starts the second book of the grammar: Priscian, Ars grammatica: book 2 (De syllaba, de dictione, de oratione, de nomine, etc.)  -->
+
             <pb n="8r" xml:id="page__00025" facs="#facs__00025"/>
             <pb n="8v" xml:id="page__00026" facs="#facs__00026"/>
             <pb n="9r" xml:id="page__00027" facs="#facs__00027"/>
@@ -11625,8 +11785,16 @@
          <zone xml:id="zone.7v.11" ulx="1662" uly="302" lrx="1731" lry="329"/>
          <zone xml:id="zone.7v.12" ulx="1082" uly="338" lrx="1134" lry="366"/>
          <zone xml:id="zone.7v.13" ulx="1346" uly="344" lrx="1398" lry="370"/>
+         <zone xml:id="zone.7v.16" ulx="301" uly="390" lrx="359" lry="434"/>
+         <zone xml:id="zone.7v.17" ulx="261" uly="411" lrx="477" lry="559"/>
          <zone xml:id="zone.7v.15" ulx="483" uly="414" lrx="702" lry="451"/>
          <zone xml:id="zone.7v.14" ulx="459" uly="428" lrx="491" lry="461"/>
+         <zone xml:id="zone.7v.19" ulx="249" uly="594" lrx="475" lry="677"/>
+         <zone xml:id="zone.7v.18" ulx="482" uly="600" lrx="509" lry="625"/>
+         <zone xml:id="zone.7v.21" ulx="246" uly="709" lrx="488" lry="844"/>
+         <zone xml:id="zone.7v.23" ulx="640" uly="712" lrx="793" lry="755"/>
+         <zone xml:id="zone.7v.22" ulx="563" uly="725" lrx="613" lry="768"/>
+         <zone xml:id="zone.7v.20" ulx="541" uly="731" lrx="567" lry="761"/>
          <zone xml:id="zone.7v.4" ulx="1049" uly="253" lrx="1086" lry="285"/>
          <zone xml:id="zone.7v.5" ulx="258" uly="198" lrx="555" lry="262"/>
          <zone xml:id="zone.7v.3" ulx="847" uly="247" lrx="1010" lry="298"/>
