@@ -657,7 +657,7 @@
                <localProp name="Name" value="REFERENCE SIGN DOTTED GAMMA"/>
                <localProp name="entity" value="reference-sign-dotted-gamma"/>
                <figure>
-                  <graphic url="../pictures/reference-sign-dotted-gamma.png"/>
+                  <graphic url="../pictures/reference-sign-dotted-gamma.png" width="40px" height="33px"/>
                </figure>
             </glyph>
             <glyph xml:id="reference-sign-lemma-lemma-1">
@@ -4683,7 +4683,7 @@
                         ana="#glosses-elucidating-the-main-text #translation-into-Old-High-German"
                            ><g ref="#reference-sign-distigme"/>nomen piscis <add
                            xml:id="ohg-20-20-1" place="inline" hand="#Otfrid" type="OHG-gloss" n="3"
-                              ><g ref="#idest"/><foreign xml:lang="goh"
+                              ><g ref="#idest"/> <foreign xml:lang="goh"
                      >kresso</foreign></add></add></rdg>
                   <note corresp="#ohg-20-20-1" type="explanation" resp="#CG"> This OHG gloss was
                      first edited by Hans Butzmann, <hi rend="italic">Althochdeutsche
@@ -4857,7 +4857,7 @@
                   <rdg wit="#COD_50"><add place="interlinear above" hand="#Otfrid"
                         facs="#zone.4r.24" ana="#translation-into-Old-High-German"
                         xml:id="ohg-21-17-1" type="OHG-gloss" n="4"><foreign xml:lang="goh"
-                           >malon</foreign>></add></rdg>
+                           >malon</foreign></add></rdg>
                   <note corresp="#ohg-21-17-1" type="explanation" resp="#CG"> This OHG gloss was
                      first edited by Hans Butzmann, <hi rend="italic">Althochdeutsche
                         Priscian-Glossen aus Weissenburg</hi>, PBB. 86/3 (Halle 1964), pp. 388-402,
@@ -4888,8 +4888,8 @@
                   <rdg wit="#COD_50"><add place="interlinear above" hand="#Otfrid"
                         facs="#zone.4r.26" ana="#translation-into-Old-High-German"
                         xml:id="ohg-21-21-1" type="OHG-gloss" n="5"><foreign xml:lang="goh"
-                           >uueichu</foreign>></add></rdg>
-                  <note corresp="#ohg-21-17-1" type="explanation" resp="#CG"> This OHG gloss was
+                           >uueichu</foreign></add></rdg>
+                  <note corresp="#ohg-21-21-1" type="explanation" resp="#CG"> This OHG gloss was
                      first edited by Hans Butzmann, <hi rend="italic">Althochdeutsche
                         Priscian-Glossen aus Weissenburg</hi>, PBB. 86/3 (Halle 1964), pp. 388-402,
                      at p. 391, no. 3. See also BStK Online: <ref
@@ -10070,7 +10070,7 @@
                      1977, p. 31 . See the entry 'amban, st. m.' in the digital <hi rend="italic"
                         >Althochdeutsches Wörterbuch, digitalisierte Fassung bereitgestellt durch
                         die Sächsische Akademie der Wissenschaften zu Leipzig</hi>, <ref
-                        type="external-URL">https://awb.saw-leipzig.de/AWB?lemid=A01079</ref>,
+                           type="external-URL" target="https://awb.saw-leipzig.de/AWB?lemid=A01079"/>,
                      accessed 09.11.2024. 'amban' occurs also in MS Köln 200, f. 10v and in MS
                      München, BSB, Clm 280a, f. 9r. Otfrid's use of 'amban' is possibly one of the
                      oldest occurences of this term, since other attestations date mostly back to
