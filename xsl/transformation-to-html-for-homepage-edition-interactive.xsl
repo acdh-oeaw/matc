@@ -131,6 +131,11 @@
                                         <div class="row">
                                             <div class="col-md-8">
                                                 <div class="entry-content">
+                                                    <xsl:element name="p">
+                                                        <xsl:attribute name="class" select="'heading-2'"/>
+                                                        <xsl:value-of select="'Table of Contents'"/>
+                                                    </xsl:element>
+                                                    <xsl:apply-templates select="descendant::tei:div[@type = 'page-of-Hertz-edition'][not(exists(@prev))]" mode="table-of-contents"/>
                                                     <xsl:apply-templates select="child::node()"/>
                                                 </div>
                                             </div>
@@ -143,6 +148,7 @@
                                     </article>
                                 </main>
                             </div>
+                            <button onclick="goToTop()" id="go-to-top-button" title="Go to top">Go to top</button>
                         </div>
                     </div>
                 </div>
@@ -207,7 +213,18 @@
             <script type="text/javascript" src="./vendor/jquery/jquery.min.js"></script>
             <script type="text/javascript" src="./js/fundament.min.js"></script>
             <script type="text/javascript" src="./js/custom.js"/>
+            <script type="text/javascript" src="./js/scroll-to-top.js"></script>
         </body>
+    </xsl:template>
+    
+    <xsl:template match="tei:div[@type = 'page-of-Hertz-edition'][not(exists(@prev))]" mode="table-of-contents">
+        <xsl:element name="p">
+            <xsl:attribute name="class" select="'navigation-entry'"/>
+            <xsl:element name="a">
+                <xsl:attribute name="href" select="concat('#',@xml:id)"/>
+                <xsl:value-of select="@n"/>
+            </xsl:element>
+        </xsl:element>
     </xsl:template>
     
     <xsl:template match="tei:teiHeader">
@@ -358,6 +375,9 @@
                 <xsl:text>Picture of Hertz’ edition of Priscian’s Ars Grammatica</xsl:text>
             </xsl:element>
             <p class="main-text-paragraph">
+                <xsl:element name="a">
+                    <xsl:attribute name="id" select="@xml:id"/>
+                </xsl:element>
                 <span class="edition-heading-1">
                     <xsl:value-of select="@n"/>
                 </span>
@@ -943,6 +963,46 @@
         <p class="type-of-intervention"><xsl:text>Explanation:</xsl:text></p>
         <div class="note">
             <span class="set-margin-left-and-right"><i class="far fa-comment"></i></span>
+            <xsl:text>On </xsl:text>
+            <xsl:if test="exists(@target)">
+                <xsl:if test="contains(@target,' ')">
+                    <xsl:for-each select="tokenize(@target,' ')">
+                        <xsl:element name="span">
+                            <xsl:attribute name="class" select="'typewriter'"/>
+                            <xsl:value-of select="substring-after(.,'#')"/>
+                            <xsl:if test="position() != last()">
+                                <xsl:text>, </xsl:text>
+                            </xsl:if>
+                        </xsl:element>
+                    </xsl:for-each>
+                </xsl:if>
+                <xsl:if test="not(contains(@target,' '))">
+                    <xsl:element name="span">
+                        <xsl:attribute name="class" select="'typewriter'"/>
+                        <xsl:value-of select="substring-after(@target,'#')"/>
+                    </xsl:element>
+                </xsl:if>
+            </xsl:if>
+            <xsl:if test="not(exists(@target))">
+                <xsl:if test="contains(@corresp,' ')">
+                    <xsl:for-each select="tokenize(@corresp,' ')">
+                        <xsl:element name="span">
+                            <xsl:attribute name="class" select="'typewriter'"/>
+                            <xsl:value-of select="substring-after(.,'#')"/>
+                            <xsl:if test="position() != last()">
+                                <xsl:text>, </xsl:text>
+                            </xsl:if>
+                        </xsl:element>
+                    </xsl:for-each>
+                </xsl:if>
+                <xsl:if test="not(contains(@corresp,' '))">
+                    <xsl:element name="span">
+                        <xsl:attribute name="class" select="'typewriter'"/>
+                        <xsl:value-of select="substring-after(@corresp,'#')"/>
+                    </xsl:element>
+                </xsl:if>
+            </xsl:if>
+            <xsl:text>: </xsl:text>
             <xsl:apply-templates select="child::node()"/>
         </div>
     </xsl:template>

@@ -3820,7 +3820,7 @@
                         facs="#zone.3r.19" ana="#glosses-elucidating-the-main-text">ut soluuit et
                         siluae in ceteris n<supplied resp="#CG" reason="abbreviation"
                            >ominibus</supplied></add></rdg>
-                  <note type="explanation" resp="CG">Otfrid takes the example of 'soluuit' from
+                  <note type="explanation" resp="CG" target="#gloss-16-8-1">Otfrid takes the example of 'soluuit' from
                      Catullus's verse quoted by Priscian a few lines afterwards, at II 16, 14</note>
                </app>
                <quote source="#EDITION" n="II 16,9">protulit in epodo hoc uersu:</quote>
@@ -10027,7 +10027,7 @@
                         lapidis</add></rdg>
                   <note corresp="#gloss-42-9-2" type="explanation" resp="#CG">'Genus lapidis' is
                      part of the main text and follows 'bdellium' in the MSS Köln 200, f. 10v;
-                     München, BSB, Clm 280a, f. 9r and Clm 18375, f. 16r. Here it is an intelrinear
+                     München, BSB, Clm 280a, f. 9r and Clm 18375, f. 16r. Here it is an interlinear
                      gloss.</note>
                </app>
                <app type="gloss" xml:id="gloss-42-9-3">

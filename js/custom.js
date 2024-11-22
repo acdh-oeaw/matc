@@ -89,6 +89,38 @@ var viewer = OpenSeadragon({
 	{
 		type: "image",
 		url: "http://diglib.hab.de/mss/50-weiss/max/00022.jpg"
+    },
+	{
+		type: "image",
+		url: "http://diglib.hab.de/mss/50-weiss/max/00023.jpg"
+    },
+	{
+		type: "image",
+		url: "http://diglib.hab.de/mss/50-weiss/max/00024.jpg"
+    },
+	{
+		type: "image",
+		url: "http://diglib.hab.de/mss/50-weiss/max/00025.jpg"
+    },
+	{
+		type: "image",
+		url: "http://diglib.hab.de/mss/50-weiss/max/00026.jpg"
+    },
+	{
+		type: "image",
+		url: "http://diglib.hab.de/mss/50-weiss/max/00027.jpg"
+    },
+	{
+		type: "image",
+		url: "http://diglib.hab.de/mss/50-weiss/max/00028.jpg"
+    },
+	{
+		type: "image",
+		url: "http://diglib.hab.de/mss/50-weiss/max/00029.jpg"
+    },
+	{
+		type: "image",
+		url: "http://diglib.hab.de/mss/50-weiss/max/00030.jpg"
     }
 	],
 	showNavigationControl: true,
