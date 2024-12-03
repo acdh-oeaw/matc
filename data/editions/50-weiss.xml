@@ -11272,7 +11272,7 @@
                </app>
                <app type="rubrication" xml:id="rubr-46-14-1">
                   <lem wit="#EDITION">f</lem>
-                  <rdg wit="#COD_50" hand="#scr"><hi rend="capital letter filled with red ink">F</hi></rdg>
+                  <rdg wit="#COD_50" hand="#Otfrid"><hi rend="capital letter filled with red ink">F</hi></rdg>
                </app>
                <quote source="#EDITION" n="II 46,15">uocalem,
                   ut officio, offun<lb n="15" break="no" ed="8r"/>do, sufficio, suffero, suffio,
@@ -11299,7 +11299,7 @@
                </app>
                <app type="rubrication" xml:id="rubr-46-15-1">
                   <lem wit="#EDITION">similiter</lem>
-                  <rdg wit="#COD_50" hand="#scr"><hi rend="capital letter filled with red ink">S</hi>imiliter</rdg>
+                  <rdg wit="#COD_50" hand="#Otfrid"><hi rend="capital letter filled with red ink">S</hi>imiliter</rdg>
                </app>
                <quote source="#EDITION" n="II 46,16">aufero, aufugio, ne, si affero, affugio
                   dicamus, pro adfero et adfugio</quote>
@@ -11307,38 +11307,163 @@
                   sequente in eam transit b, ut suggero, oggannio,</quote>
                <app type="rubrication" xml:id="rubr-46-17-1">
                   <lem wit="#EDITION">g</lem>
-                  <rdg wit="#COD_50" hand="#scr"><hi rend="capital letter filled with red ink">G</hi></rdg>
+                  <rdg wit="#COD_50" hand="#Otfrid"><hi rend="capital letter filled with red ink">G</hi></rdg>
                </app>
-               
-               
-               
-               
-               
-               
-               
-               
-               
-               <quote source="#EDITION" n="II 46,18">nec non etiam m, ut summitto. praeterea omitto
+               <app type="gloss" xml:id="gloss-46-17-1" subtype="to-be-checked">
+                  <lem wit="#EDITION">oggannio</lem>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#Otfrid"
+                        facs="#zone.8r.23"
+                        ana="#translation-into-Old-High-German #glosses-elucidating-the-main-text"
+                        xml:id="ohg-46-17-1" type="OHG-gloss" n="17"><foreign xml:lang="goh"
+                           >grinu</foreign>· <g ref="#vel"/> derideo </add></rdg>
+                  <note corresp="#ohg-46-17-1" type="explanation" resp="#CG">This multilingual gloss
+                     was first edited by Hans Butzmann, <hi rend="italic">Althochdeutsche
+                        Priscian-Glossen aus Weissenburg</hi>, PBB. 86/3 (Halle 1964), pp. 388-402,
+                     at p. 392, no. 14, in the erroneous form: 'gririu vel derideo'. 
+                     See the entry: 'grînan, st. v.', in the digital <hi rend="italic"
+                        >Althochdeutsches Wörterbuch, digitalisierte Fassung bereitgestellt durch
+                        die Sächsische Akademie der Wissenschaften zu Leipzig</hi>, <ref
+                           type="external-URL" target="https://awb.saw-leipzig.de/AWB?lemid=G01951>"/>, accessed 03.12.2024.</note>
+               </app>
+              <quote source="#EDITION" n="II 46,18">nec non etiam m, ut summitto. praeterea omitto
                   dicimus pro</quote>
+               <app type="rubrication" xml:id="rubr-46-18-1">
+                  <lem wit="#EDITION">nec</lem>
+                  <rdg wit="#COD_50" hand="#Otfrid"><hi rend="capital letter filled with red ink">N</hi>ec</rdg>
+               </app>
+               <app type="rubrication" xml:id="rubr-46-18-2">
+                  <lem wit="#EDITION">praeterea</lem>
+                  <rdg wit="#COD_50" hand="#Otfrid"><hi rend="letter filled with red ink">p</hi>reterea</rdg>
+               </app>
+               <app type="text-variation" xml:id="tv-46-18-1">
+                  <lem wit="#EDITION">dicimus</lem>
+                  <rdg wit="#COD_50"/>
+               </app>
                <quote source="#EDITION" n="II 46,19"><lb n="17" ed="8r"/> ommitto. Terentius in
                   adelphis:</quote>
+               <app type="text-variation" xml:id="tv-46-19-1">
+                  <lem wit="#EDITION">ommitto</lem>
+                  <rdg wit="#COD_50" hand="#Otfrid">ommitto dicimus</rdg>
+               </app>
+               <app type="rubrication" xml:id="rubr-46-19-1">
+                  <lem wit="#EDITION">Terentius</lem>
+                  <rdg wit="#COD_50" hand="#Otfrid"><hi rend="capital letter filled with red ink">T</hi>erentius</rdg>
+               </app>
                <quote source="#EDITION" n="II 46,20">«omitte mulierem».</quote>
                <quote source="#EDITION" n="II 46,21">Horatius in secundo sermonum:</quote>
+               <app type="rubrication" xml:id="rubr-46-21-1">
+                  <lem wit="#EDITION">Horatius</lem>
+                  <rdg wit="#COD_50" hand="#Otfrid"><hi rend="capital letter filled with red ink">H</hi>oratius</rdg>
+               </app>
                <quote source="#EDITION" n="II 46,22">«aut spem deponas aut partem <lb n="18" ed="8r"
                   /> inlusus omittas».</quote>
                <quote source="#EDITION" n="II 46,23">idem patitur p sequente, ut oppono, suppono. r
                   quoque sequente</quote>
+               <app type="rubrication" xml:id="rubr-46-23-1">
+                  <lem wit="#EDITION">idem</lem>
+                  <rdg wit="#COD_50" hand="#Otfrid"><hi rend="capital letter filled with red ink">I</hi>dem</rdg>
+               </app>
+               <app type="rubrication" xml:id="rubr-46-23-2">
+                  <lem wit="#EDITION">r</lem>
+                  <rdg wit="#COD_50" hand="#Otfrid"><hi rend="capital letter filled with red ink">R</hi></rdg>
+               </app>
                <quote source="#EDITION" n="II 46,24">plerumque in eam conuertitur, ut <lb n="19"
                      ed="8r"/> arripio, surripio; in quibusdam</quote>
+               <app type="rubrication" xml:id="rubr-46-24-1">
+                  <lem wit="#EDITION">in quibusdam</lem>
+                  <rdg wit="#COD_50" hand="#Otfrid"><hi rend="capital letter filled with red ink">I</hi>n quibusdam</rdg>
+               </app>
                <quote source="#EDITION" n="II 46,25">autem manet immutabilis, ut abrogo, abrado, et
                   puto differentiae causa,</quote>
+               <app type="emendation" xml:id="emendation-46-25-1">
+                  <lem wit="#EDITION">immutabilis</lem>
+                  <rdg wit="#COD_50" hand="#Otfrid">i<del type="expunction">n</del><add place="above"
+                        >m</add>mutabilis</rdg>
+               </app>
+               <app type="gloss" xml:id="gloss-46-25-1">
+                  <lem wit="#EDITION">abrogo</lem>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#Otfrid"
+                        facs="#zone.8r.24" ana="#synonyms">detraho</add></rdg>
+               </app>
+               <app type="gloss" xml:id="gloss-46-25-2">
+                  <lem wit="#EDITION">abrado</lem>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#Otfrid"
+                        facs="#zone.8r.25" ana="#glosses-elucidating-the-main-text">in illam partem rado</add></rdg>
+               </app>
                <quote source="#EDITION" n="II 46,26">ne, si ar<lb n="20" break="no" ed="8r"/>rogo et
                   arrado dicamus, dubium sit, ab an ad praepositio</quote>
+               <app type="rubrication" xml:id="rubr-46-26-1">
+                  <lem wit="#EDITION">ne</lem>
+                  <rdg wit="#COD_50" hand="#Otfrid"><hi rend="letter filled with red ink">n</hi>e</rdg>
+               </app>
+               <app type="gloss" xml:id="gloss-46-26-1">
+                  <lem wit="#EDITION">arrogo</lem>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#Otfrid"
+                        facs="#zone.8r.26" ana="#synonyms">superbio</add></rdg>
+               </app>
+               <app type="gloss" xml:id="gloss-46-26-2">
+                  <lem wit="#EDITION">arrado</lem>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#Otfrid"
+                        facs="#zone.8r.27" ana="#glosses-elucidating-the-main-text">in istam partem rado</add></rdg>
+               </app>
                <quote source="#EDITION" n="II 46,27">sit, quae mutauit suam consonantem in r. aliis
                   autem qui<lb n="21" break="no" ed="8r"/>buscumque literis</quote>
+               <app type="rubrication" xml:id="rubr-46-27-1">
+                  <lem wit="#EDITION">aliis</lem>
+                  <rdg wit="#COD_50" hand="#Otfrid"><hi rend="capital letter filled with red ink">a</hi>liis</rdg>
+               </app>
                <quote source="#EDITION" n="II 46,28">sequentibus integra manet b, ut abdo, obdo,
                   subdolus, abhinc,</quote>
+               <app type="gloss" xml:id="gloss-46-28-1">
+                  <lem wit="#EDITION">abdo</lem>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#Otfrid"
+                        facs="#zone.8r.28" ana="#synonyms">abscondo</add></rdg>
+               </app>
+               <app type="gloss" xml:id="gloss-46-28-2">
+                  <lem wit="#EDITION">obdo</lem>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#Otfrid"
+                        facs="#zone.8r.29" ana="#synonyms">oppono</add></rdg>
+               </app>
+               <app type="gloss" xml:id="gloss-46-28-3">
+                  <lem wit="#EDITION">subdolus</lem>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#Otfrid"
+                        facs="#zone.8r.30" ana="#synonyms">dolosus</add></rdg>
+               </app>
             </div>
+            <div type="page-of-Hertz-edition" n="Liber Secundus" xml:id="liber-secundus.4"
+               prev="liber-secundus.3" next="liber-secundus.5" corresp="images-keil:Keil_v2_047.gif"
+               xml:lang="la">
+               <quote source="#EDITION" n="II 47,1">abluo, sublatus, obloquor, ab<lb n="22" break="no" ed="8r"/>nego, obnitor, subnixus. ergo nulla,</quote>
+               <quote source="#EDITION" n="II 47,2">nisi praepositio cogat, antecedens syllaba in b potest desinere, nisi</quote>
+               <quote source="#EDITION" n="II 47,3">conse<lb n="23" break="no" ed="8r"/>quens quoque a b incipiat, ut in supra dictis nominibus ostendimus.</quote>
+               <quote source="#EDITION" n="II 47,4">in c quoque nulla syllaba superior desinit, ni<lb n="24" break="no" ed="8r"/>si sequens quoque a c</quote>
+               <quote source="#EDITION" n="II 47,5">uel a q incipiat, ut bacca, bucca, soccus, ecquis, quicquam.</quote>
+               <quote source="#EDITION" n="II 47,6">atque ex hoc quoque ostenditur, ean<lb n="25" break="no" ed="8r"/>dem uim habere c et q.</quote>
+               <quote source="#EDITION" n="II 47,7">in d pariter nulla potest syllaba desinere praepositiua, nisi sequens</quote>
+               <quote source="#EDITION" n="II 47,8">quoque ab eadem in<lb n="26" break="no" ed="8r"/>cipiat in simplicibus dictionibus et in plerisque</quote>
+               <quote source="#EDITION" n="II 47,9">compositis, ut abaddir uel abaddier, addo, reddo, redduco, quod <lb n="27" ed="8r"/> etiam</quote>
+               <quote source="#EDITION" n="II 47,10">reduco dicitur.</quote>
+               <quote source="#EDITION" n="II 47,11">Virgilius in VIII:</quote>
+               <quote source="#EDITION" n="II 47,12">«reddidit una boum uocem».</quote>
+               <quote source="#EDITION" n="II 47,13">Terentius in Phormione:</quote>
+               <quote source="#EDITION" n="II 47,14">«sectari, in ludum ducere ac <lb n="28" ed="8r"/> redducere».</quote>
+               <quote source="#EDITION" n="II 47,15">Horatius in epodo:</quote>
+               <quote source="#EDITION" n="II 47,16">«deus haec fortasse benigna</quote>
+               <quote source="#EDITION" n="II 47,17">reducet in sedem uice».</quote>
+               <quote source="#EDITION" n="II 47,18">Virgilius in IIII:</quote>
+               <quote source="#EDITION" n="II 47,19">«eiectam classem, socios <lb n="29" ed="8r"/> a morte reduxi».</quote>
+               <quote source="#EDITION" n="II 47,20">haec tamen ipsa consonans in ad praepositione mutatur sequente c uel g</quote>
+               <quote source="#EDITION" n="II 47,21">uel p uel t, ut accum<lb n="30" break="no" ed="8r"/>bo, accido, aggero, applico, appello,</quote>
+               <quote source="#EDITION" n="II 47,22">attingo, attinet; f quoque sequente rationabilius: affectus; l: allido;</quote>
+               <quote source="#EDITION" n="II 47,23">r: <lb n="31" ed="8r"/> arrideo; n: annuo; s: assiduus. subtrahitur etiam in quibusdam,</quote>
+               <quote source="#EDITION" n="II 47,24">cum sequens dictio a gn uel sp uel sc incipit, <lb n="32" ed="8r"/> ut agnitus, aspectus,</quote>
+               <quote source="#EDITION" n="II 47,25">ascendo. aliis enim sequentibus literis integra manet in compositione,</quote>
+               <quote source="#EDITION" n="II 47,26">ut adbibo, adhae<lb n="33" break="no" ed="8r"/>reo, admitto, adquiro, aduoco. frequenter</quote>
+               <quote source="#EDITION" n="II 47,27">tamen inuenimus f uel l uel n uel r uel s sequentibus d scrip<lb n="34" break="no" ed="8r"/>tam, ut</quote>
+               <quote source="#EDITION" n="II 47,28">adfatur, adludo, adrideo, adnitor, adsisto, adsumo. errore tamen</quote>
+               <quote source="#EDITION" n="II 47,29">scriptorum hoc fieri puto quam ratione: nam <lb n="35" ed="8r"/>quae sit differentia euphoniae,</quote>
+            </div>
+            
 
             <pb n="8v" xml:id="page__00026" facs="#facs__00026"/>
             <pb n="9r" xml:id="page__00027" facs="#facs__00027"/>
@@ -12403,6 +12528,13 @@
          <zone xml:id="zone.8r.21" ulx="242" uly="857" lrx="392" lry="902"/>
          <zone xml:id="zone.8r.22" ulx="459" uly="868" lrx="530" lry="905"/>
          <zone xml:id="zone.8r.23" ulx="741" uly="913" lrx="889" lry="952"/>
+         <zone xml:id="zone.8r.25" ulx="1047" uly="1031" lrx="1168" lry="1070"/>
+         <zone xml:id="zone.8r.24" ulx="951" uly="1041" lrx="1024" lry="1077"/>
+         <zone xml:id="zone.8r.27" ulx="293" uly="1085" lrx="446" lry="1122"/>
+         <zone xml:id="zone.8r.26" ulx="201" uly="1087" lrx="270" lry="1120"/>
+         <zone xml:id="zone.8r.30" ulx="961" uly="1118" lrx="1043" lry="1157"/>
+         <zone xml:id="zone.8r.28" ulx="791" uly="1126" lrx="874" lry="1164"/>
+         <zone xml:id="zone.8r.29" ulx="869" uly="1131" lrx="942" lry="1163"/>
       </surface>
       <surface xml:id="facs__00026" n="8v">
          <graphic url="http://diglib.hab.de/mss/50-weiss/max/00026.jpg"/>
