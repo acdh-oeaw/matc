@@ -5,10 +5,10 @@
     exclude-result-prefixes="xs tei"
     version="2.0">
     
-    <xsl:output encoding="UTF-8" media-type="text/xhtml" method="xhtml"/>
+    <xsl:output encoding="UTF-8" media-type="text/html" method="html" version="5.0"/>
     
     <xsl:template match="/">
-        <html>
+        <html lang="en">
             <xsl:apply-templates select="child::node()"/>
         </html>
     </xsl:template>
