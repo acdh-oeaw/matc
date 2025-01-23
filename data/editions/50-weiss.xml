@@ -2267,7 +2267,7 @@
                   <note corresp="#ohg-2-6-13-1" type="explanation" resp="#CG"> for the OHG word <hi
                         rend="italic">dilenne</hi> see Rudolf Schützeichel, <hi rend="italic"
                         >Althochdeutsches Wörterbuch. Siebente durchgesehene und verbesserte
-                        Auflage</hi> Berlin/Boston 2012, p. 312, s.v. <hi rend="bold">ardīlēn</hi> =
+                        Auflage</hi> Berlin/Boston 2012, p. 312, s.v. <hi rend="bold">ardīlēn</hi> = 
                         <hi rend="italic">to delete</hi>. <hi rend="italic">Dilenne</hi> is an
                      infinitive in the dative case translating the instrumental ablative <hi
                         rend="italic">lituris</hi> of the gloss. We have here a gloss of a gloss. I
@@ -2462,7 +2462,7 @@
                   grauatur uel circumflectitur, ut hámis hàmorum </quote>
                <app type="text-variation" xml:id="tv-7-13-1">
                   <lem wit="#EDITION">hàmorum</lem>
-                  <rdg wit="#COD_50"><add place="inline" hand="#scr"> hàmôrum</add></rdg>
+                  <rdg wit="#COD_50"><add place="inline" hand="#scr">hàmôrum</add></rdg>
                </app>
                <quote source="#EDITION" n="II 7,14">hâmus, árae àrarum âra. similiter aliae uocales
                   possunt pro<lb n="4" break="no" ed="2r"/>ferri.</quote>
@@ -2570,7 +2570,7 @@
                </app>
                <app type="emendation" subtype="addition-of-omitted-text" xml:id="emendation-8-1-1">
                   <lem wit="#EDITION">dicuntur</lem>
-                  <rdg wit="#COD_50"><add place="upper margin of the page" hand="#gl-2"
+                  <rdg wit="#COD_50" hand="#gl-2"><add place="upper margin of the page"
                         facs="#zone.2r.6"><g ref="#omission-sign-capital-delta"/> quod esse ostendit
                         uarro in secundo libro de antiquitate litterarum docens lingua caldeorum
                         singularum nomina litterarum ad earum formas esse facta et ex hoc certum
@@ -3030,7 +3030,7 @@
                <quote source="#EDITION" n="II 10,14">«<foreign xml:lang="grc">ἀπωλόμεσθα, δύο κακὼ
                      σπεύδεις, τέκνον</foreign>».</quote>
                <app type="text-variation" xml:id="tv-10-14-1">
-                  <rdg wit="#COD_50"><add type="correction" hand="#scr" place="above"
+                  <rdg wit="#COD_50" hand="#scr"><add type="correction" hand="#scr" place="above"
                         >AΠ</add>ꞶΔo<del type="expunction">N</del><add place="interlinear above"
                         hand="#scr">M</add>eCea δYꞶ kakꞶCCITeS δeIS TekNON·</rdg>
                </app>

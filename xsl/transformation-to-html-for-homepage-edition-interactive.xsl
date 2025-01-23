@@ -406,6 +406,13 @@
         </xsl:element>
     </xsl:template>
     
+    <xsl:template match="tei:foreign[@xml:lang = 'grc'][parent::tei:lem]">
+        <xsl:element name="span">
+            <xsl:attribute name="style" select="'font-family: Noto Serif; font-size: 14pt;'"/>
+            <xsl:apply-templates select="child::node()"/>
+        </xsl:element>
+    </xsl:template>
+    
     <xsl:template match="text()[parent::tei:quote]">
         <span class="bold-text">
             <xsl:value-of select="."/>
@@ -477,6 +484,12 @@
                             <xsl:text>second glossator</xsl:text>
                         </xsl:element>
                     </xsl:when>
+                    <xsl:when test="@resp = 'Otfrid'">
+                        <xsl:element name="span">
+                            <xsl:attribute name="style" select="'font-style: italic;'"/>
+                            <xsl:text>Otfrid</xsl:text>
+                        </xsl:element>
+                    </xsl:when>
                     <xsl:otherwise>
                         <xsl:element name="span">
                             <xsl:attribute name="style" select="'font-style: italic;'"/>
@@ -525,6 +538,12 @@
                         <xsl:text>second glossator</xsl:text>
                     </xsl:element>
                 </xsl:when>
+                <xsl:when test="@resp = 'Otfrid'">
+                    <xsl:element name="span">
+                        <xsl:attribute name="style" select="'font-style: italic;'"/>
+                        <xsl:text>Otfrid</xsl:text>
+                    </xsl:element>
+                </xsl:when>
                 <xsl:otherwise>
                     <xsl:element name="span">
                         <xsl:attribute name="style" select="'font-style: italic;'"/>
@@ -552,8 +571,11 @@
                 <xsl:value-of select="child::tei:hi/@rend"/>
             </xsl:if>
             <span class="set-margin-left-and-right"><i class="far fa-hand-paper"></i></span>
-            <xsl:if test="substring-after(@hand,'#') = 'scr-1' or substring-after(@hand,'#') = 'scr'">
+            <xsl:if test="(substring-after(@hand,'#') = 'scr-1') or (substring-after(@hand,'#') = 'scr')">
                 <xsl:text>main scribe</xsl:text>
+            </xsl:if>
+            <xsl:if test="substring-after(@hand,'#') = 'Otfrid'">
+                <xsl:text>Otfrid</xsl:text>
             </xsl:if>
             <xsl:if test="substring-after(@hand,'#') = 'sec'">
                 <xsl:text>secondary scribe</xsl:text>
@@ -605,7 +627,7 @@
         <p class="type-of-intervention"><xsl:text>Text variation:</xsl:text></p>
         <div class="apparatus">
             <xsl:apply-templates select="tei:lem"/>
-            <xsl:apply-templates select="tei:rdg"/>
+            <xsl:apply-templates select="tei:rdg" mode="text-variation"/>
             <p>
                 <xsl:text>Id: </xsl:text>
                 <xsl:element name="span">
@@ -668,24 +690,89 @@
         </xsl:element>
     </xsl:template>
     
+    <xsl:template match="tei:del[not(exists(@type)) or not(@type = 'expunction')]">
+        <xsl:element name="span">
+            <xsl:attribute name="class" select="'expunction'"/>
+            <xsl:text> </xsl:text>
+            <xsl:value-of select="text()"/>
+            <xsl:text> </xsl:text>
+        </xsl:element>
+        <xsl:if test="exists(@hand)">
+            <xsl:text>[</xsl:text>
+            <span class="set-margin-left-and-right"><i class="far fa-hand-paper"></i></span>
+            <xsl:choose>
+                <xsl:when test="(substring-after(@hand,'#') = 'scr') or (substring-after(@hand,'#') = 'scr-1')">
+                    <xsl:text>main scribe</xsl:text>
+                </xsl:when>
+                <xsl:when test="substring-after(@hand,'#') = 'Otfrid'">
+                    <xsl:text>Otfrid</xsl:text>
+                </xsl:when>
+                <xsl:when test="substring-after(@hand,'#') = 'sec'">
+                    <xsl:text>secondary scribe</xsl:text>
+                </xsl:when>
+                <xsl:when test="substring-after(@hand,'#') = 'gl-1'">
+                    <xsl:text>first glossator</xsl:text>
+                </xsl:when>
+                <xsl:when test="substring-after(@hand,'#') = 'gl-2'">
+                    <xsl:text>second glossator</xsl:text>
+                </xsl:when>
+                <xsl:otherwise>
+                    <xsl:text>C. G.</xsl:text>
+                </xsl:otherwise>
+            </xsl:choose>
+            <xsl:text>]</xsl:text>
+        </xsl:if>
+    </xsl:template>
+    
     <xsl:template match="tei:add[parent::tei:rdg/parent::tei:app[@type = 'emendation']]">
         <xsl:text> 〈</xsl:text>
         <xsl:value-of select="text()"/>
         <xsl:text>〉</xsl:text>
         <xsl:text> [</xsl:text>
-        <xsl:value-of select="@place"/>
-        <span class="set-margin-left-and-right"><i class="far fa-hand-paper"></i></span>
-        <xsl:if test="substring-after(parent::tei:rdg/@hand,'#') = 'scr-1' or substring-after(parent::tei:rdg/@hand,'#') = 'scr'">
-            <xsl:text>main scribe</xsl:text>
-        </xsl:if>
-        <xsl:if test="substring-after(parent::tei:rdg/@hand,'#') = 'sec'">
-            <xsl:text>secondary scribe</xsl:text>
-        </xsl:if>
-        <xsl:if test="substring-after(parent::tei:rdg/@hand,'#') = 'gl-1'">
-            <xsl:text>first glossator</xsl:text>
-        </xsl:if>
-        <xsl:if test="substring-after(parent::tei:rdg/@hand,'#') = 'gl-2'">
-            <xsl:text>second glossator</xsl:text>
+        <i class="far fa-compass" style="margin-left: 15pt;"></i>
+        <xsl:element name="span">
+            <xsl:attribute name="class" select="'emphasize-location'"/>
+            <xsl:value-of select="@place"/>
+        </xsl:element>
+        <xsl:if test="exists(@hand)">
+            <span class="set-margin-left-and-right"><i class="far fa-hand-paper"></i></span>
+        <!-- <xsl:if test="exists(parent::tei:rdg/@hand)">
+            <xsl:if test="(substring-after(parent::tei:rdg/@hand,'#') = 'scr-1') or (substring-after(parent::tei:rdg/@hand,'#') = 'scr')">
+                <xsl:text>main scribe</xsl:text>
+            </xsl:if>
+            <xsl:if test="substring-after(parent::tei:rdg/@hand,'#') = 'Otfrid'">
+                <xsl:text>Otfrid</xsl:text>
+            </xsl:if>
+            <xsl:if test="substring-after(parent::tei:rdg/@hand,'#') = 'sec'">
+                <xsl:text>secondary scribe</xsl:text>
+            </xsl:if>
+            <xsl:if test="substring-after(parent::tei:rdg/@hand,'#') = 'gl-1'">
+                <xsl:text>first glossator</xsl:text>
+            </xsl:if>
+            <xsl:if test="substring-after(parent::tei:rdg/@hand,'#') = 'gl-2'">
+                <xsl:text>second glossator</xsl:text>
+            </xsl:if>
+        </xsl:if> -->
+            <xsl:choose>
+                <xsl:when test="(substring-after(@hand,'#') = 'scr') or (substring-after(@hand,'#') = 'scr-1')">
+                    <xsl:text>main scribe</xsl:text>
+                </xsl:when>
+                <xsl:when test="substring-after(@hand,'#') = 'Otfrid'">
+                    <xsl:text>Otfrid</xsl:text>
+                </xsl:when>
+                <xsl:when test="substring-after(@hand,'#') = 'sec'">
+                    <xsl:text>secondary scribe</xsl:text>
+                </xsl:when>
+                <xsl:when test="substring-after(@hand,'#') = 'gl-1'">
+                    <xsl:text>first glossator</xsl:text>
+                </xsl:when>
+                <xsl:when test="substring-after(@hand,'#') = 'gl-2'">
+                    <xsl:text>second glossator</xsl:text>
+                </xsl:when>
+                <xsl:otherwise>
+                    <xsl:text>C. G.</xsl:text>
+                </xsl:otherwise>
+            </xsl:choose>
         </xsl:if>
         <xsl:text>]</xsl:text>
     </xsl:template>
@@ -775,6 +862,9 @@
                 <xsl:if test="substring-after(@hand,'#') = 'scr-1' or substring-after(@hand,'#') = 'scr'">
                     <xsl:text>main scribe</xsl:text>
                 </xsl:if>
+                <xsl:if test="substring-after(@hand,'#') = 'Otfrid'">
+                    <xsl:text>Otfrid</xsl:text>
+                </xsl:if>
                 <xsl:if test="substring-after(@hand,'#') = 'sec'">
                     <xsl:text>secondary scribe</xsl:text>
                 </xsl:if>
@@ -801,7 +891,7 @@
                 <xsl:value-of select="substring-after(@wit,'#')"/>
             </xsl:if>
             <xsl:text>: </xsl:text>
-            <xsl:value-of select="text()"/>
+            <xsl:apply-templates select="child::node()"/>
         </p>
     </xsl:template>
     
@@ -816,7 +906,7 @@
                 <xsl:value-of select="substring-after(@wit,'#')"/>
             </xsl:if>
             <xsl:text>: </xsl:text>
-            <xsl:value-of select="text()"/>
+            <xsl:apply-templates select="child::node()"/>
     </xsl:template>
     
     <xsl:template match="tei:rdg">
@@ -852,6 +942,272 @@
         </div>
     </xsl:template>
     
+    <xsl:template match="tei:rdg" mode="text-variation">
+        <div class="apparatus-reading">
+            <xsl:if test="substring-after(@wit,'#') = 'COD_50'">
+                <xsl:text>Codex 50</xsl:text>
+            </xsl:if>
+            <xsl:if test="not(substring-after(@wit,'#') = 'COD_50')">
+                <xsl:value-of select="substring-after(@wit,'#')"/>
+            </xsl:if>
+            <xsl:text>: </xsl:text>
+            <xsl:if test="not(exists(text())) and not(exists(child::node()))">
+                <i>
+                    <xsl:text>omitted</xsl:text>
+                </i>
+            </xsl:if>
+            <xsl:choose>
+                <xsl:when test="(count(child::tei:add) = 1) and (count(child::tei:*[not(local-name(.) = 'add')]) = 0) and exists(child::tei:add/@facs) and not(exists(child::text()))">
+                    <xsl:apply-templates select="child::node()" mode="text-variation-reading-complex-content"/>
+                    <span class="around-link">
+                        <xsl:element name="a">
+                            <xsl:attribute name="class" select="'link-for-text-variation'"/>
+                            <xsl:attribute name="href" select="parent::tei:app/@xml:id"/>
+                            <xsl:attribute name="id" select="parent::tei:app/@xml:id"/>
+                            <i class="fa-solid fa-info"></i>
+                        </xsl:element>
+                    </span>
+                </xsl:when>
+                <xsl:when test="(count(child::tei:add) = 1) and (count(child::tei:*[not(local-name(.) = 'add')]) = 0) and not(exists(child::tei:add/@facs)) and not(exists(child::text()))">
+                    <xsl:apply-templates select="child::node()" mode="text-variation-reading-complex-content-single-add"/>
+                </xsl:when>
+                <xsl:when test="(count(child::tei:add) = 1) and (count(child::tei:*[not(local-name(.) = 'add')]) = 0) and exists(child::text())"><!-- add and text -->
+                    <xsl:apply-templates select="child::node()" mode="text-variation-reading-complex-content"/>
+                </xsl:when>
+                <xsl:when test="(count(child::tei:add) = 1) and (count(child::tei:*[not(local-name(.) = 'add')]) gt 0)">
+                    <xsl:apply-templates select="child::node()" mode="text-variation-reading-complex-content"/>
+                </xsl:when>
+                <xsl:when test="(count(child::tei:add) gt 1) and (count(child::tei:*[not(local-name(.) = 'add')]) gt 0)">
+                    <xsl:apply-templates select="child::node()" mode="text-variation-reading-complex-content"/>
+                </xsl:when>
+                <xsl:when test="(count(child::tei:add) = 0) and (count(child::tei:*[not(local-name(.) = 'add')]) gt 0)">
+                    <xsl:apply-templates select="child::node()"/>
+                </xsl:when>
+                <xsl:when test="(count(child::tei:*) = 0) and exists(child::text())"><!-- only text content -->
+                    <xsl:apply-templates select="child::node()"/>
+                </xsl:when>
+            </xsl:choose>
+            <xsl:if test="exists(@hand)">
+                <xsl:element name="br"/>
+                <span class="set-margin-left"><i class="far fa-hand-paper"></i></span>
+                <xsl:element name="span">
+                    <xsl:attribute name="class" select="'emphasize-hand'"/>
+                    <xsl:if test="substring-after(@hand,'#') = 'scr-1' or substring-after(@hand,'#') = 'scr'">
+                        <xsl:text>main scribe</xsl:text>
+                    </xsl:if>
+                    <xsl:if test="substring-after(@hand,'#') = 'Otfrid'">
+                        <xsl:text>Otfrid</xsl:text>
+                    </xsl:if>
+                    <xsl:if test="substring-after(@hand,'#') = 'sec'">
+                        <xsl:text>secondary scribe</xsl:text>
+                    </xsl:if>
+                    <xsl:if test="substring-after(@hand,'#') = 'gl-1'">
+                        <xsl:text>first glossator</xsl:text>
+                    </xsl:if>
+                    <xsl:if test="substring-after(@hand,'#') = 'gl-2'">
+                        <xsl:text>second glossator</xsl:text>
+                    </xsl:if>
+                </xsl:element>
+            </xsl:if>
+        </div>
+    </xsl:template>
+    
+    <xsl:template match="tei:w" mode="text-variation-reading-complex-content">
+        <xsl:apply-templates select="child::node()"/>
+    </xsl:template>
+    
+    <xsl:template match="tei:add" mode="text-variation-reading-complex-content">
+        <xsl:text>/</xsl:text>
+        <xsl:apply-templates select="child::node()"/>
+        <xsl:if test="exists(@hand)">
+            <i class="far fa-hand-paper" style="margin-left: 15pt;"></i>
+            <xsl:element name="span">
+                <xsl:attribute name="class" select="'emphasize-hand'"/>
+                <xsl:if test="substring-after(@hand,'#') = 'scr-1' or substring-after(@hand,'#') = 'scr'">
+                    <xsl:text>main scribe</xsl:text>
+                </xsl:if>
+                <xsl:if test="substring-after(@hand,'#') = 'Otfrid'">
+                    <xsl:text>Otfrid</xsl:text>
+                </xsl:if>
+                <xsl:if test="substring-after(@hand,'#') = 'sec'">
+                    <xsl:text>secondary scribe</xsl:text>
+                </xsl:if>
+                <xsl:if test="substring-after(@hand,'#') = 'gl-1'">
+                    <xsl:text>first glossator</xsl:text>
+                </xsl:if>
+                <xsl:if test="substring-after(@hand,'#') = 'gl-2'">
+                    <xsl:text>second glossator</xsl:text>
+                </xsl:if>
+            </xsl:element>
+        </xsl:if>
+        <xsl:if test="exists(@place)">
+            <i class="far fa-compass" style="margin-left: 15pt;"></i>
+            <xsl:element name="span">
+                <xsl:attribute name="class" select="'emphasize-location'"/>
+                <xsl:value-of select="@place"/>
+            </xsl:element>
+        </xsl:if>
+        <xsl:if test="exists(@ana)">
+            <xsl:for-each select="tokenize(@ana,'\s*#')">
+                <xsl:if test=". != ''">
+                    <i class="fas fa-glasses" style="margin-left: 15pt;"></i>
+                    <span class="emphasize-analysis">
+                        <!-- <xsl:value-of select="$root-node//tei:category[@xml:id = current()]/tei:catDesc/text()"/> -->
+                        <xsl:choose>
+                            <xsl:when test="current() = 'glosses-on-prosody'"><xsl:text>glosses on prosody</xsl:text></xsl:when>
+                            <xsl:when test="current() = 'length-mark'"><xsl:text>length mark</xsl:text></xsl:when>
+                            <xsl:when test="current() = 'length-of-syllables'"><xsl:text>length of syllables</xsl:text></xsl:when>
+                            <xsl:when test="current() = 'comment-on-metre'"><xsl:text>comment on metre</xsl:text></xsl:when>
+                            <xsl:when test="current() = 'lexical glosses'"><xsl:text>lexical glosses</xsl:text></xsl:when>
+                            <xsl:when test="current() = 'translation-into-Old-High-German'"><xsl:text>translation into Old-High German</xsl:text></xsl:when>
+                            <xsl:when test="current() = 'synonyms'"><xsl:text>synonyms</xsl:text></xsl:when>
+                            <xsl:when test="current() = 'negated-antonyms'"><xsl:text>negated antonyms</xsl:text></xsl:when>
+                            <xsl:when test="current() = 'definition-given-by-an-entire-sentence'"><xsl:text>definition given by an entire sentence</xsl:text></xsl:when>
+                            <xsl:when test="current() = 'Greek-glosses'"><xsl:text>Greek glosses</xsl:text></xsl:when>
+                            <xsl:when test="current() = 'use-of-different-prefixes'"><xsl:text>use of different prefixes</xsl:text></xsl:when>
+                            <xsl:when test="current() = 'adjectives-glossed-with-a-noun'"><xsl:text>adjectives glossed with a noun</xsl:text></xsl:when>
+                            <xsl:when test="current() = 'differentiae'"><xsl:text>differentiae</xsl:text></xsl:when>
+                            <xsl:when test="current() = 'further-derivations'"><xsl:text>further derivations</xsl:text></xsl:when>
+                            <xsl:when test="current() = 'original-parts-of-a-word'"><xsl:text>original parts of a word</xsl:text></xsl:when>
+                            <xsl:when test="current() = 'grammatical-glosses'"><xsl:text>grammatical glosses</xsl:text></xsl:when>
+                            <xsl:when test="current() = 'grammatical-glosses-on-the-noun'"><xsl:text>grammatical glosses on the noun</xsl:text></xsl:when>
+                            <xsl:when test="current() = 'grammatical-glosses-on-the-pronoun'"><xsl:text>grammatical glosses on the pronoun</xsl:text></xsl:when>
+                            <xsl:when test="current() = 'grammatical-glosses-on-verb-participle-and-gerund'"><xsl:text>grammatical glosses on verb, participle and gerund</xsl:text></xsl:when>
+                            <xsl:when test="current() = 'grammatical-glosses-on-the-adverb'"><xsl:text>grammatical glosses on the adverb</xsl:text></xsl:when>
+                            <xsl:when test="current() = 'grammatical-glosses-on-the-conjunction'"><xsl:text>grammatical glosses on the conjunction</xsl:text></xsl:when>
+                            <xsl:when test="current() = 'grammatical-glosses-on-the-preposition'"><xsl:text>grammatical glosses on the preposition</xsl:text></xsl:when>
+                            <xsl:when test="current() = 'grammatical-glosses-on-the-interjection'"><xsl:text>grammatical glosses on the interjection</xsl:text></xsl:when>
+                            <xsl:when test="current() = 'syntactical-glosses'"><xsl:text>syntactical glosses</xsl:text></xsl:when>
+                            <xsl:when test="current() = 'syntactical-glosses-using-symbols'"><xsl:text>syntactical glosses using symbols</xsl:text></xsl:when>
+                            <xsl:when test="current() = 'suppletive-glosses'"><xsl:text>suppletive glosses</xsl:text></xsl:when>
+                            <xsl:when test="current() = 'glosses-identifying-a-speaker-or-an-example'"><xsl:text>glosses identifying a speaker or an example</xsl:text></xsl:when>
+                            <xsl:when test="current() = 'commentary-glosses'"><xsl:text>commentary glosses</xsl:text></xsl:when>
+                            <xsl:when test="current() = 'glosses-decoding-figures-of-speech'"><xsl:text>glosses decoding figures of speech</xsl:text></xsl:when>
+                            <xsl:when test="current() = 'glosses-summarizing-content'"><xsl:text>glosses summarizing content</xsl:text></xsl:when>
+                            <xsl:when test="current() = 'cross-references'"><xsl:text>cross references</xsl:text></xsl:when>
+                            <xsl:when test="current() = 'elaborate-comment-on-the-main-text'"><xsl:text>elaborate comment on the main text</xsl:text></xsl:when>
+                            <xsl:when test="current() = 'quia-glosses'"><xsl:text></xsl:text>quia glosses</xsl:when>
+                            <xsl:when test="current() = 'glosses-elucidating-the-main-text'"><xsl:text>glosses elucidating the main text</xsl:text></xsl:when>
+                            <xsl:when test="current() = 'glosses-elucidating-the-main-text-with-siglum-auctoris'"><xsl:text>glosses elucidating the main text with siglum auctoris</xsl:text></xsl:when>
+                            <xsl:when test="current() = 'glosses-elucidating-the-main-text-with-a-title'"><xsl:text>glosses elucidating the main text with a title</xsl:text></xsl:when>
+                            <xsl:when test="current() = 'glosses-elucidating-the-main-text-with-red-marginal-title'"><xsl:text>glosses elucidating the main text with red marginal title</xsl:text></xsl:when>
+                            <xsl:when test="current() = 'etymological-glosses'"><xsl:text>etymological glosses</xsl:text></xsl:when>
+                            <xsl:when test="current() = 'encyclopedic-glosses'"><xsl:text>encyclopedic glosses</xsl:text></xsl:when>
+                            <xsl:when test="current() = 'geographical-names'"><xsl:text>geographical names</xsl:text></xsl:when>
+                            <xsl:when test="current() = 'source-glosses'"><xsl:text>source glosses</xsl:text></xsl:when>
+                            <xsl:when test="current() = 'source-or-comparison'"><xsl:text>source or comparison</xsl:text></xsl:when>
+                            <xsl:when test="current() = 'acquaintance-with-classics'"><xsl:text>acquaintance with classics</xsl:text></xsl:when>
+                            <xsl:when test="current() = 'text-variant'"><xsl:text>text variant</xsl:text></xsl:when>
+                            <xsl:when test="current() = 'contemporary-socio-historical-context'"><xsl:text>contemporary socio historical context</xsl:text></xsl:when>
+                            <xsl:when test="current() = 'lemma-gloss'"><xsl:text>Reference sign: lemma - gloss</xsl:text></xsl:when>
+                            <xsl:when test="current() = 'lemma-lemma'"><xsl:text>Reference sign: lemma - lemma</xsl:text></xsl:when>
+                            <xsl:when test="current() = 'attention-sign-nota'"><xsl:text>attention sign nota</xsl:text></xsl:when>
+                            <xsl:when test="current() = 'excerption-signs'"><xsl:text>excerption signs</xsl:text></xsl:when>
+                            <xsl:when test="current() = 'excerption-sign-inverted-paragraphus'"><xsl:text>excerption sign inverted paragraphus</xsl:text></xsl:when>
+                            <xsl:when test="current() = 'capital-delta'"><xsl:text>capital delta</xsl:text></xsl:when>
+                            <xsl:otherwise>
+                                <xsl:value-of select="replace(current(),'-',' ')"/>
+                            </xsl:otherwise>
+                        </xsl:choose>
+                    </span>
+                </xsl:if>
+            </xsl:for-each>
+        </xsl:if>
+        <xsl:text>/</xsl:text>
+        <xsl:if test="exists(@facs)">
+            <span class="around-link">
+                <xsl:element name="a">
+                    <xsl:attribute name="class" select="'link-for-text-variation'"/>
+                    <xsl:attribute name="href" select="ancestor::tei:app/@xml:id"/>
+                    <xsl:attribute name="id" select="ancestor::tei:app/@xml:id"/>
+                    <i class="fa-solid fa-info"></i>
+                </xsl:element>
+            </span>
+        </xsl:if>
+    </xsl:template>
+    
+    <xsl:template match="tei:add" mode="text-variation-reading-complex-content-single-add">
+        <xsl:apply-templates select="child::node()"/>
+        <xsl:if test="exists(@hand)">
+            <xsl:element name="br"/>
+            <span class="set-margin-left"><i class="far fa-hand-paper"></i></span>
+            <xsl:element name="span">
+                <xsl:attribute name="class" select="'emphasize-hand'"/>
+                <xsl:if test="substring-after(@hand,'#') = 'scr-1' or substring-after(@hand,'#') = 'scr'">
+                    <xsl:text>main scribe</xsl:text>
+                </xsl:if>
+                <xsl:if test="substring-after(@hand,'#') = 'Otfrid'">
+                    <xsl:text>Otfrid</xsl:text>
+                </xsl:if>
+                <xsl:if test="substring-after(@hand,'#') = 'sec'">
+                    <xsl:text>secondary scribe</xsl:text>
+                </xsl:if>
+                <xsl:if test="substring-after(@hand,'#') = 'gl-1'">
+                    <xsl:text>first glossator</xsl:text>
+                </xsl:if>
+                <xsl:if test="substring-after(@hand,'#') = 'gl-2'">
+                    <xsl:text>second glossator</xsl:text>
+                </xsl:if>
+            </xsl:element>
+        </xsl:if>
+        <xsl:if test="exists(@place)">
+            <xsl:element name="br"/>
+            <span class="set-margin-left"><i class="far fa-compass"></i></span>
+            <xsl:element name="span">
+                <xsl:attribute name="class" select="'emphasize-location'"/>
+                <xsl:value-of select="@place"/>
+            </xsl:element>
+        </xsl:if>
+    </xsl:template>
+    
+    <xsl:template match="tei:hi" mode="text-variation-reading-complex-content">
+        <xsl:choose>
+            <xsl:when test="(@rend = 'red capitalis') or (@rend = 'red capitalis rustica') or (@rend = 'letter filled with red ink')">
+                <xsl:element name="span">
+                    <xsl:attribute name="style" select="'color: #9e1b16;'"/>
+                    <xsl:value-of select="text()"/>
+                </xsl:element>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:value-of select="text()"/>
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:template>
+    
+    <xsl:template match="tei:reg" mode="text-variation-reading-complex-content">
+        <xsl:apply-templates select="child::node()"/>
+    </xsl:template>
+    
+    <xsl:template match="tei:g" mode="text-variation-reading-complex-content">
+        <xsl:text>|</xsl:text>
+        <xsl:value-of select="root()//tei:glyph[@xml:id = substring-after(current()/@ref,'#')]/tei:localProp[@name = 'Name']/@value"/>
+        <xsl:text>| </xsl:text>
+    </xsl:template>
+    
+    <xsl:template match="tei:del" mode="text-variation-reading-complex-content">
+        <xsl:element name="span">
+            <xsl:attribute name="class" select="'expunction'"/>
+            <xsl:text> </xsl:text>
+            <xsl:value-of select="text()"/>
+            <xsl:text> </xsl:text>
+        </xsl:element>
+    </xsl:template>
+    
+    <xsl:template match="tei:foreign[@xml:lang = 'grc']" mode="text-variation-reading-complex-content">
+        <xsl:element name="span">
+            <xsl:attribute name="style" select="'font-family: Noto Serif; font-size: 14pt;'"/>
+            <xsl:apply-templates select="child::node()"/>
+        </xsl:element>
+    </xsl:template>
+    
+    <xsl:template match="tei:foreign[not(@xml:lang = 'grc')]" mode="text-variation-reading-complex-content">
+        <xsl:apply-templates select="child::node()"/>
+    </xsl:template>
+    
+    <xsl:template match="text()" mode="text-variation-reading-complex-content">
+        <xsl:value-of select="normalize-space(.)"/>
+    </xsl:template>
+    
     <xsl:template match="tei:add[parent::tei:rdg and not(parent::tei:rdg/parent::tei:app[@type = 'emendation'])]">
         <xsl:apply-templates/>
         <xsl:element name="br"/>
@@ -864,8 +1220,11 @@
         <span class="set-margin-left"><i class="far fa-hand-paper"></i></span>
         <xsl:element name="span">
             <xsl:attribute name="class" select="'emphasize-hand'"/>
-            <xsl:if test="substring-after(@hand,'#') = 'scr-1' or substring-after(@hand,'#') = 'scr'">
-            <xsl:text>main scribe</xsl:text>
+            <xsl:if test="(substring-after(@hand,'#') = 'scr-1') or (substring-after(@hand,'#') = 'scr')">
+                <xsl:text>main scribe</xsl:text>
+            </xsl:if>
+            <xsl:if test="substring-after(@hand,'#') = 'Otfrid'">
+                <xsl:text>Otfrid</xsl:text>
             </xsl:if>
             <xsl:if test="substring-after(@hand,'#') = 'sec'">
                 <xsl:text>secondary scribe</xsl:text>
@@ -1042,6 +1401,9 @@
                 </xsl:if>
                 <xsl:if test="substring-after(@hand,'#') = 'gl-2'">
                     <xsl:text>second glossator</xsl:text>
+                </xsl:if>
+                <xsl:if test="substring-after(@hand,'#') = 'Otfrid'">
+                    <xsl:text>Otfrid</xsl:text>
                 </xsl:if>
             </xsl:element>
         </div>
@@ -1427,7 +1789,7 @@
     
     <xsl:template match="tei:del[not(exists(@type))]" mode="glosses-as-json">
         <xsl:text>[</xsl:text>
-        <xsl:value-of select="text()"/>
+        <xsl:apply-templates select="child::node()"/>
         <xsl:text> - deleted]</xsl:text>
     </xsl:template>
     
@@ -1502,6 +1864,9 @@
                 </xsl:when>
                 <xsl:when test="@resp = 'gl-2'">
                     <xsl:text>second glossator</xsl:text>
+                </xsl:when>
+                <xsl:when test="@resp = 'Otfrid'">
+                    <xsl:text>Otfrid</xsl:text>
                 </xsl:when>
                 <xsl:otherwise>
                     <xsl:text>C. G.</xsl:text>
