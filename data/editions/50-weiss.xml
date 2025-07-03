@@ -151,22 +151,22 @@
                <p>Following discrepancies from Hertz' edition have been ignored:</p>
                <p>change of ci/ti;</p>
                <p>change of e/ae/e caudata;</p>
-               <p>change regarding "h" at word beginning;</p>
+               <p>change regarding 'h' at word beginning;</p>
                <p>change of i/y (e.g. sillaba/syllaba;</p>
                <p>change of i/e when morphologically insignificant (e.g. elementum/elimentum;
                   elegantiora/eligantiora);</p>
                <p>change of t/tt and p/pp (e.g. litera/littera; quatuor/quattuor;
                   apellantur/appellantur);</p>
-               <p>change regarding "ms"/"mps" and similars (e.g. hiems/hiemps)</p>
+               <p>change regarding 'ms'/'mps' and similars (e.g. hiems/hiemps)</p>
                <p>change of c/qu (e.g. secuntur/sequuntur)</p>
                <p>negligible change of d/t (e.g. apud/aput)</p>
                <p>assimilations (e.g. inliterata/illiterata; subposui/supposui);</p>
                <p>differences from Hertz' edition in the use of capital letters for proper
                   names.</p>
-               <p>Common abbreviations for "et", "per", "quae", "quia", and word endings have been
-                  silently expanded. The Irish abbreviations for "et" (7-shaped form), "quae" (q
-                  followed by trigon), and "est", as well as the abbreviations for "scilicet", "vel"
-                  and "id est" are recorded</p>
+               <p>Common abbreviations for 'et', 'per', 'quae', 'quia', and word endings have been
+                  silently expanded. The Irish abbreviations for 'et' (7-shaped form), 'quae' (q
+                  followed by trigon), and 'est', as well as the abbreviations for 'scilicet', 'vel'
+                  and 'id est' are recorded</p>
             </normalization>
             <punctuation>
                <p>I followed the punctuation of Hertz' edition of Priscian's text. As for the
@@ -386,7 +386,7 @@
          <listPrefixDef>
             <prefixDef ident="images-keil" matchPattern="(Keil_[a-z][0-9]_[0-9]+\.gif)"
                replacementPattern="http://stgallpriscian.ie/images/keil/$1">
-               <p>private URLs with the prefix "image-keil" point to the pictures of the edition of
+               <p>private URLs with the prefix 'image-keil' point to the pictures of the edition of
                   Keil</p>
             </prefixDef>
          </listPrefixDef>
@@ -1993,8 +1993,8 @@
                <note resp="#CG" type="explanation" target="#tv-5-15-1">The addition is recorded in
                   the apparatus of Hertz' edition, p. II, 5. MS St. Gallen 904 shares this same
                   reading. MS Köln 200 features the addition in the margin. MS Karlsruhe, BLB, Aug.
-                  perg. 132 features the addition on a schedula (f. 3r) along with the comment: "sed
-                  in libro romano non habetur". On this see <bibl corresp="#Cinato_2015">Cinato
+                  perg. 132 features the addition on a schedula (f. 3r) along with the comment: 'sed
+                  in libro romano non habetur'. On this see <bibl corresp="#Cinato_2015">Cinato
                      2015, pp. 527-529.</bibl></note>
                <app type="gloss" xml:id="gloss-5-15-1">
                   <lem wit="#EDITION">coax</lem>
@@ -2285,7 +2285,7 @@
                <app type="text-variation" xml:id="tv-6-14-1">
                   <lem wit="#EDITION">in</lem>
                   <rdg wit="#COD_50" hand="#scr">antiqui in</rdg>
-                  <note resp="#CG" type="explanation" target="#tv-6-14-1">transposition of "antiqui"
+                  <note resp="#CG" type="explanation" target="#tv-6-14-1">transposition of 'antiqui'
                      in MS 50 Weiss.</note>
                </app>
                <quote source="#EDITION" n="II 6,15">antiqui scri<lb n="28" break="no" ed="1v"/>bere
@@ -2897,7 +2897,7 @@
                         facs="#zone.1r.26" ana="#text-variant">
                         <g ref="#vel"/> coquitur</add></rdg>
                </app>
-               <note resp="#CG" type="explanation" target="#gloss-9-27-1"> "uel cocitur" is recorded
+               <note resp="#CG" type="explanation" target="#gloss-9-27-1">'uel cocitur' is recorded
                   in the apparatus criticus of Hertz' edition: it is included in the primary text in
                   the MSS G and L.</note>
                <quote source="#EDITION" n="II 9,28">mutas, non <lb n="35" ed="2r"/> quae omnino uoce
@@ -2925,7 +2925,7 @@
                </app>
             </div>
             <div type="page-of-Hertz-edition" n="Liber Primus" xml:id="liber-primus.6"
-               next="#liber-primus.5" prev="liber-primus.7" corresp="images-keil:Keil_v2_010.gif"
+               next="#liber-primus.7" prev="liber-primus.5" corresp="images-keil:Keil_v2_010.gif"
                xml:lang="la">
                <quote source="#EDITION" n="II 10,1">ante ancipites erant, remanserunt perpetuo
                   breues, cum earum</quote>
@@ -5218,7 +5218,7 @@
                <quote source="#EDITION" n="II 22,25">incipiens geminata est syllaba.</quote>
             </div>
             <div type="page-of-Hertz-edition" n="Liber Primus" xml:id="liber-primus.19"
-               next="#liber-primus.18" prev="#liber-primus.20" corresp="images-keil:Keil_v2_023.gif"
+               next="#liber-primus.20" prev="#liber-primus.18" corresp="images-keil:Keil_v2_023.gif"
                xml:lang="la">
                <quote source="#EDITION" n="II 23,1">s ante mutam posita inueniuntur duo, quae
                   geminant syllabam, sto</quote>
@@ -10164,7 +10164,7 @@
                   <rdg wit="#COD_50"><add place="inline" hand="#Otfrid" facs="#zone.7r.58"
                         ana="#grammatical-glosses-on-the-noun">proprium nomen</add></rdg>
                   <note corresp="#gloss-42-12-3" type="explanation" resp="#CG"> Otfrid wrote this
-                     segment of the main text, as far as I can judge. The glossator dubbed #sec
+                     segment of the main text, as far as I can judge. The glossator dubbed sec
                      added the name 'Asbutes' that Otfrid had skipped. In turn, Otfrid glossed the
                      addition by his colleague explaining that 'asbutes' is a proper name. This is a
                      clear example of the close collaboration of Otfrid and his fellow-glossator in
@@ -10271,7 +10271,7 @@
                   <rdg wit="#COD_50"><add place="interlinear above" hand="#sec" facs="#zone.7r.63"
                         ana="#glosses-elucidating-the-main-text">hominis inuentor aratri</add></rdg>
                   <note corresp="#gloss-42-16-2 #gloss-42-16-3" type="explanation" resp="#CG">The
-                     explanation added by the glossator dubbed #sec completes that written by
+                     explanation added by the glossator dubbed sec completes that written by
                      Otfrid. We have here a further example of the close collaboration of the two
                      scholars.</note>
                </app>
@@ -10575,7 +10575,7 @@
                         ana="#syntactical-glosses-using-symbols">·t· secunda ponitur post ·c· <g
                            ref="#vel"/> post p·</add></rdg>
                   <note resp="#CG" type="explanation" target="#as-43-2-1 #as-43-3-1 #gloss-43-3-1">
-                     The glossator dubbed #sec added two annotation signs and an interlinear gloss
+                     The glossator dubbed sec added two annotation signs and an interlinear gloss
                      to remark that the word order of this segment of Priscian's grammar is
                      confusing. According to him, it would be better if both the word 'uictrix' and
                      the following 'sceptrum' occurred after 'secunda t' of line 43,2 since they

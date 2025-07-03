@@ -5,7 +5,11 @@
     exclude-result-prefixes="xs"
     version="2.0">
     
-    <xsl:output encoding="UTF-8" method="text" indent="no"/>
+    <xsl:output encoding="UTF-8" method="text" indent="no" use-character-maps="ampersand"/>
+    
+    <xsl:character-map name="ampersand">
+        <xsl:output-character character="&amp;" string="+"/>
+    </xsl:character-map>
     
     <xsl:template match="/">
         \documentclass[12pt,a4paper]{scrbook}
@@ -27,7 +31,7 @@
     </xsl:template>
     
     <xsl:template match="tei:TEI">
-        <xsl:apply-templates select="child::node()"/>
+        <xsl:apply-templates select="child::node()[not(tei:facsimile)]"/>
     </xsl:template>
     
     <xsl:template match="tei:teiHeader">
@@ -39,7 +43,7 @@
     </xsl:template>
     
     <xsl:template match="tei:text">
-        <xsl:apply-templates select="child::node()"/>
+        <xsl:apply-templates select="child::tei:body"/>
     </xsl:template>
     
     <xsl:template match="tei:body">
@@ -51,21 +55,21 @@
     </xsl:template>
     
     <xsl:template match="tei:div[parent::tei:body]">
-        <xsl:apply-templates select="child::node()"/>
+        <xsl:apply-templates select="child::tei:div[@type = 'page-of-Hertz-edition'][not(exists(@prev))]"/>
     </xsl:template>
     
     <xsl:template match="tei:div[@type = 'page-of-Hertz-edition'][not(exists(@prev))]">
         \chapter*{<xsl:value-of select="@n"/>}\addcontentsline{toc}{chapter}{<xsl:value-of select="@n"/>}
         <xsl:apply-templates select="child::node()"/>
-        <xsl:if test="exists(following-sibling::tei:div[@type = 'page-of-Hertz-edition'][exists(@prev)])">
-            <xsl:apply-templates select="following-sibling::tei:div[@type = 'page-of-Hertz-edition'][1]"/>
+        <xsl:if test="(local-name(following-sibling::*[1]) = 'div') and exists(following-sibling::*[1][@type = 'page-of-Hertz-edition'][exists(@prev)])">
+            <xsl:apply-templates select="following-sibling::*[1]"/>
         </xsl:if>
     </xsl:template>
     
     <xsl:template match="tei:div[@type = 'page-of-Hertz-edition'][exists(@prev)]">
         <xsl:apply-templates select="child::node()"/>
-        <xsl:if test="exists(following-sibling::tei:div[@type = 'page-of-Hertz-edition'][exists(@prev)])">
-            <xsl:apply-templates select="following-sibling::tei:div[@type = 'page-of-Hertz-edition'][1]"/>
+        <xsl:if test="(local-name(following-sibling::*[1]) = 'div') and exists(following-sibling::*[1][@type = 'page-of-Hertz-edition'][exists(@prev)])">
+            <xsl:apply-templates select="following-sibling::*[1]"/>
         </xsl:if>
     </xsl:template>
     
@@ -282,7 +286,7 @@
     <xsl:template match="tei:hi">
         <xsl:choose>
             <xsl:when test="(@rend = 'red capitalis') or (@rend = 'red capitalis rustica') or (@rend = 'red script') or (@rend = 'letter filled with red ink') or (@rend = 'capital letter filled with red ink')">
-                <xsl:text>{\color{9E1B16}</xsl:text>
+                <xsl:text>{\textcolor[HTML]{9E1B16}</xsl:text>
                     <xsl:apply-templates/>
             <xsl:text>}</xsl:text>
             </xsl:when>
@@ -321,36 +325,37 @@
     
     <xsl:template match="tei:app[@type = 'text-variation']">
         <xsl:text>Text variation: </xsl:text>
-        <xsl:text>\texttt{</xsl:text>
+        <xsl:text>\small\texttt{</xsl:text>
         <xsl:value-of select="@xml:id"/>
-        <xsl:text>}\par\vspace{3mm}</xsl:text>
+        <xsl:text>}\normalsize\par </xsl:text>
         <xsl:apply-templates select="tei:lem | tei:rdg"/>
-        <xsl:text>\par\vspace{5mm}</xsl:text>
+        <xsl:text>\par </xsl:text>
     </xsl:template>
     
     <xsl:template match="tei:app[@type = 'reference-signs']">
         <xsl:text>Reference sign: </xsl:text>
-        <xsl:text>\texttt{</xsl:text>
+        <xsl:text>\small\texttt{</xsl:text>
             <xsl:value-of select="@xml:id"/>
-        <xsl:text>}\par\vspace{3mm}</xsl:text>
+        <xsl:text>}\normalsize\par </xsl:text>
         <xsl:apply-templates select="tei:lem"/>
         <xsl:apply-templates select="tei:rdg"/>
-        <xsl:text>\par\vspace{5mm}</xsl:text>
+        <xsl:text>\par </xsl:text>
     </xsl:template>
     
     <xsl:template match="tei:app[@type = 'emendation']">
         <xsl:text>Emendation: </xsl:text>
-        <xsl:text>\texttt{</xsl:text>
+        <xsl:text>\small\texttt{</xsl:text>
         <xsl:value-of select="@xml:id"/>
-        <xsl:text>}\par\vspace{3mm}</xsl:text>
+        <xsl:text>}\normalsize\par </xsl:text>
         <xsl:apply-templates select="tei:lem"/>
         <xsl:apply-templates select="tei:rdg" mode="emendation"/>
-        <xsl:text>\par\vspace{3mm}</xsl:text>
+        <xsl:text>\par </xsl:text>
         <xsl:apply-templates select="tei:note"/>
-        <xsl:text>\par\vspace{5mm}</xsl:text>
+        <xsl:text>\par </xsl:text>
     </xsl:template>
     
     <xsl:template match="tei:rdg" mode="emendation">
+        <xsl:text>\hspace{10mm}</xsl:text>
         <xsl:if test="substring-after(@wit,'#') = 'COD_50'">
             <xsl:text>Codex 50</xsl:text>
         </xsl:if>
@@ -380,7 +385,7 @@
         <xsl:text>〉</xsl:text>
         <xsl:text> [</xsl:text>
         <xsl:value-of select="@place"/>
-        <xsl:text>Hand: </xsl:text>
+        <xsl:text> - Hand: </xsl:text>
         <xsl:if test="exists(@hand)">
             <xsl:if test="substring-after(@hand,'#') = 'scr-1' or substring-after(@hand,'#') = 'scr'">
                 <xsl:text>main scribe</xsl:text>
@@ -420,39 +425,40 @@
     
     <xsl:template match="tei:app[@type = 'gloss']">
         <xsl:text>Gloss: </xsl:text>
-        <xsl:text>\texttt{</xsl:text>
+        <xsl:text>\small\texttt{</xsl:text>
         <xsl:value-of select="@xml:id"/>
-        <xsl:text>}\par\vspace{3mm}</xsl:text>
+        <xsl:text>}\normalsize\par </xsl:text>
         <xsl:apply-templates select="tei:lem"/>
         <xsl:apply-templates select="tei:rdg"/>
-        <xsl:text>\par\vspace{3mm}</xsl:text>
+        <xsl:text>\par </xsl:text>
         <xsl:apply-templates select="tei:note"/>
-        <xsl:text>\par\vspace{5mm}</xsl:text>
+        <xsl:text>\par </xsl:text>
     </xsl:template>
     
     <xsl:template match="tei:app[@type = 'annotation-signs']">
         <xsl:text>Annotation sign: </xsl:text>
-        <xsl:text>\texttt{</xsl:text>
+        <xsl:text>\small\texttt{</xsl:text>
         <xsl:value-of select="@xml:id"/>
-        <xsl:text>}\par\vspace{3mm}</xsl:text>
+        <xsl:text>}\normalsize\par </xsl:text>
             <xsl:apply-templates select="tei:lem"/>
             <xsl:apply-templates select="tei:rdg"/>
-        <xsl:text>\par\vspace{3mm}</xsl:text>
+        <xsl:text>\par </xsl:text>
         <xsl:apply-templates select="tei:note"/>
-        <xsl:text>\par\vspace{5mm}</xsl:text>
+        <xsl:text>\par </xsl:text>
     </xsl:template>
     
     <xsl:template match="tei:app[@type = 'rubrication']">
         <xsl:text>Rubrication: </xsl:text>
-        <xsl:text>\texttt{</xsl:text>
+        <xsl:text>\small\texttt{</xsl:text>
         <xsl:value-of select="@xml:id"/>
-        <xsl:text>}\par\vspace{3mm}</xsl:text>
+        <xsl:text>}\normalsize\par </xsl:text>
         <xsl:apply-templates select="tei:lem"/>
         <xsl:apply-templates select="tei:rdg" mode="rubrication"/>
-        <xsl:text>\par\vspace{5mm}</xsl:text>
+        <xsl:text>\par </xsl:text>
     </xsl:template>
     
     <xsl:template match="tei:rdg" mode="rubrication">
+        <xsl:text>\hspace{10mm}</xsl:text>
         <xsl:if test="substring-after(@wit,'#') = 'COD_50'">
             <xsl:text>Codex 50</xsl:text>
         </xsl:if>
@@ -473,7 +479,7 @@
         <xsl:if test="count(child::tei:hi) eq 1">
             <xsl:value-of select="child::tei:hi/@rend"/>
         </xsl:if>
-        <xsl:text>Hand: </xsl:text>
+        <xsl:text> - Hand: </xsl:text>
         <xsl:if test="substring-after(@hand,'#') = 'scr-1' or substring-after(@hand,'#') = 'scr'">
             <xsl:text>main scribe</xsl:text>
         </xsl:if>
@@ -493,6 +499,7 @@
     </xsl:template>
     
     <xsl:template match="tei:lem">
+        <xsl:text>\hspace{10mm}</xsl:text>
         <xsl:if test="substring-after(@wit,'#') = 'EDITION'">
             <xsl:text>Edition</xsl:text>
         </xsl:if>
@@ -508,6 +515,7 @@
     </xsl:template>
     
     <xsl:template match="tei:rdg">
+        <xsl:text>\hspace{10mm}</xsl:text>
         <xsl:if test="substring-after(@wit,'#') = 'COD_50'">
             <xsl:text>Codex 50</xsl:text>
         </xsl:if>
@@ -547,9 +555,9 @@
     </xsl:template>
     
     <xsl:template match="tei:add" mode="reading-with-del-add-and-text">
-        <xsl:text>\</xsl:text>
+        <xsl:text>⸌</xsl:text>
         <xsl:apply-templates select="child::node()"/>
-        <xsl:text>/</xsl:text>
+        <xsl:text>⸍</xsl:text>
     </xsl:template>
     
     <xsl:template match="text()" mode="reading-with-del-add-and-text">
@@ -583,9 +591,9 @@
         <xsl:apply-templates/>
         <xsl:if test="exists(@xml:id)">
             <xsl:text> (</xsl:text>
-            <xsl:text>\texttt{</xsl:text>
+            <xsl:text>\small\texttt{</xsl:text>
                 <xsl:value-of select="@xml:id"/>
-            <xsl:text>}</xsl:text>
+            <xsl:text>}\normalsize{}</xsl:text>
             <xsl:text>)</xsl:text>
         </xsl:if>
         <xsl:text>\par </xsl:text>
@@ -798,7 +806,7 @@
     </xsl:template>
     
     <xsl:template match="tei:add[parent::tei:add and (@place = 'above')]">
-        <xsl:text>\</xsl:text>
+        <xsl:text>⸌</xsl:text>
         <xsl:apply-templates select="child::node()"/>
         <xsl:if test="exists(@hand)">
             <xsl:text> - </xsl:text>
@@ -827,7 +835,7 @@
             </xsl:element>
             <xsl:text>)</xsl:text>
         </xsl:if>
-        <xsl:text>/</xsl:text>
+        <xsl:text>⸍</xsl:text>
     </xsl:template>
     
     <xsl:template match="tei:add[parent::tei:add and (@place = 'inline')]">
@@ -875,7 +883,7 @@
     </xsl:template>
     
     <xsl:template match="tei:foreign[@xml:lang = 'grc']">
-        <xsl:text>begin{greek}</xsl:text>
+        <xsl:text>begin{greek}{</xsl:text>
             <xsl:apply-templates select="child::node()"/>
         <xsl:text>}</xsl:text>
     </xsl:template>
