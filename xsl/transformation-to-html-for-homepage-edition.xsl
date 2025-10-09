@@ -411,6 +411,9 @@
     
     <xsl:template match="tei:quote">
         <p class="main-text-paragraph">
+            <xsl:element name="a">
+                <xsl:attribute name="id" select="concat('quote-',replace(lower-case(parent::tei:div[@type = 'page-of-Hertz-edition']/@n),' ','-'),'-',replace(replace(@n,' ','-'),',','-'))"/>
+            </xsl:element>
             <xsl:value-of select="@n"/>
             <xsl:text> </xsl:text>
             <xsl:apply-templates select="child::node()"/>
@@ -668,6 +671,9 @@
     </xsl:template>
     
     <xsl:template match="tei:app[@type = 'text-variation']">
+        <xsl:element name="a">
+            <xsl:attribute name="id" select="@xml:id"/>
+        </xsl:element>
         <p class="type-of-intervention">
             <xsl:text>Text variation:</xsl:text>
         </p>
@@ -684,6 +690,9 @@
     </xsl:template>
     
     <xsl:template match="tei:app[@type = 'reference-signs']">
+        <xsl:element name="a">
+            <xsl:attribute name="id" select="@xml:id"/>
+        </xsl:element>
         <p class="type-of-intervention"><xsl:text>Reference sign:</xsl:text></p>
         <div class="apparatus">
             <xsl:apply-templates select="tei:lem"/>
@@ -699,6 +708,9 @@
     </xsl:template>
     
     <xsl:template match="tei:app[@type = 'emendation']">
+        <xsl:element name="a">
+            <xsl:attribute name="id" select="@xml:id"/>
+        </xsl:element>
         <p class="type-of-intervention"><xsl:text>Emendation:</xsl:text></p>
         <div class="apparatus">
             <xsl:apply-templates select="tei:lem"/>
@@ -789,6 +801,9 @@
     </xsl:template>
     
     <xsl:template match="tei:app[@type = 'gloss']">
+        <xsl:element name="a">
+            <xsl:attribute name="id" select="@xml:id"/>
+        </xsl:element>
         <p class="type-of-intervention"><xsl:text>Gloss:</xsl:text></p>
         <div class="apparatus">
             <xsl:apply-templates select="tei:lem"/>
@@ -805,6 +820,9 @@
     </xsl:template>
     
     <xsl:template match="tei:app[@type = 'annotation-signs']">
+        <xsl:element name="a">
+            <xsl:attribute name="id" select="@xml:id"/>
+        </xsl:element>
         <p class="type-of-intervention"><xsl:text>Annotation sign:</xsl:text></p>
         <div class="apparatus">
             <xsl:apply-templates select="tei:lem"/>
@@ -821,6 +839,9 @@
     </xsl:template>
     
     <xsl:template match="tei:app[@type = 'rubrication']">
+        <xsl:element name="a">
+            <xsl:attribute name="id" select="@xml:id"/>
+        </xsl:element>
         <p class="type-of-intervention"><xsl:text>Rubrication:</xsl:text></p>
         <div class="apparatus">
             <xsl:apply-templates select="tei:lem"/>

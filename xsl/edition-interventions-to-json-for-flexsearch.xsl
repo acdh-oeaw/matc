@@ -1,251 +1,72 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
     xmlns:xs="http://www.w3.org/2001/XMLSchema"
-    xmlns:priscian-glosses="http://achd.oeaw.ac.at/functions"
+    xmlns:math="http://www.w3.org/2005/xpath-functions/math"
     xmlns:tei="http://www.tei-c.org/ns/1.0"
-    exclude-result-prefixes="xs"
+    exclude-result-prefixes="xs math"
     version="3.0">
     
     <xsl:output encoding="UTF-8" media-type="text/plain" omit-xml-declaration="yes" method="text"/>
     
-    <xsl:function name="priscian-glosses:getCorrespondingAppElements" as="element(tei:app)*">
-        <xsl:param name="quote" as="element(tei:quote)"/>
-        <xsl:sequence select="priscian-glosses:getNextAppElement($quote)"/>
-    </xsl:function>
-    
-    <xsl:function name="priscian-glosses:getNextAppElement">
-        <xsl:param name="element" as="node()"/>
-        <xsl:if test="local-name($element/following-sibling::*[1]) = 'app'">
-            <xsl:sequence>
-                <xsl:copy-of select="$element/following-sibling::*[1] | priscian-glosses:getNextAppElement($element/following-sibling::*[1])"/>
-            </xsl:sequence>
-        </xsl:if>
-        <xsl:if test="local-name($element/following-sibling::*[1]) = 'quote'"/>
-    </xsl:function>
-    
     <xsl:variable name="main-root" select="/"/>
     
     <xsl:template match="/">
-        <xsl:for-each select="descendant::tei:quote">
-            <xsl:text>{"quote" : </xsl:text>
-            <xsl:apply-templates select="."/>
-            <xsl:text>}
-</xsl:text>
+        <xsl:text>{"interventions" : [</xsl:text>
+        <xsl:for-each select="descendant::tei:app">
+            <xsl:apply-templates select=".">
+                <xsl:with-param name="number-for-id" select="position()"/>
+            </xsl:apply-templates>
+            <xsl:if test="position() != last()">
+                <xsl:text>,</xsl:text>
+            </xsl:if>
         </xsl:for-each>
-    </xsl:template>
-    
-    <xsl:template match="tei:quote">
-        <xsl:text>{</xsl:text>
-        <xsl:text>"quotation" : "</xsl:text>
-        <xsl:value-of select="concat(parent::tei:div[@type = 'page-of-Hertz-edition']/@n,' ',@n)"/>
-        <xsl:text>", "quote_normalized" : "</xsl:text>
-        <xsl:apply-templates select="child::node()" mode="quote-normalized"/>
-        <xsl:text>", "quote_critical" : "</xsl:text>
-        <xsl:apply-templates select="child::node()" mode="quote-critical"/>
-        <xsl:text>", "interventions" : [</xsl:text>
-        <xsl:if test="local-name(following-sibling::*[1]) = 'app'">
-            <xsl:for-each select="priscian-glosses:getCorrespondingAppElements(self::node())">
-                <xsl:apply-templates select="."/>
-                <xsl:if test="position() != last()">
-                    <xsl:text>,</xsl:text>
-                </xsl:if>
-            </xsl:for-each>
-        </xsl:if>
-        <xsl:if test="local-name(following-sibling::*[1]) = 'quote'">
-            <xsl:text>{"type_of_intervention" : "", "id_of_intervention" : "", "lemma" : {"witness" : "", "text_of_lemma" : ""}, "reading" : {"witness" : "", "hand" : "", "place" : "", "analysis" : [{"analysis_category_id" : "", "analysis_category": ""}],"reading_normalized": "", "reading_critical" : ""}}</xsl:text>
-        </xsl:if>
         <xsl:text>]}</xsl:text>
     </xsl:template>
     
-    <xsl:template match="tei:lb" mode="quote-normalized"/>    
-    
-    <xsl:template match="tei:gap" mode="quote-normalized">
-        <xsl:value-of select="'...'"/>
-    </xsl:template>
-    
-    <xsl:template match="tei:supplied" mode="quote-normalized">
-        <xsl:apply-templates select="child::node()" mode="quote-normalized"/>
-    </xsl:template>
-    
-    <xsl:template match="tei:w" mode="quote-normalized">
-        <xsl:apply-templates select="child::node()" mode="quote-normalized"/>
-    </xsl:template>
-    
-    <xsl:template match="tei:add" mode="quote-normalized">
-        <xsl:apply-templates select="child::node()" mode="quote-normalized"/>
-    </xsl:template>
-    
-    <xsl:template match="tei:hi" mode="quote-normalized">
-        <xsl:apply-templates select="child::node()" mode="quote-normalized"/>
-    </xsl:template>
-    
-    <xsl:template match="tei:foreign" mode="quote-normalized">
-        <xsl:apply-templates select="child::node()" mode="quote-normalized"/>
-    </xsl:template>
-    
-    <xsl:template match="tei:pb" mode="quote-normalized"/>
-    
-    <xsl:template match="tei:g" mode="quote-normalized">
-        <xsl:variable name="glyph-reference" select="substring-after(@ref,'#')"/>
-        <xsl:text>|</xsl:text>
-        <xsl:value-of select="root()//tei:glyph[@xml:id = $glyph-reference]/tei:localProp[@name = 'Name']/@value"/>
-        <xsl:text>|</xsl:text>
-    </xsl:template>
-    
-    <xsl:template match="text()" mode="quote-normalized">
-        <xsl:choose>
-            <xsl:when test=". = ' '">
-                <xsl:value-of select="' '"/>
-            </xsl:when>
-            <xsl:when test="starts-with(.,' ')">
-                <xsl:choose>
-                    <xsl:when test="ends-with(.,' ')">
-                        <xsl:value-of select="concat(' ',normalize-space(.),' ')"/>
-                    </xsl:when>
-                    <xsl:otherwise>
-                        <xsl:value-of select="concat(' ',normalize-space(.))"/>
-                    </xsl:otherwise>
-                </xsl:choose>
-            </xsl:when>
-            <xsl:when test="ends-with(.,' ') and not(starts-with(.,' '))">
-                <xsl:value-of select="concat(normalize-space(.),' ')"/>
-            </xsl:when>
-            <xsl:otherwise>
-                <xsl:value-of select="normalize-space(.)"/>
-            </xsl:otherwise>
-        </xsl:choose>
-    </xsl:template>
-    
-    <xsl:template match="tei:lb" mode="quote-critical">
-        <xsl:if test="not(exists(@break))">
-            <xsl:value-of select="' '"/>
-        </xsl:if>
-        <xsl:text>(</xsl:text>
-        <xsl:value-of select="concat(@ed,',',@n)"/>
-        <xsl:text>)</xsl:text>
-        <xsl:if test="not(exists(@break))">
-            <xsl:value-of select="' '"/>
-        </xsl:if>
-    </xsl:template>
-    
-    <xsl:template match="tei:gap" mode="quote-critical">
-        <xsl:value-of select="for $i in (1 to @quantity) return '.'"/>
-        <xsl:text> (</xsl:text>
-        <xsl:value-of select="@reason"/>
-        <xsl:text>) </xsl:text>
-    </xsl:template>
-    
-    <xsl:template match="tei:supplied" mode="quote-critical">
-        <xsl:text>〈</xsl:text>
-        <xsl:apply-templates select="child::node()" mode="quote-critical"/>
-        <xsl:text>〉</xsl:text>
-    </xsl:template>
-    
-    <xsl:template match="tei:w" mode="quote-critical">
-        <xsl:apply-templates select="child::node()"/>
-    </xsl:template>
-    
-    <xsl:template match="tei:add[parent::tei:quote]" mode="quote-critical">
-        <xsl:text>〈</xsl:text>
-        <xsl:apply-templates select="child::node()" mode="quote-critical"/>
-        <xsl:text> (</xsl:text>
-        <xsl:choose>
-            <xsl:when test="substring-after(@hand,'#') = 'scr'">
-                <xsl:value-of select="'main writer'"/>
-            </xsl:when>
-            <xsl:when test="substring-after(@hand,'#') = 'Otfrid'">
-                <xsl:value-of select="'Otfrid'"/>
-            </xsl:when>
-            <xsl:when test="substring-after(@hand,'#') = 'gl-2'">
-                <xsl:value-of select="'second glossator'"/>
-            </xsl:when>
-            <xsl:when test="substring-after(@hand,'#') = 'sec'">
-                <xsl:value-of select="'other secondary writer'"/>
-            </xsl:when>
-        </xsl:choose>
-        <xsl:if test="exists(@place)">
-            <xsl:text> - </xsl:text>
-            <xsl:value-of select="@place"/>
-        </xsl:if>
-        <xsl:if test="exists(child::tei:hi) and exists(child::tei:hi/@rend)">
-            <xsl:text> - </xsl:text>
-            <xsl:value-of select="child::tei:hi/@rend"/>
-        </xsl:if>
-        <xsl:text>)〉</xsl:text>
-    </xsl:template>
-    
-    <xsl:template match="tei:hi[parent::tei:add[parent::tei:quote]]" mode="quote-critical">
-        <xsl:apply-templates select="child::node()" mode="quote-critical"/>
-    </xsl:template>
-    
-    <xsl:template match="tei:pb" mode="quote-critical"/>
-    
-    <xsl:template match="tei:foreign" mode="quote-critical">
-        <xsl:apply-templates select="child::node()" mode="quote-critical"/>
-    </xsl:template>
-    
-    <xsl:template match="tei:g" mode="quote-critical">
-        <xsl:variable name="glyph-reference" select="substring-after(@ref,'#')"/>
-        <xsl:text>|</xsl:text>
-        <xsl:value-of select="root()//tei:glyph[@xml:id = $glyph-reference]/tei:localProp[@name = 'Name']/@value"/>
-        <xsl:text>|</xsl:text>
-    </xsl:template>
-    
-    <xsl:template match="text()" mode="quote-critical">
-        <xsl:choose>
-            <xsl:when test=". = ' '">
-                <xsl:value-of select="' '"/>
-            </xsl:when>
-            <xsl:when test="starts-with(.,' ')">
-                <xsl:choose>
-                    <xsl:when test="ends-with(.,' ')">
-                        <xsl:value-of select="concat(' ',normalize-space(.),' ')"/>
-                    </xsl:when>
-                    <xsl:otherwise>
-                        <xsl:value-of select="concat(' ',normalize-space(.))"/>
-                    </xsl:otherwise>
-                </xsl:choose>
-            </xsl:when>
-            <xsl:when test="ends-with(.,' ') and not(starts-with(.,' '))">
-                <xsl:value-of select="concat(normalize-space(.),' ')"/>
-            </xsl:when>
-            <xsl:otherwise>
-                <xsl:value-of select="normalize-space(.)"/>
-            </xsl:otherwise>
-        </xsl:choose>
-    </xsl:template>
-    
     <xsl:template match="tei:app[@type = 'rubrication']">
-        <xsl:text>{"type_of_intervention" : "rubrication",</xsl:text>
-        <xsl:text>"id_of_intervention" : "</xsl:text>
+        <xsl:param name="number-for-id"/>
+        <xsl:text>{"id" : "</xsl:text>
+        <xsl:value-of select="$number-for-id"/>
+        <xsl:text>","id_of_intervention" : "</xsl:text>
         <xsl:value-of select="@xml:id"/>
         <xsl:text>",</xsl:text>
+        <xsl:text>"type_of_intervention" : "rubrication",</xsl:text>
         <xsl:text>"lemma" : {</xsl:text>
         <xsl:apply-templates select="child::tei:lem"/>
         <xsl:text>},</xsl:text>
         <xsl:text>"reading" : {</xsl:text>
         <xsl:apply-templates select="child::tei:rdg" mode="rubrication-reading"/>
-        <xsl:text>}}</xsl:text>
+        <xsl:text>},"link" : "edition.html#</xsl:text>
+        <xsl:value-of select="@xml:id"/>
+        <xsl:text>"}</xsl:text>
     </xsl:template>
     
     <xsl:template match="tei:app[@type = 'reference-signs']">
-        <xsl:text>{"type_of_intervention" : "reference sign",</xsl:text>
-        <xsl:text>"id_of_intervention" : "</xsl:text>
+        <xsl:param name="number-for-id"/>
+        <xsl:text>{"id" : "</xsl:text>
+        <xsl:value-of select="$number-for-id"/>
+        <xsl:text>","id_of_intervention" : "</xsl:text>
         <xsl:value-of select="@xml:id"/>
         <xsl:text>",</xsl:text>
+        <xsl:text>"type_of_intervention" : "reference sign",</xsl:text>
         <xsl:text>"lemma" : {</xsl:text>
         <xsl:apply-templates select="child::tei:lem"/>
         <xsl:text>},</xsl:text>
         <xsl:text>"reading" : {</xsl:text>
         <xsl:apply-templates select="child::tei:rdg" mode="reference-signs-reading"/>
-        <xsl:text>}}</xsl:text>
+        <xsl:text>},"link" : "edition.html#</xsl:text>
+        <xsl:value-of select="@xml:id"/>
+        <xsl:text>"}</xsl:text>
     </xsl:template>
     
     <xsl:template match="tei:app[@type = 'text-variation']">
-        <xsl:text>{"type_of_intervention" : "text variation",</xsl:text>
-        <xsl:text>"id_of_intervention" : "</xsl:text>
+        <xsl:param name="number-for-id"/>
+        <xsl:text>{"id" : "</xsl:text>
+        <xsl:value-of select="$number-for-id"/>
+        <xsl:text>","id_of_intervention" : "</xsl:text>
         <xsl:value-of select="@xml:id"/>
         <xsl:text>",</xsl:text>
+        <xsl:text>"type_of_intervention" : "text variation",</xsl:text>
         <xsl:if test="exists(child::tei:lem)">
             <xsl:text>"lemma" : {</xsl:text>
             <xsl:apply-templates select="child::tei:lem"/>
@@ -256,14 +77,19 @@
         </xsl:if>
         <xsl:text>"reading" : {</xsl:text>
         <xsl:apply-templates select="child::tei:rdg" mode="text-variation-reading"/>
-        <xsl:text>}}</xsl:text>
+        <xsl:text>},"link" : "edition.html#</xsl:text>
+        <xsl:value-of select="@xml:id"/>
+        <xsl:text>"}</xsl:text>
     </xsl:template>
     
     <xsl:template match="tei:app[@type = 'gloss']">
-        <xsl:text>{"type_of_intervention" : "gloss",</xsl:text>
-        <xsl:text>"id_of_intervention" : "</xsl:text>
+        <xsl:param name="number-for-id"/>
+        <xsl:text>{"id" : "</xsl:text>
+        <xsl:value-of select="$number-for-id"/>
+        <xsl:text>","id_of_intervention" : "</xsl:text>
         <xsl:value-of select="@xml:id"/>
         <xsl:text>",</xsl:text>
+        <xsl:text>"type_of_intervention" : "gloss",</xsl:text>
         <xsl:if test="exists(child::tei:lem)">
             <xsl:text>"lemma" : {</xsl:text>
             <xsl:apply-templates select="child::tei:lem"/>
@@ -274,14 +100,19 @@
         </xsl:if>
         <xsl:text>"reading" : {</xsl:text>
         <xsl:apply-templates select="child::tei:rdg" mode="gloss-reading"/>
-        <xsl:text>}}</xsl:text>
+        <xsl:text>},"link" : "edition.html#</xsl:text>
+        <xsl:value-of select="@xml:id"/>
+        <xsl:text>"}</xsl:text>
     </xsl:template>
     
     <xsl:template match="tei:app[@type = 'emendation']">
-        <xsl:text>{"type_of_intervention" : "emendation",</xsl:text>
-        <xsl:text>"id_of_intervention" : "</xsl:text>
+        <xsl:param name="number-for-id"/>
+        <xsl:text>{"id" : "</xsl:text>
+        <xsl:value-of select="$number-for-id"/>
+        <xsl:text>","id_of_intervention" : "</xsl:text>
         <xsl:value-of select="@xml:id"/>
         <xsl:text>",</xsl:text>
+        <xsl:text>"type_of_intervention" : "emendation",</xsl:text>
         <xsl:if test="exists(child::tei:lem)">
             <xsl:text>"lemma" : {</xsl:text>
             <xsl:apply-templates select="child::tei:lem"/>
@@ -292,14 +123,19 @@
         </xsl:if>
         <xsl:text>"reading" : {</xsl:text>
         <xsl:apply-templates select="child::tei:rdg" mode="emendation-reading"/>
-        <xsl:text>}}</xsl:text>
+        <xsl:text>},"link" : "edition.html#</xsl:text>
+        <xsl:value-of select="@xml:id"/>
+        <xsl:text>"}</xsl:text>
     </xsl:template>
     
     <xsl:template match="tei:app[@type = 'annotation-signs']">
-        <xsl:text>{"type_of_intervention" : "annotation sign",</xsl:text>
-        <xsl:text>"id_of_intervention" : "</xsl:text>
+        <xsl:param name="number-for-id"/>
+        <xsl:text>{"id" : "</xsl:text>
+        <xsl:value-of select="$number-for-id"/>
+        <xsl:text>","id_of_intervention" : "</xsl:text>
         <xsl:value-of select="@xml:id"/>
         <xsl:text>",</xsl:text>
+        <xsl:text>"type_of_intervention" : "annotation sign",</xsl:text>
         <xsl:if test="exists(child::tei:lem)">
             <xsl:text>"lemma" : {</xsl:text>
             <xsl:apply-templates select="child::tei:lem"/>
@@ -310,7 +146,9 @@
         </xsl:if>
         <xsl:text>"reading" : {</xsl:text>
         <xsl:apply-templates select="child::tei:rdg" mode="annotation-signs-reading"/>
-        <xsl:text>}}</xsl:text>
+        <xsl:text>},"link" : "edition.html#</xsl:text>
+        <xsl:value-of select="@xml:id"/>
+        <xsl:text>"}</xsl:text>
     </xsl:template>
     
     <xsl:template match="tei:lem">
