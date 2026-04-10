@@ -101,30 +101,46 @@
                                 <div class="col-md-8">
                                 <fieldset>
                                 <div>
-                                  <input type="radio" id="full-text-select-quotes" name="quotes-or-interventions" value="quotes"/>
+                                  <input type="radio" id="full-text-select-quotes" name="quotes-or-interventions" value="quotes" checked/>
                                   <label for="full-text-select-quotes">Text of the grammar of Priscian</label>
                                 </div>
                                 <div>
-                                  <input type="radio" id="full-text-select-interventions" name="quotes-or-interventions" value="interventions" checked/>
+                                  <input type="radio" id="full-text-select-interventions" name="quotes-or-interventions" value="interventions"/>
                                   <label for="full-text-select-interventions">Interventions</label>
                                   <div class="row" id="form-subgroup-type-of-intervention">
                                     <div class="col-md-1"></div>
                                     <div class="col-md-11">
                                       <fieldset>
                                         <p>Type of intervention</p>
-                                        <input type="radio" id="type-of-intervention-all" name="type-of-intervention" value="all" checked/>
-                                        <label for="type-of-intervention-all">All</label>
-                                        <!-- gloss | emendation | rubrication | text variation | reference sign -->
-                                        <input type="radio" id="type-of-intervention-gloss" name="type-of-intervention" value="gloss"/>
-                                        <label for="type-of-intervention-gloss">Gloss</label>
-                                        <input type="radio" id="type-of-intervention-emendation" name="type-of-intervention" value="emendation"/>
-                                        <label for="type-of-intervention-emendation">Emendation</label>
-                                        <input type="radio" id="type-of-intervention-rubrication" name="type-of-intervention" value="rubrication"/>
-                                        <label for="type-of-intervention-rubrication">Rubrication</label>
-                                        <input type="radio" id="type-of-intervention-text-variation" name="type-of-intervention" value="text-variation"/>
-                                        <label for="type-of-intervention-text-variation">Text variation</label>
-                                        <input type="radio" id="type-of-intervention-reference-sign" name="type-of-intervention" value="reference-sign"/>
-                                        <label for="type-of-intervention-reference-sign">Reference sign</label>
+                                        <div style="margin-left: 20pt">
+                                          <input type="radio" id="type-of-intervention-all" name="type-of-intervention" value="all" checked/>
+                                          <label for="type-of-intervention-all">All</label>
+                                        </div>
+                                        <!-- gloss | emendation | rubrication | text variation | reference sign | annotation sign -->
+                                        <div style="margin-left: 20pt">
+                                          <input type="radio" id="type-of-intervention-gloss" name="type-of-intervention" value="gloss"/>
+                                          <label for="type-of-intervention-gloss">Gloss</label>
+                                        </div>
+                                        <div style="margin-left: 20pt">
+                                          <input type="radio" id="type-of-intervention-emendation" name="type-of-intervention" value="emendation"/>
+                                          <label for="type-of-intervention-emendation">Emendation</label>
+                                        </div>
+                                        <div style="margin-left: 20pt">
+                                          <input type="radio" id="type-of-intervention-rubrication" name="type-of-intervention" value="rubrication"/>
+                                          <label for="type-of-intervention-rubrication">Rubrication</label>
+                                        </div>
+                                        <div style="margin-left: 20pt">
+                                          <input type="radio" id="type-of-intervention-text-variation" name="type-of-intervention" value="text-variation"/>
+                                          <label for="type-of-intervention-text-variation">Text variation</label>
+                                        </div>
+                                        <div style="margin-left: 20pt">
+                                          <input type="radio" id="type-of-intervention-reference-sign" name="type-of-intervention" value="reference-sign"/>
+                                          <label for="type-of-intervention-reference-sign">Reference sign</label>
+                                        </div>
+                                        <div style="margin-left: 20pt">
+                                          <input type="radio" id="type-of-intervention-annotation-sign" name="type-of-intervention" value="annotation-sign"/>
+                                          <label for="type-of-intervention-reference-sign">Annotation sign</label>
+                                        </div>
                                       </fieldset>
                                     </div>
                                   </div>
@@ -132,6 +148,7 @@
                               </fieldset>
                               </div>
                               <div class="col-md-2">
+                                <button type="button" class="btn btn-outline-dark" id="search-glosses-clear">Clear</button>
                                 <button type="button" class="btn btn-outline-dark" id="search-glosses-submit">Submit</button>
                               </div>
                             </div>
@@ -203,9 +220,9 @@
       </div>
     </div>
     <!-- #page we need this extra closing tag here -->
+     <script type="module" src="./js/search.js"></script>
     <script type="text/javascript" src="./vendor/jquery/jquery.min.js"></script>
     <script type="text/javascript" src="./js/fundament.min.js"></script>
-    <script type="text/javascript" src="./js/search.js"></script>
-    <script type="text/javascript" src="https://unpkg.com/flexsearch@0.8.212/dist/flexsearch.bundle.min.js"></script>
+    <!-- <script type="text/javascript" src="https://unpkg.com/flexsearch@0.8.212/dist/flexsearch.bundle.min.js"></script> -->
   </body>
 </html>
