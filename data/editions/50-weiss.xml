@@ -12632,10 +12632,10 @@
                         xml:lang="la" ana="#glosses-elucidating-the-main-text">
                         <gap unit="char" quantity="2" reason="illegible"/><supplied resp="#CG"
                            >co</supplied>nstat syllaba <gap unit="char" quantity="3"
-                           reason="illegible"/><supplied resp="#CG">lit</supplied>teris · dictio<gap
+                           reason="illegible"/><supplied resp="#CG">lit</supplied>teris · dictio <gap
                            reason="illegible" unit="char" quantity="2"/><supplied resp="#CG"
                            >si</supplied>llabis · oratio <gap reason="illegible" unit="char"
-                           quantity="3"/><supplied resp="#CG">dic</supplied>/>tionibus apte con<gap
+                           quantity="3"/><supplied resp="#CG">dic</supplied>tionibus apte con<gap
                            reason="illegible" unit="char" quantity="3"/><supplied resp="#CG"
                            >iun</supplied>ctis </add></rdg>
                </app>
@@ -12714,7 +12714,7 @@
                <app type="gloss" xml:id="gloss-51-24-1">
                   <lem wit="#EDITION">asper</lem>
                   <rdg wit="#COD_50"><add place="interlinear above" hand="#Otfrid"
-                        facs="#zone.9r.20" ana="#glosses-elucidating-the-main-text">ccum
+                        facs="#zone.9r.20" ana="#glosses-elucidating-the-main-text">cum
                         aspiratione</add></rdg>
                </app>
                <app type="text-variation" xml:id="tv-51-24-1">
