@@ -4697,7 +4697,7 @@
                   <note corresp="#ohg-20-20-1" type="explanation" resp="#CG"> This OHG gloss was
                      first edited by Hans Butzmann, <hi rend="italic">Althochdeutsche
                         Priscian-Glossen aus Weissenburg</hi>, PBB. 86/3 (Halle 1964), pp. 388-402,
-                     at p. 391, no. 1. See also BStK Online: <ref
+                     at p. 391, no. 1. See also BStK Online: <ref type="external-URL"
                         target="https://glossen.germ-ling.uni-bamberg.de/bstk/972"/> [accessed
                      13.02.2024]. </note>
                </app>
@@ -4870,7 +4870,7 @@
                   <note corresp="#ohg-21-17-1" type="explanation" resp="#CG"> This OHG gloss was
                      first edited by Hans Butzmann, <hi rend="italic">Althochdeutsche
                         Priscian-Glossen aus Weissenburg</hi>, PBB. 86/3 (Halle 1964), pp. 388-402,
-                     at p. 391, no. 2. See also BStK Online: <ref
+                     at p. 391, no. 2. See also BStK Online: <ref type="external-URL"
                         target="https://glossen.germ-ling.uni-bamberg.de/bstk/972"/> [accessed
                      13.02.2024]. </note>
                </app>
@@ -4901,7 +4901,7 @@
                   <note corresp="#ohg-21-21-1" type="explanation" resp="#CG"> This OHG gloss was
                      first edited by Hans Butzmann, <hi rend="italic">Althochdeutsche
                         Priscian-Glossen aus Weissenburg</hi>, PBB. 86/3 (Halle 1964), pp. 388-402,
-                     at p. 391, no. 3. See also BStK Online: <ref
+                     at p. 391, no. 3. See also BStK Online: <ref type="external-URL"
                         target="https://glossen.germ-ling.uni-bamberg.de/bstk/972"/> [accessed
                      16.02.2024]. </note>
                </app>
@@ -4929,7 +4929,7 @@
                            reason="illegible"/><supplied resp="#CG">cl</supplied>abu <g ref="#vel"/>
                         clauu</add></rdg>
                   <note corresp="#gloss-21-22-1" type="explanation" resp="#CG"> See: 'clavus, m.',
-                     in: Mittellateinisches Wörterbuch <ref
+                     in: Mittellateinisches Wörterbuch <ref type="external-URL"
                         target="https://www.woerterbuchnetz.de/MLW?lemid=C04857"/> accessed
                      16.02.2024. It seems to me that Otfrid declined here the word 'clavus/clabus,
                      -i' (i.e. nail, second Latin declension) according to the fourth declension.
@@ -10067,7 +10067,7 @@
                      interpretation that did not satisfied Otfrid and triggered his further research
                      or again as a gloss that another glossator added indipendently from Otfrid. See
                      also the gloss: 'lapis quem deuorauit saturnus pro ioue' with which Otfrid
-                     explained the word 'abaddir' of Priscian II 47, 9 <ref corresp="#gloss-47-9-1"
+                     explained the word 'abaddir' of Priscian II 47, 9 <ref type="internal-URL" corresp="#gloss-47-9-1"
                      /></note>
                </app>
                <app type="gloss" xml:id="gloss-42-9-4">
@@ -11341,7 +11341,7 @@
                      'grînan, st. v.', in the digital <hi rend="italic">Althochdeutsches Wörterbuch,
                         digitalisierte Fassung bereitgestellt durch die Sächsische Akademie der
                         Wissenschaften zu Leipzig</hi>, <ref type="external-URL"
-                        target="https://awb.saw-leipzig.de/AWB?lemid=G01951>"/>, accessed
+                        target="https://awb.saw-leipzig.de/AWB?lemid=G01951"/>, accessed
                      03.12.2024.</note>
                </app>
                <quote source="#EDITION" n="II 46,18">nec non etiam m, ut summitto. praeterea omitto
@@ -12119,7 +12119,7 @@
                <quote source="#EDITION" n="II 49,20">mutet n in r, ut irrito, irriguus, <lb n="22"
                      ed="8v"/> in reliquis quoque euphonia hoc</quote>
                <quote source="#EDITION" n="II 49,21">exigente <gap reason="deleted"
-                     extent="approximately 15 letters"/> seruare et irruo, irrumpo, dicere, cum nec
+                     extent="approximately 15 letters" quantity="15" unit="char"/> seruare et irruo, irrumpo, dicere, cum nec
                   in simpli<lb n="23" break="no" ed="8v"/>cibus</quote>
                <quote source="#EDITION" n="II 49,22">inueniatur dictionibus n ante r. s quoque
                   sequente uel t uel i uel u loco</quote>

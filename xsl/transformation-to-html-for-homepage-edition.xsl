@@ -455,34 +455,40 @@
             <xsl:if test="exists(@resp)">
                 <xsl:text> - </xsl:text>
                 <xsl:choose>
-                    <xsl:when test="@resp = 'scr-1'">
+                    <xsl:when test="(@resp = 'scr-1') or (@resp = '#scr-1')">
                         <xsl:element name="span">
                             <xsl:attribute name="style" select="'font-style: italic;'"/>
                             <xsl:text>main scribe</xsl:text>
                         </xsl:element>
                     </xsl:when>
-                    <xsl:when test="@resp = 'scr'">
+                    <xsl:when test="(@resp = 'scr') or (@resp = '#scr')">
                         <xsl:element name="span">
                             <xsl:attribute name="style" select="'font-style: italic;'"/>
                             <xsl:text>main scribe</xsl:text>
                         </xsl:element>
                     </xsl:when>
-                    <xsl:when test="@resp = 'sec'">
+                    <xsl:when test="(@resp = 'sec') or (@resp = '#sec')">
                         <xsl:element name="span">
                             <xsl:attribute name="style" select="'font-style: italic;'"/>
                             <xsl:text>secondary scribe</xsl:text>
                         </xsl:element>
                     </xsl:when>
-                    <xsl:when test="@resp = 'gl-1'">
+                    <xsl:when test="(@resp = 'gl-1') or (@resp = '#gl-1')">
                         <xsl:element name="span">
                             <xsl:attribute name="style" select="'font-style: italic;'"/>
                             <xsl:text>first glossator</xsl:text>
                         </xsl:element>
                     </xsl:when>
-                    <xsl:when test="@resp = 'gl-2'">
+                    <xsl:when test="(@resp = 'gl-2') or (@resp = '#gl-2')">
                         <xsl:element name="span">
                             <xsl:attribute name="style" select="'font-style: italic;'"/>
                             <xsl:text>second glossator</xsl:text>
+                        </xsl:element>
+                    </xsl:when>
+                    <xsl:when test="(@resp = 'Otfrid') or (@resp = '#Otfrid')">
+                        <xsl:element name="span">
+                            <xsl:attribute name="style" select="'font-style: italic'"/>
+                            <xsl:text>Otfrid</xsl:text>
                         </xsl:element>
                     </xsl:when>
                     <xsl:otherwise>
@@ -502,34 +508,40 @@
             <xsl:if test="exists(@resp)">
                 <xsl:text> - </xsl:text>
                 <xsl:choose>
-                    <xsl:when test="@resp = 'scr-1'">
+                    <xsl:when test="(@resp = 'scr-1') or (@resp = '#scr-1')">
                         <xsl:element name="span">
                             <xsl:attribute name="style" select="'font-style: italic;'"/>
                             <xsl:text>main scribe</xsl:text>
                         </xsl:element>
                     </xsl:when>
-                    <xsl:when test="@resp = 'scr'">
+                    <xsl:when test="(@resp = 'scr') or (@resp = '#scr')">
                         <xsl:element name="span">
                             <xsl:attribute name="style" select="'font-style: italic;'"/>
                             <xsl:text>main scribe</xsl:text>
                         </xsl:element>
                     </xsl:when>
-                    <xsl:when test="@resp = 'sec'">
+                    <xsl:when test="(@resp = 'sec') or (@resp = '#sec')">
                         <xsl:element name="span">
                             <xsl:attribute name="style" select="'font-style: italic;'"/>
                             <xsl:text>secondary scribe</xsl:text>
                         </xsl:element>
                     </xsl:when>
-                    <xsl:when test="@resp = 'gl-1'">
+                    <xsl:when test="(@resp = 'gl-1') or (@resp = '#gl-1')">
                         <xsl:element name="span">
                             <xsl:attribute name="style" select="'font-style: italic;'"/>
                             <xsl:text>first glossator</xsl:text>
                         </xsl:element>
                     </xsl:when>
-                    <xsl:when test="@resp = 'gl-2'">
+                    <xsl:when test="(@resp = 'gl-2') or (@resp = '#gl-2')">
                         <xsl:element name="span">
                             <xsl:attribute name="style" select="'font-style: italic;'"/>
                             <xsl:text>second glossator</xsl:text>
+                        </xsl:element>
+                    </xsl:when>
+                    <xsl:when test="(@resp = 'Otfrid') or (@resp = '#Otfrid')">
+                        <xsl:element name="span">
+                            <xsl:attribute name="style" select="'font-style: italic;'"/>
+                            <xsl:text>Otfrid</xsl:text>
                         </xsl:element>
                     </xsl:when>
                     <xsl:otherwise>
@@ -549,34 +561,40 @@
          <xsl:if test="exists(@resp)">
             <xsl:text> - </xsl:text>
             <xsl:choose>
-                <xsl:when test="@resp = 'scr-1'">
+                <xsl:when test="(@resp = 'scr-1') or (@resp = '#scr-1')">
                     <xsl:element name="span">
                         <xsl:attribute name="style" select="'font-style: italic;'"/>
                         <xsl:text>main scribe</xsl:text>
                     </xsl:element>
                 </xsl:when>
-                <xsl:when test="@resp = 'scr'">
+                <xsl:when test="(@resp = 'scr') or (@resp = '#scr')">
                     <xsl:element name="span">
                         <xsl:attribute name="style" select="'font-style: italic;'"/>
                         <xsl:text>main scribe</xsl:text>
                     </xsl:element>
                 </xsl:when>
-                <xsl:when test="@resp = 'sec'">
+                <xsl:when test="(@resp = 'sec') or (@resp = '#sec')">
                     <xsl:element name="span">
                         <xsl:attribute name="style" select="'font-style: italic;'"/>
                         <xsl:text>secondary scribe</xsl:text>
                     </xsl:element>
                 </xsl:when>
-                <xsl:when test="@resp = 'gl-1'">
+                <xsl:when test="(@resp = 'gl-1') or (@resp = '#gl-1')">
                     <xsl:element name="span">
                         <xsl:attribute name="style" select="'font-style: italic;'"/>
                         <xsl:text>first glossator</xsl:text>
                     </xsl:element>
                 </xsl:when>
-                <xsl:when test="@resp = 'gl-2'">
+                <xsl:when test="(@resp = 'gl-2') or (@resp = '#gl-2')">
                     <xsl:element name="span">
                         <xsl:attribute name="style" select="'font-style: italic;'"/>
                         <xsl:text>second glossator</xsl:text>
+                    </xsl:element>
+                </xsl:when>
+                <xsl:when test="(@resp = 'Otfrid') or (@resp = '#Otfrid')">
+                    <xsl:element name="span">
+                        <xsl:attribute name="style" select="'font-style: italic;'"/>
+                        <xsl:text>Otfrid</xsl:text>
                     </xsl:element>
                 </xsl:when>
                 <xsl:otherwise>
@@ -1341,9 +1359,16 @@
         </xsl:element>
     </xsl:template>
     
-    <xsl:template match="tei:ref">
+    <xsl:template match="tei:ref[@type = 'external-URL']">
         <xsl:element name="a">
             <xsl:attribute name="href" select="@target"/>
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </xsl:element>
+    </xsl:template>
+    
+    <xsl:template match="tei:ref[@type = 'internal-URL']">
+        <xsl:element name="a">
+            <xsl:attribute name="href" select="@corresp"/>
             <i class="fa-solid fa-arrow-up-right-from-square"></i>
         </xsl:element>
     </xsl:template>
