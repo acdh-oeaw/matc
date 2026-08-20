@@ -107,6 +107,7 @@
                                                 <xsl:attribute name="class" select="'heading-2'"/>
                                                 <xsl:value-of select="'Table of Contents'"/>
                                             </xsl:element>
+                                            <xsl:call-template name="create-toc-subelements"/>
                                             <xsl:apply-templates select="descendant::tei:div[@type = 'page-of-Hertz-edition'][not(exists(@prev))]" mode="table-of-contents"/>
                                             <xsl:apply-templates select="child::node()"/>
                                         </div>
@@ -134,16 +135,69 @@
         </xsl:element>
     </xsl:template>
     
+    <xsl:template name="create-toc-subelements">
+        <xsl:element name="p">
+            <xsl:attribute name="class" select="'navigation-entry'"/>
+            <xsl:element name="a">
+                <xsl:attribute name="href" select="'#description-of-the-manuscript'"/>
+                <xsl:value-of select="'Description of the Manuscript'"/>
+            </xsl:element>
+        </xsl:element>
+        <xsl:element name="p">
+            <xsl:attribute name="class" select="'navigation-entry'"/>
+            <xsl:element name="a">
+                <xsl:attribute name="href" select="'#editorial-principles'"/>
+                <xsl:value-of select="'Editorial Principles'"/>
+            </xsl:element>
+        </xsl:element>
+        <xsl:element name="p">
+            <xsl:attribute name="class" select="'navigation-entry'"/>
+            <xsl:element name="a">
+                <xsl:attribute name="href" select="'#bibliography-of-secondary-literature'"/>
+                <xsl:value-of select="'Bibliography of Secondary Literature'"/>
+            </xsl:element>
+        </xsl:element>
+        <xsl:element name="p">
+            <xsl:attribute name="class" select="'navigation-entry'"/>
+            <xsl:element name="a">
+                <xsl:attribute name="href" select="'#signs-for-abbreviations'"/>
+                <xsl:value-of select="'Signs for Abbreviations'"/>
+            </xsl:element>
+        </xsl:element>
+        <xsl:element name="p">
+            <xsl:attribute name="class" select="'navigation-entry'"/>
+            <xsl:element name="a">
+                <xsl:attribute name="href" select="'#signs-for-construe-marks'"/>
+                <xsl:value-of select="'Signs for Construe Marks'"/>
+            </xsl:element>
+        </xsl:element>
+        <xsl:element name="p">
+            <xsl:attribute name="class" select="'navigation-entry'"/>
+            <xsl:element name="a">
+                <xsl:attribute name="href" select="'#reference-signs'"/>
+                <xsl:value-of select="'Reference Signs'"/>
+            </xsl:element>
+        </xsl:element>
+        <xsl:element name="p">
+            <xsl:attribute name="class" select="'navigation-entry'"/>
+            <xsl:element name="a">
+                <xsl:attribute name="href" select="'#annotation-signs'"/>
+                <xsl:value-of select="'Annotation Signs'"/>
+            </xsl:element>
+        </xsl:element>
+    </xsl:template>
+    
     <xsl:template match="tei:teiHeader">
         <!-- <xsl:apply-templates select="tei:fileDesc/tei:sourceDesc"/> -->
-        <!-- <xsl:apply-templates select="tei:encodingDesc/tei:editorialDecl"/> -->
         <xsl:apply-templates select="tei:fileDesc/tei:sourceDesc/tei:msDesc"/>
+        <xsl:apply-templates select="tei:encodingDesc/tei:editorialDecl"/>
         <xsl:apply-templates select="tei:fileDesc/tei:sourceDesc/tei:listBibl"/>
         <xsl:apply-templates select="tei:encodingDesc/tei:charDecl[(@n = 'abbreviations') or (@n = 'construe-marks') or (@n = 'reference signs') or (@n = 'attention signs')]"/>
     </xsl:template>
     
     <xsl:template match="tei:msDesc">
         <div class="main-text">
+            <a id="description-of-the-manuscript"/>
             <p class="heading-2">Description of the manuscript:</p>
             <div class="manuscript-description-content">
                 <xsl:apply-templates select="tei:msIdentifier"/>
@@ -179,6 +233,46 @@
         <p class="manuscript-description-main-paragraph"><xsl:text>Place: </xsl:text><xsl:value-of select="tei:origPlace/text()"/></p>
     </xsl:template>
     
+    <xsl:template match="tei:editorialDecl">
+        <div class="main-text">
+            <a id="editorial-principles"/>
+            <p class="heading-2">Editorial Principles:</p>
+            <p class="manuscript-description-main-paragraph" style="font-weight: bold;">Normalization:</p>
+            <xsl:apply-templates select="tei:normalization"/>
+            <p class="manuscript-description-main-paragraph" style="font-weight: bold;">Punctuation:</p>
+            <xsl:apply-templates select="tei:punctuation"/>
+        </div>
+    </xsl:template>
+    
+    <xsl:template match="tei:normalization">
+        <xsl:for-each select="./child::tei:p">
+            <xsl:choose>
+                <xsl:when test="exists(@style) and (@style = 'subparagraph')">
+                    <xsl:element name="p">
+                        <xsl:attribute name="style" select="'margin-left: 2.5em;'"/>
+                        <xsl:attribute name="class" select="'manuscript-description-main-paragraph'"/>
+                        <xsl:apply-templates select="./child::node()"/>
+                    </xsl:element>
+                </xsl:when>
+                <xsl:otherwise>
+                    <xsl:element name="p">
+                        <xsl:attribute name="class" select="'manuscript-description-main-paragraph'"/>
+                        <xsl:apply-templates select="./child::node()"/>
+                    </xsl:element>
+                </xsl:otherwise>
+            </xsl:choose>
+        </xsl:for-each>
+    </xsl:template>
+    
+    <xsl:template match="tei:punctuation">
+        <xsl:for-each select="./child::tei:p">
+            <xsl:element name="p">
+                <xsl:attribute name="class" select="'manuscript-description-main-paragraph'"/>
+                <xsl:apply-templates select="./child::node()"/>
+            </xsl:element>
+        </xsl:for-each>
+    </xsl:template>
+    
     <xsl:template match="tei:physDesc">
         <p class="manuscript-description-main-paragraph">
             <xsl:text>Form: </xsl:text>
@@ -204,6 +298,7 @@
     
     <xsl:template match="tei:listBibl">
         <div class="main-text">
+            <a id="bibliography-of-secondary-literature"/>
             <p class="heading-2">Bibliography of Secondary Literature</p>
             <div class="manuscript-description-content">
                 <xsl:for-each select="tei:biblStruct">
@@ -286,23 +381,24 @@
         </div>
     </xsl:template>
     
-    <xsl:template match="tei:editorialDecl">
+    <!-- <xsl:template match="tei:editorialDecl">
         <div class="editorial-declaration">
             <p class="heading-2">Editorial prinicples:</p>
             <ul>
                 <xsl:apply-templates select="tei:normalization/tei:p"/>
             </ul>
         </div>
-    </xsl:template>
+    </xsl:template> -->
     
-    <xsl:template match="tei:p[parent::tei:normalization]">
+    <!-- <xsl:template match="tei:p[parent::tei:normalization]">
         <li>
             <xsl:value-of select="text()"/>
         </li>
-    </xsl:template>
+    </xsl:template> -->
     
     <xsl:template match="tei:charDecl[@n = 'abbreviations']">
         <div class="pictures">
+            <a id="signs-for-abbreviations"/>
             <p class="heading-2">Signs for abbreviations:</p>
             <div>
                 <xsl:apply-templates select="tei:glyph"/>
@@ -312,6 +408,7 @@
     
     <xsl:template match="tei:charDecl[@n = 'construe-marks']">
         <div class="pictures">
+            <a id="signs-for-construe-marks"/>
             <p class="heading-2">Signs for construe marks:</p>
             <div>
                 <xsl:apply-templates select="tei:glyph"/>
@@ -321,6 +418,7 @@
     
     <xsl:template match="tei:charDecl[@n = 'reference signs']">
         <div class="pictures">
+            <a id="reference-signs"/>
             <p class="heading-2">Reference signs:</p>
             <div>
                 <xsl:apply-templates select="tei:glyph"/>
@@ -330,6 +428,7 @@
     
     <xsl:template match="tei:charDecl[@n = 'attention signs']">
         <div class="pictures">
+            <a id="annotation-signs"/>
             <p class="heading-2">Annotation signs:</p>
             <div>
                 <xsl:apply-templates select="tei:glyph"/>
@@ -645,7 +744,7 @@
     
     <xsl:template match="tei:hi">
         <xsl:choose>
-            <xsl:when test="(@rend = 'red capitalis') or (@rend = 'red capitalis rustica') or (@rend = 'red script') or (@rend = 'letter filled with red ink') or (@rend = 'capital letter filled with red ink')">
+            <xsl:when test="(@rend = 'red capitalis') or (@rend = 'red capital letters') or (@rend = 'red capitalis letters') or (@rend = 'red capital') or (@rend = 'red capitalis rustica') or (@rend = 'red script') or (@rend = 'letter filled with red ink') or (@rend = 'capital letter filled with red ink')">
                 <xsl:element name="span">
                     <xsl:attribute name="style" select="'color: #9e1b16;'"/>
                     <xsl:apply-templates/>

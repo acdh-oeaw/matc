@@ -149,19 +149,19 @@
                <p>The manuscript COD_50 never conveys spirits and accents of Greek words.
                   Differences with Hertz'edition in this regard have not been recorded.</p>
                <p>Following discrepancies from Hertz' edition have been ignored:</p>
-               <p>change of ci/ti;</p>
-               <p>change of e/ae/e caudata;</p>
-               <p>change regarding 'h' at word beginning;</p>
-               <p>change of i/y (e.g. sillaba/syllaba;</p>
-               <p>change of i/e when morphologically insignificant (e.g. elementum/elimentum;
+               <p style="subparagraph">change of ci/ti;</p>
+               <p style="subparagraph">change of e/ae/e caudata;</p>
+               <p style="subparagraph">change regarding 'h' at word beginning;</p>
+               <p style="subparagraph">change of i/y (e.g. sillaba/syllaba;</p>
+               <p style="subparagraph">change of i/e when morphologically insignificant (e.g. elementum/elimentum;
                   elegantiora/eligantiora);</p>
-               <p>change of t/tt and p/pp (e.g. litera/littera; quatuor/quattuor;
+               <p style="subparagraph">change of t/tt and p/pp (e.g. litera/littera; quatuor/quattuor;
                   apellantur/appellantur);</p>
-               <p>change regarding 'ms'/'mps' and similars (e.g. hiems/hiemps)</p>
-               <p>change of c/qu (e.g. secuntur/sequuntur)</p>
-               <p>negligible change of d/t (e.g. apud/aput)</p>
-               <p>assimilations (e.g. inliterata/illiterata; subposui/supposui);</p>
-               <p>differences from Hertz' edition in the use of capital letters for proper
+               <p style="subparagraph">change regarding 'ms'/'mps' and similars (e.g. hiems/hiemps)</p>
+               <p style="subparagraph">change of c/qu (e.g. secuntur/sequuntur)</p>
+               <p style="subparagraph">negligible change of d/t (e.g. apud/aput)</p>
+               <p style="subparagraph">assimilations (e.g. inliterata/illiterata; subposui/supposui);</p>
+               <p style="subparagraph">differences from Hertz' edition in the use of capital letters for proper
                   names.</p>
                <p>Common abbreviations for 'et', 'per', 'quae', 'quia', and word endings have been
                   silently expanded. The Irish abbreviations for 'et' (7-shaped form), 'quae' (q
@@ -2147,7 +2147,7 @@
                      place="inline" hand="#scr">uox</add> quae constat</quote>
                <app type="rubrication" xml:id="rubr-6-7-1">
                   <lem wit="#EDITION">litera</lem>
-                  <rdg wit="#COD_50" hand="#scr"><hi rend="red capitalis ">L</hi>ittera</rdg>
+                  <rdg wit="#COD_50" hand="#scr"><hi rend="red capitalis">L</hi>ittera</rdg>
                </app>
                <app type="reference-signs" xml:id="rs-6-7-1">
                   <lem wit="#EDITION">litera</lem>

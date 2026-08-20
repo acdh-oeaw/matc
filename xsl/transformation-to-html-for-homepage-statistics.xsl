@@ -219,18 +219,45 @@
                         <xsl:when test="$type-of-gloss = 'acquaintance-with-classics'"><xsl:text>acquaintance with classics</xsl:text></xsl:when>
                         <xsl:when test="$type-of-gloss = 'text-variant'"><xsl:text>text variant</xsl:text></xsl:when>
                         <xsl:when test="$type-of-gloss = 'contemporary-socio-historical-context'"><xsl:text>contemporary socio historical context</xsl:text></xsl:when>
-                        <xsl:when test="$type-of-gloss = 'lemma-gloss'"><xsl:text>Reference sign: lemma - gloss</xsl:text></xsl:when>
-                        <xsl:when test="$type-of-gloss = 'lemma-lemma'"><xsl:text>Reference sign: lemma - lemma</xsl:text></xsl:when>
-                        <xsl:when test="$type-of-gloss = 'attention-sign-nota'"><xsl:text>attention sign nota</xsl:text></xsl:when>
-                        <xsl:when test="$type-of-gloss = 'excerption-signs'"><xsl:text>excerption signs</xsl:text></xsl:when>
-                        <xsl:when test="$type-of-gloss = 'excerption-sign-inverted-paragraphus'"><xsl:text>excerption sign inverted paragraphus</xsl:text></xsl:when>
-                        <xsl:when test="$type-of-gloss = 'capital-delta'"><xsl:text>capital delta</xsl:text></xsl:when>
                         <xsl:otherwise>
                             <xsl:value-of select="replace($type-of-gloss,'-',' ')"/>
                         </xsl:otherwise>
                     </xsl:choose>
                     <xsl:text> - number of occurences: </xsl:text>
                     <xsl:value-of select="count(root()//tei:app[@type = 'gloss']/tei:rdg/tei:add[contains(@ana,$type-of-gloss)])"/>
+                    <xsl:element name="p">
+                        <xsl:attribute name="class" select="'statistics-level-2'"/>
+                        <xsl:for-each select="root()//tei:app[@type = 'gloss']/tei:rdg/tei:add[contains(@ana,$type-of-gloss)]">
+                            <xsl:element name="a">
+                                <xsl:attribute name="href" select="concat('./edition.html#',./parent::tei:rdg/parent::tei:app/@xml:id)"/>
+                                <xsl:value-of select="./parent::tei:rdg/parent::tei:app/@xml:id"/>
+                            </xsl:element>
+                            <xsl:text> (</xsl:text>
+                            <xsl:value-of select="./@place"/>
+                            <xsl:text>, </xsl:text>
+                            <xsl:choose>
+                                <xsl:when test="(./@hand = 'scr') or (./@hand = 'scr-1') or (./@hand = '#scr') or (./@hand = '#scr-1')">
+                                    <xsl:value-of select="'main scribe'"/>
+                                </xsl:when>
+                                <xsl:when test="(./@hand = 'sec') or (./@hand = '#sec')">
+                                    <xsl:value-of select="'secondary scribe'"/>
+                                </xsl:when>
+                                <xsl:when test="(./@hand = 'Otfrid') or (./@hand = '#Otfrid')">
+                                    <xsl:value-of select="'Otfrid of Wissembourg'"/>
+                                </xsl:when>
+                                <xsl:when test="(./@hand = 'gl-1') or (./@hand = '#gl-1')">
+                                    <xsl:value-of select="'first glossator'"/>
+                                </xsl:when>
+                                <xsl:when test="(./@hand = 'gl-2') or (./@hand = '#gl-2')">
+                                    <xsl:value-of select="'second glossator'"/>
+                                </xsl:when>
+                                <xsl:otherwise>
+                                    <xsl:value-of select="'unidentified scribe'"/>
+                                </xsl:otherwise>
+                            </xsl:choose>
+                            <xsl:text>) </xsl:text>
+                        </xsl:for-each>
+                    </xsl:element>
                 </xsl:element>
             </xsl:for-each>
         </xsl:element>

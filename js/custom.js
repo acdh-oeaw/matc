@@ -1,6 +1,6 @@
 var viewer = OpenSeadragon({
     id: "openseadragon",
-	prefixUrl: "https://cdnjs.cloudflare.com/ajax/libs/openseadragon/3.0.0/images/",
+	prefixUrl: "/images/",
 	tileSources: [
 	{
 		type: "image",
@@ -122,7 +122,9 @@ var viewer = OpenSeadragon({
 		type: "image",
 		url: "http://diglib.hab.de/mss/50-weiss/max/00030.jpg"
     }
-	],
+	], 
+	sequenceMode: false,
+	initialPage: 10,
 	showNavigationControl: true,
 	showReferenceStrip: true,
 	defaultZoomLevel : 0,
@@ -198,17 +200,16 @@ $(window).on('load', function(){
 			let widthOfPicture = 2000;
 			let heightOfPicture = 2369;
 			let upperLeftXScaled = upperLeftX / widthOfPicture;
-			let upperLeftYScaled = upperLeftY / heightOfPicture * 2369/2000;
+			let upperLeftYScaled = upperLeftY / heightOfPicture * 2369 / 2000;
 			let lowerRightXScaled = lowerRightX / widthOfPicture;
-			let lowerRightYScaled = lowerRightY / heightOfPicture * 2369/2000;
+			let lowerRightYScaled = lowerRightY / heightOfPicture * 2369 / 2000;
 			let widthScaled = lowerRightXScaled - upperLeftXScaled;
 			let heightScaled = lowerRightYScaled - upperLeftYScaled;
 			viewer.addHandler('tile-loaded',function(){
 				viewer.removeOverlay(idOfOverlay.value);
 				viewer.addOverlay(overlayElement,new OpenSeadragon.Rect(upperLeftXScaled,upperLeftYScaled,widthScaled,heightScaled));
-			});
-			viewer.addHandler('add-overlay',function(){
-				let point = new OpenSeadragon.Point(upperLeftXScaled, upperLeftYScaled);
+				let point = new OpenSeadragon.Point(lowerRightXScaled,lowerRightYScaled);
+				viewer.viewport.panTo(point,false);
 				viewer.viewport.zoomTo(2, point, false);
 			});
 			});
@@ -285,9 +286,8 @@ $(window).on('load', function(){
 			viewer.addHandler('tile-loaded',function(){
 				viewer.removeOverlay(idOfOverlay.value);
 				viewer.addOverlay(overlayElement,new OpenSeadragon.Rect(upperLeftXScaled,upperLeftYScaled,widthScaled,heightScaled));
-			});
-			viewer.addHandler('add-overlay',function(){
-				let point = new OpenSeadragon.Point(upperLeftXScaled, upperLeftYScaled);
+				let point = new OpenSeadragon.Point(lowerRightXScaled,lowerRightYScaled);
+				viewer.viewport.panTo(point,false);
 				viewer.viewport.zoomTo(2, point, false);
 			});
 			});
@@ -334,9 +334,8 @@ $(window).on('load', function(){
 			viewer.addHandler('tile-loaded',function(){
 				viewer.removeOverlay(idOfOverlay.value);
 				viewer.addOverlay(overlayElement,new OpenSeadragon.Rect(upperLeftXScaled,upperLeftYScaled,widthScaled,heightScaled));
-			});
-			viewer.addHandler('add-overlay',function(){
-				let point = new OpenSeadragon.Point(upperLeftXScaled, upperLeftYScaled);
+				let point = new OpenSeadragon.Point(lowerRightXScaled,lowerRightYScaled);
+				viewer.viewport.panTo(point,false);
 				viewer.viewport.zoomTo(2, point, false);
 			});
 			});
@@ -383,9 +382,8 @@ $(window).on('load', function(){
 			viewer.addHandler('tile-loaded',function(){
 				viewer.removeOverlay(idOfOverlay.value);
 				viewer.addOverlay(overlayElement,new OpenSeadragon.Rect(upperLeftXScaled,upperLeftYScaled,widthScaled,heightScaled));
-			});
-			viewer.addHandler('add-overlay',function(){
-				let point = new OpenSeadragon.Point(upperLeftXScaled, upperLeftYScaled);
+				let point = new OpenSeadragon.Point(lowerRightXScaled,lowerRightYScaled);
+				viewer.viewport.panTo(point,false);
 				viewer.viewport.zoomTo(2, point, false);
 			});
 			});
@@ -432,9 +430,8 @@ $(window).on('load', function(){
 			viewer.addHandler('tile-loaded',function(){
 				viewer.removeOverlay(idOfOverlay.value);
 				viewer.addOverlay(overlayElement,new OpenSeadragon.Rect(upperLeftXScaled,upperLeftYScaled,widthScaled,heightScaled));
-			});
-			viewer.addHandler('add-overlay',function(){
-				let point = new OpenSeadragon.Point(upperLeftXScaled, upperLeftYScaled);
+				let point = new OpenSeadragon.Point(lowerRightXScaled,lowerRightYScaled);
+				viewer.viewport.panTo(point,false);
 				viewer.viewport.zoomTo(2, point, false);
 			});
 			});

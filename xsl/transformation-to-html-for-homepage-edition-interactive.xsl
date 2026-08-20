@@ -53,7 +53,7 @@
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer"></link>
             <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto Serif"></link>
             <link rel="shortcut icon" type="image/x-icon" href="./images/favicon.png"/>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/openseadragon/3.1.0/openseadragon.min.js" integrity="sha512-uZWCk71Y8d7X/dnBNU9sISZQv78vDTglLF8Uaga0AimD7xmjJhFoa67VIcIySAoTHqxIt/0ly9l5ft9MUkynQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            <script src="./js/openseadragon.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         </head>
         <body class="page">
             <div class="hfeed site" id="page">
