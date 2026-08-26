@@ -15,7 +15,7 @@ $(window).on('load', function(){
             document: {
                 id: "id",
                 index: ["quote_normalized","quote_critical"],
-                store: ["quote_normalized","quote_critical","link"]
+                store: ["id_of_quote","quote_normalized","quote_critical","link"]
             }
         });
         jsonQuotes.quotes.forEach(quote => {
@@ -23,16 +23,16 @@ $(window).on('load', function(){
         });
     });
 
+    let jsonInterventions = {};
     $.ajax({
 		url: "./json/interventions.json"
 	})
 	.done(function(data) {
-		let jsonInterventions = data;
+		jsonInterventions = data;
         documentOfInterventions = new FlexSearch.Document({
             document: {
                 id: "id",
-                index: ["type_of_intervention","id_of_intervention","lemma:text_of_lemma","reading:reading_normalized"],
-                store: ["type_of_intervention","id_of_intervention","lemma:text_of_lemma","reading:reading_normalized","link"]
+                index: ["id_of_intervention","type_of_intervention","lemma:text_of_lemma","reading:reading_normalized","reading:reading_critical"]
             }
         });
         jsonInterventions.interventions.forEach(intervention => {
@@ -57,7 +57,7 @@ $(window).on('load', function(){
             resultContent.replaceChildren();
             if (results.length !== 0){
                 results[0].result.forEach(match => {
-                    let matchedText = match.doc.quote_normalized;
+                    let matchedText = match.doc.id_of_quote + ": " + match.doc.quote_normalized + " - " + match.doc.quote_critical;
                     let matchedTextHighlighted = matchedText.replaceAll(searchString,`<span style="background-color:#c4ae95;">${searchString}</span>`);
                     let linkToEdition = match.doc.link;
                     let paragraphWithMatchedText = document.createElement('p');
@@ -81,75 +81,103 @@ $(window).on('load', function(){
         if (interventionEnabled){ quotesOrInterventions = "interventions"; }
         if (quotesOrInterventions === "interventions"){
             let typeOfIntervention = getTypeOfIntervention();
-            let results = documentOfInterventions.search(searchString, { field: ["id_of_intervention","lemma:text_of_lemma","reading:reading_normalized"], enrich: true });
+            let results = documentOfInterventions.search(searchString, { field: ["id_of_intervention","type_of_intervention","lemma:text_of_lemma","reading:reading_normalized","reading:reading_critical"]});
             let resultsFiltered = [];
             switch (typeOfIntervention){
                 // gloss | emendation | rubrication | text variation | reference sign | annotation sign
                 case "all": {
-                    results[0].result.forEach(match => {
-                        resultsFiltered.push(match);
-                    });
+                    for (let i = 0; i < results.length; i++){
+                        results[i].result.forEach(match => {
+                            jsonInterventions.interventions.forEach(entry => {
+                                if (entry.id === match){
+                                    resultsFiltered.push(entry);
+                                }
+                            });
+                    });};
                     break;
                 }
                 case "gloss": {
-                    results[0].result.forEach(match => {
-                        if (match.doc.type_of_intervention === "gloss"){
-                            resultsFiltered.push(match);
-                        }
-                    });
+                    for (let i = 0; i < results.length; i++){
+                        results[i].result.forEach(match => {
+                            jsonInterventions.interventions.forEach(entry => {
+                                if ((entry.id === match) && (entry.type_of_intervention === 'gloss')){
+                                    resultsFiltered.push(entry);
+                                }
+                            });
+                    });};
                     break; 
                 }
                 case "emendation": { 
-                    results[0].result.forEach(match => {
-                        if (match.doc.type_of_intervention === "emendation"){
-                            resultsFiltered.push(match);
-                        }
-                    });
+                    for (let i = 0; i < results.length; i++){
+                        results[i].result.forEach(match => {
+                            jsonInterventions.interventions.forEach(entry => {
+                                if ((entry.id === match) && (entry.type_of_intervention === 'emendation')){
+                                    resultsFiltered.push(entry);
+                                }
+                            });
+                    });};
                     break; 
                 }
                 case "rubrication": { 
-                    results[0].result.forEach(match => {
-                        if (match.doc.type_of_intervention === "rubrication"){
-                            resultsFiltered.push(match);
-                        }
-                    });
+                    for (let i = 0; i < results.length; i++){
+                        results[i].result.forEach(match => {
+                            jsonInterventions.interventions.forEach(entry => {
+                                if ((entry.id === match) && (entry.type_of_intervention === 'rubrication')){
+                                    resultsFiltered.push(entry);
+                                }
+                            });
+                    });};
                     break; 
                 }
                 case "text-variation": { 
-                    results[0].result.forEach(match => {
-                        if (match.doc.type_of_intervention === "text variation"){
-                            resultsFiltered.push(match);
-                        }
-                    });
+                    for (let i = 0; i < results.length; i++){
+                        results[i].result.forEach(match => {
+                            jsonInterventions.interventions.forEach(entry => {
+                                if ((entry.id === match) && (entry.type_of_intervention === 'text variation')){
+                                    resultsFiltered.push(entry);
+                                }
+                            });
+                    });};
                     break; 
                 }
                 case "reference-sign": { 
-                    results[0].result.forEach(match => {
-                        if (match.doc.type_of_intervention === "reference sign"){
-                            resultsFiltered.push(match);
-                        }
-                    });
+                    for (let i = 0; i < results.length; i++){
+                        results[i].result.forEach(match => {
+                            jsonInterventions.interventions.forEach(entry => {
+                                if ((entry.id === match) && (entry.type_of_intervention === 'reference sign')){
+                                    resultsFiltered.push(entry);
+                                }
+                            });
+                    });};
                     break; 
                 }
                 case "annotation-sign": { 
-                    results[0].result.forEach(match => {
-                        if (match.doc.type_of_intervention === "annotation sign"){
-                            resultsFiltered.push(match);
-                        }
-                    });
+                    for (let i = 0; i < results.length; i++){
+                        results[i].result.forEach(match => {
+                            jsonInterventions.interventions.forEach(entry => {
+                                if ((entry.id === match) && (entry.type_of_intervention === 'annotation sign')){
+                                    resultsFiltered.push(entry);
+                                }
+                            });
+                    });};
                     break; 
                 }
-                default: {
-                    results = documentOfInterventions.search(searchString, { field: ["id_of_intervention","lemma:text_of_lemma","reading:reading_normalized"], enrich: true });
-                }
             }
+            resultsFiltered = filterHand(resultsFiltered);
             let resultContent = document.getElementById("search-result-content");
             resultContent.replaceChildren();
             if (resultsFiltered.length != 0){
                 resultsFiltered.forEach(match => {
-                    let matchedText = match.doc.id_of_intervention + ": " + match.doc.lemma.text_of_lemma + " - " + match.doc.reading.reading_normalized;
+                    let handText = "hand: ";
+                    if (match.reading.hand === ""){
+                        handText += "-";
+                    }
+                    else {
+                        handText += match.reading.hand;
+                    }
+                    let matchedText = match.id_of_intervention + ": " + match.lemma.text_of_lemma + " - " + match.reading.reading_normalized + " - " + match.reading.reading_critical + " - " + handText;
                     let matchedTextHighlighted = matchedText.replaceAll(searchString,`<span style="background-color:#c4ae95;">${searchString}</span>`);
-                    let linkToEdition = match.doc.link;
+                    let linkToEdition = match.link;
                     let paragraphWithMatchedText = document.createElement('p');
                     paragraphWithMatchedText.innerHTML = matchedTextHighlighted;
                     let linkWithLinkToEdition = document.createElement('a');
@@ -168,13 +196,11 @@ $(window).on('load', function(){
         }
     };
 
-    let idOfSubForm = "form-subgroup-type-of-intervention";
-    let subForm = document.getElementById(idOfSubForm);
     document.getElementById("full-text-select-interventions").addEventListener('click',function(event){
-        subForm.style = "display: block";
+        document.getElementById("form-subgroup-type-of-intervention").style = "display: flex !important;";
     });
     document.getElementById("full-text-select-quotes").addEventListener('click',function(event){
-        subForm.style = "display: none";
+        document.getElementById("form-subgroup-type-of-intervention").style = "display: none;";
     });
 
     document.getElementById("full-text-search-input").focus();
@@ -223,5 +249,73 @@ $(window).on('load', function(){
         if (selectTextVariation === true){ return "text-variation"; }
         if (selectReferenceSign === true){ return "reference-sign"; }
         if (selectAnnotationSign === true){ return "annotation-sign"; }
+    }
+
+    function getScribeOfIntervention(){
+        // main scribe | secondary scribe | first glossator | second glossator | Otfrid
+        let selectScribeAll = document.getElementById("scribe-of-intervention-all").checked;
+        let selectScribeMainScribe = document.getElementById("scribe-of-intervention-main-scribe").checked;
+        let selectScribeSecondaryScribe = document.getElementById("scribe-of-intervention-secondary-scribe").checked;
+        let selectScribeFirstGlossator = document.getElementById("scribe-of-intervention-first-glossator").checked;
+        let selectScribeSecondGlossator = document.getElementById("scribe-of-intervention-second-glossator").checked;
+        let selectScribeOtfrid = document.getElementById("scribe-of-intervention-otfrid").checked;
+        if (selectScribeAll === true){ return "all"; }
+        if (selectScribeMainScribe === true){ return "main-scribe"; }
+        if (selectScribeSecondaryScribe === true){ return "secondary-scribe"; }
+        if (selectScribeFirstGlossator === true){ return "first-glossator"; }
+        if (selectScribeSecondGlossator === true){ return "second-glossator"; }
+        if (selectScribeOtfrid === true){ return "otfrid"; }
+    }
+
+    function filterHand(resultsFiltered){
+        let selectedHand = getScribeOfIntervention();
+        let resultsFilteredByHand = [];
+        switch (selectedHand){
+            case "all": {
+                resultsFilteredByHand = resultsFiltered;
+                break;
+            }
+            case "main-scribe": {
+                for (let i = 0; i < resultsFiltered.length; i++){
+                    if (resultsFiltered[i].reading.hand === 'main writer'){
+                        resultsFilteredByHand.push(resultsFiltered[i]);
+                    }
+                }
+                break;
+            }
+            case "secondary-scribe": {
+                for (let i = 0; i < resultsFiltered.length; i++){
+                    if (resultsFiltered[i].reading.hand === 'secondary scribe'){
+                        resultsFilteredByHand.push(resultsFiltered[i]);
+                    }
+                }
+                break;
+            }
+            case "first-glossator": {
+                for (let i = 0; i < resultsFiltered.length; i++){
+                    if (resultsFiltered[i].reading.hand === 'first glossator'){
+                        resultsFilteredByHand.push(resultsFiltered[i]);
+                    }
+                }
+                break;
+            }
+            case "second-glossator": {
+                for (let i = 0; i < resultsFiltered.length; i++){
+                    if (resultsFiltered[i].reading.hand === 'second glossator'){
+                        resultsFilteredByHand.push(resultsFiltered[i]);
+                    }
+                }
+                break;
+            }
+            case "otfrid": {
+                for (let i = 0; i < resultsFiltered.length; i++){
+                    if (resultsFiltered[i].reading.hand === 'Otfrid'){
+                        resultsFilteredByHand.push(resultsFiltered[i]);
+                    }
+                }
+                break;
+            }
+        }
+        return resultsFilteredByHand;
     }
 });

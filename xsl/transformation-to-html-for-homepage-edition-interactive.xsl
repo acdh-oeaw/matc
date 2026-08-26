@@ -1908,6 +1908,13 @@
         <xsl:text>) </xsl:text>
     </xsl:template>
     
+    <xsl:template match="tei:quote[(@type = 'biblical-quotation') and exists(parent::tei:add)]" mode="glosses-as-json">
+        <xsl:apply-templates select="child::node()" mode="glosses-as-json"/>
+        <xsl:text> (</xsl:text>
+        <xsl:value-of select="@n"/>
+        <xsl:text>)</xsl:text>
+    </xsl:template>
+    
     <xsl:template match="text()" mode="glosses-as-json">
         <xsl:choose>
             <xsl:when test="contains(.,'&#xA;')">
