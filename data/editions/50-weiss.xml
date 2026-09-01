@@ -94,16 +94,14 @@
                      </supportDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote xml:id="scr">writer of the main text. The main text was written by at
-                        least two writers who alternated very often. One of them can be identified
-                        with Otfrid of Wissembourg. A precise distinction of the parts either of
-                        them wrote will be made before completion of this edition</handNote>
+                     <handNote xml:id="scr">writer of the main text, who alternated very often
+                        with Otfrid of Wissembourg.</handNote>
                      <handNote xml:id="Otfrid">Main glossator and writer of the main text. The
                         traits of his hand are identical to those that Wolfgang Kleiber (1971)
                         attributed to Otfrid of Wissembourg</handNote>
                      <handNote xml:id="gl-2">second glossator, who added glosses in the first
                         folios</handNote>
-                     <handNote xml:id="sec">Addition by other writer(s).</handNote>
+                     <handNote xml:id="sec">Additions by other writer(s).</handNote>
                   </handDesc>
                </physDesc>
                <additional>
