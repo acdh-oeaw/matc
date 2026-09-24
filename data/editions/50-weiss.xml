@@ -6604,7 +6604,7 @@
                </app>
                <app type="gloss" xml:id="gloss-27-7-1">
                   <lem wit="#EDITION">Tityon</lem>
-                  <rdg wit="#COD_50"><add place="above" hand="#Otfrid" facs="#zone.5r.4"
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#Otfrid" facs="#zone.5r.4"
                         ana="#acquaintance-with-classics">gigans</add></rdg>
                   <note resp="#CG" type="explanation" target="#gloss-27-7-1">MS Köln 200, f. 7r
                      reads 'gigas nomen proprium'.</note>
@@ -10432,7 +10432,7 @@
                </app>
                <app type="gloss" xml:id="gloss-42-21-1">
                   <lem wit="#COD_50">Pyracmon</lem>
-                  <rdg wit="#COD_50"><add place="above" hand="#Otfrid" facs="#zone.7v.2"
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#Otfrid" facs="#zone.7v.2"
                         ana="#glosses-elucidating-the-main-text #acquaintance-with-classics"><g
                            ref="#reference-sign-virga-dot"/> ignis <g ref="#vel"/> nomen gigantis·
                            <g ref="#vel"/> faber· <g ref="#vel"/> minister uulcani</add></rdg>
@@ -10648,7 +10648,7 @@
                </app>
                <app type="gloss" xml:id="gloss-43-10-1">
                   <lem wit="#EDITION">Pelops</lem>
-                  <rdg wit="#COD_50"><add place="left margina" hand="#Otfrid" facs="#zone.7v.19"
+                  <rdg wit="#COD_50"><add place="left margin" hand="#Otfrid" facs="#zone.7v.19"
                         ana="#acquaintance-with-classics"><g ref="#reference-sign-virga-dot"/> deus
                         gentilium cui humerus ex ebore factus</add></rdg>
                </app>
@@ -12037,7 +12037,7 @@
                </app>
                <app type="gloss" xml:id="gloss-49-12-1">
                   <lem wit="#EDITION">concinnus</lem>
-                  <rdg wit="#COD_50"><add place="left margina" hand="#Otfrid" facs="#zone.8v.15"
+                  <rdg wit="#COD_50"><add place="left margin" hand="#Otfrid" facs="#zone.8v.15"
                         ana="#synonyms"><g ref="#reference-sign-virga-dot"/> concordans</add></rdg>
                </app>
                <quote source="#EDITION" n="II 49,13">pondus, confiteor, infundo, <add
