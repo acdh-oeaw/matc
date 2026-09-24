@@ -170,21 +170,21 @@
                         <div class="footer-widget col-lg-4 col-md-4 col-sm-6 col-9">
                             <div class="textwidget custom-html-widget">
                                 <p>
-                                    ACDH-CH
+                                    ACDH
                                     <br/>
-                                        Austrian Centre for Digital Humanities <br/> and Cultural Heritage
+                                        Austrian Centre for Digital Humanities
                                         <br/>
                                             Austrian Academy of Sciences
                                 </p>
                                 <p>
-                                    Sonnenfelsgasse 19,
+                                    Bäckerstraße 13,
                                     <br/>
                                         1010 Vienna
                                 </p>
                                 <p>
                                     T: +43 1 51581-2200
                                     <br/>
-                                        E: <a href="mailto:acdh-ch@oeaw.ac.at">acdh-ch@oeaw.ac.at</a>
+                                        E: <a href="mailto:acdh@oeaw.ac.at">acdh@oeaw.ac.at</a>
                                 </p>
                             </div>
                         </div>
@@ -197,7 +197,7 @@
                         <div class="footer-widget col-lg-3 col-md-4 col-sm-4 ml-auto">
                             <div class="textwidget custom-html-widget">
                                 <h6>HELPDESK</h6>
-                                <p>ACDH-CH runs a helpdesk offering advice for questions related to various digital humanities topics.</p>
+                                <p>ACDH runs a helpdesk offering advice for questions related to various digital humanities topics.</p>
                                 <p>
                                     <a class="helpdesk-button" href="mailto:acdh-helpdesk@oeaw.ac.at">ASK US!</a>
                                 </p>
@@ -209,7 +209,7 @@
             </div>
             <!-- #wrapper-footer-full -->
             <div class="footer-imprint-bar" id="wrapper-footer-secondary" style="text-align:center; padding:0.4rem 0; font-size: 0.9rem;">
-                © Copyright OEAW | <a href="https://www.oeaw.ac.at/die-oeaw/impressum/">Impressum/Imprint</a>
+                © Copyright OEAW | <a href="./impressum.html">Impressum/Imprint</a>
             </div>
             </div>
             <!-- #page we need this extra closing tag here -->

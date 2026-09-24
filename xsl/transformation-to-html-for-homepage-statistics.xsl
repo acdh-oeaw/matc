@@ -240,7 +240,7 @@
                             <xsl:text>, </xsl:text>
                             <xsl:choose>
                                 <xsl:when test="(./@hand = 'scr') or (./@hand = 'scr-1') or (./@hand = '#scr') or (./@hand = '#scr-1')">
-                                    <xsl:value-of select="'main scribe'"/>
+                                    <xsl:value-of select="'Writer of the main text'"/>
                                 </xsl:when>
                                 <xsl:when test="(./@hand = 'sec') or (./@hand = '#sec')">
                                     <xsl:value-of select="'secondary scribe'"/>
@@ -347,7 +347,7 @@
                 <xsl:text>interlinear above: </xsl:text>
                 <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][child::tei:rdg/child::tei:add[@place = 'interlinear above']])"/>
                 <p class="statistics-level-4">
-                    <xsl:text>Main scribe: </xsl:text>
+                    <xsl:text>Writer of the main text: </xsl:text>
                     <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][child::tei:rdg/child::tei:add[@place = 'interlinear above'][@hand = '#scr']])"/>
                     <xsl:text> / Otfrid: </xsl:text>
                     <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][child::tei:rdg/child::tei:add[@place = 'interlinear above'][@hand = '#Otfrid']])"/>
@@ -362,7 +362,7 @@
                 <xsl:text>interlinear below: </xsl:text>
                 <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][child::tei:rdg/child::tei:add[@place = 'interlinear below']])"/>
                 <p class="statistics-level-4">
-                    <xsl:text>Main scribe: </xsl:text>
+                    <xsl:text>Writer of the main text: </xsl:text>
                     <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][child::tei:rdg/child::tei:add[@place = 'interlinear below'][@hand = '#scr']])"/>
                     <xsl:text> / Otfrid: </xsl:text>
                     <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][child::tei:rdg/child::tei:add[@place = 'interlinear below'][@hand = '#Otfrid']])"/>
@@ -377,7 +377,7 @@
                 <xsl:text>interlinear one line above: </xsl:text>
                 <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][child::tei:rdg/child::tei:add[@place = 'interlinear one line above']])"/>
                 <p class="statistics-level-4">
-                    <xsl:text>Main scribe: </xsl:text>
+                    <xsl:text>Writer of the main text: </xsl:text>
                     <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][child::tei:rdg/child::tei:add[@place = 'interlinear one line above'][@hand = '#scr']])"/>
                     <xsl:text> / Otfrid: </xsl:text>
                     <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][child::tei:rdg/child::tei:add[@place = 'interlinear one line above'][@hand = '#Otfrid']])"/>
@@ -392,7 +392,7 @@
                 <xsl:text>interlinear above and right margin: </xsl:text>
                 <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][child::tei:rdg/child::tei:add[@place = 'interlinear above and right margin']])"/>
                 <p class="statistics-level-4">
-                    <xsl:text>Main scribe: </xsl:text>
+                    <xsl:text>Writer of the main text: </xsl:text>
                     <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][child::tei:rdg/child::tei:add[@place = 'interlinear above and right margin'][@hand = '#scr']])"/>
                     <xsl:text> / Otfrid: </xsl:text>
                     <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][child::tei:rdg/child::tei:add[@place = 'interlinear above and right margin'][@hand = '#Otfrid']])"/>
@@ -407,7 +407,7 @@
                 <xsl:text>right margin: </xsl:text>
                 <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][child::tei:rdg/child::tei:add[@place = 'right margin']])"/>
                 <p class="statistics-level-4">
-                    <xsl:text>Main scribe: </xsl:text>
+                    <xsl:text>Writer of the main text: </xsl:text>
                     <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][child::tei:rdg/child::tei:add[@place = 'right margin'][@hand = '#scr']])"/>
                     <xsl:text> / Otfrid: </xsl:text>
                     <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][child::tei:rdg/child::tei:add[@place = 'right margin'][@hand = '#Otfrid']])"/>
@@ -422,7 +422,7 @@
                 <xsl:text>left margin: </xsl:text>
                 <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][child::tei:rdg/child::tei:add[@place = 'left margin']])"/>
                 <p class="statistics-level-4">
-                    <xsl:text>Main scribe: </xsl:text>
+                    <xsl:text>Writer of the main text: </xsl:text>
                     <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][child::tei:rdg/child::tei:add[@place = 'left margin'][@hand = '#scr']])"/>
                     <xsl:text> / Otfrid: </xsl:text>
                     <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][child::tei:rdg/child::tei:add[@place = 'left margin'][@hand = '#Otfrid']])"/>
@@ -437,7 +437,7 @@
                 <xsl:text>upper margin: </xsl:text>
                 <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][child::tei:rdg/child::tei:add[@place = 'upper margin']])"/>
                 <p class="statistics-level-4">
-                    <xsl:text>Main scribe: </xsl:text>
+                    <xsl:text>Writer of the main text: </xsl:text>
                     <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][child::tei:rdg/child::tei:add[@place = 'upper margin'][@hand = '#scr']])"/>
                     <xsl:text> / Otfrid: </xsl:text>
                     <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][child::tei:rdg/child::tei:add[@place = 'upper margin'][@hand = '#Otfrid']])"/>
@@ -447,11 +447,27 @@
                     <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][child::tei:rdg/child::tei:add[@place = 'upper margin'][@hand = '#sec']])"/>
                 </p>
             </xsl:element>
+            <xsl:element name="div">
+                <xsl:attribute name="class" select="'statistics-level-3'"/>
+                <xsl:text>inline: </xsl:text>
+                <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][child::tei:rdg/child::tei:add[@place = 'inline']])"/>
+                <p class="statistics-level-4">
+                    <xsl:text>Writer of the main text: </xsl:text>
+                    <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][child::tei:rdg/child::tei:add[@place = 'inline'][@hand = '#scr']])"/>
+                    <xsl:text> / Otfrid: </xsl:text>
+                    <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][child::tei:rdg/child::tei:add[@place = 'inline'][@hand = '#Otfrid']])"/>
+                    <xsl:text> / Second glossator: </xsl:text>
+                    <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][child::tei:rdg/child::tei:add[@place = 'inline'][@hand = '#gl-2']])"/>
+                    <xsl:text> / Secondary writer(s): </xsl:text>
+                    <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][child::tei:rdg/child::tei:add[@place = 'inline'][@hand = '#sec']])"/>
+                </p>
+            </xsl:element>
             <xsl:element name="p">
                 <xsl:attribute name="class" select="'statistics-level-2'"/>
                 <xsl:attribute name="style" select="'margin-top: 1rem;'"/>
                 <xsl:text>By type of addition:</xsl:text>
             </xsl:element>
+            <xsl:variable name="root-element" select="root()"/>
             <xsl:for-each select="root()//tei:taxonomy[@xml:id = 'common-glosses']/tei:category/@xml:id">
                 <xsl:element name="div">
                     <xsl:attribute name="class" select="'statistics-level-3'"/>
@@ -460,14 +476,118 @@
                     <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][child::tei:rdg/child::tei:add[tokenize(@ana,' ') = $type]])"/>
                     <xsl:if test="count(root()//tei:app[@type = 'gloss'][child::tei:rdg/child::tei:add[tokenize(@ana,' ') = $type]]) != 0">
                         <p class="statistics-level-4">
-                            <xsl:text>Main scribe: </xsl:text>
+                            <xsl:text>Writer of the main text: </xsl:text>
                             <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][child::tei:rdg/child::tei:add[tokenize(@ana,' ') = $type]][child::tei:rdg/child::tei:add[@hand = '#scr']])"/>
+                            <!-- add places - start - main writer -->
+                            <xsl:if test="(current() = 'translation-into-Old-High-German') and (count(root()//tei:app[@type = 'gloss'][child::tei:rdg/child::tei:add[tokenize(@ana,' ') = $type]][child::tei:rdg/child::tei:add[@hand = '#scr']]) != 0)">
+                                <xsl:text> (</xsl:text>
+                                <xsl:for-each select="distinct-values(root()//tei:app[@type = 'gloss'][child::tei:rdg/child::tei:add[tokenize(@ana,' ') = $type]][child::tei:rdg/child::tei:add[@hand = '#scr']]/child::tei:rdg/child::tei:add/@place)">
+                                    <xsl:value-of select="."/>
+                                    <xsl:text>: </xsl:text>
+                                    <xsl:value-of select="count(root($root-element)//tei:app[@type = 'gloss'][child::tei:rdg/child::tei:add[tokenize(@ana,' ') = $type]][child::tei:rdg/child::tei:add[@hand = '#scr']][child::tei:rdg/child::tei:add/@place = current()])"/>
+                                    <xsl:if test="position() != last()">
+                                        <xsl:text>, </xsl:text>
+                                    </xsl:if>
+                                </xsl:for-each>
+                                <xsl:text>)</xsl:text>
+                            </xsl:if>
+                            <xsl:if test="(current() = 'synonyms') and (count(root()//tei:app[@type = 'gloss'][child::tei:rdg/child::tei:add[tokenize(@ana,' ') = $type]][child::tei:rdg/child::tei:add[@hand = '#scr']]) != 0)">
+                                <xsl:text> (</xsl:text>
+                                <xsl:for-each select="distinct-values(root()//tei:app[@type = 'gloss'][child::tei:rdg/child::tei:add[tokenize(@ana,' ') = $type]][child::tei:rdg/child::tei:add[@hand = '#scr']]/child::tei:rdg/child::tei:add/@place)">
+                                    <xsl:value-of select="."/>
+                                    <xsl:text>: </xsl:text>
+                                    <xsl:value-of select="count(root($root-element)//tei:app[@type = 'gloss'][child::tei:rdg/child::tei:add[tokenize(@ana,' ') = $type]][child::tei:rdg/child::tei:add[@hand = '#scr']][child::tei:rdg/child::tei:add/@place = current()])"/>
+                                    <xsl:if test="position() != last()">
+                                        <xsl:text>, </xsl:text>
+                                    </xsl:if>
+                                </xsl:for-each>
+                                <xsl:text>)</xsl:text>
+                            </xsl:if>
+                            <!-- add places - end -->
                             <xsl:text> / Otfrid: </xsl:text>
                             <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][child::tei:rdg/child::tei:add[tokenize(@ana,' ') = $type]][child::tei:rdg/child::tei:add[@hand = '#Otfrid']])"/>
+                            <!-- add places - start - Otfrid -->
+                            <xsl:if test="(current() = 'translation-into-Old-High-German') and (count(root()//tei:app[@type = 'gloss'][child::tei:rdg/child::tei:add[tokenize(@ana,' ') = $type]][child::tei:rdg/child::tei:add[@hand = '#Otfrid']]) != 0)">
+                                <xsl:text> (</xsl:text>
+                                <xsl:for-each select="distinct-values(root()//tei:app[@type = 'gloss'][child::tei:rdg/child::tei:add[tokenize(@ana,' ') = $type]][child::tei:rdg/child::tei:add[@hand = '#Otfrid']]/child::tei:rdg/child::tei:add/@place)">
+                                    <xsl:value-of select="."/>
+                                    <xsl:text>: </xsl:text>
+                                    <xsl:value-of select="count(root($root-element)//tei:app[@type = 'gloss'][child::tei:rdg/child::tei:add[tokenize(@ana,' ') = $type]][child::tei:rdg/child::tei:add[@hand = '#Otfrid']][child::tei:rdg/child::tei:add/@place = current()])"/>
+                                    <xsl:if test="position() != last()">
+                                        <xsl:text>, </xsl:text>
+                                    </xsl:if>
+                                </xsl:for-each>
+                                <xsl:text>)</xsl:text>
+                            </xsl:if>
+                            <xsl:if test="(current() = 'synonyms') and (count(root()//tei:app[@type = 'gloss'][child::tei:rdg/child::tei:add[tokenize(@ana,' ') = $type]][child::tei:rdg/child::tei:add[@hand = '#Otfrid']]) != 0)">
+                                <xsl:text> (</xsl:text>
+                                <xsl:for-each select="distinct-values(root()//tei:app[@type = 'gloss'][child::tei:rdg/child::tei:add[tokenize(@ana,' ') = $type]][child::tei:rdg/child::tei:add[@hand = '#Otfrid']]/child::tei:rdg/child::tei:add/@place)">
+                                    <xsl:value-of select="."/>
+                                    <xsl:text>: </xsl:text>
+                                    <xsl:value-of select="count(root($root-element)//tei:app[@type = 'gloss'][child::tei:rdg/child::tei:add[tokenize(@ana,' ') = $type]][child::tei:rdg/child::tei:add[@hand = '#Otfrid']][child::tei:rdg/child::tei:add/@place = current()])"/>
+                                    <xsl:if test="position() != last()">
+                                        <xsl:text>, </xsl:text>
+                                    </xsl:if>
+                                </xsl:for-each>
+                                <xsl:text>)</xsl:text>
+                            </xsl:if>
+                            <!-- add places - end -->
                             <xsl:text> / Second glossator: </xsl:text>
                             <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][child::tei:rdg/child::tei:add[tokenize(@ana,' ') = $type]][child::tei:rdg/child::tei:add[@hand = '#gl-2']])"/>
+                            <!-- add places - start -second glossator -->
+                            <xsl:if test="(current() = 'translation-into-Old-High-German') and (count(root()//tei:app[@type = 'gloss'][child::tei:rdg/child::tei:add[tokenize(@ana,' ') = $type]][child::tei:rdg/child::tei:add[@hand = '#gl-2']]) != 0)">
+                                <xsl:text> (</xsl:text>
+                                <xsl:for-each select="distinct-values(root()//tei:app[@type = 'gloss'][child::tei:rdg/child::tei:add[tokenize(@ana,' ') = $type]][child::tei:rdg/child::tei:add[@hand = '#gl-2']]/child::tei:rdg/child::tei:add/@place)">
+                                    <xsl:value-of select="."/>
+                                    <xsl:text>: </xsl:text>
+                                    <xsl:value-of select="count(root($root-element)//tei:app[@type = 'gloss'][child::tei:rdg/child::tei:add[tokenize(@ana,' ') = $type]][child::tei:rdg/child::tei:add[@hand = '#gl-2']][child::tei:rdg/child::tei:add/@place = current()])"/>
+                                    <xsl:if test="position() != last()">
+                                        <xsl:text>, </xsl:text>
+                                    </xsl:if>
+                                </xsl:for-each>
+                                <xsl:text>)</xsl:text>
+                            </xsl:if>
+                            <xsl:if test="(current() = 'synonyms') and (count(root()//tei:app[@type = 'gloss'][child::tei:rdg/child::tei:add[tokenize(@ana,' ') = $type]][child::tei:rdg/child::tei:add[@hand = '#gl-2']]) != 0)">
+                                <xsl:text> (</xsl:text>
+                                <xsl:for-each select="distinct-values(root()//tei:app[@type = 'gloss'][child::tei:rdg/child::tei:add[tokenize(@ana,' ') = $type]][child::tei:rdg/child::tei:add[@hand = '#gl-2']]/child::tei:rdg/child::tei:add/@place)">
+                                    <xsl:value-of select="."/>
+                                    <xsl:text>: </xsl:text>
+                                    <xsl:value-of select="count(root($root-element)//tei:app[@type = 'gloss'][child::tei:rdg/child::tei:add[tokenize(@ana,' ') = $type]][child::tei:rdg/child::tei:add[@hand = '#gl-2']][child::tei:rdg/child::tei:add/@place = current()])"/>
+                                    <xsl:if test="position() != last()">
+                                        <xsl:text>, </xsl:text>
+                                    </xsl:if>
+                                </xsl:for-each>
+                                <xsl:text>)</xsl:text>
+                            </xsl:if>
+                            <!-- add places - end -->
                             <xsl:text> / Secondary writer(s): </xsl:text>
                             <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][child::tei:rdg/child::tei:add[tokenize(@ana,' ') = $type]][child::tei:rdg/child::tei:add[@hand = '#sec']])"/>
+                            <!-- add places - start - secondary writers -->
+                            <xsl:if test="(current() = 'translation-into-Old-High-German') and (count(root()//tei:app[@type = 'gloss'][child::tei:rdg/child::tei:add[tokenize(@ana,' ') = $type]][child::tei:rdg/child::tei:add[@hand = '#sec']]) != 0)">
+                                <xsl:text> (</xsl:text>
+                                <xsl:for-each select="distinct-values(root()//tei:app[@type = 'gloss'][child::tei:rdg/child::tei:add[tokenize(@ana,' ') = $type]][child::tei:rdg/child::tei:add[@hand = '#sec']]/child::tei:rdg/child::tei:add/@place)">
+                                    <xsl:value-of select="."/>
+                                    <xsl:text>: </xsl:text>
+                                    <xsl:value-of select="count(root($root-element)//tei:app[@type = 'gloss'][child::tei:rdg/child::tei:add[tokenize(@ana,' ') = $type]][child::tei:rdg/child::tei:add[@hand = '#sec']][child::tei:rdg/child::tei:add/@place = current()])"/>
+                                    <xsl:if test="position() != last()">
+                                        <xsl:text>, </xsl:text>
+                                    </xsl:if>
+                                </xsl:for-each>
+                                <xsl:text>)</xsl:text>
+                            </xsl:if>
+                            <xsl:if test="(current() = 'synonyms') and (count(root()//tei:app[@type = 'gloss'][child::tei:rdg/child::tei:add[tokenize(@ana,' ') = $type]][child::tei:rdg/child::tei:add[@hand = '#sec']]) != 0)">
+                                <xsl:text> (</xsl:text>
+                                <xsl:for-each select="distinct-values(root()//tei:app[@type = 'gloss'][child::tei:rdg/child::tei:add[tokenize(@ana,' ') = $type]][child::tei:rdg/child::tei:add[@hand = '#sec']]/child::tei:rdg/child::tei:add/@place)">
+                                    <xsl:value-of select="."/>
+                                    <xsl:text>: </xsl:text>
+                                    <xsl:value-of select="count(root($root-element)//tei:app[@type = 'gloss'][child::tei:rdg/child::tei:add[tokenize(@ana,' ') = $type]][child::tei:rdg/child::tei:add[@hand = '#sec']][child::tei:rdg/child::tei:add/@place = current()])"/>
+                                    <xsl:if test="position() != last()">
+                                        <xsl:text>, </xsl:text>
+                                    </xsl:if>
+                                </xsl:for-each>
+                                <xsl:text>)</xsl:text>
+                            </xsl:if>
+                            <!-- add places - end -->
                         </p>
                     </xsl:if>
                 </xsl:element>
@@ -556,7 +676,7 @@
                 <xsl:text>interlinear above: </xsl:text>
                 <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Praefatio']][child::tei:rdg/child::tei:add[@place = 'interlinear above']])"/>
                 <p class="statistics-level-4">
-                    <xsl:text>Main scribe: </xsl:text>
+                    <xsl:text>Writer of the main text: </xsl:text>
                     <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Praefatio']][child::tei:rdg/child::tei:add[@place = 'interlinear above'][@hand = '#scr']])"/>
                     <xsl:text> / Otfrid: </xsl:text>
                     <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Praefatio']][child::tei:rdg/child::tei:add[@place = 'interlinear above'][@hand = '#Otfrid']])"/>
@@ -571,7 +691,7 @@
                 <xsl:text>interlinear below: </xsl:text>
                 <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Praefatio']][child::tei:rdg/child::tei:add[@place = 'interlinear below']])"/>
                 <p class="statistics-level-4">
-                    <xsl:text>Main scribe: </xsl:text>
+                    <xsl:text>Writer of the main text: </xsl:text>
                     <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Praefatio']][child::tei:rdg/child::tei:add[@place = 'interlinear below'][@hand = '#scr']])"/>
                     <xsl:text> / Otfrid: </xsl:text>
                     <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Praefatio']][child::tei:rdg/child::tei:add[@place = 'interlinear below'][@hand = '#Otfrid']])"/>
@@ -586,7 +706,7 @@
                 <xsl:text>interlinear one line above: </xsl:text>
                 <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Praefatio']][child::tei:rdg/child::tei:add[@place = 'interlinear one line above']])"/>
                 <p class="statistics-level-4">
-                    <xsl:text>Main scribe: </xsl:text>
+                    <xsl:text>Writer of the main text: </xsl:text>
                     <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Praefatio']][child::tei:rdg/child::tei:add[@place = 'interlinear one line above'][@hand = '#scr']])"/>
                     <xsl:text> / Otfrid: </xsl:text>
                     <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Praefatio']][child::tei:rdg/child::tei:add[@place = 'interlinear one line above'][@hand = '#Otfrid']])"/>
@@ -601,7 +721,7 @@
                 <xsl:text>interlinear above and right margin: </xsl:text>
                 <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Praefatio']][child::tei:rdg/child::tei:add[@place = 'interlinear above and right margin']])"/>
                 <p class="statistics-level-4">
-                    <xsl:text>Main scribe: </xsl:text>
+                    <xsl:text>Writer of the main text: </xsl:text>
                     <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Praefatio']][child::tei:rdg/child::tei:add[@place = 'interlinear above and right margin'][@hand = '#scr']])"/>
                     <xsl:text> / Otfrid: </xsl:text>
                     <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Praefatio']][child::tei:rdg/child::tei:add[@place = 'interlinear above and right margin'][@hand = '#Otfrid']])"/>
@@ -616,7 +736,7 @@
                 <xsl:text>right margin: </xsl:text>
                 <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Praefatio']][child::tei:rdg/child::tei:add[@place = 'right margin']])"/>
                 <p class="statistics-level-4">
-                    <xsl:text>Main scribe: </xsl:text>
+                    <xsl:text>Writer of the main text: </xsl:text>
                     <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Praefatio']][child::tei:rdg/child::tei:add[@place = 'right margin'][@hand = '#scr']])"/>
                     <xsl:text> / Otfrid: </xsl:text>
                     <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Praefatio']][child::tei:rdg/child::tei:add[@place = 'right margin'][@hand = '#Otfrid']])"/>
@@ -631,7 +751,7 @@
                 <xsl:text>left margin: </xsl:text>
                 <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Praefatio']][child::tei:rdg/child::tei:add[@place = 'left margin']])"/>
                 <p class="statistics-level-4">
-                    <xsl:text>Main scribe: </xsl:text>
+                    <xsl:text>Writer of the main text: </xsl:text>
                     <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Praefatio']][child::tei:rdg/child::tei:add[@place = 'left margin'][@hand = '#scr']])"/>
                     <xsl:text> / Otfrid: </xsl:text>
                     <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Praefatio']][child::tei:rdg/child::tei:add[@place = 'left margin'][@hand = '#Otfrid']])"/>
@@ -646,7 +766,7 @@
                 <xsl:text>upper margin: </xsl:text>
                 <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Praefatio']][child::tei:rdg/child::tei:add[@place = 'upper margin']])"/>
                 <p class="statistics-level-4">
-                    <xsl:text>Main scribe: </xsl:text>
+                    <xsl:text>Writer of the main text: </xsl:text>
                     <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Praefatio']][child::tei:rdg/child::tei:add[@place = 'upper margin'][@hand = '#scr']])"/>
                     <xsl:text> / Otfrid: </xsl:text>
                     <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Praefatio']][child::tei:rdg/child::tei:add[@place = 'upper margin'][@hand = '#Otfrid']])"/>
@@ -656,11 +776,27 @@
                     <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Praefatio']][child::tei:rdg/child::tei:add[@place = 'upper margin'][@hand = '#sec']])"/>
                 </p>
             </xsl:element>
+            <xsl:element name="div">
+                <xsl:attribute name="class" select="'statistics-level-3'"/>
+                <xsl:text>inline: </xsl:text>
+                <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Praefatio']][child::tei:rdg/child::tei:add[@place = 'inline']])"/>
+                <p class="statistics-level-4">
+                    <xsl:text>Writer of the main text: </xsl:text>
+                    <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Praefatio']][child::tei:rdg/child::tei:add[@place = 'inline'][@hand = '#scr']])"/>
+                    <xsl:text> / Otfrid: </xsl:text>
+                    <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Praefatio']][child::tei:rdg/child::tei:add[@place = 'inline'][@hand = '#Otfrid']])"/>
+                    <xsl:text> / Second glossator: </xsl:text>
+                    <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Praefatio']][child::tei:rdg/child::tei:add[@place = 'inline'][@hand = '#gl-2']])"/>
+                    <xsl:text> / Secondary writer(s): </xsl:text>
+                    <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Praefatio']][child::tei:rdg/child::tei:add[@place = 'inline'][@hand = '#sec']])"/>
+                </p>
+            </xsl:element>
             <xsl:element name="p">
                 <xsl:attribute name="class" select="'statistics-level-2'"/>
                 <xsl:attribute name="style" select="'margin-top: 1rem;'"/>
                 <xsl:text>By type of addition:</xsl:text>
             </xsl:element>
+            <xsl:variable name="root-element" select="root()"/>
             <xsl:for-each select="root()//tei:taxonomy[@xml:id = 'common-glosses']/tei:category/@xml:id">
                 <xsl:element name="div">
                     <xsl:attribute name="class" select="'statistics-level-3'"/>
@@ -669,14 +805,118 @@
                     <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Praefatio']][child::tei:rdg/child::tei:add[tokenize(@ana,' ') = $type]])"/>
                     <xsl:if test="count(root()//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Praefatio']][child::tei:rdg/child::tei:add[tokenize(@ana,' ') = $type]]) != 0">
                         <p class="statistics-level-4">
-                            <xsl:text>Main scribe: </xsl:text>
+                            <xsl:text>Writer of the main text: </xsl:text>
                             <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Praefatio']][child::tei:rdg/child::tei:add[tokenize(@ana,' ') = $type]][child::tei:rdg/child::tei:add[@hand = '#scr']])"/>
+                            <!-- add places - main scribe - start -->
+                            <xsl:if test="(current() = 'translation-into-Old-High-German') and (count(root($root-element)//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Praefatio']][child::tei:rdg/child::tei:add[tokenize(@ana,' ') = $type]][child::tei:rdg/child::tei:add[@hand = '#scr']]) != 0)">
+                                <xsl:text> (</xsl:text>
+                                <xsl:for-each select="distinct-values(root()//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Praefatio']][child::tei:rdg/child::tei:add[tokenize(@ana,' ') = $type]][child::tei:rdg/child::tei:add[@hand = '#scr']]/child::tei:rdg/child::tei:add/@place)">
+                                    <xsl:value-of select="current()"/>
+                                    <xsl:text>: </xsl:text>
+                                    <xsl:value-of select="count(root($root-element)//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Praefatio']][child::tei:rdg/child::tei:add[tokenize(@ana,' ') = $type]][child::tei:rdg/child::tei:add[@hand = '#scr']][child::tei:rdg/child::tei:add/@place = current()])"/>
+                                    <xsl:if test="position() != last()">
+                                        <xsl:text>, </xsl:text>
+                                    </xsl:if>
+                                </xsl:for-each>
+                                <xsl:text>)</xsl:text>
+                            </xsl:if>
+                            <xsl:if test="(current() = 'synonyms') and (count(root($root-element)//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Praefatio']][child::tei:rdg/child::tei:add[tokenize(@ana,' ') = $type]][child::tei:rdg/child::tei:add[@hand = '#scr']]) != 0)">
+                                <xsl:text> (</xsl:text>
+                                <xsl:for-each select="distinct-values(root()//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Praefatio']][child::tei:rdg/child::tei:add[tokenize(@ana,' ') = $type]][child::tei:rdg/child::tei:add[@hand = '#scr']]/child::tei:rdg/child::tei:add/@place)">
+                                    <xsl:value-of select="current()"/>
+                                    <xsl:text>: </xsl:text>
+                                    <xsl:value-of select="count(root($root-element)//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Praefatio']][child::tei:rdg/child::tei:add[tokenize(@ana,' ') = $type]][child::tei:rdg/child::tei:add[@hand = '#scr']][child::tei:rdg/child::tei:add/@place = current()])"/>
+                                    <xsl:if test="position() != last()">
+                                        <xsl:text>, </xsl:text>
+                                    </xsl:if>
+                                </xsl:for-each>
+                                <xsl:text>)</xsl:text>
+                            </xsl:if>
+                            <!-- add places - main scribe - end -->
                             <xsl:text> / Otfrid: </xsl:text>
                             <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Praefatio']][child::tei:rdg/child::tei:add[tokenize(@ana,' ') = $type]][child::tei:rdg/child::tei:add[@hand = '#Otfrid']])"/>
+                            <!-- add places - Otfrid - start -->
+                            <xsl:if test="(current() = 'translation-into-Old-High-German') and (count(root($root-element)//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Praefatio']][child::tei:rdg/child::tei:add[tokenize(@ana,' ') = $type]][child::tei:rdg/child::tei:add[@hand = '#Otfrid']]) != 0)">
+                                <xsl:text> (</xsl:text>
+                                <xsl:for-each select="distinct-values(root()//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Praefatio']][child::tei:rdg/child::tei:add[tokenize(@ana,' ') = $type]][child::tei:rdg/child::tei:add[@hand = '#Otfrid']]/child::tei:rdg/child::tei:add/@place)">
+                                    <xsl:value-of select="current()"/>
+                                    <xsl:text>: </xsl:text>
+                                    <xsl:value-of select="count(root($root-element)//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Praefatio']][child::tei:rdg/child::tei:add[tokenize(@ana,' ') = $type]][child::tei:rdg/child::tei:add[@hand = '#Otfrid']][child::tei:rdg/child::tei:add/@place = current()])"/>
+                                    <xsl:if test="position() != last()">
+                                        <xsl:text>, </xsl:text>
+                                    </xsl:if>
+                                </xsl:for-each>
+                                <xsl:text>)</xsl:text>
+                            </xsl:if>
+                            <xsl:if test="(current() = 'synonyms') and (count(root($root-element)//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Praefatio']][child::tei:rdg/child::tei:add[tokenize(@ana,' ') = $type]][child::tei:rdg/child::tei:add[@hand = '#Otfrid']]) != 0)">
+                                <xsl:text> (</xsl:text>
+                                <xsl:for-each select="distinct-values(root()//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Praefatio']][child::tei:rdg/child::tei:add[tokenize(@ana,' ') = $type]][child::tei:rdg/child::tei:add[@hand = '#Otfrid']]/child::tei:rdg/child::tei:add/@place)">
+                                    <xsl:value-of select="current()"/>
+                                    <xsl:text>: </xsl:text>
+                                    <xsl:value-of select="count(root($root-element)//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Praefatio']][child::tei:rdg/child::tei:add[tokenize(@ana,' ') = $type]][child::tei:rdg/child::tei:add[@hand = '#Otfrid']][child::tei:rdg/child::tei:add/@place = current()])"/>
+                                    <xsl:if test="position() != last()">
+                                        <xsl:text>, </xsl:text>
+                                    </xsl:if>
+                                </xsl:for-each>
+                                <xsl:text>)</xsl:text>
+                            </xsl:if>
+                            <!-- add places - end -->
                             <xsl:text> / Second glossator: </xsl:text>
                             <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Praefatio']][child::tei:rdg/child::tei:add[tokenize(@ana,' ') = $type]][child::tei:rdg/child::tei:add[@hand = '#gl-2']])"/>
+                            <!-- add places - second glossator - start -->
+                            <xsl:if test="(current() = 'translation-into-Old-High-German') and (count(root($root-element)//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Praefatio']][child::tei:rdg/child::tei:add[tokenize(@ana,' ') = $type]][child::tei:rdg/child::tei:add[@hand = '#gl-2']]) != 0)">
+                                <xsl:text> (</xsl:text>
+                                <xsl:for-each select="distinct-values(root()//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Praefatio']][child::tei:rdg/child::tei:add[tokenize(@ana,' ') = $type]][child::tei:rdg/child::tei:add[@hand = '#gl-2']]/child::tei:rdg/child::tei:add/@place)">
+                                    <xsl:value-of select="current()"/>
+                                    <xsl:text>: </xsl:text>
+                                    <xsl:value-of select="count(root($root-element)//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Praefatio']][child::tei:rdg/child::tei:add[tokenize(@ana,' ') = $type]][child::tei:rdg/child::tei:add[@hand = '#gl-2']][child::tei:rdg/child::tei:add/@place = current()])"/>
+                                    <xsl:if test="position() != last()">
+                                        <xsl:text>, </xsl:text>
+                                    </xsl:if>
+                                </xsl:for-each>
+                                <xsl:text>)</xsl:text>
+                            </xsl:if>
+                            <xsl:if test="(current() = 'synonyms') and (count(root($root-element)//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Praefatio']][child::tei:rdg/child::tei:add[tokenize(@ana,' ') = $type]][child::tei:rdg/child::tei:add[@hand = '#gl-2']]) != 0)">
+                                <xsl:text> (</xsl:text>
+                                <xsl:for-each select="distinct-values(root()//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Praefatio']][child::tei:rdg/child::tei:add[tokenize(@ana,' ') = $type]][child::tei:rdg/child::tei:add[@hand = '#gl-2']]/child::tei:rdg/child::tei:add/@place)">
+                                    <xsl:value-of select="current()"/>
+                                    <xsl:text>: </xsl:text>
+                                    <xsl:value-of select="count(root($root-element)//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Praefatio']][child::tei:rdg/child::tei:add[tokenize(@ana,' ') = $type]][child::tei:rdg/child::tei:add[@hand = '#gl-2']][child::tei:rdg/child::tei:add/@place = current()])"/>
+                                    <xsl:if test="position() != last()">
+                                        <xsl:text>, </xsl:text>
+                                    </xsl:if>
+                                </xsl:for-each>
+                                <xsl:text>)</xsl:text>
+                            </xsl:if>
+                            <!-- add places - end -->
                             <xsl:text> / Secondary writer(s): </xsl:text>
                             <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Praefatio']][child::tei:rdg/child::tei:add[tokenize(@ana,' ') = $type]][child::tei:rdg/child::tei:add[@hand = '#sec']])"/>
+                            <!-- add places - secondary writers - start -->
+                            <xsl:if test="(current() = 'translation-into-Old-High-German') and (count(root($root-element)//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Praefatio']][child::tei:rdg/child::tei:add[tokenize(@ana,' ') = $type]][child::tei:rdg/child::tei:add[@hand = '#sec']]) != 0)">
+                                <xsl:text> (</xsl:text>
+                                <xsl:for-each select="distinct-values(root()//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Praefatio']][child::tei:rdg/child::tei:add[tokenize(@ana,' ') = $type]][child::tei:rdg/child::tei:add[@hand = '#sec']]/child::tei:rdg/child::tei:add/@place)">
+                                    <xsl:value-of select="current()"/>
+                                    <xsl:text>: </xsl:text>
+                                    <xsl:value-of select="count(root($root-element)//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Praefatio']][child::tei:rdg/child::tei:add[tokenize(@ana,' ') = $type]][child::tei:rdg/child::tei:add[@hand = '#sec']][child::tei:rdg/child::tei:add/@place = current()])"/>
+                                    <xsl:if test="position() != last()">
+                                        <xsl:text>, </xsl:text>
+                                    </xsl:if>
+                                </xsl:for-each>
+                                <xsl:text>)</xsl:text>
+                            </xsl:if>
+                            <xsl:if test="(current() = 'synonyms') and (count(root($root-element)//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Praefatio']][child::tei:rdg/child::tei:add[tokenize(@ana,' ') = $type]][child::tei:rdg/child::tei:add[@hand = '#sec']]) != 0)">
+                                <xsl:text> (</xsl:text>
+                                <xsl:for-each select="distinct-values(root()//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Praefatio']][child::tei:rdg/child::tei:add[tokenize(@ana,' ') = $type]][child::tei:rdg/child::tei:add[@hand = '#sec']]/child::tei:rdg/child::tei:add/@place)">
+                                    <xsl:value-of select="current()"/>
+                                    <xsl:text>: </xsl:text>
+                                    <xsl:value-of select="count(root($root-element)//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Praefatio']][child::tei:rdg/child::tei:add[tokenize(@ana,' ') = $type]][child::tei:rdg/child::tei:add[@hand = '#sec']][child::tei:rdg/child::tei:add/@place = current()])"/>
+                                    <xsl:if test="position() != last()">
+                                        <xsl:text>, </xsl:text>
+                                    </xsl:if>
+                                </xsl:for-each>
+                                <xsl:text>)</xsl:text>
+                            </xsl:if>
+                            <!-- add places - end -->
                         </p>
                     </xsl:if>
                 </xsl:element>
@@ -765,7 +1005,7 @@
                 <xsl:text>interlinear above: </xsl:text>
                 <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Liber Primus']][child::tei:rdg/child::tei:add[@place = 'interlinear above']])"/>
                 <p class="statistics-level-4">
-                    <xsl:text>Main scribe: </xsl:text>
+                    <xsl:text>Writer of the main text: </xsl:text>
                     <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Liber Primus']][child::tei:rdg/child::tei:add[@place = 'interlinear above'][@hand = '#scr']])"/>
                     <xsl:text> / Otfrid: </xsl:text>
                     <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Liber Primus']][child::tei:rdg/child::tei:add[@place = 'interlinear above'][@hand = '#Otfrid']])"/>
@@ -780,7 +1020,7 @@
                 <xsl:text>interlinear below: </xsl:text>
                 <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Liber Primus']][child::tei:rdg/child::tei:add[@place = 'interlinear below']])"/>
                 <p class="statistics-level-4">
-                    <xsl:text>Main scribe: </xsl:text>
+                    <xsl:text>Writer of the main text: </xsl:text>
                     <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Liber Primus']][child::tei:rdg/child::tei:add[@place = 'interlinear below'][@hand = '#scr']])"/>
                     <xsl:text> / Otfrid: </xsl:text>
                     <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Liber Primus']][child::tei:rdg/child::tei:add[@place = 'interlinear below'][@hand = '#Otfrid']])"/>
@@ -795,7 +1035,7 @@
                 <xsl:text>interlinear one line above: </xsl:text>
                 <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Liber Primus']][child::tei:rdg/child::tei:add[@place = 'interlinear one line above']])"/>
                 <p class="statistics-level-4">
-                    <xsl:text>Main scribe: </xsl:text>
+                    <xsl:text>Writer of the main text: </xsl:text>
                     <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Liber Primus']][child::tei:rdg/child::tei:add[@place = 'interlinear one line above'][@hand = '#scr']])"/>
                     <xsl:text> / Otfrid: </xsl:text>
                     <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Liber Primus']][child::tei:rdg/child::tei:add[@place = 'interlinear one line above'][@hand = '#Otfrid']])"/>
@@ -810,7 +1050,7 @@
                 <xsl:text>interlinear above and right margin: </xsl:text>
                 <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Liber Primus']][child::tei:rdg/child::tei:add[@place = 'interlinear above and right margin']])"/>
                 <p class="statistics-level-4">
-                    <xsl:text>Main scribe: </xsl:text>
+                    <xsl:text>Writer of the main text: </xsl:text>
                     <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Liber Primus']][child::tei:rdg/child::tei:add[@place = 'interlinear above and right margin'][@hand = '#scr']])"/>
                     <xsl:text> / Otfrid: </xsl:text>
                     <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Liber Primus']][child::tei:rdg/child::tei:add[@place = 'interlinear above and right margin'][@hand = '#Otfrid']])"/>
@@ -825,7 +1065,7 @@
                 <xsl:text>right margin: </xsl:text>
                 <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Liber Primus']][child::tei:rdg/child::tei:add[@place = 'right margin']])"/>
                 <p class="statistics-level-4">
-                    <xsl:text>Main scribe: </xsl:text>
+                    <xsl:text>Writer of the main text: </xsl:text>
                     <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Liber Primus']][child::tei:rdg/child::tei:add[@place = 'right margin'][@hand = '#scr']])"/>
                     <xsl:text> / Otfrid: </xsl:text>
                     <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Liber Primus']][child::tei:rdg/child::tei:add[@place = 'right margin'][@hand = '#Otfrid']])"/>
@@ -840,7 +1080,7 @@
                 <xsl:text>left margin: </xsl:text>
                 <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Liber Primus']][child::tei:rdg/child::tei:add[@place = 'left margin']])"/>
                 <p class="statistics-level-4">
-                    <xsl:text>Main scribe: </xsl:text>
+                    <xsl:text>Writer of the main text: </xsl:text>
                     <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Liber Primus']][child::tei:rdg/child::tei:add[@place = 'left margin'][@hand = '#scr']])"/>
                     <xsl:text> / Otfrid: </xsl:text>
                     <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Liber Primus']][child::tei:rdg/child::tei:add[@place = 'left margin'][@hand = '#Otfrid']])"/>
@@ -855,7 +1095,7 @@
                 <xsl:text>upper margin: </xsl:text>
                 <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Liber Primus']][child::tei:rdg/child::tei:add[@place = 'upper margin']])"/>
                 <p class="statistics-level-4">
-                    <xsl:text>Main scribe: </xsl:text>
+                    <xsl:text>Writer of the main text: </xsl:text>
                     <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Liber Primus']][child::tei:rdg/child::tei:add[@place = 'upper margin'][@hand = '#scr']])"/>
                     <xsl:text> / Otfrid: </xsl:text>
                     <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Liber Primus']][child::tei:rdg/child::tei:add[@place = 'upper margin'][@hand = '#Otfrid']])"/>
@@ -865,11 +1105,27 @@
                     <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Liber Primus']][child::tei:rdg/child::tei:add[@place = 'upper margin'][@hand = '#sec']])"/>
                 </p>
             </xsl:element>
+            <xsl:element name="div">
+                <xsl:attribute name="class" select="'statistics-level-3'"/>
+                <xsl:text>inline: </xsl:text>
+                <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Liber Primus']][child::tei:rdg/child::tei:add[@place = 'inline']])"/>
+                <p class="statistics-level-4">
+                    <xsl:text>Writer of the main text: </xsl:text>
+                    <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Liber Primus']][child::tei:rdg/child::tei:add[@place = 'inline'][@hand = '#scr']])"/>
+                    <xsl:text> / Otfrid: </xsl:text>
+                    <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Liber Primus']][child::tei:rdg/child::tei:add[@place = 'inline'][@hand = '#Otfrid']])"/>
+                    <xsl:text> / Second glossator: </xsl:text>
+                    <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Liber Primus']][child::tei:rdg/child::tei:add[@place = 'inline'][@hand = '#gl-2']])"/>
+                    <xsl:text> / Secondary writer(s): </xsl:text>
+                    <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Liber Primus']][child::tei:rdg/child::tei:add[@place = 'inline'][@hand = '#sec']])"/>
+                </p>
+            </xsl:element>
             <xsl:element name="p">
                 <xsl:attribute name="class" select="'statistics-level-2'"/>
                 <xsl:attribute name="style" select="'margin-top: 1rem;'"/>
                 <xsl:text>By type of addition:</xsl:text>
             </xsl:element>
+            <xsl:variable name="root-element" select="root()"/>
             <xsl:for-each select="root()//tei:taxonomy[@xml:id = 'common-glosses']/tei:category/@xml:id">
                 <xsl:element name="div">
                     <xsl:attribute name="class" select="'statistics-level-3'"/>
@@ -878,14 +1134,118 @@
                     <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Liber Primus']][child::tei:rdg/child::tei:add[tokenize(@ana,' ') = $type]])"/>
                     <xsl:if test="count(root()//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Liber Primus']][child::tei:rdg/child::tei:add[tokenize(@ana,' ') = $type]]) != 0">
                         <p class="statistics-level-4">
-                            <xsl:text>Main scribe: </xsl:text>
+                            <xsl:text>Writer of the main text: </xsl:text>
                             <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Liber Primus']][child::tei:rdg/child::tei:add[tokenize(@ana,' ') = $type]][child::tei:rdg/child::tei:add[@hand = '#scr']])"/>
+                            <!-- add places - main scribe - start -->
+                            <xsl:if test="(current() = 'translation-into-Old-High-German') and (count(root($root-element)//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Liber Primus']][child::tei:rdg/child::tei:add[tokenize(@ana,' ') = $type]][child::tei:rdg/child::tei:add[@hand = '#scr']]) != 0)">
+                                <xsl:text> (</xsl:text>
+                                <xsl:for-each select="distinct-values(root()//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Liber Primus']][child::tei:rdg/child::tei:add[tokenize(@ana,' ') = $type]][child::tei:rdg/child::tei:add[@hand = '#scr']]/child::tei:rdg/child::tei:add/@place)">
+                                    <xsl:value-of select="current()"/>
+                                    <xsl:text>: </xsl:text>
+                                    <xsl:value-of select="count(root($root-element)//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Liber Primus']][child::tei:rdg/child::tei:add[tokenize(@ana,' ') = $type]][child::tei:rdg/child::tei:add[@hand = '#scr']][child::tei:rdg/child::tei:add/@place = current()])"/>
+                                    <xsl:if test="position() != last()">
+                                        <xsl:text>, </xsl:text>
+                                    </xsl:if>
+                                </xsl:for-each>
+                                <xsl:text>)</xsl:text>
+                            </xsl:if>
+                            <xsl:if test="(current() = 'synonyms') and (count(root($root-element)//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Liber Primus']][child::tei:rdg/child::tei:add[tokenize(@ana,' ') = $type]][child::tei:rdg/child::tei:add[@hand = '#scr']]) != 0)">
+                                <xsl:text> (</xsl:text>
+                                <xsl:for-each select="distinct-values(root()//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Liber Primus']][child::tei:rdg/child::tei:add[tokenize(@ana,' ') = $type]][child::tei:rdg/child::tei:add[@hand = '#scr']]/child::tei:rdg/child::tei:add/@place)">
+                                    <xsl:value-of select="current()"/>
+                                    <xsl:text>: </xsl:text>
+                                    <xsl:value-of select="count(root($root-element)//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Liber Primus']][child::tei:rdg/child::tei:add[tokenize(@ana,' ') = $type]][child::tei:rdg/child::tei:add[@hand = '#scr']][child::tei:rdg/child::tei:add/@place = current()])"/>
+                                    <xsl:if test="position() != last()">
+                                        <xsl:text>, </xsl:text>
+                                    </xsl:if>
+                                </xsl:for-each>
+                                <xsl:text>)</xsl:text>
+                            </xsl:if>
+                            <!-- add places - main scribe - end -->
                             <xsl:text> / Otfrid: </xsl:text>
                             <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Liber Primus']][child::tei:rdg/child::tei:add[tokenize(@ana,' ') = $type]][child::tei:rdg/child::tei:add[@hand = '#Otfrid']])"/>
+                            <!-- add places - Otfrid - start -->
+                            <xsl:if test="(current() = 'translation-into-Old-High-German') and (count(root($root-element)//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Liber Primus']][child::tei:rdg/child::tei:add[tokenize(@ana,' ') = $type]][child::tei:rdg/child::tei:add[@hand = '#Otfrid']]) != 0)">
+                                <xsl:text> (</xsl:text>
+                                <xsl:for-each select="distinct-values(root()//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Liber Primus']][child::tei:rdg/child::tei:add[tokenize(@ana,' ') = $type]][child::tei:rdg/child::tei:add[@hand = '#Otfrid']]/child::tei:rdg/child::tei:add/@place)">
+                                    <xsl:value-of select="current()"/>
+                                    <xsl:text>: </xsl:text>
+                                    <xsl:value-of select="count(root($root-element)//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Liber Primus']][child::tei:rdg/child::tei:add[tokenize(@ana,' ') = $type]][child::tei:rdg/child::tei:add[@hand = '#Otfrid']][child::tei:rdg/child::tei:add/@place = current()])"/>
+                                    <xsl:if test="position() != last()">
+                                        <xsl:text>, </xsl:text>
+                                    </xsl:if>
+                                </xsl:for-each>
+                                <xsl:text>)</xsl:text>
+                            </xsl:if>
+                            <xsl:if test="(current() = 'synonyms') and (count(root($root-element)//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Liber Primus']][child::tei:rdg/child::tei:add[tokenize(@ana,' ') = $type]][child::tei:rdg/child::tei:add[@hand = '#Otfrid']]) != 0)">
+                                <xsl:text> (</xsl:text>
+                                <xsl:for-each select="distinct-values(root()//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Liber Primus']][child::tei:rdg/child::tei:add[tokenize(@ana,' ') = $type]][child::tei:rdg/child::tei:add[@hand = '#Otfrid']]/child::tei:rdg/child::tei:add/@place)">
+                                    <xsl:value-of select="current()"/>
+                                    <xsl:text>: </xsl:text>
+                                    <xsl:value-of select="count(root($root-element)//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Liber Primus']][child::tei:rdg/child::tei:add[tokenize(@ana,' ') = $type]][child::tei:rdg/child::tei:add[@hand = '#Otfrid']][child::tei:rdg/child::tei:add/@place = current()])"/>
+                                    <xsl:if test="position() != last()">
+                                        <xsl:text>, </xsl:text>
+                                    </xsl:if>
+                                </xsl:for-each>
+                                <xsl:text>)</xsl:text>
+                            </xsl:if>
+                            <!-- add places - end -->
                             <xsl:text> / Second glossator: </xsl:text>
                             <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Liber Primus']][child::tei:rdg/child::tei:add[tokenize(@ana,' ') = $type]][child::tei:rdg/child::tei:add[@hand = '#gl-2']])"/>
+                            <!-- add places - second glossator - start -->
+                            <xsl:if test="(current() = 'translation-into-Old-High-German') and (count(root($root-element)//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Liber Primus']][child::tei:rdg/child::tei:add[tokenize(@ana,' ') = $type]][child::tei:rdg/child::tei:add[@hand = '#gl-2']]) != 0)">
+                                <xsl:text> (</xsl:text>
+                                <xsl:for-each select="distinct-values(root()//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Liber Primus']][child::tei:rdg/child::tei:add[tokenize(@ana,' ') = $type]][child::tei:rdg/child::tei:add[@hand = '#gl-2']]/child::tei:rdg/child::tei:add/@place)">
+                                    <xsl:value-of select="current()"/>
+                                    <xsl:text>: </xsl:text>
+                                    <xsl:value-of select="count(root($root-element)//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Liber Primus']][child::tei:rdg/child::tei:add[tokenize(@ana,' ') = $type]][child::tei:rdg/child::tei:add[@hand = '#gl-2']][child::tei:rdg/child::tei:add/@place = current()])"/>
+                                    <xsl:if test="position() != last()">
+                                        <xsl:text>, </xsl:text>
+                                    </xsl:if>
+                                </xsl:for-each>
+                                <xsl:text>)</xsl:text>
+                            </xsl:if>
+                            <xsl:if test="(current() = 'synonyms') and (count(root($root-element)//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Liber Primus']][child::tei:rdg/child::tei:add[tokenize(@ana,' ') = $type]][child::tei:rdg/child::tei:add[@hand = '#gl-2']]) != 0)">
+                                <xsl:text> (</xsl:text>
+                                <xsl:for-each select="distinct-values(root()//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Liber Primus']][child::tei:rdg/child::tei:add[tokenize(@ana,' ') = $type]][child::tei:rdg/child::tei:add[@hand = '#gl-2']]/child::tei:rdg/child::tei:add/@place)">
+                                    <xsl:value-of select="current()"/>
+                                    <xsl:text>: </xsl:text>
+                                    <xsl:value-of select="count(root($root-element)//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Liber Primus']][child::tei:rdg/child::tei:add[tokenize(@ana,' ') = $type]][child::tei:rdg/child::tei:add[@hand = '#gl-2']][child::tei:rdg/child::tei:add/@place = current()])"/>
+                                    <xsl:if test="position() != last()">
+                                        <xsl:text>, </xsl:text>
+                                    </xsl:if>
+                                </xsl:for-each>
+                                <xsl:text>)</xsl:text>
+                            </xsl:if>
+                            <!-- add places - end -->
                             <xsl:text> / Secondary writer(s): </xsl:text>
                             <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Liber Primus']][child::tei:rdg/child::tei:add[tokenize(@ana,' ') = $type]][child::tei:rdg/child::tei:add[@hand = '#sec']])"/>
+                            <!-- add places - secondary writers - start -->
+                            <xsl:if test="(current() = 'translation-into-Old-High-German') and (count(root($root-element)//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Liber Primus']][child::tei:rdg/child::tei:add[tokenize(@ana,' ') = $type]][child::tei:rdg/child::tei:add[@hand = '#sec']]) != 0)">
+                                <xsl:text> (</xsl:text>
+                                <xsl:for-each select="distinct-values(root()//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Liber Primus']][child::tei:rdg/child::tei:add[tokenize(@ana,' ') = $type]][child::tei:rdg/child::tei:add[@hand = '#sec']]/child::tei:rdg/child::tei:add/@place)">
+                                    <xsl:value-of select="current()"/>
+                                    <xsl:text>: </xsl:text>
+                                    <xsl:value-of select="count(root($root-element)//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Liber Primus']][child::tei:rdg/child::tei:add[tokenize(@ana,' ') = $type]][child::tei:rdg/child::tei:add[@hand = '#sec']][child::tei:rdg/child::tei:add/@place = current()])"/>
+                                    <xsl:if test="position() != last()">
+                                        <xsl:text>, </xsl:text>
+                                    </xsl:if>
+                                </xsl:for-each>
+                                <xsl:text>)</xsl:text>
+                            </xsl:if>
+                            <xsl:if test="(current() = 'synonyms') and (count(root($root-element)//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Liber Primus']][child::tei:rdg/child::tei:add[tokenize(@ana,' ') = $type]][child::tei:rdg/child::tei:add[@hand = '#sec']]) != 0)">
+                                <xsl:text> (</xsl:text>
+                                <xsl:for-each select="distinct-values(root()//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Liber Primus']][child::tei:rdg/child::tei:add[tokenize(@ana,' ') = $type]][child::tei:rdg/child::tei:add[@hand = '#sec']]/child::tei:rdg/child::tei:add/@place)">
+                                    <xsl:value-of select="current()"/>
+                                    <xsl:text>: </xsl:text>
+                                    <xsl:value-of select="count(root($root-element)//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Liber Primus']][child::tei:rdg/child::tei:add[tokenize(@ana,' ') = $type]][child::tei:rdg/child::tei:add[@hand = '#sec']][child::tei:rdg/child::tei:add/@place = current()])"/>
+                                    <xsl:if test="position() != last()">
+                                        <xsl:text>, </xsl:text>
+                                    </xsl:if>
+                                </xsl:for-each>
+                                <xsl:text>)</xsl:text>
+                            </xsl:if>
+                            <!-- add places - end -->
                         </p>
                     </xsl:if>
                 </xsl:element>
@@ -974,7 +1334,7 @@
                 <xsl:text>interlinear above: </xsl:text>
                 <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Liber Secundus']][child::tei:rdg/child::tei:add[@place = 'interlinear above']])"/>
                 <p class="statistics-level-4">
-                    <xsl:text>Main scribe: </xsl:text>
+                    <xsl:text>Writer of the main text: </xsl:text>
                     <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Liber Secundus']][child::tei:rdg/child::tei:add[@place = 'interlinear above'][@hand = '#scr']])"/>
                     <xsl:text> / Otfrid: </xsl:text>
                     <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Liber Secundus']][child::tei:rdg/child::tei:add[@place = 'interlinear above'][@hand = '#Otfrid']])"/>
@@ -989,7 +1349,7 @@
                 <xsl:text>interlinear below: </xsl:text>
                 <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Liber Secundus']][child::tei:rdg/child::tei:add[@place = 'interlinear below']])"/>
                 <p class="statistics-level-4">
-                    <xsl:text>Main scribe: </xsl:text>
+                    <xsl:text>Writer of the main text: </xsl:text>
                     <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Liber Secundus']][child::tei:rdg/child::tei:add[@place = 'interlinear below'][@hand = '#scr']])"/>
                     <xsl:text> / Otfrid: </xsl:text>
                     <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Liber Secundus']][child::tei:rdg/child::tei:add[@place = 'interlinear below'][@hand = '#Otfrid']])"/>
@@ -1004,7 +1364,7 @@
                 <xsl:text>interlinear one line above: </xsl:text>
                 <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Liber Secundus']][child::tei:rdg/child::tei:add[@place = 'interlinear one line above']])"/>
                 <p class="statistics-level-4">
-                    <xsl:text>Main scribe: </xsl:text>
+                    <xsl:text>Writer of the main text: </xsl:text>
                     <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Liber Secundus']][child::tei:rdg/child::tei:add[@place = 'interlinear one line above'][@hand = '#scr']])"/>
                     <xsl:text> / Otfrid: </xsl:text>
                     <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Liber Secundus']][child::tei:rdg/child::tei:add[@place = 'interlinear one line above'][@hand = '#Otfrid']])"/>
@@ -1019,7 +1379,7 @@
                 <xsl:text>interlinear above and right margin: </xsl:text>
                 <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Liber Secundus']][child::tei:rdg/child::tei:add[@place = 'interlinear above and right margin']])"/>
                 <p class="statistics-level-4">
-                    <xsl:text>Main scribe: </xsl:text>
+                    <xsl:text>Writer of the main text: </xsl:text>
                     <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Liber Secundus']][child::tei:rdg/child::tei:add[@place = 'interlinear above and right margin'][@hand = '#scr']])"/>
                     <xsl:text> / Otfrid: </xsl:text>
                     <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Liber Secundus']][child::tei:rdg/child::tei:add[@place = 'interlinear above and right margin'][@hand = '#Otfrid']])"/>
@@ -1034,7 +1394,7 @@
                 <xsl:text>right margin: </xsl:text>
                 <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Liber Secundus']][child::tei:rdg/child::tei:add[@place = 'right margin']])"/>
                 <p class="statistics-level-4">
-                    <xsl:text>Main scribe: </xsl:text>
+                    <xsl:text>Writer of the main text: </xsl:text>
                     <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Liber Secundus']][child::tei:rdg/child::tei:add[@place = 'right margin'][@hand = '#scr']])"/>
                     <xsl:text> / Otfrid: </xsl:text>
                     <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Liber Secundus']][child::tei:rdg/child::tei:add[@place = 'right margin'][@hand = '#Otfrid']])"/>
@@ -1049,7 +1409,7 @@
                 <xsl:text>left margin: </xsl:text>
                 <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Liber Secundus']][child::tei:rdg/child::tei:add[@place = 'left margin']])"/>
                 <p class="statistics-level-4">
-                    <xsl:text>Main scribe: </xsl:text>
+                    <xsl:text>Writer of the main text: </xsl:text>
                     <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Liber Secundus']][child::tei:rdg/child::tei:add[@place = 'left margin'][@hand = '#scr']])"/>
                     <xsl:text> / Otfrid: </xsl:text>
                     <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Liber Secundus']][child::tei:rdg/child::tei:add[@place = 'left margin'][@hand = '#Otfrid']])"/>
@@ -1064,7 +1424,7 @@
                 <xsl:text>upper margin: </xsl:text>
                 <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Liber Secundus']][child::tei:rdg/child::tei:add[@place = 'upper margin']])"/>
                 <p class="statistics-level-4">
-                    <xsl:text>Main scribe: </xsl:text>
+                    <xsl:text>Writer of the main text: </xsl:text>
                     <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Liber Secundus']][child::tei:rdg/child::tei:add[@place = 'upper margin'][@hand = '#scr']])"/>
                     <xsl:text> / Otfrid: </xsl:text>
                     <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Liber Secundus']][child::tei:rdg/child::tei:add[@place = 'upper margin'][@hand = '#Otfrid']])"/>
@@ -1074,11 +1434,27 @@
                     <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Liber Secundus']][child::tei:rdg/child::tei:add[@place = 'upper margin'][@hand = '#sec']])"/>
                 </p>
             </xsl:element>
+            <xsl:element name="div">
+                <xsl:attribute name="class" select="'statistics-level-3'"/>
+                <xsl:text>inline: </xsl:text>
+                <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Liber Secundus']][child::tei:rdg/child::tei:add[@place = 'inline']])"/>
+                <p class="statistics-level-4">
+                    <xsl:text>Writer of the main text: </xsl:text>
+                    <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Liber Secundus']][child::tei:rdg/child::tei:add[@place = 'inline'][@hand = '#scr']])"/>
+                    <xsl:text> / Otfrid: </xsl:text>
+                    <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Liber Secundus']][child::tei:rdg/child::tei:add[@place = 'inline'][@hand = '#Otfrid']])"/>
+                    <xsl:text> / Second glossator: </xsl:text>
+                    <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Liber Secundus']][child::tei:rdg/child::tei:add[@place = 'inline'][@hand = '#gl-2']])"/>
+                    <xsl:text> / Secondary writer(s): </xsl:text>
+                    <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Liber Secundus']][child::tei:rdg/child::tei:add[@place = 'inline'][@hand = '#sec']])"/>
+                </p>
+            </xsl:element>
             <xsl:element name="p">
                 <xsl:attribute name="class" select="'statistics-level-2'"/>
                 <xsl:attribute name="style" select="'margin-top: 1rem;'"/>
                 <xsl:text>By type of addition:</xsl:text>
             </xsl:element>
+            <xsl:variable name="root-element" select="root()"/>
             <xsl:for-each select="root()//tei:taxonomy[@xml:id = 'common-glosses']/tei:category/@xml:id">
                 <xsl:element name="div">
                     <xsl:attribute name="class" select="'statistics-level-3'"/>
@@ -1087,14 +1463,118 @@
                     <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Liber Secundus']][child::tei:rdg/child::tei:add[tokenize(@ana,' ') = $type]])"/>
                     <xsl:if test="count(root()//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Liber Secundus']][child::tei:rdg/child::tei:add[tokenize(@ana,' ') = $type]]) != 0">
                         <p class="statistics-level-4">
-                            <xsl:text>Main scribe: </xsl:text>
+                            <xsl:text>Writer of the main text: </xsl:text>
                             <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Liber Secundus']][child::tei:rdg/child::tei:add[tokenize(@ana,' ') = $type]][child::tei:rdg/child::tei:add[@hand = '#scr']])"/>
+                            <!-- add places - main writer - start -->
+                            <xsl:if test="(current() = 'translation-into-Old-High-German') and (count(root($root-element)//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Liber Secundus']][child::tei:rdg/child::tei:add[tokenize(@ana,' ') = $type]][child::tei:rdg/child::tei:add[@hand = '#scr']]) != 0)">
+                                <xsl:text> (</xsl:text>
+                                <xsl:for-each select="distinct-values(root()//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Liber Secundus']][child::tei:rdg/child::tei:add[tokenize(@ana,' ') = $type]][child::tei:rdg/child::tei:add[@hand = '#scr']]/child::tei:rdg/child::tei:add/@place)">
+                                    <xsl:value-of select="current()"/>
+                                    <xsl:text>: </xsl:text>
+                                    <xsl:value-of select="count(root($root-element)//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Liber Secundus']][child::tei:rdg/child::tei:add[tokenize(@ana,' ') = $type]][child::tei:rdg/child::tei:add[@hand = '#scr']][child::tei:rdg/child::tei:add/@place = current()])"/>
+                                    <xsl:if test="position() != last()">
+                                        <xsl:text>, </xsl:text>
+                                    </xsl:if>
+                                </xsl:for-each>
+                                <xsl:text>)</xsl:text>
+                            </xsl:if>
+                            <xsl:if test="(current() = 'synonyms') and (count(root($root-element)//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Liber Secundus']][child::tei:rdg/child::tei:add[tokenize(@ana,' ') = $type]][child::tei:rdg/child::tei:add[@hand = '#scr']]) != 0)">
+                                <xsl:text> (</xsl:text>
+                                <xsl:for-each select="distinct-values(root()//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Liber Secundus']][child::tei:rdg/child::tei:add[tokenize(@ana,' ') = $type]][child::tei:rdg/child::tei:add[@hand = '#scr']]/child::tei:rdg/child::tei:add/@place)">
+                                    <xsl:value-of select="current()"/>
+                                    <xsl:text>: </xsl:text>
+                                    <xsl:value-of select="count(root($root-element)//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Liber Secundus']][child::tei:rdg/child::tei:add[tokenize(@ana,' ') = $type]][child::tei:rdg/child::tei:add[@hand = '#scr']][child::tei:rdg/child::tei:add/@place = current()])"/>
+                                    <xsl:if test="position() != last()">
+                                        <xsl:text>, </xsl:text>
+                                    </xsl:if>
+                                </xsl:for-each>
+                                <xsl:text>)</xsl:text>
+                            </xsl:if>
+                            <!-- add places - end -->
                             <xsl:text> / Otfrid: </xsl:text>
                             <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Liber Secundus']][child::tei:rdg/child::tei:add[tokenize(@ana,' ') = $type]][child::tei:rdg/child::tei:add[@hand = '#Otfrid']])"/>
+                            <!-- add places - Otfrid - start -->
+                            <xsl:if test="(current() = 'translation-into-Old-High-German') and (count(root($root-element)//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Liber Secundus']][child::tei:rdg/child::tei:add[tokenize(@ana,' ') = $type]][child::tei:rdg/child::tei:add[@hand = '#Otfrid']]) != 0)">
+                                <xsl:text> (</xsl:text>
+                                <xsl:for-each select="distinct-values(root()//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Liber Secundus']][child::tei:rdg/child::tei:add[tokenize(@ana,' ') = $type]][child::tei:rdg/child::tei:add[@hand = '#Otfrid']]/child::tei:rdg/child::tei:add/@place)">
+                                    <xsl:value-of select="current()"/>
+                                    <xsl:text>: </xsl:text>
+                                    <xsl:value-of select="count(root($root-element)//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Liber Secundus']][child::tei:rdg/child::tei:add[tokenize(@ana,' ') = $type]][child::tei:rdg/child::tei:add[@hand = '#Otfrid']][child::tei:rdg/child::tei:add/@place = current()])"/>
+                                    <xsl:if test="position() != last()">
+                                        <xsl:text>, </xsl:text>
+                                    </xsl:if>
+                                </xsl:for-each>
+                                <xsl:text>)</xsl:text>
+                            </xsl:if>
+                            <xsl:if test="(current() = 'synonyms') and (count(root($root-element)//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Liber Secundus']][child::tei:rdg/child::tei:add[tokenize(@ana,' ') = $type]][child::tei:rdg/child::tei:add[@hand = '#Otfrid']]) != 0)">
+                                <xsl:text> (</xsl:text>
+                                <xsl:for-each select="distinct-values(root()//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Liber Secundus']][child::tei:rdg/child::tei:add[tokenize(@ana,' ') = $type]][child::tei:rdg/child::tei:add[@hand = '#Otfrid']]/child::tei:rdg/child::tei:add/@place)">
+                                    <xsl:value-of select="current()"/>
+                                    <xsl:text>: </xsl:text>
+                                    <xsl:value-of select="count(root($root-element)//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Liber Secundus']][child::tei:rdg/child::tei:add[tokenize(@ana,' ') = $type]][child::tei:rdg/child::tei:add[@hand = '#Otfrid']][child::tei:rdg/child::tei:add/@place = current()])"/>
+                                    <xsl:if test="position() != last()">
+                                        <xsl:text>, </xsl:text>
+                                    </xsl:if>
+                                </xsl:for-each>
+                                <xsl:text>)</xsl:text>
+                            </xsl:if>
+                            <!-- add places - end -->
                             <xsl:text> / Second glossator: </xsl:text>
                             <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Liber Secundus']][child::tei:rdg/child::tei:add[tokenize(@ana,' ') = $type]][child::tei:rdg/child::tei:add[@hand = '#gl-2']])"/>
+                            <!-- add places - second glossator - start -->
+                            <xsl:if test="(current() = 'translation-into-Old-High-German') and (count(root($root-element)//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Liber Secundus']][child::tei:rdg/child::tei:add[tokenize(@ana,' ') = $type]][child::tei:rdg/child::tei:add[@hand = '#gl-2']]) != 0)">
+                                <xsl:text> (</xsl:text>
+                                <xsl:for-each select="distinct-values(root()//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Liber Secundus']][child::tei:rdg/child::tei:add[tokenize(@ana,' ') = $type]][child::tei:rdg/child::tei:add[@hand = '#gl-2']]/child::tei:rdg/child::tei:add/@place)">
+                                    <xsl:value-of select="current()"/>
+                                    <xsl:text>: </xsl:text>
+                                    <xsl:value-of select="count(root($root-element)//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Liber Secundus']][child::tei:rdg/child::tei:add[tokenize(@ana,' ') = $type]][child::tei:rdg/child::tei:add[@hand = '#gl-2']][child::tei:rdg/child::tei:add/@place = current()])"/>
+                                    <xsl:if test="position() != last()">
+                                        <xsl:text>, </xsl:text>
+                                    </xsl:if>
+                                </xsl:for-each>
+                                <xsl:text>)</xsl:text>
+                            </xsl:if>
+                            <xsl:if test="(current() = 'synonyms') and (count(root($root-element)//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Liber Secundus']][child::tei:rdg/child::tei:add[tokenize(@ana,' ') = $type]][child::tei:rdg/child::tei:add[@hand = '#gl-2']]) != 0)">
+                                <xsl:text> (</xsl:text>
+                                <xsl:for-each select="distinct-values(root()//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Liber Secundus']][child::tei:rdg/child::tei:add[tokenize(@ana,' ') = $type]][child::tei:rdg/child::tei:add[@hand = '#gl-2']]/child::tei:rdg/child::tei:add/@place)">
+                                    <xsl:value-of select="current()"/>
+                                    <xsl:text>: </xsl:text>
+                                    <xsl:value-of select="count(root($root-element)//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Liber Secundus']][child::tei:rdg/child::tei:add[tokenize(@ana,' ') = $type]][child::tei:rdg/child::tei:add[@hand = '#gl-2']][child::tei:rdg/child::tei:add/@place = current()])"/>
+                                    <xsl:if test="position() != last()">
+                                        <xsl:text>, </xsl:text>
+                                    </xsl:if>
+                                </xsl:for-each>
+                                <xsl:text>)</xsl:text>
+                            </xsl:if>
+                            <!-- add places - end -->
                             <xsl:text> / Secondary writer(s): </xsl:text>
                             <xsl:value-of select="count(root()//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Liber Secundus']][child::tei:rdg/child::tei:add[tokenize(@ana,' ') = $type]][child::tei:rdg/child::tei:add[@hand = '#sec']])"/>
+                            <!-- add places - secondary writers - start -->
+                            <xsl:if test="(current() = 'translation-into-Old-High-German') and (count(root($root-element)//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Liber Secundus']][child::tei:rdg/child::tei:add[tokenize(@ana,' ') = $type]][child::tei:rdg/child::tei:add[@hand = '#sec']]) != 0)">
+                                <xsl:text> (</xsl:text>
+                                <xsl:for-each select="distinct-values(root()//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Liber Secundus']][child::tei:rdg/child::tei:add[tokenize(@ana,' ') = $type]][child::tei:rdg/child::tei:add[@hand = '#sec']]/child::tei:rdg/child::tei:add/@place)">
+                                    <xsl:value-of select="current()"/>
+                                    <xsl:text>: </xsl:text>
+                                    <xsl:value-of select="count(root($root-element)//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Liber Secundus']][child::tei:rdg/child::tei:add[tokenize(@ana,' ') = $type]][child::tei:rdg/child::tei:add[@hand = '#sec']][child::tei:rdg/child::tei:add/@place = current()])"/>
+                                    <xsl:if test="position() != last()">
+                                        <xsl:text>, </xsl:text>
+                                    </xsl:if>
+                                </xsl:for-each>
+                                <xsl:text>)</xsl:text>
+                            </xsl:if>
+                            <xsl:if test="(current() = 'synonyms') and (count(root($root-element)//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Liber Secundus']][child::tei:rdg/child::tei:add[tokenize(@ana,' ') = $type]][child::tei:rdg/child::tei:add[@hand = '#sec']]) != 0)">
+                                <xsl:text> (</xsl:text>
+                                <xsl:for-each select="distinct-values(root()//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Liber Secundus']][child::tei:rdg/child::tei:add[tokenize(@ana,' ') = $type]][child::tei:rdg/child::tei:add[@hand = '#sec']]/child::tei:rdg/child::tei:add/@place)">
+                                    <xsl:value-of select="current()"/>
+                                    <xsl:text>: </xsl:text>
+                                    <xsl:value-of select="count(root($root-element)//tei:app[@type = 'gloss'][ancestor::tei:div[@type = 'page-of-Hertz-edition'][@n = 'Liber Secundus']][child::tei:rdg/child::tei:add[tokenize(@ana,' ') = $type]][child::tei:rdg/child::tei:add[@hand = '#sec']][child::tei:rdg/child::tei:add/@place = current()])"/>
+                                    <xsl:if test="position() != last()">
+                                        <xsl:text>, </xsl:text>
+                                    </xsl:if>
+                                </xsl:for-each>
+                                <xsl:text>)</xsl:text>
+                            </xsl:if>
+                            <!-- add places - end -->
                         </p>
                     </xsl:if>
                 </xsl:element>
@@ -1305,13 +1785,13 @@
                     <xsl:when test="@resp = 'scr-1'">
                         <xsl:element name="span">
                             <xsl:attribute name="style" select="'font-style: italic;'"/>
-                            <xsl:text>main scribe</xsl:text>
+                            <xsl:text>Writer of the main text</xsl:text>
                         </xsl:element>
                     </xsl:when>
                     <xsl:when test="@resp = 'scr'">
                         <xsl:element name="span">
                             <xsl:attribute name="style" select="'font-style: italic;'"/>
-                            <xsl:text>main scribe</xsl:text>
+                            <xsl:text>Writer of the main text</xsl:text>
                         </xsl:element>
                     </xsl:when>
                     <xsl:when test="@resp = 'sec'">
@@ -1352,13 +1832,13 @@
                 <xsl:when test="@resp = 'scr-1'">
                     <xsl:element name="span">
                         <xsl:attribute name="style" select="'font-style: italic;'"/>
-                        <xsl:text>main scribe</xsl:text>
+                        <xsl:text>Writer of the main text</xsl:text>
                     </xsl:element>
                 </xsl:when>
                 <xsl:when test="@resp = 'scr'">
                     <xsl:element name="span">
                         <xsl:attribute name="style" select="'font-style: italic;'"/>
-                        <xsl:text>main scribe</xsl:text>
+                        <xsl:text>Writer of the main text</xsl:text>
                     </xsl:element>
                 </xsl:when>
                 <xsl:when test="@resp = 'sec'">
@@ -1407,7 +1887,7 @@
             </xsl:if>
             <span class="set-margin-left-and-right"><i class="far fa-hand-paper"></i></span>
             <xsl:if test="substring-after(@hand,'#') = 'scr-1' or substring-after(@hand,'#') = 'scr'">
-                <xsl:text>main scribe</xsl:text>
+                <xsl:text>Writer of the main text</xsl:text>
             </xsl:if>
             <xsl:if test="substring-after(@hand,'#') = 'Otfrid'">
                 <xsl:text>Otfrid</xsl:text>
@@ -1535,7 +2015,7 @@
         <xsl:value-of select="@place"/>
         <span class="set-margin-left-and-right"><i class="far fa-hand-paper"></i></span>
         <xsl:if test="substring-after(parent::tei:rdg/@hand,'#') = 'scr-1' or substring-after(parent::tei:rdg/@hand,'#') = 'scr'">
-            <xsl:text>main scribe</xsl:text>
+            <xsl:text>Writer of the main text</xsl:text>
         </xsl:if>
         <xsl:if test="substring-after(parent::tei:rdg/@hand,'#') = 'Otfrid'">
             <xsl:text>Otfrid</xsl:text>
@@ -1599,7 +2079,7 @@
             <xsl:element name="span">
                 <xsl:attribute name="class" select="'emphasize-hand'"/>
                 <xsl:if test="substring-after(@hand,'#') = 'scr-1' or substring-after(@hand,'#') = 'scr'">
-                    <xsl:text>main scribe</xsl:text>
+                    <xsl:text>Writer of the main text</xsl:text>
                 </xsl:if>
                 <xsl:if test="substring-after(@hand,'#') = 'sec'">
                     <xsl:text>secondary scribe</xsl:text>
@@ -1665,7 +2145,7 @@
         <xsl:element name="span">
             <xsl:attribute name="class" select="'emphasize-hand'"/>
             <xsl:if test="substring-after(@hand,'#') = 'scr-1' or substring-after(@hand,'#') = 'scr'">
-                <xsl:text>main scribe</xsl:text>
+                <xsl:text>Writer of the main text</xsl:text>
             </xsl:if>
             <xsl:if test="substring-after(@hand,'#') = 'Otfrid'">
                 <xsl:text>Otfrid</xsl:text>
@@ -1797,7 +2277,7 @@
             <xsl:element name="span">
                 <xsl:attribute name="class" select="'emphasize-hand'"/>
                 <xsl:if test="substring-after(@hand,'#') = 'scr-1' or substring-after(@hand,'#') = 'scr'">
-                    <xsl:text>main scribe</xsl:text>
+                    <xsl:text>Writer of the main text</xsl:text>
                 </xsl:if>
                 <xsl:if test="substring-after(@hand,'#') = 'sec'">
                     <xsl:text>secondary scribe</xsl:text>
@@ -1860,7 +2340,7 @@
             <xsl:text> - </xsl:text>
             <xsl:element name="span">
                 <xsl:if test="substring-after(@hand,'#') = 'scr-1' or substring-after(@hand,'#') = 'scr'">
-                    <xsl:text>main scribe</xsl:text>
+                    <xsl:text>Writer of the main text</xsl:text>
                 </xsl:if>
                 <xsl:if test="substring-after(@hand,'#') = 'Otfrid'">
                     <xsl:text>Otfrid</xsl:text>

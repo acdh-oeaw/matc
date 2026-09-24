@@ -1,4 +1,5 @@
 import FlexSearch from "./flexsearch.bundle.module.min.js";
+
 $(window).on('load', function(){
 	
     document.getElementById("form-subgroup-type-of-intervention").style = "display: none";
@@ -11,10 +12,13 @@ $(window).on('load', function(){
 	})
 	.done(function(data) {
 		let jsonQuotes = data;
+        const latinEncoder = new FlexSearch.Encoder()
+            .addMapper(new Map([["u","v"],["ę","e"]]))
+            .addMatcher("ae","e");
         documentOfQuotes = new FlexSearch.Document({
             document: {
                 id: "id",
-                index: ["quote_normalized","quote_critical"],
+                index: [{ field: "quote_normalized", encoder: latinEncoder },{ field: "quote_critical", encoder: latinEncoder }],
                 store: ["id_of_quote","quote_normalized","quote_critical","link"]
             }
         });
@@ -29,10 +33,13 @@ $(window).on('load', function(){
 	})
 	.done(function(data) {
 		jsonInterventions = data;
+        const latinEncoder = new FlexSearch.Encoder()
+            .addMapper(new Map([["u","v"],["ę","e"]]))
+            .addMatcher("ae","e");;
         documentOfInterventions = new FlexSearch.Document({
             document: {
                 id: "id",
-                index: ["id_of_intervention","type_of_intervention","lemma:text_of_lemma","reading:reading_normalized","reading:reading_critical"]
+                index: ["id_of_intervention","type_of_intervention",{ field: "lemma:text_of_lemma", encoder: latinEncoder },{ field: "reading:reading_normalized", encoder: latinEncoder },{ field: "reading:reading_critical", encoder: latinEncoder }]
             }
         });
         jsonInterventions.interventions.forEach(intervention => {

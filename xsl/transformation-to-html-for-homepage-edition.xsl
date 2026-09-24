@@ -811,7 +811,7 @@
                     <xsl:attribute name="type" select="'button'"/>
                     <xsl:attribute name="class" select="'btn btn-sm btn-outline-dark'"/>
                     <xsl:attribute name="data-toggle" select="'popover'"/>
-                    <xsl:attribute name="title" select="'Quotation'"/>
+                    <xsl:attribute name="title" select="'How to cite'"/>
                     <xsl:attribute name="data-content">
                         <xsl:text>Text variation: </xsl:text>
                         <xsl:value-of select="@xml:id"/>
@@ -844,7 +844,7 @@
                     <xsl:attribute name="type" select="'button'"/>
                     <xsl:attribute name="class" select="'btn btn-sm btn-outline-dark'"/>
                     <xsl:attribute name="data-toggle" select="'popover'"/>
-                    <xsl:attribute name="title" select="'Quotation'"/>
+                    <xsl:attribute name="title" select="'How to cite'"/>
                     <xsl:attribute name="data-content">
                         <xsl:text>Reference sign: </xsl:text>
                         <xsl:value-of select="@xml:id"/>
@@ -877,7 +877,7 @@
                     <xsl:attribute name="type" select="'button'"/>
                     <xsl:attribute name="class" select="'btn btn-sm btn-outline-dark'"/>
                     <xsl:attribute name="data-toggle" select="'popover'"/>
-                    <xsl:attribute name="title" select="'Quotation'"/>
+                    <xsl:attribute name="title" select="'How to cite'"/>
                     <xsl:attribute name="data-content">
                         <xsl:text>Emendation: </xsl:text>
                         <xsl:value-of select="@xml:id"/>
@@ -985,7 +985,7 @@
                     <xsl:attribute name="type" select="'button'"/>
                     <xsl:attribute name="class" select="'btn btn-sm btn-outline-dark'"/>
                     <xsl:attribute name="data-toggle" select="'popover'"/>
-                    <xsl:attribute name="title" select="'Quotation'"/>
+                    <xsl:attribute name="title" select="'How to cite'"/>
                     <xsl:attribute name="data-content">
                         <xsl:text>Gloss: </xsl:text>
                         <xsl:value-of select="@xml:id"/>
@@ -1019,7 +1019,7 @@
                     <xsl:attribute name="type" select="'button'"/>
                     <xsl:attribute name="class" select="'btn btn-sm btn-outline-dark'"/>
                     <xsl:attribute name="data-toggle" select="'popover'"/>
-                    <xsl:attribute name="title" select="'Quotation'"/>
+                    <xsl:attribute name="title" select="'How to cite'"/>
                     <xsl:attribute name="data-content">
                         <xsl:text>Annotation sign: </xsl:text>
                         <xsl:value-of select="@xml:id"/>
@@ -1053,7 +1053,7 @@
                     <xsl:attribute name="type" select="'button'"/>
                     <xsl:attribute name="class" select="'btn btn-sm btn-outline-dark'"/>
                     <xsl:attribute name="data-toggle" select="'popover'"/>
-                    <xsl:attribute name="title" select="'Quotation'"/>
+                    <xsl:attribute name="title" select="'How to cite'"/>
                     <xsl:attribute name="data-content">
                         <xsl:text>Rubrication: </xsl:text>
                         <xsl:value-of select="@xml:id"/>
