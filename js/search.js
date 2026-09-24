@@ -13,7 +13,7 @@ $(window).on('load', function(){
 	.done(function(data) {
 		let jsonQuotes = data;
         const latinEncoder = new FlexSearch.Encoder()
-            .addMapper(new Map([["u","v"],["ę","e"]]))
+            .addMapper("ę","e").addMapper("u","v")
             .addMatcher("ae","e");
         documentOfQuotes = new FlexSearch.Document({
             document: {
@@ -34,7 +34,7 @@ $(window).on('load', function(){
 	.done(function(data) {
 		jsonInterventions = data;
         const latinEncoder = new FlexSearch.Encoder()
-            .addMapper(new Map([["u","v"],["ę","e"]]))
+            .addMapper("ę","e").addMapper("u","v")
             .addMatcher("ae","e");;
         documentOfInterventions = new FlexSearch.Document({
             document: {
