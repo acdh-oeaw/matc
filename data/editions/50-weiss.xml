@@ -21,8 +21,8 @@
          </editionStmt>
          <publicationStmt>
             <publisher>
-               <name type="org">Herzog August Bibliothek Wolfenbüttel</name>
-               <ptr target="http://www.hab.de"/>
+               <name type="org">Östtereichische Akademie der Wissenschaften</name>
+               <ptr target="http://www.oeaw.ac.at"/>
             </publisher>
             <date when="2011-04-01" type="issued">01.04.2011</date>
             <date when="2011-04-01" type="digitised">01.04.2011</date>
