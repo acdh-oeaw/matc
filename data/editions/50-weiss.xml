@@ -94,8 +94,8 @@
                      </supportDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote xml:id="scr">writer of the main text, who alternated very often
-                        with Otfrid of Wissembourg.</handNote>
+                     <handNote xml:id="scr">writer of the main text, who alternated very often with
+                        Otfrid of Wissembourg.</handNote>
                      <handNote xml:id="Otfrid">Main glossator and writer of the main text. The
                         traits of his hand are identical to those that Wolfgang Kleiber (1971)
                         attributed to Otfrid of Wissembourg</handNote>
@@ -151,16 +151,18 @@
                <p style="subparagraph">change of e/ae/e caudata;</p>
                <p style="subparagraph">change regarding 'h' at word beginning;</p>
                <p style="subparagraph">change of i/y (e.g. sillaba/syllaba;</p>
-               <p style="subparagraph">change of i/e when morphologically insignificant (e.g. elementum/elimentum;
-                  elegantiora/eligantiora);</p>
-               <p style="subparagraph">change of t/tt and p/pp (e.g. litera/littera; quatuor/quattuor;
-                  apellantur/appellantur);</p>
-               <p style="subparagraph">change regarding 'ms'/'mps' and similars (e.g. hiems/hiemps)</p>
+               <p style="subparagraph">change of i/e when morphologically insignificant (e.g.
+                  elementum/elimentum; elegantiora/eligantiora);</p>
+               <p style="subparagraph">change of t/tt and p/pp (e.g. litera/littera;
+                  quatuor/quattuor; apellantur/appellantur);</p>
+               <p style="subparagraph">change regarding 'ms'/'mps' and similars (e.g.
+                  hiems/hiemps)</p>
                <p style="subparagraph">change of c/qu (e.g. secuntur/sequuntur)</p>
                <p style="subparagraph">negligible change of d/t (e.g. apud/aput)</p>
-               <p style="subparagraph">assimilations (e.g. inliterata/illiterata; subposui/supposui);</p>
-               <p style="subparagraph">differences from Hertz' edition in the use of capital letters for proper
-                  names.</p>
+               <p style="subparagraph">assimilations (e.g. inliterata/illiterata;
+                  subposui/supposui);</p>
+               <p style="subparagraph">differences from Hertz' edition in the use of capital letters
+                  for proper names.</p>
                <p>Common abbreviations for 'et', 'per', 'quae', 'quia', and word endings have been
                   silently expanded. The Irish abbreviations for 'et' (7-shaped form), 'quae' (q
                   followed by trigon), and 'est', as well as the abbreviations for 'scilicet', 'vel'
@@ -5665,7 +5667,7 @@
                   <lem wit="#EDITION">pro <foreign xml:lang="grc">Θρῇσσα</foreign></lem>
                   <rdg wit="#COD_50"><add place="interlinear above" hand="#Otfrid"
                         facs="#zone.4v.24" ana="#Greek-glosses"><g ref="#idest"/> terra</add></rdg>
-                  <note resp="#CG" type="explanation" target="#gloss-24-11-2"> The gloss occurs also
+                  <note resp="#CG" type="explanation" target="#gloss-24-11-2">The gloss occurs also
                      in MSS München, BSB, Clm 280a, f. 6r and Clm 18375, f. 11v.</note>
                </app>
                <quote source="#EDITION" n="II 24,12"><foreign xml:lang="grc">ἧττον</foreign> pro
@@ -5676,7 +5678,7 @@
                   <lem wit="#EDITION">pro <foreign xml:lang="grc">ἧσσον</foreign></lem>
                   <rdg wit="#COD_50"><add place="interlinear above" hand="#Otfrid"
                         facs="#zone.4v.25" ana="#Greek-glosses"><g ref="#idest"/> uictus</add></rdg>
-                  <note resp="#CG" type="explanation" target="#gloss-24-12-1"> The gloss occurs also
+                  <note resp="#CG" type="explanation" target="#gloss-24-12-1">The gloss occurs also
                      in MS Köln 200, f. 6v and MSS München, BSB, Clm 280a, f. 6r and Clm 18375, f.
                      11v.</note>
                </app>
@@ -10065,8 +10067,8 @@
                      interpretation that did not satisfied Otfrid and triggered his further research
                      or again as a gloss that another glossator added indipendently from Otfrid. See
                      also the gloss: 'lapis quem deuorauit saturnus pro ioue' with which Otfrid
-                     explained the word 'abaddir' of Priscian II 47, 9 <ref type="internal-URL" corresp="#gloss-47-9-1"
-                     /></note>
+                     explained the word 'abaddir' of Priscian II 47, 9 <ref type="internal-URL"
+                        corresp="#gloss-47-9-1"/></note>
                </app>
                <app type="gloss" xml:id="gloss-42-9-4">
                   <lem wit="#EDITION">abdomen</lem>
@@ -12117,8 +12119,8 @@
                <quote source="#EDITION" n="II 49,20">mutet n in r, ut irrito, irriguus, <lb n="22"
                      ed="8v"/> in reliquis quoque euphonia hoc</quote>
                <quote source="#EDITION" n="II 49,21">exigente <gap reason="deleted"
-                     extent="approximately 15 letters" quantity="15" unit="char"/> seruare et irruo, irrumpo, dicere, cum nec
-                  in simpli<lb n="23" break="no" ed="8v"/>cibus</quote>
+                     extent="approximately 15 letters" quantity="15" unit="char"/> seruare et irruo,
+                  irrumpo, dicere, cum nec in simpli<lb n="23" break="no" ed="8v"/>cibus</quote>
                <quote source="#EDITION" n="II 49,22">inueniatur dictionibus n ante r. s quoque
                   sequente uel t uel i uel u loco</quote>
                <app type="rubrication" xml:id="rubr-49-22-1">
@@ -12630,8 +12632,8 @@
                         xml:lang="la" ana="#glosses-elucidating-the-main-text">
                         <gap unit="char" quantity="2" reason="illegible"/><supplied resp="#CG"
                            >co</supplied>nstat syllaba <gap unit="char" quantity="3"
-                           reason="illegible"/><supplied resp="#CG">lit</supplied>teris · dictio <gap
-                           reason="illegible" unit="char" quantity="2"/><supplied resp="#CG"
+                           reason="illegible"/><supplied resp="#CG">lit</supplied>teris · dictio
+                           <gap reason="illegible" unit="char" quantity="2"/><supplied resp="#CG"
                            >si</supplied>llabis · oratio <gap reason="illegible" unit="char"
                            quantity="3"/><supplied resp="#CG">dic</supplied>tionibus apte con<gap
                            reason="illegible" unit="char" quantity="3"/><supplied resp="#CG"
@@ -12765,9 +12767,9 @@
                <quote source="#EDITION" n="II 52,1"><add type="text-variation" xml:id="tv-52-1-1"
                      hand="#scr">quod non solum</add> ante l uel r, sed etiam ante m, ut supra
                   docuimus, et n</quote>
-               <quote source="#EDITION" n="II 52,2">positae mutae faciunt commu<lb
-                     n="17" break="no" ed="9r"/>nes. <foreign
-                     xml:lang="grc">Εὐριπίδης </foreign>in Phoenissis:</quote>
+               <quote source="#EDITION" n="II 52,2">positae mutae faciunt commu<lb n="17" break="no"
+                     ed="9r"/>nes. <foreign xml:lang="grc">Εὐριπίδης </foreign>in
+                  Phoenissis:</quote>
                <app type="text-variation" xml:id="tv-52-2-1">
                   <lem wit="#EDITION">communes</lem>
                   <rdg wit="#COD_50" hand="#Otfrid">communem sillabam</rdg>
@@ -12786,8 +12788,7 @@
                         >I</hi>dem</rdg>
                </app>
                <quote source="#EDITION" n="II 52,5"><foreign xml:lang="grc">«ἀπωλόμεσθα, δύο <lb
-                        n="18" ed="9r"/> κακὼ
-                     σπεύδεις, τέκνον».</foreign></quote>
+                        n="18" ed="9r"/> κακὼ σπεύδεις, τέκνον».</foreign></quote>
                <app type="text-variation" xml:id="tv-52-5-1">
                   <lem wit="#EDITION"><foreign xml:lang="grc">«ἀπωλόμεσθα, δύο κακὼ</foreign></lem>
                   <rdg wit="#COD_50" hand="#Otfrid">aπωλωMHC ΦaΔYKo</rdg>
@@ -12805,18 +12806,17 @@
                   <rdg wit="#COD_50" hand="#Otfrid">cnidon</rdg>
                </app>
                <quote source="#EDITION" n="II 52,8">tallis».</quote>
-               <quote source="#EDITION" n="II 52,9">praeterea m ante n posita fece<lb
-                     n="19" break="no" ed="9r"/>runt quidam
-                  communes, ut Callimachus</quote>
+               <quote source="#EDITION" n="II 52,9">praeterea m ante n posita fece<lb n="19"
+                     break="no" ed="9r"/>runt quidam communes, ut Callimachus</quote>
                <app type="rubrication" xml:id="rubr-52-9-1">
                   <lem wit="#EDITION">ante n</lem>
-                  <rdg wit="#COD_50" hand="#Otfrid">ante <hi rend="capital letter filled with red ink"
-                        >N</hi></rdg>
+                  <rdg wit="#COD_50" hand="#Otfrid">ante <hi
+                        rend="capital letter filled with red ink">N</hi></rdg>
                </app>
                <app type="rubrication" xml:id="rubr-52-9-2">
                   <lem wit="#EDITION">ut</lem>
                   <rdg wit="#COD_50" hand="#Otfrid"><hi rend="letter filled with red ink"
-                        >u</hi>t</rdg>
+                     >u</hi>t</rdg>
                </app>
                <app type="text-variation" xml:id="tv-52-9-1">
                   <lem wit="#EDITION">Callimachus</lem>
@@ -12825,16 +12825,13 @@
                <quote source="#EDITION" n="II 52,10">in tertio <foreign xml:lang="grc"
                      >αἰτίων:</foreign></quote>
                <app type="text-variation" xml:id="tv-52-10-1">
-                  <lem wit="#EDITION"><foreign xml:lang="grc"
-                        >αἰτίων:</foreign></lem>
+                  <lem wit="#EDITION"><foreign xml:lang="grc">αἰτίων:</foreign></lem>
                   <rdg wit="#COD_50" hand="#Otfrid">action</rdg>
                </app>
                <quote source="#EDITION" n="II 52,11"><foreign xml:lang="grc">«τὼς μὲν ὁ Μνησάρχειος
-                     ἔφη ξένος, ὧ<lb
-                        n="20" break="no" ed="9r"/>δε συναινῶ».</foreign></quote>
+                     ἔφη ξένος, ὧ<lb n="20" break="no" ed="9r"/>δε συναινῶ».</foreign></quote>
                <app type="text-variation" xml:id="tv-52-11-1">
-                  <lem wit="#EDITION"><foreign xml:lang="grc"
-                        >ξένος, ὧδε</foreign></lem>
+                  <lem wit="#EDITION"><foreign xml:lang="grc">ξένος, ὧδε</foreign></lem>
                   <rdg wit="#COD_50" hand="#Otfrid">eYeHOC ꞶDO</rdg>
                </app>
                <quote source="#EDITION" n="II 52,12">illud quoque non est praetermittendum, quod
@@ -12842,14 +12839,12 @@
                <app type="rubrication" xml:id="rubr-52-12-1">
                   <lem wit="#EDITION">illud</lem>
                   <rdg wit="#COD_50" hand="#Otfrid"><hi rend="letter filled with red ink"
-                        >I</hi>llud</rdg>
+                     >I</hi>llud</rdg>
                </app>
-               <quote source="#EDITION" n="II 52,13">sequentibus potest fieri commu<lb
-                     n="21" break="no" ed="9r"/>nis syllaba,
-                  quando in principio syllabae sequentis</quote>
+               <quote source="#EDITION" n="II 52,13">sequentibus potest fieri commu<lb n="21"
+                     break="no" ed="9r"/>nis syllaba, quando in principio syllabae sequentis</quote>
                <quote source="#EDITION" n="II 52,14">post uocalem correptam s et muta et post eam
-                  liquida sequatur, quip<lb
-                     n="22" break="no" ed="9r"/>pe</quote>
+                  liquida sequatur, quip<lb n="22" break="no" ed="9r"/>pe</quote>
                <quote source="#EDITION" n="II 52,15">cum s in metro subtrahi more soleat ueteri, ut
                   Horatius sermonum</quote>
                <app type="text-variation" xml:id="tv-52-15-1">
@@ -12861,8 +12856,8 @@
                   <lem wit="#EDITION">libro</lem>
                   <rdg wit="#COD_50" hand="#Otfrid">sermonum</rdg>
                </app>
-               <quote source="#EDITION" n="II 52,17">«linquimus, insani ridentes praemia
-                  <lb n="23" ed="9r"/>scribae».</quote>
+               <quote source="#EDITION" n="II 52,17">«linquimus, insani ridentes praemia <lb n="23"
+                     ed="9r"/>scribae».</quote>
                <quote source="#EDITION" n="II 52,18">in longis natura uel positione duo sunt
                   tempora, ut dō, ārs, duo semis,</quote>
                <app type="rubrication" xml:id="rubr-52-18-1">
@@ -12872,11 +12867,11 @@
                </app>
                <app type="rubrication" xml:id="rubr-52-18-2">
                   <lem wit="#EDITION">duo semis</lem>
-                  <rdg wit="#COD_50" hand="#Otfrid"><hi rend="letter filled with red ink"
-                        >d</hi>uo semis</rdg>
+                  <rdg wit="#COD_50" hand="#Otfrid"><hi rend="letter filled with red ink">d</hi>uo
+                     semis</rdg>
                </app>
-               <quote source="#EDITION" n="II 52,19">quando post uocalem natura longam <lb n="24" ed="9r"/> una sequitur
-                  consonans, ut sōl, tria,</quote> 
+               <quote source="#EDITION" n="II 52,19">quando post uocalem natura longam <lb n="24"
+                     ed="9r"/> una sequitur consonans, ut sōl, tria,</quote>
                <app type="text-variation" xml:id="tv-52-19-1">
                   <lem wit="#EDITION">longam</lem>
                   <rdg wit="#COD_50" hand="#Otfrid">longa</rdg>
@@ -12886,40 +12881,115 @@
                   <rdg wit="#COD_50" hand="#Otfrid"><hi rend="capital letter filled with red ink"
                         >T</hi>ria</rdg>
                </app>
-               </div>
+            </div>
             <div type="page-of-Hertz-edition" n="Liber Secundus" xml:id="liber-secundus.10"
                prev="liber-secundus.9" next="liber-secundus.11"
                corresp="images-keil:Keil_v2_053.gif" xml:lang="la">
-               <quote source="#EDITION" n="II 53,1">quando post uocalem natura longam duae consonantes sequuntur uel una</quote>
-               <quote source="#EDITION" n="II 53,2">duplex, ut mōns, rēx. tamen in metro necesse est unamquamque</quote>
-               <quote source="#EDITION" n="II 53,3">syllabam uel unius uel duorum accipi temporum.</quote>
-               <quote source="#EDITION" n="II 53,4">numerus literarum accidit syllabae, quia, ut supra diximus, non minus</quote>
-               <quote source="#EDITION" n="II 53,5">quam unius nec plus quam sex literarum apud Latinos potest inueniri</quote>
+               <quote source="#EDITION" n="II 53,1">quando post uocalem natura longam duae
+                  consonantes sequuntur uel una</quote>
+               <quote source="#EDITION" n="II 53,2">du<lb n="25" break="no" ed="9r"/>plex, ut mōns,
+                  rēx. tamen in metro necesse est unamquamque</quote>
+               <quote source="#EDITION" n="II 53,3">syllabam uel unius uel duorum accipi
+                  temporum.</quote>
+               <quote source="#EDITION" n="II 53,4"><lb n="26" ed="9r"/>numerus literarum accidit
+                  syllabae, quia, ut supra diximus, non minus</quote>
+               <app type="rubrication" xml:id="rubr-53-4-1">
+                  <lem wit="#EDITION">numerus</lem>
+                  <rdg wit="#COD_50" hand="#Otfrid"><hi rend="capital letter filled with red ink"
+                        >N</hi>umerus</rdg>
+               </app>
+               <quote source="#EDITION" n="II 53,5">quam unius nec plus quam sex literarum <lb
+                     n="27" ed="9r"/> apud Latinos potest inueniri</quote>
                <quote source="#EDITION" n="II 53,6">syllaba.</quote>
                <quote source="#EDITION" n="II 53,7">de dictione</quote>
-               <quote source="#EDITION" n="II 53,8">dictio est pars minima orationis constructae, id est in ordine</quote>
-               <quote source="#EDITION" n="II 53,9">compositae: pars autem, quantum ad totum intellegendum, id est ad totius</quote>
-               <quote source="#EDITION" n="II 53,10">sensus intellectum; hoc autem ideo dictum est, ne quis conetur uires in</quote>
-               <quote source="#EDITION" n="II 53,11">duas partes diuidere, hoc est in ui et res, uel quaedam huiuscemodi.</quote>
-               <quote source="#EDITION" n="II 53,12">non enim ad totum intellegendum haec fit diuisio.</quote>
-               <quote source="#EDITION" n="II 53,13">differt autem dictio a syllaba, non solum quod syllaba pars est</quote>
-               <quote source="#EDITION" n="II 53,14">dictionis, sed etiam quod dictio dicendum, hoc est intellegendum, aliquid habet.</quote>
-               <quote source="#EDITION" n="II 53,15">syllaba autem non omni modo aliquid significat per se: ergo monosyllabae</quote>
-               <quote source="#EDITION" n="II 53,16">dictiones possunt quodammodo esse et syllabae, non tamen sincere, quia</quote>
-               <quote source="#EDITION" n="II 53,17">numquam syllaba per se potest aliquid significare: hoc enim proprium est</quote>
-               <quote source="#EDITION" n="II 53,18">dictionis. unde si dicam a, per se scio esse syllabam, nec tempora</quote>
-               <quote source="#EDITION" n="II 53,19">tamen eius nec tenorem nec spiritum nec significationem agnosco, donec</quote>
-               <quote source="#EDITION" n="II 53,20">cognouero dictionem, in qua ponitur. nam in ara deorum a</quote>
-               <quote source="#EDITION" n="II 53,21">paenultima producitur et circumflectitur in nominatiuo nec habet aspirationem,</quote>
-               <quote source="#EDITION" n="II 53,22">cum autem significat stabulum porcorum, eadem syllaba paenultima</quote>
-               <quote source="#EDITION" n="II 53,23">corripitur et acuitur et habet aspirationem; haec eadem a, quando est</quote>
-               <quote source="#EDITION" n="II 53,24">praepositio, grauatur et producitur et est sine aspiratione. uides ergo per se</quote>
-               <quote source="#EDITION" n="II 53,25">ipsam syllabam deficere praedictorum ratione nec aliter posse examussim</quote>
+               <app type="rubrication" xml:id="rubr-53-7-1">
+                  <lem wit="#EDITION">de dictione</lem>
+                  <rdg wit="#COD_50" hand="#Otfrid"><hi rend="capital letter filled with red ink">de
+                        dictione</hi></rdg>
+               </app>
+               <note resp="#CG" type="explanation" target="#rubr-53-7-1">Otfrid wrote the title of
+                  this section in the right margin of the page with red ink</note>
+               <quote source="#EDITION" n="II 53,8">dictio est pars minima orationis constructae, id
+                  est in ordine</quote>
+               <app type="rubrication" xml:id="rubr-53-8-1">
+                  <lem wit="#EDITION">dictio</lem>
+                  <rdg wit="#COD_50" hand="#Otfrid"><hi rend="red capital letter">D</hi>ictio</rdg>
+               </app>
+               <app type="text-variation" xml:id="tv-53-8-1">
+                  <lem wit="#EDITION">ordine</lem>
+                  <rdg wit="#COD_50" hand="#Otfrid">ordinem</rdg>
+               </app>
+               <app type="gloss" xml:id="gloss-53-8-1">
+                  <lem wit="#EDITION">dictio</lem>
+                  <rdg wit="#COD_50"><add place="right margin" hand="#Otfrid" facs="#zone.9r.24"
+                        ana="#glosses-elucidating-the-main-text">Dictio est cum aliquid tollitur de
+                        oratione · ut si dicam · homo uires habet magnas · oratio est. Si inde
+                        tollam uires dictio est. Si autem uires dico et non exprimo unde illud dicam
+                        pars est</add></rdg>
+               </app>
+               <note resp="#CG" type="explanation" target="#gloss-53-8-1">This gloss is absent in the MSS
+                  Köln 200, München, BSB, Clm 280a and Clm 18375</note>
+               <quote source="#EDITION" n="II 53,9">compositae: <lb n="28" ed="9r"/> pars autem,
+                  quantum ad totum intellegendum, id est ad totius</quote>
+               <app type="rubrication" xml:id="rubr-53-9-1">
+                  <lem wit="#EDITION">pars</lem>
+                  <rdg wit="#COD_50" hand="#Otfrid"><hi rend="capital letter filled with red ink"
+                        >P</hi>ars</rdg>
+               </app>
+               <quote source="#EDITION" n="II 53,10">sensus intellectum; hoc autem ideo dictum est,
+                  ne quis co<lb n="29" break="no" ed="9r"/>netur uires in</quote>
+               <app type="gloss" xml:id="gloss-53-10-1">
+                  <lem wit="#EDITION">sensus</lem>
+                  <rdg wit="#COD_50"><add place="interlinear above" hand="#Otfrid"
+                        facs="#zone.9r.23" ana="#suppletive-glosses"><g ref="#idest"/>
+                        orationis</add></rdg>
+               </app>
+               <app type="rubrication" xml:id="rubr-53-10-1">
+                  <lem wit="#EDITION">hoc</lem>
+                  <rdg wit="#COD_50" hand="#Otfrid"><hi rend="capital letter filled with red ink"
+                        >H</hi>oc</rdg>
+               </app>
+               <quote source="#EDITION" n="II 53,11">duas partes diuidere, hoc est in ui et res, uel
+                  quaedam huiuscemodi.</quote>
+               <quote source="#EDITION" n="II 53,12">non enim ad totum intellegen<lb n="30" break="no" ed="9r"/>dum haec fit
+                  diuisio.</quote>
+               
+               
+               
+               <quote source="#EDITION" n="II 53,13">differt autem dictio a syllaba, non solum quod
+                  syllaba pars est</quote>
+               <quote source="#EDITION" n="II 53,14">dictionis, sed etiam quod dictio dicendum, hoc
+                  est intellegendum, aliquid habet.</quote>
+               <quote source="#EDITION" n="II 53,15">syllaba autem non omni modo aliquid significat
+                  per se: ergo monosyllabae</quote>
+               <quote source="#EDITION" n="II 53,16">dictiones possunt quodammodo esse et syllabae,
+                  non tamen sincere, quia</quote>
+               <quote source="#EDITION" n="II 53,17">numquam syllaba per se potest aliquid
+                  significare: hoc enim proprium est</quote>
+               <quote source="#EDITION" n="II 53,18">dictionis. unde si dicam a, per se scio esse
+                  syllabam, nec tempora</quote>
+               <quote source="#EDITION" n="II 53,19">tamen eius nec tenorem nec spiritum nec
+                  significationem agnosco, donec</quote>
+               <quote source="#EDITION" n="II 53,20">cognouero dictionem, in qua ponitur. nam in ara
+                  deorum a</quote>
+               <quote source="#EDITION" n="II 53,21">paenultima producitur et circumflectitur in
+                  nominatiuo nec habet aspirationem,</quote>
+               <quote source="#EDITION" n="II 53,22">cum autem significat stabulum porcorum, eadem
+                  syllaba paenultima</quote>
+               <quote source="#EDITION" n="II 53,23">corripitur et acuitur et habet aspirationem;
+                  haec eadem a, quando est</quote>
+               <quote source="#EDITION" n="II 53,24">praepositio, grauatur et producitur et est sine
+                  aspiratione. uides ergo per se</quote>
+               <quote source="#EDITION" n="II 53,25">ipsam syllabam deficere praedictorum ratione
+                  nec aliter posse examussim</quote>
                <quote source="#EDITION" n="II 53,26">tractari, nisi posita sit in dictione.</quote>
                <quote source="#EDITION" n="II 53,27">de oratione</quote>
-               <quote source="#EDITION" n="II 53,28">oratio est ordinatio dictionum congrua, sententiam perfectam</quote>
-               <quote source="#EDITION" n="II 53,29">demonstrans. est autem haec definitio orationis eius, quae est generalis, id est</quote>
-               <quote source="#EDITION" n="II 53,30">quae in species siue partes diuiditur. nam oratio dicitur etiam liber</quote>
+               <quote source="#EDITION" n="II 53,28">oratio est ordinatio dictionum congrua,
+                  sententiam perfectam</quote>
+               <quote source="#EDITION" n="II 53,29">demonstrans. est autem haec definitio orationis
+                  eius, quae est generalis, id est</quote>
+               <quote source="#EDITION" n="II 53,30">quae in species siue partes diuiditur. nam
+                  oratio dicitur etiam liber</quote>
 
             </div>
 
@@ -14091,6 +14161,8 @@
          <zone xml:id="zone.9r.19" ulx="962" uly="774" lrx="1067" lry="810"/>
          <zone xml:id="zone.9r.18" ulx="542" uly="783" lrx="589" lry="818"/>
          <zone xml:id="zone.9r.22" ulx="1464" uly="792" lrx="1539" lry="823"/>
+         <zone xml:id="zone.9r.23" ulx="826" uly="1441" lrx="914" lry="1473"/>
+         <zone xml:id="zone.9r.24" ulx="1451" uly="1455" lrx="1702" lry="1621"/>
          <zone xml:id="zone.9r.21" ulx="1319" uly="792" lrx="1346" lry="819"/>
       </surface>
       <surface xml:id="facs__00028" n="9v">
