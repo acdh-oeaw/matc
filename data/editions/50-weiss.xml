@@ -12953,11 +12953,16 @@
                   quaedam huiuscemodi.</quote>
                <quote source="#EDITION" n="II 53,12">non enim ad totum intellegen<lb n="30" break="no" ed="9r"/>dum haec fit
                   diuisio.</quote>
-               
-               
-               
                <quote source="#EDITION" n="II 53,13">differt autem dictio a syllaba, non solum quod
                   syllaba pars est</quote>
+               <app type="rubrication" xml:id="rubr-53-13-1">
+                  <lem wit="#EDITION">differt</lem>
+                  <rdg wit="#COD_50" hand="#Otfrid"><hi rend="capital letter filled with red ink">D</hi>iffert</rdg>
+               </app>
+               
+               
+               
+               
                <quote source="#EDITION" n="II 53,14">dictionis, sed etiam quod dictio dicendum, hoc
                   est intellegendum, aliquid habet.</quote>
                <quote source="#EDITION" n="II 53,15">syllaba autem non omni modo aliquid significat
